@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['readme',['readme',['../md___users_zackkatz__sites_vagrant-local_www_wordpress-default_wp-content_plugins_gravityview_readme.html',1,'']]],
   ['radio_2ephp',['radio.php',['../radio_8php.html',1,'']]],
-  ['readme_2emd',['readme.md',['../readme_8md.html',1,'']]],
   ['register_2dgravityview_2dwidgets_2ephp',['register-gravityview-widgets.php',['../register-gravityview-widgets_8php.html',1,'']]],
   ['register_2dwordpress_2dwidgets_2ephp',['register-wordpress-widgets.php',['../register-wordpress-widgets_8php.html',1,'']]],
   ['register_5fdefault_5ftemplates',['register_default_templates',['../class_gravity_view___plugin.html#a0826d9ff26200be7e450aa618e273476',1,'GravityView_Plugin']]],

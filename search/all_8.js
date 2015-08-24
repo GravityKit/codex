@@ -307,6 +307,5 @@ var searchData=
   ['gv_5fselected',['gv_selected',['../class-api_8php.html#a3dce437306333d7376a0ba7e9db088c7',1,'class-api.php']]],
   ['gv_5fvalue',['gv_value',['../class-api_8php.html#a996850d1aed2d0e88ab42f3a348913e9',1,'class-api.php']]],
   ['gvcommon',['GVCommon',['../class_g_v_common.html',1,'']]],
-  ['gvlogic_5fshortcode',['GVLogic_Shortcode',['../class_g_v_logic___shortcode.html',1,'']]],
-  ['gravityview_20code_20documentation',['GravityView Code Documentation',['../index.html',1,'']]]
+  ['gvlogic_5fshortcode',['GVLogic_Shortcode',['../class_g_v_logic___shortcode.html',1,'']]]
 ];
