@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filters',['Filters',['../filters.html',1,'']]]
+  ['gravityview_20code_20documentation',['GravityView Code Documentation',['../index.html',1,'']]]
 ];
