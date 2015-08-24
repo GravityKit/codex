@@ -35,7 +35,6 @@ var searchData=
   ['the_5fclear_5fsearch_5fbutton',['the_clear_search_button',['../class_gravity_view___widget___search.html#ac32d7eea68f1e8fe229f1cf3f7cb88e2',1,'GravityView_Widget_Search']]],
   ['the_5fgravityview',['the_gravityview',['../connector-functions_8php.html#a703ee21fbcca65c0770a7ca3605a5dce',1,'connector-functions.php']]],
   ['time_2ephp',['time.php',['../templates_2fields_2time_8php.html',1,'']]],
-  ['todo_20list',['Todo List',['../todo.html',1,'']]],
   ['tooltips',['tooltips',['../class_gravity_view___admin___approve_entries.html#ab4e7613622c97c84c15b80275cf99370',1,'GravityView_Admin_ApproveEntries\tooltips()'],['../class_gravity_view___admin___views.html#a641dca2dd45a43b617039cf629ed30ea',1,'GravityView_Admin_Views\tooltips()'],['../class_gravity_view___extension.html#a641dca2dd45a43b617039cf629ed30ea',1,'GravityView_Extension\tooltips()'],['../class_gravity_view___edit___entry___admin.html#ab4e7613622c97c84c15b80275cf99370',1,'GravityView_Edit_Entry_Admin\tooltips()']]],
   ['type_5fcheckbox_2ephp',['type_checkbox.php',['../type__checkbox_8php.html',1,'']]],
   ['type_5fhidden_2ephp',['type_hidden.php',['../type__hidden_8php.html',1,'']]],

@@ -11,7 +11,6 @@ var searchData=
   ['delete_5fexpired_5ftransients',['delete_expired_transients',['../class_gravity_view___cache.html#a1c04e11f30dc36a624fa237e3078bed8',1,'GravityView_Cache']]],
   ['delete_5flink_2ephp',['delete_link.php',['../delete__link_8php.html',1,'']]],
   ['delete_5flink_5ffield_5foptions',['delete_link_field_options',['../class_gravity_view___delete___entry.html#a01d680fe7b55d4fbb84273faf9ce72b4',1,'GravityView_Delete_Entry']]],
-  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['directory_5flink',['directory_link',['../class_gravity_view___a_p_i.html#a2e4d98cc4e81fcce53690c11747ab75b',1,'GravityView_API']]],
   ['dismiss_5fnotice',['dismiss_notice',['../class_gravity_view___admin___notices.html#a8190bccc54acdec95b7b20b0446b9b4b',1,'GravityView_Admin_Notices']]],
   ['display_5fmessage',['display_message',['../class_gravity_view___delete___entry.html#a25843751c36c34d70783b9765f1293c8',1,'GravityView_Delete_Entry']]]

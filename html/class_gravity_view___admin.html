@@ -214,13 +214,6 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a notice to be displayed in the admin. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>since 1.12 <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$notice</td><td>Array with <code>class</code> and <code>message</code> keys. The message is not escaped. </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd></dl>
 
 <p>Definition at line <a class="el" href="class-admin_8php_source.html#l00416">416</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
@@ -323,9 +316,6 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if Gravity Forms plugin is active and show notice if not. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>since 1.12 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___compatibility.html#a3b9255f9ac7f2705f00255ed16d63ac6" title="Check if specified plugin is active, inactive or not installed. ">GravityView_Compatibility::get_plugin_status()</a> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean True: checks have been passed; GV is fine to run; False: checks have failed, don't continue loading </dd></dl>
-</dd></dl>
 
 <p>Definition at line <a class="el" href="class-admin_8php_source.html#l00427">427</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
@@ -387,8 +377,6 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get admin notices. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>since 1.12 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-</dd></dl>
 
 <p>Definition at line <a class="el" href="class-admin_8php_source.html#l00407">407</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
@@ -419,8 +407,6 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if specified plugin is active, inactive or not installed. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>since 1.12 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___compatibility.html#a3b9255f9ac7f2705f00255ed16d63ac6" title="Check if specified plugin is active, inactive or not installed. ">GravityView_Compatibility::get_plugin_status()</a></dd></dl>
-</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean|string True: plugin is active; False: plugin file doesn't exist at path; 'inactive' it's inactive </dd></dl>
 
 <p>Definition at line <a class="el" href="class-admin_8php_source.html#l00439">439</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
@@ -596,16 +582,6 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remove any style or script non-registered in the no conflict mode. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Move this to <a class="el" href="class_gravity_view___admin___views.html" title="If this file is called directly, abort. ">GravityView_Admin_Views</a> <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">WP_Dependencies</td><td class="paramname">$wp_objects</td><td>Object of WP_Styles or WP_Scripts </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$required_objects</td><td>List of registered script/style handles </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Either 'styles' or 'scripts' </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-</dd></dl>
 <dl class="filters"><dt><b><a class="el" href="filters.html#_filters000019">Runs Filter:</a></b></dt><dd><code>gravityview_noconflict_{$type}</code> Modify the list of no conflict scripts or styles<br />
 Filter is <code>gravityview_noconflict_scripts</code> or <code>gravityview_noconflict_styles</code> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
