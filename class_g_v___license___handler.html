@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.13.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a89635c6cb44d857478cdf00d1cd2b801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac03fc7e8751c6f2739680a057e4ebccf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v___license___handler.html#ac03fc7e8751c6f2739680a057e4ebccf">settings_edd_license_activation</a> ($field, $echo)</td></tr>
 <tr class="separator:ac03fc7e8751c6f2739680a057e4ebccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4bb03961be4e19044ad16e79e138fd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v___license___handler.html#ab4bb03961be4e19044ad16e79e138fd5">strings</a> ($status=NULL)</td></tr>
-<tr class="memdesc:ab4bb03961be4e19044ad16e79e138fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the text used in the Redux Framework EDD field extension.  <a href="#ab4bb03961be4e19044ad16e79e138fd5">More...</a><br /></td></tr>
-<tr class="separator:ab4bb03961be4e19044ad16e79e138fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83e7c8f2de96e83b4ff24c9f95cbeaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v___license___handler.html#aa83e7c8f2de96e83b4ff24c9f95cbeaa">strings</a> ($status=NULL, $license_data=null)</td></tr>
+<tr class="memdesc:aa83e7c8f2de96e83b4ff24c9f95cbeaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the text used in the Redux Framework EDD field extension.  <a href="#aa83e7c8f2de96e83b4ff24c9f95cbeaa">More...</a><br /></td></tr>
+<tr class="separator:aa83e7c8f2de96e83b4ff24c9f95cbeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1d86fbb9a1d4c708e243cf9cd0db21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v___license___handler.html#a6d1d86fbb9a1d4c708e243cf9cd0db21">validate_license_key</a> ($value, $field)</td></tr>
 <tr class="separator:a6d1d86fbb9a1d4c708e243cf9cd0db21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -151,6 +151,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:abf506f782aa22a404aa7f8daaf4e1d36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v___license___handler.html#abf506f782aa22a404aa7f8daaf4e1d36">generate_license_box</a> ($message, $class= '')</td></tr>
 <tr class="memdesc:abf506f782aa22a404aa7f8daaf4e1d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the status message box HTML based on the current status.  <a href="#abf506f782aa22a404aa7f8daaf4e1d36">More...</a><br /></td></tr>
 <tr class="separator:abf506f782aa22a404aa7f8daaf4e1d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc50b63ebdf5e283df2b44f79724f7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v___license___handler.html#a0fc50b63ebdf5e283df2b44f79724f7b">get_license_renewal_url</a> ($license_data)</td></tr>
+<tr class="memdesc:a0fc50b63ebdf5e283df2b44f79724f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">URL to direct license renewal, or if license key is not set, then just the account page.  <a href="#a0fc50b63ebdf5e283df2b44f79724f7b">More...</a><br /></td></tr>
+<tr class="separator:a0fc50b63ebdf5e283df2b44f79724f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dab8b9efb98780e012d4dc7e952b5bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v___license___handler.html#a5dab8b9efb98780e012d4dc7e952b5bd">license_call_update_settings</a> ($license_data, $data)</td></tr>
 <tr class="memdesc:a5dab8b9efb98780e012d4dc7e952b5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the license after fetching it.  <a href="#a5dab8b9efb98780e012d4dc7e952b5bd">More...</a><br /></td></tr>
 <tr class="separator:a5dab8b9efb98780e012d4dc7e952b5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,7 +281,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="post__image_8php_source.html#l00025">$url</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00139">_get_edd_settings()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00253">license_call()</a>.</p>
+<p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00259">license_call()</a>.</p>
 
 </div>
 </div>
@@ -352,7 +355,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00229">229</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00235">235</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
 
 <p>References <a class="el" href="table-body_8php_source.html#l00037">$class</a>, and <a class="el" href="edit__link_8php_source.html#l00018">$output</a>.</p>
 
@@ -421,9 +424,47 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00205">205</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
 
-<p>References <a class="el" href="table-body_8php_source.html#l00037">$class</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00229">generate_license_box()</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00325">strings()</a>.</p>
+<p>References <a class="el" href="table-body_8php_source.html#l00037">$class</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00235">generate_license_box()</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00343">strings()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00253">license_call()</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00050">settings_edd_license_activation()</a>.</p>
+<p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00259">license_call()</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00050">settings_edd_license_activation()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fc50b63ebdf5e283df2b44f79724f7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_license_renewal_url </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$license_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>URL to direct license renewal, or if license key is not set, then just the account page. </p>
+<dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">object&#160;|&#160;null</td><td class="paramname">$license_data</td><td>Object with license data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string Renewal or account URL </dd></dl>
+
+<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00332">332</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00343">strings()</a>.</p>
 
 </div>
 </div>
@@ -451,11 +492,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed|string|void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00253">253</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00259">259</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
 
-<p>References <a class="el" href="class-gv-license-handler_8php_source.html#l00165">_license_get_remote_response()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00205">get_license_message()</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00308">license_call_update_settings()</a>.</p>
+<p>References <a class="el" href="class-gv-license-handler_8php_source.html#l00165">_license_get_remote_response()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00205">get_license_message()</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00314">license_call_update_settings()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00357">validate_license_key()</a>.</p>
+<p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00376">validate_license_key()</a>.</p>
 
 </div>
 </div>
@@ -500,9 +541,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00308">308</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00314">314</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00253">license_call()</a>.</p>
+<p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00259">license_call()</a>.</p>
 
 </div>
 </div>
@@ -569,7 +610,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab4bb03961be4e19044ad16e79e138fd5"></a>
+<a class="anchor" id="aa83e7c8f2de96e83b4ff24c9f95cbeaa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -577,8 +618,18 @@ Private Attributes</h2></td></tr>
           <td class="memname">strings </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$status</em> = <code>NULL</code></td><td>)</td>
+          <td class="paramname"><em>$status</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$license_data</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -587,12 +638,15 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$status</td><td>Status to get. If empty, get all strings. </td></tr>
+    <tr><td class="paramtype">object&#160;|&#160;null</td><td class="paramname">$license_data</td><td>Object with license data </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Modified array of content </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00325">325</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00343">343</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
+
+<p>References <a class="el" href="class-gv-license-handler_8php_source.html#l00332">get_license_renewal_url()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-gv-license-handler_8php_source.html#l00205">get_license_message()</a>.</p>
 
@@ -622,9 +676,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00357">357</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gv-license-handler_8php_source.html#l00376">376</a> of file <a class="el" href="class-gv-license-handler_8php_source.html">class-gv-license-handler.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00253">license_call()</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00259">license_call()</a>.</p>
 
 </div>
 </div>

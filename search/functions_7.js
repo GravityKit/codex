@@ -73,6 +73,7 @@ var searchData=
   ['get_5flicense',['get_license',['../class_gravity_view___extension.html#ab715751604f7f4d50b309feb3b00e737',1,'GravityView_Extension']]],
   ['get_5flicense_5fhandler',['get_license_handler',['../class_gravity_view___settings.html#ab16dd425703be819789044c353fc4636',1,'GravityView_Settings']]],
   ['get_5flicense_5fmessage',['get_license_message',['../class_g_v___license___handler.html#a2406a65fe56085d5aa2b03746855a18f',1,'GV_License_Handler']]],
+  ['get_5flicense_5frenewal_5furl',['get_license_renewal_url',['../class_g_v___license___handler.html#a0fc50b63ebdf5e283df2b44f79724f7b',1,'GV_License_Handler']]],
   ['get_5flink_5fhtml',['get_link_html',['../class_g_v_common.html#a8af330d13e7375f324f2230d44d9ffba',1,'GVCommon']]],
   ['get_5fmeta_5fform_5fid',['get_meta_form_id',['../class_g_v_common.html#aa2201ec6bccca21a4f06aeaf3bde9c6e',1,'GVCommon']]],
   ['get_5fmeta_5ftemplate_5fid',['get_meta_template_id',['../class_g_v_common.html#ad9fac3ddfd212af345f34b4a66bfc599',1,'GVCommon']]],

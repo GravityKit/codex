@@ -69,6 +69,6 @@ var searchData=
   ['single_5fentry_5ftitle',['single_entry_title',['../class_gravity_view__frontend.html#a0ac7992053819b88ad484f1b22e3b6de',1,'GravityView_frontend']]],
   ['single_5fsetting_5flabel',['single_setting_label',['../class_gravity_view___settings.html#aad19ecf7968f823c6898df7fe9a068ae',1,'GravityView_Settings']]],
   ['skip_5fentry',['skip_entry',['../class_gravity_view___entry___list.html#af51c353b1bbe440d398c80fe2971b8b5',1,'GravityView_Entry_List']]],
-  ['strings',['strings',['../class_g_v___license___handler.html#ab4bb03961be4e19044ad16e79e138fd5',1,'GV_License_Handler']]],
+  ['strings',['strings',['../class_g_v___license___handler.html#aa83e7c8f2de96e83b4ff24c9f95cbeaa',1,'GV_License_Handler']]],
   ['styles',['styles',['../class_gravity_view___settings.html#a53d31780f290c90071a213e9f786abb3',1,'GravityView_Settings']]]
 ];

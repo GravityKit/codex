@@ -90,6 +90,6 @@ var searchData=
   ['sort_2dfilter_2ephp',['sort-filter.php',['../sort-filter_8php.html',1,'']]],
   ['source_2durl_2ephp',['source-url.php',['../source-url_8php.html',1,'']]],
   ['source_5furl_2ephp',['source_url.php',['../source__url_8php.html',1,'']]],
-  ['strings',['strings',['../class_g_v___license___handler.html#ab4bb03961be4e19044ad16e79e138fd5',1,'GV_License_Handler']]],
+  ['strings',['strings',['../class_g_v___license___handler.html#aa83e7c8f2de96e83b4ff24c9f95cbeaa',1,'GV_License_Handler']]],
   ['styles',['styles',['../class_gravity_view___settings.html#a53d31780f290c90071a213e9f786abb3',1,'GravityView_Settings']]]
 ];
