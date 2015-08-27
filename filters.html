@@ -358,12 +358,12 @@ Filter is <code>gravityview_noconflict_scripts</code> or <code>gravityview_nocon
 </dl>
 </dd>
 <dt><a class="anchor" id="_filters000081"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#a25843751c36c34d70783b9765f1293c8">GravityView_Delete_Entry::display_message</a>  ()</dt>
-<dd><code>gravityview/delete-entry/message</code> Modify the Delete Entry messages <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
+<dd><code>gravityview/delete-entry/message</code> Modify the Delete Entry messages shown after attempting to delete or trash an entry <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Message to be displayed </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$status</td><td>Message status (<code>error</code> or <code>success</code>) </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$message_from_url</td><td>The original error message, if any, without the "There was an error deleting the entry:" prefix  </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Message to be displayed. Default success message: "The entry was successfully deleted." </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$status</td><td>Message status: <code>error</code> or <code>trashed</code> or <code>success</code> </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$message_from_url</td><td>Empty unless there's an error. If an error exists, this is the original message, without the "There was an error deleting the entry:" prefix  </td></tr>
   </table>
   </dd>
 </dl>

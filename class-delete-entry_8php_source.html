@@ -730,11 +730,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        }</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="comment">        /**</span></div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="comment">         * @filter `gravityview/delete-entry/message` Modify the Delete Entry messages</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="comment">         * @filter `gravityview/delete-entry/message` Modify the Delete Entry messages shown after attempting to delete or trash an entry</span></div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="comment">         * @since 1.13.1</span></div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;<span class="comment">         * @param string $message Message to be displayed</span></div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="comment">         * @param string $status Message status (`error` or `success`)</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="comment">         * @param string $message_from_url The original error message, if any, without the &quot;There was an error deleting the entry:&quot; prefix</span></div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;<span class="comment">         * @param string $message Message to be displayed. Default success message: &quot;The entry was successfully deleted.&quot;</span></div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="comment">         * @param string $status Message status: `error` or `trashed` or `success`</span></div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;<span class="comment">         * @param string $message_from_url Empty unless there&#39;s an error. If an error exists, this is the original message, without the &quot;There was an error deleting the entry:&quot; prefix</span></div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        $message = apply_filters( <span class="stringliteral">&#39;gravityview/delete-entry/message&#39;</span>, esc_attr( $message ), $status, $message_from_url );</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>

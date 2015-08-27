@@ -552,12 +552,12 @@ Private Member Functions</h2></td></tr>
 <p>If success, there will be <code>status</code> URL parameters <code>status=&gt;success</code> If an error, there will be <code>status</code> and <code>message</code> URL parameters <code>status=&gt;error&amp;message=example</code></p>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000081">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/message</code> Modify the Delete Entry messages <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000081">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/message</code> Modify the Delete Entry messages shown after attempting to delete or trash an entry <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Message to be displayed </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$status</td><td>Message status (<code>error</code> or <code>success</code>) </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$message_from_url</td><td>The original error message, if any, without the "There was an error deleting the entry:" prefix </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Message to be displayed. Default success message: "The entry was successfully deleted." </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$status</td><td>Message status: <code>error</code> or <code>trashed</code> or <code>success</code> </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$message_from_url</td><td>Empty unless there's an error. If an error exists, this is the original message, without the "There was an error deleting the entry:" prefix </td></tr>
   </table>
   </dd>
 </dl>
