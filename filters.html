@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_filters000096"></a>globalScope&gt; Global <a class="el" href="date__created_8php.html#a383369524a30ca2af1a50522ffb63d4f">$adjust_tz</a>  </dt>
+<dt><a class="anchor" id="_filters000099"></a>globalScope&gt; Global <a class="el" href="date__created_8php.html#a383369524a30ca2af1a50522ffb63d4f">$adjust_tz</a>  </dt>
 <dd><code>gravityview_date_created_adjust_timezone</code> Whether to adjust the timezone for entries. <br />
 date_created is stored in UTC format. Convert search date into UTC (also used on <a class="el" href="date__created_8php.html">templates/fields/date_created.php</a>) <dl class="section since"><dt>Since</dt><dd>1.16 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -95,7 +95,7 @@ date_created is stored in UTC format. Convert search date into UTC (also used on
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000081"></a>globalScope&gt; Global <a class="el" href="form-buttons_8php.html#a607f96b0c77b634aa2b973ac832e4514">$back_link</a>  </dt>
+<dt><a class="anchor" id="_filters000084"></a>globalScope&gt; Global <a class="el" href="form-buttons_8php.html#a607f96b0c77b634aa2b973ac832e4514">$back_link</a>  </dt>
 <dd><code>gravityview/edit_entry/cancel_link</code> Modify the cancel button link URL <dl class="section since"><dt>Since</dt><dd>1.11.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -349,7 +349,15 @@ Filter is <code>gravityview_noconflict_scripts</code> or <code>gravityview_nocon
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000078"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#a25843751c36c34d70783b9765f1293c8">GravityView_Delete_Entry::display_message</a>  ()</dt>
+<dt><a class="anchor" id="_filters000078"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#a07fcf846a0065304688b5d7e307220c0">GravityView_Delete_Entry::add_delete_button</a>  ($form=array(), $entry=array(), $view_id=NULL)</dt>
+<dd><code>gravityview/delete-entry/show-delete-button</code> Should the Delete button be shown in the Edit Entry screen? <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$show_entry</td><td>Default: true  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_filters000081"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#a25843751c36c34d70783b9765f1293c8">GravityView_Delete_Entry::display_message</a>  ()</dt>
 <dd><code>gravityview/delete-entry/message</code> Modify the Delete Entry messages <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -360,7 +368,24 @@ Filter is <code>gravityview_noconflict_scripts</code> or <code>gravityview_nocon
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000079"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#a5f50ee01d9b8a69ad4b8e4ef04e81c3f">GravityView_Edit_Entry_Render::edit_entry_form</a>  ()</dt>
+<dt><a class="anchor" id="_filters000080"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#a2b0218fb914aa7ded90da32ebebcfbef">GravityView_Delete_Entry::get_confirm_dialog</a>  ()</dt>
+<dd><code>gravityview/delete-entry/confirm-text</code> Modify the Delete Entry Javascript confirmation text <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$confirm</td><td>Default: "Are you sure you want to delete this entry? This cannot be undone."  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_filters000079"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#aebea8fe0f4dfdded4956d017319cbff8">GravityView_Delete_Entry::get_delete_mode</a>  ()</dt>
+<dd><code>gravityview/delete-entry/mode</code> Delete mode: permanently delete, or move to trash? <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$delete_mode</td><td>Delete mode: <code>trash</code> or <code>delete</code>. Default: <code>delete</code>  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_filters000082"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#a5f50ee01d9b8a69ad4b8e4ef04e81c3f">GravityView_Edit_Entry_Render::edit_entry_form</a>  ()</dt>
 <dd><code>gravityview_edit_entry_title</code> Modify the edit entry title <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$edit_entry_title</td><td>Modify the "Edit Entry" title </td></tr>
@@ -409,7 +434,7 @@ Filter is <code>gravityview_noconflict_scripts</code> or <code>gravityview_nocon
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000082"></a>Global <a class="el" href="class_gravity_view___field.html#aa13f320eb62a1f6a5ef39a451999d391">GravityView_Field::field_support_options</a>  ()</dt>
+<dt><a class="anchor" id="_filters000085"></a>Global <a class="el" href="class_gravity_view___field.html#aa13f320eb62a1f6a5ef39a451999d391">GravityView_Field::field_support_options</a>  ()</dt>
 <dd><code>gravityview_date_format</code> Override the date format with a <a href="https://codex.wordpress.org/Formatting_Date_and_Time">PHP date format</a> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$date_format</td><td>Date Format (default: null) </td></tr>
@@ -423,7 +448,7 @@ Filter is <code>gravityview_noconflict_scripts</code> or <code>gravityview_nocon
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000084"></a>Global <a class="el" href="class_gravity_view___field___file_upload.html#ada186fd2cf53679a4936f454ed8c7b55">GravityView_Field_FileUpload::get_files_array</a>  ($value, $gv_class)</dt>
+<dt><a class="anchor" id="_filters000087"></a>Global <a class="el" href="class_gravity_view___field___file_upload.html#ada186fd2cf53679a4936f454ed8c7b55">GravityView_Field_FileUpload::get_files_array</a>  ($value, $gv_class)</dt>
 <dd><code>gravityview_audio_settings</code> Modify the settings passed to the <code>wp_video_shortcode()</code> function <dl class="section since"><dt>Since</dt><dd>1.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -739,7 +764,7 @@ Useful where you want to process variables yourself. We do this in the Math Exte
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000089"></a>Global <a class="el" href="class_gravity_view___widget.html#abb251d18e0f479efb4e983a513985d72">GravityView_Widget::pre_render_frontend</a>  ()</dt>
+<dt><a class="anchor" id="_filters000092"></a>Global <a class="el" href="class_gravity_view___widget.html#abb251d18e0f479efb4e983a513985d72">GravityView_Widget::pre_render_frontend</a>  ()</dt>
 <dd><code>gravityview/widget/hide_until_searched</code> Modify whether to hide content until search <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$hide_until_searched</td><td>Hide until search? </td></tr>
@@ -748,7 +773,7 @@ Useful where you want to process variables yourself. We do this in the Math Exte
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000087"></a>Global <a class="el" href="class_gravity_view___widget___page___links.html#ae4679c947e1785826fa62c91a7f07c08">GravityView_Widget_Page_Links::render_frontend</a>  ($widget_args, $content= '', $context= '')</dt>
+<dt><a class="anchor" id="_filters000090"></a>Global <a class="el" href="class_gravity_view___widget___page___links.html#ae4679c947e1785826fa62c91a7f07c08">GravityView_Widget_Page_Links::render_frontend</a>  ($widget_args, $content= '', $context= '')</dt>
 <dd><code>gravityview_page_links_args</code> Filter the pagination options <dl class="section since"><dt>Since</dt><dd>1.1.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -757,7 +782,7 @@ Useful where you want to process variables yourself. We do this in the Math Exte
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000088"></a>Global <a class="el" href="class_gravity_view___widget___pagination___info.html#ae4679c947e1785826fa62c91a7f07c08">GravityView_Widget_Pagination_Info::render_frontend</a>  ($widget_args, $content= '', $context= '')</dt>
+<dt><a class="anchor" id="_filters000091"></a>Global <a class="el" href="class_gravity_view___widget___pagination___info.html#ae4679c947e1785826fa62c91a7f07c08">GravityView_Widget_Pagination_Info::render_frontend</a>  ($widget_args, $content= '', $context= '')</dt>
 <dd><code>gravityview_pagination_output</code> Modify the pagination widget output <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$output</td><td>HTML output </td></tr>
@@ -768,7 +793,7 @@ Useful where you want to process variables yourself. We do this in the Math Exte
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000090"></a>Global <a class="el" href="class_gravity_view___widget___poll.html#a3ba1936d24251298119035fe06ed81b2">GravityView_Widget_Poll::get_frontend_settings</a>  ($widget_settings)</dt>
+<dt><a class="anchor" id="_filters000093"></a>Global <a class="el" href="class_gravity_view___widget___poll.html#a3ba1936d24251298119035fe06ed81b2">GravityView_Widget_Poll::get_frontend_settings</a>  ($widget_settings)</dt>
 <dd><code>gravityview/widget/poll/settings</code> Modify display settings for the poll widget <dl class="section since"><dt>Since</dt><dd>1.8 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -777,7 +802,7 @@ Useful where you want to process variables yourself. We do this in the Math Exte
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000094"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a3ed1c72c0dfa76124b1799133f1c1ebb">GravityView_Widget_Search::add_datepicker_localization</a>  ($localizations=array(), $view_data=array())</dt>
+<dt><a class="anchor" id="_filters000097"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a3ed1c72c0dfa76124b1799133f1c1ebb">GravityView_Widget_Search::add_datepicker_localization</a>  ($localizations=array(), $view_data=array())</dt>
 <dd><code>gravityview_datepicker_settings</code> Modify the datepicker settings <dl class="section see"><dt>See also</dt><dd><a href="http://api.jqueryui.com/datepicker/">http://api.jqueryui.com/datepicker/</a> Learn what settings are available </dd>
 <dd>
 <a href="http://www.renegadetechconsulting.com/tutorials/jquery-datepicker-and-wordpress-i18n">http://www.renegadetechconsulting.com/tutorials/jquery-datepicker-and-wordpress-i18n</a> Thanks for the helpful information on $wp_locale </dd></dl>
@@ -789,7 +814,7 @@ Useful where you want to process variables yourself. We do this in the Math Exte
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000095"></a>Global <a class="el" href="class_gravity_view___widget___search.html#af46bf2cf1627fe08d1b921dcc43ed6a7">GravityView_Widget_Search::enqueue_datepicker</a>  ()</dt>
+<dt><a class="anchor" id="_filters000098"></a>Global <a class="el" href="class_gravity_view___widget___search.html#af46bf2cf1627fe08d1b921dcc43ed6a7">GravityView_Widget_Search::enqueue_datepicker</a>  ()</dt>
 <dd><code>gravityview_search_datepicker_class</code> Modify the CSS class for the datepicker, used by the CSS class is used by Gravity Forms' javascript to determine the format for the date picker. The <code>gv-datepicker</code> class is required by the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> datepicker javascript. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$css_class</td><td>CSS class to use. Default: <code>gv-datepicker datepicker mdy</code> <br />
@@ -807,7 +832,7 @@ Options are:<ul>
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000092"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a1ec207d541b43d01e014787d12133699">GravityView_Widget_Search::filter_entries</a>  ($search_criteria)</dt>
+<dt><a class="anchor" id="_filters000095"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a1ec207d541b43d01e014787d12133699">GravityView_Widget_Search::filter_entries</a>  ($search_criteria)</dt>
 <dd><code>gravityview_date_created_adjust_timezone</code> Whether to adjust the timezone for entries. <br />
 date_created is stored in UTC format. Convert search date into UTC (also used on <a class="el" href="date__created_8php.html">templates/fields/date_created.php</a>) <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -825,7 +850,7 @@ date_created is stored in UTC format. Convert search date into UTC (also used on
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_filters000091"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a7bbfa8a035ec7800fa12f40e8042e8e6">GravityView_Widget_Search::get_search_input_types</a>  ($id= '', $field_type=null)</dt>
+<dt><a class="anchor" id="_filters000094"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a7bbfa8a035ec7800fa12f40e8042e8e6">GravityView_Widget_Search::get_search_input_types</a>  ($id= '', $field_type=null)</dt>
 <dd><code>gravityview/extension/search/input_type</code> Modify the search form input type based on field type <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$input_type</td><td>Assign an input type according to the form field type </td></tr>
