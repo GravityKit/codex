@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.14.3</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -107,14 +107,36 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a77957aab921d62a9e2d2783a4924e634"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="templates_2fields_2time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a> = rgget( 'field_id', $gv_field )</td></tr>
+<tr class="separator:a77957aab921d62a9e2d2783a4924e634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add47a7f886e74847997a4044e9903a0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="templates_2fields_2time_8php.html#add47a7f886e74847997a4044e9903a0a">$gravityview_view</a> = <a class="el" href="class_gravity_view___view.html#a76cf4523dbaebd58c27db806e01b73d9">GravityView_View::getInstance</a>()</td></tr>
 <tr class="separator:add47a7f886e74847997a4044e9903a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73004ce9cd673c1bfafd1dc351134797"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="templates_2fields_2time_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = GFCommon::date_display( $value, $format )</td></tr>
+<tr class="memitem:a9e6d22b1bf883606d7de78df09f7efac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="templates_2fields_2time_8php.html#a9e6d22b1bf883606d7de78df09f7efac">$gv_field</a> = $gravityview_view-&gt;getCurrentField()</td></tr>
+<tr class="separator:a9e6d22b1bf883606d7de78df09f7efac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73004ce9cd673c1bfafd1dc351134797"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="templates_2fields_2time_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = ''</td></tr>
 <tr class="separator:a73004ce9cd673c1bfafd1dc351134797"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fe9d23b5dfdd76095b79a041517b9cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="templates_2fields_2textarea_8php.html#a26a682e3ca7d6900aca94956ce9d2e9d">if</a>(!empty($field_settings)&amp;&amp;!empty($field_settings['date_display'])&amp;&amp;!empty($value))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="templates_2fields_2time_8php.html#a5fe9d23b5dfdd76095b79a041517b9cf">else</a></td></tr>
-<tr class="separator:a5fe9d23b5dfdd76095b79a041517b9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f298096f322952a72a50f98a74c7b60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="templates_2fields_2time_8php.html#a0f298096f322952a72a50f98a74c7b60">$value</a> = rgget( 'value', $gv_field )</td></tr>
+<tr class="separator:a0f298096f322952a72a50f98a74c7b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8def7f0ea0b3e74e8098162db2ba8eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="templates_2fields_2time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> ( ''!==$value)</td></tr>
+<tr class="separator:ad8def7f0ea0b3e74e8098162db2ba8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a77957aab921d62a9e2d2783a4924e634"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$field_id = rgget( 'field_id', $gv_field )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="templates_2fields_2time_8php_source.html#l00017">17</a> of file <a class="el" href="templates_2fields_2time_8php_source.html">templates/fields/time.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-admin-label_8php_source.html#l00080">GravityView_Admin_View_Item\__construct()</a>, <a class="el" href="includes_2fields_2time_8php_source.html#l00246">GravityView_Field_Time\_filter_date_display_date_format()</a>, <a class="el" href="includes_2fields_2time_8php_source.html#l00219">GravityView_Field_Time\_get_time_format_for_field()</a>, <a class="el" href="includes_2fields_2time_8php_source.html#l00264">GravityView_Field_Time\date_format()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00110">GravityView_Delete_Entry\delete_link_field_options()</a>, <a class="el" href="includes_2fields_2address_8php_source.html#l00010">GravityView_Field_Address\field_options()</a>, <a class="el" href="class_8field_8php_source.html#l00118">GravityView_Field\field_options()</a>, <a class="el" href="class-edit-entry-admin_8php_source.html#l00149">GravityView_Edit_Entry_Admin\field_options()</a>, <a class="el" href="includes_2fields_2time_8php_source.html#l00174">GravityView_Field_Time\field_options()</a>, <a class="el" href="class-api_8php_source.html#l00216">GravityView_API\field_value()</a>, <a class="el" href="class_8render_8settings_8php_source.html#l00114">GravityView_Render_Settings\get_cap_choices()</a>, <a class="el" href="class_8render_8settings_8php_source.html#l00026">GravityView_Render_Settings\get_default_field_options()</a>, <a class="el" href="class-common_8php_source.html#l00808">GVCommon\get_field()</a>, <a class="el" href="class-common_8php_source.html#l00788">GVCommon\get_field_label()</a>, <a class="el" href="class-common_8php_source.html#l01065">GVCommon\get_field_type()</a>, <a class="el" href="connector-functions_8php_source.html#l00133">gravityview_get_field()</a>, <a class="el" href="connector-functions_8php_source.html#l00120">gravityview_get_field_label()</a>, <a class="el" href="connector-functions_8php_source.html#l00275">gravityview_get_field_type()</a>, <a class="el" href="class-api_8php_source.html#l00788">gravityview_get_field_value()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01282">GravityView_frontend\is_field_sortable()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00350">GravityView_Edit_Entry_Render\maybe_update_post_fields()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00189">GravityView_Delete_Entry\modify_visibility_caps()</a>, <a class="el" href="class-search-widget_8php_source.html#l00465">GravityView_Widget_Search\prepare_field_filter()</a>, <a class="el" href="class_8render_8settings_8php_source.html#l00164">GravityView_Render_Settings\render_field_options()</a>, and <a class="el" href="connector-_a_p_i___test_8php_source.html#l00096">GravityView_API_Test\test_field_class()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="add47a7f886e74847997a4044e9903a0a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -129,47 +151,80 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9e6d22b1bf883606d7de78df09f7efac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$gv_field = $gravityview_view-&gt;getCurrentField()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="templates_2fields_2time_8php_source.html#l00011">11</a> of file <a class="el" href="templates_2fields_2time_8php_source.html">templates/fields/time.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a73004ce9cd673c1bfafd1dc351134797"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$output = GFCommon::date_display( $value, $format )</td>
+          <td class="memname">$output = ''</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="templates_2fields_2time_8php_source.html#l00025">25</a> of file <a class="el" href="templates_2fields_2time_8php_source.html">templates/fields/time.php</a>.</p>
+<p>Definition at line <a class="el" href="templates_2fields_2time_8php_source.html#l00019">19</a> of file <a class="el" href="templates_2fields_2time_8php_source.html">templates/fields/time.php</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5fe9d23b5dfdd76095b79a041517b9cf"></a>
+<a class="anchor" id="a0f298096f322952a72a50f98a74c7b60"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="templates_2fields_2textarea_8php.html#a26a682e3ca7d6900aca94956ce9d2e9d">if</a> (!empty($field_settings)&amp;&amp;!empty($field_settings['date_display'])&amp;&amp;!empty($value)) else</td>
+          <td class="memname">$value = rgget( 'value', $gv_field )</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line"></div>
-<div class="line">    </div>
-<div class="line">    </div>
-<div class="line">    <a class="code" href="gquiz__percent_8php.html#a1d2cd7133414dcb5bf74c0f3b3fb99e2">$format</a> = apply_filters( <span class="stringliteral">&#39;gravityview_date_format&#39;</span>, rgar(<a class="code" href="gquiz__grade_8php.html#a83e4d6721f3491a4fd780dbd3ce1a3c0">$field</a>, <span class="stringliteral">&quot;dateFormat&quot;</span>) )</div>
-<div class="ttc" id="gquiz__percent_8php_html_a1d2cd7133414dcb5bf74c0f3b3fb99e2"><div class="ttname"><a href="gquiz__percent_8php.html#a1d2cd7133414dcb5bf74c0f3b3fb99e2">$format</a></div><div class="ttdeci">if(empty($field['value'])) $format</div><div class="ttdoc">Modify the format of the display of the field. </div><div class="ttdef"><b>Definition:</b> <a href="gquiz__percent_8php_source.html#l00025">gquiz_percent.php:25</a></div></div>
-<div class="ttc" id="gquiz__grade_8php_html_a83e4d6721f3491a4fd780dbd3ce1a3c0"><div class="ttname"><a href="gquiz__grade_8php.html#a83e4d6721f3491a4fd780dbd3ce1a3c0">$field</a></div><div class="ttdeci">$field</div><div class="ttdef"><b>Definition:</b> <a href="gquiz__grade_8php_source.html#l00011">gquiz_grade.php:11</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="templates_2fields_2time_8php_source.html#l00020">20</a> of file <a class="el" href="templates_2fields_2time_8php_source.html">templates/fields/time.php</a>.</p>
+
+<p>Definition at line <a class="el" href="templates_2fields_2time_8php_source.html#l00014">14</a> of file <a class="el" href="templates_2fields_2time_8php_source.html">templates/fields/time.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8def7f0ea0b3e74e8098162db2ba8eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if( ''!==$value)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="templates_2fields_2time_8php_source.html#l00021">21</a> of file <a class="el" href="templates_2fields_2time_8php_source.html">templates/fields/time.php</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.10
-</small></address>
+<hr class="footer"/>
+<script type="text/javascript">
+    jQuery( document ).ready( function( $ ) {
+        // Generate anchors for each filter and action
+        $( 'dl.reflist > dd > code' ).each( function( index ) {
+            // Similar to sanitize_title()
+            var link = $( this ).text().replace( /[^A-Za-z-\_\/\.\{\$\}]+/g, "-" );
+            var $tag = $('<a>', {
+                'id': link,
+                'href': '#' + link,
+                'text': '#',
+                'class': 'anchor gv-anchor',
+            });
+            $( this ).after( $tag );
+        });
+    });
+</script>
 </body>
 </html>

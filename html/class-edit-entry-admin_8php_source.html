@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.14.3</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -171,7 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">     * @param  string      $input_type  (textarea, list, select, etc.)</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">     * @return array                   Array of field options with `label`, `value`, `type`, `default` keys</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_gravity_view___edit___entry___admin.html#ab9da0ca9fb04870db70e9145595a4570">   79</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="class_gravity_view___edit___entry___admin.html#ab9da0ca9fb04870db70e9145595a4570">modify_visibility_caps</a>( $visibility_caps = array(), $template_id = <span class="stringliteral">&#39;&#39;</span>, $field_id = <span class="stringliteral">&#39;&#39;</span>, $context = <span class="stringliteral">&#39;&#39;</span>, $input_type = <span class="stringliteral">&#39;&#39;</span> ) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_gravity_view___edit___entry___admin.html#ab9da0ca9fb04870db70e9145595a4570">   79</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="class_gravity_view___edit___entry___admin.html#ab9da0ca9fb04870db70e9145595a4570">modify_visibility_caps</a>( $visibility_caps = array(), $template_id = <span class="stringliteral">&#39;&#39;</span>, <a class="code" href="templates_2fields_2time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a> = <span class="stringliteral">&#39;&#39;</span>, $context = <span class="stringliteral">&#39;&#39;</span>, $input_type = <span class="stringliteral">&#39;&#39;</span> ) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        $caps = $visibility_caps;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
@@ -196,7 +196,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">     * @param  [type] $input_type    [description]</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">     * @return [type]                [description]</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_gravity_view___edit___entry___admin.html#a580f8dd90b01990b79f28f62602ae03c">  104</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="class_gravity_view___edit___entry___admin.html#a580f8dd90b01990b79f28f62602ae03c">edit_link_field_options</a>( $field_options, $template_id, $field_id, $context, $input_type ) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_gravity_view___edit___entry___admin.html#a580f8dd90b01990b79f28f62602ae03c">  104</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="class_gravity_view___edit___entry___admin.html#a580f8dd90b01990b79f28f62602ae03c">edit_link_field_options</a>( $field_options, $template_id, <a class="code" href="templates_2fields_2time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a>, $context, $input_type ) {</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="comment">// Always a link, never a filter</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        unset( $field_options[<span class="stringliteral">&#39;show_as_link&#39;</span>], $field_options[<span class="stringliteral">&#39;search_filter&#39;</span>] );</div>
@@ -241,7 +241,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">     * @param  [type] $input_type    [description]</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">     * @return [type]                [description]</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="class_gravity_view___edit___entry___admin.html#a902c63bfcab26c87838ae0e70fa6b3be">  149</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="class_gravity_view___edit___entry___admin.html#a902c63bfcab26c87838ae0e70fa6b3be">field_options</a>( $field_options, $template_id, $field_id, $context, $input_type ) {</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="class_gravity_view___edit___entry___admin.html#a902c63bfcab26c87838ae0e70fa6b3be">  149</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="class_gravity_view___edit___entry___admin.html#a902c63bfcab26c87838ae0e70fa6b3be">field_options</a>( $field_options, $template_id, <a class="code" href="templates_2fields_2time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a>, $context, $input_type ) {</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="comment">// We only want to modify the settings for the edit context</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">if</span>( <span class="stringliteral">&#39;edit&#39;</span> !== $context ) {</div>
@@ -265,7 +265,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="stringliteral">&#39;allow_edit_cap&#39;</span> =&gt; array(</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;select&#39;</span>,</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="stringliteral">&#39;label&#39;</span> =&gt; __( <span class="stringliteral">&#39;Make field editable to:&#39;</span>, <span class="stringliteral">&#39;gravityview&#39;</span> ),</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="stringliteral">&#39;choices&#39;</span> =&gt; <a class="code" href="class_gravity_view___render___settings.html#a4945872bfba4d2eb0a5900be3c7421f5">GravityView_Render_Settings::get_cap_choices</a>( $template_id, $field_id, $context, $input_type ),</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="stringliteral">&#39;choices&#39;</span> =&gt; <a class="code" href="class_gravity_view___render___settings.html#a4945872bfba4d2eb0a5900be3c7421f5">GravityView_Render_Settings::get_cap_choices</a>( $template_id, <a class="code" href="templates_2fields_2time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a>, $context, $input_type ),</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="stringliteral">&#39;tooltip&#39;</span> =&gt; <span class="stringliteral">&#39;allow_edit_cap&#39;</span>,</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                <span class="stringliteral">&#39;class&#39;</span> =&gt; <span class="stringliteral">&#39;widefat&#39;</span>,</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="stringliteral">&#39;value&#39;</span> =&gt; <span class="stringliteral">&#39;read&#39;</span>, <span class="comment">// Default: entry creator</span></div>
@@ -286,14 +286,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_gravity_view___edit___entry___admin_html_ab9da0ca9fb04870db70e9145595a4570"><div class="ttname"><a href="class_gravity_view___edit___entry___admin.html#ab9da0ca9fb04870db70e9145595a4570">GravityView_Edit_Entry_Admin\modify_visibility_caps</a></div><div class="ttdeci">modify_visibility_caps($visibility_caps=array(), $template_id= '', $field_id= '', $context= '', $input_type= '')</div><div class="ttdoc">Change wording for the Edit context to read Entry Creator. </div><div class="ttdef"><b>Definition:</b> <a href="class-edit-entry-admin_8php_source.html#l00079">class-edit-entry-admin.php:79</a></div></div>
 <div class="ttc" id="class_gravity_view___edit___entry___admin_html"><div class="ttname"><a href="class_gravity_view___edit___entry___admin.html">GravityView_Edit_Entry_Admin</a></div><div class="ttdef"><b>Definition:</b> <a href="class-edit-entry-admin_8php_source.html#l00017">class-edit-entry-admin.php:17</a></div></div>
 <div class="ttc" id="class_gravity_view___edit___entry___admin_html_a4dcaa8f72c8423d4de25a9e87fa6f3e4"><div class="ttname"><a href="class_gravity_view___edit___entry___admin.html#a4dcaa8f72c8423d4de25a9e87fa6f3e4">GravityView_Edit_Entry_Admin\load</a></div><div class="ttdeci">load()</div><div class="ttdef"><b>Definition:</b> <a href="class-edit-entry-admin_8php_source.html#l00025">class-edit-entry-admin.php:25</a></div></div>
+<div class="ttc" id="templates_2fields_2time_8php_html_a77957aab921d62a9e2d2783a4924e634"><div class="ttname"><a href="templates_2fields_2time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a></div><div class="ttdeci">$field_id</div><div class="ttdef"><b>Definition:</b> <a href="templates_2fields_2time_8php_source.html#l00017">templates/fields/time.php:17</a></div></div>
 <div class="ttc" id="class_gravity_view___render___settings_html_a4945872bfba4d2eb0a5900be3c7421f5"><div class="ttname"><a href="class_gravity_view___render___settings.html#a4945872bfba4d2eb0a5900be3c7421f5">GravityView_Render_Settings\get_cap_choices</a></div><div class="ttdeci">static get_cap_choices($template_id= '', $field_id= '', $context= '', $input_type= '')</div><div class="ttdoc">Get capabilities options for GravityView. </div><div class="ttdef"><b>Definition:</b> <a href="class_8render_8settings_8php_source.html#l00114">class.render.settings.php:114</a></div></div>
 <div class="ttc" id="class_gravity_view___edit___entry___admin_html_a153f27c2ecd09c0dadfb8f61757ac6b2"><div class="ttname"><a href="class_gravity_view___edit___entry___admin.html#a153f27c2ecd09c0dadfb8f61757ac6b2">GravityView_Edit_Entry_Admin\__construct</a></div><div class="ttdeci">__construct(GravityView_Edit_Entry $loader)</div><div class="ttdef"><b>Definition:</b> <a href="class-edit-entry-admin_8php_source.html#l00021">class-edit-entry-admin.php:21</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.10
-</small></address>
+<hr class="footer"/>
+<script type="text/javascript">
+    jQuery( document ).ready( function( $ ) {
+        // Generate anchors for each filter and action
+        $( 'dl.reflist > dd > code' ).each( function( index ) {
+            // Similar to sanitize_title()
+            var link = $( this ).text().replace( /[^A-Za-z-\_\/\.\{\$\}]+/g, "-" );
+            var $tag = $('<a>', {
+                'id': link,
+                'href': '#' + link,
+                'text': '#',
+                'class': 'anchor gv-anchor',
+            });
+            $( this ).after( $tag );
+        });
+    });
+</script>
 </body>
 </html>

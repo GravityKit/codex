@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.14.3</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -173,7 +173,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00031">31</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00147">create_preset_form()</a>, <a class="el" href="class-ajax_8php_source.html#l00073">get_active_areas()</a>, <a class="el" href="class-ajax_8php_source.html#l00044">get_available_fields_html()</a>, <a class="el" href="class-ajax_8php_source.html#l00212">get_field_options()</a>, <a class="el" href="class-ajax_8php_source.html#l00095">get_preset_fields_config()</a>, and <a class="el" href="class-ajax_8php_source.html#l00243">get_sortable_fields()</a>.</p>
+<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00151">create_preset_form()</a>, <a class="el" href="class-ajax_8php_source.html#l00073">get_active_areas()</a>, <a class="el" href="class-ajax_8php_source.html#l00044">get_available_fields_html()</a>, <a class="el" href="class-ajax_8php_source.html#l00216">get_field_options()</a>, <a class="el" href="class-ajax_8php_source.html#l00097">get_preset_fields_config()</a>, and <a class="el" href="class-ajax_8php_source.html#l00249">get_sortable_fields()</a>.</p>
 
 </div>
 </div>
@@ -193,9 +193,9 @@ Static Public Member Functions</h2></td></tr>
 <p>Create the preset form requested before the View save. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00147">147</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
+<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00151">151</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
 
-<p>References <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, and <a class="el" href="class-ajax_8php_source.html#l00179">import_form()</a>.</p>
+<p>References <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, and <a class="el" href="class-ajax_8php_source.html#l00183">import_form()</a>.</p>
 
 </div>
 </div>
@@ -239,7 +239,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00044">44</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
 
-<p>References <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, and <a class="el" href="class-ajax_8php_source.html#l00269">pre_get_form_fields()</a>.</p>
+<p>References <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, and <a class="el" href="class-ajax_8php_source.html#l00277">pre_get_form_fields()</a>.</p>
 
 </div>
 </div>
@@ -259,9 +259,9 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns field options - called by ajax when dropping fields into active areas AJAX callback. </p>
 <p>public </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00212">212</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
+<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00216">216</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00164">GravityView_Render_Settings\render_field_options()</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, <a class="el" href="helper-functions_8php_source.html#l00079">gravityview_strip_whitespace()</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00164">GravityView_Render_Settings\render_field_options()</a>.</p>
 
 </div>
 </div>
@@ -281,9 +281,9 @@ Static Public Member Functions</h2></td></tr>
 <p>Fill in active areas with preset configuration according to the template selected. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00095">95</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
+<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00097">97</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
 
-<p>References <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, <a class="el" href="gravityview_8php_source.html#l00340">GravityView_Plugin\get_default_widget_areas()</a>, and <a class="el" href="class-ajax_8php_source.html#l00333">import_fields()</a>.</p>
+<p>References <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, <a class="el" href="gravityview_8php_source.html#l00340">GravityView_Plugin\get_default_widget_areas()</a>, and <a class="el" href="class-ajax_8php_source.html#l00341">import_fields()</a>.</p>
 
 </div>
 </div>
@@ -303,9 +303,9 @@ Static Public Member Functions</h2></td></tr>
 <p>Given a View id, calculates the assigned form, and returns the form fields (only the sortable ones ) AJAX callback. </p>
 <p>public </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00243">243</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
+<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00249">249</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
 
-<p>References <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, <a class="el" href="connector-functions_8php_source.html#l00247">gravityview_get_sortable_fields()</a>, and <a class="el" href="class-ajax_8php_source.html#l00269">pre_get_form_fields()</a>.</p>
+<p>References <a class="el" href="class-ajax_8php_source.html#l00031">check_ajax_nonce()</a>, <a class="el" href="connector-functions_8php_source.html#l00264">gravityview_get_sortable_fields()</a>, <a class="el" href="helper-functions_8php_source.html#l00079">gravityview_strip_whitespace()</a>, and <a class="el" href="class-ajax_8php_source.html#l00277">pre_get_form_fields()</a>.</p>
 
 </div>
 </div>
@@ -332,11 +332,11 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Fields config array (unserialized) </dd></dl>
 
-<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00333">333</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
+<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00341">341</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
 
 <p>References <a class="el" href="gravityview_8php_source.html#l00050">GRAVITYVIEW_DIR</a>.</p>
 
-<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00095">get_preset_fields_config()</a>.</p>
+<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00097">get_preset_fields_config()</a>.</p>
 
 </div>
 </div>
@@ -363,11 +363,11 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int | bool Imported form ID or false </dd></dl>
 
-<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00179">179</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
+<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00183">183</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
 
 <p>References <a class="el" href="data-source_8php_source.html#l00016">$forms</a>.</p>
 
-<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00147">create_preset_form()</a>.</p>
+<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00151">create_preset_form()</a>.</p>
 
 </div>
 </div>
@@ -401,11 +401,11 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00269">269</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
+<p>Definition at line <a class="el" href="class-ajax_8php_source.html#l00277">277</a> of file <a class="el" href="class-ajax_8php_source.html">class-ajax.php</a>.</p>
 
 <p>References <a class="el" href="data-source_8php_source.html#l00016">$forms</a>.</p>
 
-<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00044">get_available_fields_html()</a>, <a class="el" href="class-search-widget_8php_source.html#l00162">GravityView_Widget_Search\get_searchable_fields()</a>, <a class="el" href="class-ajax_8php_source.html#l00243">get_sortable_fields()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00693">GravityView_Admin_Views\render_active_areas()</a>.</p>
+<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00044">get_available_fields_html()</a>, <a class="el" href="class-search-widget_8php_source.html#l00176">GravityView_Widget_Search\get_searchable_fields()</a>, <a class="el" href="class-ajax_8php_source.html#l00249">get_sortable_fields()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00724">GravityView_Admin_Views\render_active_areas()</a>.</p>
 
 </div>
 </div>
@@ -414,10 +414,22 @@ Static Public Member Functions</h2></td></tr>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.10
-</small></address>
+<hr class="footer"/>
+<script type="text/javascript">
+    jQuery( document ).ready( function( $ ) {
+        // Generate anchors for each filter and action
+        $( 'dl.reflist > dd > code' ).each( function( index ) {
+            // Similar to sanitize_title()
+            var link = $( this ).text().replace( /[^A-Za-z-\_\/\.\{\$\}]+/g, "-" );
+            var $tag = $('<a>', {
+                'id': link,
+                'href': '#' + link,
+                'text': '#',
+                'class': 'anchor gv-anchor',
+            });
+            $( this ).after( $tag );
+        });
+    });
+</script>
 </body>
 </html>

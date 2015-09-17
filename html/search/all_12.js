@@ -73,7 +73,7 @@ var searchData=
   ['settings_5fsave',['settings_save',['../class_gravity_view___settings.html#ac3ffb05ff639ff10b585c926a6de4f95',1,'GravityView_Settings']]],
   ['settings_5fsubmit',['settings_submit',['../class_gravity_view___settings.html#a04d82f1230522b3149eae4449c5dba68',1,'GravityView_Settings']]],
   ['settotalentries',['setTotalEntries',['../class_gravity_view___view.html#a51012d49b88138cee7ca4a9584c6a835',1,'GravityView_View']]],
-  ['setup',['setUp',['../class_gravity_view___a_p_i___test.html#a0bc688732d2b3b162ffebaf7812e78da',1,'GravityView_API_Test\setUp()'],['../class_gravity_view___connector___functions___test.html#a0bc688732d2b3b162ffebaf7812e78da',1,'GravityView_Connector_Functions_Test\setUp()']]],
+  ['setup',['setUp',['../class_gravity_view___a_p_i___test.html#a0bc688732d2b3b162ffebaf7812e78da',1,'GravityView_API_Test']]],
   ['setup_5fedd',['setup_edd',['../class_g_v___license___handler.html#a2e641cc3ca11796230a42d6865000de2',1,'GV_License_Handler']]],
   ['setup_5foperation_5fand_5fcomparison',['setup_operation_and_comparison',['../class_g_v_logic___shortcode.html#acbff788b9ad8e7af1a47d6a11eaa048f',1,'GVLogic_Shortcode']]],
   ['setup_5fvars',['setup_vars',['../class_gravity_view___edit___entry___render.html#acf78ac4e7e486c5ae4e7a3696604bb2d',1,'GravityView_Edit_Entry_Render']]],
@@ -90,6 +90,6 @@ var searchData=
   ['sort_2dfilter_2ephp',['sort-filter.php',['../sort-filter_8php.html',1,'']]],
   ['source_2durl_2ephp',['source-url.php',['../source-url_8php.html',1,'']]],
   ['source_5furl_2ephp',['source_url.php',['../source__url_8php.html',1,'']]],
-  ['strings',['strings',['../class_g_v___license___handler.html#ab4bb03961be4e19044ad16e79e138fd5',1,'GV_License_Handler']]],
+  ['strings',['strings',['../class_g_v___license___handler.html#aa83e7c8f2de96e83b4ff24c9f95cbeaa',1,'GV_License_Handler']]],
   ['styles',['styles',['../class_gravity_view___settings.html#a53d31780f290c90071a213e9f786abb3',1,'GravityView_Settings']]]
 ];

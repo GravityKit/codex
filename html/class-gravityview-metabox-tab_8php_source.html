@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.14.3</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -243,13 +243,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="comment">// If the full path exists, use it</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordflow">if</span>( file_exists( $file ) ) {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <a class="code" href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">$path</a> = $file;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                $path = $file;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <a class="code" href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">$path</a> = <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> .<span class="stringliteral">&#39;includes/admin/metaboxes/views/&#39;</span>.$file;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                $path = <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> .<span class="stringliteral">&#39;includes/admin/metaboxes/views/&#39;</span>.$file;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            }</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">if</span>( file_exists( <a class="code" href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">$path</a> ) ) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                include <a class="code" href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">$path</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">if</span>( file_exists( $path ) ) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                include $path;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                do_action( <span class="stringliteral">&#39;gravityview_log_error&#39;</span>, <span class="stringliteral">&#39;Metabox template file not found&#39;</span>, $this );</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            }</div>
@@ -272,7 +272,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
 <div class="ttc" id="gravityview_8php_html_a20e44631ea950946599dd5661090eb4d"><div class="ttname"><a href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a></div><div class="ttdeci">const GRAVITYVIEW_DIR</div><div class="ttdoc">The absolute path to the plugin directory  "GRAVITYVIEW_DIR" "./". </div><div class="ttdef"><b>Definition:</b> <a href="gravityview_8php_source.html#l00050">gravityview.php:50</a></div></div>
-<div class="ttc" id="bootstrap_8php_html_a0a4baf0b22973c07685c3981f0d17fc4"><div class="ttname"><a href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">$path</a></div><div class="ttdeci">$path</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00006">bootstrap.php:6</a></div></div>
 <div class="ttc" id="class_gravity_view___metabox___tab_html_a114556a66b451da536d988863d52380e"><div class="ttname"><a href="class_gravity_view___metabox___tab.html#a114556a66b451da536d988863d52380e">GravityView_Metabox_Tab\parse_icon_class_name</a></div><div class="ttdeci">parse_icon_class_name($icon_class_name= '')</div><div class="ttdoc">If the name of the CSS class has dashicon in it, add the dashicons prefix. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-metabox-tab_8php_source.html#l00119">class-gravityview-metabox-tab.php:119</a></div></div>
 <div class="ttc" id="class_gravity_view___metabox___tab_html_a09e8cf95b9d29955a0bfabca9b420edc"><div class="ttname"><a href="class_gravity_view___metabox___tab.html#a09e8cf95b9d29955a0bfabca9b420edc">GravityView_Metabox_Tab\$prefix</a></div><div class="ttdeci">$prefix</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-metabox-tab_8php_source.html#l00017">class-gravityview-metabox-tab.php:17</a></div></div>
 <div class="ttc" id="class_gravity_view___metabox___tab_html_a8bf6f8f11c8a00b63a8d99b5e3f59c03"><div class="ttname"><a href="class_gravity_view___metabox___tab.html#a8bf6f8f11c8a00b63a8d99b5e3f59c03">GravityView_Metabox_Tab\$icon_class_name</a></div><div class="ttdeci">$icon_class_name</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-metabox-tab_8php_source.html#l00085">class-gravityview-metabox-tab.php:85</a></div></div>
@@ -290,10 +289,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_gravity_view___metabox___tab_html_ada57e7bb7c152edad18fe2f166188691"><div class="ttname"><a href="class_gravity_view___metabox___tab.html#ada57e7bb7c152edad18fe2f166188691">GravityView_Metabox_Tab\$title</a></div><div class="ttdeci">$title</div><div class="ttdoc">Title of the meta box. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-metabox-tab_8php_source.html#l00031">class-gravityview-metabox-tab.php:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.10
-</small></address>
+<hr class="footer"/>
+<script type="text/javascript">
+    jQuery( document ).ready( function( $ ) {
+        // Generate anchors for each filter and action
+        $( 'dl.reflist > dd > code' ).each( function( index ) {
+            // Similar to sanitize_title()
+            var link = $( this ).text().replace( /[^A-Za-z-\_\/\.\{\$\}]+/g, "-" );
+            var $tag = $('<a>', {
+                'id': link,
+                'href': '#' + link,
+                'text': '#',
+                'class': 'anchor gv-anchor',
+            });
+            $( this ).after( $tag );
+        });
+    });
+</script>
 </body>
 </html>

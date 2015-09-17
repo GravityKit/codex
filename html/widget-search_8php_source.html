@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.14.3</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -142,23 +142,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="class_gravity_view___widget___search.html#ac32d7eea68f1e8fe229f1cf3f7cb88e2">GravityView_Widget_Search::the_clear_search_button</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            ?&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            &lt;input type=<span class="stringliteral">&quot;submit&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;button gv-search-button&quot;</span> <span class="keywordtype">id</span>=<span class="stringliteral">&quot;gv_search_button_&lt;?php echo $view_id; ?&gt;&quot;</span> value=<span class="stringliteral">&quot;&lt;?php esc_attr_e( &#39;Search&#39;, &#39;gravityview&#39; ); ?&gt;&quot;</span> /&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        &lt;/div&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="widget-search_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">   52</a></span>&#160;    &lt;?php <a class="code" href="widget-search_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a>; ?&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;&lt;/form&gt;</div>
-<div class="ttc" id="widget-search_8php_html_a82cd33ca97ff99f2fcc5e9c81d65251b"><div class="ttname"><a href="widget-search_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a></div><div class="ttdeci">endif</div><div class="ttdef"><b>Definition:</b> <a href="widget-search_8php_source.html#l00052">widget-search.php:52</a></div></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            &lt;input type=<span class="stringliteral">&quot;hidden&quot;</span> name=<span class="stringliteral">&quot;mode&quot;</span> value=<span class="stringliteral">&quot;&lt;?php echo esc_attr( $gravityview_view-&gt;search_mode ); ?&gt;&quot;</span> /&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            &lt;input type=<span class="stringliteral">&quot;submit&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;button gv-search-button&quot;</span> <span class="keywordtype">id</span>=<span class="stringliteral">&quot;gv_search_button_&lt;?php echo $view_id; ?&gt;&quot;</span> value=<span class="stringliteral">&quot;&lt;?php esc_attr_e( &#39;Search&#39;, &#39;gravityview&#39; ); ?&gt;&quot;</span> /&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        &lt;/div&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="widget-search_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">   53</a></span>&#160;    &lt;?php <a class="code" href="widget-search_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a>; ?&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;&lt;/form&gt;</div>
+<div class="ttc" id="widget-search_8php_html_a82cd33ca97ff99f2fcc5e9c81d65251b"><div class="ttname"><a href="widget-search_8php.html#a82cd33ca97ff99f2fcc5e9c81d65251b">endif</a></div><div class="ttdeci">endif</div><div class="ttdef"><b>Definition:</b> <a href="widget-search_8php_source.html#l00053">widget-search.php:53</a></div></div>
 <div class="ttc" id="search-field-checkbox_8php_html_a9913ca109e1ddeeac975b3e2c8a8d92c"><div class="ttname"><a href="search-field-checkbox_8php.html#a9913ca109e1ddeeac975b3e2c8a8d92c">$search_field</a></div><div class="ttdeci">$search_field</div><div class="ttdef"><b>Definition:</b> <a href="search-field-checkbox_8php_source.html#l00010">search-field-checkbox.php:10</a></div></div>
 <div class="ttc" id="widget-search_8php_html_a521fd441a5ad4952b00a1591a4d4590d"><div class="ttname"><a href="widget-search_8php.html#a521fd441a5ad4952b00a1591a4d4590d">$view_id</a></div><div class="ttdeci">$view_id</div><div class="ttdef"><b>Definition:</b> <a href="widget-search_8php_source.html#l00010">widget-search.php:10</a></div></div>
 <div class="ttc" id="widget-search_8php_html_aab764dac28c0829baf0006d2b6e1a24a"><div class="ttname"><a href="widget-search_8php.html#aab764dac28c0829baf0006d2b6e1a24a">$has_inputs</a></div><div class="ttdeci">$has_inputs</div><div class="ttdef"><b>Definition:</b> <a href="widget-search_8php_source.html#l00012">widget-search.php:12</a></div></div>
 <div class="ttc" id="class_gravity_view___view_html_a76cf4523dbaebd58c27db806e01b73d9"><div class="ttname"><a href="class_gravity_view___view.html#a76cf4523dbaebd58c27db806e01b73d9">GravityView_View\getInstance</a></div><div class="ttdeci">static getInstance($passed_post=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="class-template_8php_source.html#l00190">class-template.php:190</a></div></div>
 <div class="ttc" id="widget-search_8php_html_add47a7f886e74847997a4044e9903a0a"><div class="ttname"><a href="widget-search_8php.html#add47a7f886e74847997a4044e9903a0a">$gravityview_view</a></div><div class="ttdeci">$gravityview_view</div><div class="ttdoc">Display the Search widget. </div><div class="ttdef"><b>Definition:</b> <a href="widget-search_8php_source.html#l00008">widget-search.php:8</a></div></div>
-<div class="ttc" id="class_gravity_view___widget___search_html_ac32d7eea68f1e8fe229f1cf3f7cb88e2"><div class="ttname"><a href="class_gravity_view___widget___search.html#ac32d7eea68f1e8fe229f1cf3f7cb88e2">GravityView_Widget_Search\the_clear_search_button</a></div><div class="ttdeci">static the_clear_search_button()</div><div class="ttdoc">Output the Clear Search Results button. </div><div class="ttdef"><b>Definition:</b> <a href="class-search-widget_8php_source.html#l00912">class-search-widget.php:912</a></div></div>
+<div class="ttc" id="class_gravity_view___widget___search_html_ac32d7eea68f1e8fe229f1cf3f7cb88e2"><div class="ttname"><a href="class_gravity_view___widget___search.html#ac32d7eea68f1e8fe229f1cf3f7cb88e2">GravityView_Widget_Search\the_clear_search_button</a></div><div class="ttdeci">static the_clear_search_button()</div><div class="ttdoc">Output the Clear Search Results button. </div><div class="ttdef"><b>Definition:</b> <a href="class-search-widget_8php_source.html#l00954">class-search-widget.php:954</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.10
-</small></address>
+<hr class="footer"/>
+<script type="text/javascript">
+    jQuery( document ).ready( function( $ ) {
+        // Generate anchors for each filter and action
+        $( 'dl.reflist > dd > code' ).each( function( index ) {
+            // Similar to sanitize_title()
+            var link = $( this ).text().replace( /[^A-Za-z-\_\/\.\{\$\}]+/g, "-" );
+            var $tag = $('<a>', {
+                'id': link,
+                'href': '#' + link,
+                'text': '#',
+                'class': 'anchor gv-anchor',
+            });
+            $( this ).after( $tag );
+        });
+    });
+</script>
 </body>
 </html>

@@ -14,5 +14,6 @@ var searchData=
   ['modify_5fedit_5ffield_5finput',['modify_edit_field_input',['../class_gravity_view___edit___entry___render.html#abfaae7493bc5a7506a1c0125103a58c4',1,'GravityView_Edit_Entry_Render']]],
   ['modify_5ffield_5fblacklist',['modify_field_blacklist',['../class_gravity_view___edit___entry.html#aaa29af9470fda6fe3804cf92acb50d87',1,'GravityView_Edit_Entry']]],
   ['modify_5ffileupload_5fsettings',['modify_fileupload_settings',['../class_gravity_view___edit___entry___render.html#a58b74dc96b265bebc7a7db049846fb60',1,'GravityView_Edit_Entry_Render']]],
+  ['modify_5fsort_5fid',['modify_sort_id',['../class_gravity_view___field___time.html#a6735c4bc8af97f25dac451d46e3ae6d9',1,'GravityView_Field_Time']]],
   ['modify_5fvisibility_5fcaps',['modify_visibility_caps',['../class_gravity_view___delete___entry.html#ab9da0ca9fb04870db70e9145595a4570',1,'GravityView_Delete_Entry\modify_visibility_caps()'],['../class_gravity_view___edit___entry___admin.html#ab9da0ca9fb04870db70e9145595a4570',1,'GravityView_Edit_Entry_Admin\modify_visibility_caps()']]]
 ];

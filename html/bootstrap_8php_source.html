@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.14.3</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -93,35 +93,243 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">bootstrap.php</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="bootstrap_8php.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;ob_start();</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//change this to your path</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">    6</a></span>&#160;<a class="code" href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">$path</a> = <span class="stringliteral">&#39;/Users/zackkatz/Sites/wordpress-develop/tests/phpunit/includes/bootstrap.php&#39;</span>;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordflow">if</span> (file_exists(<a class="code" href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">$path</a>)) {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    $GLOBALS[<span class="stringliteral">&#39;wp_tests_options&#39;</span>] = array(</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="stringliteral">&#39;active_plugins&#39;</span> =&gt; array(</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            <span class="stringliteral">&#39;gravityforms/gravityforms.php&#39;</span>,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            <span class="stringliteral">&#39;gravityview/gravityview.php&#39;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        )</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    );</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    require_once <a class="code" href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">$path</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="bootstrap_8php.html#a0160563c5cda5da376a3ede82fa747bf">   17</a></span>&#160;} <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    exit(<span class="stringliteral">&quot;Couldn&#39;t find wordpress-tests/bootstrap.php\n&quot;</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;require_once dirname( __FILE__ ) . <span class="stringliteral">&#39;/../gravityview.php&#39;</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;require_once dirname( __FILE__ ) . <span class="stringliteral">&#39;/../../gravityforms/gravityforms.php&#39;</span>;</div>
-<div class="ttc" id="bootstrap_8php_html_a0a4baf0b22973c07685c3981f0d17fc4"><div class="ttname"><a href="bootstrap_8php.html#a0a4baf0b22973c07685c3981f0d17fc4">$path</a></div><div class="ttdeci">$path</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00006">bootstrap.php:6</a></div></div>
+<a href="bootstrap_8php.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php<span class="comment"></span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * GravityView Unit Tests Bootstrap</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @since 1.9</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_v___unit___tests___bootstrap.html">GV_Unit_Tests_Bootstrap</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    /** @var \GV_Unit_Tests_Bootstrap instance */</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#ad9d7ce33ebb142b70e58b68052ca0ea8">   10</a></span>&#160;    <span class="keyword">protected</span> <span class="keyword">static</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#ad9d7ce33ebb142b70e58b68052ca0ea8">$instance</a> = null;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    /** @var string directory where wordpress-tests-lib is installed */</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a45c5470d88cf3f0a390b3b8b5b2f05ae">   13</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a45c5470d88cf3f0a390b3b8b5b2f05ae">$wp_tests_dir</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    /** @var string testing directory */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#ac0ce9293fb745cb05ac23ad3087c9223">   16</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#ac0ce9293fb745cb05ac23ad3087c9223">$tests_dir</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    /** @var string plugin directory */</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a99811555b30bde504a863e44015f2f19">   19</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a99811555b30bde504a863e44015f2f19">$plugin_dir</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">     * @var int</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a35eb3ca12f91d2be7816830c813a8b84">   24</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a35eb3ca12f91d2be7816830c813a8b84">$form_id</a> = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * @var array GF Form array</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a1a4fda4c28a9ee5f91102c023b9501f4">   29</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a1a4fda4c28a9ee5f91102c023b9501f4">$form</a> = array();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * @var int</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a7fdd8b367db71e533701ccd1754119de">   34</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a7fdd8b367db71e533701ccd1754119de">$entry_id</a> = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * @var array GF Entry array</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a5291dff564984cdb59d278ef6c471d80">   39</a></span>&#160;    <span class="keyword">private</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a5291dff564984cdb59d278ef6c471d80">$entry</a> = array();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     * Setup the unit testing environment</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     * @since 1.9</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a095c5d389db211932136b53f25f39685">   46</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a095c5d389db211932136b53f25f39685">__construct</a>() {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        ini_set( <span class="stringliteral">&#39;display_errors&#39;</span>, <span class="stringliteral">&#39;on&#39;</span> );</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        error_reporting( E_ALL );</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        $this-&gt;tests_dir    = dirname( __FILE__ );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        $this-&gt;plugin_dir   = dirname( $this-&gt;tests_dir );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        $this-&gt;wp_tests_dir = getenv( <span class="stringliteral">&#39;WP_TESTS_DIR&#39;</span> ) ? getenv( <span class="stringliteral">&#39;WP_TESTS_DIR&#39;</span> ) : $this-&gt;plugin_dir . <span class="stringliteral">&#39;/tmp/wordpress-tests-lib&#39;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// load test function so tests_add_filter() is available</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        require_once $this-&gt;wp_tests_dir . <span class="stringliteral">&#39;/includes/functions.php&#39;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// load GV</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        tests_add_filter( <span class="stringliteral">&#39;muplugins_loaded&#39;</span>, array( $this, <span class="stringliteral">&#39;load&#39;</span> ) );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// load the WP testing environment</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        require_once( $this-&gt;wp_tests_dir . <span class="stringliteral">&#39;/includes/bootstrap.php&#39;</span> );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// set up Gravity View</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        $this-&gt;<a class="code" href="class_g_v___unit___tests___bootstrap.html#aa966adc12c56a4cc70da92207fa50929">install</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     * Load GravityView</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">     * @since 1.9</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a4dcaa8f72c8423d4de25a9e87fa6f3e4">   72</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a>() {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        require_once $this-&gt;plugin_dir . <span class="stringliteral">&#39;/tmp/gravityforms/gravityforms.php&#39;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        require_once $this-&gt;plugin_dir . <span class="stringliteral">&#39;/gravityview.php&#39;</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// set up Gravity Forms database</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        @GFForms::setup( <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        $this-&gt;<a class="code" href="class_g_v___unit___tests___bootstrap.html#afba0e5a4faac8297ac1b9d9e597d5eee">create_stubs</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">     * @return array</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a269a3d9695649bfc3fe7d864a3bd753b">   85</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a269a3d9695649bfc3fe7d864a3bd753b">get_form</a>() {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a1a4fda4c28a9ee5f91102c023b9501f4">$this-&gt;form</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">     * @return array</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a5aed041b88250ae85fb4347549fff7a4">   92</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a5aed041b88250ae85fb4347549fff7a4">get_entry</a>() {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a5291dff564984cdb59d278ef6c471d80">$this-&gt;entry</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">     * @return int</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a34e2774688e1ac8e0af1512b4494078a">   99</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a34e2774688e1ac8e0af1512b4494078a">get_entry_id</a>() {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a7fdd8b367db71e533701ccd1754119de">$this-&gt;entry_id</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">     * @return int</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#af41ce79987671f354f92004ac344513d">  106</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#af41ce79987671f354f92004ac344513d">get_form_id</a>() {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a35eb3ca12f91d2be7816830c813a8b84">$this-&gt;form_id</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">     * Generate some placeholder values to test against</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#afba0e5a4faac8297ac1b9d9e597d5eee">  113</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#afba0e5a4faac8297ac1b9d9e597d5eee">create_stubs</a>() {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        $this-&gt;form_id = GFAPI::add_form( array(</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="stringliteral">&#39;title&#39;</span> =&gt; <span class="stringliteral">&#39;This is the form title&#39;</span>,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="stringliteral">&#39;fields&#39;</span> =&gt; array(</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keyword">new</span> GF_Field_Text(array(</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    <span class="stringliteral">&#39;id&#39;</span> =&gt; 1,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    <span class="stringliteral">&#39;label&#39;</span> =&gt; <span class="stringliteral">&#39;Label for field one (text)&#39;</span>,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    <span class="stringliteral">&#39;choices&#39;</span> =&gt; array(),</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    <span class="stringliteral">&#39;inputs&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                )),</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keyword">new</span> GF_Field_Hidden(array(</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    <span class="stringliteral">&#39;id&#39;</span> =&gt; 2,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    <span class="stringliteral">&#39;label&#39;</span> =&gt; <span class="stringliteral">&#39;Label for field two (hidden)&#39;</span>,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    <span class="stringliteral">&#39;choices&#39;</span> =&gt; array(),</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="stringliteral">&#39;inputs&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                )),</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keyword">new</span> GF_Field_Number(array(</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    <span class="stringliteral">&#39;id&#39;</span> =&gt; 3,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    <span class="stringliteral">&#39;label&#39;</span> =&gt; <span class="stringliteral">&#39;Label for field three (number)&#39;</span>,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    <span class="stringliteral">&#39;choices&#39;</span> =&gt; array(),</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    <span class="stringliteral">&#39;inputs&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                ))</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            ),</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        ));</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        $this-&gt;form = GFAPI::get_form( $this-&gt;form_id );</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        $entry_array = array(</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="stringliteral">&#39;form_id&#39;</span> =&gt; $this-&gt;form_id,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="charliteral">&#39;1&#39;</span> =&gt; <span class="stringliteral">&#39;Value for field one&#39;</span>,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="charliteral">&#39;2&#39;</span> =&gt; <span class="stringliteral">&#39;Value for field two&#39;</span>,</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="charliteral">&#39;3&#39;</span> =&gt; <span class="stringliteral">&#39;3.33333&#39;</span>,</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="stringliteral">&#39;ip&#39;</span> =&gt; <span class="stringliteral">&#39;127.0.0.1&#39;</span>,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="stringliteral">&#39;source_url&#39;</span> =&gt; <span class="stringliteral">&#39;http://example.com/wordpress/?gf_page=preview&amp;id=16&#39;</span>,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="stringliteral">&#39;user_agent&#39;</span> =&gt; <span class="stringliteral">&#39;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.78.2 (KHTML, like Gecko) Version/7.0.6 Safari/537.78.2&#39;</span>,</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="stringliteral">&#39;payment_status&#39;</span> =&gt; <span class="stringliteral">&#39;Processing&#39;</span>,</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="stringliteral">&#39;payment_date&#39;</span> =&gt; <span class="stringliteral">&#39;2014-08-29 20:55:06&#39;</span>,</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="stringliteral">&#39;payment_amount&#39;</span> =&gt; <span class="stringliteral">&#39;0.01&#39;</span>,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="stringliteral">&#39;transaction_id&#39;</span> =&gt; <span class="stringliteral">&#39;asdfpaoj442gpoagfadf&#39;</span>,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="stringliteral">&#39;created_by&#39;</span> =&gt; 1,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="stringliteral">&#39;status&#39;</span> =&gt; <span class="stringliteral">&#39;active&#39;</span>,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="stringliteral">&#39;date_created&#39;</span> =&gt; <span class="stringliteral">&#39;2014-08-29 18:25:39&#39;</span>,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        );</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        $this-&gt;entry_id = GFAPI::add_entry( $entry_array );</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        $this-&gt;entry = GFAPI::get_entry( $this-&gt;entry_id );</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">     * Setup all Gravity View&#39;s files</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">     * @since 1.9</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#aa966adc12c56a4cc70da92207fa50929">  169</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#aa966adc12c56a4cc70da92207fa50929">install</a>() {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        $GV = <a class="code" href="class_gravity_view___plugin.html#ac93fbec81f07e5d15f80db907e63dc10">GravityView_Plugin::getInstance</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        $GV-&gt;frontend_actions();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">     * Get the single class instance</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">     * @since 1.9</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">     * @return GV_Unit_Tests_Bootstrap</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_g_v___unit___tests___bootstrap.html#a0deb004950b8dc4f51836316fd19c111">  180</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="class_g_v___unit___tests___bootstrap.html#a0deb004950b8dc4f51836316fd19c111">instance</a>() {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span> ( is_null( self::$instance ) ) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            self::$instance = <span class="keyword">new</span> <span class="keyword">self</span>();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">return</span> self::$instance;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<a class="code" href="class_g_v___unit___tests___bootstrap.html#a0deb004950b8dc4f51836316fd19c111">GV_Unit_Tests_Bootstrap::instance</a>();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">/* Clean up the GF Database when we&#39;re done */</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;register_shutdown_function( <span class="stringliteral">&#39;gravityview_shutdown&#39;</span> );</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">/* Shutdown function wasn&#39;t working when referenced via array( $this, &#39;shutdown&#39; ) from the object */</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="bootstrap_8php.html#a5148ab3fe066c9b09808efe7eda98a78">  197</a></span>&#160;<span class="keyword">function</span> <a class="code" href="bootstrap_8php.html#a5148ab3fe066c9b09808efe7eda98a78">gravityview_shutdown</a>() {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    RGFormsModel::drop_tables();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a1a4fda4c28a9ee5f91102c023b9501f4"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a1a4fda4c28a9ee5f91102c023b9501f4">GV_Unit_Tests_Bootstrap\$form</a></div><div class="ttdeci">$form</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00029">bootstrap.php:29</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_aa966adc12c56a4cc70da92207fa50929"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#aa966adc12c56a4cc70da92207fa50929">GV_Unit_Tests_Bootstrap\install</a></div><div class="ttdeci">install()</div><div class="ttdoc">Setup all Gravity View&#39;s files. </div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00169">bootstrap.php:169</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a99811555b30bde504a863e44015f2f19"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a99811555b30bde504a863e44015f2f19">GV_Unit_Tests_Bootstrap\$plugin_dir</a></div><div class="ttdeci">$plugin_dir</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00019">bootstrap.php:19</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_ac0ce9293fb745cb05ac23ad3087c9223"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#ac0ce9293fb745cb05ac23ad3087c9223">GV_Unit_Tests_Bootstrap\$tests_dir</a></div><div class="ttdeci">$tests_dir</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00016">bootstrap.php:16</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a34e2774688e1ac8e0af1512b4494078a"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a34e2774688e1ac8e0af1512b4494078a">GV_Unit_Tests_Bootstrap\get_entry_id</a></div><div class="ttdeci">get_entry_id()</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00099">bootstrap.php:99</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_afba0e5a4faac8297ac1b9d9e597d5eee"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#afba0e5a4faac8297ac1b9d9e597d5eee">GV_Unit_Tests_Bootstrap\create_stubs</a></div><div class="ttdeci">create_stubs()</div><div class="ttdoc">Generate some placeholder values to test against. </div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00113">bootstrap.php:113</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a45c5470d88cf3f0a390b3b8b5b2f05ae"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a45c5470d88cf3f0a390b3b8b5b2f05ae">GV_Unit_Tests_Bootstrap\$wp_tests_dir</a></div><div class="ttdeci">$wp_tests_dir</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00013">bootstrap.php:13</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a4dcaa8f72c8423d4de25a9e87fa6f3e4"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a4dcaa8f72c8423d4de25a9e87fa6f3e4">GV_Unit_Tests_Bootstrap\load</a></div><div class="ttdeci">load()</div><div class="ttdoc">Load GravityView. </div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00072">bootstrap.php:72</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a35eb3ca12f91d2be7816830c813a8b84"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a35eb3ca12f91d2be7816830c813a8b84">GV_Unit_Tests_Bootstrap\$form_id</a></div><div class="ttdeci">$form_id</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00024">bootstrap.php:24</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_ad9d7ce33ebb142b70e58b68052ca0ea8"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#ad9d7ce33ebb142b70e58b68052ca0ea8">GV_Unit_Tests_Bootstrap\$instance</a></div><div class="ttdeci">static $instance</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00010">bootstrap.php:10</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_af41ce79987671f354f92004ac344513d"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#af41ce79987671f354f92004ac344513d">GV_Unit_Tests_Bootstrap\get_form_id</a></div><div class="ttdeci">get_form_id()</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00106">bootstrap.php:106</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a7fdd8b367db71e533701ccd1754119de"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a7fdd8b367db71e533701ccd1754119de">GV_Unit_Tests_Bootstrap\$entry_id</a></div><div class="ttdeci">$entry_id</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00034">bootstrap.php:34</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a095c5d389db211932136b53f25f39685"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a095c5d389db211932136b53f25f39685">GV_Unit_Tests_Bootstrap\__construct</a></div><div class="ttdeci">__construct()</div><div class="ttdoc">Setup the unit testing environment. </div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00046">bootstrap.php:46</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a269a3d9695649bfc3fe7d864a3bd753b"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a269a3d9695649bfc3fe7d864a3bd753b">GV_Unit_Tests_Bootstrap\get_form</a></div><div class="ttdeci">get_form()</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00085">bootstrap.php:85</a></div></div>
+<div class="ttc" id="class_gravity_view___plugin_html_ac93fbec81f07e5d15f80db907e63dc10"><div class="ttname"><a href="class_gravity_view___plugin.html#ac93fbec81f07e5d15f80db907e63dc10">GravityView_Plugin\getInstance</a></div><div class="ttdeci">static getInstance()</div><div class="ttdoc">Singleton instance. </div><div class="ttdef"><b>Definition:</b> <a href="gravityview_8php_source.html#l00101">gravityview.php:101</a></div></div>
+<div class="ttc" id="bootstrap_8php_html_a5148ab3fe066c9b09808efe7eda98a78"><div class="ttname"><a href="bootstrap_8php.html#a5148ab3fe066c9b09808efe7eda98a78">gravityview_shutdown</a></div><div class="ttdeci">gravityview_shutdown()</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00197">bootstrap.php:197</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a5291dff564984cdb59d278ef6c471d80"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a5291dff564984cdb59d278ef6c471d80">GV_Unit_Tests_Bootstrap\$entry</a></div><div class="ttdeci">$entry</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00039">bootstrap.php:39</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html">GV_Unit_Tests_Bootstrap</a></div><div class="ttdoc">GravityView Unit Tests Bootstrap. </div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00007">bootstrap.php:7</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a5aed041b88250ae85fb4347549fff7a4"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a5aed041b88250ae85fb4347549fff7a4">GV_Unit_Tests_Bootstrap\get_entry</a></div><div class="ttdeci">get_entry()</div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00092">bootstrap.php:92</a></div></div>
+<div class="ttc" id="class_g_v___unit___tests___bootstrap_html_a0deb004950b8dc4f51836316fd19c111"><div class="ttname"><a href="class_g_v___unit___tests___bootstrap.html#a0deb004950b8dc4f51836316fd19c111">GV_Unit_Tests_Bootstrap\instance</a></div><div class="ttdeci">static instance()</div><div class="ttdoc">Get the single class instance. </div><div class="ttdef"><b>Definition:</b> <a href="bootstrap_8php_source.html#l00180">bootstrap.php:180</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.10
-</small></address>
+<hr class="footer"/>
+<script type="text/javascript">
+    jQuery( document ).ready( function( $ ) {
+        // Generate anchors for each filter and action
+        $( 'dl.reflist > dd > code' ).each( function( index ) {
+            // Similar to sanitize_title()
+            var link = $( this ).text().replace( /[^A-Za-z-\_\/\.\{\$\}]+/g, "-" );
+            var $tag = $('<a>', {
+                'id': link,
+                'href': '#' + link,
+                'text': '#',
+                'class': 'anchor gv-anchor',
+            });
+            $( this ).after( $tag );
+        });
+    });
+</script>
 </body>
 </html>

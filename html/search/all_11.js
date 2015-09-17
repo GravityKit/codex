@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['readme',['readme',['../md___users_zackkatz__sites_vagrant-local_www_wordpress-default_wp-content_plugins_gravityview_readme.html',1,'']]],
   ['radio_2ephp',['radio.php',['../radio_8php.html',1,'']]],
-  ['readme_2emd',['readme.md',['../readme_8md.html',1,'']]],
   ['register_2dgravityview_2dwidgets_2ephp',['register-gravityview-widgets.php',['../register-gravityview-widgets_8php.html',1,'']]],
   ['register_2dwordpress_2dwidgets_2ephp',['register-wordpress-widgets.php',['../register-wordpress-widgets_8php.html',1,'']]],
   ['register_5fdefault_5ftemplates',['register_default_templates',['../class_gravity_view___plugin.html#a0826d9ff26200be7e450aa618e273476',1,'GravityView_Plugin']]],
@@ -54,5 +52,6 @@ var searchData=
   ['render_5fwidgets_5factive_5fareas',['render_widgets_active_areas',['../class_gravity_view___admin___views.html#a9007826c440eedfe762b7b791acde54f',1,'GravityView_Admin_Views']]],
   ['replace_5fuser_5fvariables_5fcreated_5fby',['replace_user_variables_created_by',['../class_gravity_view___merge___tags.html#a6bd1418b746cafd087f41a246b7db3f4',1,'GravityView_Merge_Tags']]],
   ['replace_5fvariables',['replace_variables',['../class_gravity_view___a_p_i.html#acf131abd5aba2047a9653344a90f15ca',1,'GravityView_API\replace_variables()'],['../class_gravity_view___merge___tags.html#acf131abd5aba2047a9653344a90f15ca',1,'GravityView_Merge_Tags\replace_variables()']]],
+  ['restore_5fuser_5fdetails',['restore_user_details',['../class_gravity_view___edit___entry___user___registration.html#a59ee82bf1ef29a625a9b31f957ef81ae',1,'GravityView_Edit_Entry_User_Registration']]],
   ['rr',['rr',['../inline-javascript_8php.html#aeb9279982226a42afdf2860dbdc29b45',1,'inline-javascript.php']]]
 ];

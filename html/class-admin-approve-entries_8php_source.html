@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.14.3</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -406,7 +406,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordflow">if</span>( class_exists( <span class="stringliteral">&#39;RGFormsModel&#39;</span> ) ){</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                global $current_user;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                get_currentuserinfo();</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                RGFormsModel::add_note( $entry_id, $current_user-&gt;ID, $current_user-&gt;display_name, $note );</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                RGFormsModel::add_note( $entry_id, $current_user-&gt;ID, $current_user-&gt;display_name, $note, <span class="stringliteral">&#39;gravityview&#39;</span> );</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            }</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">            /**</span></div>
@@ -574,7 +574,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div>
-<div class="line"><a name="l00482"></a><span class="lineno"><a class="line" href="class_gravity_view___admin___approve_entries.html#ac9ca9c4ae657652eaf8937d5aaf5bd8f">  482</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_gravity_view___admin___approve_entries.html#ac9ca9c4ae657652eaf8937d5aaf5bd8f">add_entry_approved_hidden_input</a>(  <a class="code" href="other__entries_8php.html#a61ce92a251f8ce1d28919fdfc3dd33a7">$form_id</a>, $field_id, <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a>, $entry, $query_string ) {</div>
+<div class="line"><a name="l00482"></a><span class="lineno"><a class="line" href="class_gravity_view___admin___approve_entries.html#ac9ca9c4ae657652eaf8937d5aaf5bd8f">  482</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_gravity_view___admin___approve_entries.html#ac9ca9c4ae657652eaf8937d5aaf5bd8f">add_entry_approved_hidden_input</a>(  <a class="code" href="other__entries_8php.html#a61ce92a251f8ce1d28919fdfc3dd33a7">$form_id</a>, <a class="code" href="templates_2fields_2time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a>, <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a>, $entry, $query_string ) {</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <span class="keywordflow">if</span>( empty( $entry[<span class="stringliteral">&#39;id&#39;</span>] ) ) {</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        }</div>
@@ -703,13 +703,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="gravityview_8php_html_aac65aafa1f7f9586c7c67ea81c3ba6e8"><div class="ttname"><a href="gravityview_8php.html#aac65aafa1f7f9586c7c67ea81c3ba6e8">GRAVITYVIEW_FILE</a></div><div class="ttdeci">const GRAVITYVIEW_FILE(!defined( 'ABSPATH'))</div><div class="ttdoc">If this file is called directly, abort. </div><div class="ttdef"><b>Definition:</b> <a href="gravityview_8php_source.html#l00039">gravityview.php:39</a></div></div>
 <div class="ttc" id="class_gravity_view___admin___approve_entries_html_a12ea7f5f39de38ea7917e6b0ca6a26fe"><div class="ttname"><a href="class_gravity_view___admin___approve_entries.html#a12ea7f5f39de38ea7917e6b0ca6a26fe">GravityView_Admin_ApproveEntries\update_approved_meta</a></div><div class="ttdeci">static update_approved_meta($entry_id, $is_approved)</div><div class="ttdoc">Update the is_approved entry meta value. </div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00370">class-admin-approve-entries.php:370</a></div></div>
 <div class="ttc" id="class_gravity_view___admin___approve_entries_html_ab4e7613622c97c84c15b80275cf99370"><div class="ttname"><a href="class_gravity_view___admin___approve_entries.html#ab4e7613622c97c84c15b80275cf99370">GravityView_Admin_ApproveEntries\tooltips</a></div><div class="ttdeci">tooltips($tooltips)</div><div class="ttdoc">Add the GravityView Fields group tooltip. </div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00062">class-admin-approve-entries.php:62</a></div></div>
-<div class="ttc" id="class_gravity_view__frontend_html_abeca7c0eb247f29be65c86e08c379ba0"><div class="ttname"><a href="class_gravity_view__frontend.html#abeca7c0eb247f29be65c86e08c379ba0">GravityView_frontend\get_search_criteria</a></div><div class="ttdeci">static get_search_criteria($args, $form_id)</div><div class="ttdoc">Parse search criteria for a entries search. </div><div class="ttdef"><b>Definition:</b> <a href="class-frontend-views_8php_source.html#l00819">class-frontend-views.php:819</a></div></div>
+<div class="ttc" id="class_gravity_view__frontend_html_abeca7c0eb247f29be65c86e08c379ba0"><div class="ttname"><a href="class_gravity_view__frontend.html#abeca7c0eb247f29be65c86e08c379ba0">GravityView_frontend\get_search_criteria</a></div><div class="ttdeci">static get_search_criteria($args, $form_id)</div><div class="ttdoc">Parse search criteria for a entries search. </div><div class="ttdef"><b>Definition:</b> <a href="class-frontend-views_8php_source.html#l00823">class-frontend-views.php:823</a></div></div>
 <div class="ttc" id="class_gravity_view___admin___approve_entries_html_ad47a353f9022e0f946c278d746667d19"><div class="ttname"><a href="class_gravity_view___admin___approve_entries.html#ad47a353f9022e0f946c278d746667d19">GravityView_Admin_ApproveEntries\register_gform_noconflict_style</a></div><div class="ttdeci">register_gform_noconflict_style($styles)</div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00589">class-admin-approve-entries.php:589</a></div></div>
 <div class="ttc" id="class_gravity_view___admin___approve_entries_html_a4b7efe04572accb64e1315e2a5394727"><div class="ttname"><a href="class_gravity_view___admin___approve_entries.html#a4b7efe04572accb64e1315e2a5394727">GravityView_Admin_ApproveEntries\after_update_entry_update_approved_meta</a></div><div class="ttdeci">static after_update_entry_update_approved_meta($form, $entry_id=NULL)</div><div class="ttdoc">Update the is_approved meta whenever the entry is updated. </div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00344">class-admin-approve-entries.php:344</a></div></div>
-<div class="ttc" id="connector-functions_8php_html_a1a521cff252fc3c06814ef17a0ed0753"><div class="ttname"><a href="connector-functions_8php.html#a1a521cff252fc3c06814ef17a0ed0753">gravityview_get_connected_views</a></div><div class="ttdeci">gravityview_get_connected_views($form_id)</div><div class="ttdoc">Get the views for a particular form. </div><div class="ttdef"><b>Definition:</b> <a href="connector-functions_8php_source.html#l00163">connector-functions.php:163</a></div></div>
+<div class="ttc" id="connector-functions_8php_html_a1a521cff252fc3c06814ef17a0ed0753"><div class="ttname"><a href="connector-functions_8php.html#a1a521cff252fc3c06814ef17a0ed0753">gravityview_get_connected_views</a></div><div class="ttdeci">gravityview_get_connected_views($form_id)</div><div class="ttdoc">Get the views for a particular form. </div><div class="ttdef"><b>Definition:</b> <a href="connector-functions_8php_source.html#l00164">connector-functions.php:164</a></div></div>
 <div class="ttc" id="class_gravity_view___admin___approve_entries_html_a09204942a0ff92131d10eeba65e886ea"><div class="ttname"><a href="class_gravity_view___admin___approve_entries.html#a09204942a0ff92131d10eeba65e886ea">GravityView_Admin_ApproveEntries\add_scripts_and_styles</a></div><div class="ttdeci">add_scripts_and_styles($hook)</div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00495">class-admin-approve-entries.php:495</a></div></div>
 <div class="ttc" id="class_gravity_view___admin___approve_entries_html_a4695ae16d25293de27fbe86da4443cd8"><div class="ttname"><a href="class_gravity_view___admin___approve_entries.html#a4695ae16d25293de27fbe86da4443cd8">GravityView_Admin_ApproveEntries\add_field_buttons</a></div><div class="ttdeci">add_field_buttons($field_groups)</div><div class="ttdoc">Inject new add field buttons in the gravity form editor page. </div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00080">class-admin-approve-entries.php:80</a></div></div>
 <div class="ttc" id="class_gravity_view___admin___approve_entries_html_af4177a6332fe9a80eea9b05684fe311f"><div class="ttname"><a href="class_gravity_view___admin___approve_entries.html#af4177a6332fe9a80eea9b05684fe311f">GravityView_Admin_ApproveEntries\get_approved_column</a></div><div class="ttdeci">static get_approved_column($form)</div><div class="ttdoc">Calculate the approve field.input id. </div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00447">class-admin-approve-entries.php:447</a></div></div>
+<div class="ttc" id="templates_2fields_2time_8php_html_a77957aab921d62a9e2d2783a4924e634"><div class="ttname"><a href="templates_2fields_2time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a></div><div class="ttdeci">$field_id</div><div class="ttdef"><b>Definition:</b> <a href="templates_2fields_2time_8php_source.html#l00017">templates/fields/time.php:17</a></div></div>
 <div class="ttc" id="class_gravity_view___admin___approve_entries_html_ac9ca9c4ae657652eaf8937d5aaf5bd8f"><div class="ttname"><a href="class_gravity_view___admin___approve_entries.html#ac9ca9c4ae657652eaf8937d5aaf5bd8f">GravityView_Admin_ApproveEntries\add_entry_approved_hidden_input</a></div><div class="ttdeci">static add_entry_approved_hidden_input($form_id, $field_id, $value, $entry, $query_string)</div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00482">class-admin-approve-entries.php:482</a></div></div>
 <div class="ttc" id="class_gravity_view___admin___approve_entries_html_a095c5d389db211932136b53f25f39685"><div class="ttname"><a href="class_gravity_view___admin___approve_entries.html#a095c5d389db211932136b53f25f39685">GravityView_Admin_ApproveEntries\__construct</a></div><div class="ttdeci">__construct()</div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00020">class-admin-approve-entries.php:20</a></div></div>
 <div class="ttc" id="connector-functions_8php_html_a21b69c693f0488686b3895a2e9ebc423"><div class="ttname"><a href="connector-functions_8php.html#a21b69c693f0488686b3895a2e9ebc423">gravityview_get_entry_ids</a></div><div class="ttdeci">gravityview_get_entry_ids($form_id, $search_criteria=array())</div><div class="ttdoc">Wrapper for the Gravity Forms GFFormsModel::search_lead_ids() method. </div><div class="ttdef"><b>Definition:</b> <a href="connector-functions_8php_source.html#l00077">connector-functions.php:77</a></div></div>
@@ -722,10 +723,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class-admin-approve-entries_8php_html_ae8caf4424cbc46584d4fe541247497a9"><div class="ttname"><a href="class-admin-approve-entries_8php.html#ae8caf4424cbc46584d4fe541247497a9">GravityView_Admin_ApproveEntries</a></div><div class="ttdeci">new GravityView_Admin_ApproveEntries</div><div class="ttdef"><b>Definition:</b> <a href="class-admin-approve-entries_8php_source.html#l00596">class-admin-approve-entries.php:596</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.10
-</small></address>
+<hr class="footer"/>
+<script type="text/javascript">
+    jQuery( document ).ready( function( $ ) {
+        // Generate anchors for each filter and action
+        $( 'dl.reflist > dd > code' ).each( function( index ) {
+            // Similar to sanitize_title()
+            var link = $( this ).text().replace( /[^A-Za-z-\_\/\.\{\$\}]+/g, "-" );
+            var $tag = $('<a>', {
+                'id': link,
+                'href': '#' + link,
+                'text': '#',
+                'class': 'anchor gv-anchor',
+            });
+            $( this ).after( $tag );
+        });
+    });
+</script>
 </body>
 </html>

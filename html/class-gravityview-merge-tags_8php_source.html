@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.14.3</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -157,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span>( empty( $matches ) ) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="comment">// Check for form variables</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span>( !preg_match( <span class="stringliteral">&#39;/\{(all_fields(:(.*?))?|pricing_fields|form_title|entry_url|ip|post_id|admin_email|post_edit_url|form_id|entry_id|embed_url|date_mdy|date_dmy|embed_post:(.*?)|custom_field:(.*?)|user_agent|referer|gv:(.*?)|user:(.*?)|created_by:(.*?))\}/ism&#39;</span>, $text ) ) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span>( !preg_match( <span class="stringliteral">&#39;/\{(all_fields(:(.*?))?|all_fields_display_empty|pricing_fields|form_title|entry_url|ip|post_id|admin_email|post_edit_url|form_id|entry_id|embed_url|date_mdy|date_dmy|embed_post:(.*?)|custom_field:(.*?)|user_agent|referer|gv:(.*?)|user:(.*?)|created_by:(.*?))\}/ism&#39;</span>, $text ) ) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordflow">return</span> $text;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
@@ -266,36 +266,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            $full_tag = $match[0];</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            $property = $match[1];</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a> = $entry_creator-&gt;get( $property );</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a> = $url_encode ? urlencode( <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a> ) : <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            $esc_html = $esc_html ? esc_html( <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a> ) : <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            $text = str_replace( $full_tag, <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a>, $text );</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">switch</span>( $property ) {<span class="comment"></span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">                /** @since 1.13.2 */</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="keywordflow">case</span> <span class="stringliteral">&#39;roles&#39;</span>:</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a> = implode( <span class="stringliteral">&#39;, &#39;</span>, $entry_creator-&gt;roles );</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a> = $entry_creator-&gt;get( $property );</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            }</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span> $text;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a> = $url_encode ? urlencode( <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a> ) : <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            $esc_html = $esc_html ? esc_html( <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a> ) : <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a>;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="class-gravityview-merge-tags_8php.html#a09b61e0c65621c2b7f55c8341f14fbc1">  187</a></span>&#160;<span class="keyword">new</span> <a class="code" href="class-gravityview-merge-tags_8php.html#a09b61e0c65621c2b7f55c8341f14fbc1">GravityView_Merge_Tags</a>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            $text = str_replace( $full_tag, <a class="code" href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a>, $text );</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">return</span> $text;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="class-gravityview-merge-tags_8php.html#a09b61e0c65621c2b7f55c8341f14fbc1">  194</a></span>&#160;<span class="keyword">new</span> <a class="code" href="class-gravityview-merge-tags_8php.html#a09b61e0c65621c2b7f55c8341f14fbc1">GravityView_Merge_Tags</a>;</div>
 <div class="ttc" id="search-field-date__range_8php_html_a0c65dd34fabd83d988f4b165d68fd897"><div class="ttname"><a href="search-field-date__range_8php.html#a0c65dd34fabd83d988f4b165d68fd897">$value</a></div><div class="ttdeci">$value</div><div class="ttdef"><b>Definition:</b> <a href="search-field-date__range_8php_source.html#l00010">search-field-date_range.php:10</a></div></div>
 <div class="ttc" id="class_gravity_view___merge___tags_html_acf131abd5aba2047a9653344a90f15ca"><div class="ttname"><a href="class_gravity_view___merge___tags.html#acf131abd5aba2047a9653344a90f15ca">GravityView_Merge_Tags\replace_variables</a></div><div class="ttdeci">static replace_variables($text, $form, $entry)</div><div class="ttdoc">Check for merge tags before passing to Gravity Forms to improve speed. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-merge-tags_8php_source.html#l00042">class-gravityview-merge-tags.php:42</a></div></div>
 <div class="ttc" id="class_gravity_view___merge___tags_html"><div class="ttname"><a href="class_gravity_view___merge___tags.html">GravityView_Merge_Tags</a></div><div class="ttdoc">Enhance Gravity Forms&#39; merge tag functionality by adding additional merge tags. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-merge-tags_8php_source.html#l00007">class-gravityview-merge-tags.php:7</a></div></div>
 <div class="ttc" id="class_gravity_view___merge___tags_html_a095c5d389db211932136b53f25f39685"><div class="ttname"><a href="class_gravity_view___merge___tags.html#a095c5d389db211932136b53f25f39685">GravityView_Merge_Tags\__construct</a></div><div class="ttdeci">__construct()</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-merge-tags_8php_source.html#l00012">class-gravityview-merge-tags.php:12</a></div></div>
 <div class="ttc" id="class_gravity_view___merge___tags_html_a6bd1418b746cafd087f41a246b7db3f4"><div class="ttname"><a href="class_gravity_view___merge___tags.html#a6bd1418b746cafd087f41a246b7db3f4">GravityView_Merge_Tags\replace_user_variables_created_by</a></div><div class="ttdeci">replace_user_variables_created_by($text, $form=array(), $entry=array(), $url_encode=false, $esc_html=false)</div><div class="ttdoc">Exactly like Gravity Forms&#39; User Meta functionality, but instead shows information on the user who cr...</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-merge-tags_8php_source.html#l00156">class-gravityview-merge-tags.php:156</a></div></div>
 <div class="ttc" id="class_gravity_view___merge___tags_html_a4aa1f1469294fa6f3d9db7ffc46f369d"><div class="ttname"><a href="class_gravity_view___merge___tags.html#a4aa1f1469294fa6f3d9db7ffc46f369d">GravityView_Merge_Tags\_gform_custom_merge_tags</a></div><div class="ttdeci">_gform_custom_merge_tags($existing_merge_tags=array(), $form_id, $fields=array(), $element_id= '')</div><div class="ttdoc">Add custom merge tags to merge tag options. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-merge-tags_8php_source.html#l00085">class-gravityview-merge-tags.php:85</a></div></div>
-<div class="ttc" id="class-gravityview-merge-tags_8php_html_a09b61e0c65621c2b7f55c8341f14fbc1"><div class="ttname"><a href="class-gravityview-merge-tags_8php.html#a09b61e0c65621c2b7f55c8341f14fbc1">GravityView_Merge_Tags</a></div><div class="ttdeci">new GravityView_Merge_Tags</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-merge-tags_8php_source.html#l00187">class-gravityview-merge-tags.php:187</a></div></div>
+<div class="ttc" id="class-gravityview-merge-tags_8php_html_a09b61e0c65621c2b7f55c8341f14fbc1"><div class="ttname"><a href="class-gravityview-merge-tags_8php.html#a09b61e0c65621c2b7f55c8341f14fbc1">GravityView_Merge_Tags</a></div><div class="ttdeci">new GravityView_Merge_Tags</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-merge-tags_8php_source.html#l00194">class-gravityview-merge-tags.php:194</a></div></div>
 <div class="ttc" id="other__entries_8php_html_a61ce92a251f8ce1d28919fdfc3dd33a7"><div class="ttname"><a href="other__entries_8php.html#a61ce92a251f8ce1d28919fdfc3dd33a7">$form_id</a></div><div class="ttdeci">if(empty($created_by)) $form_id</div><div class="ttdef"><b>Definition:</b> <a href="other__entries_8php_source.html#l00020">other_entries.php:20</a></div></div>
 <div class="ttc" id="class_gravity_view___merge___tags_html_a561424521381fd64539c5fb5e573d143"><div class="ttname"><a href="class_gravity_view___merge___tags.html#a561424521381fd64539c5fb5e573d143">GravityView_Merge_Tags\add_hooks</a></div><div class="ttdeci">add_hooks()</div><div class="ttdoc">Tap in to gform_replace_merge_tags to add merge tags. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-merge-tags_8php_source.html#l00020">class-gravityview-merge-tags.php:20</a></div></div>
 <div class="ttc" id="class_gravity_view___merge___tags_html_a1b8e7c3a49a0a35764de25e61edeabd7"><div class="ttname"><a href="class_gravity_view___merge___tags.html#a1b8e7c3a49a0a35764de25e61edeabd7">GravityView_Merge_Tags\_gform_replace_merge_tags</a></div><div class="ttdeci">_gform_replace_merge_tags($text, $form=array(), $entry=array(), $url_encode=false, $esc_html=false)</div><div class="ttdoc">Instead of adding multiple hooks, add all hooks into this one method to improve speed. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-merge-tags_8php_source.html#l00123">class-gravityview-merge-tags.php:123</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.10
-</small></address>
+<hr class="footer"/>
+<script type="text/javascript">
+    jQuery( document ).ready( function( $ ) {
+        // Generate anchors for each filter and action
+        $( 'dl.reflist > dd > code' ).each( function( index ) {
+            // Similar to sanitize_title()
+            var link = $( this ).text().replace( /[^A-Za-z-\_\/\.\{\$\}]+/g, "-" );
+            var $tag = $('<a>', {
+                'id': link,
+                'href': '#' + link,
+                'text': '#',
+                'class': 'anchor gv-anchor',
+            });
+            $( this ).after( $tag );
+        });
+    });
+</script>
 </body>
 </html>

@@ -4,7 +4,7 @@ var searchData=
   ['add',['add',['../class_gravity_view___metabox___tabs.html#ab9336acca8ee6edc1fef33272ee77c21',1,'GravityView_Metabox_Tabs']]],
   ['add_5favailable_5ffield',['add_available_field',['../class_gravity_view___delete___entry.html#aefebbf93336a264619969784066ccc2a',1,'GravityView_Delete_Entry']]],
   ['add_5fcolumns_5fsort_5flinks',['add_columns_sort_links',['../class_gravity_view__frontend.html#a77dacfc2c169a3a01e821e933b6cd093',1,'GravityView_frontend']]],
-  ['add_5fconnected_5fform_5fcolumn_5fcontent',['add_connected_form_column_content',['../class_gravity_view___admin___views.html#abec87e30394462c25864df1c19d6046e',1,'GravityView_Admin_Views']]],
+  ['add_5fcustom_5fcolumn_5fcontent',['add_custom_column_content',['../class_gravity_view___admin___views.html#a0dfa4cb877b0f2a2e53a59b0adc45a19',1,'GravityView_Admin_Views']]],
   ['add_5fdatepicker_5fjs_5fdependency',['add_datepicker_js_dependency',['../class_gravity_view___widget___search.html#ad4c9c4c16fb1571d40d1823f4cd14d32',1,'GravityView_Widget_Search']]],
   ['add_5fdatepicker_5flocalization',['add_datepicker_localization',['../class_gravity_view___widget___search.html#a3ed1c72c0dfa76124b1799133f1c1ebb',1,'GravityView_Widget_Search']]],
   ['add_5fdebug_5fbar',['add_debug_bar',['../class_gravity_view___logging.html#ae0e79df44e368dd1b9bcbcb1bf99bd56',1,'GravityView_Logging']]],

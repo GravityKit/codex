@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13</span>
+   &#160;<span id="projectnumber">1.14.3</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -100,41 +100,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0563c530cb0cd98554af23201e80bead"><td class="memItemLeft" align="right" valign="top"><a class="el" href="radio_8php.html#a928931d4d1027c5c98f38595b5066c54">foreach</a>($search_field['choices'] as $k=&gt; $choice)(0!=$k)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a0563c530cb0cd98554af23201e80bead">$active</a> = ( ! empty( $_GET[ $search_field['name'] ] ) &amp;&amp; $_GET[ $search_field['name'] ] === $choice['text'] ) ? ' class=&quot;active&quot;' : false</td></tr>
-<tr class="separator:a0563c530cb0cd98554af23201e80bead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6886427c9c643f707fcb35c018049bc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a6886427c9c643f707fcb35c018049bc7">$base_url</a> = <a class="el" href="class_gravity_view___widget___search.html#a06178e3a7b0451c82f46871db2f69ced">GravityView_Widget_Search::get_search_form_action</a>()</td></tr>
 <tr class="separator:a6886427c9c643f707fcb35c018049bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add47a7f886e74847997a4044e9903a0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#add47a7f886e74847997a4044e9903a0a">$gravityview_view</a> = <a class="el" href="class_gravity_view___view.html#a76cf4523dbaebd58c27db806e01b73d9">GravityView_View::getInstance</a>()</td></tr>
 <tr class="memdesc:add47a7f886e74847997a4044e9903a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the search LINK input field.  <a href="#add47a7f886e74847997a4044e9903a0a">More...</a><br /></td></tr>
 <tr class="separator:add47a7f886e74847997a4044e9903a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2203d325106d5aa466174831e00a2a4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="templates_2fields_2textarea_8php.html#a26a682e3ca7d6900aca94956ce9d2e9d">if</a>(empty($search_field['choices']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a2203d325106d5aa466174831e00a2a4f">$links_label</a> = apply_filters( 'gravityview/extension/search/links_label', __( 'Show only:', 'gravityview' ) )</td></tr>
+<tr class="memitem:a2203d325106d5aa466174831e00a2a4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="templates_2fields_2time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(empty($search_field['choices']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a2203d325106d5aa466174831e00a2a4f">$links_label</a> = apply_filters( 'gravityview/extension/search/links_label', __( 'Show only:', 'gravityview' ) )</td></tr>
 <tr class="separator:a2203d325106d5aa466174831e00a2a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4f9912e245ca28642d498a722b2056b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#ad4f9912e245ca28642d498a722b2056b">$links_sep</a> = apply_filters( 'gravityview/extension/search/links_sep', '&amp;nbsp;|&amp;nbsp;' )</td></tr>
 <tr class="separator:ad4f9912e245ca28642d498a722b2056b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9913ca109e1ddeeac975b3e2c8a8d92c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a9913ca109e1ddeeac975b3e2c8a8d92c">$search_field</a> = $gravityview_view-&gt;search_field</td></tr>
 <tr class="separator:a9913ca109e1ddeeac975b3e2c8a8d92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32db4f6226c6aa2655760de191a996d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a32db4f6226c6aa2655760de191a996d4">$search_value</a> = rgget( $search_field['name'] )</td></tr>
+<tr class="separator:a32db4f6226c6aa2655760de191a996d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521fd441a5ad4952b00a1591a4d4590d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a521fd441a5ad4952b00a1591a4d4590d">$view_id</a> = $gravityview_view-&gt;getViewId()</td></tr>
 <tr class="separator:a521fd441a5ad4952b00a1591a4d4590d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b28e6ea02edd0fb91e2955fe7b6fec9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="templates_2fields_2textarea_8php.html#a26a682e3ca7d6900aca94956ce9d2e9d">if</a>($active)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a9b28e6ea02edd0fb91e2955fe7b6fec9">else</a></td></tr>
-<tr class="separator:a9b28e6ea02edd0fb91e2955fe7b6fec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a672d9707ef91db026c210f98cc601123"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a672d9707ef91db026c210f98cc601123">endforeach</a></td></tr>
-<tr class="separator:a672d9707ef91db026c210f98cc601123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a0563c530cb0cd98554af23201e80bead"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="radio_8php.html#a928931d4d1027c5c98f38595b5066c54">foreach</a> ( $search_field['choices'] as $k =&gt; $choice ) (0!=$k) $active = ( ! empty( $_GET[ $search_field['name'] ] ) &amp;&amp; $_GET[ $search_field['name'] ] === $choice['text'] ) ? ' class=&quot;active&quot;' : false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00037">37</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a6886427c9c643f707fcb35c018049bc7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -171,12 +153,19 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="templates_2fields_2textarea_8php.html#a26a682e3ca7d6900aca94956ce9d2e9d">if</a> (empty($search_field['choices'])) $links_label = apply_filters( 'gravityview/extension/search/links_label', __( 'Show only:', 'gravityview' ) )</td>
+          <td class="memname"><a class="el" href="templates_2fields_2time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> (empty($search_field['choices'])) $links_label = apply_filters( 'gravityview/extension/search/links_label', __( 'Show only:', 'gravityview' ) )</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000109">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_sep</code> Change the label for the "Link" search bar input type <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$links_label</td><td>Default: <code>Show only:</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00021">21</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
+<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00025">25</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
 
 </div>
 </div>
@@ -189,8 +178,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000110">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_sep</code> Change what separates search bar "Link" input type links <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$links_sep</td><td>Default: <code>&#160;|&#160;</code> Used to connect multiple links </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00022">22</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
+<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00031">31</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
 
 </div>
 </div>
@@ -208,6 +204,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a32db4f6226c6aa2655760de191a996d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$search_value = rgget( $search_field['name'] )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00042">42</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a521fd441a5ad4952b00a1591a4d4590d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -222,46 +232,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9b28e6ea02edd0fb91e2955fe7b6fec9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="templates_2fields_2textarea_8php.html#a26a682e3ca7d6900aca94956ce9d2e9d">if</a> ($active) else</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">                $link = add_query_arg( array( <a class="code" href="search-field-link_8php.html#a9913ca109e1ddeeac975b3e2c8a8d92c">$search_field</a>[<span class="stringliteral">&#39;name&#39;</span>] =&gt; urlencode( $choice[<span class="stringliteral">&#39;value&#39;</span>] ) ), remove_query_arg( array(<span class="stringliteral">&#39;pagenum&#39;</span>), <a class="code" href="search-field-link_8php.html#a6886427c9c643f707fcb35c018049bc7">$base_url</a> ) )</div>
-<div class="ttc" id="search-field-link_8php_html_a6886427c9c643f707fcb35c018049bc7"><div class="ttname"><a href="search-field-link_8php.html#a6886427c9c643f707fcb35c018049bc7">$base_url</a></div><div class="ttdeci">$base_url</div><div class="ttdef"><b>Definition:</b> <a href="search-field-link_8php_source.html#l00013">search-field-link.php:13</a></div></div>
-<div class="ttc" id="search-field-link_8php_html_a9913ca109e1ddeeac975b3e2c8a8d92c"><div class="ttname"><a href="search-field-link_8php.html#a9913ca109e1ddeeac975b3e2c8a8d92c">$search_field</a></div><div class="ttdeci">$search_field</div><div class="ttdef"><b>Definition:</b> <a href="search-field-link_8php_source.html#l00010">search-field-link.php:10</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00041">41</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a672d9707ef91db026c210f98cc601123"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">endforeach</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00046">46</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
-
-<p>Referenced by <a class="el" href="class-admin-views_8php_source.html#l00693">GravityView_Admin_Views\render_active_areas()</a>, <a class="el" href="type__radio_8php_source.html#l00021">GravityView_FieldType_radio\render_input()</a>, and <a class="el" href="type__select_8php_source.html#l00022">GravityView_FieldType_select\render_input()</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.10
-</small></address>
+<hr class="footer"/>
+<script type="text/javascript">
+    jQuery( document ).ready( function( $ ) {
+        // Generate anchors for each filter and action
+        $( 'dl.reflist > dd > code' ).each( function( index ) {
+            // Similar to sanitize_title()
+            var link = $( this ).text().replace( /[^A-Za-z-\_\/\.\{\$\}]+/g, "-" );
+            var $tag = $('<a>', {
+                'id': link,
+                'href': '#' + link,
+                'text': '#',
+                'class': 'anchor gv-anchor',
+            });
+            $( this ).after( $tag );
+        });
+    });
+</script>
 </body>
 </html>
