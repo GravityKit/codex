@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -104,9 +104,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___notices.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff74696a547684052afbb5ee750aa1d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___notices.html#aff74696a547684052afbb5ee750aa1d2">_maybe_show_notice</a> ($notice)</td></tr>
-<tr class="memdesc:aff74696a547684052afbb5ee750aa1d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the notice be shown in the admin (Has it been dismissed already)?  <a href="#aff74696a547684052afbb5ee750aa1d2">More...</a><br /></td></tr>
-<tr class="separator:aff74696a547684052afbb5ee750aa1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a561424521381fd64539c5fb5e573d143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___notices.html#a561424521381fd64539c5fb5e573d143">add_hooks</a> ()</td></tr>
 <tr class="separator:a561424521381fd64539c5fb5e573d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52aeff4ab0f39922a5ae40ea143511bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___notices.html#a52aeff4ab0f39922a5ae40ea143511bc">admin_notice</a> ()</td></tr>
@@ -121,6 +118,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d8d59a4cd41f04169160dcd231bdf19"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___notices.html#a6d8d59a4cd41f04169160dcd231bdf19">add_notice</a> ($notice=array())</td></tr>
 <tr class="memdesc:a6d8d59a4cd41f04169160dcd231bdf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a notice to be displayed in the admin.  <a href="#a6d8d59a4cd41f04169160dcd231bdf19">More...</a><br /></td></tr>
 <tr class="separator:a6d8d59a4cd41f04169160dcd231bdf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae766eb401910beaafcaafea7cfa0d90a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___notices.html#ae766eb401910beaafcaafea7cfa0d90a">flush_dismissed_notices</a> ()</td></tr>
+<tr class="memdesc:ae766eb401910beaafcaafea7cfa0d90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear out the dismissed notices when the plugin gets activated.  <a href="#ae766eb401910beaafcaafea7cfa0d90a">More...</a><br /></td></tr>
+<tr class="separator:ae766eb401910beaafcaafea7cfa0d90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25e2d366e34907a6669770e3c3d0253a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___notices.html#a25e2d366e34907a6669770e3c3d0253a">get_notices</a> ()</td></tr>
 <tr class="memdesc:a25e2d366e34907a6669770e3c3d0253a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get admin notices.  <a href="#a25e2d366e34907a6669770e3c3d0253a">More...</a><br /></td></tr>
 <tr class="separator:a25e2d366e34907a6669770e3c3d0253a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +130,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a442a27d71816b07c9ed1377dbae43d53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___notices.html#a442a27d71816b07c9ed1377dbae43d53">check_show_multisite_notices</a> ()</td></tr>
 <tr class="memdesc:a442a27d71816b07c9ed1377dbae43d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle whether to display notices in Multisite based on plugin activation status.  <a href="#a442a27d71816b07c9ed1377dbae43d53">More...</a><br /></td></tr>
 <tr class="separator:a442a27d71816b07c9ed1377dbae43d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3def5dcd82b0c65f770b255d273ed1a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___notices.html#a3def5dcd82b0c65f770b255d273ed1a4">is_notice_dismissed</a> ($notice)</td></tr>
+<tr class="memdesc:a3def5dcd82b0c65f770b255d273ed1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the notice been dismissed already in the admin?  <a href="#a3def5dcd82b0c65f770b255d273ed1a4">More...</a><br /></td></tr>
+<tr class="separator:a3def5dcd82b0c65f770b255d273ed1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -142,7 +145,7 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><p>Handle displaying and storing of admin notices for <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00018">18</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00024">24</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a095c5d389db211932136b53f25f39685"></a>
 <div class="memitem">
@@ -157,46 +160,13 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00024">24</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00030">30</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00029">add_hooks()</a>.</p>
+<p>References <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00035">add_hooks()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aff74696a547684052afbb5ee750aa1d2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_maybe_show_notice </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$notice</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Should the notice be shown in the admin (Has it been dismissed already)? </p>
-<p>If the passed notice array has a <code>dismiss</code> key, the notice is dismissable. If it's dismissable, we check against other notices that have already been dismissed.</p>
-<dl class="section see"><dt>See also</dt><dd>GravityView_Admin::dismiss_notice() </dd>
-<dd>
-<a class="el" href="class_gravity_view___admin.html#a6d8d59a4cd41f04169160dcd231bdf19" title="Add a notice to be displayed in the admin. ">GravityView_Admin::add_notice()</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$notice</td><td>Notice array, set using <code><a class="el" href="class_gravity_view___admin___notices.html#a6d8d59a4cd41f04169160dcd231bdf19" title="Add a notice to be displayed in the admin. ">add_notice()</a></code>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean True: show notice; False: hide notice </dd></dl>
-
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00077">77</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
-
-<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00132">admin_notice()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a561424521381fd64539c5fb5e573d143"></a>
 <div class="memitem">
 <div class="memproto">
@@ -210,9 +180,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00029">29</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00035">35</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00024">__construct()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00030">__construct()</a>.</p>
 
 </div>
 </div>
@@ -239,16 +209,20 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a notice to be displayed in the admin. </p>
+<dl class="section since"><dt>Since</dt><dd>1.12 Moved from {</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___admin.html#a6d8d59a4cd41f04169160dcd231bdf19" title="Add a notice to be displayed in the admin. ">GravityView_Admin::add_notice()</a> } </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.15.1 Allows for <code>cap</code> key, passing capability required to show the message </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$notice</td><td>Array with <code>class</code> and <code>message</code> keys. The message is not escaped. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$notice</td><td>Array with <code>class</code>, <code>message</code>, <code>dismiss</code> and <code>cap</code> keys. The message is not escaped. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00186">186</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00226">226</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00419">GravityView_Admin\add_notice()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00388">GravityView_Admin\add_notice()</a>, and <a class="el" href="class-settings_8php_source.html#l00180">GravityView_Settings\license_key_notice()</a>.</p>
 
 </div>
 </div>
@@ -266,13 +240,14 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Outputs the admin notices generated by the plugin. </p>
-<dl class="section since"><dt>Since</dt><dd>1.12</dd></dl>
+<p><a class="el" href="class_g_v_common.html#acf95cadd29867fdd6865a38da314cc48" title="Alias of GravityView_Roles_Capabilities::has_cap() ">GVCommon::has_cap()</a> </p><dl class="section since"><dt>Since</dt><dd>1.12</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<p>Modify the notices displayed </p><dl class="section since"><dt>Since</dt><dd>1.12</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000074">Runs Filter:</a></b></dt><dd><code>gravityview/admin/notices</code> Modify the notices displayed in the admin <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00132">132</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00152">152</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
-<p>References <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00077">_maybe_show_notice()</a>, <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00106">check_show_multisite_notices()</a>, <a class="el" href="helper-functions_8php_source.html#l00108">gravityview_get_floaty()</a>, and <a class="el" href="helper-functions_8php_source.html#l00056">gravityview_sanitize_html_class()</a>.</p>
+<p>References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00125">check_show_multisite_notices()</a>, <a class="el" href="helper-functions_8php_source.html#l00122">gravityview_get_floaty()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00094">is_notice_dismissed()</a>.</p>
 
 </div>
 </div>
@@ -298,14 +273,15 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Handle whether to display notices in Multisite based on plugin activation status. </p>
+<p><a class="el" href="class_gravity_view___plugin.html#afcd8b744285ffb5172c56eb1939ec3a7" title="Check whether GravityView is network activated. ">GravityView_Plugin::is_network_activated</a></p>
 <dl class="section since"><dt>Since</dt><dd>1.12</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True: show the notices; false: don't show </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00106">106</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00125">125</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
-<p>References <a class="el" href="gravityview_8php_source.html#l00190">GravityView_Plugin\is_network_activated()</a>.</p>
+<p>References <a class="el" href="gravityview_8php_source.html#l00191">GravityView_Plugin\is_network_activated()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00132">admin_notice()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00152">admin_notice()</a>.</p>
 
 </div>
 </div>
@@ -323,11 +299,42 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Dismiss a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> notice - stores the dismissed notices for 16 weeks. </p>
+<dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00040">40</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00057">57</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00022">$dismissed_notices</a>.</p>
+<p>References <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00028">$dismissed_notices</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae766eb401910beaafcaafea7cfa0d90a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static flush_dismissed_notices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear out the dismissed notices when the plugin gets activated. </p>
+<dl class="section see"><dt>See also</dt><dd>register_activation_hook </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.15.1 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00048">48</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
 </div>
 </div>
@@ -356,9 +363,50 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00095">95</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00112">112</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00410">GravityView_Admin\get_notices()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00379">GravityView_Admin\get_notices()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3def5dcd82b0c65f770b255d273ed1a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_notice_dismissed </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$notice</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Has the notice been dismissed already in the admin? </p>
+<p>If the passed notice array has a <code>dismiss</code> key, the notice is dismissable. If it's dismissable, we check against other notices that have already been dismissed. </p><dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___admin___notices.html#a8190bccc54acdec95b7b20b0446b9b4b" title="Dismiss a GravityView notice - stores the dismissed notices for 16 weeks. ">GravityView_Admin_Notices::dismiss_notice()</a> </dd>
+<dd>
+<a class="el" href="class_gravity_view___admin___notices.html#a6d8d59a4cd41f04169160dcd231bdf19" title="Add a notice to be displayed in the admin. ">GravityView_Admin_Notices::add_notice()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$notice</td><td>Notice array, set using <code><a class="el" href="class_gravity_view___admin___notices.html#a6d8d59a4cd41f04169160dcd231bdf19" title="Add a notice to be displayed in the admin. ">add_notice()</a></code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean True: show notice; False: hide notice </dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00094">94</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00152">admin_notice()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +429,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00020">20</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00026">26</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
 </div>
 </div>
@@ -403,9 +451,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00022">22</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00028">28</a> of file <a class="el" href="class-gravityview-admin-notices_8php_source.html">class-gravityview-admin-notices.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00040">dismiss_notice()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00057">dismiss_notice()</a>.</p>
 
 </div>
 </div>

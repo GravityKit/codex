@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -159,6 +159,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad744d5b8ba6b1b8b095d206129a78f03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___settings.html#ad744d5b8ba6b1b8b095d206129a78f03">license_key_notice</a> ()</td></tr>
 <tr class="memdesc:ad744d5b8ba6b1b8b095d206129a78f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a notice if the plugin is inactive.  <a href="#ad744d5b8ba6b1b8b095d206129a78f03">More...</a><br /></td></tr>
 <tr class="separator:ad744d5b8ba6b1b8b095d206129a78f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa36088f9944f271a6fce4632ebfc168f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___settings.html#aa36088f9944f271a6fce4632ebfc168f">maybe_save_app_settings</a> ()</td></tr>
+<tr class="memdesc:aa36088f9944f271a6fce4632ebfc168f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for the <code>gravityview_edit_settings</code> capability before saving plugin settings.  <a href="#aa36088f9944f271a6fce4632ebfc168f">More...</a><br /></td></tr>
+<tr class="separator:aa36088f9944f271a6fce4632ebfc168f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84ecc4f6b7027f3f65db2a518d8bd0a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___settings.html#a84ecc4f6b7027f3f65db2a518d8bd0a7">modify_app_settings_menu_title</a> ($setting_tabs)</td></tr>
 <tr class="memdesc:a84ecc4f6b7027f3f65db2a518d8bd0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the settings page header title to "GravityView".  <a href="#a84ecc4f6b7027f3f65db2a518d8bd0a7">More...</a><br /></td></tr>
 <tr class="separator:a84ecc4f6b7027f3f65db2a518d8bd0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,7 +204,11 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a78f8788fd93f297bf2c76c8ab710035c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___settings.html#a78f8788fd93f297bf2c76c8ab710035c">$_capabilities_uninstall</a> = 'gravityview_gfaddon_uninstall'</td></tr>
+<tr class="memitem:a39fe89bfe879ba6ac8a193d98a8b7773"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___settings.html#a39fe89bfe879ba6ac8a193d98a8b7773">$_capabilities_app_menu</a> = 'gravityview_view_settings'</td></tr>
+<tr class="separator:a39fe89bfe879ba6ac8a193d98a8b7773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7cd8f815ec6903524e3ac33fe6c9aff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___settings.html#ac7cd8f815ec6903524e3ac33fe6c9aff">$_capabilities_app_settings</a> = 'gravityview_view_settings'</td></tr>
+<tr class="separator:ac7cd8f815ec6903524e3ac33fe6c9aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f8788fd93f297bf2c76c8ab710035c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___settings.html#a78f8788fd93f297bf2c76c8ab710035c">$_capabilities_uninstall</a> = 'gravityview_uninstall'</td></tr>
 <tr class="separator:a78f8788fd93f297bf2c76c8ab710035c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a169a2b416fa587634c8a783693163d56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___settings.html#a169a2b416fa587634c8a783693163d56">$_min_gravityforms_version</a> = <a class="el" href="gravityview_8php.html#ad98e682d95213b80b8fec3b09feb9a90">GV_MIN_GF_VERSION</a></td></tr>
 <tr class="separator:a169a2b416fa587634c8a783693163d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,7 +270,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00062">62</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00072">72</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 </div>
 </div>
@@ -291,11 +298,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Make sure the license handler is available. </p>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00153">153</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00165">165</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="class-gv-license-handler_8php_source.html#l00030">GV_License_Handler\get_instance()</a>, and <a class="el" href="gravityview_8php_source.html#l00050">GRAVITYVIEW_DIR</a>.</p>
+<p>References <a class="el" href="class-gv-license-handler_8php_source.html#l00036">GV_License_Handler\get_instance()</a>, and <a class="el" href="gravityview_8php_source.html#l00048">GRAVITYVIEW_DIR</a>.</p>
 
-<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00113">init_admin()</a>, and <a class="el" href="class-settings_8php_source.html#l00146">init_ajax()</a>.</p>
+<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00127">init_admin()</a>, and <a class="el" href="class-settings_8php_source.html#l00158">init_ajax()</a>.</p>
 
 </div>
 </div>
@@ -316,9 +323,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.7.6 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00235">235</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00252">252</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="gravityview_8php_source.html#l00190">GravityView_Plugin\is_network_activated()</a>.</p>
+<p>References <a class="el" href="gravityview_8php_source.html#l00191">GravityView_Plugin\is_network_activated()</a>.</p>
 
 </div>
 </div>
@@ -337,13 +344,19 @@ Static Private Attributes</h2></td></tr>
 
 <p>Specify the settings fields to be rendered on the plugin settings page. </p>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.15 Added Support Port support</dd></dl>
 <p>Redux backward compatibility </p><dl class="section since"><dt>Since</dt><dd>1.7.4</dd></dl>
-<p>Extensions can tap in here to insert their own section and settings.</p>
-<p>$sections[] = array( 'title' =&gt; __( '<a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> My Extension Settings', 'gravityview' ), 'fields' =&gt; $settings, );</p>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000095">Runs Filter:</a></b></dt><dd><code>gravityview/settings/extension/sections</code> Modify the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> settings page Extensions can tap in here to insert their own section and settings. <code> $sections[] = array( 'title' =&gt; __( '<a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> My Extension Settings', 'gravityview' ), 'fields' =&gt; $settings, ); </code> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$extension_settings</td><td>Empty array, ready for extension settings! </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00521">521</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00560">560</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-settings_8php_source.html#l00288">get_app_setting()</a>, <a class="el" href="class-settings_8php_source.html#l00471">get_default_settings()</a>, and <a class="el" href="gravityview_8php_source.html#l00092">GravityView_Plugin\version</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-settings_8php_source.html#l00305">get_app_setting()</a>, <a class="el" href="class-settings_8php_source.html#l00488">get_default_settings()</a>, <a class="el" href="gravityview_8php_source.html#l00039">GRAVITYVIEW_FILE</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, and <a class="el" href="gravityview_8php_source.html#l00092">GravityView_Plugin\version</a>.</p>
 
 </div>
 </div>
@@ -363,7 +376,7 @@ Static Private Attributes</h2></td></tr>
 <p>Prevent displaying of any icon. </p>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00279">279</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00296">296</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 </div>
 </div>
@@ -383,7 +396,7 @@ Static Private Attributes</h2></td></tr>
 <p>The Settings title. </p>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00271">271</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00288">288</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 </div>
 </div>
@@ -411,9 +424,9 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00245">245</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00262">262</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="gravityview_8php_source.html#l00190">GravityView_Plugin\is_network_activated()</a>.</p>
+<p>References <a class="el" href="gravityview_8php_source.html#l00191">GravityView_Plugin\is_network_activated()</a>.</p>
 
 </div>
 </div>
@@ -440,9 +453,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
-<p>Don't show uninstall tab </p>
+<p>Prevent Gravity Forms from showing the uninstall tab on the settings page </p>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00093">93</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00103">103</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+
+<p>References <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -463,9 +478,9 @@ Static Private Attributes</h2></td></tr>
 <p>Make protected public   public. </p>
 <p>Backward compatibility with Redux</p>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00288">288</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00305">305</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00521">app_settings_fields()</a>.</p>
+<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00560">app_settings_fields()</a>.</p>
 
 </div>
 </div>
@@ -490,9 +505,9 @@ Static Private Attributes</h2></td></tr>
 <p>public</p>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00315">315</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00332">332</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="class-settings_8php_source.html#l00471">get_default_settings()</a>.</p>
+<p>References <a class="el" href="class-settings_8php_source.html#l00488">get_default_settings()</a>.</p>
 
 </div>
 </div>
@@ -521,9 +536,9 @@ Static Private Attributes</h2></td></tr>
 <p>Merges previous settings created when using the Redux Framework</p>
 <dl class="section return"><dt>Returns</dt><dd>array Settings with defaults set </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00471">471</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00488">488</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00521">app_settings_fields()</a>, and <a class="el" href="class-settings_8php_source.html#l00315">get_app_settings()</a>.</p>
+<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00560">app_settings_fields()</a>, and <a class="el" href="class-settings_8php_source.html#l00332">get_app_settings()</a>.</p>
 
 </div>
 </div>
@@ -549,7 +564,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_gravity_view___settings.html" title="GravityView Settings class (get/set/license validation) using the Gravity Forms App framework...">GravityView_Settings</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00074">74</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00084">84</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 <p>Referenced by <a class="el" href="class-migrate_8php_source.html#l00085">GravityView_Migrate\get_redux_license_status()</a>, and <a class="el" href="class-migrate_8php_source.html#l00049">GravityView_Migrate\migrate_redux_settings()</a>.</p>
 
@@ -572,9 +587,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.7.4</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_g_v___license___handler.html">GV_License_Handler</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00370">370</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00387">387</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="class-settings_8php_source.html#l00046">$License_Handler</a>.</p>
+<p>References <a class="el" href="class-settings_8php_source.html#l00056">$License_Handler</a>.</p>
 
 </div>
 </div>
@@ -594,7 +609,7 @@ Static Private Attributes</h2></td></tr>
 <p>When the settings are saved, make sure the license key matches the previously activated key. </p>
 <dl class="section return"><dt>Returns</dt><dd>array settings from parent::get_posted_settings(), with <code>license_key_response</code> and <code>license_key_status</code> potentially unset </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00490">490</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00529">529</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 </div>
 </div>
@@ -621,9 +636,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string - Returns markup of the required indicator symbol </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00513">513</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00552">552</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00444">single_setting_label()</a>.</p>
+<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00461">single_setting_label()</a>.</p>
 
 </div>
 </div>
@@ -658,9 +673,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00633">633</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00737">737</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin-views_8php_source.html#l00875">GravityView_Admin_Views\enqueue_feedback_widget()</a>, <a class="el" href="class-gravityview-extension_8php_source.html#l00204">GravityView_Extension\get_license()</a>, <a class="el" href="class-admin_8php_source.html#l00185">GravityView_Admin\no_conflict_scripts()</a>, and <a class="el" href="class-admin_8php_source.html#l00272">GravityView_Admin\no_conflict_styles()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-support-port_8php_source.html#l00080">GravityView_Support_Port\_localize_script()</a>, <a class="el" href="class-gravityview-extension_8php_source.html#l00203">GravityView_Extension\get_license()</a>, <a class="el" href="class-admin_8php_source.html#l00204">GravityView_Admin\no_conflict_scripts()</a>, <a class="el" href="class-admin_8php_source.html#l00260">GravityView_Admin\no_conflict_styles()</a>, and <a class="el" href="class-gravityview-support-port_8php_source.html#l00233">GravityView_Support_Port\show_for_user()</a>.</p>
 
 </div>
 </div>
@@ -682,9 +697,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.6 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00113">113</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00127">127</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="class-settings_8php_source.html#l00153">_load_license_handler()</a>, and <a class="el" href="class-settings_8php_source.html#l00168">license_key_notice()</a>.</p>
+<p>References <a class="el" href="class-settings_8php_source.html#l00165">_load_license_handler()</a>, and <a class="el" href="class-settings_8php_source.html#l00180">license_key_notice()</a>.</p>
 
 </div>
 </div>
@@ -703,9 +718,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Load license handler in admin-ajax.php. </p>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00146">146</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00158">158</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="class-settings_8php_source.html#l00153">_load_license_handler()</a>.</p>
+<p>References <a class="el" href="class-settings_8php_source.html#l00165">_load_license_handler()</a>.</p>
 
 </div>
 </div>
@@ -724,12 +739,37 @@ Static Private Attributes</h2></td></tr>
 
 <p>Display a notice if the plugin is inactive. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>PhpMissingBreakStatementInspection </p>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00168">168</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00180">180</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="post__image_8php_source.html#l00026">$title</a>, <a class="el" href="class-admin_8php_source.html#l00419">GravityView_Admin\add_notice()</a>, and <a class="el" href="class-admin_8php_source.html#l00495">gravityview_is_admin_page()</a>.</p>
+<p>References <a class="el" href="post__image_8php_source.html#l00026">$title</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00226">GravityView_Admin_Notices\add_notice()</a>, and <a class="el" href="class-admin_8php_source.html#l00466">gravityview_is_admin_page()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00113">init_admin()</a>.</p>
+<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00127">init_admin()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa36088f9944f271a6fce4632ebfc168f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">maybe_save_app_settings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check for the <code>gravityview_edit_settings</code> capability before saving plugin settings. </p>
+<p>Gravity Forms says you're able to edit if you're able to view settings. <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> allows two different permissions.</p>
+<dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00511">511</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+
+<p>References <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -756,7 +796,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00136">136</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00148">148</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 </div>
 </div>
@@ -786,7 +826,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Make protected public   public. </p>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00338">338</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00355">355</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
 
@@ -834,7 +874,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00349">349</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00366">366</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
 
@@ -874,9 +914,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00422">422</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00439">439</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-settings_8php_source.html#l00382">settings_submit()</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-settings_8php_source.html#l00399">settings_submit()</a>.</p>
 
 </div>
 </div>
@@ -904,11 +944,11 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00382">382</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00399">399</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 <p>References <a class="el" href="delete__link_8php_source.html#l00020">$attributes</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
-<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00422">settings_save()</a>.</p>
+<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00439">settings_save()</a>.</p>
 
 </div>
 </div>
@@ -934,9 +974,9 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00444">444</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00461">461</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-settings_8php_source.html#l00513">get_required_indicator()</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-settings_8php_source.html#l00552">get_required_indicator()</a>.</p>
 
 </div>
 </div>
@@ -956,7 +996,7 @@ Static Private Attributes</h2></td></tr>
 <p>Register styles in the app admin page. </p>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00209">209</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00226">226</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 <p>References <a class="el" href="gravityview_8php_source.html#l00039">GRAVITYVIEW_FILE</a>, and <a class="el" href="gravityview_8php_source.html#l00092">GravityView_Plugin\version</a>.</p>
 
@@ -986,11 +1026,55 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean False if value was not updated and true if value was updated. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00329">329</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00346">346</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a39fe89bfe879ba6ac8a193d98a8b7773"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$_capabilities_app_menu = 'gravityview_view_settings'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00046">46</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7cd8f815ec6903524e3ac33fe6c9aff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$_capabilities_app_settings = 'gravityview_view_settings'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00041">41</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a78f8788fd93f297bf2c76c8ab710035c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -999,7 +1083,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">$_capabilities_uninstall = 'gravityview_gfaddon_uninstall'</td>
+          <td class="memname">$_capabilities_uninstall = 'gravityview_uninstall'</td>
         </tr>
       </table>
   </td>
@@ -1133,7 +1217,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00041">41</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00051">51</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1239,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00051">51</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00061">61</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
 </div>
 </div>
@@ -1177,9 +1261,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00046">46</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
+<p>Definition at line <a class="el" href="class-settings_8php_source.html#l00056">56</a> of file <a class="el" href="class-settings_8php_source.html">class-settings.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00370">get_license_handler()</a>.</p>
+<p>Referenced by <a class="el" href="class-settings_8php_source.html#l00387">get_license_handler()</a>.</p>
 
 </div>
 </div>

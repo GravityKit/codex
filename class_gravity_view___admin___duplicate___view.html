@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -88,7 +88,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Admin_Duplicate_View Class Reference</div>  </div>
 </div><!--header-->
@@ -104,6 +105,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0068fe504ec0142aa06b36ed6ea3cb04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#a0068fe504ec0142aa06b36ed6ea3cb04">copy_view_meta_info</a> ($new_id, $post)</td></tr>
 <tr class="memdesc:a0068fe504ec0142aa06b36ed6ea3cb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the meta information of a post to another View.  <a href="#a0068fe504ec0142aa06b36ed6ea3cb04">More...</a><br /></td></tr>
 <tr class="separator:a0068fe504ec0142aa06b36ed6ea3cb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554c9d3608463034ccec43c0c69e6b32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#a554c9d3608463034ccec43c0c69e6b32">make_duplicate_link_row</a> ($actions, $post)</td></tr>
+<tr class="memdesc:a554c9d3608463034ccec43c0c69e6b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the link to action list for post_row_actions.  <a href="#a554c9d3608463034ccec43c0c69e6b32">More...</a><br /></td></tr>
+<tr class="separator:a554c9d3608463034ccec43c0c69e6b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ecd1547e6dfadea4a4783846d89e62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#aa3ecd1547e6dfadea4a4783846d89e62">save_as_new_view</a> ($status= '')</td></tr>
+<tr class="memdesc:aa3ecd1547e6dfadea4a4783846d89e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calls the creation of a new copy of the selected post (by default preserving the original publish status) then redirects to the post list.  <a href="#aa3ecd1547e6dfadea4a4783846d89e62">More...</a><br /></td></tr>
+<tr class="separator:aa3ecd1547e6dfadea4a4783846d89e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17268daccb1a96512e9e6b475edefc93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#a17268daccb1a96512e9e6b475edefc93">save_as_new_view_draft</a> ()</td></tr>
+<tr class="memdesc:a17268daccb1a96512e9e6b475edefc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calls the creation of a new copy of the selected post (as a draft) then redirects to the edit post screen.  <a href="#a17268daccb1a96512e9e6b475edefc93">More...</a><br /></td></tr>
+<tr class="separator:a17268daccb1a96512e9e6b475edefc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a561424521381fd64539c5fb5e573d143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#a561424521381fd64539c5fb5e573d143">add_hooks</a> ()</td></tr>
+<tr class="memdesc:a561424521381fd64539c5fb5e573d143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add actions &amp; filters.  <a href="#a561424521381fd64539c5fb5e573d143">More...</a><br /></td></tr>
+<tr class="separator:a561424521381fd64539c5fb5e573d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01f1ec160b19a7526f80cf43da754951"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#a01f1ec160b19a7526f80cf43da754951">create_duplicate</a> ($post, $status= '')</td></tr>
 <tr class="memdesc:a01f1ec160b19a7526f80cf43da754951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a duplicate from a View $post.  <a href="#a01f1ec160b19a7526f80cf43da754951">More...</a><br /></td></tr>
 <tr class="separator:a01f1ec160b19a7526f80cf43da754951"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,15 +132,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a987a604917d7eefa0877f69aa726e44a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#a987a604917d7eefa0877f69aa726e44a">is_all_views_page</a> ()</td></tr>
 <tr class="memdesc:a987a604917d7eefa0877f69aa726e44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the current screen the All Views screen?  <a href="#a987a604917d7eefa0877f69aa726e44a">More...</a><br /></td></tr>
 <tr class="separator:a987a604917d7eefa0877f69aa726e44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a554c9d3608463034ccec43c0c69e6b32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#a554c9d3608463034ccec43c0c69e6b32">make_duplicate_link_row</a> ($actions, $post)</td></tr>
-<tr class="memdesc:a554c9d3608463034ccec43c0c69e6b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the link to action list for post_row_actions.  <a href="#a554c9d3608463034ccec43c0c69e6b32">More...</a><br /></td></tr>
-<tr class="separator:a554c9d3608463034ccec43c0c69e6b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ecd1547e6dfadea4a4783846d89e62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#aa3ecd1547e6dfadea4a4783846d89e62">save_as_new_view</a> ($status= '')</td></tr>
-<tr class="memdesc:aa3ecd1547e6dfadea4a4783846d89e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calls the creation of a new copy of the selected post (by default preserving the original publish status) then redirects to the post list.  <a href="#aa3ecd1547e6dfadea4a4783846d89e62">More...</a><br /></td></tr>
-<tr class="separator:aa3ecd1547e6dfadea4a4783846d89e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17268daccb1a96512e9e6b475edefc93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___duplicate___view.html#a17268daccb1a96512e9e6b475edefc93">save_as_new_view_draft</a> ()</td></tr>
-<tr class="memdesc:a17268daccb1a96512e9e6b475edefc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calls the creation of a new copy of the selected post (as a draft) then redirects to the edit post screen.  <a href="#a17268daccb1a96512e9e6b475edefc93">More...</a><br /></td></tr>
-<tr class="separator:a17268daccb1a96512e9e6b475edefc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -142,13 +149,46 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Connect actions to functions</p>
 
 <p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00015">15</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+
+<p>References <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00035">add_hooks()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a561424521381fd64539c5fb5e573d143"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">add_hooks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add actions &amp; filters. </p>
+<dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Connect actions to functions</p>
+
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00035">35</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00015">__construct()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3aba3741f0c2dfaf34aff1d97323f83d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,10 +222,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array If it's the All Views page, return unedited. Otherwise, add a link to create cloned draft of View </dd></dl>
+<p>WP_Post $post </p>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00050">50</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00058">58</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00071">is_all_views_page()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00210">make_duplicate_link_row()</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00080">is_all_views_page()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00231">make_duplicate_link_row()</a>.</p>
 
 </div>
 </div>
@@ -214,9 +255,17 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Copy the meta information of a post to another View. </p>
-<dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.6</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$new_view_id</td><td>The ID of the newly created View </td></tr>
+    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td>The View that was just cloned</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00184">184</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00203">203</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
 <p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>.</p>
 
@@ -225,6 +274,9 @@ Public Member Functions</h2></td></tr>
 <a class="anchor" id="a01f1ec160b19a7526f80cf43da754951"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">create_duplicate </td>
@@ -244,46 +296,74 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Create a duplicate from a View $post. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$status</td><td>The post status </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
-<p>The default status for a new View. Return empty for the new View to inherit existing View status</p>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000070">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/status</code> Modify the default status for a new View. Return empty for the new View to inherit existing View status <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"></td><td class="paramname">string|null</td><td>If string, the status to set for the new View. If empty, use existing View status. </td></tr>
-    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td>View being cloned</td></tr>
+    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td>View being cloned </td></tr>
   </table>
   </dd>
 </dl>
-<p>When copying the View, should the date also be copied?</p>
+</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000071">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/copy-date</code> When copying a View, should the date also be copied? <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"></td><td class="paramname">boolean</td><td></td></tr>
-    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td>View being cloned</td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$copy_date</td><td>Whether the copy the date from the existing View. Default: <code>false</code> </td></tr>
+    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td>View being cloned </td></tr>
   </table>
   </dd>
 </dl>
-<p>Modify View configuration before creating the duplicated View.</p>
+</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000072">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/new-view</code> Modify View configuration before creating the duplicated View. <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$new_view</td><td>Array of settings to be passed to wp_insert_post() </td></tr>
-    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td>View being cloned</td></tr>
+    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td>View being cloned </td></tr>
   </table>
   </dd>
 </dl>
+</dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000013">Runs Actions:</a></b></dt><dd><code>gv_duplicate_view</code> After the View is duplicated, perform an action <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___admin___duplicate___view.html#a0068fe504ec0142aa06b36ed6ea3cb04" title="Copy the meta information of a post to another View. ">GravityView_Admin_Duplicate_View::copy_view_meta_info</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$new_view_id</td><td>The ID of the newly created View </td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">WP_Post</td><td>The View that was just cloned </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00100">100</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00107">107</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
 <p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00293">save_as_new_view()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00322">save_as_new_view()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ade3d8a65f10b8eab1bffcabccfb07d2f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">current_user_can_copy </td>
@@ -293,22 +373,30 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Test if the user is allowed to copy Views. </p>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00082">82</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00091">91</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00246">get_clone_view_link()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00210">make_duplicate_link_row()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00262">get_clone_view_link()</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00231">make_duplicate_link_row()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00322">save_as_new_view()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a363a2e18f43d65cc32392cdf431e2ee5"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">get_clone_view_link </td>
@@ -334,6 +422,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Retrieve duplicate post link for post. </p>
@@ -347,18 +440,32 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+<p>If there's no gravityview post type for some reason, abort!</p>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000073">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/get_clone_view_link</code> Modify the Clone View URL that is generated <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$clone_view_link</td><td>Link with <code>admin_url("admin.php")</code>, plus the action query string </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$view_id</td><td>View ID </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$context</td><td>How to display the link. If "display", the URL is run through esc_html(). Default: <code>display</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00246">246</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00262">262</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00082">current_user_can_copy()</a>.</p>
+<p>References <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00091">current_user_can_copy()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00210">make_duplicate_link_row()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00231">make_duplicate_link_row()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a987a604917d7eefa0877f69aa726e44a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">is_all_views_page </td>
@@ -367,14 +474,19 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Is the current screen the All Views screen? </p>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00071">71</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00080">80</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00050">connected_form_links()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00210">make_duplicate_link_row()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00058">connected_form_links()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00231">make_duplicate_link_row()</a>.</p>
 
 </div>
 </div>
@@ -404,12 +516,19 @@ Public Member Functions</h2></td></tr>
 
 <p>Add the link to action list for post_row_actions. </p>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$actions</td><td>Row action links. Defaults are 'Edit', 'Quick Edit', 'Restore, 'Trash', 'Delete Permanently', 'Preview', and 'View' </td></tr>
+    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00210">210</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00231">231</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00082">current_user_can_copy()</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00246">get_clone_view_link()</a>, <a class="el" href="class-common_8php_source.html#l01300">gravityview_get_link()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00071">is_all_views_page()</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00091">current_user_can_copy()</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00262">get_clone_view_link()</a>, <a class="el" href="class-common_8php_source.html#l01366">gravityview_get_link()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00080">is_all_views_page()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00050">connected_form_links()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00058">connected_form_links()</a>.</p>
 
 </div>
 </div>
@@ -429,12 +548,19 @@ Public Member Functions</h2></td></tr>
 
 <p>This function calls the creation of a new copy of the selected post (by default preserving the original publish status) then redirects to the post list. </p>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$status</td><td>The status to set for the new View </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00293">293</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00322">322</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00100">create_duplicate()</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00107">create_duplicate()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00091">current_user_can_copy()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00283">save_as_new_view_draft()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00310">save_as_new_view_draft()</a>.</p>
 
 </div>
 </div>
@@ -453,10 +579,11 @@ Public Member Functions</h2></td></tr>
 
 <p>This function calls the creation of a new copy of the selected post (as a draft) then redirects to the edit post screen. </p>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00283">283</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00310">310</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00293">save_as_new_view()</a>.</p>
+<p>References <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00322">save_as_new_view()</a>.</p>
 
 </div>
 </div>

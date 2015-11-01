@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -109,8 +109,13 @@ Inheritance diagram for GravityView_Field_Section:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a095c5d389db211932136b53f25f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___section.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
+<tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a902c63bfcab26c87838ae0e70fa6b3be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___section.html#a902c63bfcab26c87838ae0e70fa6b3be">field_options</a> ($field_options, $template_id, $field_id, $context, $input_type)</td></tr>
 <tr class="separator:a902c63bfcab26c87838ae0e70fa6b3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c20f2a37df9b146915ae2e741f0007c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___section.html#a4c20f2a37df9b146915ae2e741f0007c">prevent_empty_field</a> ($output= '')</td></tr>
+<tr class="memdesc:a4c20f2a37df9b146915ae2e741f0007c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent Sections from being hidden when "Hide Empty Fields" is checked in View settings.  <a href="#a4c20f2a37df9b146915ae2e741f0007c">More...</a><br /></td></tr>
+<tr class="separator:a4c20f2a37df9b146915ae2e741f0007c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_gravity_view___field"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_gravity_view___field')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_gravity_view___field.html">GravityView_Field</a></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685 inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="separator:a095c5d389db211932136b53f25f39685 inherit pub_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,12 +132,38 @@ Data Fields</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_gravity_view___field"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_gravity_view___field')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="class_gravity_view___field.html">GravityView_Field</a></td></tr>
 <tr class="memitem:ab2fc40d43824ea3e1ce5d86dee0d763b inherit pub_attribs_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#ab2fc40d43824ea3e1ce5d86dee0d763b">$name</a></td></tr>
 <tr class="separator:ab2fc40d43824ea3e1ce5d86dee0d763b inherit pub_attribs_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_gravity_view___field"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_gravity_view___field')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_gravity_view___field.html">GravityView_Field</a></td></tr>
+<tr class="memitem:a77a8e14f561ff7d03819f3950fff3834 inherit pro_attribs_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a77a8e14f561ff7d03819f3950fff3834">$_field_id</a> = ''</td></tr>
+<tr class="separator:a77a8e14f561ff7d03819f3950fff3834 inherit pro_attribs_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e399980218d97ae9d2de8276cf3d1ef inherit pro_attribs_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a1e399980218d97ae9d2de8276cf3d1ef">$_field_options</a> = array()</td></tr>
+<tr class="separator:a1e399980218d97ae9d2de8276cf3d1ef inherit pro_attribs_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Add custom options for HTML field. </p>
 
 <p>Definition at line <a class="el" href="includes_2fields_2section_8php_source.html#l00006">6</a> of file <a class="el" href="includes_2fields_2section_8php_source.html">includes/fields/section.php</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a095c5d389db211932136b53f25f39685"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__construct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="includes_2fields_2section_8php_source.html#l00010">10</a> of file <a class="el" href="includes_2fields_2section_8php_source.html">includes/fields/section.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a902c63bfcab26c87838ae0e70fa6b3be"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +206,37 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="includes_2fields_2section_8php_source.html#l00010">10</a> of file <a class="el" href="includes_2fields_2section_8php_source.html">includes/fields/section.php</a>.</p>
+<p>Definition at line <a class="el" href="includes_2fields_2section_8php_source.html#l00029">29</a> of file <a class="el" href="includes_2fields_2section_8php_source.html">includes/fields/section.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c20f2a37df9b146915ae2e741f0007c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">prevent_empty_field </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$output</em> = <code>''</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prevent Sections from being hidden when "Hide Empty Fields" is checked in View settings. </p>
+<dl class="section since"><dt>Since</dt><dd>1.15.1</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$output</td><td>Existing section field output</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string If output was empty, return an empty HTML comment tag. Otherwise, return output. </dd></dl>
+
+<p>Definition at line <a class="el" href="includes_2fields_2section_8php_source.html#l00025">25</a> of file <a class="el" href="includes_2fields_2section_8php_source.html">includes/fields/section.php</a>.</p>
+
+<p>References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>.</p>
 
 </div>
 </div>

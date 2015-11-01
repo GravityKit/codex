@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -100,6 +100,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8ee413253a4c7b470ff2c108dac580b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a8ee413253a4c7b470ff2c108dac580b0">_gravityview_strip_subdomain</a> ($string_maybe_has_subdomain)</td></tr>
+<tr class="memdesc:a8ee413253a4c7b470ff2c108dac580b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a <em>very</em> basic match for second-level TLD domains, like <code>.co.uk</code>  <a href="#a8ee413253a4c7b470ff2c108dac580b0">More...</a><br /></td></tr>
+<tr class="separator:a8ee413253a4c7b470ff2c108dac580b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981dda16f0b8fe5605a6fed11307a364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a981dda16f0b8fe5605a6fed11307a364">gravityview_format_link</a> ($value=null)</td></tr>
+<tr class="memdesc:a981dda16f0b8fe5605a6fed11307a364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a whole link into a shorter link for display.  <a href="#a981dda16f0b8fe5605a6fed11307a364">More...</a><br /></td></tr>
+<tr class="separator:a981dda16f0b8fe5605a6fed11307a364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19d96b14ac018d5d19f808b43f08ac1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a19d96b14ac018d5d19f808b43f08ac1f">gravityview_get_floaty</a> ()</td></tr>
 <tr class="memdesc:a19d96b14ac018d5d19f808b43f08ac1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an image of our intrepid explorer friend.  <a href="#a19d96b14ac018d5d19f808b43f08ac1f">More...</a><br /></td></tr>
 <tr class="separator:a19d96b14ac018d5d19f808b43f08ac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,17 +118,123 @@ Functions</h2></td></tr>
 <tr class="memitem:a9dfc033770821eabcd0e5053fd13ab93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a9dfc033770821eabcd0e5053fd13ab93">gravityview_number_format</a> ($number, $decimals= '')</td></tr>
 <tr class="memdesc:a9dfc033770821eabcd0e5053fd13ab93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intelligently format a number.  <a href="#a9dfc033770821eabcd0e5053fd13ab93">More...</a><br /></td></tr>
 <tr class="separator:a9dfc033770821eabcd0e5053fd13ab93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4399334ee8425f06a1f287a37e5fc6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#ab4399334ee8425f06a1f287a37e5fc6b">gravityview_ob_include</a> ($file_path)</td></tr>
-<tr class="memdesc:ab4399334ee8425f06a1f287a37e5fc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the contents of a file using <code>include()</code> and <code>ob_start()</code>  <a href="#ab4399334ee8425f06a1f287a37e5fc6b">More...</a><br /></td></tr>
-<tr class="separator:ab4399334ee8425f06a1f287a37e5fc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4d39b73141a2a44bff4d842ae553cec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#ae4d39b73141a2a44bff4d842ae553cec">gravityview_sanitize_html_class</a> ($classes)</td></tr>
-<tr class="memdesc:ae4d39b73141a2a44bff4d842ae553cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">sanitize_html_class doesn't handle spaces (multiple classes).  <a href="#ae4d39b73141a2a44bff4d842ae553cec">More...</a><br /></td></tr>
-<tr class="separator:ae4d39b73141a2a44bff4d842ae553cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afed19e8881c27ae392579bf31bc4bf69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#afed19e8881c27ae392579bf31bc4bf69">gravityview_strip_whitespace</a> ($string)</td></tr>
-<tr class="memdesc:afed19e8881c27ae392579bf31bc4bf69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace multiple newlines, tabs, and spaces with a single space.  <a href="#afed19e8881c27ae392579bf31bc4bf69">More...</a><br /></td></tr>
-<tr class="separator:afed19e8881c27ae392579bf31bc4bf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5884040ac11bceae857c0d17b903075"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#af5884040ac11bceae857c0d17b903075">gravityview_ob_include</a> ($file_path, $object=NULL)</td></tr>
+<tr class="memdesc:af5884040ac11bceae857c0d17b903075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the contents of a file using <code>include()</code> and <code>ob_start()</code>  <a href="#af5884040ac11bceae857c0d17b903075">More...</a><br /></td></tr>
+<tr class="separator:af5884040ac11bceae857c0d17b903075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a40a04b5f1a6434625341704421590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="templates_2fields_2time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(!function_exists( 'gravityview_sanitize_html_class'))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#ab7a40a04b5f1a6434625341704421590">gravityview_strip_whitespace</a> ($string)</td></tr>
+<tr class="memdesc:ab7a40a04b5f1a6434625341704421590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace multiple newlines, tabs, and spaces with a single space.  <a href="#ab7a40a04b5f1a6434625341704421590">More...</a><br /></td></tr>
+<tr class="separator:ab7a40a04b5f1a6434625341704421590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc97cb18fc8cbaf8269167fa99b942d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#abc97cb18fc8cbaf8269167fa99b942d4">gv_empty</a> ($value, $zero_is_empty=true, $allow_string_booleans=true)</td></tr>
+<tr class="memdesc:abc97cb18fc8cbaf8269167fa99b942d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the value empty?  <a href="#abc97cb18fc8cbaf8269167fa99b942d4">More...</a><br /></td></tr>
+<tr class="separator:abc97cb18fc8cbaf8269167fa99b942d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a8ee413253a4c7b470ff2c108dac580b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_gravityview_strip_subdomain </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$string_maybe_has_subdomain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do a <em>very</em> basic match for second-level TLD domains, like <code>.co.uk</code> </p>
+<p>Ideally, we'd use <a href="https://github.com/jeremykendall/php-domain-parser">https://github.com/jeremykendall/php-domain-parser</a> to check for this, but it's too much work for such a basic functionality. Maybe if it's needed more in the future. So instead, we use <a href="http://stackoverflow.com/a/12372310">Basic matching regex</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$domain</td><td>Domain to check if it's a TLD or subdomain </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string Extracted domain if it has a subdomain </dd></dl>
+
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00282">282</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+
+<p>Referenced by <a class="el" href="helper-functions_8php_source.html#l00180">gravityview_format_link()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a981dda16f0b8fe5605a6fed11307a364"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gravityview_format_link </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a whole link into a shorter link for display. </p>
+<dl class="section since"><dt>Since</dt><dd>1.1</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>Existing URL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string If parse_url doesn't find a 'host', returns original value. Otherwise, returns formatted link. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000121">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_striphttp</code> Strip scheme from the displayed URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip the scheme. Return false to show scheme. (default: true)<br />
+If true: <code><a href="http://example.com">http://example.com</a> =&gt; example.com</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000122">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_stripwww</code> Strip www from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip www. Return false to show www. (default: true)<br />
+If true: <code>www.example.com =&gt; example.com</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000123">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_nosubdomain</code> Strip subdomains from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip subdomains. Return false to show subdomains. (default: true)<br />
+If true: <code><a href="http://demo.example.com">http://demo.example.com</a> =&gt; example.com</code> <br />
+If false: <code><a href="http://demo.example.com">http://demo.example.com</a> =&gt; demo.example.com</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000124">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_rootonly</code> Display link path going only to the base directory, not a sub-directory or file? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to enable "root only". Return false to show full path. (default: true)<br />
+If true: <code><a href="http://example.com/sub/directory/page.html">http://example.com/sub/directory/page.html</a> =&gt; example.com</code> <br />
+If false: <code><a href="http://example.com/sub/directory/page.html">http://example.com/sub/directory/page.html</a> =&gt; example.com/sub/directory/page.html</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000125">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_noquerystring</code> Strip the query string from the end of the URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to enable "root only". Return false to show full path. (default: true)<br />
+If true: <code><a href="http://example.com/?query=example">http://example.com/?query=example</a> =&gt; example.com</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00180">180</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+
+<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="helper-functions_8php_source.html#l00282">_gravityview_strip_subdomain()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a19d96b14ac018d5d19f808b43f08ac1f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -140,11 +252,11 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML image tag with floaty's cute mug on it </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00108">108</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00122">122</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>References <a class="el" href="table-body_8php_source.html#l00037">$class</a>, and <a class="el" href="gravityview_8php_source.html#l00039">GRAVITYVIEW_FILE</a>.</p>
+<p>References <a class="el" href="table-body_8php_source.html#l00043">$class</a>, and <a class="el" href="gravityview_8php_source.html#l00039">GRAVITYVIEW_FILE</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00132">GravityView_Admin_Notices\admin_notice()</a>, and <a class="el" href="class-admin_8php_source.html#l00102">GravityView_Admin\get_floaty()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00152">GravityView_Admin_Notices\admin_notice()</a>, and <a class="el" href="class-admin_8php_source.html#l00121">GravityView_Admin\get_floaty()</a>.</p>
 
 </div>
 </div>
@@ -172,10 +284,19 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array URL args, if exists. Empty array if not. </dd></dl>
+<p>sanitize_html_class doesn't handle spaces (multiple classes). We remedy that.</p>
+<p>sanitize_html_class</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$classes</td><td>Text or array of classes to sanitize</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string Sanitized CSS string</dd></dl>
 
 <p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00035">35</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-search-widget_8php_source.html#l00285">GravityView_Widget_Search\add_no_permalink_fields()</a>.</p>
+<p>Referenced by <a class="el" href="class-search-widget_8php_source.html#l00316">GravityView_Widget_Search\add_no_permalink_fields()</a>.</p>
 
 </div>
 </div>
@@ -248,11 +369,11 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>string Converted number in string format. </dd></dl>
 <p>Calculate the position of the decimal point in the number </p><dl class="section see"><dt>See also</dt><dd><a href="http://stackoverflow.com/a/2430144/480856">http://stackoverflow.com/a/2430144/480856</a></dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00138">138</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00152">152</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab4399334ee8425f06a1f287a37e5fc6b"></a>
+<a class="anchor" id="af5884040ac11bceae857c0d17b903075"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -260,63 +381,47 @@ Functions</h2></td></tr>
           <td class="memname">gravityview_ob_include </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$file_path</em></td><td>)</td>
+          <td class="paramname"><em>$file_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$object</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get the contents of a file using <code>include()</code> and <code>ob_start()</code> </p>
-<dl class="section since"><dt>Since</dt><dd>1.13</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.13 </dd>
+<dd>
+1.15 Added $object param</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$file_path</td><td>Full path to a file</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$file_path</td><td>Full path to a file </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$object</td><td>Pass pseudo-global to the included file </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Included file contents </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00093">93</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00107">107</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00505">GravityView_Edit_Entry_Render\edit_entry_form()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00504">GravityView_Edit_Entry_Render\edit_entry_form()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00644">GravityView_Edit_Entry_Render\render_form_buttons()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae4d39b73141a2a44bff4d842ae553cec"></a>
+<a class="anchor" id="ab7a40a04b5f1a6434625341704421590"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">gravityview_sanitize_html_class </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$classes</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>sanitize_html_class doesn't handle spaces (multiple classes). </p>
-<p>We remedy that.  sanitize_html_class </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$classes</td><td>Text or arrray of classes to sanitize </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>string Sanitized CSS string </dd></dl>
-
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00056">56</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
-
-<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00132">GravityView_Admin_Notices\admin_notice()</a>, <a class="el" href="class-api_8php_source.html#l00138">GravityView_API\field_class()</a>, <a class="el" href="class-search-widget_8php_source.html#l00723">GravityView_Widget_Search\get_search_class()</a>, <a class="el" href="class-api_8php_source.html#l00704">gv_container_class()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01260">GravityView_Edit_Entry_Render\merge_field_properties()</a>, <a class="el" href="class-gravityview-widget-page-links_8php_source.html#l00027">GravityView_Widget_Page_Links\render_frontend()</a>, <a class="el" href="class-gravityview-widget-pagination-info_8php_source.html#l00031">GravityView_Widget_Pagination_Info\render_frontend()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, and <a class="el" href="connector-_a_p_i___test_8php_source.html#l00286">GravityView_API_Test\test_gravityview_sanitize_html_class()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afed19e8881c27ae392579bf31bc4bf69"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">gravityview_strip_whitespace </td>
+          <td class="memname"><a class="el" href="templates_2fields_2time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> (!function_exists( 'gravityview_sanitize_html_class')) gravityview_strip_whitespace </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$string</em></td><td>)</td>
@@ -326,6 +431,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Replace multiple newlines, tabs, and spaces with a single space. </p>
+<p>First, runs normalize_whitespace() on a string. This replaces multiple lines with a single line, and tabs with spaces. We then strip any tabs or newlines and replace <em>those</em> with a single space.</p>
+<dl class="section see"><dt>See also</dt><dd>normalize_whitespace() </dd>
+<dd>
+GravityView_Helper_Functions_Test::test_gravityview_strip_whitespace </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.13</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -335,9 +444,61 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Stripped string! </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00079">79</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00092">92</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00505">GravityView_Edit_Entry_Render\edit_entry_form()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00504">GravityView_Edit_Entry_Render\edit_entry_form()</a>, <a class="el" href="class-ajax_8php_source.html#l00238">GravityView_Ajax\get_field_options()</a>, and <a class="el" href="class-ajax_8php_source.html#l00271">GravityView_Ajax\get_sortable_fields()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc97cb18fc8cbaf8269167fa99b942d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gv_empty </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$zero_is_empty</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$allow_string_booleans</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is the value empty? </p>
+<p>Allows you to pass a function instead of just a variable, like the empty() function insists upon (until PHP 5.5)</p>
+<p>Checks whether <code>false</code>, <code>null</code>, empty string, empty array, object with no vars defined</p>
+<dl class="section since"><dt>Since</dt><dd>1.15.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td>Check whether this is empty </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$zero_is_empty</td><td>Should the number zero be treated as an empty value? </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$allow_string_booleans</td><td>Whether to check if 'yes', 'true' =&gt; <code>true</code> and 'no', 'false' =&gt; <code>false</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean True: empty; false: not empty </dd></dl>
+
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00304">304</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+
+<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+
+<p>Referenced by <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">GravityView_Shortcode\parse_and_sanitize_atts()</a>.</p>
 
 </div>
 </div>

@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -115,12 +115,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordflow">if</span>( <span class="stringliteral">&#39;letter&#39;</span> === <a class="code" href="gquiz__grade_8php.html#ac382f89693be2b8d902af0dffd90ebce">$grading_type_enabled</a> ) {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    echo <a class="code" href="gquiz__grade_8php.html#a83e4d6721f3491a4fd780dbd3ce1a3c0">$field</a>[<span class="stringliteral">&#39;value&#39;</span>];</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} elseif( GFCommon::current_user_can_any( <span class="stringliteral">&#39;manage_options&#39;</span> ) ) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} elseif( <a class="code" href="class_g_v_common.html#acf95cadd29867fdd6865a38da314cc48">GVCommon::has_cap</a>( <span class="stringliteral">&#39;manage_options&#39;</span> ) ) {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    $grade_type = __( <span class="stringliteral">&#39;Letter&#39;</span>, <span class="stringliteral">&#39;gravityview&#39;</span> );</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    printf( esc_html_x( <span class="stringliteral">&#39;%s grading is disabled for this form. %sChange the setting%s&#39;</span>, <span class="stringliteral">&#39;%s is the current Quiz field type (&quot;Letter&quot; or &quot;Pass/Fail&quot;)&#39;</span>, <span class="stringliteral">&#39;gravityview&#39;</span> ), $grade_type, <span class="stringliteral">&#39;&lt;a href=&quot;&#39;</span>. admin_url(<span class="stringliteral">&#39;admin.php?page=gf_edit_forms&amp;amp;view=settings&amp;amp;subview=gravityformsquiz&amp;amp;id=&#39;</span>.<a class="code" href="gquiz__grade_8php.html#add47a7f886e74847997a4044e9903a0a">$gravityview_view</a>-&gt;getFormId() ) . <span class="stringliteral">&#39;&quot;&gt;&#39;</span>, <span class="stringliteral">&#39;&lt;/a&gt;&#39;</span> );</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="ttc" id="gquiz__grade_8php_html_ac382f89693be2b8d902af0dffd90ebce"><div class="ttname"><a href="gquiz__grade_8php.html#ac382f89693be2b8d902af0dffd90ebce">$grading_type_enabled</a></div><div class="ttdeci">if(empty($field['value'])) $grading_type_enabled</div><div class="ttdef"><b>Definition:</b> <a href="gquiz__grade_8php_source.html#l00019">gquiz_grade.php:19</a></div></div>
 <div class="ttc" id="gquiz__grade_8php_html_add47a7f886e74847997a4044e9903a0a"><div class="ttname"><a href="gquiz__grade_8php.html#add47a7f886e74847997a4044e9903a0a">$gravityview_view</a></div><div class="ttdeci">$gravityview_view</div><div class="ttdef"><b>Definition:</b> <a href="gquiz__grade_8php_source.html#l00009">gquiz_grade.php:9</a></div></div>
+<div class="ttc" id="class_g_v_common_html_acf95cadd29867fdd6865a38da314cc48"><div class="ttname"><a href="class_g_v_common.html#acf95cadd29867fdd6865a38da314cc48">GVCommon\has_cap</a></div><div class="ttdeci">static has_cap($caps= '', $object_id=null, $user_id=null)</div><div class="ttdoc">Alias of GravityView_Roles_Capabilities::has_cap() </div><div class="ttdef"><b>Definition:</b> <a href="class-common_8php_source.html#l00057">class-common.php:57</a></div></div>
 <div class="ttc" id="class_gravity_view___view_html_a76cf4523dbaebd58c27db806e01b73d9"><div class="ttname"><a href="class_gravity_view___view.html#a76cf4523dbaebd58c27db806e01b73d9">GravityView_View\getInstance</a></div><div class="ttdeci">static getInstance($passed_post=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="class-template_8php_source.html#l00190">class-template.php:190</a></div></div>
 <div class="ttc" id="gquiz__grade_8php_html_a83e4d6721f3491a4fd780dbd3ce1a3c0"><div class="ttname"><a href="gquiz__grade_8php.html#a83e4d6721f3491a4fd780dbd3ce1a3c0">$field</a></div><div class="ttdeci">$field</div><div class="ttdef"><b>Definition:</b> <a href="gquiz__grade_8php_source.html#l00011">gquiz_grade.php:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
