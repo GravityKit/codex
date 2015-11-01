@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -107,11 +107,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a6d5e116b218efb8fa2aa69b75ad2b0b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="table-body_8php.html#a6d5e116b218efb8fa2aa69b75ad2b0b5">$alt</a> = empty( $alt ) ? 'alt' : false</td></tr>
+<tr class="memitem:a6d5e116b218efb8fa2aa69b75ad2b0b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="table-body_8php.html#a6d5e116b218efb8fa2aa69b75ad2b0b5">$alt</a> = empty( $alt ) ? 'alt' : ''</td></tr>
 <tr class="separator:a6d5e116b218efb8fa2aa69b75ad2b0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a252ba022809910ea710a068fc1bab657"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="table-body_8php.html#a252ba022809910ea710a068fc1bab657">$class</a> = apply_filters( 'gravityview_entry_class', $alt, $entry, $this )</td></tr>
 <tr class="separator:a252ba022809910ea710a068fc1bab657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e51c14b644f5ccf05bf41120b832bc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="templates_2fields_2textarea_8php.html#a26a682e3ca7d6900aca94956ce9d2e9d">if</a>(0===$this-&gt;getTotalEntries())&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="table-body_8php.html#a8e51c14b644f5ccf05bf41120b832bc7">else</a></td></tr>
+<tr class="memitem:a8e51c14b644f5ccf05bf41120b832bc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="templates_2fields_2time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(0===$this-&gt;getTotalEntries())&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="table-body_8php.html#a8e51c14b644f5ccf05bf41120b832bc7">else</a></td></tr>
 <tr class="separator:a8e51c14b644f5ccf05bf41120b832bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a672d9707ef91db026c210f98cc601123"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="table-body_8php.html#a672d9707ef91db026c210f98cc601123">endforeach</a></td></tr>
 <tr class="separator:a672d9707ef91db026c210f98cc601123"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +122,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$alt = empty( $alt ) ? 'alt' : false</td>
+          <td class="memname">$alt = empty( $alt ) ? 'alt' : ''</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -140,10 +140,19 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000144">Runs Filter:</a></b></dt><dd><code>gravityview_entry_class</code> Modify the class applied to the entry row <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$alt</td><td>Existing class. Default: if odd row, <code>alt</code>, otherwise empty string. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Current entry being displayed </td></tr>
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___view.html" title="If this file is called directly, abort. ">GravityView_View</a></td><td class="paramname">$this</td><td>Current <a class="el" href="class_gravity_view___view.html" title="If this file is called directly, abort. ">GravityView_View</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="table-body_8php_source.html#l00037">37</a> of file <a class="el" href="table-body_8php_source.html">table-body.php</a>.</p>
+<p>Definition at line <a class="el" href="table-body_8php_source.html#l00043">43</a> of file <a class="el" href="table-body_8php_source.html">table-body.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01209">GravityView_frontend\add_columns_sort_links()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00612">GravityView_Delete_Entry\display_message()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00235">GV_License_Handler\generate_license_box()</a>, <a class="el" href="class-common_8php_source.html#l01277">GVCommon\generate_notice()</a>, <a class="el" href="class-admin-label_8php_source.html#l00132">GravityView_Admin_View_Item\get_item_info()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00205">GV_License_Handler\get_license_message()</a>, <a class="el" href="helper-functions_8php_source.html#l00108">gravityview_get_floaty()</a>, <a class="el" href="class-api_8php_source.html#l00704">gv_container_class()</a>, <a class="el" href="class-gravityview-widget-page-links_8php_source.html#l00027">GravityView_Widget_Page_Links\render_frontend()</a>, <a class="el" href="class-gravityview-widget-pagination-info_8php_source.html#l00031">GravityView_Widget_Pagination_Info\render_frontend()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, <a class="el" href="type__hidden_8php_source.html#l00011">GravityView_FieldType_hidden\render_input()</a>, <a class="el" href="type__number_8php_source.html#l00011">GravityView_FieldType_number\render_input()</a>, <a class="el" href="type__text_8php_source.html#l00020">GravityView_FieldType_text\render_input()</a>, <a class="el" href="type__textarea_8php_source.html#l00021">GravityView_FieldType_textarea\render_input()</a>, <a class="el" href="class_8render_8settings_8php_source.html#l00421">GravityView_Render_Settings\render_text_option()</a>, <a class="el" href="class_8render_8settings_8php_source.html#l00451">GravityView_Render_Settings\render_textarea_option()</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00050">GV_License_Handler\settings_edd_license_activation()</a>.</p>
+<p>Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01271">GravityView_frontend\add_columns_sort_links()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00612">GravityView_Delete_Entry\display_message()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00249">GV_License_Handler\generate_license_box()</a>, <a class="el" href="class-common_8php_source.html#l01343">GVCommon\generate_notice()</a>, <a class="el" href="class-admin-label_8php_source.html#l00132">GravityView_Admin_View_Item\get_item_info()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00219">GV_License_Handler\get_license_message()</a>, <a class="el" href="helper-functions_8php_source.html#l00122">gravityview_get_floaty()</a>, <a class="el" href="class-api_8php_source.html#l00704">gv_container_class()</a>, <a class="el" href="class-gravityview-widget-page-links_8php_source.html#l00027">GravityView_Widget_Page_Links\render_frontend()</a>, <a class="el" href="class-gravityview-widget-pagination-info_8php_source.html#l00031">GravityView_Widget_Pagination_Info\render_frontend()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, <a class="el" href="type__hidden_8php_source.html#l00011">GravityView_FieldType_hidden\render_input()</a>, <a class="el" href="type__number_8php_source.html#l00011">GravityView_FieldType_number\render_input()</a>, <a class="el" href="type__text_8php_source.html#l00020">GravityView_FieldType_text\render_input()</a>, <a class="el" href="type__textarea_8php_source.html#l00021">GravityView_FieldType_textarea\render_input()</a>, <a class="el" href="class_8render_8settings_8php_source.html#l00421">GravityView_Render_Settings\render_text_option()</a>, <a class="el" href="class_8render_8settings_8php_source.html#l00451">GravityView_Render_Settings\render_textarea_option()</a>, and <a class="el" href="class-gv-license-handler_8php_source.html#l00056">GV_License_Handler\settings_edd_license_activation()</a>.</p>
 
 </div>
 </div>
@@ -152,7 +161,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="templates_2fields_2textarea_8php.html#a26a682e3ca7d6900aca94956ce9d2e9d">if</a> (0===$this-&gt;getTotalEntries()) else</td>
+          <td class="memname"><a class="el" href="templates_2fields_2time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> (0===$this-&gt;getTotalEntries()) else</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -176,7 +185,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="table-body_8php_source.html#l00052">52</a> of file <a class="el" href="table-body_8php_source.html">table-body.php</a>.</p>
+<p>Definition at line <a class="el" href="table-body_8php_source.html#l00058">58</a> of file <a class="el" href="table-body_8php_source.html">table-body.php</a>.</p>
 
 </div>
 </div>

@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -90,7 +90,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a>  </div>
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Merge_Tags Class Reference</div>  </div>
 </div><!--header-->
@@ -106,24 +107,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4aa1f1469294fa6f3d9db7ffc46f369d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a4aa1f1469294fa6f3d9db7ffc46f369d">_gform_custom_merge_tags</a> ($existing_merge_tags=array(), $form_id, $fields=array(), $element_id= '')</td></tr>
 <tr class="memdesc:a4aa1f1469294fa6f3d9db7ffc46f369d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add custom merge tags to merge tag options.  <a href="#a4aa1f1469294fa6f3d9db7ffc46f369d">More...</a><br /></td></tr>
 <tr class="separator:a4aa1f1469294fa6f3d9db7ffc46f369d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b8e7c3a49a0a35764de25e61edeabd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a1b8e7c3a49a0a35764de25e61edeabd7">_gform_replace_merge_tags</a> ($text, $form=array(), $entry=array(), $url_encode=false, $esc_html=false)</td></tr>
-<tr class="memdesc:a1b8e7c3a49a0a35764de25e61edeabd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instead of adding multiple hooks, add all hooks into this one method to improve speed.  <a href="#a1b8e7c3a49a0a35764de25e61edeabd7">More...</a><br /></td></tr>
-<tr class="separator:a1b8e7c3a49a0a35764de25e61edeabd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:acf131abd5aba2047a9653344a90f15ca"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#acf131abd5aba2047a9653344a90f15ca">replace_variables</a> ($text, $form, $entry)</td></tr>
-<tr class="memdesc:acf131abd5aba2047a9653344a90f15ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for merge tags before passing to Gravity Forms to improve speed.  <a href="#acf131abd5aba2047a9653344a90f15ca">More...</a><br /></td></tr>
-<tr class="separator:acf131abd5aba2047a9653344a90f15ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d94b77181f56094b1670bf5184de017"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a1d94b77181f56094b1670bf5184de017">replace_get_variables</a> ($text, $form=array(), $entry=array(), $url_encode=false)</td></tr>
+<tr class="memdesc:a1d94b77181f56094b1670bf5184de017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow passing variables via URL to be displayed in Merge Tags.  <a href="#a1d94b77181f56094b1670bf5184de017">More...</a><br /></td></tr>
+<tr class="separator:a1d94b77181f56094b1670bf5184de017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b3b2b41570811e0417ad439a534cea"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a23b3b2b41570811e0417ad439a534cea">replace_gv_merge_tags</a> ($text, $form=array(), $entry=array(), $url_encode=false, $esc_html=false)</td></tr>
+<tr class="memdesc:a23b3b2b41570811e0417ad439a534cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> filters when using GFCommon::replace_variables()  <a href="#a23b3b2b41570811e0417ad439a534cea">More...</a><br /></td></tr>
+<tr class="separator:a23b3b2b41570811e0417ad439a534cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6bfd6aac71a09fae1434338cb3b79e8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#af6bfd6aac71a09fae1434338cb3b79e8">replace_variables</a> ($text, $form=array(), $entry=array(), $url_encode=false, $esc_html=true)</td></tr>
+<tr class="memdesc:af6bfd6aac71a09fae1434338cb3b79e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for merge tags before passing to Gravity Forms to improve speed.  <a href="#af6bfd6aac71a09fae1434338cb3b79e8">More...</a><br /></td></tr>
+<tr class="separator:af6bfd6aac71a09fae1434338cb3b79e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a561424521381fd64539c5fb5e573d143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a561424521381fd64539c5fb5e573d143">add_hooks</a> ()</td></tr>
 <tr class="memdesc:a561424521381fd64539c5fb5e573d143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tap in to gform_replace_merge_tags to add merge tags.  <a href="#a561424521381fd64539c5fb5e573d143">More...</a><br /></td></tr>
 <tr class="separator:a561424521381fd64539c5fb5e573d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bd1418b746cafd087f41a246b7db3f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a6bd1418b746cafd087f41a246b7db3f4">replace_user_variables_created_by</a> ($text, $form=array(), $entry=array(), $url_encode=false, $esc_html=false)</td></tr>
-<tr class="memdesc:a6bd1418b746cafd087f41a246b7db3f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exactly like Gravity Forms' User Meta functionality, but instead shows information on the user who created the entry instead of the currently logged-in user.  <a href="#a6bd1418b746cafd087f41a246b7db3f4">More...</a><br /></td></tr>
-<tr class="separator:a6bd1418b746cafd087f41a246b7db3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ae7b0947d9bb29179cbf7aeb387091513"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#ae7b0947d9bb29179cbf7aeb387091513">replace_user_variables_created_by</a> ($text, $form=array(), $entry=array(), $url_encode=false, $esc_html=false)</td></tr>
+<tr class="memdesc:ae7b0947d9bb29179cbf7aeb387091513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exactly like Gravity Forms' User Meta functionality, but instead shows information on the user who created the entry instead of the currently logged-in user.  <a href="#ae7b0947d9bb29179cbf7aeb387091513">More...</a><br /></td></tr>
+<tr class="separator:ae7b0947d9bb29179cbf7aeb387091513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Enhance Gravity Forms' merge tag functionality by adding additional merge tags. </p>
@@ -201,72 +208,7 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Modified merge tags </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00085">85</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1b8e7c3a49a0a35764de25e61edeabd7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_gform_replace_merge_tags </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$text</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$form</em> = <code>array()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$entry</em> = <code>array()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$url_encode</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$esc_html</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Instead of adding multiple hooks, add all hooks into this one method to improve speed. </p>
-<dl class="section since"><dt>Since</dt><dd>1.8.4</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td>Text to replace </td></tr>
-    <tr><td class="paramtype">array&#160;|&#160;boolean</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Entry array </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$url_encode</td><td>Whether to URL-encode output </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$esc_html</td><td>Whether to apply <code>esc_html()</code> to output</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
-<p>This prevents the gform_replace_merge_tags filter from being called twice, as defined in: </p><dl class="section see"><dt>See also</dt><dd>GFCommon::replace_variables() </dd>
-<dd>
-GFCommon::replace_variables_prepopulate()</dd></dl>
-
-<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00123">123</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
-
-<p>References <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00156">replace_user_variables_created_by()</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00096">96</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
 </div>
 </div>
@@ -293,6 +235,7 @@ GFCommon::replace_variables_prepopulate()</dd></dl>
 
 <p>Tap in to gform_replace_merge_tags to add merge tags. </p>
 <dl class="section since"><dt>Since</dt><dd>1.8.4 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>GFCommon::replace_variables_prepopulate </dd></dl>
 
 <p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00020">20</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
@@ -300,7 +243,7 @@ GFCommon::replace_variables_prepopulate()</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a6bd1418b746cafd087f41a246b7db3f4"></a>
+<a class="anchor" id="a1d94b77181f56094b1670bf5184de017"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -308,7 +251,100 @@ GFCommon::replace_variables_prepopulate()</dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">replace_user_variables_created_by </td>
+          <td class="memname">static replace_get_variables </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$url_encode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allow passing variables via URL to be displayed in Merge Tags. </p>
+<p>Works with <code>[gvlogic]</code>: [gvlogic if="{get:example}" is="false"] ?example=false [else] ?example wasn't "false". It's {get:example}! [/gvlogic]</p>
+<p>Supports passing arrays: URL: <code>example[]=Example+One&amp;example[]=Example+(with+comma)%2C+Two</code> Merge Tag: <code>{get:example}</code> Output: <code>Example One, Example (with comma), Two</code></p>
+<dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td>Text to replace </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Entry array </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$url_encode</td><td>Whether to URL-encode output </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000081">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/glue/</code> Modify the glue used to convert an array of <code>{get}</code> values from an array to string <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$glue</td><td>String used to <code>implode()</code> $_GET values Default: ', ' </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramtype">string</td><td class="paramname">$property</td><td>The current name of the $_GET parameter being combined </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000082">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Disable esc_html() from running on <code>{get}</code> merge tag By default, all values passed through URLs will be escaped for security reasons. If for some reason you want to pass HTML in the URL, for example, you will need to return false on this filter. It is strongly recommended that you do not disable this filter. <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$esc_html</td><td>Whether to esc_html() the value. Default: <code>true</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000083">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Modify the value of the <code>{get}</code> replacement before being used <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$value</td><td>Value that will replace <code>{get}</code> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramtype">string</td><td class="paramname">$text</td><td>Text that contains <code>{get}</code> (before replacement) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramtype">array</td><td class="paramname">$entry</td><td>Entry array </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00180">180</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+
+<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+
+<p>Referenced by <a class="el" href="class-admin-welcome_8php_source.html#l00171">GravityView_Welcome\getting_started_screen()</a>, and <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">GravityView_Shortcode\parse_and_sanitize_atts()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23b3b2b41570811e0417ad439a534cea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static replace_gv_merge_tags </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$text</em>, </td>
@@ -345,7 +381,93 @@ GFCommon::replace_variables_prepopulate()</dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> filters when using GFCommon::replace_variables() </p>
+<p>Instead of adding multiple hooks, add all hooks into this one method to improve speed</p>
+<dl class="section since"><dt>Since</dt><dd>1.8.4</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td>Text to replace </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;bool</td><td class="paramname">$form</td><td>Gravity Forms form array. When called inside {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>GFCommon::replace_variables()} (now deprecated), <code>false</code> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array&#160;|&#160;bool</td><td class="paramname">$entry</td><td>Entry array. When called inside {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>GFCommon::replace_variables()} (now deprecated), <code>false</code> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$url_encode</td><td>Whether to URL-encode output </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$esc_html</td><td>Whether to apply <code>esc_html()</code> to output</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
+<p>This prevents the gform_replace_merge_tags filter from being called twice, as defined in: </p><dl class="section see"><dt>See also</dt><dd>GFCommon::replace_variables() </dd>
+<dd>
+GFCommon::replace_variables_prepopulate()</dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00140">140</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-admin-welcome_8php_source.html#l00171">GravityView_Welcome\getting_started_screen()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7b0947d9bb29179cbf7aeb387091513"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static replace_user_variables_created_by </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$url_encode</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$esc_html</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -364,16 +486,15 @@ GFCommon::replace_variables_prepopulate()</dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Text, with user variables replaced, if they existed </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.13.2 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00156">156</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00254">254</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00123">_gform_replace_merge_tags()</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="acf131abd5aba2047a9653344a90f15ca"></a>
+<a class="anchor" id="af6bfd6aac71a09fae1434338cb3b79e8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -390,13 +511,25 @@ GFCommon::replace_variables_prepopulate()</dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$form</em>, </td>
+          <td class="paramname"><em>$form</em> = <code>array()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$entry</em>&#160;</td>
+          <td class="paramname"><em>$entry</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$url_encode</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$esc_html</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -414,17 +547,21 @@ GFCommon::replace_variables_prepopulate()</dd></dl>
 <p>Check for merge tags before passing to Gravity Forms to improve speed. </p>
 <p>GF doesn't check for whether <code>{</code> exists before it starts diving in. They not only replace fields, they do <code>str_replace()</code> on things like ip address, which is a lot of work just to check if there's any hint of a replacement variable.</p>
 <p>We check for the basics first, which is more efficient.</p>
-<dl class="section since"><dt>Since</dt><dd>1.8.4 - Moved to <a class="el" href="class_gravity_view___merge___tags.html" title="Enhance Gravity Forms&#39; merge tag functionality by adding additional merge tags. ">GravityView_Merge_Tags</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.8.4 - Moved to <a class="el" href="class_gravity_view___merge___tags.html" title="Enhance Gravity Forms&#39; merge tag functionality by adding additional merge tags. ">GravityView_Merge_Tags</a> </dd>
+<dd>
+1.15.1 - Add support for $url_encode and $esc_html arguments</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$text</td><td>Text to replace variables in </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>GF Form array </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>GF Entry array </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$url_encode</td><td>Pass return value through <code>url_encode()</code> </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$esc_html</td><td>Pass return value through <code>esc_html()</code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Text with variables maybe replaced </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000068">Runs Filter:</a></b></dt><dd><code>gravityview_do_replace_variables</code> Turn off merge tag variable replacements.<br />
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000080">Runs Filter:</a></b></dt><dd><code>gravityview_do_replace_variables</code> Turn off merge tag variable replacements.<br />
 Useful where you want to process variables yourself. We do this in the Math Extension. <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -436,10 +573,11 @@ Useful where you want to process variables yourself. We do this in the Math Exte
   </dd>
 </dl>
 </dd></dl>
+<p>Replace <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> merge tags before going to Gravity Forms This allows us to replace our tags first. </p><dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00042">42</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00046">46</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-api_8php_source.html#l00104">GravityView_API\replace_variables()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, and <a class="el" href="class-api_8php_source.html#l00104">GravityView_API\replace_variables()</a>.</p>
 
 </div>
 </div>

@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -132,11 +132,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>add_available_field()
 : <a class="el" href="class_gravity_view___delete___entry.html#aefebbf93336a264619969784066ccc2a">GravityView_Delete_Entry</a>
 </li>
+<li>add_caps()
+: <a class="el" href="class_gravity_view___roles___capabilities.html#a462fbbd3966067455e02246d4327e618">GravityView_Roles_Capabilities</a>
+</li>
 <li>add_columns_sort_links()
 : <a class="el" href="class_gravity_view__frontend.html#a77dacfc2c169a3a01e821e933b6cd093">GravityView_frontend</a>
 </li>
-<li>add_connected_form_column_content()
-: <a class="el" href="class_gravity_view___admin___views.html#abec87e30394462c25864df1c19d6046e">GravityView_Admin_Views</a>
+<li>add_custom_column_content()
+: <a class="el" href="class_gravity_view___admin___views.html#a0dfa4cb877b0f2a2e53a59b0adc45a19">GravityView_Admin_Views</a>
 </li>
 <li>add_datepicker_js_dependency()
 : <a class="el" href="class_gravity_view___widget___search.html#ad4c9c4c16fb1571d40d1823f4cd14d32">GravityView_Widget_Search</a>
@@ -172,20 +175,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>add_field_support()
 : <a class="el" href="class_gravity_view___field.html#a0439728ab3d018f964428fbc76e192d4">GravityView_Field</a>
 </li>
+<li>add_gravity_forms_usercaps_to_gravityview_caps()
+: <a class="el" href="class_gravity_view___roles___capabilities.html#ad045b0431ba1287651e6c8c8b3fa7a06">GravityView_Roles_Capabilities</a>
+</li>
 <li>add_hooks()
 : <a class="el" href="class_gravity_view___admin.html#a561424521381fd64539c5fb5e573d143">GravityView_Admin</a>
 , <a class="el" href="class_gravity_view___admin___approve_entries.html#a561424521381fd64539c5fb5e573d143">GravityView_Admin_ApproveEntries</a>
 , <a class="el" href="class_gravity_view___admin___bar.html#a561424521381fd64539c5fb5e573d143">GravityView_Admin_Bar</a>
+, <a class="el" href="class_gravity_view___admin___duplicate___view.html#a561424521381fd64539c5fb5e573d143">GravityView_Admin_Duplicate_View</a>
 , <a class="el" href="class_gravity_view___admin___notices.html#a561424521381fd64539c5fb5e573d143">GravityView_Admin_Notices</a>
 , <a class="el" href="class_gravity_view___cache.html#a561424521381fd64539c5fb5e573d143">GravityView_Cache</a>
 , <a class="el" href="class_gravity_view___compatibility.html#a561424521381fd64539c5fb5e573d143">GravityView_Compatibility</a>
 , <a class="el" href="class_gravity_view___delete___entry.html#a561424521381fd64539c5fb5e573d143">GravityView_Delete_Entry</a>
-, <a class="el" href="class_gravity_view___delete___entry___shortcode.html#a561424521381fd64539c5fb5e573d143">GravityView_Delete_Entry_Shortcode</a>
 , <a class="el" href="class_gravity_view___edit___entry.html#a561424521381fd64539c5fb5e573d143">GravityView_Edit_Entry</a>
+, <a class="el" href="class_gravity_view___entry___link___shortcode.html#a561424521381fd64539c5fb5e573d143">GravityView_Entry_Link_Shortcode</a>
+, <a class="el" href="class_gravity_view___entry___notes.html#a561424521381fd64539c5fb5e573d143">GravityView_Entry_Notes</a>
 , <a class="el" href="class_gravity_view___extension.html#a561424521381fd64539c5fb5e573d143">GravityView_Extension</a>
 , <a class="el" href="class_gravity_view___merge___tags.html#a561424521381fd64539c5fb5e573d143">GravityView_Merge_Tags</a>
 , <a class="el" href="class_gravity_view___plugin.html#a561424521381fd64539c5fb5e573d143">GravityView_Plugin</a>
+, <a class="el" href="class_gravity_view___plugin__and___theme___hooks.html#a561424521381fd64539c5fb5e573d143">GravityView_Plugin_and_Theme_Hooks</a>
+, <a class="el" href="class_gravity_view___roles___capabilities.html#a561424521381fd64539c5fb5e573d143">GravityView_Roles_Capabilities</a>
 , <a class="el" href="class_gravity_view___shortcode.html#a561424521381fd64539c5fb5e573d143">GravityView_Shortcode</a>
+, <a class="el" href="class_gravity_view___support___port.html#a561424521381fd64539c5fb5e573d143">GravityView_Support_Port</a>
+, <a class="el" href="class_gravity_view___template.html#a561424521381fd64539c5fb5e573d143">GravityView_Template</a>
 , <a class="el" href="class_g_v___license___handler.html#a561424521381fd64539c5fb5e573d143">GV_License_Handler</a>
 , <a class="el" href="class_g_v_logic___shortcode.html#a561424521381fd64539c5fb5e573d143">GVLogic_Shortcode</a>
 </li>
@@ -200,6 +212,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>add_no_permalink_fields()
 : <a class="el" href="class_gravity_view___widget___search.html#af2cc911d83fc137d51bda5ad7692d7ab">GravityView_Widget_Search</a>
+</li>
+<li>add_note()
+: <a class="el" href="class_gravity_view___entry___notes.html#a2f377696a7778b1cabcd50b35890c170">GravityView_Entry_Notes</a>
 </li>
 <li>add_notice()
 : <a class="el" href="class_gravity_view___admin.html#a6d8d59a4cd41f04169160dcd231bdf19">GravityView_Admin</a>
@@ -248,6 +263,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>add_view()
 : <a class="el" href="class_gravity_view___view___data.html#abb600495b2fbd3ea53ec803cd92e8632">GravityView_View_Data</a>
 </li>
+<li>add_view_dropdown()
+: <a class="el" href="class_gravity_view___admin___views.html#acd3962fbe3c4a7f588accf85a701bed0">GravityView_Admin_Views</a>
+</li>
 <li>additional_info()
 : <a class="el" href="class_gravity_view___admin___view___field.html#ab1c5eb7dcdbd8a3538256fc4eff34fed">GravityView_Admin_View_Field</a>
 , <a class="el" href="class_gravity_view___admin___view___item.html#ab1c5eb7dcdbd8a3538256fc4eff34fed">GravityView_Admin_View_Item</a>
@@ -278,8 +296,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>ajax_get_view_merge_tag_data()
 : <a class="el" href="class_gravity_view___recent___entries___widget.html#aa0f3ccf980d6aa2c353235e51b3cbaf2">GravityView_Recent_Entries_Widget</a>
 </li>
-<li>ajax_update_approved()
-: <a class="el" href="class_gravity_view___admin___approve_entries.html#ac1ccbc3de71c87d19bdd790518a9190e">GravityView_Admin_ApproveEntries</a>
+<li>all_caps()
+: <a class="el" href="class_gravity_view___roles___capabilities.html#a519126ef577f94dd00b30aea91138424">GravityView_Roles_Capabilities</a>
 </li>
 <li>app_settings_fields()
 : <a class="el" href="class_gravity_view___settings.html#a40b13cf1f3afc1c08f93514f593db64c">GravityView_Settings</a>

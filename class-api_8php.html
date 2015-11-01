@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -113,9 +113,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8ee413253a4c7b470ff2c108dac580b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class-api_8php.html#a8ee413253a4c7b470ff2c108dac580b0">_gravityview_strip_subdomain</a> ($string_maybe_has_subdomain)</td></tr>
-<tr class="memdesc:a8ee413253a4c7b470ff2c108dac580b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a <em>very</em> basic match for second-level TLD domains, like <code>.co.uk</code>  <a href="#a8ee413253a4c7b470ff2c108dac580b0">More...</a><br /></td></tr>
-<tr class="separator:a8ee413253a4c7b470ff2c108dac580b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63ec2a5b744a0d7e18fdd14228873256"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class-api_8php.html#a63ec2a5b744a0d7e18fdd14228873256">gravityview_after</a> ()</td></tr>
 <tr class="separator:a63ec2a5b744a0d7e18fdd14228873256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af96c15d2ffde57dab13e49eb39dc7453"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class-api_8php.html#af96c15d2ffde57dab13e49eb39dc7453">gravityview_back_link</a> ()</td></tr>
@@ -131,9 +128,6 @@ Functions</h2></td></tr>
 <tr class="separator:aaf8ecfcc074818e29f34e943af7170bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a667f62293dd99f210c1626ce8c264f85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class-api_8php.html#a667f62293dd99f210c1626ce8c264f85">gravityview_footer</a> ()</td></tr>
 <tr class="separator:a667f62293dd99f210c1626ce8c264f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981dda16f0b8fe5605a6fed11307a364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class-api_8php.html#a981dda16f0b8fe5605a6fed11307a364">gravityview_format_link</a> ($value=null)</td></tr>
-<tr class="memdesc:a981dda16f0b8fe5605a6fed11307a364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a whole link into a shorter link for display.  <a href="#a981dda16f0b8fe5605a6fed11307a364">More...</a><br /></td></tr>
-<tr class="separator:a981dda16f0b8fe5605a6fed11307a364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e24d5ed137a17f1b6694d7594eeacf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class-api_8php.html#a1e24d5ed137a17f1b6694d7594eeacf5">gravityview_get_context</a> ()</td></tr>
 <tr class="memdesc:a1e24d5ed137a17f1b6694d7594eeacf5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_gravity_view___view.html" title="If this file is called directly, abort. ">GravityView_View</a> $gravityview_view  <a href="#a1e24d5ed137a17f1b6694d7594eeacf5">More...</a><br /></td></tr>
 <tr class="separator:a1e24d5ed137a17f1b6694d7594eeacf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,35 +173,6 @@ Functions</h2></td></tr>
 <tr class="separator:a996850d1aed2d0e88ab42f3a348913e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a8ee413253a4c7b470ff2c108dac580b0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_gravityview_strip_subdomain </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$string_maybe_has_subdomain</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Do a <em>very</em> basic match for second-level TLD domains, like <code>.co.uk</code> </p>
-<p>Ideally, we'd use <a href="https://github.com/jeremykendall/php-domain-parser">https://github.com/jeremykendall/php-domain-parser</a> to check for this, but it's too much work for such a basic functionality. Maybe if it's needed more in the future. So instead, we use <a href="http://stackoverflow.com/a/12372310">Basic matching regex</a>. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$domain</td><td>Domain to check if it's a TLD or subdomain </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>string Extracted domain if it has a subdomain </dd></dl>
-
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l00884">884</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
-
-<p>Referenced by <a class="el" href="class-api_8php_source.html#l00902">gravityview_format_link()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a63ec2a5b744a0d7e18fdd14228873256"></a>
 <div class="memitem">
 <div class="memproto">
@@ -228,9 +193,9 @@ Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01071">1071</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l00952">952</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="class-api_8php_source.html#l01085">gravityview_get_view_id()</a>.</p>
+<p>References <a class="el" href="class-api_8php_source.html#l00966">gravityview_get_view_id()</a>.</p>
 
 </div>
 </div>
@@ -261,7 +226,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-api_8php_source.html#l00751">751</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="delete__link_8php_source.html#l00018">$href</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>, <a class="el" href="class-common_8php_source.html#l01300">gravityview_get_link()</a>, and <a class="el" href="class-api_8php_source.html#l00734">gv_directory_link()</a>.</p>
+<p>References <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="delete__link_8php_source.html#l00018">$href</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>, <a class="el" href="class-common_8php_source.html#l01366">gravityview_get_link()</a>, and <a class="el" href="class-api_8php_source.html#l00734">gv_directory_link()</a>.</p>
 
 </div>
 </div>
@@ -285,9 +250,9 @@ Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01047">1047</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l00928">928</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="class-api_8php_source.html#l01085">gravityview_get_view_id()</a>.</p>
+<p>References <a class="el" href="class-api_8php_source.html#l00966">gravityview_get_view_id()</a>.</p>
 
 </div>
 </div>
@@ -328,7 +293,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-api_8php_source.html#l00814">814</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-common_8php_source.html#l01300">gravityview_get_link()</a>.</p>
+<p>References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-common_8php_source.html#l01366">gravityview_get_link()</a>.</p>
 
 </div>
 </div>
@@ -357,7 +322,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Field output. If empty value and hide empty is true, return empty. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000031">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/args</code> Modify the args before generation begins <dl class="section since"><dt>Since</dt><dd>1.7 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000026">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/args</code> Modify the args before generation begins <dl class="section since"><dt>Since</dt><dd>1.7 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>Associative array; <code>field</code> and <code>form</code> is required. </td></tr>
@@ -367,7 +332,7 @@ Functions</h2></td></tr>
 </dl>
 </dd></dl>
 <p>Create the Context for replacing. </p><dl class="section since"><dt>Since</dt><dd>1.11</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000032">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/pre_html</code> Allow Pre filtering of the HTML <dl class="section since"><dt>Since</dt><dd>1.11 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000027">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/pre_html</code> Allow Pre filtering of the HTML <dl class="section since"><dt>Since</dt><dd>1.11 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$markup</td><td>The HTML for the markup </td></tr>
@@ -376,7 +341,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000033">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/open_tag</code> Modify the opening tags for the template content placeholders <dl class="section since"><dt>Since</dt><dd>1.11 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000028">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/open_tag</code> Modify the opening tags for the template content placeholders <dl class="section since"><dt>Since</dt><dd>1.11 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$open_tag</td><td>Open tag for template content placeholders. Default: <code>{{</code> </td></tr>
@@ -384,7 +349,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000034">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/close_tag</code> Modify the closing tags for the template content placeholders <dl class="section since"><dt>Since</dt><dd>1.11 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000029">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/close_tag</code> Modify the closing tags for the template content placeholders <dl class="section since"><dt>Since</dt><dd>1.11 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$close_tag</td><td>Close tag for template content placeholders. Default: <code>}}</code> </td></tr>
@@ -401,7 +366,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000035">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/html</code> Modify field HTML output <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000030">Runs Filter:</a></b></dt><dd><code>gravityview/field_output/html</code> Modify field HTML output <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$html</td><td>Existing HTML output </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>Arguments passed to the function </td></tr>
@@ -410,7 +375,7 @@ Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01195">1195</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l01076">1076</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-api_8php_source.html#l00190">GravityView_API\field_html_attr_id()</a>, <a class="el" href="class-api_8php_source.html#l00118">GravityView_API\field_width()</a>, <a class="el" href="class-api_8php_source.html#l00700">gv_class()</a>, <a class="el" href="class-api_8php_source.html#l00696">gv_label()</a>, and <a class="el" href="class-api_8php_source.html#l00719">gv_value()</a>.</p>
 
@@ -436,88 +401,9 @@ Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01063">1063</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l00944">944</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="class-api_8php_source.html#l01085">gravityview_get_view_id()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a981dda16f0b8fe5605a6fed11307a364"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">gravityview_format_link </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$value</em> = <code>null</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert a whole link into a shorter link for display. </p>
-<dl class="section since"><dt>Since</dt><dd>1.1</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>Existing URL </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>string If parse_url doesn't find a 'host', returns original value. Otherwise, returns formatted link. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000024">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_striphttp</code> Strip scheme from the displayed URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip the scheme. Return false to show scheme. (default: true)<br />
-If true: <code><a href="http://example.com">http://example.com</a> =&gt; example.com</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000025">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_stripwww</code> Strip www from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip www. Return false to show www. (default: true)<br />
-If true: <code>www.example.com =&gt; example.com</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000026">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_nosubdomain</code> Strip subdomains from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip subdomains. Return false to show subdomains. (default: true)<br />
-If true: <code><a href="http://demo.example.com">http://demo.example.com</a> =&gt; example.com</code> <br />
-If false: <code><a href="http://demo.example.com">http://demo.example.com</a> =&gt; demo.example.com</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000027">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_rootonly</code> Display link path going only to the base directory, not a sub-directory or file? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to enable "root only". Return false to show full path. (default: true)<br />
-If true: <code><a href="http://example.com/sub/directory/page.html">http://example.com/sub/directory/page.html</a> =&gt; example.com</code> <br />
-If false: <code><a href="http://example.com/sub/directory/page.html">http://example.com/sub/directory/page.html</a> =&gt; example.com/sub/directory/page.html</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000028">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_noquerystring</code> Strip the query string from the end of the URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to enable "root only". Return false to show full path. (default: true)<br />
-If true: <code><a href="http://example.com/?query=example">http://example.com/?query=example</a> =&gt; example.com</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-</dd></dl>
-
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l00902">902</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
-
-<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-api_8php_source.html#l00884">_gravityview_strip_subdomain()</a>.</p>
-
-<p>Referenced by <a class="el" href="connector-_a_p_i___test_8php_source.html#l00321">GravityView_API_Test\test_gravityview_format_link_DEFAULT()</a>, <a class="el" href="connector-_a_p_i___test_8php_source.html#l00493">GravityView_API_Test\test_gravityview_format_link_WHEN_FILTER_NOQUERYSTRING_FALSE()</a>, <a class="el" href="connector-_a_p_i___test_8php_source.html#l00446">GravityView_API_Test\test_gravityview_format_link_WHEN_FILTER_NOSUBDOMAIN_FALSE()</a>, and <a class="el" href="connector-_a_p_i___test_8php_source.html#l00415">GravityView_API_Test\test_gravityview_format_link_WHEN_FILTER_ROOTONLY_FALSE()</a>.</p>
+<p>References <a class="el" href="class-api_8php_source.html#l00966">gravityview_get_view_id()</a>.</p>
 
 </div>
 </div>
@@ -536,7 +422,7 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 
 <p><a class="el" href="class_gravity_view___view.html" title="If this file is called directly, abort. ">GravityView_View</a> $gravityview_view </p>
 <dl class="section return"><dt>Returns</dt><dd>string View context "directory", "single", or "edit" </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000029">Runs Filter:</a></b></dt><dd><code>gravityview_is_edit_entry</code> Whether we're currently on the Edit Entry screen <br />
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000024">Runs Filter:</a></b></dt><dd><code>gravityview_is_edit_entry</code> Whether we're currently on the Edit Entry screen <br />
 The Edit Entry functionality overrides this value. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$is_edit_entry</td><td></td></tr>
@@ -545,11 +431,11 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01093">1093</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l00974">974</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01084">GravityView_frontend\is_single_entry()</a>.</p>
+<p>References <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01128">GravityView_frontend\is_single_entry()</a>.</p>
 
-<p>Referenced by <a class="el" href="includes_2fields_2fileupload_8php_source.html#l00046">GravityView_Field_FileUpload\get_files_array()</a>, <a class="el" href="class-common_8php_source.html#l00598">GVCommon\matches_operation()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00501">GravityView_frontend\render_view()</a>, and <a class="el" href="class-template_8php_source.html#l00765">GravityView_View\render_widget_hooks()</a>.</p>
+<p>Referenced by <a class="el" href="includes_2fields_2fileupload_8php_source.html#l00046">GravityView_Field_FileUpload\get_files_array()</a>, <a class="el" href="class-common_8php_source.html#l00651">GVCommon\matches_operation()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00501">GravityView_frontend\render_view()</a>, and <a class="el" href="class-template_8php_source.html#l00765">GravityView_View\render_widget_hooks()</a>.</p>
 
 </div>
 </div>
@@ -571,11 +457,11 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___view___data.html#ae11b49643ff8ef1473a4fb19ff5a193c">GravityView_View_Data::get_view()</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array View data with <code>id</code>, <code>view_id</code>, <code>form_id</code>, <code>template_id</code>, <code>atts</code>, <code>fields</code>, <code>widgets</code>, <code>form</code> keys. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01032">1032</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l00913">913</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
 <p>References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00106">GravityView_frontend\getInstance()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-delete-entry_8php_source.html#l00529">GravityView_Delete_Entry\check_user_cap_delete_entry()</a>, and <a class="el" href="class-template_8php_source.html#l00765">GravityView_View\render_widget_hooks()</a>.</p>
+<p>Referenced by <a class="el" href="class-delete-entry_8php_source.html#l00524">GravityView_Delete_Entry\check_user_cap_delete_entry()</a>, and <a class="el" href="class-template_8php_source.html#l00765">GravityView_View\render_widget_hooks()</a>.</p>
 
 </div>
 </div>
@@ -596,11 +482,9 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___view___data.html#abb600495b2fbd3ea53ec803cd92e8632" title="Add a view to the views array. ">GravityView_View_Data::add_view()</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of View data, each View data with <code>id</code>, <code>view_id</code>, <code>form_id</code>, <code>template_id</code>, <code>atts</code>, <code>fields</code>, <code>widgets</code>, <code>form</code> keys. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01003">1003</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l00884">884</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
 <p>References <a class="el" href="class-frontend-views_8php_source.html#l00106">GravityView_frontend\getInstance()</a>.</p>
-
-<p>Referenced by <a class="el" href="connector-_a_p_i___test_8php_source.html#l00250">GravityView_API_Test\test_gravityview_get_current_views()</a>.</p>
 
 </div>
 </div>
@@ -649,6 +533,8 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 
 <p>Definition at line <a class="el" href="class-api_8php_source.html#l00788">788</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
+<p>References <a class="el" href="templates_2fields_2time_8php_source.html#l00017">$field_id</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8c5d61ca86e1065305fa15e4ca0eecf4"></a>
@@ -691,9 +577,9 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of file output, with <code>file_path</code> and <code>html</code> keys (see comments above) </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01133">1133</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l01014">1014</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="includes_2fields_2fileupload_8php_source.html#l00046">GravityView_Field_FileUpload\get_files_array()</a>, and <a class="el" href="gravityview_8php_source.html#l00050">GRAVITYVIEW_DIR</a>.</p>
+<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="includes_2fields_2fileupload_8php_source.html#l00046">GravityView_Field_FileUpload\get_files_array()</a>, and <a class="el" href="gravityview_8php_source.html#l00048">GRAVITYVIEW_DIR</a>.</p>
 
 </div>
 </div>
@@ -721,7 +607,7 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string URL of link to map of address </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000030">Runs Filter:</a></b></dt><dd><code>gravityview_map_link</code> Modify the map link generated. You can use a different mapping service, for example. <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000025">Runs Filter:</a></b></dt><dd><code>gravityview_map_link</code> Modify the map link generated. You can use a different mapping service, for example. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$link</td><td>Map link </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramtype">string</td><td class="paramname">$address</td><td>Address to generate link for </td></tr>
@@ -731,9 +617,9 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01157">1157</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l01038">1038</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="delete__link_8php_source.html#l00014">$link_text</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, and <a class="el" href="class-common_8php_source.html#l01300">gravityview_get_link()</a>.</p>
+<p>References <a class="el" href="delete__link_8php_source.html#l00014">$link_text</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, and <a class="el" href="class-common_8php_source.html#l01366">gravityview_get_link()</a>.</p>
 
 </div>
 </div>
@@ -800,11 +686,11 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 <p>Get the current View ID being rendered. </p>
 <p><a class="el" href="class_gravity_view___view.html" title="If this file is called directly, abort. ">GravityView_View</a> $gravityview_view </p><dl class="section return"><dt>Returns</dt><dd>string View context "directory" or "single" </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01085">1085</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l00966">966</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-api_8php_source.html#l00622">GravityView_API\entry_link()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00236">GravityView_Delete_Entry\get_delete_link()</a>, <a class="el" href="class-api_8php_source.html#l01071">gravityview_after()</a>, <a class="el" href="class-api_8php_source.html#l01047">gravityview_before()</a>, <a class="el" href="class-api_8php_source.html#l01063">gravityview_footer()</a>, and <a class="el" href="class-api_8php_source.html#l01055">gravityview_header()</a>.</p>
+<p>Referenced by <a class="el" href="class-api_8php_source.html#l00622">GravityView_API\entry_link()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00227">GravityView_Delete_Entry\get_delete_link()</a>, <a class="el" href="class-api_8php_source.html#l00952">gravityview_after()</a>, <a class="el" href="class-api_8php_source.html#l00928">gravityview_before()</a>, <a class="el" href="class-api_8php_source.html#l00944">gravityview_footer()</a>, and <a class="el" href="class-api_8php_source.html#l00936">gravityview_header()</a>.</p>
 
 </div>
 </div>
@@ -828,9 +714,9 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01055">1055</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l00936">936</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="class-api_8php_source.html#l01085">gravityview_get_view_id()</a>.</p>
+<p>References <a class="el" href="class-api_8php_source.html#l00966">gravityview_get_view_id()</a>.</p>
 
 </div>
 </div>
@@ -868,7 +754,7 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-api_8php_source.html#l00138">GravityView_API\field_class()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-api_8php_source.html#l01195">gravityview_field_output()</a>.</p>
+<p>Referenced by <a class="el" href="class-api_8php_source.html#l01076">gravityview_field_output()</a>.</p>
 
 </div>
 </div>
@@ -888,7 +774,7 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 
 <p>Definition at line <a class="el" href="class-api_8php_source.html#l00704">704</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p>References <a class="el" href="table-body_8php_source.html#l00037">$class</a>, <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>, and <a class="el" href="helper-functions_8php_source.html#l00056">gravityview_sanitize_html_class()</a>.</p>
+<p>References <a class="el" href="table-body_8php_source.html#l00043">$class</a>, and <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>.</p>
 
 </div>
 </div>
@@ -952,7 +838,7 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 
 <p>References <a class="el" href="class-api_8php_source.html#l00622">GravityView_API\entry_link()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry_8php_source.html#l00149">GravityView_Edit_Entry\get_edit_link()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry_8php_source.html#l00149">GravityView_Edit_Entry\get_edit_link()</a>, and <a class="el" href="class-admin-welcome_8php_source.html#l00171">GravityView_Welcome\getting_started_screen()</a>.</p>
 
 </div>
 </div>
@@ -984,7 +870,7 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-api_8php_source.html#l00028">GravityView_API\field_label()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-api_8php_source.html#l01195">gravityview_field_output()</a>.</p>
+<p>Referenced by <a class="el" href="class-api_8php_source.html#l01076">gravityview_field_output()</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +944,7 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string html attribute or empty string </dd></dl>
 
-<p>Definition at line <a class="el" href="class-api_8php_source.html#l01346">1346</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
+<p>Definition at line <a class="el" href="class-api_8php_source.html#l01235">1235</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
 <p>References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
@@ -1099,7 +985,7 @@ The Edit Entry functionality overrides this value. <dl class="params"><dt>Parame
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-api_8php_source.html#l00216">GravityView_API\field_value()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-api_8php_source.html#l01195">gravityview_field_output()</a>.</p>
+<p>Referenced by <a class="el" href="class-api_8php_source.html#l01076">gravityview_field_output()</a>.</p>
 
 </div>
 </div>

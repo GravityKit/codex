@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['register_5fdefault_5ftemplates',['register_default_templates',['../class_gravity_view___plugin.html#a0826d9ff26200be7e450aa618e273476',1,'GravityView_Plugin']]],
+  ['read_5fshortcode',['read_shortcode',['../class_gravity_view___entry___link___shortcode.html#af595533adda7fc99939365b21506e9b5',1,'GravityView_Entry_Link_Shortcode']]],
   ['register_5fgform_5fnoconflict_5fscript',['register_gform_noconflict_script',['../class_gravity_view___admin___approve_entries.html#ac0ae11e6f8bf40085c8867fd7d4cda3b',1,'GravityView_Admin_ApproveEntries']]],
   ['register_5fgform_5fnoconflict_5fstyle',['register_gform_noconflict_style',['../class_gravity_view___admin___approve_entries.html#ad47a353f9022e0f946c278d746667d19',1,'GravityView_Admin_ApproveEntries']]],
   ['register_5fhandler',['register_handler',['../class_gravity_view__o_embed.html#a09c466fffdaf6098ae80ce87d2371b08',1,'GravityView_oEmbed']]],
@@ -10,6 +10,7 @@ var searchData=
   ['register_5ftemplate',['register_template',['../class_gravity_view___template.html#a7f14171acb68fbc7add5cc5c74a1f56c',1,'GravityView_Template']]],
   ['register_5fwidget',['register_widget',['../class_gravity_view___widget.html#a78c658f77385d258255f029ed0ab0c0b',1,'GravityView_Widget']]],
   ['remove',['remove',['../class_gravity_view___metabox___tabs.html#a491bb9495b4099e8e764c4443f8c65b7',1,'GravityView_Metabox_Tabs']]],
+  ['remove_5fcaps',['remove_caps',['../class_gravity_view___roles___capabilities.html#acdf5a5c0a17a91eae8c60017918d0888',1,'GravityView_Roles_Capabilities']]],
   ['remove_5fconflicts',['remove_conflicts',['../class_gravity_view___admin.html#aacdb3ff3b6cb04e545151773a6dfa897',1,'GravityView_Admin']]],
   ['remove_5flinks',['remove_links',['../class_gravity_view___admin___bar.html#a11f4134ed08d2460c074226b28aea5a0',1,'GravityView_Admin_Bar']]],
   ['remove_5fother_5fmetaboxes',['remove_other_metaboxes',['../class_gravity_view___admin___metaboxes.html#ac6d831379658b2342e128bfebb6e7051',1,'GravityView_Admin_Metaboxes']]],
@@ -47,6 +48,9 @@ var searchData=
   ['render_5fview_5fsettings_5fmetabox',['render_view_settings_metabox',['../class_gravity_view___admin___metaboxes.html#a307d8f6178e29fdefb7647356278ab4e',1,'GravityView_Admin_Metaboxes']]],
   ['render_5fwidget_5fhooks',['render_widget_hooks',['../class_gravity_view___view.html#adcad6cd1ba240606103c6c73fdaea87b',1,'GravityView_View']]],
   ['render_5fwidgets_5factive_5fareas',['render_widgets_active_areas',['../class_gravity_view___admin___views.html#a9007826c440eedfe762b7b791acde54f',1,'GravityView_Admin_Views']]],
-  ['replace_5fuser_5fvariables_5fcreated_5fby',['replace_user_variables_created_by',['../class_gravity_view___merge___tags.html#a6bd1418b746cafd087f41a246b7db3f4',1,'GravityView_Merge_Tags']]],
-  ['replace_5fvariables',['replace_variables',['../class_gravity_view___a_p_i.html#acf131abd5aba2047a9653344a90f15ca',1,'GravityView_API\replace_variables()'],['../class_gravity_view___merge___tags.html#acf131abd5aba2047a9653344a90f15ca',1,'GravityView_Merge_Tags\replace_variables()']]]
+  ['replace_5fget_5fvariables',['replace_get_variables',['../class_gravity_view___merge___tags.html#a1d94b77181f56094b1670bf5184de017',1,'GravityView_Merge_Tags']]],
+  ['replace_5fgv_5fmerge_5ftags',['replace_gv_merge_tags',['../class_gravity_view___merge___tags.html#a23b3b2b41570811e0417ad439a534cea',1,'GravityView_Merge_Tags']]],
+  ['replace_5fuser_5fvariables_5fcreated_5fby',['replace_user_variables_created_by',['../class_gravity_view___merge___tags.html#ae7b0947d9bb29179cbf7aeb387091513',1,'GravityView_Merge_Tags']]],
+  ['replace_5fvariables',['replace_variables',['../class_gravity_view___a_p_i.html#acf131abd5aba2047a9653344a90f15ca',1,'GravityView_API\replace_variables()'],['../class_gravity_view___merge___tags.html#af6bfd6aac71a09fae1434338cb3b79e8',1,'GravityView_Merge_Tags\replace_variables()']]],
+  ['restore_5fdisplay_5fname',['restore_display_name',['../class_gravity_view___edit___entry___user___registration.html#a7834dd20c8d401acae493d0657e391ae',1,'GravityView_Edit_Entry_User_Registration']]]
 ];

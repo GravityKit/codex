@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -106,9 +106,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5a8cd3fa237204455f645ae145714fe3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___shortcode.html#a5a8cd3fa237204455f645ae145714fe3">shortcode</a> ($atts, $content=null)</td></tr>
-<tr class="memdesc:a5a8cd3fa237204455f645ae145714fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for add_shortcode()  <a href="#a5a8cd3fa237204455f645ae145714fe3">More...</a><br /></td></tr>
-<tr class="separator:a5a8cd3fa237204455f645ae145714fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b2b00812bacf8f27d0d9befc972704"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___shortcode.html#ac0b2b00812bacf8f27d0d9befc972704">shortcode</a> ($passed_atts, $content=null)</td></tr>
+<tr class="memdesc:ac0b2b00812bacf8f27d0d9befc972704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function for add_shortcode()  <a href="#ac0b2b00812bacf8f27d0d9befc972704">More...</a><br /></td></tr>
+<tr class="separator:ac0b2b00812bacf8f27d0d9befc972704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -117,6 +117,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a535fdfc52df9e7d5d62aa721912f1716"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___shortcode.html#a535fdfc52df9e7d5d62aa721912f1716">get_view_detail</a> ($detail= '')</td></tr>
 <tr class="memdesc:a535fdfc52df9e7d5d62aa721912f1716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display details for the current View.  <a href="#a535fdfc52df9e7d5d62aa721912f1716">More...</a><br /></td></tr>
 <tr class="separator:a535fdfc52df9e7d5d62aa721912f1716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad9bece3b68af1f7c6d60c4d0dfe9d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___shortcode.html#a3ad9bece3b68af1f7c6d60c4d0dfe9d8">parse_and_sanitize_atts</a> ($passed_atts)</td></tr>
+<tr class="memdesc:a3ad9bece3b68af1f7c6d60c4d0dfe9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate attributes passed to the [gravityview] shortcode.  <a href="#a3ad9bece3b68af1f7c6d60c4d0dfe9d8">More...</a><br /></td></tr>
+<tr class="separator:a3ad9bece3b68af1f7c6d60c4d0dfe9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handle the [gravityview] shortcode. </p>
@@ -202,7 +205,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Detail information </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000069">Runs Filter:</a></b></dt><dd><code>gravityview/shortcode/detail/{$detail}</code> Filter the detail output returned from <code>[gravityview detail="$detail"]</code> <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000084">Runs Filter:</a></b></dt><dd><code>gravityview/shortcode/detail/{$detail}</code> Filter the detail output returned from <code>[gravityview detail="$detail"]</code> <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$return</td><td>Existing output </td></tr>
@@ -211,15 +214,62 @@ Private Member Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-shortcode_8php_source.html#l00068">68</a> of file <a class="el" href="class-gravityview-shortcode_8php_source.html">class-gravityview-shortcode.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-shortcode_8php_source.html#l00146">146</a> of file <a class="el" href="class-gravityview-shortcode_8php_source.html">class-gravityview-shortcode.php</a>.</p>
 
 <p>References <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, and <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-shortcode_8php_source.html#l00041">shortcode()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-shortcode_8php_source.html#l00042">shortcode()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5a8cd3fa237204455f645ae145714fe3"></a>
+<a class="anchor" id="a3ad9bece3b68af1f7c6d60c4d0dfe9d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">parse_and_sanitize_atts </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$passed_atts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validate attributes passed to the [gravityview] shortcode. </p>
+<p>Supports {get} Merge Tags values.</p>
+<p>Attributes passed to the shortcode are compared to registered attributes {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___view___data.html#a94db0a35566ecbe9717ef6e8a887ca36" title="Retrieve the default args for shortcode and theme function. ">GravityView_View_Data::get_default_args</a>} Only attributes that are defined will be allowed through.</dd></dl>
+<p>Then, {get} merge tags are replaced with their $_GET values, if passed</p>
+<p>Then, attributes are sanitized based on the type of setting (number, checkbox, select, radio, text)</p>
+<dl class="section since"><dt>Since</dt><dd>1.15.1</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___view___data.html#a94db0a35566ecbe9717ef6e8a887ca36" title="Retrieve the default args for shortcode and theme function. ">GravityView_View_Data::get_default_args</a> Only attributes defined in get_default_args() are valid to be passed via the <a class="el" href="class_gravity_view___shortcode.html#ac0b2b00812bacf8f27d0d9befc972704" title="Callback function for add_shortcode() ">shortcode</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$passed_atts</td><td>Attribute pairs defined to render the View</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array Valid and sanitized attribute pairs </dd></dl>
+<p>Make sure number fields are numeric. Also, convert mixed number strings to numbers </p><dl class="section see"><dt>See also</dt><dd><a href="http://php.net/manual/en/function.is-numeric.php#107326">http://php.net/manual/en/function.is-numeric.php#107326</a></dd></dl>
+<p>Only allow values that are defined in the settings</p>
+
+<p>Definition at line <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">79</a> of file <a class="el" href="class-gravityview-shortcode_8php_source.html">class-gravityview-shortcode.php</a>.</p>
+
+<p>References <a class="el" href="class-data_8php_source.html#l00534">GravityView_View_Data\get_default_args()</a>, <a class="el" href="helper-functions_8php_source.html#l00304">gv_empty()</a>, and <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00180">GravityView_Merge_Tags\replace_get_variables()</a>.</p>
+
+<p>Referenced by <a class="el" href="class-gravityview-shortcode_8php_source.html#l00042">shortcode()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0b2b00812bacf8f27d0d9befc972704"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -230,7 +280,7 @@ Private Member Functions</h2></td></tr>
           <td class="memname">shortcode </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$atts</em>, </td>
+          <td class="paramname"><em>$passed_atts</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -255,15 +305,16 @@ Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.13</dd></dl>
 <p>public  </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$atts</td><td></td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$passed_atts</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$content</td><td>Content passed inside the shortcode </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>null|string If admin, null. Otherwise, output of $this-&gt;render_view() </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-shortcode_8php_source.html#l00041">41</a> of file <a class="el" href="class-gravityview-shortcode_8php_source.html">class-gravityview-shortcode.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-shortcode_8php_source.html#l00042">42</a> of file <a class="el" href="class-gravityview-shortcode_8php_source.html">class-gravityview-shortcode.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-shortcode_8php_source.html#l00068">get_view_detail()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00106">GravityView_frontend\getInstance()</a>.</p>
+<p>References <a class="el" href="class-gravityview-shortcode_8php_source.html#l00146">get_view_detail()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00106">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">parse_and_sanitize_atts()</a>.</p>
 
 </div>
 </div>

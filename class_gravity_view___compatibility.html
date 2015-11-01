@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a>  </div>
   <div class="headertitle">
@@ -107,8 +108,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ad3426f0b01d02a4874244f2719f93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#a59ad3426f0b01d02a4874244f2719f93">_shortcode_gf_notice</a> ($atts=array(), $content=null, $shortcode= 'gravityview')</td></tr>
 <tr class="separator:a59ad3426f0b01d02a4874244f2719f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd90be23f336ec365894cf4267d9a2b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#afd90be23f336ec365894cf4267d9a2b0">add_fallback_shortcode</a> ()</td></tr>
-<tr class="separator:afd90be23f336ec365894cf4267d9a2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a561424521381fd64539c5fb5e573d143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#a561424521381fd64539c5fb5e573d143">add_hooks</a> ()</td></tr>
 <tr class="separator:a561424521381fd64539c5fb5e573d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88feae657bfe1f13aec30d7dc0f7a142"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#a88feae657bfe1f13aec30d7dc0f7a142">insert_admin_notices</a> ($notices=array())</td></tr>
@@ -137,13 +136,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8af3ab9e02ba9c77bad48f1e3e311cb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#aa8af3ab9e02ba9c77bad48f1e3e311cb">is_valid</a> ()</td></tr>
 <tr class="memdesc:aa8af3ab9e02ba9c77bad48f1e3e311cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is everything compatible with this version of <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a>?  <a href="#aa8af3ab9e02ba9c77bad48f1e3e311cb">More...</a><br /></td></tr>
 <tr class="separator:aa8af3ab9e02ba9c77bad48f1e3e311cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab368e5467129dbe0386722e1d08585a1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#ab368e5467129dbe0386722e1d08585a1">is_valid_gravity_forms</a> ()</td></tr>
-<tr class="separator:ab368e5467129dbe0386722e1d08585a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eb3060da6d7b47779399711afbc77a8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#a3eb3060da6d7b47779399711afbc77a8">is_valid_php</a> ()</td></tr>
-<tr class="separator:a3eb3060da6d7b47779399711afbc77a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874fe5af8acaa1894663ff1b63756e68"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#a874fe5af8acaa1894663ff1b63756e68">is_valid_wordpress</a> ()</td></tr>
-<tr class="memdesc:a874fe5af8acaa1894663ff1b63756e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the version of WordPress compatible?  <a href="#a874fe5af8acaa1894663ff1b63756e68">More...</a><br /></td></tr>
-<tr class="separator:a874fe5af8acaa1894663ff1b63756e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -156,11 +148,23 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a2e144bde39a7dc0d7ec1ccb45fc58d50"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#a2e144bde39a7dc0d7ec1ccb45fc58d50">$valid_wordpress</a> = false</td></tr>
 <tr class="separator:a2e144bde39a7dc0d7ec1ccb45fc58d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afd90be23f336ec365894cf4267d9a2b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#afd90be23f336ec365894cf4267d9a2b0">add_fallback_shortcode</a> ()</td></tr>
+<tr class="separator:afd90be23f336ec365894cf4267d9a2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:ae69d35c2bd3b93f5d7bc2bcc2b43f359"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#ae69d35c2bd3b93f5d7bc2bcc2b43f359">check_gf_directory</a> ()</td></tr>
 <tr class="memdesc:ae69d35c2bd3b93f5d7bc2bcc2b43f359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for potential conflicts and let users know about common issues.  <a href="#ae69d35c2bd3b93f5d7bc2bcc2b43f359">More...</a><br /></td></tr>
 <tr class="separator:ae69d35c2bd3b93f5d7bc2bcc2b43f359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab368e5467129dbe0386722e1d08585a1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#ab368e5467129dbe0386722e1d08585a1">is_valid_gravity_forms</a> ()</td></tr>
+<tr class="separator:ab368e5467129dbe0386722e1d08585a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb3060da6d7b47779399711afbc77a8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#a3eb3060da6d7b47779399711afbc77a8">is_valid_php</a> ()</td></tr>
+<tr class="separator:a3eb3060da6d7b47779399711afbc77a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874fe5af8acaa1894663ff1b63756e68"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___compatibility.html#a874fe5af8acaa1894663ff1b63756e68">is_valid_wordpress</a> ()</td></tr>
+<tr class="memdesc:a874fe5af8acaa1894663ff1b63756e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the version of WordPress compatible?  <a href="#a874fe5af8acaa1894663ff1b63756e68">More...</a><br /></td></tr>
+<tr class="separator:a874fe5af8acaa1894663ff1b63756e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -233,17 +237,20 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>null|string NULL returned if user can't manage options. Notice shown with a warning that GF isn't supported. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>null|string NULL returned if user can't activate plugins. Notice shown with a warning that GF isn't supported. </dd></dl>
 
 <p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00153">153</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-compatibility_8php_source.html#l00043">$notices</a>.</p>
+<p>References <a class="el" href="class-gravityview-compatibility_8php_source.html#l00043">$notices</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="afd90be23f336ec365894cf4267d9a2b0"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">add_fallback_shortcode </td>
@@ -252,6 +259,11 @@ Static Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
@@ -307,7 +319,7 @@ Static Private Attributes</h2></td></tr>
 <p>Check for potential conflicts and let users know about common issues. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00287">287</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00304">304</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
 
 </div>
 </div>
@@ -337,11 +349,11 @@ Static Private Attributes</h2></td></tr>
 <p>public </p><dl class="section return"><dt>Returns</dt><dd>boolean True: checks have been passed; GV is fine to run; False: checks have failed, don't continue loading </dd></dl>
 <p>The plugin is activated and yet somehow GFCommon didn't get picked up... OR It's the Network Admin and we just don't know whether the sites have GF activated themselves.</p>
 
-<p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00222">222</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00226">226</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
 
-<p>References <a class="el" href="gravityview_8php_source.html#l00055">GV_MIN_GF_VERSION</a>.</p>
+<p>References <a class="el" href="gravityview_8php_source.html#l00053">GV_MIN_GF_VERSION</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00430">GravityView_Admin\check_gravityforms()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00399">GravityView_Admin\check_gravityforms()</a>.</p>
 
 </div>
 </div>
@@ -372,7 +384,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00177">177</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
 
-<p>References <a class="el" href="gravityview_8php_source.html#l00067">GV_MIN_PHP_VERSION</a>.</p>
+<p>References <a class="el" href="gravityview_8php_source.html#l00065">GV_MIN_PHP_VERSION</a>.</p>
 
 </div>
 </div>
@@ -401,9 +413,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00197">197</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00199">199</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
 
-<p>References <a class="el" href="gravityview_8php_source.html#l00061">GV_MIN_WP_VERSION</a>.</p>
+<p>References <a class="el" href="gravityview_8php_source.html#l00059">GV_MIN_WP_VERSION</a>.</p>
 
 </div>
 </div>
@@ -467,9 +479,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean|string True: plugin is active; False: plugin file doesn't exist at path; 'inactive' it's inactive </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00308">308</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00326">326</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00442">GravityView_Admin\get_plugin_status()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00411">GravityView_Admin\get_plugin_status()</a>.</p>
 
 </div>
 </div>
@@ -554,7 +566,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gravityview-compatibility_8php_source.html#l00089">89</a> of file <a class="el" href="class-gravityview-compatibility_8php_source.html">class-gravityview-compatibility.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00013">GravityView_Admin_Metaboxes\__construct()</a>, <a class="el" href="class-post-types_8php_source.html#l00016">GravityView_Post_Types\__construct()</a>, <a class="el" href="gravityview_8php_source.html#l00110">GravityView_Plugin\__construct()</a>, <a class="el" href="class-admin_8php_source.html#l00015">GravityView_Admin\add_hooks()</a>, <a class="el" href="class-post-types_8php_source.html#l00034">GravityView_Post_Types\init_post_types()</a>, and <a class="el" href="class-gravityview-extension_8php_source.html#l00335">GravityView_Extension\is_extension_supported()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00005">GravityView_Admin\__construct()</a>, <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00013">GravityView_Admin_Metaboxes\__construct()</a>, <a class="el" href="class-post-types_8php_source.html#l00016">GravityView_Post_Types\__construct()</a>, <a class="el" href="gravityview_8php_source.html#l00110">GravityView_Plugin\__construct()</a>, <a class="el" href="class-post-types_8php_source.html#l00034">GravityView_Post_Types\init_post_types()</a>, and <a class="el" href="class-gravityview-extension_8php_source.html#l00343">GravityView_Extension\is_extension_supported()</a>.</p>
 
 </div>
 </div>
@@ -574,7 +586,7 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -601,7 +613,7 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -628,7 +640,7 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

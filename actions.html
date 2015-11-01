@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -112,6 +112,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
+<dt><a class="anchor" id="_actions000013"></a>Global <a class="el" href="class_gravity_view___admin___duplicate___view.html#a01f1ec160b19a7526f80cf43da754951">GravityView_Admin_Duplicate_View::create_duplicate</a>  ($post, $status= '')</dt>
+<dd><code>gv_duplicate_view</code> After the View is duplicated, perform an action <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___admin___duplicate___view.html#a0068fe504ec0142aa06b36ed6ea3cb04" title="Copy the meta information of a post to another View. ">GravityView_Admin_Duplicate_View::copy_view_meta_info</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$new_view_id</td><td>The ID of the newly created View </td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">WP_Post</td><td>The View that was just cloned  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
 <dt><a class="anchor" id="_actions000012"></a>globalScope&gt; Global <a class="el" href="class-api_8php.html#a63ec2a5b744a0d7e18fdd14228873256">gravityview_after</a>  ()</dt>
 <dd><code>gravityview_after</code> Append content to the View container <code>&lt;div&gt;</code> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -124,6 +135,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd><code>gravityview_before</code> Display content before a View. Used to render widget areas. Rendered outside the View container <code>&lt;div&gt;</code> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$view_id</td><td>The ID of the View being displayed  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_actions000014"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#ad5da9a6a516aa6645a8427e15ad993cf">GravityView_Edit_Entry_Render::process_save</a>  ()</dt>
+<dd><code>gravityview/edit_entry/after_update</code> Perform an action after the entry has been updated using Edit Entry <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$entry_id</td><td>Numeric ID of the entry that was updated  </td></tr>
   </table>
   </dd>
 </dl>
@@ -164,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000019"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a437304e51fdea964eeda890cf15c374e">GravityView_Recent_Entries_Widget::form</a>  ($instance)</dt>
+<dt><a class="anchor" id="_actions000021"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a437304e51fdea964eeda890cf15c374e">GravityView_Recent_Entries_Widget::form</a>  ($instance)</dt>
 <dd><code>gravityview_recent_entries_widget_form</code> Displayed at the bottom of the Recent Entries widget admin form <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="class_gravity_view___recent___entries___widget.html" title="Class GravityView_Recent_Entries_Widget. ">GravityView_Recent_Entries_Widget</a></td><td class="paramname">$this</td><td>WP_Widget object </td></tr>
@@ -173,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000017"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a81ae170ee792b470c7726cd9f6168898">GravityView_Recent_Entries_Widget::widget</a>  ($args, $instance)</dt>
+<dt><a class="anchor" id="_actions000019"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a81ae170ee792b470c7726cd9f6168898">GravityView_Recent_Entries_Widget::widget</a>  ($args, $instance)</dt>
 <dd><code>gravityview/widget/recent-entries/before_widget</code> Before recent entries are displayed in the WordPress widget <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>Display arguments including before_title, after_title, before_widget, and after_widget. </td></tr>

@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -89,11 +89,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Template Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class used to register a new template to be shown in <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> presets.  
+ <a href="class_gravity_view___template.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for GravityView_Template:</div>
 <div class="dyncontent">
@@ -102,17 +106,16 @@ Inheritance diagram for GravityView_Template:</div>
   <map id="GravityView_Template_map" name="GravityView_Template_map">
 <area href="class_gravity_view___default___template___edit.html" title="GravityView_Default_Template_Edit class. " alt="GravityView_Default_Template_Edit" shape="rect" coords="0,56,240,80"/>
 <area href="class_gravity_view___default___template___list.html" title="GravityView_Default_Template_List class. " alt="GravityView_Default_Template_List" shape="rect" coords="250,56,490,80"/>
-<area href="class_gravity_view___default___template___table.html" title="Simple customizable templates: table and list. " alt="GravityView_Default_Template_Table" shape="rect" coords="750,56,990,80"/>
+<area href="class_gravity_view___default___template___table.html" title="GravityView_Default_Template_Table class. " alt="GravityView_Default_Template_Table" shape="rect" coords="750,56,990,80"/>
 <area href="class_gravity_view___preset___business___listings.html" alt="GravityView_Preset_Business_Listings" shape="rect" coords="500,112,740,136"/>
 <area href="class_gravity_view___preset___event___listings.html" alt="GravityView_Preset_Event_Listings" shape="rect" coords="500,168,740,192"/>
 <area href="class_gravity_view___preset___job___board.html" alt="GravityView_Preset_Job_Board" shape="rect" coords="500,224,740,248"/>
 <area href="class_gravity_view___preset___profiles.html" alt="GravityView_Preset_Profiles" shape="rect" coords="500,280,740,304"/>
 <area href="class_gravity_view___preset___staff___profiles.html" alt="GravityView_Preset_Staff_Profiles" shape="rect" coords="500,336,740,360"/>
 <area href="class_gravity_view___preset___website___showcase.html" alt="GravityView_Preset_Website_Showcase" shape="rect" coords="500,392,740,416"/>
-<area href="class_gravity_view___preset___business___data.html" title="Preset templates. " alt="GravityView_Preset_Business_Data" shape="rect" coords="1000,112,1240,136"/>
+<area href="class_gravity_view___preset___business___data.html" alt="GravityView_Preset_Business_Data" shape="rect" coords="1000,112,1240,136"/>
 <area href="class_gravity_view___preset___issue___tracker.html" alt="GravityView_Preset_Issue_Tracker" shape="rect" coords="1000,168,1240,192"/>
-<area href="class_gravity_view___preset___people___table.html" alt="GravityView_Preset_People_Table" shape="rect" coords="1000,224,1240,248"/>
-<area href="class_gravity_view___preset___resume___board.html" alt="GravityView_Preset_Resume_Board" shape="rect" coords="1000,280,1240,304"/>
+<area href="class_gravity_view___preset___resume___board.html" alt="GravityView_Preset_Resume_Board" shape="rect" coords="1000,224,1240,248"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -137,11 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa92d93a1c9a536c80f40839c4d741372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27ef60e1f480b232342046e57c9578d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#ad27ef60e1f480b232342046e57c9578d">get_active_areas</a> ($context)</td></tr>
 <tr class="separator:ad27ef60e1f480b232342046e57c9578d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82647059876b3a54258b090589342209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#a82647059876b3a54258b090589342209">merge_defaults</a> ($settings=array())</td></tr>
-<tr class="memdesc:a82647059876b3a54258b090589342209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge the template settings with the default settings.  <a href="#a82647059876b3a54258b090589342209">More...</a><br /></td></tr>
-<tr class="separator:a82647059876b3a54258b090589342209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa198c9e309262d1c4dc34b7bb1918d1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#aa198c9e309262d1c4dc34b7bb1918d1e">register_styles</a> ()</td></tr>
-<tr class="memdesc:aa198c9e309262d1c4dc34b7bb1918d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register styles.  <a href="#aa198c9e309262d1c4dc34b7bb1918d1e">More...</a><br /></td></tr>
+<tr class="memdesc:aa198c9e309262d1c4dc34b7bb1918d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the template has a CSS file defined in the <code>css_source</code> setting, register it It will be registered using <code>gravityview_style_{template_id}</code> format.  <a href="#aa198c9e309262d1c4dc34b7bb1918d1e">More...</a><br /></td></tr>
 <tr class="separator:aa198c9e309262d1c4dc34b7bb1918d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f14171acb68fbc7add5cc5c74a1f56c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#a7f14171acb68fbc7add5cc5c74a1f56c">register_template</a> ($templates)</td></tr>
 <tr class="memdesc:a7f14171acb68fbc7add5cc5c74a1f56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the template to display in the admin.  <a href="#a7f14171acb68fbc7add5cc5c74a1f56c">More...</a><br /></td></tr>
@@ -152,16 +152,25 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ab9d10965b23b1cbdc6e3e66259693d7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#ab9d10965b23b1cbdc6e3e66259693d7a">$active_areas</a></td></tr>
 <tr class="separator:ab9d10965b23b1cbdc6e3e66259693d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc7f3ac4bf654909dd086eafb54a36d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#afc7f3ac4bf654909dd086eafb54a36d8">$field_options</a></td></tr>
-<tr class="memdesc:afc7f3ac4bf654909dd086eafb54a36d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">$settings: slug - template slug (frontend) css_source - url path to CSS file, to be enqueued (frontend) type - 'custom' or 'preset' (admin) label - template nicename (admin) description - short about text (admin) logo - template icon (admin) preview - template image for previewing (admin) buy_source - url source for buying this template preset_form - path to Gravity Form form XML file preset_config - path to View config (XML)  <a href="#afc7f3ac4bf654909dd086eafb54a36d8">More...</a><br /></td></tr>
 <tr class="separator:afc7f3ac4bf654909dd086eafb54a36d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c3353107070daa85f641882931b358"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#ac7c3353107070daa85f641882931b358">$settings</a></td></tr>
 <tr class="separator:ac7c3353107070daa85f641882931b358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a244cfb00f58fe64d22802920d642cf8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#a244cfb00f58fe64d22802920d642cf8a">$template_id</a></td></tr>
 <tr class="separator:a244cfb00f58fe64d22802920d642cf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a561424521381fd64539c5fb5e573d143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#a561424521381fd64539c5fb5e573d143">add_hooks</a> ()</td></tr>
+<tr class="memdesc:a561424521381fd64539c5fb5e573d143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add filters and actions for the templates.  <a href="#a561424521381fd64539c5fb5e573d143">More...</a><br /></td></tr>
+<tr class="separator:a561424521381fd64539c5fb5e573d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82647059876b3a54258b090589342209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___template.html#a82647059876b3a54258b090589342209">merge_defaults</a> ($settings=array())</td></tr>
+<tr class="memdesc:a82647059876b3a54258b090589342209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge the template settings with the default settings.  <a href="#a82647059876b3a54258b090589342209">More...</a><br /></td></tr>
+<tr class="separator:a82647059876b3a54258b090589342209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00171">171</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<div class="textblock"><p>Class used to register a new template to be shown in <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> presets. </p>
+
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00006">6</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3c4461709339047eb17278604505d4a5"></a>
 <div class="memitem">
@@ -199,13 +208,43 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00200">200</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00040">40</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>References <a class="el" href="default-templates_8php_source.html#l00194">$field_options</a>, <a class="el" href="default-templates_8php_source.html#l00177">$settings</a>, and <a class="el" href="default-templates_8php_source.html#l00242">merge_defaults()</a>.</p>
+<p>References <a class="el" href="class-gravityview-template_8php_source.html#l00032">$field_options</a>, <a class="el" href="class-gravityview-template_8php_source.html#l00027">$settings</a>, <a class="el" href="class-gravityview-template_8php_source.html#l00061">add_hooks()</a>, and <a class="el" href="class-gravityview-template_8php_source.html#l00093">merge_defaults()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a561424521381fd64539c5fb5e573d143"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">add_hooks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add filters and actions for the templates. </p>
+<dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00061">61</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-gravityview-template_8php_source.html#l00040">__construct()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aaa7464b2f40bb31b57947e4f8abb3e48"></a>
 <div class="memitem">
 <div class="memproto">
@@ -237,18 +276,19 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Assign active areas (for admin configuration) </p>
-<p>protected </p><dl class="params"><dt>Parameters</dt><dd>
+<p>protected</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$areas</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$template</td><td>(default: '') </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$template</td><td>(default: '')</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of active areas </dd></dl>
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00283">283</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00139">139</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>References <a class="el" href="default-templates_8php_source.html#l00290">get_active_areas()</a>.</p>
+<p>References <a class="el" href="class-gravityview-template_8php_source.html#l00147">get_active_areas()</a>.</p>
 
 </div>
 </div>
@@ -289,20 +329,20 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Assign template specific field options. </p>
-<p>protected </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>(default: array()) </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$template</td><td>(default: '') </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$field_id</td><td>key for the field </td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$context</td><td>Context for the field; <code>directory</code> or <code>single</code> for example. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$context</td><td>Context for the field; <code>directory</code> or <code>single</code> for example.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of field options </dd></dl>
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00309">309</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00166">166</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>References <a class="el" href="default-templates_8php_source.html#l00194">$field_options</a>, and <a class="el" href="default-templates_8php_source.html#l00174">$template_id</a>.</p>
+<p>References <a class="el" href="class-gravityview-template_8php_source.html#l00032">$field_options</a>, and <a class="el" href="class-gravityview-template_8php_source.html#l00011">$template_id</a>.</p>
 
 </div>
 </div>
@@ -334,7 +374,7 @@ Data Fields</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd>GravityView_Admin_Views::pre_get_form_fields() </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string Path to XML file </dd></dl>
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00350">350</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00209">209</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
 </div>
 </div>
@@ -368,7 +408,7 @@ Data Fields</h2></td></tr>
 GravityView_Admin_Views::create_preset_form() </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string Path to XML file </dd></dl>
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00337">337</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00195">195</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
 </div>
 </div>
@@ -397,17 +437,18 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
 </div><div class="memdoc">
 
 <p>Assign the template slug when loading the presentation template (frontend) </p>
-<p>protected </p><dl class="params"><dt>Parameters</dt><dd>
+<p>protected</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$default</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00366">366</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00227">227</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>References <a class="el" href="default-templates_8php_source.html#l00174">$template_id</a>.</p>
+<p>References <a class="el" href="class-gravityview-template_8php_source.html#l00011">$template_id</a>.</p>
 
 </div>
 </div>
@@ -425,17 +466,20 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00290">290</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00147">147</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>References <a class="el" href="default-templates_8php_source.html#l00197">$active_areas</a>.</p>
+<p>References <a class="el" href="class-gravityview-template_8php_source.html#l00037">$active_areas</a>.</p>
 
-<p>Referenced by <a class="el" href="default-templates_8php_source.html#l00283">assign_active_areas()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-template_8php_source.html#l00139">assign_active_areas()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a82647059876b3a54258b090589342209"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">merge_defaults </td>
@@ -445,23 +489,28 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Merge the template settings with the default settings. </p>
 <p>Sets the <code>settings</code> object var.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$settings</td><td>Defined template settings </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$settings</td><td>Defined template settings</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Merged template settings. </dd></dl>
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00242">242</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00093">93</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>References <a class="el" href="default-templates_8php_source.html#l00177">$settings</a>.</p>
+<p>References <a class="el" href="class-gravityview-template_8php_source.html#l00027">$settings</a>.</p>
 
-<p>Referenced by <a class="el" href="default-templates_8php_source.html#l00200">__construct()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-template_8php_source.html#l00040">__construct()</a>.</p>
 
 </div>
 </div>
@@ -478,10 +527,10 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Register styles. </p>
+<p>If the template has a CSS file defined in the <code>css_source</code> setting, register it It will be registered using <code>gravityview_style_{template_id}</code> format. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00382">382</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00246">246</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
 <p>References <a class="el" href="gravityview_8php_source.html#l00092">GravityView_Plugin\version</a>.</p>
 
@@ -502,7 +551,8 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
 </div><div class="memdoc">
 
 <p>Register the template to display in the admin. </p>
-<p>private </p><dl class="params"><dt>Parameters</dt><dd>
+<p>private</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$templates</td><td></td></tr>
   </table>
@@ -510,9 +560,9 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of templates available for GV </dd></dl>
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00269">269</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00122">122</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>References <a class="el" href="default-templates_8php_source.html#l00177">$settings</a>, <a class="el" href="default-templates_8php_source.html#l00174">$template_id</a>, and <a class="el" href="select-template_8php_source.html#l00021">$templates</a>.</p>
+<p>References <a class="el" href="class-gravityview-template_8php_source.html#l00027">$settings</a>, <a class="el" href="class-gravityview-template_8php_source.html#l00011">$template_id</a>, and <a class="el" href="select-template_8php_source.html#l00017">$templates</a>.</p>
 
 </div>
 </div>
@@ -527,9 +577,9 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00197">197</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00037">37</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>Referenced by <a class="el" href="default-templates_8php_source.html#l00290">get_active_areas()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-template_8php_source.html#l00147">get_active_areas()</a>.</p>
 
 </div>
 </div>
@@ -543,11 +593,9 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>$settings: slug - template slug (frontend) css_source - url path to CSS file, to be enqueued (frontend) type - 'custom' or 'preset' (admin) label - template nicename (admin) description - short about text (admin) logo - template icon (admin) preview - template image for previewing (admin) buy_source - url source for buying this template preset_form - path to Gravity Form form XML file preset_config - path to View config (XML) </p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00032">32</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00194">194</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
-
-<p>Referenced by <a class="el" href="default-templates_8php_source.html#l00121">GravityView_Default_Template_List\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00200">__construct()</a>, and <a class="el" href="default-templates_8php_source.html#l00309">assign_field_options()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-default-template-list_8php_source.html#l00009">GravityView_Default_Template_List\__construct()</a>, <a class="el" href="class-gravityview-template_8php_source.html#l00040">__construct()</a>, and <a class="el" href="class-gravityview-template_8php_source.html#l00166">assign_field_options()</a>.</p>
 
 </div>
 </div>
@@ -561,9 +609,9 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00177">177</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00027">27</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>Referenced by <a class="el" href="default-templates_8php_source.html#l00121">GravityView_Default_Template_List\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00200">__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00396">GravityView_Preset_Business_Data\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00418">GravityView_Preset_Resume_Board\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00440">GravityView_Preset_Job_Board\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00462">GravityView_Preset_People_Table\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00485">GravityView_Preset_Issue_Tracker\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00508">GravityView_Preset_Business_Listings\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00530">GravityView_Preset_Event_Listings\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00552">GravityView_Preset_Profiles\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00574">GravityView_Preset_Staff_Profiles\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00596">GravityView_Preset_Website_Showcase\__construct()</a>, <a class="el" href="default-templates_8php_source.html#l00242">merge_defaults()</a>, and <a class="el" href="default-templates_8php_source.html#l00269">register_template()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-default-template-list_8php_source.html#l00009">GravityView_Default_Template_List\__construct()</a>, <a class="el" href="class-gravityview-preset-business-data_8php_source.html#l00017">GravityView_Preset_Business_Data\__construct()</a>, <a class="el" href="class-gravityview-preset-event-listings_8php_source.html#l00017">GravityView_Preset_Event_Listings\__construct()</a>, <a class="el" href="class-gravityview-preset-resume-board_8php_source.html#l00017">GravityView_Preset_Resume_Board\__construct()</a>, <a class="el" href="class-gravityview-preset-website-showcase_8php_source.html#l00017">GravityView_Preset_Website_Showcase\__construct()</a>, <a class="el" href="class-gravityview-preset-staff-profiles_8php_source.html#l00017">GravityView_Preset_Staff_Profiles\__construct()</a>, <a class="el" href="class-gravityview-preset-issue-tracker_8php_source.html#l00017">GravityView_Preset_Issue_Tracker\__construct()</a>, <a class="el" href="class-gravityview-preset-profiles_8php_source.html#l00017">GravityView_Preset_Profiles\__construct()</a>, <a class="el" href="class-gravityview-preset-job-board_8php_source.html#l00017">GravityView_Preset_Job_Board\__construct()</a>, <a class="el" href="class-gravityview-preset-business-listings_8php_source.html#l00017">GravityView_Preset_Business_Listings\__construct()</a>, <a class="el" href="class-gravityview-template_8php_source.html#l00040">__construct()</a>, <a class="el" href="class-gravityview-template_8php_source.html#l00093">merge_defaults()</a>, and <a class="el" href="class-gravityview-template_8php_source.html#l00122">register_template()</a>.</p>
 
 </div>
 </div>
@@ -577,14 +625,14 @@ GravityView_Admin_Views::create_preset_form() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="default-templates_8php_source.html#l00174">174</a> of file <a class="el" href="default-templates_8php_source.html">default-templates.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-template_8php_source.html#l00011">11</a> of file <a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a>.</p>
 
-<p>Referenced by <a class="el" href="default-templates_8php_source.html#l00309">assign_field_options()</a>, <a class="el" href="default-templates_8php_source.html#l00366">assign_view_slug()</a>, and <a class="el" href="default-templates_8php_source.html#l00269">register_template()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-template_8php_source.html#l00166">assign_field_options()</a>, <a class="el" href="class-gravityview-template_8php_source.html#l00227">assign_view_slug()</a>, and <a class="el" href="class-gravityview-template_8php_source.html#l00122">register_template()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="default-templates_8php_source.html">default-templates.php</a></li>
+<li><a class="el" href="class-gravityview-template_8php_source.html">class-gravityview-template.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

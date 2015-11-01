@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.13.1</span>
+   &#160;<span id="projectnumber">1.15.2</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -134,6 +134,14 @@ Data Fields</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_gravity_view___field"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_gravity_view___field')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="class_gravity_view___field.html">GravityView_Field</a></td></tr>
 <tr class="memitem:ab2fc40d43824ea3e1ce5d86dee0d763b inherit pub_attribs_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#ab2fc40d43824ea3e1ce5d86dee0d763b">$name</a></td></tr>
 <tr class="separator:ab2fc40d43824ea3e1ce5d86dee0d763b inherit pub_attribs_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_gravity_view___field"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_gravity_view___field')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_gravity_view___field.html">GravityView_Field</a></td></tr>
+<tr class="memitem:a77a8e14f561ff7d03819f3950fff3834 inherit pro_attribs_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a77a8e14f561ff7d03819f3950fff3834">$_field_id</a> = ''</td></tr>
+<tr class="separator:a77a8e14f561ff7d03819f3950fff3834 inherit pro_attribs_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e399980218d97ae9d2de8276cf3d1ef inherit pro_attribs_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a1e399980218d97ae9d2de8276cf3d1ef">$_field_options</a> = array()</td></tr>
+<tr class="separator:a1e399980218d97ae9d2de8276cf3d1ef inherit pro_attribs_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Add custom options for date fields. </p>
@@ -224,7 +232,7 @@ Data Fields</h2></td></tr>
 <li><code>html</code> =&gt; The file output HTML formatted</li>
 </ul>
 <dl class="section since"><dt>Since</dt><dd>1.2 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000087">Runs Filter:</a></b></dt><dd><code>gravityview_audio_settings</code> Modify the settings passed to the <code>wp_video_shortcode()</code> function <dl class="section since"><dt>Since</dt><dd>1.2 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000118">Runs Filter:</a></b></dt><dd><code>gravityview_audio_settings</code> Modify the settings passed to the <code>wp_video_shortcode()</code> function <dl class="section since"><dt>Since</dt><dd>1.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$audio_settings</td><td>Array with <code>src</code> and <code>class</code> keys </td></tr>
@@ -235,7 +243,7 @@ Data Fields</h2></td></tr>
 <p>Generate the audio shortcode </p><dl class="section see"><dt>See also</dt><dd><a href="http://codex.wordpress.org/Audio_Shortcode">http://codex.wordpress.org/Audio_Shortcode</a> </dd>
 <dd>
 <a href="https://developer.wordpress.org/reference/functions/wp_audio_shortcode/">https://developer.wordpress.org/reference/functions/wp_audio_shortcode/</a></dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000088">Runs Filter:</a></b></dt><dd><code>gravityview_video_settings</code> Modify the settings passed to the <code>wp_video_shortcode()</code> function <dl class="section since"><dt>Since</dt><dd>1.2 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000119">Runs Filter:</a></b></dt><dd><code>gravityview_video_settings</code> Modify the settings passed to the <code>wp_video_shortcode()</code> function <dl class="section since"><dt>Since</dt><dd>1.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$video_settings</td><td>Array with <code>src</code> and <code>class</code> keys </td></tr>
@@ -246,7 +254,7 @@ Data Fields</h2></td></tr>
 <p>Generate the video shortcode </p><dl class="section see"><dt>See also</dt><dd><a href="http://codex.wordpress.org/Video_Shortcode">http://codex.wordpress.org/Video_Shortcode</a> </dd>
 <dd>
 <a href="https://developer.wordpress.org/reference/functions/wp_video_shortcode/">https://developer.wordpress.org/reference/functions/wp_video_shortcode/</a></dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000089">Runs Filter:</a></b></dt><dd><code>gravityview/fields/fileupload/disable_link</code> Filter to alter the default behaviour of wrapping images (or image names) with a link to the content object <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000120">Runs Filter:</a></b></dt><dd><code>gravityview/fields/fileupload/disable_link</code> Filter to alter the default behaviour of wrapping images (or image names) with a link to the content object <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$disable_wrapped_link</td><td>whether to wrap the content with a link to the content object. </td></tr>
@@ -277,9 +285,9 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="includes_2fields_2fileupload_8php_source.html#l00046">46</a> of file <a class="el" href="includes_2fields_2fileupload_8php_source.html">includes/fields/fileupload.php</a>.</p>
 
-<p>References <a class="el" href="templates_2fields_2custom_8php_source.html#l00036">$content</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="templates_2fields_2custom_8php_source.html#l00026">$field_settings</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="post__image_8php_source.html#l00099">$image</a>, <a class="el" href="edit__link_8php_source.html#l00016">$link_atts</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-api_8php_source.html#l00622">GravityView_API\entry_link()</a>, <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>, and <a class="el" href="class-api_8php_source.html#l01093">gravityview_get_context()</a>.</p>
+<p>References <a class="el" href="templates_2fields_2custom_8php_source.html#l00036">$content</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="templates_2fields_2custom_8php_source.html#l00026">$field_settings</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="post__image_8php_source.html#l00099">$image</a>, <a class="el" href="edit__link_8php_source.html#l00016">$link_atts</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-api_8php_source.html#l00622">GravityView_API\entry_link()</a>, <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>, and <a class="el" href="class-api_8php_source.html#l00974">gravityview_get_context()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-api_8php_source.html#l01133">gravityview_get_files_array()</a>.</p>
+<p>Referenced by <a class="el" href="class-api_8php_source.html#l01014">gravityview_get_files_array()</a>.</p>
 
 </div>
 </div>

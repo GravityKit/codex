@@ -8,9 +8,11 @@ var searchData=
   ['update_5fsearch_5fon_5fviews',['update_search_on_views',['../class_gravity_view___migrate.html#a52a42f538cebb43c54fa4621b0039974',1,'GravityView_Migrate']]],
   ['update_5fsettings',['update_settings',['../class_gravity_view___migrate.html#a5b6d2cc99b743a7896d6411473c1832c',1,'GravityView_Migrate']]],
   ['update_5fuser',['update_user',['../class_gravity_view___edit___entry___user___registration.html#a5508d79cb4a10b7a460b5afe921c5865',1,'GravityView_Edit_Entry_User_Registration']]],
+  ['update_5fuser_5fmeta_5fvalue',['update_user_meta_value',['../class_gravity_view___support___port.html#a477dfcc9c1a638acdaf956b92f0ad3dc',1,'GravityView_Support_Port']]],
   ['updateviewsorting',['updateViewSorting',['../class_gravity_view__frontend.html#a3089c7941029699d2813694877e1d830',1,'GravityView_frontend']]],
   ['use_5fcache',['use_cache',['../class_gravity_view___cache.html#a9db8b64d6cf48f0b2d46439fefc9d566',1,'GravityView_Cache']]],
   ['user_5fcan_5fdelete_5fentry',['user_can_delete_entry',['../class_gravity_view___delete___entry.html#a571c5cf7e85e84227010f7504b0a57c5',1,'GravityView_Delete_Entry']]],
   ['user_5fcan_5fedit_5fentry',['user_can_edit_entry',['../class_gravity_view___edit___entry___render.html#ac418a2852eaa586f66f4b1c89b7d98e1',1,'GravityView_Edit_Entry_Render']]],
-  ['user_5fcan_5fedit_5ffield',['user_can_edit_field',['../class_gravity_view___edit___entry___render.html#a14eee16306bacd547d925f6fbc8fa843',1,'GravityView_Edit_Entry_Render']]]
+  ['user_5fcan_5fedit_5ffield',['user_can_edit_field',['../class_gravity_view___edit___entry___render.html#a14eee16306bacd547d925f6fbc8fa843',1,'GravityView_Edit_Entry_Render']]],
+  ['user_5ffield',['user_field',['../class_gravity_view___support___port.html#a73e49cdf5781dff9aa060b1582835b07',1,'GravityView_Support_Port']]]
 ];
