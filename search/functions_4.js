@@ -17,5 +17,5 @@ var searchData=
   ['delete_5fshortcode',['delete_shortcode',['../class_gravity_view___entry___link___shortcode.html#a0e08107b3e64b04c25d3ac8facc34202',1,'GravityView_Entry_Link_Shortcode']]],
   ['directory_5flink',['directory_link',['../class_gravity_view___a_p_i.html#a2e4d98cc4e81fcce53690c11747ab75b',1,'GravityView_API']]],
   ['dismiss_5fnotice',['dismiss_notice',['../class_gravity_view___admin___notices.html#a8190bccc54acdec95b7b20b0446b9b4b',1,'GravityView_Admin_Notices']]],
-  ['display_5fmessage',['display_message',['../class_gravity_view___delete___entry.html#a25843751c36c34d70783b9765f1293c8',1,'GravityView_Delete_Entry']]]
+  ['display_5fmessage',['display_message',['../class_gravity_view___delete___entry.html#a3263869fb9d59b0065e3f9aeea4d2727',1,'GravityView_Delete_Entry']]]
 ];

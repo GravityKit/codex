@@ -19,6 +19,7 @@ var searchData=
   ['merge_5ffield_5fproperties',['merge_field_properties',['../class_gravity_view___edit___entry___render.html#aebeb31f643644ac152e5feb22c7ead71',1,'GravityView_Edit_Entry_Render']]],
   ['merge_5fnoconflict_5fscripts',['merge_noconflict_scripts',['../class_gravity_view___plugin__and___theme___hooks.html#ab23461995962e14509803ba8bfd45071',1,'GravityView_Plugin_and_Theme_Hooks']]],
   ['merge_5fnoconflict_5fstyles',['merge_noconflict_styles',['../class_gravity_view___plugin__and___theme___hooks.html#a437dbd46416929e5a000491239815717',1,'GravityView_Plugin_and_Theme_Hooks']]],
+  ['merge_5fpost_5ftype_5fsupport',['merge_post_type_support',['../class_gravity_view___plugin__and___theme___hooks.html#ab9a0222e01fed400672a7f9ec7a41a2b',1,'GravityView_Plugin_and_Theme_Hooks']]],
   ['merge_5fwith_5fall_5fcaps',['merge_with_all_caps',['../class_gravity_view___roles___capabilities.html#afb6d99f9b4a792dcb40e3ce87644061f',1,'GravityView_Roles_Capabilities']]],
   ['migrate_5fredux_5fsettings',['migrate_redux_settings',['../class_gravity_view___migrate.html#a20990d916dd15d5c87bbc8994621f65b',1,'GravityView_Migrate']]],
   ['modify_5fapp_5fsettings_5fmenu_5ftitle',['modify_app_settings_menu_title',['../class_gravity_view___settings.html#a84ecc4f6b7027f3f65db2a518d8bd0a7',1,'GravityView_Settings']]],

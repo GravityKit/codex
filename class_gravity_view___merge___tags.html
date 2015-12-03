@@ -300,7 +300,7 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000081">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/glue/</code> Modify the glue used to convert an array of <code>{get}</code> values from an array to string <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000085">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/glue/</code> Modify the glue used to convert an array of <code>{get}</code> values from an array to string <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$glue</td><td>String used to <code>implode()</code> $_GET values Default: ', ' </td></tr>
@@ -309,7 +309,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000082">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Disable esc_html() from running on <code>{get}</code> merge tag By default, all values passed through URLs will be escaped for security reasons. If for some reason you want to pass HTML in the URL, for example, you will need to return false on this filter. It is strongly recommended that you do not disable this filter. <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000086">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Disable esc_html() from running on <code>{get}</code> merge tag By default, all values passed through URLs will be escaped for security reasons. If for some reason you want to pass HTML in the URL, for example, you will need to return false on this filter. It is strongly recommended that you do not disable this filter. <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$esc_html</td><td>Whether to esc_html() the value. Default: <code>true</code> </td></tr>
@@ -317,7 +317,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000083">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Modify the value of the <code>{get}</code> replacement before being used <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000087">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Modify the value of the <code>{get}</code> replacement before being used <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$value</td><td>Value that will replace <code>{get}</code> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramtype">string</td><td class="paramname">$text</td><td>Text that contains <code>{get}</code> (before replacement) </td></tr>
@@ -561,7 +561,7 @@ GFCommon::replace_variables_prepopulate()</dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Text with variables maybe replaced </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000080">Runs Filter:</a></b></dt><dd><code>gravityview_do_replace_variables</code> Turn off merge tag variable replacements.<br />
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000084">Runs Filter:</a></b></dt><dd><code>gravityview_do_replace_variables</code> Turn off merge tag variable replacements.<br />
 Useful where you want to process variables yourself. We do this in the Math Extension. <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -577,7 +577,7 @@ Useful where you want to process variables yourself. We do this in the Math Exte
 
 <p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00046">46</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, and <a class="el" href="class-api_8php_source.html#l00104">GravityView_API\replace_variables()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, <a class="el" href="class-api_8php_source.html#l00102">GravityView_API\replace_variables()</a>, <a class="el" href="_gravity_view___merge___tags___test_8php_source.html#l00080">GravityView_Merge_Tags_Test\test_gf_merge_tags()</a>, <a class="el" href="_gravity_view___merge___tags___test_8php_source.html#l00043">GravityView_Merge_Tags_Test\test_replace_get_variables()</a>, and <a class="el" href="_gravity_view___merge___tags___test_8php_source.html#l00017">GravityView_Merge_Tags_Test\test_replace_user_variables_created_by()</a>.</p>
 
 </div>
 </div>

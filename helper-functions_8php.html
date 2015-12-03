@@ -181,7 +181,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string If parse_url doesn't find a 'host', returns original value. Otherwise, returns formatted link. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000121">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_striphttp</code> Strip scheme from the displayed URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000128">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_striphttp</code> Strip scheme from the displayed URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip the scheme. Return false to show scheme. (default: true)<br />
@@ -190,7 +190,7 @@ If true: <code><a href="http://example.com">http://example.com</a> =&gt; example
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000122">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_stripwww</code> Strip www from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000129">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_stripwww</code> Strip www from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip www. Return false to show www. (default: true)<br />
@@ -199,7 +199,7 @@ If true: <code>www.example.com =&gt; example.com</code> </td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000123">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_nosubdomain</code> Strip subdomains from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000130">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_nosubdomain</code> Strip subdomains from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip subdomains. Return false to show subdomains. (default: true)<br />
@@ -209,7 +209,7 @@ If false: <code><a href="http://demo.example.com">http://demo.example.com</a> =&
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000124">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_rootonly</code> Display link path going only to the base directory, not a sub-directory or file? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000131">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_rootonly</code> Display link path going only to the base directory, not a sub-directory or file? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to enable "root only". Return false to show full path. (default: true)<br />
@@ -219,7 +219,7 @@ If false: <code><a href="http://example.com/sub/directory/page.html">http://exam
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000125">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_noquerystring</code> Strip the query string from the end of the URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000132">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_noquerystring</code> Strip the query string from the end of the URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to enable "root only". Return false to show full path. (default: true)<br />
@@ -232,6 +232,8 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 <p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00180">180</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="helper-functions_8php_source.html#l00282">_gravityview_strip_subdomain()</a>.</p>
+
+<p>Referenced by <a class="el" href="helper-functions___test_8php_source.html#l00199">GravityView_Helper_Functions_Test\test_gravityview_format_link_DEFAULT()</a>, <a class="el" href="helper-functions___test_8php_source.html#l00370">GravityView_Helper_Functions_Test\test_gravityview_format_link_WHEN_FILTER_NOQUERYSTRING_FALSE()</a>, <a class="el" href="helper-functions___test_8php_source.html#l00323">GravityView_Helper_Functions_Test\test_gravityview_format_link_WHEN_FILTER_NOSUBDOMAIN_FALSE()</a>, and <a class="el" href="helper-functions___test_8php_source.html#l00293">GravityView_Helper_Functions_Test\test_gravityview_format_link_WHEN_FILTER_ROOTONLY_FALSE()</a>.</p>
 
 </div>
 </div>
@@ -328,6 +330,8 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 
 <p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00018">18</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
+<p>Referenced by <a class="el" href="helper-functions___test_8php_source.html#l00117">GravityView_Helper_Functions_Test\test_gravityview_is_not_empty_string()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9dfc033770821eabcd0e5053fd13ab93"></a>
@@ -370,6 +374,8 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 <p>Calculate the position of the decimal point in the number </p><dl class="section see"><dt>See also</dt><dd><a href="http://stackoverflow.com/a/2430144/480856">http://stackoverflow.com/a/2430144/480856</a></dd></dl>
 
 <p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00152">152</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+
+<p>Referenced by <a class="el" href="factory_8php_source.html#l00221">GF_UnitTest_Generator_Number\next()</a>, and <a class="el" href="helper-functions___test_8php_source.html#l00144">GravityView_Helper_Functions_Test\test_gravityview_number_format()</a>.</p>
 
 </div>
 </div>
@@ -434,7 +440,7 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 <p>First, runs normalize_whitespace() on a string. This replaces multiple lines with a single line, and tabs with spaces. We then strip any tabs or newlines and replace <em>those</em> with a single space.</p>
 <dl class="section see"><dt>See also</dt><dd>normalize_whitespace() </dd>
 <dd>
-GravityView_Helper_Functions_Test::test_gravityview_strip_whitespace </dd></dl>
+<a class="el" href="class_gravity_view___helper___functions___test.html#a2749581499a3250c243c50c1b61c23cb" title="gravityview_strip_whitespace() ">GravityView_Helper_Functions_Test::test_gravityview_strip_whitespace</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.13</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -446,7 +452,7 @@ GravityView_Helper_Functions_Test::test_gravityview_strip_whitespace </dd></dl>
 
 <p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00092">92</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00504">GravityView_Edit_Entry_Render\edit_entry_form()</a>, <a class="el" href="class-ajax_8php_source.html#l00238">GravityView_Ajax\get_field_options()</a>, and <a class="el" href="class-ajax_8php_source.html#l00271">GravityView_Ajax\get_sortable_fields()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00504">GravityView_Edit_Entry_Render\edit_entry_form()</a>, <a class="el" href="class-ajax_8php_source.html#l00238">GravityView_Ajax\get_field_options()</a>, <a class="el" href="class-ajax_8php_source.html#l00271">GravityView_Ajax\get_sortable_fields()</a>, and <a class="el" href="helper-functions___test_8php_source.html#l00094">GravityView_Helper_Functions_Test\test_gravityview_strip_whitespace()</a>.</p>
 
 </div>
 </div>
@@ -498,7 +504,7 @@ GravityView_Helper_Functions_Test::test_gravityview_strip_whitespace </dd></dl>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">GravityView_Shortcode\parse_and_sanitize_atts()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">GravityView_Shortcode\parse_and_sanitize_atts()</a>, and <a class="el" href="helper-functions___test_8php_source.html#l00014">GravityView_Helper_Functions_Test\test_gv_empty()</a>.</p>
 
 </div>
 </div>

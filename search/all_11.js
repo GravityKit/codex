@@ -18,7 +18,7 @@ var searchData=
   ['remove_5fcaps',['remove_caps',['../class_gravity_view___roles___capabilities.html#acdf5a5c0a17a91eae8c60017918d0888',1,'GravityView_Roles_Capabilities']]],
   ['remove_5fconflicts',['remove_conflicts',['../class_gravity_view___admin.html#aacdb3ff3b6cb04e545151773a6dfa897',1,'GravityView_Admin']]],
   ['remove_5flinks',['remove_links',['../class_gravity_view___admin___bar.html#a11f4134ed08d2460c074226b28aea5a0',1,'GravityView_Admin_Bar']]],
-  ['remove_5fother_5fmetaboxes',['remove_other_metaboxes',['../class_gravity_view___admin___metaboxes.html#ac6d831379658b2342e128bfebb6e7051',1,'GravityView_Admin_Metaboxes']]],
+  ['remove_5fmeta_5fbox',['remove_meta_box',['../class_gravity_view___theme___hooks___woo_themes.html#a1098ba1d8c738a341ab8c4035d943bbc',1,'GravityView_Theme_Hooks_WooThemes']]],
   ['render',['render',['../class_gravity_view___metabox___tab.html#a24bc9bd2b690f7a0c6b83b1d52ad764e',1,'GravityView_Metabox_Tab\render()'],['../class_gravity_view___debug___bar.html#afde88292c44dc59faf017738dae6dffb',1,'GravityView_Debug_Bar\render()'],['../class_gravity_view___view.html#a1532a34f9d905d3c80fb46e16741d7e8',1,'GravityView_View\render()']]],
   ['render_5factive_5fareas',['render_active_areas',['../class_gravity_view___admin___views.html#a45aa4383dc97840fbfe2698c6635fc23',1,'GravityView_Admin_Views']]],
   ['render_5fadditional_5ffields',['render_additional_fields',['../class_gravity_view___admin___views.html#a4db6ee18d1a96d269a488208009c9a04',1,'GravityView_Admin_Views']]],

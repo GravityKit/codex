@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['widget_2dpoll_2ephp',['widget-poll.php',['../widget-poll_8php.html',1,'']]],
-  ['widget_2dsearch_2ephp',['widget-search.php',['../widget-search_8php.html',1,'']]]
+  ['view_2dconfiguration_2ephp',['view-configuration.php',['../view-configuration_8php.html',1,'']]],
+  ['view_2dsettings_2ephp',['view-settings.php',['../view-settings_8php.html',1,'']]]
 ];

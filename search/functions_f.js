@@ -19,6 +19,6 @@ var searchData=
   ['process_5fdelete',['process_delete',['../class_gravity_view___delete___entry.html#a1448cb352efec515369c83133e016746',1,'GravityView_Delete_Entry']]],
   ['process_5fsave',['process_save',['../class_gravity_view___edit___entry___render.html#ad5da9a6a516aa6645a8427e15ad993cf',1,'GravityView_Edit_Entry_Render']]],
   ['process_5fsave_5fprocess_5ffiles',['process_save_process_files',['../class_gravity_view___edit___entry___render.html#a7daea5413ab43a8c701c8981f609b278',1,'GravityView_Edit_Entry_Render']]],
-  ['process_5fsearch_5fdates',['process_search_dates',['../class_gravity_view__frontend.html#a4621823ee38de36bced6a6dca680c7bd',1,'GravityView_frontend']]],
+  ['process_5fsearch_5fdates',['process_search_dates',['../class_gravity_view__frontend.html#ab9202b2f95ea367752b4e8da65e99b0d',1,'GravityView_frontend']]],
   ['process_5fsearch_5fonly_5fapproved',['process_search_only_approved',['../class_gravity_view__frontend.html#a5bf814c4200c1fa9c2c94394c12475bf',1,'GravityView_frontend']]]
 ];

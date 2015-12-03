@@ -128,6 +128,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3b9255f9ac7f2705f00255ed16d63ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if specified plugin is active, inactive or not installed.  <a href="#a3b9255f9ac7f2705f00255ed16d63ac6">More...</a><br /></td></tr>
 <tr class="separator:a3b9255f9ac7f2705f00255ed16d63ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ce3d7eea1151cce26dbbb4f93f1bec1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin.html#a1ce3d7eea1151cce26dbbb4f93f1bec1">is_admin_page</a> ($hook= '', $page=NULL)</td></tr>
+<tr class="memdesc:a1ce3d7eea1151cce26dbbb4f93f1bec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the current admin page a GravityView-related page?  <a href="#a1ce3d7eea1151cce26dbbb4f93f1bec1">More...</a><br /></td></tr>
 <tr class="separator:a1ce3d7eea1151cce26dbbb4f93f1bec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86eb87454b688f1de9a5e11a552af545"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin.html#a86eb87454b688f1de9a5e11a552af545">plugin_action_links</a> ($links)</td></tr>
 <tr class="memdesc:a86eb87454b688f1de9a5e11a552af545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify plugin action links at plugins screen.  <a href="#a86eb87454b688f1de9a5e11a552af545">More...</a><br /></td></tr>
@@ -360,7 +361,7 @@ Private Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="helper-functions_8php_source.html#l00122">gravityview_get_floaty()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00129">GravityView_Search_WP_Widget\form()</a>, <a class="el" href="class-oembed_8php_source.html#l00200">GravityView_oEmbed\generate_preview_notice()</a>, <a class="el" href="class-post-types_8php_source.html#l00141">GravityView_Post_Types\no_views_text()</a>, and <a class="el" href="class-oembed_8php_source.html#l00247">GravityView_oEmbed\render_admin()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00129">GravityView_Search_WP_Widget\form()</a>, <a class="el" href="class-oembed_8php_source.html#l00200">GravityView_oEmbed\generate_preview_notice()</a>, <a class="el" href="class-post-types_8php_source.html#l00160">GravityView_Post_Types\no_views_text()</a>, and <a class="el" href="class-oembed_8php_source.html#l00247">GravityView_oEmbed\render_admin()</a>.</p>
 
 </div>
 </div>
@@ -489,6 +490,9 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Is the current admin page a GravityView-related page? </p>
+<dl class="section return"><dt>Returns</dt><dd>bool|string|void If <code>false</code>, not a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> page. <code>true</code> if $page is passed and is the same as current page. Otherwise, the name of the page (<code>single</code>, <code>settings</code>, or <code>views</code>) </dd></dl>
 <dl class="filters"><dt><b><a class="el" href="filters.html#_filters000021">Runs Filter:</a></b></dt><dd><code>gravityview_is_admin_page</code> Is the current admin page a GravityView-related page? <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string&#160;|&#160;bool</td><td class="paramname">$is_page</td><td>If false, no. If string, the name of the page (<code>single</code>, <code>settings</code>, or <code>views</code>) </td></tr>
@@ -498,11 +502,11 @@ Private Member Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin_8php_source.html#l00415">415</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin_8php_source.html#l00424">424</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
 <p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00466">gravityview_is_admin_page()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin_8php_source.html#l00475">gravityview_is_admin_page()</a>.</p>
 
 </div>
 </div>
@@ -524,7 +528,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-admin_8php_source.html#l00204">204</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p>References <a class="el" href="class-settings_8php_source.html#l00737">GravityView_Settings\getSetting()</a>, <a class="el" href="class-admin_8php_source.html#l00466">gravityview_is_admin_page()</a>, and <a class="el" href="class-admin_8php_source.html#l00318">remove_conflicts()</a>.</p>
+<p>References <a class="el" href="class-settings_8php_source.html#l00737">GravityView_Settings\getSetting()</a>, <a class="el" href="class-admin_8php_source.html#l00475">gravityview_is_admin_page()</a>, and <a class="el" href="class-admin_8php_source.html#l00318">remove_conflicts()</a>.</p>
 
 </div>
 </div>
@@ -547,7 +551,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-admin_8php_source.html#l00260">260</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p>References <a class="el" href="class-settings_8php_source.html#l00737">GravityView_Settings\getSetting()</a>, <a class="el" href="class-admin_8php_source.html#l00466">gravityview_is_admin_page()</a>, and <a class="el" href="class-admin_8php_source.html#l00318">remove_conflicts()</a>.</p>
+<p>References <a class="el" href="class-settings_8php_source.html#l00737">GravityView_Settings\getSetting()</a>, <a class="el" href="class-admin_8php_source.html#l00475">gravityview_is_admin_page()</a>, and <a class="el" href="class-admin_8php_source.html#l00318">remove_conflicts()</a>.</p>
 
 </div>
 </div>
