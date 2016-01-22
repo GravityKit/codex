@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.15.2</span>
+   &#160;<span id="projectnumber">1.16.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -312,7 +312,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000070">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/status</code> Modify the default status for a new View. Return empty for the new View to inherit existing View status <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000073">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/status</code> Modify the default status for a new View. Return empty for the new View to inherit existing View status <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"></td><td class="paramname">string|null</td><td>If string, the status to set for the new View. If empty, use existing View status. </td></tr>
@@ -321,7 +321,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000071">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/copy-date</code> When copying a View, should the date also be copied? <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000074">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/copy-date</code> When copying a View, should the date also be copied? <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$copy_date</td><td>Whether the copy the date from the existing View. Default: <code>false</code> </td></tr>
@@ -330,7 +330,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000072">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/new-view</code> Modify View configuration before creating the duplicated View. <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000075">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/new-view</code> Modify View configuration before creating the duplicated View. <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$new_view</td><td>Array of settings to be passed to wp_insert_post() </td></tr>
@@ -385,7 +385,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00091">91</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00262">get_clone_view_link()</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00231">make_duplicate_link_row()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00322">save_as_new_view()</a>.</p>
 
@@ -441,7 +441,7 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 <p>If there's no gravityview post type for some reason, abort!</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000073">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/get_clone_view_link</code> Modify the Clone View URL that is generated <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000076">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-view/get_clone_view_link</code> Modify the Clone View URL that is generated <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$clone_view_link</td><td>Link with <code>admin_url("admin.php")</code>, plus the action query string </td></tr>
@@ -526,7 +526,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00231">231</a> of file <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html">class-gravityview-admin-duplicate-view.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00091">current_user_can_copy()</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00262">get_clone_view_link()</a>, <a class="el" href="class-common_8php_source.html#l01399">gravityview_get_link()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00080">is_all_views_page()</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00091">current_user_can_copy()</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00262">get_clone_view_link()</a>, <a class="el" href="class-common_8php_source.html#l01498">gravityview_get_link()</a>, and <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00080">is_all_views_page()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00058">connected_form_links()</a>.</p>
 

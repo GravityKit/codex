@@ -26,7 +26,7 @@ var searchData=
   ['set_5fsingle_5fentry_5fid',['set_single_entry_id',['../class_gravity_view__o_embed.html#a5e5fd0eb2587ddf8de00e0277a5410a1',1,'GravityView_oEmbed']]],
   ['set_5fskip_5fcurrent_5fentry',['set_skip_current_entry',['../class_gravity_view___entry___list.html#a9ce44994644617d199c74c2b96c4a35e',1,'GravityView_Entry_List']]],
   ['set_5fvars',['set_vars',['../class_gravity_view__o_embed.html#ab949a1d2dd18ddb773d5432012c5aa36',1,'GravityView_oEmbed']]],
-  ['set_5fvisible',['set_visible',['../class_gravity_view___debug___bar.html#a16088e203741bd09855c3706042220c5',1,'GravityView_Debug_Bar']]],
+  ['set_5fvisible',['set_visible',['../class_gravity_view___debug___bar.html#a78cece5a2d88314e111dcf8657ee3021',1,'GravityView_Debug_Bar']]],
   ['set_5fwrapper_5ftag',['set_wrapper_tag',['../class_gravity_view___entry___list.html#a3c49a914415d159579c63cfbddb01862',1,'GravityView_Entry_List']]],
   ['setatts',['setAtts',['../class_gravity_view___view.html#a29a277ab495a7cc686f64a58cb84e68b',1,'GravityView_View']]],
   ['setbacklinklabel',['setBackLinkLabel',['../class_gravity_view___view.html#a330b5857455089d150d1b3ac37cac276',1,'GravityView_View']]],

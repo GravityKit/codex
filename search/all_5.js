@@ -1,9 +1,10 @@
 var searchData=
 [
   ['data_2dsource_2ephp',['data-source.php',['../data-source_8php.html',1,'']]],
+  ['date_2ephp',['date.php',['../date_8php.html',1,'']]],
   ['date_5fcreated_2ephp',['date_created.php',['../date__created_8php.html',1,'']]],
   ['date_5fformat',['date_format',['../class_gravity_view___field___time.html#ae566eab3ee3e4f85f922e29b319352d7',1,'GravityView_Field_Time']]],
-  ['deactivate',['deactivate',['../class_gravity_view___plugin.html#a9705cf8c515f3a475081228a4028cb64',1,'GravityView_Plugin']]],
+  ['deactivate',['deactivate',['../class_gravity_view___plugin.html#a7f313467415045368c0633e67a2b6d75',1,'GravityView_Plugin']]],
   ['default_2dwidgets_2ephp',['default-widgets.php',['../default-widgets_8php.html',1,'']]],
   ['default_5ffield_5fblacklist',['default_field_blacklist',['../class_gravity_view___admin___views.html#aef1d3c2cb04974a33e64dd21e2a1a914',1,'GravityView_Admin_Views']]],
   ['delete',['delete',['../class_gravity_view___cache.html#a8d877b7260ddde6760073be796c22de5',1,'GravityView_Cache']]],

@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.15.2</span>
+   &#160;<span id="projectnumber">1.16.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="delete__link_8php.html#a521fd441a5ad4952b00a1591a4d4590d">$view_id</a> = $this-&gt;factory-&gt;view-&gt;create();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="search-field-date__range_8php.html#a1334d61bbc340f973c09c7031f3c21f2">$value</a> = do_shortcode( <span class="stringliteral">&#39;[gravityview id=&quot;&#39;</span>.<a class="code" href="delete__link_8php.html#a521fd441a5ad4952b00a1591a4d4590d">$view_id</a>.<span class="stringliteral">&#39;&quot;]&#39;</span> );</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        $this-&gt;assertNotEmpty( <a class="code" href="search-field-date__range_8php.html#a1334d61bbc340f973c09c7031f3c21f2">$value</a> );</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        $this-&gt;assertTrue( strpos( <a class="code" href="search-field-date__range_8php.html#a1334d61bbc340f973c09c7031f3c21f2">$value</a>, <span class="stringliteral">&#39;&lt;div class=&quot;gv-grid&quot;&gt;&#39;</span> ) &gt; 0 );</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        $this-&gt;assertTrue( strpos( <a class="code" href="search-field-date__range_8php.html#a1334d61bbc340f973c09c7031f3c21f2">$value</a>, <span class="stringliteral">&#39;gv-container&#39;</span> ) &gt; 0 );</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    /**</span></div>

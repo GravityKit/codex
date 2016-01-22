@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.15.2</span>
+   &#160;<span id="projectnumber">1.16.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -319,7 +319,7 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000101">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/show-delete-button</code> Should the Delete button be shown in the Edit Entry screen? <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000104">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/show-delete-button</code> Should the Delete button be shown in the Edit Entry screen? <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$show_entry</td><td>Default: true </td></tr>
   </table>
@@ -329,7 +329,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-delete-entry_8php_source.html#l00264">264</a> of file <a class="el" href="class-delete-entry_8php_source.html">class-delete-entry.php</a>.</p>
 
-<p>References <a class="el" href="delete__link_8php_source.html#l00020">$attributes</a>, and <a class="el" href="class-common_8php_source.html#l01399">gravityview_get_link()</a>.</p>
+<p>References <a class="el" href="delete__link_8php_source.html#l00020">$attributes</a>, and <a class="el" href="class-common_8php_source.html#l01498">gravityview_get_link()</a>.</p>
 
 </div>
 </div>
@@ -442,7 +442,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-delete-entry_8php_source.html#l00534">534</a> of file <a class="el" href="class-delete-entry_8php_source.html">class-delete-entry.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="class-delete-entry_8php_source.html#l00028">$view_id</a>, <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>, <a class="el" href="class-api_8php_source.html#l00919">gravityview_get_current_view_data()</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="class-delete-entry_8php_source.html#l00028">$view_id</a>, <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>, <a class="el" href="class-api_8php_source.html#l00957">gravityview_get_current_view_data()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00256">GravityView_Entry_Link_Shortcode\has_cap()</a>.</p>
 
@@ -506,7 +506,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-delete-entry_8php_source.html#l00101">101</a> of file <a class="el" href="class-delete-entry_8php_source.html">class-delete-entry.php</a>.</p>
 
-<p>References <a class="el" href="templates_2fields_2time_8php_source.html#l00017">$field_id</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00114">GravityView_Render_Settings\get_cap_choices()</a>.</p>
+<p>References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00114">GravityView_Render_Settings\get_cap_choices()</a>.</p>
 
 </div>
 </div>
@@ -570,7 +570,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000105">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/message</code> Modify the Delete Entry messages <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000108">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/message</code> Modify the Delete Entry messages <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Message to be displayed </td></tr>
@@ -611,7 +611,7 @@ Private Member Functions</h2></td></tr>
 <p>Get the onclick attribute for the confirm dialogs that warns users before they delete an entry. </p>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML <code>onclick</code> attribute </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000104">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/confirm-text</code> Modify the Delete Entry Javascript confirmation text <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000107">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/confirm-text</code> Modify the Delete Entry Javascript confirmation text <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$confirm</td><td>Default: "Are you sure you want to delete this entry? This cannot be undone." </td></tr>
   </table>
@@ -676,7 +676,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-delete-entry_8php_source.html#l00227">227</a> of file <a class="el" href="class-delete-entry_8php_source.html">class-delete-entry.php</a>.</p>
 
-<p>References <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-delete-entry_8php_source.html#l00028">$view_id</a>, <a class="el" href="class-api_8php_source.html#l00424">GravityView_API\directory_link()</a>, <a class="el" href="class-api_8php_source.html#l00555">GravityView_API\get_entry_slug()</a>, and <a class="el" href="class-api_8php_source.html#l00972">gravityview_get_view_id()</a>.</p>
+<p>References <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-delete-entry_8php_source.html#l00028">$view_id</a>, <a class="el" href="class-api_8php_source.html#l00436">GravityView_API\directory_link()</a>, <a class="el" href="class-api_8php_source.html#l00567">GravityView_API\get_entry_slug()</a>, and <a class="el" href="class-api_8php_source.html#l01010">gravityview_get_view_id()</a>.</p>
 
 <p>Referenced by <a class="el" href="_gravity_view___entry___link___shortcode___test_8php_source.html#l00094">GravityView_Entry_Link_Shortcode_Test\_test_delete()</a>, and <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00228">GravityView_Entry_Link_Shortcode\get_url()</a>.</p>
 
@@ -705,7 +705,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Delete mode: permanently delete, or move to trash? </p>
 <dl class="section return"><dt>Returns</dt><dd>string <code>delete</code> or <code>trash</code> </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000102">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/mode</code> Delete mode: permanently delete, or move to trash? <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000105">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/mode</code> Delete mode: permanently delete, or move to trash? <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$delete_mode</td><td>Delete mode: <code>trash</code> or <code>delete</code>. Default: <code>delete</code> </td></tr>
@@ -844,7 +844,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-delete-entry_8php_source.html#l00180">180</a> of file <a class="el" href="class-delete-entry_8php_source.html">class-delete-entry.php</a>.</p>
 
-<p>References <a class="el" href="templates_2fields_2time_8php_source.html#l00017">$field_id</a>.</p>
+<p>References <a class="el" href="time_8php_source.html#l00017">$field_id</a>.</p>
 
 </div>
 </div>
@@ -958,7 +958,7 @@ Private Member Functions</h2></td></tr>
 <p>Is the current nonce valid for editing the entry? </p>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000103">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/verify_nonce</code> Override Delete Entry nonce validation. Return true to declare nonce valid. <dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000106">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/verify_nonce</code> Override Delete Entry nonce validation. Return true to declare nonce valid. <dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>wp_verify_nonce() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

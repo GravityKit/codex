@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.15.2</span>
+   &#160;<span id="projectnumber">1.16.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -154,15 +154,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enqueue scripts and styles. </p>
-<p>public </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$hook</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>public </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-add-shortcode_8php_source.html#l00150">150</a> of file <a class="el" href="class-admin-add-shortcode_8php_source.html">class-admin-add-shortcode.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-add-shortcode_8php_source.html#l00157">157</a> of file <a class="el" href="class-admin-add-shortcode_8php_source.html">class-admin-add-shortcode.php</a>.</p>
 
 <p>References <a class="el" href="gravityview_8php_source.html#l00039">GRAVITYVIEW_FILE</a>, <a class="el" href="class-admin-add-shortcode_8php_source.html#l00041">is_post_editor_screen()</a>, and <a class="el" href="gravityview_8php_source.html#l00092">GravityView_Plugin\version</a>.</p>
 
@@ -183,10 +177,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Add shortcode button to the Add Media right. </p>
 <p>public </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.15.3</dd></dl>
 
 <p>Definition at line <a class="el" href="class-admin-add-shortcode_8php_source.html#l00053">53</a> of file <a class="el" href="class-admin-add-shortcode_8php_source.html">class-admin-add-shortcode.php</a>.</p>
 
-<p>References <a class="el" href="class-admin-add-shortcode_8php_source.html#l00041">is_post_editor_screen()</a>.</p>
+<p>References <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-admin-add-shortcode_8php_source.html#l00041">is_post_editor_screen()</a>.</p>
 
 </div>
 </div>
@@ -206,9 +201,9 @@ Public Member Functions</h2></td></tr>
 <p>Add shortcode popup div. </p>
 <p>public </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-add-shortcode_8php_source.html#l00071">71</a> of file <a class="el" href="class-admin-add-shortcode_8php_source.html">class-admin-add-shortcode.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-add-shortcode_8php_source.html#l00079">79</a> of file <a class="el" href="class-admin-add-shortcode_8php_source.html">class-admin-add-shortcode.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="post__image_8php_source.html#l00026">$title</a>, <a class="el" href="class-data_8php_source.html#l00538">GravityView_View_Data\get_default_args()</a>, <a class="el" href="class-admin-add-shortcode_8php_source.html#l00041">is_post_editor_screen()</a>, <a class="el" href="class-post-types_8php_source.html#l00160">GravityView_Post_Types\no_views_text()</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00294">GravityView_Render_Settings\render_setting_row()</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="post__image_8php_source.html#l00026">$title</a>, <a class="el" href="class-data_8php_source.html#l00541">GravityView_View_Data\get_default_args()</a>, <a class="el" href="class-admin-add-shortcode_8php_source.html#l00041">is_post_editor_screen()</a>, and <a class="el" href="class-post-types_8php_source.html#l00160">GravityView_Post_Types\no_views_text()</a>.</p>
 
 </div>
 </div>
@@ -228,7 +223,7 @@ Public Member Functions</h2></td></tr>
 <p>Ajax Given a View id, calculates the assigned form, and returns the form fields (only the sortable ones ) </p>
 <p>public </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-add-shortcode_8php_source.html#l00191">191</a> of file <a class="el" href="class-admin-add-shortcode_8php_source.html">class-admin-add-shortcode.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-add-shortcode_8php_source.html#l00198">198</a> of file <a class="el" href="class-admin-add-shortcode_8php_source.html">class-admin-add-shortcode.php</a>.</p>
 
 <p>References <a class="el" href="connector-functions_8php_source.html#l00182">gravityview_get_form_id()</a>, <a class="el" href="connector-functions_8php_source.html#l00281">gravityview_get_sortable_fields()</a>, and <a class="el" href="connector-functions_8php_source.html#l00219">gravityview_get_template_setting()</a>.</p>
 
@@ -252,7 +247,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-admin-add-shortcode_8php_source.html#l00041">41</a> of file <a class="el" href="class-admin-add-shortcode_8php_source.html">class-admin-add-shortcode.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00150">add_scripts_and_styles()</a>, <a class="el" href="class-admin-add-shortcode_8php_source.html#l00053">add_shortcode_button()</a>, and <a class="el" href="class-admin-add-shortcode_8php_source.html#l00071">add_shortcode_popup()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00157">add_scripts_and_styles()</a>, <a class="el" href="class-admin-add-shortcode_8php_source.html#l00053">add_shortcode_button()</a>, and <a class="el" href="class-admin-add-shortcode_8php_source.html#l00079">add_shortcode_popup()</a>.</p>
 
 </div>
 </div>

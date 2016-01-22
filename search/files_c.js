@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['post_2dcategory_2ephp',['post-category.php',['../post-category_8php.html',1,'']]],
-  ['post_2dcontent_2ephp',['post-content.php',['../post-content_8php.html',1,'']]],
-  ['post_2did_2ephp',['post-id.php',['../post-id_8php.html',1,'']]],
-  ['post_2dimage_2ephp',['post-image.php',['../post-image_8php.html',1,'']]],
-  ['post_2dtags_2ephp',['post-tags.php',['../post-tags_8php.html',1,'']]],
-  ['post_2dtitle_2ephp',['post-title.php',['../post-title_8php.html',1,'']]],
   ['post_5fcategory_2ephp',['post_category.php',['../post__category_8php.html',1,'']]],
   ['post_5fcontent_2ephp',['post_content.php',['../post__content_8php.html',1,'']]],
   ['post_5fid_2ephp',['post_id.php',['../post__id_8php.html',1,'']]],

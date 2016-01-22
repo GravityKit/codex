@@ -13,12 +13,12 @@ var searchData=
   ['search_2dfield_2dsearch_5fall_2ephp',['search-field-search_all.php',['../search-field-search__all_8php.html',1,'']]],
   ['search_2dfield_2dselect_2ephp',['search-field-select.php',['../search-field-select_8php.html',1,'']]],
   ['search_2dfield_2dsingle_5fcheckbox_2ephp',['search-field-single_checkbox.php',['../search-field-single__checkbox_8php.html',1,'']]],
+  ['section_2ephp',['section.php',['../section_8php.html',1,'']]],
   ['select_2dtemplate_2ephp',['select-template.php',['../select-template_8php.html',1,'']]],
   ['select_2ephp',['select.php',['../select_8php.html',1,'']]],
   ['shortcode_2dhint_2ephp',['shortcode-hint.php',['../shortcode-hint_8php.html',1,'']]],
   ['signature_2ephp',['signature.php',['../signature_8php.html',1,'']]],
   ['single_2dentry_2ephp',['single-entry.php',['../single-entry_8php.html',1,'']]],
   ['sort_2dfilter_2ephp',['sort-filter.php',['../sort-filter_8php.html',1,'']]],
-  ['source_2durl_2ephp',['source-url.php',['../source-url_8php.html',1,'']]],
   ['source_5furl_2ephp',['source_url.php',['../source__url_8php.html',1,'']]]
 ];
