@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -139,7 +139,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000014"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#ad5da9a6a516aa6645a8427e15ad993cf">GravityView_Edit_Entry_Render::process_save</a>  ()</dt>
+<dt><a class="anchor" id="_actions000014"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#ad1001f0114cd745ec6600ba6ae23e586">GravityView_Delete_Entry::delete_or_trash_entry</a>  ($entry_id)</dt>
+<dd><code>gravityview/delete-entry/deleted</code> Triggered when an entry is deleted <dl class="section since"><dt>Since</dt><dd>1.16.4 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$entry_id</td><td>ID of the Gravity Forms entry </td></tr>
+  </table>
+  </dd>
+</dl>
+<code>gravityview/delete-entry/trashed</code> Triggered when an entry is trashed <dl class="section since"><dt>Since</dt><dd>1.16.4 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$entry_id</td><td>ID of the Gravity Forms entry  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_actions000016"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#ad5da9a6a516aa6645a8427e15ad993cf">GravityView_Edit_Entry_Render::process_save</a>  ()</dt>
 <dd><code>gravityview/edit_entry/after_update</code> Perform an action after the entry has been updated using Edit Entry <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
@@ -184,7 +200,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000021"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a437304e51fdea964eeda890cf15c374e">GravityView_Recent_Entries_Widget::form</a>  ($instance)</dt>
+<dt><a class="anchor" id="_actions000023"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a437304e51fdea964eeda890cf15c374e">GravityView_Recent_Entries_Widget::form</a>  ($instance)</dt>
 <dd><code>gravityview_recent_entries_widget_form</code> Displayed at the bottom of the Recent Entries widget admin form <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="class_gravity_view___recent___entries___widget.html" title="Class GravityView_Recent_Entries_Widget. ">GravityView_Recent_Entries_Widget</a></td><td class="paramname">$this</td><td>WP_Widget object </td></tr>
@@ -193,7 +209,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000019"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a81ae170ee792b470c7726cd9f6168898">GravityView_Recent_Entries_Widget::widget</a>  ($args, $instance)</dt>
+<dt><a class="anchor" id="_actions000021"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a81ae170ee792b470c7726cd9f6168898">GravityView_Recent_Entries_Widget::widget</a>  ($args, $instance)</dt>
 <dd><code>gravityview/widget/recent-entries/before_widget</code> Before recent entries are displayed in the WordPress widget <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>Display arguments including before_title, after_title, before_widget, and after_widget. </td></tr>

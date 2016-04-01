@@ -3,6 +3,7 @@ var searchData=
   ['data_2dsource_2ephp',['data-source.php',['../data-source_8php.html',1,'']]],
   ['date_2ephp',['date.php',['../date_8php.html',1,'']]],
   ['date_5fcreated_2ephp',['date_created.php',['../date__created_8php.html',1,'']]],
+  ['date_5fdisplay',['date_display',['../class_gravity_view___field___date.html#afe6180f99b0dbfb70a3fb110db81d9a4',1,'GravityView_Field_Date']]],
   ['date_5fformat',['date_format',['../class_gravity_view___field___time.html#ae566eab3ee3e4f85f922e29b319352d7',1,'GravityView_Field_Time']]],
   ['deactivate',['deactivate',['../class_gravity_view___plugin.html#a7f313467415045368c0633e67a2b6d75',1,'GravityView_Plugin']]],
   ['default_2dwidgets_2ephp',['default-widgets.php',['../default-widgets_8php.html',1,'']]],

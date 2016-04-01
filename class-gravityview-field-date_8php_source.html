@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -126,19 +126,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> $field_options;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class-gravityview-field-date_8php.html#aeb888f265a9963f7edff0a3ebacc921d">   37</a></span>&#160;<span class="keyword">new</span> <a class="code" href="class-gravityview-field-date_8php.html#aeb888f265a9963f7edff0a3ebacc921d">GravityView_Field_Date</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     * Get the default date format for a field based on the field ID and the time format setting</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * @since 1.16.4</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">     * @param string $date_format The Gravity Forms date format for the field. Default: &quot;mdy&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">     * @param int $field_id The ID of the field. Used to figure out full date/day/month/year</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     * @return string PHP date format for the date</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_gravity_view___field___date.html#afe6180f99b0dbfb70a3fb110db81d9a4">   45</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_gravity_view___field___date.html#afe6180f99b0dbfb70a3fb110db81d9a4">date_display</a>( <a class="code" href="search-field-date__range_8php.html#a1334d61bbc340f973c09c7031f3c21f2">$value</a> = <span class="stringliteral">&#39;&#39;</span>, $date_format = <span class="stringliteral">&#39;mdy&#39;</span>, <a class="code" href="time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a> = 0 ) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// Let Gravity Forms figure out, based on the date format, what day/month/year values are.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        $parsed_date = GFCommon::parse_date( <a class="code" href="search-field-date__range_8php.html#a1334d61bbc340f973c09c7031f3c21f2">$value</a>, $date_format );</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// Are we displaying an input or the whole field?</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        $field_input_id = <a class="code" href="helper-functions_8php.html#a20b6222d1dd1ad2a875900fe3750e256">gravityview_get_input_id_from_id</a>( <a class="code" href="time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a> );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        $date_field_output = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">switch</span>( $field_input_id ) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                $date_field_output = rgar( $parsed_date, <span class="stringliteral">&#39;day&#39;</span> );</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                $date_field_output = rgar( $parsed_date, <span class="stringliteral">&#39;month&#39;</span> );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                $date_field_output = rgar( $parsed_date, <span class="stringliteral">&#39;year&#39;</span> );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">         * @filter `gravityview_date_format` Whether to override the Gravity Forms date format with a PHP date format</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">         * @see https://codex.wordpress.org/Formatting_Date_and_Time</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">         * @param null|string Date Format (default: $field-&gt;dateFormat)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        $full_date_format = apply_filters( <span class="stringliteral">&#39;gravityview_date_format&#39;</span>, $date_format );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        $full_date = GFCommon::date_display( <a class="code" href="search-field-date__range_8php.html#a1334d61bbc340f973c09c7031f3c21f2">$value</a>, $full_date_format );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">// If the field output is empty, use the full date.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// Note: The output might be empty because $parsed_date didn&#39;t parse correctly.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> ( <span class="stringliteral">&#39;&#39;</span> === $date_field_output ) ? $full_date : $date_field_output;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class-gravityview-field-date_8php.html#aeb888f265a9963f7edff0a3ebacc921d">   82</a></span>&#160;<span class="keyword">new</span> <a class="code" href="class-gravityview-field-date_8php.html#aeb888f265a9963f7edff0a3ebacc921d">GravityView_Field_Date</a>;</div>
 <div class="ttc" id="class_gravity_view___field_html"><div class="ttname"><a href="class_gravity_view___field.html">GravityView_Field</a></div><div class="ttdoc">Modify field settings by extending this class. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field_8php_source.html#l00011">class-gravityview-field.php:11</a></div></div>
+<div class="ttc" id="helper-functions_8php_html_a20b6222d1dd1ad2a875900fe3750e256"><div class="ttname"><a href="helper-functions_8php.html#a20b6222d1dd1ad2a875900fe3750e256">gravityview_get_input_id_from_id</a></div><div class="ttdeci">gravityview_get_input_id_from_id($field_id= '')</div><div class="ttdoc">Very commonly needed: get the # of the input based on a full field ID. </div><div class="ttdef"><b>Definition:</b> <a href="helper-functions_8php_source.html#l00442">helper-functions.php:442</a></div></div>
 <div class="ttc" id="class_gravity_view___field___date_html_a095c5d389db211932136b53f25f39685"><div class="ttname"><a href="class_gravity_view___field___date.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Date\__construct</a></div><div class="ttdeci">__construct()</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field-date_8php_source.html#l00019">class-gravityview-field-date.php:19</a></div></div>
-<div class="ttc" id="class_gravity_view___field_html_a0439728ab3d018f964428fbc76e192d4"><div class="ttname"><a href="class_gravity_view___field.html#a0439728ab3d018f964428fbc76e192d4">GravityView_Field\add_field_support</a></div><div class="ttdeci">add_field_support($key= '', &amp;$field_options)</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field_8php_source.html#l00312">class-gravityview-field.php:312</a></div></div>
+<div class="ttc" id="class_gravity_view___field___date_html_afe6180f99b0dbfb70a3fb110db81d9a4"><div class="ttname"><a href="class_gravity_view___field___date.html#afe6180f99b0dbfb70a3fb110db81d9a4">GravityView_Field_Date\date_display</a></div><div class="ttdeci">static date_display($value= '', $date_format= 'mdy', $field_id=0)</div><div class="ttdoc">Get the default date format for a field based on the field ID and the time format setting...</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field-date_8php_source.html#l00045">class-gravityview-field-date.php:45</a></div></div>
+<div class="ttc" id="class_gravity_view___field_html_a0439728ab3d018f964428fbc76e192d4"><div class="ttname"><a href="class_gravity_view___field.html#a0439728ab3d018f964428fbc76e192d4">GravityView_Field\add_field_support</a></div><div class="ttdeci">add_field_support($key= '', &amp;$field_options)</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field_8php_source.html#l00311">class-gravityview-field.php:311</a></div></div>
 <div class="ttc" id="class_gravity_view___field___date_html"><div class="ttname"><a href="class_gravity_view___field___date.html">GravityView_Field_Date</a></div><div class="ttdoc">Add custom options for date fields. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field-date_8php_source.html#l00011">class-gravityview-field-date.php:11</a></div></div>
 <div class="ttc" id="class_gravity_view___field___date_html_ab2fc40d43824ea3e1ce5d86dee0d763b"><div class="ttname"><a href="class_gravity_view___field___date.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Date\$name</a></div><div class="ttdeci">$name</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field-date_8php_source.html#l00013">class-gravityview-field-date.php:13</a></div></div>
+<div class="ttc" id="search-field-date__range_8php_html_a1334d61bbc340f973c09c7031f3c21f2"><div class="ttname"><a href="search-field-date__range_8php.html#a1334d61bbc340f973c09c7031f3c21f2">$value</a></div><div class="ttdeci">$value</div><div class="ttdef"><b>Definition:</b> <a href="search-field-date__range_8php_source.html#l00010">search-field-date_range.php:10</a></div></div>
 <div class="ttc" id="class_gravity_view___field___date_html_a499cfd6f5b05a3c22456c33f9da5bf0c"><div class="ttname"><a href="class_gravity_view___field___date.html#a499cfd6f5b05a3c22456c33f9da5bf0c">GravityView_Field_Date\$_gf_field_class_name</a></div><div class="ttdeci">$_gf_field_class_name</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field-date_8php_source.html#l00015">class-gravityview-field-date.php:15</a></div></div>
 <div class="ttc" id="class_gravity_view___field___date_html_a830281167415bd75ffbd62ef5ec82a9a"><div class="ttname"><a href="class_gravity_view___field___date.html#a830281167415bd75ffbd62ef5ec82a9a">GravityView_Field_Date\field_options</a></div><div class="ttdeci">field_options($field_options, $template_id= '', $field_id= '', $context= '', $input_type= '')</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field-date_8php_source.html#l00024">class-gravityview-field-date.php:24</a></div></div>
 <div class="ttc" id="time_8php_html_a77957aab921d62a9e2d2783a4924e634"><div class="ttname"><a href="time_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a></div><div class="ttdeci">$field_id</div><div class="ttdef"><b>Definition:</b> <a href="time_8php_source.html#l00017">time.php:17</a></div></div>
-<div class="ttc" id="class-gravityview-field-date_8php_html_aeb888f265a9963f7edff0a3ebacc921d"><div class="ttname"><a href="class-gravityview-field-date_8php.html#aeb888f265a9963f7edff0a3ebacc921d">GravityView_Field_Date</a></div><div class="ttdeci">new GravityView_Field_Date</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field-date_8php_source.html#l00037">class-gravityview-field-date.php:37</a></div></div>
+<div class="ttc" id="class-gravityview-field-date_8php_html_aeb888f265a9963f7edff0a3ebacc921d"><div class="ttname"><a href="class-gravityview-field-date_8php.html#aeb888f265a9963f7edff0a3ebacc921d">GravityView_Field_Date</a></div><div class="ttdeci">new GravityView_Field_Date</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field-date_8php_source.html#l00082">class-gravityview-field-date.php:82</a></div></div>
 <div class="ttc" id="class_gravity_view___field___date_html_ad530a85733b0ec1dc321859fd8faa0dc"><div class="ttname"><a href="class_gravity_view___field___date.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Date\$group</a></div><div class="ttdeci">$group</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-field-date_8php_source.html#l00017">class-gravityview-field-date.php:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

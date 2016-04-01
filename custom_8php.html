@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -107,7 +107,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab2cfd183a13283e6ee22f33f2713eac9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(empty($field_settings['content']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="custom_8php.html#ab2cfd183a13283e6ee22f33f2713eac9">$content</a> = <a class="el" href="class_gravity_view___a_p_i.html#acf131abd5aba2047a9653344a90f15ca">GravityView_API::replace_variables</a>( $field_settings['content'], $form, $entry )</td></tr>
+<tr class="memitem:ab2cfd183a13283e6ee22f33f2713eac9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(empty($field_settings['content']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="custom_8php.html#ab2cfd183a13283e6ee22f33f2713eac9">$content</a> = <a class="el" href="class_gravity_view___a_p_i.html#a606c969f86a5d82c9fb8086084388e64">GravityView_API::replace_variables</a>( $field_settings['content'], $form, $entry )</td></tr>
 <tr class="separator:ab2cfd183a13283e6ee22f33f2713eac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9e719ebc3def9b2fa995fb6aae3ff8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="custom_8php.html#a8b9e719ebc3def9b2fa995fb6aae3ff8">$field_settings</a> ['content'] = apply_filters( 'gravityview/fields/custom/content_before', $field_settings['content'] )</td></tr>
 <tr class="separator:a8b9e719ebc3def9b2fa995fb6aae3ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,11 +120,11 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> (!empty($field_settings['wpautop'])) $content = <a class="el" href="class_gravity_view___a_p_i.html#acf131abd5aba2047a9653344a90f15ca">GravityView_API::replace_variables</a>( $field_settings['content'], $form, $entry )</td>
+          <td class="memname"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> (!empty($field_settings['wpautop'])) $content = <a class="el" href="class_gravity_view___a_p_i.html#a606c969f86a5d82c9fb8086084388e64">GravityView_API::replace_variables</a>( $field_settings['content'], $form, $entry )</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000153">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed <dl class="section since"><dt>Since</dt><dd>1.6.2 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000166">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed <dl class="section since"><dt>Since</dt><dd>1.6.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$content</td><td>HTML content of field </td></tr>
@@ -135,7 +135,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="custom_8php_source.html#l00037">37</a> of file <a class="el" href="custom_8php_source.html">custom.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00087">GravityView_Entry_Link_Shortcode\delete_shortcode()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00074">GravityView_Entry_Link_Shortcode\edit_shortcode()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00197">GravityView_Entry_Link_Shortcode\get_anchor_text()</a>, <a class="el" href="class-gravityview-field-fileupload_8php_source.html#l00053">GravityView_Field_FileUpload\get_files_array()</a>, <a class="el" href="connector-functions_8php_source.html#l00162">gravityview_has_shortcode_r()</a>, <a class="el" href="class-common_8php_source.html#l00953">GVCommon\has_shortcode_r()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00420">GravityView_frontend\insert_view_in_content()</a>, <a class="el" href="class-common_8php_source.html#l01265">GVCommon\js_encrypt()</a>, <a class="el" href="class-data_8php_source.html#l00347">GravityView_View_Data\parse_post_content()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00063">GravityView_Entry_Link_Shortcode\read_shortcode()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, <a class="el" href="class-gravityview-widget_8php_source.html#l00164">GravityView_Widget\render_shortcode()</a>, <a class="el" href="class-cache_8php_source.html#l00341">GravityView_Cache\set()</a>, and <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00113">GravityView_Entry_Link_Shortcode\shortcode()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00087">GravityView_Entry_Link_Shortcode\delete_shortcode()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00074">GravityView_Entry_Link_Shortcode\edit_shortcode()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00197">GravityView_Entry_Link_Shortcode\get_anchor_text()</a>, <a class="el" href="class-gravityview-field-fileupload_8php_source.html#l00053">GravityView_Field_FileUpload\get_files_array()</a>, <a class="el" href="connector-functions_8php_source.html#l00162">gravityview_has_shortcode_r()</a>, <a class="el" href="class-common_8php_source.html#l00971">GVCommon\has_shortcode_r()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00428">GravityView_frontend\insert_view_in_content()</a>, <a class="el" href="class-common_8php_source.html#l01285">GVCommon\js_encrypt()</a>, <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00119">GravityView_GFFormsModel\media_handle_upload()</a>, <a class="el" href="class-data_8php_source.html#l00347">GravityView_View_Data\parse_post_content()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00063">GravityView_Entry_Link_Shortcode\read_shortcode()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, <a class="el" href="class-gravityview-widget_8php_source.html#l00164">GravityView_Widget\render_shortcode()</a>, <a class="el" href="class-cache_8php_source.html#l00341">GravityView_Cache\set()</a>, and <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00113">GravityView_Entry_Link_Shortcode\shortcode()</a>.</p>
 
 </div>
 </div>
@@ -148,7 +148,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000152">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/content_before</code> Modify Custom Content field output before Merge Tag processing <dl class="section since"><dt>Since</dt><dd>1.6.2 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000165">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/content_before</code> Modify Custom Content field output before Merge Tag processing <dl class="section since"><dt>Since</dt><dd>1.6.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$content</td><td>HTML content of field </td></tr>
@@ -159,7 +159,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="custom_8php_source.html#l00027">27</a> of file <a class="el" href="custom_8php_source.html">custom.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-api_8php_source.html#l00372">GravityView_API\entry_link_html()</a>, <a class="el" href="class-api_8php_source.html#l00220">GravityView_API\field_value()</a>, <a class="el" href="class-gravityview-field-date-created_8php_source.html#l00058">GravityView_Field_Date_Created\get_content()</a>, and <a class="el" href="class-gravityview-field-fileupload_8php_source.html#l00053">GravityView_Field_FileUpload\get_files_array()</a>.</p>
+<p>Referenced by <a class="el" href="class-api_8php_source.html#l00362">GravityView_API\entry_link_html()</a>, <a class="el" href="class-api_8php_source.html#l00220">GravityView_API\field_value()</a>, <a class="el" href="class-gravityview-field-date-created_8php_source.html#l00058">GravityView_Field_Date_Created\get_content()</a>, and <a class="el" href="class-gravityview-field-fileupload_8php_source.html#l00053">GravityView_Field_FileUpload\get_files_array()</a>.</p>
 
 </div>
 </div>

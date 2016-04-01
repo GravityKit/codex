@@ -15,8 +15,6 @@ var searchData=
   ['initialize',['initialize',['../class_gravity_view___admin___metaboxes.html#a91098fa7d1917ce4833f284bbef12627',1,'GravityView_Admin_Metaboxes\initialize()'],['../class_gravity_view__frontend.html#a91098fa7d1917ce4833f284bbef12627',1,'GravityView_frontend\initialize()'],['../class_gravity_view__o_embed.html#a91098fa7d1917ce4833f284bbef12627',1,'GravityView_oEmbed\initialize()'],['../class_gravity_view___recent___entries___widget.html#a91098fa7d1917ce4833f284bbef12627',1,'GravityView_Recent_Entries_Widget\initialize()']]],
   ['insert_5fadmin_5fnotices',['insert_admin_notices',['../class_gravity_view___compatibility.html#a88feae657bfe1f13aec30d7dc0f7a142',1,'GravityView_Compatibility']]],
   ['insert_5fview_5fin_5fcontent',['insert_view_in_content',['../class_gravity_view__frontend.html#a56634201564d8f906af918ac85281109',1,'GravityView_frontend']]],
-  ['install',['install',['../class_g_v___unit___tests___bootstrap.html#aa966adc12c56a4cc70da92207fa50929',1,'GV_Unit_Tests_Bootstrap']]],
-  ['instance',['instance',['../class_g_v___unit___tests___bootstrap.html#a0deb004950b8dc4f51836316fd19c111',1,'GV_Unit_Tests_Bootstrap']]],
   ['is_5fadmin',['is_admin',['../class_gravity_view___plugin.html#ac60c9e9f42603110fa631baffba47880',1,'GravityView_Plugin']]],
   ['is_5fadmin_5fpage',['is_admin_page',['../class_gravity_view___admin.html#a1ce3d7eea1151cce26dbbb4f93f1bec1',1,'GravityView_Admin']]],
   ['is_5fall_5fviews_5fpage',['is_all_views_page',['../class_gravity_view___admin___duplicate___view.html#a987a604917d7eefa0877f69aa726e44a',1,'GravityView_Admin_Duplicate_View']]],

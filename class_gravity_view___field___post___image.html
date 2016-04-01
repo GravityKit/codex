@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -89,7 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Field_Post_Image Class Reference</div>  </div>
 </div><!--header-->
@@ -168,6 +169,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a2a2959a858620cef51b05270bd436b3e inherit pub_attribs_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a2a2959a858620cef51b05270bd436b3e">$search_operators</a></td></tr>
 <tr class="separator:a2a2959a858620cef51b05270bd436b3e inherit pub_attribs_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad39b63b32c76862d0c0de4ce2a887ca7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___post___image.html#ad39b63b32c76862d0c0de4ce2a887ca7">explode_value</a> ($value)</td></tr>
+<tr class="memdesc:ad39b63b32c76862d0c0de4ce2a887ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Gravity Forms <code>|:|</code>-separated image data into an array.  <a href="#ad39b63b32c76862d0c0de4ce2a887ca7">More...</a><br /></td></tr>
+<tr class="separator:ad39b63b32c76862d0c0de4ce2a887ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_gravity_view___field"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_gravity_view___field')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_gravity_view___field.html">GravityView_Field</a></td></tr>
@@ -205,6 +212,45 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad39b63b32c76862d0c0de4ce2a887ca7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">explode_value </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert Gravity Forms <code>|:|</code>-separated image data into an array. </p>
+<p>If passed something other than a string, returns the passed value.</p>
+<dl class="section since"><dt>Since</dt><dd>1.16.2</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>The stored value of an image, impoded with <code>|:|</code> values</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array with <code>url</code>, <code>title</code>, <code>caption</code> and <code>description</code> values </dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-field-post-image_8php_source.html#l00051">51</a> of file <a class="el" href="class-gravityview-field-post-image_8php_source.html">class-gravityview-field-post-image.php</a>.</p>
+
+<p>References <a class="el" href="post__image_8php_source.html#l00027">$caption</a>, <a class="el" href="class-gravityview-field_8php_source.html#l00025">GravityView_Field\$description</a>, <a class="el" href="post__image_8php_source.html#l00026">$title</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a902c63bfcab26c87838ae0e70fa6b3be"></a>
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +295,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gravityview-field-post-image_8php_source.html#l00024">24</a> of file <a class="el" href="class-gravityview-field-post-image_8php_source.html">class-gravityview-field-post-image.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-field_8php_source.html#l00312">GravityView_Field\add_field_support()</a>.</p>
+<p>References <a class="el" href="class-gravityview-field_8php_source.html#l00311">GravityView_Field\add_field_support()</a>.</p>
 
 </div>
 </div>

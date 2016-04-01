@@ -20,5 +20,6 @@ var searchData=
   ['signature_2ephp',['signature.php',['../signature_8php.html',1,'']]],
   ['single_2dentry_2ephp',['single-entry.php',['../single-entry_8php.html',1,'']]],
   ['sort_2dfilter_2ephp',['sort-filter.php',['../sort-filter_8php.html',1,'']]],
-  ['source_5furl_2ephp',['source_url.php',['../source__url_8php.html',1,'']]]
+  ['source_5furl_2ephp',['source_url.php',['../source__url_8php.html',1,'']]],
+  ['survey_2ephp',['survey.php',['../survey_8php.html',1,'']]]
 ];

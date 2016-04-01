@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -107,27 +107,27 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8f9178e498218773ccfaae31e450473c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8php.html#a8f9178e498218773ccfaae31e450473c">$field_id_array</a> = explode( '.', $field_id )</td></tr>
-<tr class="separator:a8f9178e498218773ccfaae31e450473c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab377259db0be14b8a65ef19a9c2a309a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8php.html#ab377259db0be14b8a65ef19a9c2a309a">$column_id</a> = <a class="el" href="helper-functions_8php.html#a20b6222d1dd1ad2a875900fe3750e256">gravityview_get_input_id_from_id</a>( $field_id )</td></tr>
+<tr class="separator:ab377259db0be14b8a65ef19a9c2a309a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add47a7f886e74847997a4044e9903a0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8php.html#add47a7f886e74847997a4044e9903a0a">$gravityview_view</a> = <a class="el" href="class_gravity_view___view.html#a76cf4523dbaebd58c27db806e01b73d9">GravityView_View::getInstance</a>()</td></tr>
 <tr class="separator:add47a7f886e74847997a4044e9903a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88f9d5bc84e3d1c1f918b835e2b5a6fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>($field-&gt;enableColumns &amp;&amp;isset($field_id_array[1]))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8php.html#a88f9d5bc84e3d1c1f918b835e2b5a6fb">else</a></td></tr>
-<tr class="separator:a88f9d5bc84e3d1c1f918b835e2b5a6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ad942b125e07e0893059174a211613"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>($field-&gt;enableColumns &amp;&amp;!empty($column_id))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8php.html#a89ad942b125e07e0893059174a211613">else</a></td></tr>
+<tr class="separator:a89ad942b125e07e0893059174a211613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a8f9178e498218773ccfaae31e450473c"></a>
+<a class="anchor" id="ab377259db0be14b8a65ef19a9c2a309a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$field_id_array = explode( '.', $field_id )</td>
+          <td class="memname">$column_id = <a class="el" href="helper-functions_8php.html#a20b6222d1dd1ad2a875900fe3750e256">gravityview_get_input_id_from_id</a>( $field_id )</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="list_8php_source.html#l00018">18</a> of file <a class="el" href="list_8php_source.html">list.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-field-list_8php_source.html#l00105">GravityView_Field_List\_filter_field_label()</a>, and <a class="el" href="class-gravityview-field-time_8php_source.html#l00283">GravityView_Field_Time\date_format()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-field-list_8php_source.html#l00105">GravityView_Field_List\_filter_field_label()</a>, <a class="el" href="class-gravityview-field-list_8php_source.html#l00059">GravityView_Field_List\column_value()</a>, and <a class="el" href="class-gravityview-field-list_8php_source.html#l00140">GravityView_Field_List\get_column_label()</a>.</p>
 
 </div>
 </div>
@@ -145,12 +145,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a88f9d5bc84e3d1c1f918b835e2b5a6fb"></a>
+<a class="anchor" id="a89ad942b125e07e0893059174a211613"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> ($field-&gt;enableColumns &amp;&amp;isset($field_id_array[1])) else</td>
+          <td class="memname"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> ($field-&gt;enableColumns &amp;&amp;!empty($column_id)) else</td>
         </tr>
       </table>
 </div><div class="memdoc">

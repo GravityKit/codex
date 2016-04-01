@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -109,9 +109,8 @@ Namespaces</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a83e4d6721f3491a4fd780dbd3ce1a3c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gquiz__percent_8php.html#a83e4d6721f3491a4fd780dbd3ce1a3c0">$field</a> = <a class="el" href="class_gravity_view___view.html#a76cf4523dbaebd58c27db806e01b73d9">GravityView_View::getInstance</a>()-&gt;getCurrentField()</td></tr>
 <tr class="separator:a83e4d6721f3491a4fd780dbd3ce1a3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d2cd7133414dcb5bf74c0f3b3fb99e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(empty($field['value']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gquiz__percent_8php.html#a1d2cd7133414dcb5bf74c0f3b3fb99e2">$format</a> = apply_filters('gravityview/field/quiz_percent/format', '%d%%')</td></tr>
-<tr class="memdesc:a1d2cd7133414dcb5bf74c0f3b3fb99e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the format of the display of the field.  <a href="#a1d2cd7133414dcb5bf74c0f3b3fb99e2">More...</a><br /></td></tr>
-<tr class="separator:a1d2cd7133414dcb5bf74c0f3b3fb99e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ae28307973a966755c947b6ecc1ca5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(<a class="el" href="helper-functions_8php.html#abc97cb18fc8cbaf8269167fa99b942d4">gv_empty</a>($field['value'], false, false))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gquiz__percent_8php.html#ac2ae28307973a966755c947b6ecc1ca5">$format</a> = apply_filters('gravityview/field/quiz_percent/format', '%d%%')</td></tr>
+<tr class="separator:ac2ae28307973a966755c947b6ecc1ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a83e4d6721f3491a4fd780dbd3ce1a3c0"></a>
@@ -128,29 +127,27 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1d2cd7133414dcb5bf74c0f3b3fb99e2"></a>
+<a class="anchor" id="ac2ae28307973a966755c947b6ecc1ca5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> (empty($field['value'])) $format = apply_filters('gravityview/field/quiz_percent/format', '%d%%')</td>
+          <td class="memname"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> (<a class="el" href="helper-functions_8php.html#abc97cb18fc8cbaf8269167fa99b942d4">gv_empty</a>($field['value'], false, false)) $format = apply_filters('gravityview/field/quiz_percent/format', '%d%%')</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Modify the format of the display of the field. </p>
-<p>Notice the double <code>%%</code>, this prints a literal '' character</p>
-<dl class="section see"><dt>See also</dt><dd><a href="http://php.net/manual/en/function.sprintf.php">http://php.net/manual/en/function.sprintf.php</a> For formatting guide</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000168">Runs Filter:</a></b></dt><dd><code>gravityview/field/quiz_percent/format</code> Modify the format of the display of Quiz Score (Percent) field. <dl class="section see"><dt>See also</dt><dd><a href="http://php.net/manual/en/function.sprintf.php">http://php.net/manual/en/function.sprintf.php</a> For formatting guide </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$format</td><td>Format passed to printf() function. Default <code>d%%</code>, which prints as "{number}%" </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$format</td><td>Format passed to printf() function. Default <code>d%%</code>, which prints as "{number}%". Notice the double <code>%%</code>, this prints a literal '' character. </td></tr>
   </table>
   </dd>
 </dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="gquiz__percent_8php_source.html#l00025">25</a> of file <a class="el" href="gquiz__percent_8php_source.html">gquiz_percent.php</a>.</p>
+<p>Definition at line <a class="el" href="gquiz__percent_8php_source.html#l00021">21</a> of file <a class="el" href="gquiz__percent_8php_source.html">gquiz_percent.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-field-list_8php_source.html#l00059">GravityView_Field_List\column_value()</a>, <a class="el" href="class-api_8php_source.html#l00220">GravityView_API\field_value()</a>, <a class="el" href="class-api_8php_source.html#l00116">GravityView_API\field_width()</a>, <a class="el" href="class-common_8php_source.html#l00835">GVCommon\format_date()</a>, <a class="el" href="class-search-widget_8php_source.html#l00613">GravityView_Widget_Search\get_date_field_format()</a>, <a class="el" href="class-search-widget_8php_source.html#l00639">GravityView_Widget_Search\get_formatted_date()</a>, <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00141">GravityView_Edit_Entry_User_Registration\match_current_display_name()</a>, and <a class="el" href="_gravity_view___a_p_i___test_8php_source.html#l00309">GravityView_API_Test\test_field_width()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-field-list_8php_source.html#l00059">GravityView_Field_List\column_value()</a>, <a class="el" href="class-api_8php_source.html#l00220">GravityView_API\field_value()</a>, <a class="el" href="class-api_8php_source.html#l00116">GravityView_API\field_width()</a>, <a class="el" href="class-common_8php_source.html#l00852">GVCommon\format_date()</a>, <a class="el" href="class-search-widget_8php_source.html#l00678">GravityView_Widget_Search\get_date_field_format()</a>, <a class="el" href="class-search-widget_8php_source.html#l00704">GravityView_Widget_Search\get_formatted_date()</a>, and <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00159">GravityView_Edit_Entry_User_Registration\match_current_display_name()</a>.</p>
 
 </div>
 </div>

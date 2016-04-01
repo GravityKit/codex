@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Field_Date Class Reference</div>  </div>
@@ -134,6 +135,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af98fc2ca6cc30ebd5609abd924f005bb inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#af98fc2ca6cc30ebd5609abd924f005bb">replace_merge_tag</a> ($matches=array(), $text= '', $form=array(), $entry=array(), $url_encode=false, $esc_html=false)</td></tr>
 <tr class="memdesc:af98fc2ca6cc30ebd5609abd924f005bb inherit pub_methods_class_gravity_view___field"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> filters when using GFCommon::replace_variables()  <a href="#af98fc2ca6cc30ebd5609abd924f005bb">More...</a><br /></td></tr>
 <tr class="separator:af98fc2ca6cc30ebd5609abd924f005bb inherit pub_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afe6180f99b0dbfb70a3fb110db81d9a4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___date.html#afe6180f99b0dbfb70a3fb110db81d9a4">date_display</a> ($value= '', $date_format= 'mdy', $field_id=0)</td></tr>
+<tr class="memdesc:afe6180f99b0dbfb70a3fb110db81d9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default date format for a field based on the field ID and the time format setting.  <a href="#afe6180f99b0dbfb70a3fb110db81d9a4">More...</a><br /></td></tr>
+<tr class="separator:afe6180f99b0dbfb70a3fb110db81d9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -205,6 +212,69 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="afe6180f99b0dbfb70a3fb110db81d9a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static date_display </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$date_format</em> = <code>'mdy'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$field_id</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the default date format for a field based on the field ID and the time format setting. </p>
+<dl class="section since"><dt>Since</dt><dd>1.16.4</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$date_format</td><td>The Gravity Forms date format for the field. Default: "mdy" </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$field_id</td><td>The ID of the field. Used to figure out full date/day/month/year</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string PHP date format for the date </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000132">Runs Filter:</a></b></dt><dd><code>gravityview_date_format</code> Whether to override the Gravity Forms date format with a PHP date format <dl class="section see"><dt>See also</dt><dd><a href="https://codex.wordpress.org/Formatting_Date_and_Time">https://codex.wordpress.org/Formatting_Date_and_Time</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">null|string</td><td>Date Format (default: $field-&gt;dateFormat) </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-field-date_8php_source.html#l00045">45</a> of file <a class="el" href="class-gravityview-field-date_8php_source.html">class-gravityview-field-date.php</a>.</p>
+
+<p>References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="helper-functions_8php_source.html#l00442">gravityview_get_input_id_from_id()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a830281167415bd75ffbd62ef5ec82a9a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +319,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gravityview-field-date_8php_source.html#l00024">24</a> of file <a class="el" href="class-gravityview-field-date_8php_source.html">class-gravityview-field-date.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-field_8php_source.html#l00312">GravityView_Field\add_field_support()</a>.</p>
+<p>References <a class="el" href="class-gravityview-field_8php_source.html#l00311">GravityView_Field\add_field_support()</a>.</p>
 
 </div>
 </div>

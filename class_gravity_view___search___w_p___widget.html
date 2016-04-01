@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -89,7 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a>  </div>
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Search_WP_Widget Class Reference</div>  </div>
 </div><!--header-->
@@ -121,6 +122,11 @@ Public Member Functions</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a308c5eb89070ed6769bdb389351c5cb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___search___w_p___widget.html#a308c5eb89070ed6769bdb389351c5cb6">load_required_files</a> ()</td></tr>
 <tr class="separator:a308c5eb89070ed6769bdb389351c5cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:aa718bf483285532f2994c33bb56c8ebc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___search___w_p___widget.html#aa718bf483285532f2994c33bb56c8ebc">get_defaults</a> ()</td></tr>
+<tr class="separator:aa718bf483285532f2994c33bb56c8ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Search widget class. </p>
@@ -143,7 +149,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00010">10</a> of file <a class="el" href="class-gravityview-search-wp-widget_8php_source.html">class-gravityview-search-wp-widget.php</a>.</p>
 
-<p>References <a class="el" href="class-search-widget_8php_source.html#l00091">GravityView_Widget_Search\getInstance()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00036">load_required_files()</a>.</p>
+<p>References <a class="el" href="class-search-widget_8php_source.html#l00101">GravityView_Widget_Search\getInstance()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00036">load_required_files()</a>.</p>
 
 </div>
 </div>
@@ -166,9 +172,34 @@ Private Member Functions</h2></td></tr>
 <p>Display errors generated for invalid embed IDs </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___view___data.html#a8034b350cb1abf75da2403e02ad4e9d1" title="Checks if the passed post id has the passed View id embedded. ">GravityView_View_Data::is_valid_embed_id</a></dd></dl>
 <p>Display errors generated for invalid embed IDs </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___view___data.html#a8034b350cb1abf75da2403e02ad4e9d1" title="Checks if the passed post id has the passed View id embedded. ">GravityView_View_Data::is_valid_embed_id</a></dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00129">129</a> of file <a class="el" href="class-gravityview-search-wp-widget_8php_source.html">class-gravityview-search-wp-widget.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00133">133</a> of file <a class="el" href="class-gravityview-search-wp-widget_8php_source.html">class-gravityview-search-wp-widget.php</a>.</p>
 
 <p>References <a class="el" href="post__image_8php_source.html#l00026">$title</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-common_8php_source.html#l00096">GVCommon\get_all_views()</a>, <a class="el" href="class-admin_8php_source.html#l00121">GravityView_Admin\get_floaty()</a>, and <a class="el" href="class-post-types_8php_source.html#l00160">GravityView_Post_Types\no_views_text()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa718bf483285532f2994c33bb56c8ebc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static get_defaults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00042">42</a> of file <a class="el" href="class-gravityview-search-wp-widget_8php_source.html">class-gravityview-search-wp-widget.php</a>.</p>
 
 </div>
 </div>
@@ -227,7 +258,7 @@ Private Member Functions</h2></td></tr>
 
 <p></p>
 
-<p>Definition at line <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00090">90</a> of file <a class="el" href="class-gravityview-search-wp-widget_8php_source.html">class-gravityview-search-wp-widget.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00101">101</a> of file <a class="el" href="class-gravityview-search-wp-widget_8php_source.html">class-gravityview-search-wp-widget.php</a>.</p>
 
 <p>References <a class="el" href="class-data_8php_source.html#l00450">GravityView_View_Data\is_valid_embed_id()</a>.</p>
 
@@ -259,9 +290,9 @@ Private Member Functions</h2></td></tr>
 <p>This filter is documented in wp-includes/default-widgets.php</p>
 <p>Restore previous View context </p>
 
-<p>Definition at line <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00042">42</a> of file <a class="el" href="class-gravityview-search-wp-widget_8php_source.html">class-gravityview-search-wp-widget.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">53</a> of file <a class="el" href="class-gravityview-search-wp-widget_8php_source.html">class-gravityview-search-wp-widget.php</a>.</p>
 
-<p>References <a class="el" href="post__image_8php_source.html#l00026">$title</a>, <a class="el" href="class-common_8php_source.html#l00028">GVCommon\get_form()</a>, <a class="el" href="class-common_8php_source.html#l01020">GVCommon\get_meta_form_id()</a>, <a class="el" href="class-search-widget_8php_source.html#l00091">GravityView_Widget_Search\getInstance()</a>, and <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>.</p>
+<p>References <a class="el" href="post__image_8php_source.html#l00026">$title</a>, <a class="el" href="class-common_8php_source.html#l00028">GVCommon\get_form()</a>, <a class="el" href="class-common_8php_source.html#l01040">GVCommon\get_meta_form_id()</a>, <a class="el" href="class-search-widget_8php_source.html#l00101">GravityView_Widget_Search\getInstance()</a>, and <a class="el" href="class-template_8php_source.html#l00190">GravityView_View\getInstance()</a>.</p>
 
 </div>
 </div>

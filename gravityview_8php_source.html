@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Plugin Name:         GravityView</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Plugin URI:          http://gravityview.co</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * Description:         Create directories based on a Gravity Forms form, insert them using a shortcode, and modify how they output.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Version:             1.16.1</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * Version:             1.16.4.1</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * Author:              Katz Web Services, Inc.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * Author URI:          http://www.katzwebservices.com</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * Text Domain:         gravityview</span></div>
@@ -180,7 +180,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_gravity_view___plugin.html">   90</a></span>&#160;<span class="keyword">final</span> <span class="keyword">class </span><a class="code" href="class_gravity_view___plugin.html">GravityView_Plugin</a> {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_gravity_view___plugin.html#a265a39dcf2f0b7c6b96574362aa01ad9">   92</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_gravity_view___plugin.html#a265a39dcf2f0b7c6b96574362aa01ad9">version</a> = <span class="stringliteral">&#39;1.16.1&#39;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_gravity_view___plugin.html#a265a39dcf2f0b7c6b96574362aa01ad9">   92</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_gravity_view___plugin.html#a265a39dcf2f0b7c6b96574362aa01ad9">version</a> = <span class="stringliteral">&#39;1.16.4.1&#39;</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_gravity_view___plugin.html#ad9d7ce33ebb142b70e58b68052ca0ea8">   94</a></span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <a class="code" href="class_gravity_view___plugin.html#ad9d7ce33ebb142b70e58b68052ca0ea8">$instance</a>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span></div>
@@ -262,7 +262,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        include_once( <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> . <span class="stringliteral">&#39;includes/class-gravityview-logging.php&#39;</span> );</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        include_once( <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> . <span class="stringliteral">&#39;includes/class-ajax.php&#39;</span> );</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        include_once( <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> . <span class="stringliteral">&#39;includes/class-settings.php&#39;</span>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        include_once( <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> . <span class="stringliteral">&#39;includes/class-gravityview-settings.php&#39;</span> );</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        include_once( <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> . <span class="stringliteral">&#39;includes/class-frontend-views.php&#39;</span> );</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        include_once( <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> . <span class="stringliteral">&#39;includes/class-gravityview-admin-bar.php&#39;</span> );</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        include_once( <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> . <span class="stringliteral">&#39;includes/class-gravityview-entry-list.php&#39;</span> );</div>

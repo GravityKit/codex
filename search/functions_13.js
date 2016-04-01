@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['uninstall',['uninstall',['../class_gravity_view___uninstall___test.html#a9db6a246faa6b948911078c4be4445c8',1,'GravityView_Uninstall_Test']]],
   ['update',['update',['../class_gravity_view___recent___entries___widget.html#aaf2172fb5d5b862989bfa79976e019ab',1,'GravityView_Recent_Entries_Widget\update()'],['../class_gravity_view___search___w_p___widget.html#aaf2172fb5d5b862989bfa79976e019ab',1,'GravityView_Search_WP_Widget\update()']]],
   ['update_5fapp_5fsettings',['update_app_settings',['../class_gravity_view___settings.html#a6156b5156ed54bb6c236628f3853dd7c',1,'GravityView_Settings']]],
   ['update_5fapproved_5fmeta',['update_approved_meta',['../class_gravity_view___admin___approve_entries.html#a12ea7f5f39de38ea7917e6b0ca6a26fe',1,'GravityView_Admin_ApproveEntries']]],
   ['update_5fbulk',['update_bulk',['../class_gravity_view___admin___approve_entries.html#a4ae994dcba3037068b5e1611c619fad3',1,'GravityView_Admin_ApproveEntries']]],
+  ['update_5fcalculation_5ffields',['update_calculation_fields',['../class_gravity_view___edit___entry___render.html#a86e2d627ac64bcfca92ac5be56e05a37',1,'GravityView_Edit_Entry_Render']]],
   ['update_5fentry_5fcreator',['update_entry_creator',['../class_gravity_view___change___entry___creator.html#a7130efbfc34ef0fe0a2e9d5b2b847a84',1,'GravityView_Change_Entry_Creator']]],
-  ['update_5fobject',['update_object',['../class_g_f___unit_test___factory___for___entry.html#a2fed6d141a6a3fea0457e61a2250db94',1,'GF_UnitTest_Factory_For_Entry\update_object()'],['../class_g_f___unit_test___factory___for___form.html#a017a1e54b941277c2df86e739339d381',1,'GF_UnitTest_Factory_For_Form\update_object()']]],
   ['update_5fpriority',['update_priority',['../class_gravity_view___admin___metaboxes.html#ad58e1341580d203f61e0dc56ff9b592b',1,'GravityView_Admin_Metaboxes']]],
   ['update_5fsearch_5fon_5fviews',['update_search_on_views',['../class_gravity_view___migrate.html#a52a42f538cebb43c54fa4621b0039974',1,'GravityView_Migrate']]],
   ['update_5fsettings',['update_settings',['../class_gravity_view___migrate.html#a5b6d2cc99b743a7896d6411473c1832c',1,'GravityView_Migrate']]],

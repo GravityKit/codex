@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.1</span>
+   &#160;<span id="projectnumber">1.16.14.1</span>
    </div>
    <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
   </td>
@@ -105,6 +105,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Variables</h2></td></tr>
 <tr class="memitem:a607f96b0c77b634aa2b973ac832e4514"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="form-buttons_8php.html#a607f96b0c77b634aa2b973ac832e4514">$back_link</a> = apply_filters( 'gravityview/edit_entry/cancel_link', remove_query_arg( array( 'page', 'view', 'edit' ) ), $object-&gt;form, $object-&gt;entry, $object-&gt;view_id )</td></tr>
 <tr class="separator:a607f96b0c77b634aa2b973ac832e4514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00fa4df95d1b7c3dd9a2321448e90ba9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="form-buttons_8php.html#a00fa4df95d1b7c3dd9a2321448e90ba9">$labels</a></td></tr>
+<tr class="separator:a00fa4df95d1b7c3dd9a2321448e90ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_gravity_view___edit___entry___render.html">GravityView_Edit_Entry_Render</a> $object </p>
@@ -120,7 +122,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000123">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/cancel_link</code> Modify the cancel button link URL <dl class="section since"><dt>Since</dt><dd>1.11.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000130">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/cancel_link</code> Modify the cancel button link URL <dl class="section since"><dt>Since</dt><dd>1.11.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$back_link</td><td>Existing URL of the Cancel link </td></tr>
@@ -134,7 +136,38 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="form-buttons_8php_source.html#l00018">18</a> of file <a class="el" href="form-buttons_8php_source.html">form-buttons.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00526">GravityView_Edit_Entry_Render\edit_entry_form()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00749">GravityView_Edit_Entry_Render\maybe_print_message()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00fa4df95d1b7c3dd9a2321448e90ba9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$labels</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;cancel&#39;</span> =&gt; __( <span class="stringliteral">&#39;Cancel&#39;</span>, <span class="stringliteral">&#39;gravityview&#39;</span> ),</div>
+<div class="line">        <span class="stringliteral">&#39;submit&#39;</span> =&gt; __( <span class="stringliteral">&#39;Update&#39;</span>, <span class="stringliteral">&#39;gravityview&#39;</span>)</div>
+<div class="line">    )</div>
+</div><!-- fragment --><dl class="filters"><dt><b><a class="el" href="filters.html#_filters000131">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/button_labels</code> Modify the cancel/submit buttons' labels <dl class="section since"><dt>Since</dt><dd>1.16.3 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$labels</td><td>Default button labels associative array </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>The Gravity Forms form </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>The Gravity Forms entry </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$view_id</td><td>The current View ID </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+<p>Definition at line <a class="el" href="form-buttons_8php_source.html#l00030">30</a> of file <a class="el" href="form-buttons_8php_source.html">form-buttons.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-post-types_8php_source.html#l00034">GravityView_Post_Types\init_post_types()</a>.</p>
 
 </div>
 </div>
