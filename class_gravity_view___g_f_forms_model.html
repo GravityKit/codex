@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -110,6 +109,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afc8abaa0c3bbdeb45114d715cd4ea0b3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___g_f_forms_model.html#afc8abaa0c3bbdeb45114d715cd4ea0b3">copy_post_image</a> ($url, $post_id)</td></tr>
 <tr class="memdesc:afc8abaa0c3bbdeb45114d715cd4ea0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copied function from Gravity Forms plugin ::copy_post_image since the method is private.  <a href="#afc8abaa0c3bbdeb45114d715cd4ea0b3">More...</a><br /></td></tr>
 <tr class="separator:afc8abaa0c3bbdeb45114d715cd4ea0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c9a117c3f76fd5e3f5100ed26c7cbf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___g_f_forms_model.html#a24c9a117c3f76fd5e3f5100ed26c7cbf">get_post_field_images</a> ($form, $entry)</td></tr>
+<tr class="memdesc:a24c9a117c3f76fd5e3f5100ed26c7cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given information provided in an entry, get array of media IDs.  <a href="#a24c9a117c3f76fd5e3f5100ed26c7cbf">More...</a><br /></td></tr>
+<tr class="separator:a24c9a117c3f76fd5e3f5100ed26c7cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0ae8177dcef0b32c31667d37936fdc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___g_f_forms_model.html#a0b0ae8177dcef0b32c31667d37936fdc">get_post_fields</a> ($form, $entry)</td></tr>
+<tr class="memdesc:a0b0ae8177dcef0b32c31667d37936fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of GFFormsModel::get_post_fields(); just making it public.  <a href="#a0b0ae8177dcef0b32c31667d37936fdc">More...</a><br /></td></tr>
+<tr class="separator:a0b0ae8177dcef0b32c31667d37936fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a437f2ae694e0ddfd7108b93b54d4bda4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___g_f_forms_model.html#a437f2ae694e0ddfd7108b93b54d4bda4">media_handle_upload</a> ($url, $post_id, $post_data=array())</td></tr>
 <tr class="memdesc:a437f2ae694e0ddfd7108b93b54d4bda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copied function from Gravity Forms plugin ::media_handle_upload since the method is private.  <a href="#a437f2ae694e0ddfd7108b93b54d4bda4">More...</a><br /></td></tr>
 <tr class="separator:a437f2ae694e0ddfd7108b93b54d4bda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,21 +167,115 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array|bool Array with <code>file</code>, <code>url</code> and <code>type</code> keys. False: failed to copy file to final directory path. </dd></dl>
-<p>If the method changes to public, use Gravity Forms' method </p>
-<h1>Original Gravity Forms code below: </h1>
-<p>Filter the media upload location.</p>
+<p>If the method changes to public, use Gravity Forms' method  </p>
+
+<p>Definition at line <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00086">86</a> of file <a class="el" href="class-gravityview-gfformsmodel_8php_source.html">class-gravityview-gfformsmodel.php</a>.</p>
+
+<p>References <a class="el" href="post__image_8php_source.html#l00025">$url</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24c9a117c3f76fd5e3f5100ed26c7cbf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static get_post_field_images </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Given information provided in an entry, get array of media IDs. </p>
+<p>This is necessary because GF doesn't expect to need to update post images, only to create them.</p>
+<dl class="section see"><dt>See also</dt><dd>GFFormsModel::create_post()</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$upload_dir</td><td>The current upload directory’s path and url. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The ID of the form currently being processed. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$post_id</td><td>The ID of the post created from the entry currently being processed.</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Gravity Forms entry array</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>array Array of "Field ID" =&gt; "Media IDs" </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00019">19</a> of file <a class="el" href="class-gravityview-gfformsmodel_8php_source.html">class-gravityview-gfformsmodel.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00024">24</a> of file <a class="el" href="class-gravityview-gfformsmodel_8php_source.html">class-gravityview-gfformsmodel.php</a>.</p>
 
-<p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="select-template_8php_source.html#l00009">$post</a>, and <a class="el" href="post__image_8php_source.html#l00025">$url</a>.</p>
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>.</p>
+
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00682">GravityView_Edit_Entry_Render\fill_post_template()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b0ae8177dcef0b32c31667d37936fdc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static get_post_fields </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Alias of GFFormsModel::get_post_fields(); just making it public. </p>
+<dl class="section see"><dt>See also</dt><dd>GFFormsModel::get_post_fields()</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Gravity Forms entry array</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+<p>If the method changes to public, use Gravity Forms' method  </p>
+
+<p>Definition at line <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00059">59</a> of file <a class="el" href="class-gravityview-gfformsmodel_8php_source.html">class-gravityview-gfformsmodel.php</a>.</p>
+
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>.</p>
 
 </div>
 </div>
@@ -219,6 +318,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Copied function from Gravity Forms plugin ::media_handle_upload since the method is private. </p>
+<p>Note: The method became public in GF 1.9.17.7</p>
 <dl class="section see"><dt>See also</dt><dd>GFFormsModel::media_handle_upload </dd>
 <dd>
 <a class="el" href="class_gravity_view___edit___entry___render.html#acc67a1f41bd8d7436de91e33f2abf02d" title="Loop through the fields being edited and if they include Post fields, update the Entry&#39;s post object...">GravityView_Edit_Entry_Render::maybe_update_post_fields</a></dd></dl>
@@ -233,14 +333,13 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd>wp_insert_attachment}. Supports <code>post_mime_type</code>, <code>guid</code>, <code>post_parent</code>, <code>post_title</code>, <code>post_content</code> keys. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool|int ID of attachment Post created. Returns false if file not created by copy_post_image </dd></dl>
-<p>If the method changes to public, use Gravity Forms' method </p>
-<h1>Original Gravity Forms code below: </h1>
+<p>If the method changes to public, use Gravity Forms' method  </p>
 
-<p>Definition at line <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00119">119</a> of file <a class="el" href="class-gravityview-gfformsmodel_8php_source.html">class-gravityview-gfformsmodel.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00121">121</a> of file <a class="el" href="class-gravityview-gfformsmodel_8php_source.html">class-gravityview-gfformsmodel.php</a>.</p>
 
-<p>References <a class="el" href="custom_8php_source.html#l00037">$content</a>, <a class="el" href="post__image_8php_source.html#l00107">$image_meta</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="post__image_8php_source.html#l00026">$title</a>, and <a class="el" href="post__image_8php_source.html#l00025">$url</a>.</p>
+<p>References <a class="el" href="post__image_8php_source.html#l00025">$url</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00447">GravityView_Edit_Entry_Render\maybe_update_post_fields()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00458">GravityView_Edit_Entry_Render\update_post_image()</a>.</p>
 
 </div>
 </div>

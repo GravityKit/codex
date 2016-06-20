@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -110,6 +109,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8cbf7bc27987a17b8b49e9c6620dad19"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a8cbf7bc27987a17b8b49e9c6620dad19">format_date</a> ($date_created= '', $property= '')</td></tr>
 <tr class="memdesc:a8cbf7bc27987a17b8b49e9c6620dad19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format Merge Tags using <a class="el" href="class_g_v_common.html#a1f8393b40ec268653ed2e429f017670d" title="Allow formatting date and time based on GravityView standards. ">GVCommon::format_date()</a>  <a href="#a8cbf7bc27987a17b8b49e9c6620dad19">More...</a><br /></td></tr>
 <tr class="separator:a8cbf7bc27987a17b8b49e9c6620dad19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50da149221064e19921af7095e616db4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a50da149221064e19921af7095e616db4">process_modifiers</a> ($value, $merge_tag, $modifier, $field, $raw_value)</td></tr>
+<tr class="memdesc:a50da149221064e19921af7095e616db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process custom <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> modifiers for Merge Tags.  <a href="#a50da149221064e19921af7095e616db4">More...</a><br /></td></tr>
+<tr class="separator:a50da149221064e19921af7095e616db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d94b77181f56094b1670bf5184de017"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a1d94b77181f56094b1670bf5184de017">replace_get_variables</a> ($text, $form=array(), $entry=array(), $url_encode=false)</td></tr>
 <tr class="memdesc:a1d94b77181f56094b1670bf5184de017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow passing variables via URL to be displayed in Merge Tags.  <a href="#a1d94b77181f56094b1670bf5184de017">More...</a><br /></td></tr>
 <tr class="separator:a1d94b77181f56094b1670bf5184de017"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +133,15 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a4eb21ad4ce51079d7ed81bf45cd2e0b3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a4eb21ad4ce51079d7ed81bf45cd2e0b3">get_format_from_modifiers</a> ($exploded, $backup= '')</td></tr>
 <tr class="memdesc:a4eb21ad4ce51079d7ed81bf45cd2e0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If there is a <code>:format</code> modifier in a merge tag, grab the formatting.  <a href="#a4eb21ad4ce51079d7ed81bf45cd2e0b3">More...</a><br /></td></tr>
 <tr class="separator:a4eb21ad4ce51079d7ed81bf45cd2e0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c14c8bf68554a100bf6476c2394f7c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#ad3c14c8bf68554a100bf6476c2394f7c">modifier_maxwords</a> ($raw_value, $matches)</td></tr>
+<tr class="memdesc:ad3c14c8bf68554a100bf6476c2394f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim the Merge Tag's length in words.  <a href="#ad3c14c8bf68554a100bf6476c2394f7c">More...</a><br /></td></tr>
+<tr class="separator:ad3c14c8bf68554a100bf6476c2394f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ba04c0fc79e97007e4bcf47bd29f93"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a45ba04c0fc79e97007e4bcf47bd29f93">modifier_timestamp</a> ($raw_value, $matches)</td></tr>
+<tr class="memdesc:a45ba04c0fc79e97007e4bcf47bd29f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Date field values to timestamp int.  <a href="#a45ba04c0fc79e97007e4bcf47bd29f93">More...</a><br /></td></tr>
+<tr class="separator:a45ba04c0fc79e97007e4bcf47bd29f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d4243838aa73d9532e397a3ee769ab"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___merge___tags.html#a98d4243838aa73d9532e397a3ee769ab">modifier_wpautop</a> ($raw_value, $matches)</td></tr>
+<tr class="memdesc:a98d4243838aa73d9532e397a3ee769ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the Merge Tag value through the wpautop function.  <a href="#a98d4243838aa73d9532e397a3ee769ab">More...</a><br /></td></tr>
+<tr class="separator:a98d4243838aa73d9532e397a3ee769ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Enhance Gravity Forms' merge tag functionality by adding additional merge tags. </p>
@@ -234,9 +245,9 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int|string If timestamp requested, timestamp int. Otherwise, string output. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00119">119</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00249">249</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
-<p>References <a class="el" href="class-common_8php_source.html#l00852">GVCommon\format_date()</a>.</p>
+<p>References <a class="el" href="class-common_8php_source.html#l00793">GVCommon\format_date()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-gravityview-field-date-created_8php_source.html#l00081">GravityView_Field_Date_Created\replace_merge_tag()</a>.</p>
 
@@ -286,7 +297,231 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string If format is found, the passed format. Otherwise, the backup. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00151">151</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00281">281</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3c14c8bf68554a100bf6476c2394f7c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static modifier_maxwords </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$raw_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$matches</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Trim the Merge Tag's length in words. </p>
+<p>Notes:</p><ul>
+<li>HTML tags are preserved</li>
+<li>HTML entities are encoded, but if they are separated by word breaks, they will be counted as words Example: "one &amp; two" will be counted as three words, but "one&amp; two" will be counted as two words</li>
+</ul>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$raw_value</td><td>Value to filter </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$matches</td><td>Regex matches group</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string Modified value, if longer than the passed <code>maxwords</code> modifier </dd></dl>
+<p>Use htmlentities instead, so that entities are double-encoded, and decoding restores original values. </p><dl class="section see"><dt>See also</dt><dd><a href="https://core.trac.wordpress.org/ticket/29533#comment:3">https://core.trac.wordpress.org/ticket/29533#comment:3</a></dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00136">136</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45ba04c0fc79e97007e4bcf47bd29f93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static modifier_timestamp </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$raw_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$matches</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert Date field values to timestamp int. </p>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<p>strtotime()</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$raw_value</td><td>Value to filter </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$matches</td><td>Regex matches group</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Timestamp value of date. <code>-1</code> if not a valid timestamp. </dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00088">88</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98d4243838aa73d9532e397a3ee769ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static modifier_wpautop </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$raw_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$matches</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the Merge Tag value through the wpautop function. </p>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<p>wpautop</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$raw_value</td><td>Value to filter </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$matches</td><td>Regex matches group</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string Modified value, if longer than the passed <code>maxwords</code> modifier </dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00112">112</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50da149221064e19921af7095e616db4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static process_modifiers </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$merge_tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$modifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$raw_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Process custom <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> modifiers for Merge Tags. </p>
+<p>Is not processed on <code>{all_fields}</code> Merge Tag.</p>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>The current merge tag value to be filtered. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$merge_tag</td><td>If the merge tag being executed is an individual field merge tag (i.e. {Name:3}), this variable will contain the field's ID. If not, this variable will contain the name of the merge tag (i.e. all_fields). </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$modifier</td><td>The string containing any modifiers for this merge tag. For example, "maxwords:10" would be the modifiers for the following merge tag: <code>{Text:2:maxwords:10}</code>. </td></tr>
+    <tr><td class="paramtype">GF_Field</td><td class="paramname">$field</td><td>The current field. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$raw_value</td><td>The raw value submitted for this field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string If no modifiers passed, $raw_value is not a string, or {all_fields} Merge Tag is used, original value. Otherwise, output from modifier methods. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___merge___tags.html#ad3c14c8bf68554a100bf6476c2394f7c" title="Trim the Merge Tag&#39;s length in words. ">modifier_maxwords</a></dd>
+<dd>
+<a class="el" href="class_gravity_view___merge___tags.html#a98d4243838aa73d9532e397a3ee769ab" title="Run the Merge Tag value through the wpautop function. ">modifier_wpautop</a></dd>
+<dd>
+<a class="el" href="class_gravity_view___merge___tags.html#a45ba04c0fc79e97007e4bcf47bd29f93" title="Convert Date field values to timestamp int. ">modifier_timestamp</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00045">45</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+
+<p>References <a class="el" href="widget-poll_8php_source.html#l00014">$merge_tag</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
 </div>
 </div>
@@ -347,7 +582,7 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000092">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/glue/</code> Modify the glue used to convert an array of <code>{get}</code> values from an array to string <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000095">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/glue/</code> Modify the glue used to convert an array of <code>{get}</code> values from an array to string <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$glue</td><td>String used to <code>implode()</code> $_GET values Default: ', ' </td></tr>
@@ -356,7 +591,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000093">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Disable esc_html() from running on <code>{get}</code> merge tag By default, all values passed through URLs will be escaped for security reasons. If for some reason you want to pass HTML in the URL, for example, you will need to return false on this filter. It is strongly recommended that you do not disable this filter. <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000096">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Disable esc_html() from running on <code>{get}</code> merge tag By default, all values passed through URLs will be escaped for security reasons. If for some reason you want to pass HTML in the URL, for example, you will need to return false on this filter. It is strongly recommended that you do not disable this filter. <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$esc_html</td><td>Whether to esc_html() the value. Default: <code>true</code> </td></tr>
@@ -364,7 +599,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000094">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Modify the value of the <code>{get}</code> replacement before being used <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000097">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Modify the value of the <code>{get}</code> replacement before being used <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$value</td><td>Value that will replace <code>{get}</code> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramtype">string</td><td class="paramname">$text</td><td>Text that contains <code>{get}</code> (before replacement) </td></tr>
@@ -375,9 +610,9 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00187">187</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00317">317</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
-<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
 </div>
 </div>
@@ -461,7 +696,9 @@ Static Private Member Functions</h2></td></tr>
 <dd>
 GFCommon::replace_variables_prepopulate() </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00090">90</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00220">220</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>.</p>
 
 </div>
 </div>
@@ -533,7 +770,7 @@ GFCommon::replace_variables_prepopulate() </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Text with variables maybe replaced </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000091">Runs Filter:</a></b></dt><dd><code>gravityview_do_replace_variables</code> Turn off merge tag variable replacements.<br />
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000094">Runs Filter:</a></b></dt><dd><code>gravityview_do_replace_variables</code> Turn off merge tag variable replacements.<br />
 Useful where you want to process variables yourself. We do this in the Math Extension. <dl class="section since"><dt>Since</dt><dd>1.13</dd></dl>
 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -547,7 +784,9 @@ Useful where you want to process variables yourself. We do this in the Math Exte
 </dl>
 <p>Make sure the required keys are set for GFCommon::replace_variables</p>
 
-<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00044">44</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00174">174</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
+
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>.</p>
 
 <p>Referenced by <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">GravityView_Shortcode\parse_and_sanitize_atts()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, and <a class="el" href="class-api_8php_source.html#l00102">GravityView_API\replace_variables()</a>.</p>
 

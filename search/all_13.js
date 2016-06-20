@@ -21,6 +21,7 @@ var searchData=
   ['section_2ephp',['section.php',['../section_8php.html',1,'']]],
   ['select_2dtemplate_2ephp',['select-template.php',['../select-template_8php.html',1,'']]],
   ['select_2ephp',['select.php',['../select_8php.html',1,'']]],
+  ['send_5femail',['send_email',['../class_g_v_common.html#a4a35e3b14535dc30019ebb792325e988',1,'GVCommon']]],
   ['set',['set',['../class_gravity_view___cache.html#ab89a257cd69b1cf295b922d649bfaab9',1,'GravityView_Cache']]],
   ['set_5fafter_5flink',['set_after_link',['../class_gravity_view___entry___list.html#afdc2520572e08158f417cbc2623ea557',1,'GravityView_Entry_List']]],
   ['set_5fcontent_5fand_5felse_5fcontent',['set_content_and_else_content',['../class_g_v_logic___shortcode.html#a4cd8ccf1f20e7ab4ec2ec2cdd5e5d6da',1,'GVLogic_Shortcode']]],
@@ -37,6 +38,7 @@ var searchData=
   ['set_5fkey',['set_key',['../class_gravity_view___cache.html#aff3188d7ecd9b2ffaf63d3cfb56410b1',1,'GravityView_Cache']]],
   ['set_5flink_5fformat',['set_link_format',['../class_gravity_view___entry___list.html#acb745f30b2fa4a648dba48daa31b4f24',1,'GravityView_Entry_List']]],
   ['set_5foperation',['set_operation',['../class_g_v_logic___shortcode.html#acb2942f6c6df2abec6d524cd923d2578',1,'GVLogic_Shortcode']]],
+  ['set_5fpost_5fcategories',['set_post_categories',['../class_gravity_view___field___post___category.html#a9097a9059d76cda0f7cc83b6eb9114a0',1,'GravityView_Field_Post_Category']]],
   ['set_5fpost_5fid',['set_post_id',['../class_gravity_view___entry___list.html#ad4972d2223ccbc36b0df762811e655a2',1,'GravityView_Entry_List']]],
   ['set_5fscreen_5fmode',['set_screen_mode',['../class_gravity_view___change___entry___creator.html#a842877f4eb23e7f73b695c664093f791',1,'GravityView_Change_Entry_Creator']]],
   ['set_5fsearch_5fmethod',['set_search_method',['../class_gravity_view___widget___search.html#ad7c9fa76e2dbadf0b044add18a499f8d',1,'GravityView_Widget_Search']]],
@@ -91,8 +93,10 @@ var searchData=
   ['skip_5fentry',['skip_entry',['../class_gravity_view___entry___list.html#af51c353b1bbe440d398c80fe2971b8b5',1,'GravityView_Entry_List']]],
   ['sort_2dfilter_2ephp',['sort-filter.php',['../sort-filter_8php.html',1,'']]],
   ['source_5furl_2ephp',['source_url.php',['../source__url_8php.html',1,'']]],
-  ['strings',['strings',['../class_g_v___license___handler.html#aa83e7c8f2de96e83b4ff24c9f95cbeaa',1,'GV_License_Handler']]],
+  ['status_5ftransient_5fkey',['status_transient_key',['../class_g_v___license___handler.html#a93740bc7784b262e9b6fa6912c584fbc',1,'GV_License_Handler']]],
+  ['strings',['strings',['../class_g_v___license___handler.html#aa83e7c8f2de96e83b4ff24c9f95cbeaa',1,'GV_License_Handler\strings()'],['../class_gravity_view___field___notes.html#adca6f401037a34cbc3b70e3f79b54a79',1,'GravityView_Field_Notes\strings()']]],
   ['styles',['styles',['../class_gravity_view___settings.html#a53d31780f290c90071a213e9f786abb3',1,'GravityView_Settings']]],
   ['subscription',['SUBSCRIPTION',['../class_gravity_view___field___transaction___type.html#ab91bd49c0440b4e45fcf207910f1fc2a',1,'GravityView_Field_Transaction_Type']]],
-  ['survey_2ephp',['survey.php',['../survey_8php.html',1,'']]]
+  ['survey_2ephp',['survey.php',['../survey_8php.html',1,'']]],
+  ['switch',['switch',['../checkbox_8php.html#a3ca57b9fc5bcce366d051720ac737f31',1,'checkbox.php']]]
 ];

@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -108,6 +107,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7be3f8b3d52a688e1c37195e24168ce8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_common.html#a7be3f8b3d52a688e1c37195e24168ce8">check_entry_display</a> ($entry)</td></tr>
 <tr class="memdesc:a7be3f8b3d52a688e1c37195e24168ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a certain entry is valid according to the View search filters (specially the Adv Filters)  <a href="#a7be3f8b3d52a688e1c37195e24168ce8">More...</a><br /></td></tr>
 <tr class="separator:a7be3f8b3d52a688e1c37195e24168ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea1c702ffd6be59a3fc708f385cc9df"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_common.html#abea1c702ffd6be59a3fc708f385cc9df">decode_shortcodes</a> ($string)</td></tr>
+<tr class="memdesc:abea1c702ffd6be59a3fc708f385cc9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inspired on ::encode_shortcodes, reverse the encoding by replacing the ascii characters by the shortcode brackets.  <a href="#abea1c702ffd6be59a3fc708f385cc9df">More...</a><br /></td></tr>
+<tr class="separator:abea1c702ffd6be59a3fc708f385cc9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f8393b40ec268653ed2e429f017670d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_common.html#a1f8393b40ec268653ed2e429f017670d">format_date</a> ($date_string= '', $args=array())</td></tr>
 <tr class="memdesc:a1f8393b40ec268653ed2e429f017670d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow formatting date and time based on <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> standards.  <a href="#a1f8393b40ec268653ed2e429f017670d">More...</a><br /></td></tr>
 <tr class="separator:a1f8393b40ec268653ed2e429f017670d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,9 +146,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2629f89982a3f6442ccef6cba46692e3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_common.html#a2629f89982a3f6442ccef6cba46692e3">get_field_array</a> ($field)</td></tr>
 <tr class="memdesc:a2629f89982a3f6442ccef6cba46692e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a Gravity Forms field array, whether using GF 1.9 or not.  <a href="#a2629f89982a3f6442ccef6cba46692e3">More...</a><br /></td></tr>
 <tr class="separator:a2629f89982a3f6442ccef6cba46692e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf6a15862497f52d32a6d4ec6262c27"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_common.html#aaaf6a15862497f52d32a6d4ec6262c27">get_field_label</a> ($form=array(), $field_id= '')</td></tr>
-<tr class="memdesc:aaaf6a15862497f52d32a6d4ec6262c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the label of a given field id (for a specific form)  <a href="#aaaf6a15862497f52d32a6d4ec6262c27">More...</a><br /></td></tr>
-<tr class="separator:aaaf6a15862497f52d32a6d4ec6262c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b52b39022c2a28a28749f73145ec55f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_common.html#a3b52b39022c2a28a28749f73145ec55f">get_field_label</a> ($form=array(), $field_id= '', $field_value= '')</td></tr>
+<tr class="memdesc:a3b52b39022c2a28a28749f73145ec55f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the label of a given field id (for a specific form)  <a href="#a3b52b39022c2a28a28749f73145ec55f">More...</a><br /></td></tr>
+<tr class="separator:a3b52b39022c2a28a28749f73145ec55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5e8b888fbab37e1cf82c46be845e5c8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_common.html#ad5e8b888fbab37e1cf82c46be845e5c8">get_field_type</a> ($form=null, $field_id= '')</td></tr>
 <tr class="memdesc:ad5e8b888fbab37e1cf82c46be845e5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the GF Form field type for a certain field(id) of a form.  <a href="#ad5e8b888fbab37e1cf82c46be845e5c8">More...</a><br /></td></tr>
 <tr class="separator:ad5e8b888fbab37e1cf82c46be845e5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +211,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aceb0262a802095054196cc905722e288"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_common.html#aceb0262a802095054196cc905722e288">matches_operation</a> ($val1, $val2, $operation)</td></tr>
 <tr class="memdesc:aceb0262a802095054196cc905722e288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for the GFFormsModel::matches_operation() method that adds additional comparisons, including: 'equals', 'greater_than_or_is', 'greater_than_or_equals', 'less_than_or_is', 'less_than_or_equals', and 'not_contains'.  <a href="#aceb0262a802095054196cc905722e288">More...</a><br /></td></tr>
 <tr class="separator:aceb0262a802095054196cc905722e288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a35e3b14535dc30019ebb792325e988"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_common.html#a4a35e3b14535dc30019ebb792325e988">send_email</a> ($from, $to, $bcc, $reply_to, $subject, $message, $from_name= '', $message_format= 'html', $attachments= '', $entry=false, $notification=false)</td></tr>
+<tr class="memdesc:a4a35e3b14535dc30019ebb792325e988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send email using GFCommon::send_email()  <a href="#a4a35e3b14535dc30019ebb792325e988">More...</a><br /></td></tr>
+<tr class="separator:a4a35e3b14535dc30019ebb792325e988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>If this file is called directly, abort. </p>
@@ -262,7 +267,7 @@ Static Public Member Functions</h2></td></tr>
 <dd>
 Gabriel Sobrinho &lt;gabriel (dot) sobrinho (at) gmail (dot) com&gt; </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01448">1448</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01408">1408</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
@@ -310,7 +315,7 @@ Gabriel Sobrinho &lt;gabriel (dot) sobrinho (at) gmail (dot) com&gt; </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000048">Runs Filter:</a></b></dt><dd><code>gravityview_search_operator</code> Modify the search operator for the field (contains, is, isnot, etc) <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000049">Runs Filter:</a></b></dt><dd><code>gravityview_search_operator</code> Modify the search operator for the field (contains, is, isnot, etc) <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$operator</td><td>Existing search operator </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$filter</td><td>array with <code>key</code>, <code>value</code>, <code>operator</code>, <code>type</code> keys </td></tr>
@@ -319,7 +324,7 @@ Gabriel Sobrinho &lt;gabriel (dot) sobrinho (at) gmail (dot) com&gt; </dd></dl>
 </dl>
 </dd></dl>
 <p>Prepare date formats to be in Gravity Forms DB format; $passed_criteria may include date formats incompatible with Gravity Forms.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000049">Runs Filter:</a></b></dt><dd><code>gravityview_search_criteria</code> Apply final criteria filter (Used by the Advanced Filter extension) <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000050">Runs Filter:</a></b></dt><dd><code>gravityview_search_criteria</code> Apply final criteria filter (Used by the Advanced Filter extension) <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$criteria</td><td>Search criteria used by <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$form_ids</td><td>Forms to search </td></tr>
@@ -329,7 +334,7 @@ Gabriel Sobrinho &lt;gabriel (dot) sobrinho (at) gmail (dot) com&gt; </dd></dl>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00413">413</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00354">354</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="other__entries_8php_source.html#l00028">$criteria</a>, <a class="el" href="class-frontend-views_8php_source.html#l00106">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-data_8php_source.html#l00119">GravityView_View_Data\getInstance()</a>.</p>
 
@@ -368,9 +373,45 @@ Gabriel Sobrinho &lt;gabriel (dot) sobrinho (at) gmail (dot) com&gt; </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool|array Returns 'false' if entry is not valid according to the view search filters (Adv Filter) </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00739">739</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00680">680</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
-<p>References <a class="el" href="other__entries_8php_source.html#l00028">$criteria</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="connector-functions_8php_source.html#l00182">gravityview_get_form_id()</a>.</p>
+<p>References <a class="el" href="other__entries_8php_source.html#l00028">$criteria</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, and <a class="el" href="connector-functions_8php_source.html#l00184">gravityview_get_form_id()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abea1c702ffd6be59a3fc708f385cc9df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static decode_shortcodes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inspired on ::encode_shortcodes, reverse the encoding by replacing the ascii characters by the shortcode brackets. </p>
+<dl class="section since"><dt>Since</dt><dd>1.16.5 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>Input string to decode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string $string Output string </dd></dl>
+
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01470">1470</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 </div>
 </div>
@@ -419,11 +460,11 @@ Gabriel Sobrinho &lt;gabriel (dot) sobrinho (at) gmail (dot) com&gt; </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>int|null|string Formatted date based on the original date </dd></dl>
 <p>Gravity Forms code to adjust date to locally-configured Time Zone </p><dl class="section see"><dt>See also</dt><dd>GFCommon::format_date() for original code</dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00852">852</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00793">793</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00119">GravityView_Merge_Tags\format_date()</a>, and <a class="el" href="class-gravityview-field-date-created_8php_source.html#l00058">GravityView_Field_Date_Created\get_content()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00249">GravityView_Merge_Tags\format_date()</a>, and <a class="el" href="class-gravityview-field-date-created_8php_source.html#l00058">GravityView_Field_Date_Created\get_content()</a>.</p>
 
 </div>
 </div>
@@ -469,11 +510,11 @@ Gabriel Sobrinho &lt;gabriel (dot) sobrinho (at) gmail (dot) com&gt; </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01500">1500</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01460">1460</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="table-body_8php_source.html#l00043">$class</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00749">GravityView_Edit_Entry_Render\maybe_print_message()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01701">GravityView_Edit_Entry_Render\user_can_edit_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01774">GravityView_Edit_Entry_Render\user_can_edit_field()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00797">GravityView_Edit_Entry_Render\maybe_print_message()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01756">GravityView_Edit_Entry_Render\user_can_edit_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01829">GravityView_Edit_Entry_Render\user_can_edit_field()</a>.</p>
 
 </div>
 </div>
@@ -568,7 +609,7 @@ TODO Added $args array</dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array with view details, as returned by get_posts() </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01017">1017</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00967">967</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
 
@@ -625,10 +666,19 @@ TODO Added $args array</dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Multi-array of fields with first level being the field zones. See code comment. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000056">Runs Filter:</a></b></dt><dd><code>gravityview/configuration/fields</code> Filter the View fields' configuration array <dl class="section since"><dt>Since</dt><dd>1.6.5 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">$fields</td><td>array Multi-array of fields with first level being the field zones </td></tr>
+    <tr><td class="paramname">$post_id</td><td>int Post ID </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01131">1131</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01081">1081</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
-<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00269">gravityview_get_directory_fields()</a>.</p>
+<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00271">gravityview_get_directory_fields()</a>.</p>
 
 </div>
 </div>
@@ -684,7 +734,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed False: Error fetching entries. Array: Multi-dimensional array of Gravity Forms entry arrays </dd></dl>
 <p>Reduce # of database calls</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000050">Runs Filter:</a></b></dt><dd><code>gravityview_pre_get_entries</code> Define entries to be used before GFAPI::get_entries() is called <dl class="section since"><dt>Since</dt><dd>1.14 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000051">Runs Filter:</a></b></dt><dd><code>gravityview_pre_get_entries</code> Define entries to be used before GFAPI::get_entries() is called <dl class="section since"><dt>Since</dt><dd>1.14 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">null</td><td class="paramname">$return</td><td>If you want to override GFAPI::get_entries() and define entries yourself, tap in here. </td></tr>
@@ -696,7 +746,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 </dd></dl>
 <p>Remove filter added above</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000051">Runs Filter:</a></b></dt><dd><code>gravityview_entries</code> Modify the array of entries returned to <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> after it has been fetched from the cache or from <code>GFAPI::get_entries()</code>. <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000052">Runs Filter:</a></b></dt><dd><code>gravityview_entries</code> Modify the array of entries returned to <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> after it has been fetched from the cache or from <code>GFAPI::get_entries()</code>. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$entries</td><td>Array of entries as returned by the cache or by <code>GFAPI::get_entries()</code> </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$criteria</td><td>The final search criteria used to generate the request to <code>GFAPI::get_entries()</code> </td></tr>
@@ -707,7 +757,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00509">509</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00450">450</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="other__entries_8php_source.html#l00028">$criteria</a>, <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, and <a class="el" href="class-cache_8php_source.html#l00534">GravityView_Cache</a>.</p>
 
@@ -765,14 +815,14 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>1.14} </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array|boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000052">Runs Filter:</a></b></dt><dd><code>gravityview_custom_entry_slug</code> Whether to enable and use custom entry slugs. <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000053">Runs Filter:</a></b></dt><dd><code>gravityview_custom_entry_slug</code> Whether to enable and use custom entry slugs. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">boolean</td><td>True: Allow for slugs based on entry values. False: always use entry IDs (default) </td></tr>
   </table>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000053">Runs Filter:</a></b></dt><dd><code>gravityview_custom_entry_slug_allow_id</code> When using a custom slug, allow access to the entry using the original slug (the Entry ID).<ul>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000054">Runs Filter:</a></b></dt><dd><code>gravityview_custom_entry_slug_allow_id</code> When using a custom slug, allow access to the entry using the original slug (the Entry ID).<ul>
 <li>If disabled (default), only allow access to an entry using the custom slug value. (example: <code>/entry/custom-slug/</code> NOT <code>/entry/123/</code>)</li>
 <li>If enabled, you could access using the custom slug OR the entry id (example: <code>/entry/custom-slug/</code> OR <code>/entry/123/</code>) <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -784,7 +834,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </ul>
 </dd></dl>
 <p>If we're using custom entry slugs, we do a meta value search instead of doing a straightup ID search.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000054">Runs Filter:</a></b></dt><dd><code>gravityview/common/get_entry/check_entry_display</code> Override whether to check entry display rules against filters <dl class="section since"><dt>Since</dt><dd>1.16.2 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000055">Runs Filter:</a></b></dt><dd><code>gravityview/common/get_entry/check_entry_display</code> Override whether to check entry display rules against filters <dl class="section since"><dt>Since</dt><dd>1.16.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$check_entry_display</td><td>Check whether the entry is visible for the current View configuration. Default: true. </td></tr>
@@ -794,7 +844,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00598">598</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00539">539</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>.</p>
 
 <p>Referenced by <a class="el" href="class-api_8php_source.html#l00632">GravityView_API\entry_link()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00284">GravityView_Entry_Link_Shortcode\get_entry()</a>, <a class="el" href="connector-functions_8php_source.html#l00111">gravityview_get_entry()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00172">GravityView_frontend\setEntry()</a>.</p>
 
@@ -879,7 +931,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.1.6 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array|void Array of entry IDs. Void if Gravity Forms isn't active. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00395">395</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00336">336</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
 
@@ -928,7 +980,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00371">371</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00312">312</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
 
@@ -980,7 +1032,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>GF_Field|null Gravity Forms field object, or NULL: Gravity Forms GFFormsModel does not exist or field at $field_id doesn't exist. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00933">933</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00883">883</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="time_8php_source.html#l00017">$field_id</a>.</p>
 
@@ -1026,7 +1078,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aaaf6a15862497f52d32a6d4ec6262c27"></a>
+<a class="anchor" id="a3b52b39022c2a28a28749f73145ec55f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1043,7 +1095,13 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$field_id</em> = <code>''</code>&#160;</td>
+          <td class="paramname"><em>$field_id</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$field_value</em> = <code>''</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1059,20 +1117,22 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </div><div class="memdoc">
 
 <p>Retrieve the label of a given field id (for a specific form) </p>
-<p>public </p><dl class="params"><dt>Parameters</dt><dd>
+<p>public </p><dl class="section since"><dt>Since</dt><dd>1.17 Added $field_value parameter</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$field_id</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$field_id</td><td>ID of the field. If an input, full input ID (like <code>1.3</code>) </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$field_value</td><td>Raw value of the field. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00909">909</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00853">853</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="time_8php_source.html#l00017">$field_id</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>.</p>
 
-<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00123">gravityview_get_field_label()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin-welcome_8php_source.html#l00173">GravityView_Welcome\getting_started_screen()</a>, and <a class="el" href="connector-functions_8php_source.html#l00123">gravityview_get_field_label()</a>.</p>
 
 </div>
 </div>
@@ -1118,11 +1178,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string field type </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01220">1220</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01180">1180</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="time_8php_source.html#l00017">$field_id</a>.</p>
 
-<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00292">gravityview_get_field_type()</a>.</p>
+<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00294">gravityview_get_field_type()</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1221,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 
 <p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-field_8php_source.html#l00214">GravityView_Field\_filter_gform_custom_merge_tags()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00482">GravityView_Admin_ApproveEntries\get_approved_column()</a>, <a class="el" href="connector-functions_8php_source.html#l00024">gravityview_get_form()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">GravityView_Search_WP_Widget\widget()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-field_8php_source.html#l00214">GravityView_Field\_filter_gform_custom_merge_tags()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00507">GravityView_Admin_ApproveEntries\get_approved_column()</a>, <a class="el" href="connector-functions_8php_source.html#l00024">gravityview_get_form()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">GravityView_Search_WP_Widget\widget()</a>.</p>
 
 </div>
 </div>
@@ -1207,22 +1267,26 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 <p>public </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$form_id</td><td>(default: '') or $form object </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$add_default_properties</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$include_parent_field</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 <p>In case of email/email confirmation, the input for email has the same id as the parent field</p>
-<dl class="section since"><dt>Since</dt><dd>1.14</dd>
-<dd>
-1.8</dd>
-<dd>
-1.8</dd></dl>
-<p>Version 1.9</p>
-<dl class="section since"><dt>Since</dt><dd>1.7</dd>
-<dd>
-1.8</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.7</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000048">Runs Filter:</a></b></dt><dd><code>gravityview/common/get_form_fields</code> Modify the form fields shown in the Add Field field picker. <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$fields</td><td>Associative array of fields, with keys as field type, values an array with the following keys: (string) <code>label</code> (required), (string) <code>type</code> (required), <code>desc</code>, (string) <code>customLabel</code>, (GF_Field) <code>parent</code>, (string) <code>adminLabel</code>, (bool)<code>adminOnly</code> </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>GF Form array </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$include_parent_field</td><td>Whether to include the parent field when getting a field with inputs </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00212">212</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00214">214</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-gravityview-fields_8php_source.html#l00117">GravityView_Fields\get_all()</a>.</p>
 
@@ -1262,6 +1326,8 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array Gravity Forms form array </dd></dl>
 
 <p>Definition at line <a class="el" href="class-common_8php_source.html#l00123">123</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>.</p>
 
 <p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00035">gravityview_get_form_from_entry_id()</a>.</p>
 
@@ -1355,7 +1421,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML output of anchor link. If empty $href, returns NULL </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000058">Runs Filter:</a></b></dt><dd><code>gravityview/get_link/allowed_atts</code> Modify the attributes that are allowed to be used in generating links <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000060">Runs Filter:</a></b></dt><dd><code>gravityview/get_link/allowed_atts</code> Modify the attributes that are allowed to be used in generating links <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$allowed_atts</td><td>Array of attributes allowed </td></tr>
   </table>
@@ -1363,11 +1429,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01364">1364</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01324">1324</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="delete__link_8php_source.html#l00018">$href</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
-<p>Referenced by <a class="el" href="class-common_8php_source.html#l01523">gravityview_get_link()</a>.</p>
+<p>Referenced by <a class="el" href="class-common_8php_source.html#l01527">gravityview_get_link()</a>.</p>
 
 </div>
 </div>
@@ -1400,13 +1466,13 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>string ID of the connected Form, if exists. Empty string if not. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>false|string ID of the connected Form, if exists. Empty string if not. False if not the View ID isn't valid. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01040">1040</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00990">990</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>.</p>
 
-<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00182">gravityview_get_form_id()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">GravityView_Search_WP_Widget\widget()</a>.</p>
+<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00184">gravityview_get_form_id()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">GravityView_Search_WP_Widget\widget()</a>.</p>
 
 </div>
 </div>
@@ -1442,11 +1508,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string GravityView_Template::template_id value. Empty string if not. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01053">1053</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01003">1003</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>.</p>
 
-<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00195">gravityview_get_template_id()</a>.</p>
+<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00197">gravityview_get_template_id()</a>.</p>
 
 </div>
 </div>
@@ -1491,11 +1557,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string html </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01143">1143</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01103">1103</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="edit__link_8php_source.html#l00018">$output</a>.</p>
 
-<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00281">gravityview_get_sortable_fields()</a>.</p>
+<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00283">gravityview_get_sortable_fields()</a>.</p>
 
 </div>
 </div>
@@ -1539,7 +1605,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>1.8</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000055">Runs Filter:</a></b></dt><dd><code>gravityview/common/sortable_fields</code> Filter the sortable fields <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000057">Runs Filter:</a></b></dt><dd><code>gravityview/common/sortable_fields</code> Filter the sortable fields <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$fields</td><td>Sub-set of GF form fields that are sortable </td></tr>
@@ -1549,7 +1615,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01179">1179</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01139">1139</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
 
@@ -1598,9 +1664,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed|null Setting value, or NULL if not set. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01090">1090</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01040">1040</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry_8php_source.html#l00221">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, and <a class="el" href="connector-functions_8php_source.html#l00219">gravityview_get_template_setting()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry_8php_source.html#l00221">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, and <a class="el" href="connector-functions_8php_source.html#l00221">gravityview_get_template_setting()</a>.</p>
 
 </div>
 </div>
@@ -1635,11 +1701,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Associative array of settings with plugin defaults used if not set by the View </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01065">1065</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01015">1015</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="class-data_8php_source.html#l00541">GravityView_View_Data\get_default_args()</a>.</p>
 
-<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00206">gravityview_get_template_settings()</a>.</p>
+<p>Referenced by <a class="el" href="connector-functions_8php_source.html#l00208">gravityview_get_template_settings()</a>.</p>
 
 </div>
 </div>
@@ -1685,7 +1751,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>1.14} </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of WP_User objects. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000059">Runs Filter:</a></b></dt><dd><code>gravityview/get_users/{$context}</code> There are issues with too many users using <a href="http://codex.wordpress.org/Function_Reference/get_users">get_users()</a> where it breaks the select. We try to keep it at a reasonable number. <br />
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000061">Runs Filter:</a></b></dt><dd><code>gravityview/get_users/{$context}</code> There are issues with too many users using <a href="http://codex.wordpress.org/Function_Reference/get_users">get_users()</a> where it breaks the select. We try to keep it at a reasonable number. <br />
 <code>$context</code> is where are we using this information (e.g. change_entry_creator, search_widget ..) <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$settings</td><td>Settings array, with <code>number</code> key defining the # of users to display </td></tr>
@@ -1694,9 +1760,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01469">1469</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01429">1429</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-change-entry-creator_8php_source.html#l00201">GravityView_Change_Entry_Creator\add_select()</a>, and <a class="el" href="class-search-widget_8php_source.html#l00985">GravityView_Widget_Search\get_created_by_choices()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-change-entry-creator_8php_source.html#l00201">GravityView_Change_Entry_Creator\add_select()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01000">GravityView_Widget_Search\get_created_by_choices()</a>.</p>
 
 </div>
 </div>
@@ -1744,9 +1810,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.3</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>rubo77 at <a href="https://gist.github.com/rubo77/6821632">https://gist.github.com/rubo77/6821632</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01324">1324</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01284">1284</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
-<p>Referenced by <a class="el" href="helper-functions_8php_source.html#l00519">_gravityview_process_posted_fields()</a>.</p>
+<p>Referenced by <a class="el" href="helper-functions_8php_source.html#l00568">_gravityview_process_posted_fields()</a>.</p>
 
 </div>
 </div>
@@ -1803,9 +1869,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 
 <p>Definition at line <a class="el" href="class-common_8php_source.html#l00058">58</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-roles-capabilities_8php_source.html#l00333">GravityView_Roles_Capabilities\has_cap()</a>.</p>
+<p>References <a class="el" href="class-gravityview-roles-capabilities_8php_source.html#l00335">GravityView_Roles_Capabilities\has_cap()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-compatibility_8php_source.html#l00153">GravityView_Compatibility\_shortcode_gf_notice()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00517">GravityView_Admin_ApproveEntries\add_entry_approved_hidden_input()</a>, <a class="el" href="class-admin-views_8php_source.html#l00394">GravityView_Admin_Views\add_post_type_columns()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00535">GravityView_Admin_ApproveEntries\add_scripts_and_styles()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01220">GravityView_frontend\add_scripts_and_styles()</a>, <a class="el" href="class-admin-add-shortcode_8php_source.html#l00053">GravityView_Admin_Add_Shortcode\add_shortcode_button()</a>, <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00152">GravityView_Admin_Notices\admin_notice()</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00573">GravityView_Settings\app_settings_fields()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00552">GravityView_Delete_Entry\check_user_cap_delete_entry()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00221">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01806">GravityView_Edit_Entry_Render\check_user_cap_edit_field()</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00103">GravityView_Settings\current_user_can_any()</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00091">GravityView_Admin_Duplicate_View\current_user_can_copy()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01604">GravityView_Edit_Entry_Render\filter_admin_only_fields()</a>, <a class="el" href="class-admin-views_8php_source.html#l00333">GravityView_Admin_Views\get_connected_form_links()</a>, <a class="el" href="class-admin-views_8php_source.html#l00133">GravityView_Admin_Views\gform_toolbar_menu()</a>, <a class="el" href="class-data_8php_source.html#l00307">GravityView_View_Data\hide_field_check_conditions()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00273">GV_License_Handler\license_call()</a>, <a class="el" href="class-gravityview-change-entry-creator_8php_source.html#l00110">GravityView_Change_Entry_Creator\load()</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00520">GravityView_Settings\maybe_save_app_settings()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00447">GravityView_Edit_Entry_Render\maybe_update_post_fields()</a>, <a class="el" href="class-post-types_8php_source.html#l00160">GravityView_Post_Types\no_views_text()</a>, <a class="el" href="class-admin_8php_source.html#l00102">GravityView_Admin\plugin_action_links()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00509">GravityView_frontend\render_view()</a>, <a class="el" href="class-admin-views_8php_source.html#l00430">GravityView_Admin_Views\save_postdata()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00056">GV_License_Handler\settings_edd_license_activation()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00638">GravityView_Admin_ApproveEntries\show_approve_entry_column()</a>, <a class="el" href="class-gravityview-support-port_8php_source.html#l00232">GravityView_Support_Port\show_for_user()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00257">GravityView_Admin_ApproveEntries\update_bulk()</a>, and <a class="el" href="class-cache_8php_source.html#l00494">GravityView_Cache\use_cache()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-support-port_8php_source.html#l00080">GravityView_Support_Port\_localize_script()</a>, <a class="el" href="class-gravityview-compatibility_8php_source.html#l00153">GravityView_Compatibility\_shortcode_gf_notice()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00542">GravityView_Admin_ApproveEntries\add_entry_approved_hidden_input()</a>, <a class="el" href="class-admin-views_8php_source.html#l00394">GravityView_Admin_Views\add_post_type_columns()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00560">GravityView_Admin_ApproveEntries\add_scripts_and_styles()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01228">GravityView_frontend\add_scripts_and_styles()</a>, <a class="el" href="class-admin-add-shortcode_8php_source.html#l00053">GravityView_Admin_Add_Shortcode\add_shortcode_button()</a>, <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00152">GravityView_Admin_Notices\admin_notice()</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00585">GravityView_Settings\app_settings_fields()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00601">GravityView_Delete_Entry\check_user_cap_delete_entry()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00221">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01861">GravityView_Edit_Entry_Render\check_user_cap_edit_field()</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00107">GravityView_Settings\current_user_can_any()</a>, <a class="el" href="class-gravityview-admin-duplicate-view_8php_source.html#l00091">GravityView_Admin_Duplicate_View\current_user_can_copy()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00456">GravityView_Field_Notes\display_note()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01659">GravityView_Edit_Entry_Render\filter_admin_only_fields()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00551">GravityView_Field_Notes\get_add_note_part()</a>, <a class="el" href="class-admin-views_8php_source.html#l00333">GravityView_Admin_Views\get_connected_form_links()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00629">GravityView_Field_Notes\get_note_email_fields()</a>, <a class="el" href="class-admin-views_8php_source.html#l00133">GravityView_Admin_Views\gform_toolbar_menu()</a>, <a class="el" href="class-data_8php_source.html#l00307">GravityView_View_Data\hide_field_check_conditions()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00426">GV_License_Handler\license_call()</a>, <a class="el" href="class-gravityview-change-entry-creator_8php_source.html#l00110">GravityView_Change_Entry_Creator\load()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00164">GravityView_Field_Notes\maybe_add_note()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00277">GravityView_Field_Notes\maybe_delete_notes()</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00532">GravityView_Settings\maybe_save_app_settings()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00694">GravityView_Field_Notes\maybe_send_entry_notes()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00550">GravityView_Edit_Entry_Render\maybe_update_post_fields()</a>, <a class="el" href="class-post-types_8php_source.html#l00160">GravityView_Post_Types\no_views_text()</a>, <a class="el" href="class-admin_8php_source.html#l00096">GravityView_Admin\plugin_action_links()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00203">GravityView_Field_Notes\process_add_note()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00316">GravityView_Field_Notes\process_delete_notes()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00509">GravityView_frontend\render_view()</a>, <a class="el" href="class-admin-views_8php_source.html#l00430">GravityView_Admin_Views\save_postdata()</a>, <a class="el" href="class-gv-license-handler_8php_source.html#l00095">GV_License_Handler\settings_edd_license_activation()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00663">GravityView_Admin_ApproveEntries\show_approve_entry_column()</a>, <a class="el" href="class-gravityview-support-port_8php_source.html#l00231">GravityView_Support_Port\show_for_user()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00261">GravityView_Admin_ApproveEntries\update_bulk()</a>, and <a class="el" href="class-cache_8php_source.html#l00494">GravityView_Cache\use_cache()</a>.</p>
 
 </div>
 </div>
@@ -1844,7 +1910,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean True: yep, <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a>; No: not! </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00951">951</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00901">901</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>.</p>
 
@@ -1930,7 +1996,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00971">971</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00921">921</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="custom_8php_source.html#l00037">$content</a>.</p>
 
@@ -1979,7 +2045,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000056">Runs Filter:</a></b></dt><dd><code>gravityview/common/numeric_types</code> What types of fields are numeric? <dl class="section since"><dt>Since</dt><dd>1.5.2 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000058">Runs Filter:</a></b></dt><dd><code>gravityview/common/numeric_types</code> What types of fields are numeric? <dl class="section since"><dt>Since</dt><dd>1.5.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$numeric_types</td><td>Fields that are numeric. Default: <code>[ number, time ]</code> </td></tr>
@@ -1988,11 +2054,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01239">1239</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01199">1199</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00011">$gv_field</a>, and <a class="el" href="class-gravityview-fields_8php_source.html#l00084">GravityView_Fields\get()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01066">GravityView_frontend\updateViewSorting()</a>.</p>
+<p>Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01074">GravityView_frontend\updateViewSorting()</a>.</p>
 
 </div>
 </div>
@@ -2040,7 +2106,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/jnicol/standalone-phpenkoder">https://github.com/jnicol/standalone-phpenkoder</a> StandalonePHPEnkoder on Github</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string Content, encrypted </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000057">Runs Filter:</a></b></dt><dd><code>gravityview/phpenkoder/msg</code> Modify the message shown when Javascript is disabled and an encrypted email field is displayed <dl class="section since"><dt>Since</dt><dd>1.7 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000059">Runs Filter:</a></b></dt><dd><code>gravityview/phpenkoder/msg</code> Modify the message shown when Javascript is disabled and an encrypted email field is displayed <dl class="section since"><dt>Since</dt><dd>1.7 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Existing message </td></tr>
@@ -2050,9 +2116,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l01285">1285</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01245">1245</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
-<p>References <a class="el" href="custom_8php_source.html#l00037">$content</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="gravityview_8php_source.html#l00048">GRAVITYVIEW_DIR</a>.</p>
+<p>References <a class="el" href="custom_8php_source.html#l00037">$content</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="gravityview_8php_source.html#l00043">GRAVITYVIEW_DIR</a>.</p>
 
 </div>
 </div>
@@ -2108,11 +2174,132 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True: matches, false: not matches </dd></dl>
 
-<p>Definition at line <a class="el" href="class-common_8php_source.html#l00677">677</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l00618">618</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
 
-<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-api_8php_source.html#l01014">gravityview_get_context()</a>.</p>
+<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-api_8php_source.html#l01022">gravityview_get_context()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gvlogic-shortcode_8php_source.html#l00232">GVLogic_Shortcode\set_is_match()</a>.</p>
+<p>Referenced by <a class="el" href="class-gvlogic-shortcode_8php_source.html#l00237">GVLogic_Shortcode\set_is_match()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a35e3b14535dc30019ebb792325e988"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static send_email </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$bcc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$reply_to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$from_name</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$message_format</em> = <code>'html'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$attachments</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$notification</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send email using GFCommon::send_email() </p>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>GFCommon::send_email This just makes the method public</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$from</td><td>Sender address (required) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$to</td><td>Recipient address (required) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$bcc</td><td>BCC recipients (required) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$reply_to</td><td>Reply-to address (required) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$subject</td><td>Subject line (required) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Message body (required) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$from_name</td><td>Displayed name of the sender </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$message_format</td><td>If "html", sent text as <code>text/html</code>. Otherwise, <code>text/plain</code>. Default: "html". </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$attachments</td><td>Optional. Files to attach. {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>wp_mail()} for usage. Default: "". </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array&#160;|&#160;false</td><td class="paramname">$entry</td><td>Gravity Forms entry array, related to the email. Default: false. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;false</td><td class="paramname">$notification</td><td>Gravity Forms notification that triggered the email. {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>GFCommon::send_notification}. Default:false. </dd></dl>
+
+<p>Definition at line <a class="el" href="class-common_8php_source.html#l01498">1498</a> of file <a class="el" href="class-common_8php_source.html">class-common.php</a>.</p>
+
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>.</p>
+
+<p>Referenced by <a class="el" href="class-admin-welcome_8php_source.html#l00173">GravityView_Welcome\getting_started_screen()</a>, and <a class="el" href="class-gravityview-field-notes_8php_source.html#l00694">GravityView_Field_Notes\maybe_send_entry_notes()</a>.</p>
 
 </div>
 </div>

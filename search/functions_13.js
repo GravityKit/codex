@@ -6,6 +6,7 @@ var searchData=
   ['update_5fbulk',['update_bulk',['../class_gravity_view___admin___approve_entries.html#a4ae994dcba3037068b5e1611c619fad3',1,'GravityView_Admin_ApproveEntries']]],
   ['update_5fcalculation_5ffields',['update_calculation_fields',['../class_gravity_view___edit___entry___render.html#a86e2d627ac64bcfca92ac5be56e05a37',1,'GravityView_Edit_Entry_Render']]],
   ['update_5fentry_5fcreator',['update_entry_creator',['../class_gravity_view___change___entry___creator.html#a7130efbfc34ef0fe0a2e9d5b2b847a84',1,'GravityView_Change_Entry_Creator']]],
+  ['update_5fpost_5fimage',['update_post_image',['../class_gravity_view___edit___entry___render.html#acb0fdddd8fa87f39aa405497d2ad48a9',1,'GravityView_Edit_Entry_Render']]],
   ['update_5fpriority',['update_priority',['../class_gravity_view___admin___metaboxes.html#ad58e1341580d203f61e0dc56ff9b592b',1,'GravityView_Admin_Metaboxes']]],
   ['update_5fsearch_5fon_5fviews',['update_search_on_views',['../class_gravity_view___migrate.html#a52a42f538cebb43c54fa4621b0039974',1,'GravityView_Migrate']]],
   ['update_5fsettings',['update_settings',['../class_gravity_view___migrate.html#a5b6d2cc99b743a7896d6411473c1832c',1,'GravityView_Migrate']]],

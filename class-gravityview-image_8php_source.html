@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -266,9 +265,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_gravity_view___image.html#a8b267aa0adca2018097f6f6f4c804d46">  172</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_gravity_view___image.html#a8b267aa0adca2018097f6f6f4c804d46">html</a>() {</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">if</span> ( ! $this-&gt;<a class="code" href="class_gravity_view___image.html#afdc43b8b1ed060904f31a465b53e9273">validate_image_src</a>() ) {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            $html = <span class="stringliteral">&#39;&#39;</span>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        $html = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">if</span> ( $this-&gt;<a class="code" href="class_gravity_view___image.html#afdc43b8b1ed060904f31a465b53e9273">validate_image_src</a>() &amp;&amp; ! empty( $this-&gt;src ) ) {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            $atts = <span class="stringliteral">&#39;&#39;</span>;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">foreach</span> ( array( <span class="stringliteral">&#39;width&#39;</span>, <span class="stringliteral">&#39;height&#39;</span>, <span class="stringliteral">&#39;alt&#39;</span>, <span class="stringliteral">&#39;title&#39;</span>, <span class="stringliteral">&#39;class&#39;</span> ) as $attr ) {</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
@@ -277,7 +276,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                $atts .= sprintf( <span class="stringliteral">&#39; %s=&quot;%s&quot;&#39;</span>, $attr, esc_attr( $this-&gt;{$attr} ) );</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            $html = sprintf( <span class="stringliteral">&#39;&lt;img src=&quot;%s&quot; %s /&gt;&#39;</span>, esc_url_raw( $this-&gt;src ), $atts );</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            $html = sprintf( <span class="stringliteral">&#39;&lt;img src=&quot;%s&quot;%s /&gt;&#39;</span>, esc_url_raw( $this-&gt;src ), $atts );</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">        /**</span></div>

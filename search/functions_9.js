@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['if_5fgravityview_5freturn_5ftrue',['if_gravityview_return_true',['../class_gravity_view___theme___hooks___church___themes.html#a8f7796b35c1f4b505619851a9def89a3',1,'GravityView_Theme_Hooks_Church_Themes']]],
   ['import_5ffields',['import_fields',['../class_gravity_view___ajax.html#a81b7bd7026235a18f1a481c44ace6865',1,'GravityView_Ajax']]],
   ['import_5fform',['import_form',['../class_gravity_view___ajax.html#a8a47005a62ee75bc100a00d3fdd5be91',1,'GravityView_Ajax']]],
   ['in_5fblacklist',['in_blacklist',['../class_gravity_view___cache.html#a941bba52ac09681b9cda17dba7336962',1,'GravityView_Cache']]],
@@ -18,6 +19,7 @@ var searchData=
   ['is_5fadmin',['is_admin',['../class_gravity_view___plugin.html#ac60c9e9f42603110fa631baffba47880',1,'GravityView_Plugin']]],
   ['is_5fadmin_5fpage',['is_admin_page',['../class_gravity_view___admin.html#a1ce3d7eea1151cce26dbbb4f93f1bec1',1,'GravityView_Admin']]],
   ['is_5fall_5fviews_5fpage',['is_all_views_page',['../class_gravity_view___admin___duplicate___view.html#a987a604917d7eefa0877f69aa726e44a',1,'GravityView_Admin_Duplicate_View']]],
+  ['is_5fchoice_5fvalue_5fenabled',['is_choice_value_enabled',['../class_gravity_view___field.html#ae6a53b2eaf582da97158fa4eeeea8505',1,'GravityView_Field']]],
   ['is_5fdashboard_5fpage',['is_dashboard_page',['../class_gravity_view___welcome.html#af22e2d7f37135de24f7fde09937dc428',1,'GravityView_Welcome']]],
   ['is_5fedit_5fentry',['is_edit_entry',['../class_gravity_view___edit___entry___render.html#a2a0a138abefa70a8447bcc6a6748d559',1,'GravityView_Edit_Entry_Render']]],
   ['is_5fedit_5fentry_5fsubmission',['is_edit_entry_submission',['../class_gravity_view___edit___entry___render.html#a15d29f374658638b6c00e930682a3148',1,'GravityView_Edit_Entry_Render']]],

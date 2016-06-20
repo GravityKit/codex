@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['index_2ephp',['index.php',['../languages_2index_8php.html',1,'']]],
   ['license_5fcall',['license_call',['../class_g_v___license___handler.html#a89635c6cb44d857478cdf00d1cd2b801',1,'GV_License_Handler']]],
   ['license_5fcall_5fupdate_5fsettings',['license_call_update_settings',['../class_g_v___license___handler.html#a5dab8b9efb98780e012d4dc7e952b5bd',1,'GV_License_Handler']]],
+  ['license_5fdetails',['license_details',['../class_g_v___license___handler.html#ab097e48bcca807590868df15f8f20302',1,'GV_License_Handler']]],
   ['license_5fkey_5fnotice',['license_key_notice',['../class_gravity_view___settings.html#ad744d5b8ba6b1b8b095d206129a78f03',1,'GravityView_Settings']]],
   ['list_2dbody_2ephp',['list-body.php',['../list-body_8php.html',1,'']]],
   ['list_2dfooter_2ephp',['list-footer.php',['../list-footer_8php.html',1,'']]],

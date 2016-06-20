@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -105,8 +104,8 @@ Variables</h2></td></tr>
 <tr class="memitem:add47a7f886e74847997a4044e9903a0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#add47a7f886e74847997a4044e9903a0a">$gravityview_view</a> = <a class="el" href="class_gravity_view___view.html#a76cf4523dbaebd58c27db806e01b73d9">GravityView_View::getInstance</a>()</td></tr>
 <tr class="memdesc:add47a7f886e74847997a4044e9903a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the search LINK input field.  <a href="#add47a7f886e74847997a4044e9903a0a">More...</a><br /></td></tr>
 <tr class="separator:add47a7f886e74847997a4044e9903a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2203d325106d5aa466174831e00a2a4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(empty($search_field['choices']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a2203d325106d5aa466174831e00a2a4f">$links_label</a> = apply_filters( 'gravityview/extension/search/links_label', __( 'Show only:', 'gravityview' ) )</td></tr>
-<tr class="separator:a2203d325106d5aa466174831e00a2a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd6f1f75552517065617516de8833ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(empty($search_field['choices']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a8cd6f1f75552517065617516de8833ee">$links_label</a> = empty( $search_field['label'] ) ? __( 'Show only:', 'gravityview' ) : $search_field['label']</td></tr>
+<tr class="separator:a8cd6f1f75552517065617516de8833ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4f9912e245ca28642d498a722b2056b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#ad4f9912e245ca28642d498a722b2056b">$links_sep</a> = apply_filters( 'gravityview/extension/search/links_sep', '&amp;nbsp;|&amp;nbsp;' )</td></tr>
 <tr class="separator:ad4f9912e245ca28642d498a722b2056b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9913ca109e1ddeeac975b3e2c8a8d92c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a9913ca109e1ddeeac975b3e2c8a8d92c">$search_field</a> = $gravityview_view-&gt;search_field</td></tr>
@@ -148,24 +147,25 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2203d325106d5aa466174831e00a2a4f"></a>
+<a class="anchor" id="a8cd6f1f75552517065617516de8833ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a> (empty($search_field['choices'])) $links_label = apply_filters( 'gravityview/extension/search/links_label', __( 'Show only:', 'gravityview' ) )</td>
+          <td class="memname">$links_label = empty( $search_field['label'] ) ? __( 'Show only:', 'gravityview' ) : $search_field['label']</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000160">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_sep</code> Change the label for the "Link" search bar input type <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000175">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_sep</code> Change the label for the "Link" search bar input type <dl class="section since"><dt>Since</dt><dd>TODO Use search field label as default value, if set. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$links_label</td><td>Default: <code>Show only:</code> </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$links_label</td><td>Default: <code>Show only:</code> if search field label is not set. Otherwise, search field label. </td></tr>
   </table>
   </dd>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00025">25</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
+<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00021">21</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
 
 </div>
 </div>
@@ -178,7 +178,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000161">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_sep</code> Change what separates search bar "Link" input type links <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000176">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_sep</code> Change what separates search bar "Link" input type links <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$links_sep</td><td>Default: <code>&#160;|&#160;</code> Used to connect multiple links </td></tr>
   </table>
@@ -186,7 +186,7 @@ Variables</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00031">31</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
+<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00034">34</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
 
 </div>
 </div>
@@ -214,7 +214,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00042">42</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
+<p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00044">44</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
 
 </div>
 </div>

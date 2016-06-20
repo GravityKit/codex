@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -183,6 +182,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae41a7b18ac326e3e20b87767476b0ab4 inherit pro_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#ae41a7b18ac326e3e20b87767476b0ab4">custom_merge_tags</a> ($form=array(), $fields=array())</td></tr>
 <tr class="memdesc:ae41a7b18ac326e3e20b87767476b0ab4 inherit pro_methods_class_gravity_view___field"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add custom Merge Tags to Merge Tag options, if custom Merge Tags exist.  <a href="#ae41a7b18ac326e3e20b87767476b0ab4">More...</a><br /></td></tr>
 <tr class="separator:ae41a7b18ac326e3e20b87767476b0ab4 inherit pro_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a53b2eaf582da97158fa4eeeea8505 inherit pro_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#ae6a53b2eaf582da97158fa4eeeea8505">is_choice_value_enabled</a> ()</td></tr>
+<tr class="memdesc:ae6a53b2eaf582da97158fa4eeeea8505 inherit pro_methods_class_gravity_view___field"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the <code>enableChoiceValue</code> flag is set for a GF field.  <a href="#ae6a53b2eaf582da97158fa4eeeea8505">More...</a><br /></td></tr>
+<tr class="separator:ae6a53b2eaf582da97158fa4eeeea8505 inherit pro_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_gravity_view___field"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_gravity_view___field')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_gravity_view___field.html">GravityView_Field</a></td></tr>
 <tr class="memitem:ae393da6fc022a82774d2b0b3a96dfdff inherit pro_attribs_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#ae393da6fc022a82774d2b0b3a96dfdff">$_custom_merge_tag</a> = false</td></tr>
 <tr class="separator:ae393da6fc022a82774d2b0b3a96dfdff inherit pro_attribs_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,7 +317,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gravityview-field-date-created_8php_source.html#l00058">58</a> of file <a class="el" href="class-gravityview-field-date-created_8php_source.html">class-gravityview-field-date-created.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="custom_8php_source.html#l00027">$field_settings</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-common_8php_source.html#l00852">GVCommon\format_date()</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="custom_8php_source.html#l00027">$field_settings</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-common_8php_source.html#l00793">GVCommon\format_date()</a>.</p>
 
 </div>
 </div>
@@ -369,7 +371,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add {date_created} merge tag and format the values using format_date. </p>
 <dl class="section since"><dt>Since</dt><dd>1.16</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://docs.gravityview.co/article/281-the-createdby-merge-tag">http://docs.gravityview.co/article/281-the-createdby-merge-tag</a> for usage information</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="http://docs.gravityview.co/article/331-date-created-merge-tag">http://docs.gravityview.co/article/331-date-created-merge-tag</a> for usage information</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$matches</td><td>Array of Merge Tag matches found in text by preg_match_all </td></tr>
@@ -385,7 +387,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-gravityview-field-date-created_8php_source.html#l00081">81</a> of file <a class="el" href="class-gravityview-field-date-created_8php_source.html">class-gravityview-field-date-created.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00119">GravityView_Merge_Tags\format_date()</a>.</p>
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00249">GravityView_Merge_Tags\format_date()</a>.</p>
 
 </div>
 </div>

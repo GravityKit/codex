@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -148,6 +147,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_gravity_view___ajax.html#a7aab5841d389a3c8f3c893c4fddbdfba">GravityView_Ajax</a>
 , <a class="el" href="class_gravity_view___template.html#ad27ef60e1f480b232342046e57c9578d">GravityView_Template</a>
 </li>
+<li>get_add_note_part()
+: <a class="el" href="class_gravity_view___field___notes.html#ae409d7ba1f12889e1cb01fb6fe92e478">GravityView_Field_Notes</a>
+</li>
 <li>get_all()
 : <a class="el" href="class_gravity_view___fields.html#a220c65d4c085ac5c0ee63068c4dfd5d9">GravityView_Fields</a>
 , <a class="el" href="class_gravity_view___metabox___tabs.html#a5deb9343a4c5ae7d8daba118eec4b069">GravityView_Metabox_Tabs</a>
@@ -205,9 +207,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>get_content()
 : <a class="el" href="class_gravity_view___field___date___created.html#ab11de6228e20ebccf765d777a9f33e79">GravityView_Field_Date_Created</a>
-, <a class="el" href="class_gravity_view___field___is___fulfilled.html#abbffc21a9a1c9a9aec56a9862fa6b043">GravityView_Field_Is_Fulfilled</a>
+, <a class="el" href="class_gravity_view___field___is___fulfilled.html#ab9fc806f516ec95894e9506f67e68fdd">GravityView_Field_Is_Fulfilled</a>
 , <a class="el" href="class_gravity_view___field___payment___amount.html#ab11de6228e20ebccf765d777a9f33e79">GravityView_Field_Payment_Amount</a>
-, <a class="el" href="class_gravity_view___field___transaction___type.html#abbffc21a9a1c9a9aec56a9862fa6b043">GravityView_Field_Transaction_Type</a>
+, <a class="el" href="class_gravity_view___field___transaction___type.html#ab9fc806f516ec95894e9506f67e68fdd">GravityView_Field_Transaction_Type</a>
 </li>
 <li>get_context_view_id()
 : <a class="el" href="class_gravity_view__frontend.html#ae474179f7d481fba67783bf17571c06d">GravityView_frontend</a>
@@ -302,6 +304,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>get_field_desc()
 : <a class="el" href="class_gravity_view___field_type.html#a43fe7fcc112495a3c787ae7dfdb6f9df">GravityView_FieldType</a>
+, <a class="el" href="class_gravity_view___field_type__html.html#a43fe7fcc112495a3c787ae7dfdb6f9df">GravityView_FieldType_html</a>
 </li>
 <li>get_field_id()
 : <a class="el" href="class_gravity_view___field_type.html#a8ee924c7f40cc800a820ec3615fd74ca">GravityView_FieldType</a>
@@ -312,7 +315,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>get_field_label()
 : <a class="el" href="class_gravity_view___field_type.html#affbde2b5861922b6f7b5e4418422832b">GravityView_FieldType</a>
 , <a class="el" href="class_gravity_view___widget___search.html#a1b66e2f668e08723f5bdae2fb9a67106">GravityView_Widget_Search</a>
-, <a class="el" href="class_g_v_common.html#aaaf6a15862497f52d32a6d4ec6262c27">GVCommon</a>
+, <a class="el" href="class_g_v_common.html#a3b52b39022c2a28a28749f73145ec55f">GVCommon</a>
 </li>
 <li>get_field_left_label()
 : <a class="el" href="class_gravity_view___field_type.html#ae60ea55c2e8aecb0d3ddbaa382da8c91">GravityView_FieldType</a>
@@ -409,6 +412,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_gravity_view___delete___entry.html#a2db845ee6f0ae6dd8127dd8483e77749">GravityView_Delete_Entry</a>
 , <a class="el" href="class_gravity_view___edit___entry.html#a9ff44f360c00c5cd2381ba08cddd10a2">GravityView_Edit_Entry</a>
 </li>
+<li>get_note()
+: <a class="el" href="class_gravity_view___entry___notes.html#aa74a18caa22948508ee11799900ff23a">GravityView_Entry_Notes</a>
+</li>
+<li>get_note_email_fields()
+: <a class="el" href="class_gravity_view___field___notes.html#a1b9a7afda24f58986a9d6072872c4551">GravityView_Field_Notes</a>
+</li>
+<li>get_note_emails_array()
+: <a class="el" href="class_gravity_view___field___notes.html#a077ccf62849cd4499229357ffd2ebd27">GravityView_Field_Notes</a>
+</li>
 <li>get_notes()
 : <a class="el" href="class_gravity_view___entry___notes.html#acf6a0f80bea529354970cda95bdd2d49">GravityView_Entry_Notes</a>
 </li>
@@ -429,6 +441,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>get_plugin_status()
 : <a class="el" href="class_gravity_view___admin.html#a3b9255f9ac7f2705f00255ed16d63ac6">GravityView_Admin</a>
 , <a class="el" href="class_gravity_view___compatibility.html#a3b9255f9ac7f2705f00255ed16d63ac6">GravityView_Compatibility</a>
+</li>
+<li>get_post_field_images()
+: <a class="el" href="class_gravity_view___g_f_forms_model.html#a24c9a117c3f76fd5e3f5100ed26c7cbf">GravityView_GFFormsModel</a>
+</li>
+<li>get_post_fields()
+: <a class="el" href="class_gravity_view___g_f_forms_model.html#a0b0ae8177dcef0b32c31667d37936fdc">GravityView_GFFormsModel</a>
 </li>
 <li>get_posted_settings()
 : <a class="el" href="class_gravity_view___settings.html#a219444c0c58177d5bb66d8ce3cc8740d">GravityView_Settings</a>
@@ -507,6 +525,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>get_tooltip()
 : <a class="el" href="class_gravity_view___field_type.html#a74b9b04925f14b9b19b4f32138a828d7">GravityView_FieldType</a>
+</li>
+<li>get_upgrade_html()
+: <a class="el" href="class_g_v___license___handler.html#acd6558cd48f079d1b82a16689e3f2e85">GV_License_Handler</a>
 </li>
 <li>get_url()
 : <a class="el" href="class_gravity_view___entry___link___shortcode.html#a0731363610c5a9904e67f664877e0854">GravityView_Entry_Link_Shortcode</a>

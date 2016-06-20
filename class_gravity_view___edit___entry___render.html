@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -112,6 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f50ee01d9b8a69ad4b8e4ef04e81c3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a5f50ee01d9b8a69ad4b8e4ef04e81c3f">edit_entry_form</a> ()</td></tr>
 <tr class="memdesc:a5f50ee01d9b8a69ad4b8e4ef04e81c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the Edit Entry form.  <a href="#a5f50ee01d9b8a69ad4b8e4ef04e81c3f">More...</a><br /></td></tr>
 <tr class="separator:a5f50ee01d9b8a69ad4b8e4ef04e81c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703308d48a2013d4ea5aa23dce3e33cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a703308d48a2013d4ea5aa23dce3e33cb">fill_post_template</a> ($template, $form, $entry, $do_shortcode=false)</td></tr>
+<tr class="memdesc:a703308d48a2013d4ea5aa23dce3e33cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a field content template into prepared output.  <a href="#a703308d48a2013d4ea5aa23dce3e33cb">More...</a><br /></td></tr>
+<tr class="separator:a703308d48a2013d4ea5aa23dce3e33cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8960910c103f845033ae191d01fd1f45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a8960910c103f845033ae191d01fd1f45">filter_admin_only_fields</a> ($fields=array(), $edit_fields=null, $form=array(), $view_id=0)</td></tr>
 <tr class="memdesc:a8960910c103f845033ae191d01fd1f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove fields that shouldn't be visible based on the Gravity Forms adminOnly field property.  <a href="#a8960910c103f845033ae191d01fd1f45">More...</a><br /></td></tr>
 <tr class="separator:a8960910c103f845033ae191d01fd1f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aab3ffec33d6a1bf5b9f74ed390165223"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#aab3ffec33d6a1bf5b9f74ed390165223">fix_survey_fields_value</a> ($value, $field, $name)</td></tr>
 <tr class="memdesc:aab3ffec33d6a1bf5b9f74ed390165223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Survey fields inject their output using <code>gform_field_input</code> filter, but in Edit Entry, the values were empty.  <a href="#aab3ffec33d6a1bf5b9f74ed390165223">More...</a><br /></td></tr>
 <tr class="separator:aab3ffec33d6a1bf5b9f74ed390165223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aed041b88250ae85fb4347549fff7a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a5aed041b88250ae85fb4347549fff7a4">get_entry</a> ()</td></tr>
+<tr class="memdesc:a5aed041b88250ae85fb4347549fff7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: This seems to be hacky...  <a href="#a5aed041b88250ae85fb4347549fff7a4">More...</a><br /></td></tr>
+<tr class="separator:a5aed041b88250ae85fb4347549fff7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3055bfb9796d46a3c3880ace4b2f4781"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a3055bfb9796d46a3c3880ace4b2f4781">gform_pre_validation</a> ($form)</td></tr>
 <tr class="memdesc:a3055bfb9796d46a3c3880ace4b2f4781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add field keys that Gravity Forms expects.  <a href="#a3055bfb9796d46a3c3880ace4b2f4781">More...</a><br /></td></tr>
 <tr class="separator:a3055bfb9796d46a3c3880ace4b2f4781"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,9 +146,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c14ce71e08bdcda5eba6eb46ed8f372"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a9c14ce71e08bdcda5eba6eb46ed8f372">manage_conditional_logic</a> ($has_conditional_logic, $form)</td></tr>
 <tr class="memdesc:a9c14ce71e08bdcda5eba6eb46ed8f372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the Gravity Forms conditional logic script and features on the Edit Entry screen.  <a href="#a9c14ce71e08bdcda5eba6eb46ed8f372">More...</a><br /></td></tr>
 <tr class="separator:a9c14ce71e08bdcda5eba6eb46ed8f372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc67a1f41bd8d7436de91e33f2abf02d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#acc67a1f41bd8d7436de91e33f2abf02d">maybe_update_post_fields</a> ($form)</td></tr>
-<tr class="memdesc:acc67a1f41bd8d7436de91e33f2abf02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop through the fields being edited and if they include Post fields, update the Entry's post object.  <a href="#acc67a1f41bd8d7436de91e33f2abf02d">More...</a><br /></td></tr>
-<tr class="separator:acc67a1f41bd8d7436de91e33f2abf02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b74dc96b265bebc7a7db049846fb60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a58b74dc96b265bebc7a7db049846fb60">modify_fileupload_settings</a> ($plupload_init, $form_id, $instance)</td></tr>
 <tr class="memdesc:a58b74dc96b265bebc7a7db049846fb60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove max_files validation (done on gravityforms.js) to avoid conflicts with <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Late validation done on self::custom_validation.  <a href="#a58b74dc96b265bebc7a7db049846fb60">More...</a><br /></td></tr>
 <tr class="separator:a58b74dc96b265bebc7a7db049846fb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,15 +225,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a19176683eda8b3145d0c6a53e59d6bbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a19176683eda8b3145d0c6a53e59d6bbc">get_configured_edit_fields</a> ($form, $view_id)</td></tr>
 <tr class="memdesc:a19176683eda8b3145d0c6a53e59d6bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Edit Entry fields as configured in the View.  <a href="#a19176683eda8b3145d0c6a53e59d6bbc">More...</a><br /></td></tr>
 <tr class="separator:a19176683eda8b3145d0c6a53e59d6bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aed041b88250ae85fb4347549fff7a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a5aed041b88250ae85fb4347549fff7a4">get_entry</a> ()</td></tr>
-<tr class="memdesc:a5aed041b88250ae85fb4347549fff7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: This seems to be hacky...  <a href="#a5aed041b88250ae85fb4347549fff7a4">More...</a><br /></td></tr>
-<tr class="separator:a5aed041b88250ae85fb4347549fff7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e98771ab7d88eff213e6d62d6e1f53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a84e98771ab7d88eff213e6d62d6e1f53">get_field_value</a> ($field)</td></tr>
 <tr class="memdesc:a84e98771ab7d88eff213e6d62d6e1f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the value for the current field input.  <a href="#a84e98771ab7d88eff213e6d62d6e1f53">More...</a><br /></td></tr>
 <tr class="separator:a84e98771ab7d88eff213e6d62d6e1f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a941f146270d0828d545b46755dcecbbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a941f146270d0828d545b46755dcecbbf">maybe_print_message</a> ()</td></tr>
 <tr class="memdesc:a941f146270d0828d545b46755dcecbbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display success or error message if the form has been submitted.  <a href="#a941f146270d0828d545b46755dcecbbf">More...</a><br /></td></tr>
 <tr class="separator:a941f146270d0828d545b46755dcecbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc67a1f41bd8d7436de91e33f2abf02d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#acc67a1f41bd8d7436de91e33f2abf02d">maybe_update_post_fields</a> ($form)</td></tr>
+<tr class="memdesc:acc67a1f41bd8d7436de91e33f2abf02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop through the fields being edited and if they include Post fields, update the Entry's post object.  <a href="#acc67a1f41bd8d7436de91e33f2abf02d">More...</a><br /></td></tr>
+<tr class="separator:acc67a1f41bd8d7436de91e33f2abf02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebeb31f643644ac152e5feb22c7ead71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#aebeb31f643644ac152e5feb22c7ead71">merge_field_properties</a> ($field, $field_setting)</td></tr>
 <tr class="memdesc:aebeb31f643644ac152e5feb22c7ead71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override GF Form field properties with the ones defined on the View.  <a href="#aebeb31f643644ac152e5feb22c7ead71">More...</a><br /></td></tr>
 <tr class="separator:aebeb31f643644ac152e5feb22c7ead71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,6 +242,9 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a1ec0654a726805f92609dd1bce7f07f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86e2d627ac64bcfca92ac5be56e05a37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a86e2d627ac64bcfca92ac5be56e05a37">update_calculation_fields</a> ()</td></tr>
 <tr class="separator:a86e2d627ac64bcfca92ac5be56e05a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0fdddd8fa87f39aa405497d2ad48a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#acb0fdddd8fa87f39aa405497d2ad48a9">update_post_image</a> ($form, $field, $field_id, $value, $entry, $post_id)</td></tr>
+<tr class="memdesc:acb0fdddd8fa87f39aa405497d2ad48a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle updating the Post Image field.  <a href="#acb0fdddd8fa87f39aa405497d2ad48a9">More...</a><br /></td></tr>
+<tr class="separator:acb0fdddd8fa87f39aa405497d2ad48a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14eee16306bacd547d925f6fbc8fa843"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___render.html#a14eee16306bacd547d925f6fbc8fa843">user_can_edit_field</a> ($field, $echo=false)</td></tr>
 <tr class="memdesc:a14eee16306bacd547d925f6fbc8fa843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a field is editable by the current user, and optionally display an error message  GravityView_Edit_Entry-&gt;<a class="el" href="class_gravity_view___edit___entry___render.html#a7d87bb6c2af7350d3426b8c5f9e064bb" title="checks if user has permissions to edit a specific field ">check_user_cap_edit_field()</a> Check user capabilities.  <a href="#a14eee16306bacd547d925f6fbc8fa843">More...</a><br /></td></tr>
 <tr class="separator:a14eee16306bacd547d925f6fbc8fa843"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,9 +301,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd>GFEntryDetail::lead_detail_page()</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00664">664</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00712">712</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
+<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00052">$entry</a>, and <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
 
 <p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00264">process_save()</a>.</p>
 
@@ -336,7 +341,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01806">1806</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01861">1861</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p>References <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
@@ -366,7 +371,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>[type] [description] </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01259">1259</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01328">1328</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
@@ -388,7 +393,7 @@ Static Private Attributes</h2></td></tr>
 <p>Display the Edit Entry form. </p>
 <dl class="section return"><dt>Returns</dt><dd>[type] [description] </dd></dl>
 <p>Fixes weird wpautop() issue </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/katzwebservices/GravityView/issues/451">https://github.com/katzwebservices/GravityView/issues/451</a></dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000114">Runs Filter:</a></b></dt><dd><code>gravityview_edit_entry_title</code> Modify the edit entry title <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000119">Runs Filter:</a></b></dt><dd><code>gravityview_edit_entry_title</code> Modify the edit entry title <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$edit_entry_title</td><td>Modify the "Edit Entry" title </td></tr>
     <tr><td class="paramtype"><a class="el" href="class_gravity_view___edit___entry___render.html">GravityView_Edit_Entry_Render</a></td><td class="paramname">$this</td><td>This object </td></tr>
@@ -397,11 +402,68 @@ Static Private Attributes</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00689">689</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00737">737</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="class-edit-entry_8php_source.html#l00024">GravityView_Edit_Entry\$file</a>, <a class="el" href="helper-functions_8php_source.html#l00141">gravityview_ob_include()</a>, and <a class="el" href="helper-functions_8php_source.html#l00126">gravityview_strip_whitespace()</a>.</p>
+<p>References <a class="el" href="class-edit-entry_8php_source.html#l00024">GravityView_Edit_Entry\$file</a>, <a class="el" href="helper-functions_8php_source.html#l00187">gravityview_ob_include()</a>, <a class="el" href="helper-functions_8php_source.html#l00172">gravityview_strip_whitespace()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00797">maybe_print_message()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00837">render_edit_form()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00219">init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a703308d48a2013d4ea5aa23dce3e33cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fill_post_template </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$template</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$do_shortcode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a field content template into prepared output. </p>
+<p><a class="el" href="class_gravity_view___g_f_forms_model.html#a24c9a117c3f76fd5e3f5100ed26c7cbf" title="Given information provided in an entry, get array of media IDs. ">GravityView_GFFormsModel::get_post_field_images()</a></p>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$template</td><td>The content template for the field </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$do_shortcode</td><td>Whether to process shortcode inside content. In GF, only run on Custom Field and Post Content fields</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mixed|string|void </dd></dl>
+
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00682">682</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+
+<p>References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00024">GravityView_GFFormsModel\get_post_field_images()</a>, and <a class="el" href="gravityview_8php_source.html#l00043">GRAVITYVIEW_DIR</a>.</p>
+
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00550">maybe_update_post_fields()</a>.</p>
 
 </div>
 </div>
@@ -453,7 +515,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Possibly modified form array </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000121">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/use_gf_admin_only_setting</code> When Edit tab isn't configured, should the Gravity Forms "Admin Only" field settings be used to control field display to non-admins? Default: true If the Edit Entry tab is not configured, adminOnly fields will not be shown to non-administrators. If the Edit Entry tab <em>is</em> configured, adminOnly fields will be shown to non-administrators, using the configured GV permissions <dl class="section since"><dt>Since</dt><dd>1.9.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000128">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/use_gf_admin_only_setting</code> When Edit tab isn't configured, should the Gravity Forms "Admin Only" field settings be used to control field display to non-admins? Default: true If the Edit Entry tab is not configured, adminOnly fields will not be shown to non-administrators. If the Edit Entry tab <em>is</em> configured, adminOnly fields will be shown to non-administrators, using the configured GV permissions <dl class="section since"><dt>Since</dt><dd>1.9.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$use_gf_adminonly_setting</td><td>True: Hide field if set to Admin Only in GF and the user is not an admin. False: show field based on GV permissions, ignoring GF permissions. </td></tr>
@@ -464,7 +526,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01604">1604</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01659">1659</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p>References <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
@@ -493,7 +555,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Modified form, if not using Conditional Logic </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000122">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/conditional_logic</code> Should the Edit Entry form use Gravity Forms conditional logic showing/hiding of fields? <dl class="section since"><dt>Since</dt><dd>1.9 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000129">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/conditional_logic</code> Should the Edit Entry form use Gravity Forms conditional logic showing/hiding of fields? <dl class="section since"><dt>Since</dt><dd>1.9 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$use_conditional_logic</td><td>True: Gravity Forms will show/hide fields just like in the original form; False: conditional logic will be disabled and fields will be shown based on configuration. Default: true </td></tr>
@@ -503,7 +565,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01643">1643</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01698">1698</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00945">filter_modify_form_fields()</a>.</p>
 
 </div>
 </div>
@@ -550,7 +614,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.9</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array Modified form array </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00885">885</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00945">945</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+
+<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00059">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00073">$form_after_validation</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01698">filter_conditional_logic()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01482">get_configured_edit_fields()</a>.</p>
 
 </div>
 </div>
@@ -597,9 +663,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00832">832</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00892">892</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
 </div>
 </div>
@@ -676,19 +742,29 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of fields that are configured in the Edit tab in the Admin </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000126">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/form_fields</code> Modify the fields displayed in Edit Entry form <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"></td><td class="paramname">GF_Field[]</td><td>$fields Gravity Forms form fields </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$edit_fields</td><td>Fields for the Edit Entry tab configured in the View Configuration </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>GF Form array (<code>fields</code> key modified to have only fields configured to show in Edit Entry) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$view_id</td><td>View ID </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01413">1413</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01482">1482</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p>References <a class="el" href="class-data_8php_source.html#l00119">GravityView_View_Data\getInstance()</a>.</p>
+
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00945">filter_modify_form_fields()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a5aed041b88250ae85fb4347549fff7a4"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">get_entry </td>
@@ -697,19 +773,14 @@ Static Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>TODO: This seems to be hacky... </p>
 <p>we should remove it. Entry is set when updating the form using <a class="el" href="class_gravity_view___edit___entry___render.html#acf78ac4e7e486c5ae4e7a3696604bb2d" title="When Edit entry view is requested setup the vars. ">setup_vars()</a>! Get the current entry and set it if it's not yet set. </p><dl class="section return"><dt>Returns</dt><dd>array Gravity Forms entry array </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01390">1390</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01459">1459</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="connector-functions_8php_source.html#l00111">gravityview_get_entry()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01192">GravityView_frontend\is_single_entry()</a>.</p>
+<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="connector-functions_8php_source.html#l00111">gravityview_get_entry()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01200">GravityView_frontend\is_single_entry()</a>.</p>
 
 </div>
 </div>
@@ -743,7 +814,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array|mixed|string|void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000119">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/pre_populate/override</code> Allow the pre-populated value to override saved value in Edit Entry form. By default, pre-populate mechanism only kicks on empty fields. <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000125">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/pre_populate/override</code> Allow the pre-populated value to override saved value in Edit Entry form. By default, pre-populate mechanism only kicks on empty fields. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">boolean</td><td>True: override saved values; False: don't override (default) </td></tr>
     <tr><td class="paramname">$field</td><td>GF_Field object Gravity Forms field object </td></tr>
@@ -753,9 +824,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01033">1033</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01102">1102</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="helper-functions_8php_source.html#l00338">gv_empty()</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, and <a class="el" href="helper-functions_8php_source.html#l00386">gv_empty()</a>.</p>
 
 </div>
 </div>
@@ -785,9 +856,9 @@ Static Private Attributes</h2></td></tr>
 <p>this whole fileupload hack is because in the admin, Gravity Forms simply doesn't update any fileupload field if it's empty, but it DOES in the frontend.</p>
 <p>What we have to do is set the value so that it doesn't get overwritten as empty on save and appears immediately in the Edit Entry screen again.</p>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01104">1104</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01173">1173</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00059">$form</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01883">verify_nonce()</a>.</p>
 
 </div>
 </div>
@@ -817,7 +888,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00219">219</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00689">edit_entry_form()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00249">print_scripts()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00264">process_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00196">setup_vars()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01701">user_can_edit_entry()</a>.</p>
+<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00737">edit_entry_form()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00249">print_scripts()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00264">process_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00196">setup_vars()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01756">user_can_edit_entry()</a>.</p>
 
 </div>
 </div>
@@ -882,7 +953,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00112">112</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="gravityview_8php_source.html#l00048">GRAVITYVIEW_DIR</a>.</p>
+<p>References <a class="el" href="gravityview_8php_source.html#l00043">GRAVITYVIEW_DIR</a>.</p>
 
 </div>
 </div>
@@ -921,7 +992,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed|void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01677">1677</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01732">1732</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -950,7 +1021,7 @@ Static Private Attributes</h2></td></tr>
 <p><a class="el" href="class_g_v_common.html#a5e57b39545bec856493185d6b496a714" title="Display updated/error notice. ">GVCommon::generate_notice</a></p>
 <dl class="section since"><dt>Since</dt><dd>1.16.2.2</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000115">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/success</code> Modify the edit entry success message (including the anchor link) <dl class="section since"><dt>Since</dt><dd>1.5.4 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000120">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/success</code> Modify the edit entry success message (including the anchor link) <dl class="section since"><dt>Since</dt><dd>1.5.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$entry_updated_message</td><td>Existing message </td></tr>
@@ -963,15 +1034,20 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00749">749</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00797">797</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="form-buttons_8php_source.html#l00018">$back_link</a>, and <a class="el" href="class-common_8php_source.html#l01500">GVCommon\generate_notice()</a>.</p>
+<p>References <a class="el" href="form-buttons_8php_source.html#l00018">$back_link</a>, and <a class="el" href="class-common_8php_source.html#l01460">GVCommon\generate_notice()</a>.</p>
+
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00737">edit_entry_form()</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="acc67a1f41bd8d7436de91e33f2abf02d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">maybe_update_post_fields </td>
@@ -981,6 +1057,11 @@ Static Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Loop through the fields being edited and if they include Post fields, update the Entry's post object. </p>
@@ -991,11 +1072,10 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<p>PhpMissingBreakStatementInspection </p>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00447">447</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00550">550</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="post__image_8php_source.html#l00024">$ary</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="post__image_8php_source.html#l00107">$image_meta</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="gravityview_8php_source.html#l00048">GRAVITYVIEW_DIR</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00119">GravityView_GFFormsModel\media_handle_upload()</a>.</p>
+<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00052">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00682">fill_post_template()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00458">update_post_image()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00264">process_save()</a>.</p>
 
@@ -1045,7 +1125,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 <p>Normalize page numbers - avoid conflicts with page validation </p><dl class="section since"><dt>Since</dt><dd>1.6</dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01568">1568</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01623">1623</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
 
@@ -1116,7 +1196,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00164">164</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00189">is_edit_entry_submission()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01828">verify_nonce()</a>.</p>
+<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00189">is_edit_entry_submission()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01883">verify_nonce()</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1264,7 @@ Static Private Attributes</h2></td></tr>
 <p>Process edit entry form save. </p>
 <p>This step is needed to unset the adminOnly from form fields, to add the calculation fields</p>
 <p>to avoid the capability validation of the method save_lead for GF 1.9+</p>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000016">Runs Actions:</a></b></dt><dd><code>gravityview/edit_entry/after_update</code> Perform an action after the entry has been updated using Edit Entry <dl class="params"><dt>Parameters</dt><dd>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000017">Runs Actions:</a></b></dt><dd><code>gravityview/edit_entry/after_update</code> Perform an action after the entry has been updated using Edit Entry <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$entry_id</td><td>Numeric ID of the entry that was updated </td></tr>
@@ -1195,7 +1275,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00264">264</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00664">after_update()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00369">form_prepare_for_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00447">maybe_update_post_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00334">process_save_process_files()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00393">update_calculation_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01210">validate()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01828">verify_nonce()</a>.</p>
+<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00712">after_update()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00369">form_prepare_for_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00550">maybe_update_post_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00334">process_save_process_files()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00393">update_calculation_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01279">validate()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01883">verify_nonce()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00219">init()</a>.</p>
 
@@ -1256,8 +1336,26 @@ Static Private Attributes</h2></td></tr>
 <p>Display the Edit Entry form in the original Gravity Forms format. </p>
 <dl class="section since"><dt>Since</dt><dd>1.9</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000018">Runs Actions:</a></b></dt><dd><code>gravityview/edit-entry/render/before</code> Before rendering the Edit Entry form <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___edit___entry___render.html">GravityView_Edit_Entry_Render</a></td><td class="paramname">$this</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000019">Runs Actions:</a></b></dt><dd><code>gravityview/edit-entry/render/after</code> After rendering the Edit Entry form <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___edit___entry___render.html">GravityView_Edit_Entry_Render</a></td><td class="paramname">$this</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00789">789</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00837">837</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00737">edit_entry_form()</a>.</p>
 
 </div>
 </div>
@@ -1278,9 +1376,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.8 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00867">867</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00927">927</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="class-edit-entry_8php_source.html#l00024">GravityView_Edit_Entry\$file</a>, and <a class="el" href="helper-functions_8php_source.html#l00141">gravityview_ob_include()</a>.</p>
+<p>References <a class="el" href="class-edit-entry_8php_source.html#l00024">GravityView_Edit_Entry\$file</a>, and <a class="el" href="helper-functions_8php_source.html#l00187">gravityview_ob_include()</a>.</p>
 
 </div>
 </div>
@@ -1336,6 +1434,88 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acb0fdddd8fa87f39aa405497d2ad48a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">update_post_image </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$field_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$post_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handle updating the Post Image field. </p>
+<p>Sets a new Featured Image if configured in Gravity Forms; otherwise uploads/updates media</p>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<p>GFFormsModel::media_handle_upload  set_post_thumbnail</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>GF Form array </td></tr>
+    <tr><td class="paramtype">GF_Field</td><td class="paramname">$field</td><td>GF Field </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$field_id</td><td>Numeric ID of the field </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>GF Entry currently being edited </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$post_id</td><td>ID of the Post being edited</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mixed|string </dd></dl>
+<p>todo: As soon as ::media_handle_upload becomes a public method, move this call to ::media_handle_upload and remove the hack from this class. Note: the method became public in GF 1.9.17.7, but we don't require that version yet.</p>
+
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00458">458</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+
+<p>References <a class="el" href="post__image_8php_source.html#l00024">$ary</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="post__image_8php_source.html#l00107">$image_meta</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="gravityview_8php_source.html#l00043">GRAVITYVIEW_DIR</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00121">GravityView_GFFormsModel\media_handle_upload()</a>.</p>
+
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00550">maybe_update_post_fields()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ac418a2852eaa586f66f4b1c89b7d98e1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1371,9 +1551,9 @@ Static Private Attributes</h2></td></tr>
 <p>If the Entry is embedded, there may be two entries on the same page. If that's the case, and one is being edited, the other should fail gracefully and not display an error.</p>
 <dl class="section since"><dt>Since</dt><dd>1.9</dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01701">1701</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01756">1756</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="class-edit-entry_8php_source.html#l00221">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, <a class="el" href="class-common_8php_source.html#l01500">GVCommon\generate_notice()</a>, <a class="el" href="class-oembed_8php_source.html#l00043">GravityView_oEmbed\getInstance()</a>, and <a class="el" href="class-common_8php_source.html#l01523">gravityview_get_link()</a>.</p>
+<p>References <a class="el" href="class-edit-entry_8php_source.html#l00221">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, <a class="el" href="class-common_8php_source.html#l01460">GVCommon\generate_notice()</a>, <a class="el" href="class-oembed_8php_source.html#l00043">GravityView_oEmbed\getInstance()</a>, and <a class="el" href="class-common_8php_source.html#l01527">gravityview_get_link()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00219">init()</a>.</p>
 
@@ -1421,9 +1601,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean True: user can edit the current field; False: nope, they can't. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01774">1774</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01829">1829</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="class-common_8php_source.html#l01500">GVCommon\generate_notice()</a>.</p>
+<p>References <a class="el" href="class-common_8php_source.html#l01460">GVCommon\generate_notice()</a>.</p>
 
 </div>
 </div>
@@ -1446,7 +1626,7 @@ Static Private Attributes</h2></td></tr>
 <p>If using GF User Registration Add-on, remove the validation step, otherwise generates error when updating the entry GF User Registration Add-on version &gt; 3.x has a different class name </p><dl class="section since"><dt>Since</dt><dd>1.16.2</dd></dl>
 <p>For some crazy reason, Gravity Forms doesn't validate Edit Entry form submissions. You can enter whatever you want! We try validating, and customize the results using <code>self::custom_validation()</code></p>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01210">1210</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01279">1279</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00264">process_save()</a>.</p>
 
@@ -1467,7 +1647,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Is the current nonce valid for editing the entry? </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000123">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/verify_nonce</code> Override Edit Entry nonce validation. Return true to declare nonce valid. <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000130">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/verify_nonce</code> Override Edit Entry nonce validation. Return true to declare nonce valid. <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;boolean</td><td class="paramname">$valid</td><td>False if invalid; 1 or 2 when nonce was generated </td></tr>
@@ -1477,9 +1657,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01828">1828</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01883">1883</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00164">prevent_maybe_process_form()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00264">process_save()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01173">gform_pre_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00164">prevent_maybe_process_form()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00264">process_save()</a>.</p>
 
 </div>
 </div>
@@ -1538,14 +1718,14 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string If error, the error message. If no error, blank string (modify_edit_field_input() runs next) </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000116">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/unsupported_post_field_text</code> Modify the message when someone isn't able to edit a post <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000121">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/unsupported_post_field_text</code> Modify the message when someone isn't able to edit a post <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>The existing "You don't have permission..." text </td></tr>
   </table>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000117">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/no_post_text</code> Modify the message when someone is editing an entry attached to a post that no longer exists <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000122">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/no_post_text</code> Modify the message when someone is editing an entry attached to a post that no longer exists <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>The existing "This field is not editable; the post no longer exists." text </td></tr>
   </table>
@@ -1553,7 +1733,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00917">917</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00977">977</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
 
@@ -1571,6 +1751,8 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00052">52</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00712">after_update()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00550">maybe_update_post_fields()</a>.</p>
 
 </div>
 </div>
@@ -1600,7 +1782,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00059">59</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00369">form_prepare_for_save()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00945">filter_modify_form_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00369">form_prepare_for_save()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01173">gform_pre_validation()</a>.</p>
 
 </div>
 </div>
@@ -1615,6 +1797,8 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00073">73</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00945">filter_modify_form_fields()</a>.</p>
 
 </div>
 </div>

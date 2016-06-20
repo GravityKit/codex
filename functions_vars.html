@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -278,14 +277,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>$class_name
 : <a class="el" href="class_gravity_view___plugin__and___theme___hooks.html#a760a15d1f404a4acad8cb7a30288ae78">GravityView_Plugin_and_Theme_Hooks</a>
 , <a class="el" href="class_gravity_view___plugin___hooks___debug___bar.html#a760a15d1f404a4acad8cb7a30288ae78">GravityView_Plugin_Hooks_Debug_Bar</a>
+, <a class="el" href="class_gravity_view___plugin___hooks___gravity___flow.html#a760a15d1f404a4acad8cb7a30288ae78">GravityView_Plugin_Hooks_Gravity_Flow</a>
+, <a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___signature.html#a760a15d1f404a4acad8cb7a30288ae78">GravityView_Plugin_Hooks_Gravity_Forms_Signature</a>
 </li>
 <li>$comparison
 : <a class="el" href="class_g_v_logic___shortcode.html#a1e12e17b723e5884226ea5d9088023e1">GVLogic_Shortcode</a>
 </li>
 <li>$constant_name
 : <a class="el" href="class_gravity_view___plugin__and___theme___hooks.html#af252e426277ca6f94abb537bd56e0dcb">GravityView_Plugin_and_Theme_Hooks</a>
+, <a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___survey.html#af252e426277ca6f94abb537bd56e0dcb">GravityView_Plugin_Hooks_Gravity_Forms_Survey</a>
 , <a class="el" href="class_gravity_view___plugin___hooks___yoast___s_e_o.html#af252e426277ca6f94abb537bd56e0dcb">GravityView_Plugin_Hooks_Yoast_SEO</a>
 , <a class="el" href="class_gravity_view___theme___hooks___avia.html#af252e426277ca6f94abb537bd56e0dcb">GravityView_Theme_Hooks_Avia</a>
+, <a class="el" href="class_gravity_view___theme___hooks___church___themes.html#af252e426277ca6f94abb537bd56e0dcb">GravityView_Theme_Hooks_Church_Themes</a>
 , <a class="el" href="class_gravity_view___theme___hooks___generate_press.html#af252e426277ca6f94abb537bd56e0dcb">GravityView_Theme_Hooks_GeneratePress</a>
 </li>
 <li>$content
@@ -320,6 +323,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>$dismissed_notices
 : <a class="el" href="class_gravity_view___admin___notices.html#a50956ef11d4f0b70b658b54b4f1f3177">GravityView_Admin_Notices</a>
+</li>
+<li>$doing_ajax
+: <a class="el" href="class_gravity_view___field___notes.html#a9bad4c4e42e83520c15218fecfcb7406">GravityView_Field_Notes</a>
 </li>
 <li>$EDD_SL_Plugin_Updater
 : <a class="el" href="class_g_v___license___handler.html#a2b392216229cebae1e70a80cc2990906">GV_License_Handler</a>
@@ -361,6 +367,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>$file
 : <a class="el" href="class_gravity_view___delete___entry.html#aa1bfbd27060176201b271918dff57e8f">GravityView_Delete_Entry</a>
 , <a class="el" href="class_gravity_view___edit___entry.html#aa1bfbd27060176201b271918dff57e8f">GravityView_Edit_Entry</a>
+, <a class="el" href="class_gravity_view___field___notes.html#aa1bfbd27060176201b271918dff57e8f">GravityView_Field_Notes</a>
 , <a class="el" href="class_gravity_view___widget___search.html#aa1bfbd27060176201b271918dff57e8f">GravityView_Widget_Search</a>
 </li>
 <li>$filter_prefix
@@ -385,6 +392,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>$function_name
 : <a class="el" href="class_gravity_view___plugin__and___theme___hooks.html#aa7366673008214409f1d0ca71e271c4b">GravityView_Plugin_and_Theme_Hooks</a>
 , <a class="el" href="class_gravity_view___plugin___hooks___a_c_f.html#aa7366673008214409f1d0ca71e271c4b">GravityView_Plugin_Hooks_ACF</a>
+, <a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___quiz.html#aa7366673008214409f1d0ca71e271c4b">GravityView_Plugin_Hooks_Gravity_Forms_Quiz</a>
 , <a class="el" href="class_gravity_view___theme___hooks___avada.html#aa7366673008214409f1d0ca71e271c4b">GravityView_Theme_Hooks_Avada</a>
 , <a class="el" href="class_gravity_view___theme___hooks___genesis.html#aa7366673008214409f1d0ca71e271c4b">GravityView_Theme_Hooks_Genesis</a>
 , <a class="el" href="class_gravity_view___theme___hooks___woo_themes.html#aa7366673008214409f1d0ca71e271c4b">GravityView_Theme_Hooks_WooThemes</a>
@@ -613,6 +621,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_gravity_view___field___list.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_List</a>
 , <a class="el" href="class_gravity_view___field___multi_select.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_MultiSelect</a>
 , <a class="el" href="class_gravity_view___field___name.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Name</a>
+, <a class="el" href="class_gravity_view___field___notes.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Notes</a>
 , <a class="el" href="class_gravity_view___field___number.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Number</a>
 , <a class="el" href="class_gravity_view___field___other___entries.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Other_Entries</a>
 , <a class="el" href="class_gravity_view___field___page.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Page</a>
@@ -672,6 +681,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>$passed_content
 : <a class="el" href="class_g_v_logic___shortcode.html#a2e245eb80a67e4a43f607ac9d722bb52">GVLogic_Shortcode</a>
+</li>
+<li>$path
+: <a class="el" href="class_gravity_view___field___notes.html#a0a4baf0b22973c07685c3981f0d17fc4">GravityView_Field_Notes</a>
 </li>
 <li>$plugin_directory
 : <a class="el" href="class_gravity_view___view.html#a1ae3dffb68cadea28a33f3cd1110a5e5">GravityView_View</a>

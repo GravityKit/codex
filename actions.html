@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -84,11 +83,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_actions000007"></a>Global <a class="el" href="class_gravity_view___admin.html#af2911c31327e9ff304c3a0f6dc507b4a">GravityView_Admin::backend_actions</a>  ()</dt>
+<dt><a class="anchor" id="_actions000008"></a>Global <a class="el" href="class_gravity_view___admin.html#af2911c31327e9ff304c3a0f6dc507b4a">GravityView_Admin::backend_actions</a>  ()</dt>
 <dd><code>gravityview_include_backend_actions</code> Triggered after all <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> admin files are loaded </dd>
-<dt><a class="anchor" id="_actions000008"></a>Global <a class="el" href="class_gravity_view___admin.html#a7d471bb348c9fa797d9f9fb9d8d0c85b">GravityView_Admin::no_conflict_styles</a>  ()</dt>
-<dd><code>gravityview_remove_conflicts_after</code> Runs after no-conflict styles are removed. You can re-add styles here.  </dd>
-<dt><a class="anchor" id="_actions000004"></a>Global <a class="el" href="class_gravity_view___admin___approve_entries.html#a12ea7f5f39de38ea7917e6b0ca6a26fe">GravityView_Admin_ApproveEntries::update_approved_meta</a>  ($entry_id, $is_approved)</dt>
+<dt><a class="anchor" id="_actions000005"></a>Global <a class="el" href="class_gravity_view___admin___approve_entries.html#a12ea7f5f39de38ea7917e6b0ca6a26fe">GravityView_Admin_ApproveEntries::update_approved_meta</a>  ($entry_id, $is_approved)</dt>
 <dd><code>gravityview/approve_entries/updated</code> Triggered when an entry approval is updated <dl class="section since"><dt>Since</dt><dd>1.7.6.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -112,17 +109,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000013"></a>Global <a class="el" href="class_gravity_view___admin___duplicate___view.html#a01f1ec160b19a7526f80cf43da754951">GravityView_Admin_Duplicate_View::create_duplicate</a>  ($post, $status= '')</dt>
-<dd><code>gv_duplicate_view</code> After the View is duplicated, perform an action <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
+<dt><a class="anchor" id="_actions000014"></a>Global <a class="el" href="class_gravity_view___admin___duplicate___view.html#a01f1ec160b19a7526f80cf43da754951">GravityView_Admin_Duplicate_View::create_duplicate</a>  ($post, $status= '')</dt>
+<dd><code>gv_duplicate_view</code> After a View is duplicated, perform an action <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___admin___duplicate___view.html#a0068fe504ec0142aa06b36ed6ea3cb04" title="Copy the meta information of a post to another View. ">GravityView_Admin_Duplicate_View::copy_view_meta_info</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$new_view_id</td><td>The ID of the newly created View </td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">WP_Post</td><td>The View that was just cloned  </td></tr>
+    <tr><td class="paramtype">WP_Post</td><td class="paramname">$post</td><td>The View that was just cloned  </td></tr>
   </table>
   </dd>
 </dl>
 </dd>
+<dt><a class="anchor" id="_actions000004"></a>Global <a class="el" href="class_gravity_view___admin___no___conflict.html#a7d471bb348c9fa797d9f9fb9d8d0c85b">GravityView_Admin_No_Conflict::no_conflict_styles</a>  ()</dt>
+<dd><code>gravityview_remove_conflicts_after</code> Runs after no-conflict styles are removed. You can re-add styles here.  </dd>
 <dt><a class="anchor" id="_actions000012"></a>globalScope&gt; Global <a class="el" href="class-api_8php.html#a63ec2a5b744a0d7e18fdd14228873256">gravityview_after</a>  ()</dt>
 <dd><code>gravityview_after</code> Append content to the View container <code>&lt;div&gt;</code> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -139,27 +138,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000014"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#ad1001f0114cd745ec6600ba6ae23e586">GravityView_Delete_Entry::delete_or_trash_entry</a>  ($entry_id)</dt>
+<dt><a class="anchor" id="_actions000015"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#ab9df110a24bddff3fd781f2f66ecc35d">GravityView_Delete_Entry::delete_or_trash_entry</a>  ($entry)</dt>
 <dd><code>gravityview/delete-entry/deleted</code> Triggered when an entry is deleted <dl class="section since"><dt>Since</dt><dd>1.16.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$entry_id</td><td>ID of the Gravity Forms entry </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Deleted entry array </td></tr>
   </table>
   </dd>
 </dl>
 <code>gravityview/delete-entry/trashed</code> Triggered when an entry is trashed <dl class="section since"><dt>Since</dt><dd>1.16.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$entry_id</td><td>ID of the Gravity Forms entry  </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$entry_id</td><td>ID of the Gravity Forms entry </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Deleted entry array  </td></tr>
   </table>
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000016"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#ad5da9a6a516aa6645a8427e15ad993cf">GravityView_Edit_Entry_Render::process_save</a>  ()</dt>
+<dt><a class="anchor" id="_actions000017"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#ad5da9a6a516aa6645a8427e15ad993cf">GravityView_Edit_Entry_Render::process_save</a>  ()</dt>
 <dd><code>gravityview/edit_entry/after_update</code> Perform an action after the entry has been updated using Edit Entry <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$entry_id</td><td>Numeric ID of the entry that was updated  </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd>
+<dt><a class="anchor" id="_actions000018"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#a1ec0654a726805f92609dd1bce7f07f0">GravityView_Edit_Entry_Render::render_edit_form</a>  ()</dt>
+<dd><code>gravityview/edit-entry/render/before</code> Before rendering the Edit Entry form <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___edit___entry___render.html">GravityView_Edit_Entry_Render</a></td><td class="paramname">$this</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<code>gravityview/edit-entry/render/after</code> After rendering the Edit Entry form <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___edit___entry___render.html">GravityView_Edit_Entry_Render</a></td><td class="paramname">$this</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -172,6 +189,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
+<dt><a class="anchor" id="_actions000013"></a>Global <a class="el" href="class_gravity_view__frontend.html#a90c694af8c1eb87d24a08df767f120fe">GravityView_frontend::render_view</a>  ($passed_args)</dt>
+<dd><code>gravityview_render_entry_{View ID}</code> Before rendering a single entry for a specific View ID <dl class="section since"><dt>Since</dt><dd>1.17  </dd></dl>
+</dd>
 <dt><a class="anchor" id="_actions000010"></a>globalScope&gt; Global <a class="el" href="class-api_8php.html#a5b93e2caa245a3df4723a23d9033a73e">gravityview_header</a>  ()</dt>
 <dd><code>gravityview_header</code> Prepend content to the View container <code>&lt;div&gt;</code> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -180,7 +200,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000001"></a>Global <a class="el" href="class_gravity_view___plugin.html#a254854123854d4b9e4ff6ac5a67d0923">GravityView_Plugin::frontend_actions</a>  ()</dt>
+<dt><a class="anchor" id="_actions000001"></a>Global <a class="el" href="class_gravity_view___plugin.html#a62d23eda2a3e4815da7977ee44ed740c">GravityView_Plugin::frontend_actions</a>  ($force=false)</dt>
 <dd><code>gravityview_include_frontend_actions</code> Triggered after all <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> frontend files are loaded </dd>
 <dt><a class="anchor" id="_actions000002"></a>Global <a class="el" href="class_gravity_view___plugin.html#a66710780bf66daf6ee80b5e0e5a32248">GravityView_Plugin::log_debug</a>  ($message, $data=null)</dt>
 <dd><code>gravityview_log_debug</code> Log a debug message that shows up in the Gravity Forms Logging Addon and also the Debug Bar plugin output <dl class="params"><dt>Parameters</dt><dd>
@@ -200,7 +220,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000023"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a437304e51fdea964eeda890cf15c374e">GravityView_Recent_Entries_Widget::form</a>  ($instance)</dt>
+<dt><a class="anchor" id="_actions000028"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a437304e51fdea964eeda890cf15c374e">GravityView_Recent_Entries_Widget::form</a>  ($instance)</dt>
 <dd><code>gravityview_recent_entries_widget_form</code> Displayed at the bottom of the Recent Entries widget admin form <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="class_gravity_view___recent___entries___widget.html" title="Class GravityView_Recent_Entries_Widget. ">GravityView_Recent_Entries_Widget</a></td><td class="paramname">$this</td><td>WP_Widget object </td></tr>
@@ -209,7 +229,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </dd>
 </dl>
 </dd>
-<dt><a class="anchor" id="_actions000021"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a81ae170ee792b470c7726cd9f6168898">GravityView_Recent_Entries_Widget::widget</a>  ($args, $instance)</dt>
+<dt><a class="anchor" id="_actions000026"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a81ae170ee792b470c7726cd9f6168898">GravityView_Recent_Entries_Widget::widget</a>  ($args, $instance)</dt>
 <dd><code>gravityview/widget/recent-entries/before_widget</code> Before recent entries are displayed in the WordPress widget <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>Display arguments including before_title, after_title, before_widget, and after_widget. </td></tr>

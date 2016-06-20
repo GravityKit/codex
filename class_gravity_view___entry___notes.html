@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -119,6 +118,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6619da05e59f8f6eb88394a40d340355"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___notes.html#a6619da05e59f8f6eb88394a40d340355">filter_avatar</a> ($avatar= '', $note)</td></tr>
 <tr class="memdesc:a6619da05e59f8f6eb88394a40d340355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> avatar for notes created by <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Note: The function is static so that it's easier to remove the filter: `remove_filter( 'gform_notes_avatar', array( '<a class="el" href="class_gravity_view___entry___notes.html" title="Class GravityView_Entry_Notes. ">GravityView_Entry_Notes</a>', 'filter_avatar' ) );`.  <a href="#a6619da05e59f8f6eb88394a40d340355">More...</a><br /></td></tr>
 <tr class="separator:a6619da05e59f8f6eb88394a40d340355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74a18caa22948508ee11799900ff23a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___notes.html#aa74a18caa22948508ee11799900ff23a">get_note</a> ($note_id)</td></tr>
+<tr class="memdesc:aa74a18caa22948508ee11799900ff23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a single note by note ID.  <a href="#aa74a18caa22948508ee11799900ff23a">More...</a><br /></td></tr>
+<tr class="separator:aa74a18caa22948508ee11799900ff23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf6a0f80bea529354970cda95bdd2d49"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___notes.html#acf6a0f80bea529354970cda95bdd2d49">get_notes</a> ($entry_id)</td></tr>
 <tr class="memdesc:acf6a0f80bea529354970cda95bdd2d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for GFFormsModel::get_lead_notes()  <a href="#acf6a0f80bea529354970cda95bdd2d49">More...</a><br /></td></tr>
 <tr class="separator:acf6a0f80bea529354970cda95bdd2d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +134,7 @@ Private Member Functions</h2></td></tr>
 <div class="textblock"><p>Class <a class="el" href="class_gravity_view___entry___notes.html" title="Class GravityView_Entry_Notes. ">GravityView_Entry_Notes</a>. </p>
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00007">7</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00015">15</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a095c5d389db211932136b53f25f39685"></a>
 <div class="memitem">
@@ -149,9 +151,9 @@ Private Member Functions</h2></td></tr>
 
 <p><a class="el" href="class_gravity_view___entry___notes.html" title="Class GravityView_Entry_Notes. ">GravityView_Entry_Notes</a> constructor. </p>
 
-<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00012">12</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00020">20</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
 
-<p>References <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00019">add_hooks()</a>.</p>
+<p>References <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00027">add_hooks()</a>.</p>
 
 </div>
 </div>
@@ -178,9 +180,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00019">19</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00027">27</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00012">__construct()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00020">__construct()</a>.</p>
 
 </div>
 </div>
@@ -235,19 +237,22 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Alias for GFFormsModel::add_note() with default note_type of 'gravityview'. </p>
-<dl class="section see"><dt>See also</dt><dd>GFFormsModel::add_note() </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>GFFormsModel::add_note()</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.15 </dd>
+<dd>
+1.17 Added return value</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$lead_id</td><td>ID of the Entry </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$user_id</td><td>ID of the user creating the note </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$user_name</td><td>User name of the user creating the note </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$note</td><td>Note content. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$note_type</td><td>Type of note. Default: <code>gravityview</code> </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$note_type</td><td>Type of note. Default: <code>gravityview</code></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000086">Runs Filter:</a></b></dt><dd><code>gravityview/entry_notes/add_note</code> Modify note values before added using GFFormsModel::add_note() <dl class="section see"><dt>See also</dt><dd>GFFormsModel::add_note </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int|WP_Error Note ID, if success. WP_Error with $wpdb-&gt;last_error message, if failed. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000089">Runs Filter:</a></b></dt><dd><code>gravityview/entry_notes/add_note</code> Modify note values before added using GFFormsModel::add_note() <dl class="section see"><dt>See also</dt><dd>GFFormsModel::add_note </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -257,9 +262,9 @@ Private Member Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00034">34</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00048">48</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-change-entry-creator_8php_source.html#l00048">GravityView_Change_Entry_Creator\assign_new_user_to_lead()</a>, and <a class="el" href="class-gravityview-change-entry-creator_8php_source.html#l00155">GravityView_Change_Entry_Creator\update_entry_creator()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-field-notes_8php_source.html#l00526">GravityView_Field_Notes\add_note()</a>, <a class="el" href="class-gravityview-change-entry-creator_8php_source.html#l00048">GravityView_Change_Entry_Creator\assign_new_user_to_lead()</a>, and <a class="el" href="class-gravityview-change-entry-creator_8php_source.html#l00155">GravityView_Change_Entry_Creator\update_entry_creator()</a>.</p>
 
 </div>
 </div>
@@ -294,7 +299,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00063">63</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00087">87</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
 
 </div>
 </div>
@@ -322,7 +327,9 @@ Private Member Functions</h2></td></tr>
 
 <p>Delete an array of notes Alias for GFFormsModel::delete_notes() </p>
 
-<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00073">73</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00097">97</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-gravityview-field-notes_8php_source.html#l00316">GravityView_Field_Notes\process_delete_notes()</a>.</p>
 
 </div>
 </div>
@@ -369,9 +376,47 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Possibly-modified avatar </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00112">112</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00165">165</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
 
-<p>References <a class="el" href="gravityview_8php_source.html#l00039">GRAVITYVIEW_FILE</a>.</p>
+<p>References <a class="el" href="gravityview_8php_source.html#l00034">GRAVITYVIEW_FILE</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa74a18caa22948508ee11799900ff23a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static get_note </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$note_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a single note by note ID. </p>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$note_id</td><td>The ID of the note in the <code>{prefix}_rg_lead_notes</code> table</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>object|bool False if not found; note object otherwise. </dd></dl>
+
+<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00140">140</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-gravityview-field-notes_8php_source.html#l00203">GravityView_Field_Notes\process_add_note()</a>.</p>
 
 </div>
 </div>
@@ -406,7 +451,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>stdClass[] Integer-keyed array of note objects </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000087">Runs Filter:</a></b></dt><dd><code>gravityview/entry_notes/get_notes</code> Modify the notes array for an entry <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000090">Runs Filter:</a></b></dt><dd><code>gravityview/entry_notes/get_notes</code> Modify the notes array for an entry <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"></td><td class="paramname">stdClass[]</td><td>$notes Integer-keyed array of note objects </td></tr>
@@ -416,7 +461,9 @@ Private Member Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00090">90</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+<p>Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00117">117</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
+
+<p>References <a class="el" href="notes_8php_source.html#l00028">$notes</a>.</p>
 
 </div>
 </div>

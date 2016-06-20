@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -197,19 +196,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> entry_status_changed( $lead_id, $property_value = <span class="stringliteral">&#39;&#39;</span>, $previous_value = <span class="stringliteral">&#39;&#39;</span> ) {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">        /** @var array $entry */</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        $entry = GFAPI::get_entry( $lead_id );</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="notes_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a> = GFAPI::get_entry( $lead_id );</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> ( is_wp_error( $entry ) ) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> ( is_wp_error( <a class="code" href="notes_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a> ) ) {</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">            /** @var WP_Error $entry */</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            do_action( <span class="stringliteral">&#39;gravityview_log_error&#39;</span>, __METHOD__ . <span class="stringliteral">&#39; Could not retrieve entry &#39;</span> . $lead_id . <span class="stringliteral">&#39; to delete it: &#39;</span> . $entry-&gt;get_error_message() );</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            do_action( <span class="stringliteral">&#39;gravityview_log_error&#39;</span>, __METHOD__ . <span class="stringliteral">&#39; Could not retrieve entry &#39;</span> . $lead_id . <span class="stringliteral">&#39; to delete it: &#39;</span> . <a class="code" href="notes_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a>-&gt;get_error_message() );</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        do_action( <span class="stringliteral">&#39;gravityview_log_debug&#39;</span>, __METHOD__ . <span class="stringliteral">&#39; adding form &#39;</span> . $entry[<span class="stringliteral">&#39;form_id&#39;</span>] . <span class="stringliteral">&#39; to blacklist because entry #&#39;</span> . $lead_id . <span class="stringliteral">&#39; was deleted&#39;</span>, array( <span class="stringliteral">&#39;value&#39;</span> =&gt; $property_value, <span class="stringliteral">&#39;previous&#39;</span> =&gt; $previous_value ) );</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        do_action( <span class="stringliteral">&#39;gravityview_log_debug&#39;</span>, __METHOD__ . <span class="stringliteral">&#39; adding form &#39;</span> . <a class="code" href="notes_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a>[<span class="stringliteral">&#39;form_id&#39;</span>] . <span class="stringliteral">&#39; to blacklist because entry #&#39;</span> . $lead_id . <span class="stringliteral">&#39; was deleted&#39;</span>, array( <span class="stringliteral">&#39;value&#39;</span> =&gt; $property_value, <span class="stringliteral">&#39;previous&#39;</span> =&gt; $previous_value ) );</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        $this-&gt;<a class="code" href="class_gravity_view___cache.html#a0f0d50effa7498c0714f8b257f0995d8">blacklist_add</a>( $entry[<span class="stringliteral">&#39;form_id&#39;</span>] );</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        $this-&gt;<a class="code" href="class_gravity_view___cache.html#a0f0d50effa7498c0714f8b257f0995d8">blacklist_add</a>( <a class="code" href="notes_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a>[<span class="stringliteral">&#39;form_id&#39;</span>] );</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">    /**</span></div>
@@ -237,9 +236,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">     *</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">     * @return void</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="class_gravity_view___cache.html#a45df45d8ba98ae937886f1bc3fdc78ae">  145</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_gravity_view___cache.html#a45df45d8ba98ae937886f1bc3fdc78ae">entry_created</a>( $entry, $form ) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="class_gravity_view___cache.html#a45df45d8ba98ae937886f1bc3fdc78ae">  145</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_gravity_view___cache.html#a45df45d8ba98ae937886f1bc3fdc78ae">entry_created</a>( <a class="code" href="notes_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a>, $form ) {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        do_action( <span class="stringliteral">&#39;gravityview_log_debug&#39;</span>, <span class="stringliteral">&#39;GravityView_Cache[entry_created] adding form &#39;</span> . $form[<span class="stringliteral">&#39;id&#39;</span>] . <span class="stringliteral">&#39; to blacklist because entry #&#39;</span> . $entry[<span class="stringliteral">&#39;id&#39;</span>] . <span class="stringliteral">&#39; was created&#39;</span> );</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        do_action( <span class="stringliteral">&#39;gravityview_log_debug&#39;</span>, <span class="stringliteral">&#39;GravityView_Cache[entry_created] adding form &#39;</span> . $form[<span class="stringliteral">&#39;id&#39;</span>] . <span class="stringliteral">&#39; to blacklist because entry #&#39;</span> . <a class="code" href="notes_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a>[<span class="stringliteral">&#39;id&#39;</span>] . <span class="stringliteral">&#39; was created&#39;</span> );</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        $this-&gt;<a class="code" href="class_gravity_view___cache.html#a0f0d50effa7498c0714f8b257f0995d8">blacklist_add</a>( $form[<span class="stringliteral">&#39;id&#39;</span>] );</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
@@ -433,10 +432,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">     * @param [type] $content     [description]</span></div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">     * @param [type] $filter_name Name used to modify the cache time. Will be set to `gravityview_cache_time_{$filter_name}`.</span></div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="class_gravity_view___cache.html#ab89a257cd69b1cf295b922d649bfaab9">  341</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_gravity_view___cache.html#ab89a257cd69b1cf295b922d649bfaab9">set</a>( <a class="code" href="custom_8php.html#ab2cfd183a13283e6ee22f33f2713eac9">$content</a>, $filter_name = <span class="stringliteral">&#39;&#39;</span> ) {</div>
+<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="class_gravity_view___cache.html#ab89a257cd69b1cf295b922d649bfaab9">  341</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_gravity_view___cache.html#ab89a257cd69b1cf295b922d649bfaab9">set</a>( <a class="code" href="custom_8php.html#afe186f28b4fd679835eb2ff9f716a2c2">$content</a>, $filter_name = <span class="stringliteral">&#39;&#39;</span> ) {</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="comment">// Don&#39;t cache empty results</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">if</span> ( ! empty( <a class="code" href="custom_8php.html#ab2cfd183a13283e6ee22f33f2713eac9">$content</a> ) ) {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">if</span> ( ! empty( <a class="code" href="custom_8php.html#afe186f28b4fd679835eb2ff9f716a2c2">$content</a> ) ) {</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">            /**</span></div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">             * @filter `gravityview_cache_time_{$filter_name}` Modify the cache time for a type of cache</span></div>
@@ -446,7 +445,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            do_action( <span class="stringliteral">&#39;gravityview_log_debug&#39;</span>, <span class="stringliteral">&#39;GravityView_Cache[set] Setting cache with transient key &#39;</span> . $this-&gt;key . <span class="stringliteral">&#39; for &#39;</span> . $cache_time . <span class="stringliteral">&#39; seconds&#39;</span> );</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordflow">return</span> set_transient( $this-&gt;key, <a class="code" href="custom_8php.html#ab2cfd183a13283e6ee22f33f2713eac9">$content</a>, $cache_time );</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordflow">return</span> set_transient( $this-&gt;key, <a class="code" href="custom_8php.html#afe186f28b4fd679835eb2ff9f716a2c2">$content</a>, $cache_time );</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        }</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
@@ -647,11 +646,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_gravity_view___cache_html_aebf00781c902bf279c47b5d81f25c882"><div class="ttname"><a href="class_gravity_view___cache.html#aebf00781c902bf279c47b5d81f25c882">GravityView_Cache\schedule_transient_cleanup</a></div><div class="ttdeci">schedule_transient_cleanup()</div><div class="ttdoc">Schedule expired transient cleanup twice a day. </div><div class="ttdef"><b>Definition:</b> <a href="class-cache_8php_source.html#l00418">class-cache.php:418</a></div></div>
 <div class="ttc" id="class_gravity_view___cache_html_a1c04e11f30dc36a624fa237e3078bed8"><div class="ttname"><a href="class_gravity_view___cache.html#a1c04e11f30dc36a624fa237e3078bed8">GravityView_Cache\delete_expired_transients</a></div><div class="ttdeci">delete_expired_transients()</div><div class="ttdoc">Delete expired transients. </div><div class="ttdef"><b>Definition:</b> <a href="class-cache_8php_source.html#l00444">class-cache.php:444</a></div></div>
 <div class="ttc" id="class_gravity_view___cache_html_ad310f0e235b4522a2470a49844fa4e98"><div class="ttname"><a href="class_gravity_view___cache.html#ad310f0e235b4522a2470a49844fa4e98">GravityView_Cache\get_cache_key_prefix</a></div><div class="ttdeci">get_cache_key_prefix($form_ids=NULL)</div><div class="ttdoc">Calculate the prefix based on the Form IDs. </div><div class="ttdef"><b>Definition:</b> <a href="class-cache_8php_source.html#l00159">class-cache.php:159</a></div></div>
-<div class="ttc" id="custom_8php_html_ab2cfd183a13283e6ee22f33f2713eac9"><div class="ttname"><a href="custom_8php.html#ab2cfd183a13283e6ee22f33f2713eac9">$content</a></div><div class="ttdeci">if(empty($field_settings['content'])) $content</div><div class="ttdef"><b>Definition:</b> <a href="custom_8php_source.html#l00037">custom.php:37</a></div></div>
 <div class="ttc" id="class_gravity_view___cache_html_ab89a257cd69b1cf295b922d649bfaab9"><div class="ttname"><a href="class_gravity_view___cache.html#ab89a257cd69b1cf295b922d649bfaab9">GravityView_Cache\set</a></div><div class="ttdeci">set($content, $filter_name= '')</div><div class="ttdoc">Cache content as a transient. </div><div class="ttdef"><b>Definition:</b> <a href="class-cache_8php_source.html#l00341">class-cache.php:341</a></div></div>
 <div class="ttc" id="other__entries_8php_html_a61ce92a251f8ce1d28919fdfc3dd33a7"><div class="ttname"><a href="other__entries_8php.html#a61ce92a251f8ce1d28919fdfc3dd33a7">$form_id</a></div><div class="ttdeci">if(empty($created_by)) $form_id</div><div class="ttdef"><b>Definition:</b> <a href="other__entries_8php_source.html#l00020">other_entries.php:20</a></div></div>
 <div class="ttc" id="class_gravity_view___cache_html_a43e2c037c4e33d5bb6972da63fa0e975"><div class="ttname"><a href="class_gravity_view___cache.html#a43e2c037c4e33d5bb6972da63fa0e975">GravityView_Cache\$form_ids</a></div><div class="ttdeci">$form_ids</div><div class="ttdef"><b>Definition:</b> <a href="class-cache_8php_source.html#l00015">class-cache.php:15</a></div></div>
+<div class="ttc" id="notes_8php_html_a5291dff564984cdb59d278ef6c471d80"><div class="ttname"><a href="notes_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a></div><div class="ttdeci">$entry</div><div class="ttdef"><b>Definition:</b> <a href="notes_8php_source.html#l00027">notes.php:27</a></div></div>
 <div class="ttc" id="class_gravity_view___cache_html_a9db8b64d6cf48f0b2d46439fefc9d566"><div class="ttname"><a href="class_gravity_view___cache.html#a9db8b64d6cf48f0b2d46439fefc9d566">GravityView_Cache\use_cache</a></div><div class="ttdeci">use_cache()</div><div class="ttdoc">Check whether to use cached results, if available. </div><div class="ttdef"><b>Definition:</b> <a href="class-cache_8php_source.html#l00494">class-cache.php:494</a></div></div>
+<div class="ttc" id="custom_8php_html_afe186f28b4fd679835eb2ff9f716a2c2"><div class="ttname"><a href="custom_8php.html#afe186f28b4fd679835eb2ff9f716a2c2">$content</a></div><div class="ttdeci">if(empty($field_settings['content'])) $content</div><div class="ttdef"><b>Definition:</b> <a href="custom_8php_source.html#l00037">custom.php:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/>

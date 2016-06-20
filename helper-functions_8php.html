@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -106,12 +105,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a8ee413253a4c7b470ff2c108dac580b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a8ee413253a4c7b470ff2c108dac580b0">_gravityview_strip_subdomain</a> ($string_maybe_has_subdomain)</td></tr>
 <tr class="memdesc:a8ee413253a4c7b470ff2c108dac580b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do a <em>very</em> basic match for second-level TLD domains, like <code>.co.uk</code>  <a href="#a8ee413253a4c7b470ff2c108dac580b0">More...</a><br /></td></tr>
 <tr class="separator:a8ee413253a4c7b470ff2c108dac580b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c381e35135e4c63495d3cf69ec3178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a99c381e35135e4c63495d3cf69ec3178">gravityview_css_url</a> ($css_file= '', $dir_path= '')</td></tr>
+<tr class="memdesc:a99c381e35135e4c63495d3cf69ec3178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions that don't require <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> or Gravity Forms API access but are used in the plugin to extend PHP and WP functions.  <a href="#a99c381e35135e4c63495d3cf69ec3178">More...</a><br /></td></tr>
+<tr class="separator:a99c381e35135e4c63495d3cf69ec3178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981dda16f0b8fe5605a6fed11307a364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a981dda16f0b8fe5605a6fed11307a364">gravityview_format_link</a> ($value=null)</td></tr>
 <tr class="memdesc:a981dda16f0b8fe5605a6fed11307a364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a whole link into a shorter link for display.  <a href="#a981dda16f0b8fe5605a6fed11307a364">More...</a><br /></td></tr>
 <tr class="separator:a981dda16f0b8fe5605a6fed11307a364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19d96b14ac018d5d19f808b43f08ac1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a19d96b14ac018d5d19f808b43f08ac1f">gravityview_get_floaty</a> ()</td></tr>
-<tr class="memdesc:a19d96b14ac018d5d19f808b43f08ac1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an image of our intrepid explorer friend.  <a href="#a19d96b14ac018d5d19f808b43f08ac1f">More...</a><br /></td></tr>
-<tr class="separator:a19d96b14ac018d5d19f808b43f08ac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ffd0dfdce47b042b2b26bf765c9c07c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a9ffd0dfdce47b042b2b26bf765c9c07c">gravityview_get_floaty</a> ($height=87)</td></tr>
+<tr class="memdesc:a9ffd0dfdce47b042b2b26bf765c9c07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an image of our intrepid explorer friend.  <a href="#a9ffd0dfdce47b042b2b26bf765c9c07c">More...</a><br /></td></tr>
+<tr class="separator:a9ffd0dfdce47b042b2b26bf765c9c07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20b6222d1dd1ad2a875900fe3750e256"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a20b6222d1dd1ad2a875900fe3750e256">gravityview_get_input_id_from_id</a> ($field_id= '')</td></tr>
 <tr class="memdesc:a20b6222d1dd1ad2a875900fe3750e256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Very commonly needed: get the # of the input based on a full field ID.  <a href="#a20b6222d1dd1ad2a875900fe3750e256">More...</a><br /></td></tr>
 <tr class="separator:a20b6222d1dd1ad2a875900fe3750e256"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +124,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:af32d6644cb71a243a863d4873249a2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get categories formatted in a way used by <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> and Gravity Forms input choices.  <a href="#af32d6644cb71a243a863d4873249a2ed">More...</a><br /></td></tr>
 <tr class="separator:af32d6644cb71a243a863d4873249a2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc28888417a6db3b3a49596d6326b9dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#adc28888417a6db3b3a49596d6326b9dc">gravityview_is_not_empty_string</a> ($mixed= '')</td></tr>
-<tr class="memdesc:adc28888417a6db3b3a49596d6326b9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functions that don't require <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> or Gravity Forms API access but are used in the plugin to extend PHP and WP functions.  <a href="#adc28888417a6db3b3a49596d6326b9dc">More...</a><br /></td></tr>
+<tr class="memdesc:adc28888417a6db3b3a49596d6326b9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a variable is not an empty string.  <a href="#adc28888417a6db3b3a49596d6326b9dc">More...</a><br /></td></tr>
 <tr class="separator:adc28888417a6db3b3a49596d6326b9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dfc033770821eabcd0e5053fd13ab93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="helper-functions_8php.html#a9dfc033770821eabcd0e5053fd13ab93">gravityview_number_format</a> ($number, $decimals= '')</td></tr>
 <tr class="memdesc:a9dfc033770821eabcd0e5053fd13ab93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intelligently format a number.  <a href="#a9dfc033770821eabcd0e5053fd13ab93">More...</a><br /></td></tr>
@@ -163,9 +165,9 @@ Functions</h2></td></tr>
 <p><a class="el" href="class_g_v_common.html#a69124c8d6ee3d03f1aef8a3425113124" title="Do the same than parse_str without max_input_vars limitation: Parses $string as if it were the query ...">GVCommon::gv_parse_str</a></p>
 <dl class="section return"><dt>Returns</dt><dd>array Array of fields </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00519">519</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00568">568</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>References <a class="el" href="class-common_8php_source.html#l01324">GVCommon\gv_parse_str()</a>.</p>
+<p>References <a class="el" href="class-common_8php_source.html#l01284">GVCommon\gv_parse_str()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-gravityview-plugin-hooks-acf_8php_source.html#l00043">GravityView_Plugin_Hooks_ACF\fix_posted_fields()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00430">GravityView_Admin_Views\save_postdata()</a>.</p>
 
@@ -194,9 +196,57 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Extracted domain if it has a subdomain </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00316">316</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00364">364</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>Referenced by <a class="el" href="helper-functions_8php_source.html#l00214">gravityview_format_link()</a>.</p>
+<p>Referenced by <a class="el" href="helper-functions_8php_source.html#l00262">gravityview_format_link()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a99c381e35135e4c63495d3cf69ec3178"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gravityview_css_url </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$css_file</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$dir_path</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Functions that don't require <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> or Gravity Forms API access but are used in the plugin to extend PHP and WP functions. </p>
+<dl class="section since"><dt>Since</dt><dd>1.12 Get the URL for a CSS file</dd></dl>
+<p>If there's a CSS file with the same name as a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> CSS file in the current theme directory, it will be used. Place the CSS file in a <code>/gravityview/css/</code> sub-directory.</p>
+<p>Example: /twentysixteen/gravityview/css/gv-default-styles.css</p>
+<p>Will use, in order: 1) [theme directory]/gravityview/css/ 2) [gravityview plugin]/css/ (no check performed)</p>
+<dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
+<p>get_stylesheet_directory()  get_stylesheet_directory_uri()</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$css_file</td><td>Filename of the CSS file (like gv-default-styles.css) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dir_path</td><td>Absolute path to the directory where the CSS file is stored. If empty, uses default <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> templates CSS folder.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string URL path to the file. </dd></dl>
+
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00030">30</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+
+<p>References <a class="el" href="gravityview_8php_source.html#l00043">GRAVITYVIEW_DIR</a>.</p>
+
+<p>Referenced by <a class="el" href="class-gravityview-default-template-list_8php_source.html#l00009">GravityView_Default_Template_List\__construct()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01320">GravityView_frontend\enqueue_default_style()</a>, <a class="el" href="class-admin-welcome_8php_source.html#l00173">GravityView_Welcome\getting_started_screen()</a>, and <a class="el" href="class-gravityview-field-notes_8php_source.html#l00117">GravityView_Field_Notes\register_scripts()</a>.</p>
 
 </div>
 </div>
@@ -223,7 +273,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string If parse_url doesn't find a 'host', returns original value. Otherwise, returns formatted link. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000141">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_striphttp</code> Strip scheme from the displayed URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000154">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_striphttp</code> Strip scheme from the displayed URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip the scheme. Return false to show scheme. (default: true)<br />
@@ -232,7 +282,7 @@ If true: <code><a href="http://example.com">http://example.com</a> =&gt; example
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000142">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_stripwww</code> Strip www from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000155">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_stripwww</code> Strip www from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip www. Return false to show www. (default: true)<br />
@@ -241,7 +291,7 @@ If true: <code>www.example.com =&gt; example.com</code> </td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000143">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_nosubdomain</code> Strip subdomains from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000156">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_nosubdomain</code> Strip subdomains from the domain? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to strip subdomains. Return false to show subdomains. (default: true)<br />
@@ -251,7 +301,7 @@ If false: <code><a href="http://demo.example.com">http://demo.example.com</a> =&
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000144">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_rootonly</code> Display link path going only to the base directory, not a sub-directory or file? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000157">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_rootonly</code> Display link path going only to the base directory, not a sub-directory or file? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to enable "root only". Return false to show full path. (default: true)<br />
@@ -261,7 +311,7 @@ If false: <code><a href="http://example.com/sub/directory/page.html">http://exam
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000145">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_noquerystring</code> Strip the query string from the end of the URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000158">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_noquerystring</code> Strip the query string from the end of the URL? <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>Whether to enable "root only". Return false to show full path. (default: true)<br />
@@ -271,20 +321,21 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00214">214</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00262">262</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="helper-functions_8php_source.html#l00316">_gravityview_strip_subdomain()</a>.</p>
+<p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="helper-functions_8php_source.html#l00364">_gravityview_strip_subdomain()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a19d96b14ac018d5d19f808b43f08ac1f"></a>
+<a class="anchor" id="a9ffd0dfdce47b042b2b26bf765c9c07c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">gravityview_get_floaty </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$height</em> = <code>87</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -294,11 +345,11 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML image tag with floaty's cute mug on it </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00156">156</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00202">202</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>References <a class="el" href="table-body_8php_source.html#l00043">$class</a>, and <a class="el" href="gravityview_8php_source.html#l00039">GRAVITYVIEW_FILE</a>.</p>
+<p>References <a class="el" href="table-body_8php_source.html#l00043">$class</a>, and <a class="el" href="gravityview_8php_source.html#l00034">GRAVITYVIEW_FILE</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00152">GravityView_Admin_Notices\admin_notice()</a>, and <a class="el" href="class-admin_8php_source.html#l00121">GravityView_Admin\get_floaty()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00152">GravityView_Admin_Notices\admin_notice()</a>, <a class="el" href="class-admin_8php_source.html#l00115">GravityView_Admin\get_floaty()</a>, and <a class="el" href="class-admin-welcome_8php_source.html#l00138">GravityView_Welcome\tabs()</a>.</p>
 
 </div>
 </div>
@@ -325,13 +376,13 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int If field ID has an input, returns that input number. Otherwise, returns 0. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int If field ID has an input, returns that input number. Otherwise, returns false. </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00442">442</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00491">491</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
 <p>References <a class="el" href="time_8php_source.html#l00017">$field_id</a>.</p>
 
-<p>Referenced by <a class="el" href="class-gravityview-field-list_8php_source.html#l00105">GravityView_Field_List\_filter_field_label()</a>, <a class="el" href="class-gravityview-field-date_8php_source.html#l00045">GravityView_Field_Date\date_display()</a>, and <a class="el" href="class-gravityview-field-time_8php_source.html#l00283">GravityView_Field_Time\date_format()</a>.</p>
+<p>Referenced by <a class="el" href="class-gravityview-field-list_8php_source.html#l00163">GravityView_Field_List\_filter_field_label()</a>, <a class="el" href="class-gravityview-field-date_8php_source.html#l00045">GravityView_Field_Date\date_display()</a>, and <a class="el" href="class-gravityview-field-time_8php_source.html#l00283">GravityView_Field_Time\date_format()</a>.</p>
 
 </div>
 </div>
@@ -360,9 +411,9 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array URL args, if exists. Empty array if not. </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00035">35</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00081">81</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-search-widget_8php_source.html#l00351">GravityView_Widget_Search\add_no_permalink_fields()</a>.</p>
+<p>Referenced by <a class="el" href="class-search-widget_8php_source.html#l00364">GravityView_Widget_Search\add_no_permalink_fields()</a>.</p>
 
 </div>
 </div>
@@ -393,13 +444,13 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Multidimensional array with <code>text</code> (Category Name) and <code>value</code> (Category ID) keys. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000146">Runs Filter:</a></b></dt><dd><code>gravityview_get_terms_choices_args</code> Modify the arguments passed to <code>get_terms()</code> <dl class="section see"><dt>See also</dt><dd>get_terms() </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000159">Runs Filter:</a></b></dt><dd><code>gravityview_get_terms_choices_args</code> Modify the arguments passed to <code>get_terms()</code> <dl class="section see"><dt>See also</dt><dd>get_terms() </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15.3 </dd></dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00469">469</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00518">518</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-search-widget_8php_source.html#l00939">GravityView_Widget_Search\get_search_filter_details()</a>.</p>
+<p>Referenced by <a class="el" href="class-search-widget_8php_source.html#l00954">GravityView_Widget_Search\get_search_filter_details()</a>.</p>
 
 </div>
 </div>
@@ -417,8 +468,7 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
       </table>
 </div><div class="memdoc">
 
-<p>Functions that don't require <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> or Gravity Forms API access but are used in the plugin to extend PHP and WP functions. </p>
-<dl class="section since"><dt>Since</dt><dd>1.12 Check whether a variable is not an empty string</dd></dl>
+<p>Check whether a variable is not an empty string. </p>
 <dl class="section see"><dt>See also</dt><dd>/templates/fields/product.php Used to check whether the product array is empty or not</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.12</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -429,7 +479,7 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool true: $mixed is <em>not</em> an empty string; false: $mixed <em>is</em> an empty string </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00018">18</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00064">64</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
 </div>
 </div>
@@ -472,7 +522,7 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 <dl class="section return"><dt>Returns</dt><dd>string Converted number in string format. </dd></dl>
 <p>Calculate the position of the decimal point in the number </p><dl class="section see"><dt>See also</dt><dd><a href="http://stackoverflow.com/a/2430144/480856">http://stackoverflow.com/a/2430144/480856</a></dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00186">186</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00234">234</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
 </div>
 </div>
@@ -513,9 +563,9 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Included file contents </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00141">141</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00187">187</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00689">GravityView_Edit_Entry_Render\edit_entry_form()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00867">GravityView_Edit_Entry_Render\render_form_buttons()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00737">GravityView_Edit_Entry_Render\edit_entry_form()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00927">GravityView_Edit_Entry_Render\render_form_buttons()</a>.</p>
 
 </div>
 </div>
@@ -547,9 +597,9 @@ GravityView_Helper_Functions_Test::test_gravityview_strip_whitespace </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Stripped string! </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00126">126</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00172">172</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00689">GravityView_Edit_Entry_Render\edit_entry_form()</a>, <a class="el" href="class-ajax_8php_source.html#l00238">GravityView_Ajax\get_field_options()</a>, and <a class="el" href="class-ajax_8php_source.html#l00271">GravityView_Ajax\get_sortable_fields()</a>.</p>
+<p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00737">GravityView_Edit_Entry_Render\edit_entry_form()</a>, <a class="el" href="class-ajax_8php_source.html#l00238">GravityView_Ajax\get_field_options()</a>, and <a class="el" href="class-ajax_8php_source.html#l00271">GravityView_Ajax\get_sortable_fields()</a>.</p>
 
 </div>
 </div>
@@ -597,11 +647,11 @@ GravityView_Helper_Functions_Test::test_gravityview_strip_whitespace </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean True: empty; false: not empty </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00338">338</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00386">386</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
-<p>Referenced by <a class="el" href="class-api_8php_source.html#l00220">GravityView_API\field_value()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01033">GravityView_Edit_Entry_Render\get_field_value()</a>, and <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">GravityView_Shortcode\parse_and_sanitize_atts()</a>.</p>
+<p>Referenced by <a class="el" href="class-api_8php_source.html#l00220">GravityView_API\field_value()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01102">GravityView_Edit_Entry_Render\get_field_value()</a>, and <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">GravityView_Shortcode\parse_and_sanitize_atts()</a>.</p>
 
 </div>
 </div>
@@ -641,11 +691,11 @@ GravityView_Helper_Functions_Test::test_gravityview_strip_whitespace </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed The value with the callback applied to all non-arrays and non-objects inside it. </dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00383">383</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00431">431</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
-<p>Referenced by <a class="el" href="class-search-widget_8php_source.html#l00393">GravityView_Widget_Search\filter_entries()</a>, <a class="el" href="class-search-widget_8php_source.html#l00520">GravityView_Widget_Search\prepare_field_filter()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01030">GravityView_Widget_Search\rgget_or_rgpost()</a>.</p>
+<p>Referenced by <a class="el" href="class-search-widget_8php_source.html#l00406">GravityView_Widget_Search\filter_entries()</a>, <a class="el" href="class-search-widget_8php_source.html#l00533">GravityView_Widget_Search\prepare_field_filter()</a>, <a class="el" href="class-search-widget_8php_source.html#l01045">GravityView_Widget_Search\rgget_or_rgpost()</a>, <a class="el" href="class-gravityview-field-post-category_8php_source.html#l00040">GravityView_Field_Post_Category\set_post_categories()</a>, and <a class="el" href="class-gravityview-field-notes_8php_source.html#l00406">GravityView_Field_Notes\strings()</a>.</p>
 
 </div>
 </div>
@@ -707,7 +757,7 @@ GravityView_Helper_Functions_Test::test_gravityview_strip_whitespace </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Sanitized CSS string</dd></dl>
 
-<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00063">63</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
+<p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00109">109</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
 <p>References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 

@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -181,7 +180,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Associative array, with the key being the capability and the value being the label shown. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000006">Runs Filter:</a></b></dt><dd><code>gravityview_field_visibility_caps</code> Modify the capabilities shown in the field dropdown <dl class="section see"><dt>See also</dt><dd><a href="http://docs.gravityview.co/article/96-how-to-modify-capabilities-shown-in-the-field-only-visible-to-dropdown">http://docs.gravityview.co/article/96-how-to-modify-capabilities-shown-in-the-field-only-visible-to-dropdown</a> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000007">Runs Filter:</a></b></dt><dd><code>gravityview_field_visibility_caps</code> Modify the capabilities shown in the field dropdown <dl class="section see"><dt>See also</dt><dd><a href="http://docs.gravityview.co/article/96-how-to-modify-capabilities-shown-in-the-field-only-visible-to-dropdown">http://docs.gravityview.co/article/96-how-to-modify-capabilities-shown-in-the-field-only-visible-to-dropdown</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.0.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -199,7 +198,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="time_8php_source.html#l00017">$field_id</a>.</p>
 
-<p>Referenced by <a class="el" href="class-delete-entry_8php_source.html#l00101">GravityView_Delete_Entry\delete_link_field_options()</a>, and <a class="el" href="class-edit-entry-admin_8php_source.html#l00149">GravityView_Edit_Entry_Admin\field_options()</a>.</p>
+<p>Referenced by <a class="el" href="class-delete-entry_8php_source.html#l00105">GravityView_Delete_Entry\delete_link_field_options()</a>, and <a class="el" href="class-edit-entry-admin_8php_source.html#l00149">GravityView_Edit_Entry_Admin\field_options()</a>.</p>
 
 </div>
 </div>
@@ -265,7 +264,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of field options with <code>label</code>, <code>value</code>, <code>type</code>, <code>default</code> keys </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000004">Runs Filter:</a></b></dt><dd><code>gravityview_template_{$field_type}_options</code> Filter the field options by field type. Filter names: <code>gravityview_template_field_options</code> and <code>gravityview_template_widget_options</code> <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000005">Runs Filter:</a></b></dt><dd><code>gravityview_template_{$field_type}_options</code> Filter the field options by field type. Filter names: <code>gravityview_template_field_options</code> and <code>gravityview_template_widget_options</code> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype"></td><td class="paramname">array</td><td>Array of field options with <code>label</code>, <code>value</code>, <code>type</code>, <code>default</code> keys </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramtype">string</td><td class="paramname">$template_id</td><td>Table slug </td></tr>
@@ -276,7 +275,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000005">Runs Filter:</a></b></dt><dd><code>gravityview_template_{$input_type}_options</code> Filter the field options by input type (<code>$input_type</code> examples: <code>textarea</code>, <code>list</code>, <code>select</code>, etc.) <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000006">Runs Filter:</a></b></dt><dd><code>gravityview_template_{$input_type}_options</code> Filter the field options by input type (<code>$input_type</code> examples: <code>textarea</code>, <code>list</code>, <code>select</code>, etc.) <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype"></td><td class="paramname">array</td><td>Array of field options with <code>label</code>, <code>value</code>, <code>type</code>, <code>default</code> keys </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramtype">string</td><td class="paramname">$template_id</td><td>Table slug </td></tr>
@@ -324,7 +323,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string type class name </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000008">Runs Filter:</a></b></dt><dd><code>gravityview/setting/class/{field_type}</code> <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000009">Runs Filter:</a></b></dt><dd><code>gravityview/setting/class/{field_type}</code> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$class_suffix</td><td>field class suffix; <code>GravityView_FieldType_{$class_suffix}</code> </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$field</td><td>field data </td></tr>
@@ -332,7 +331,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000009">Runs Filter:</a></b></dt><dd><code>gravityview/setting/class_file/{field_type}</code> <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000010">Runs Filter:</a></b></dt><dd><code>gravityview/setting/class_file/{field_type}</code> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$field_type_include_path</td><td>field class file path </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$field</td><td>field data </td></tr>
@@ -343,7 +342,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00362">362</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
 
-<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="gravityview_8php_source.html#l00048">GRAVITYVIEW_DIR</a>.</p>
+<p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="gravityview_8php_source.html#l00043">GRAVITYVIEW_DIR</a>.</p>
 
 </div>
 </div>
@@ -439,7 +438,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML output of option </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000007">Runs Filter:</a></b></dt><dd><code>gravityview/option/output/{option_type}</code> Modify the output for a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> setting.<br />
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000008">Runs Filter:</a></b></dt><dd><code>gravityview/option/output/{option_type}</code> Modify the output for a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> setting.<br />
 <code>$option_type</code> is the type of setting (<code>radio</code>, <code>text</code>, etc.) <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$output</td><td>field class name </td></tr>
@@ -562,7 +561,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
-<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00238">GravityView_Ajax\get_field_options()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00781">GravityView_Admin_Views\render_active_areas()</a>.</p>
+<p>Referenced by <a class="el" href="class-ajax_8php_source.html#l00238">GravityView_Ajax\get_field_options()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00780">GravityView_Admin_Views\render_active_areas()</a>.</p>
 
 </div>
 </div>

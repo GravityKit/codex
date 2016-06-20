@@ -23,12 +23,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.16.14.1</span>
+   &#160;<span id="projectnumber">1.17</span>
    </div>
-   <div id="projectbrief">Beautifully display your Gravity Forms data.</div>
+   <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
  </tr>
  </tbody>
@@ -172,6 +171,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1532a34f9d905d3c80fb46e16741d7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcad6cd1ba240606103c6c73fdaea87b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view.html#adcad6cd1ba240606103c6c73fdaea87b">render_widget_hooks</a> ($view_id)</td></tr>
 <tr class="separator:adcad6cd1ba240606103c6c73fdaea87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4204387ccbc960d508247227d60b9d7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view.html#a4204387ccbc960d508247227d60b9d7a">renderZone</a> ($zone= '', $atts=array(), $echo=true)</td></tr>
+<tr class="memdesc:a4204387ccbc960d508247227d60b9d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render an output zone, as configured in the Admin.  <a href="#a4204387ccbc960d508247227d60b9d7a">More...</a><br /></td></tr>
+<tr class="separator:a4204387ccbc960d508247227d60b9d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a277ab495a7cc686f64a58cb84e68b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view.html#a29a277ab495a7cc686f64a58cb84e68b">setAtts</a> ($atts)</td></tr>
 <tr class="separator:a29a277ab495a7cc686f64a58cb84e68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a330b5857455089d150d1b3ac37cac276"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view.html#a330b5857455089d150d1b3ac37cac276">setBackLinkLabel</a> ($back_link_label)</td></tr>
@@ -327,7 +329,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed|null The stored data. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-template_8php_source.html#l00702">702</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
+<p>Definition at line <a class="el" href="class-template_8php_source.html#l00703">703</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>.</p>
 
@@ -382,7 +384,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array $templates Modified template array, merged with existing $templates values </dd></dl>
 
-<p>Definition at line <a class="el" href="class-template_8php_source.html#l00727">727</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
+<p>Definition at line <a class="el" href="class-template_8php_source.html#l00728">728</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="select-template_8php_source.html#l00017">$templates</a>, <a class="el" href="class-template_8php_source.html#l00378">getFormId()</a>, <a class="el" href="class-template_8php_source.html#l00291">getPostId()</a>, and <a class="el" href="class-template_8php_source.html#l00364">getViewId()</a>.</p>
 
@@ -434,6 +436,8 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00095">$atts</a>.</p>
 
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00595">renderZone()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa90f58023f7e0a617902fd50664f0dad"></a>
@@ -474,7 +478,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00080">$context</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00549">getCurrentEntry()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00549">getCurrentEntry()</a>, and <a class="el" href="class-template_8php_source.html#l00595">renderZone()</a>.</p>
 
 </div>
 </div>
@@ -497,9 +501,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-template_8php_source.html#l00549">549</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
-<p>References <a class="el" href="class-template_8php_source.html#l00132">$_current_entry</a>, <a class="el" href="class-template_8php_source.html#l00100">$entries</a>, <a class="el" href="class-template_8php_source.html#l00305">getContext()</a>, and <a class="el" href="class-template_8php_source.html#l00392">getEntries()</a>.</p>
+<p>References <a class="el" href="class-template_8php_source.html#l00132">$_current_entry</a>, <a class="el" href="class-template_8php_source.html#l00100">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-template_8php_source.html#l00305">getContext()</a>, and <a class="el" href="class-template_8php_source.html#l00392">getEntries()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00487">getBackLinkLabel()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00487">getBackLinkLabel()</a>, and <a class="el" href="class-template_8php_source.html#l00595">renderZone()</a>.</p>
 
 </div>
 </div>
@@ -597,6 +601,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-template_8php_source.html#l00342">342</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00595">renderZone()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a59b8873fdec2a06dac59d6954b4b94f6"></a>
@@ -644,7 +650,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00090">$form</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00487">getBackLinkLabel()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00487">getBackLinkLabel()</a>, and <a class="el" href="class-template_8php_source.html#l00595">renderZone()</a>.</p>
 
 </div>
 </div>
@@ -666,7 +672,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00064">$form_id</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00727">add_id_specific_templates()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00728">add_id_specific_templates()</a>.</p>
 
 </div>
 </div>
@@ -701,7 +707,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-template_8php_source.html#l00190">190</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01335">GravityView_frontend\add_columns_sort_links()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00552">GravityView_Delete_Entry\check_user_cap_delete_entry()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00221">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, <a class="el" href="class-api_8php_source.html#l00428">GravityView_API\directory_link()</a>, <a class="el" href="class-search-widget_8php_source.html#l01107">GravityView_Widget_Search\enqueue_datepicker()</a>, <a class="el" href="class-api_8php_source.html#l00142">GravityView_API\field_class()</a>, <a class="el" href="class-api_8php_source.html#l00194">GravityView_API\field_html_attr_id()</a>, <a class="el" href="class-api_8php_source.html#l00026">GravityView_API\field_label()</a>, <a class="el" href="class-api_8php_source.html#l00220">GravityView_API\field_value()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00284">GravityView_Entry_Link_Shortcode\get_entry()</a>, <a class="el" href="class-gravityview-field-fileupload_8php_source.html#l00053">GravityView_Field_FileUpload\get_files_array()</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00170">GravityView_Entry_List\get_output()</a>, <a class="el" href="class-search-widget_8php_source.html#l00835">GravityView_Widget_Search\get_search_class()</a>, <a class="el" href="class-search-widget_8php_source.html#l00939">GravityView_Widget_Search\get_search_filter_details()</a>, <a class="el" href="class-search-widget_8php_source.html#l00864">GravityView_Widget_Search\get_search_form_action()</a>, <a class="el" href="class-gravityview-shortcode_8php_source.html#l00146">GravityView_Shortcode\get_view_detail()</a>, <a class="el" href="class-api_8php_source.html#l00791">gravityview_back_link()</a>, <a class="el" href="class-api_8php_source.html#l01014">gravityview_get_context()</a>, <a class="el" href="class-api_8php_source.html#l01006">gravityview_get_view_id()</a>, <a class="el" href="class-api_8php_source.html#l00725">gv_container_class()</a>, <a class="el" href="class-api_8php_source.html#l00394">GravityView_API\no_results()</a>, <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00103">GravityView_Widget_Poll\pre_render_frontend()</a>, <a class="el" href="class-gravityview-widget_8php_source.html#l00251">GravityView_Widget\pre_render_frontend()</a>, <a class="el" href="class-search-widget_8php_source.html#l00520">GravityView_Widget_Search\prepare_field_filter()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00249">GravityView_Edit_Entry_Render\print_scripts()</a>, <a class="el" href="class-gravityview-widget-page-links_8php_source.html#l00027">GravityView_Widget_Page_Links\render_frontend()</a>, <a class="el" href="class-gravityview-widget-pagination-info_8php_source.html#l00031">GravityView_Widget_Pagination_Info\render_frontend()</a>, <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00161">GravityView_Widget_Poll\render_frontend()</a>, <a class="el" href="class-template_8php_source.html#l00777">render_widget_hooks()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00202">GravityView_Delete_Entry\set_entry()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00196">GravityView_Edit_Entry_Render\setup_vars()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00113">GravityView_Entry_Link_Shortcode\shortcode()</a>, <a class="el" href="class-search-widget_8php_source.html#l01009">GravityView_Widget_Search\the_clear_search_button()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01066">GravityView_frontend\updateViewSorting()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">GravityView_Search_WP_Widget\widget()</a>.</p>
+<p>Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01369">GravityView_frontend\add_columns_sort_links()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00601">GravityView_Delete_Entry\check_user_cap_delete_entry()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00221">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, <a class="el" href="class-api_8php_source.html#l00428">GravityView_API\directory_link()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00456">GravityView_Field_Notes\display_note()</a>, <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-signature_8php_source.html#l00073">GravityView_Plugin_Hooks_Gravity_Forms_Signature\edit_entry_field_input()</a>, <a class="el" href="class-search-widget_8php_source.html#l01151">GravityView_Widget_Search\enqueue_datepicker()</a>, <a class="el" href="class-api_8php_source.html#l00142">GravityView_API\field_class()</a>, <a class="el" href="class-api_8php_source.html#l00194">GravityView_API\field_html_attr_id()</a>, <a class="el" href="class-api_8php_source.html#l00026">GravityView_API\field_label()</a>, <a class="el" href="class-api_8php_source.html#l00220">GravityView_API\field_value()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00551">GravityView_Field_Notes\get_add_note_part()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00284">GravityView_Entry_Link_Shortcode\get_entry()</a>, <a class="el" href="class-gravityview-field-fileupload_8php_source.html#l00053">GravityView_Field_FileUpload\get_files_array()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00590">GravityView_Field_Notes\get_note_emails_array()</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00170">GravityView_Entry_List\get_output()</a>, <a class="el" href="class-search-widget_8php_source.html#l00851">GravityView_Widget_Search\get_search_class()</a>, <a class="el" href="class-search-widget_8php_source.html#l00954">GravityView_Widget_Search\get_search_filter_details()</a>, <a class="el" href="class-search-widget_8php_source.html#l00879">GravityView_Widget_Search\get_search_form_action()</a>, <a class="el" href="class-gravityview-shortcode_8php_source.html#l00146">GravityView_Shortcode\get_view_detail()</a>, <a class="el" href="class-api_8php_source.html#l00799">gravityview_back_link()</a>, <a class="el" href="class-api_8php_source.html#l01022">gravityview_get_context()</a>, <a class="el" href="class-api_8php_source.html#l01014">gravityview_get_view_id()</a>, <a class="el" href="class-api_8php_source.html#l00733">gv_container_class()</a>, <a class="el" href="class-api_8php_source.html#l00394">GravityView_API\no_results()</a>, <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00103">GravityView_Widget_Poll\pre_render_frontend()</a>, <a class="el" href="class-gravityview-widget_8php_source.html#l00251">GravityView_Widget\pre_render_frontend()</a>, <a class="el" href="class-search-widget_8php_source.html#l00533">GravityView_Widget_Search\prepare_field_filter()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00249">GravityView_Edit_Entry_Render\print_scripts()</a>, <a class="el" href="class-gravityview-widget-page-links_8php_source.html#l00027">GravityView_Widget_Page_Links\render_frontend()</a>, <a class="el" href="class-gravityview-widget-pagination-info_8php_source.html#l00031">GravityView_Widget_Pagination_Info\render_frontend()</a>, <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00161">GravityView_Widget_Poll\render_frontend()</a>, <a class="el" href="class-template_8php_source.html#l00778">render_widget_hooks()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00206">GravityView_Delete_Entry\set_entry()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00196">GravityView_Edit_Entry_Render\setup_vars()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00113">GravityView_Entry_Link_Shortcode\shortcode()</a>, <a class="el" href="class-search-widget_8php_source.html#l01024">GravityView_Widget_Search\the_clear_search_button()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01074">GravityView_frontend\updateViewSorting()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">GravityView_Search_WP_Widget\widget()</a>.</p>
 
 </div>
 </div>
@@ -721,7 +727,7 @@ Protected Attributes</h2></td></tr>
 <p>Get an array with pagination information. </p>
 <dl class="section since"><dt>Since</dt><dd>1.13</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array {  int $first The starting entry number (counter, not ID)  int $last The last displayed entry number (counter, not ID)  int $total The total number of entries } </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000106">Runs Filter:</a></b></dt><dd><code>gravityview_pagination_counts</code> Modify the displayed pagination numbers <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000109">Runs Filter:</a></b></dt><dd><code>gravityview_pagination_counts</code> Modify the displayed pagination numbers <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$counts</td><td>Array with $first, $last, $total numbers in that order </td></tr>
@@ -776,7 +782,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00085">$post_id</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00727">add_id_specific_templates()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00728">add_id_specific_templates()</a>.</p>
 
 </div>
 </div>
@@ -838,6 +844,8 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00053">$template_part_slug</a>.</p>
 
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00595">renderZone()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8b8548c95e1c4bca96150737714c9722"></a>
@@ -858,7 +866,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00105">$total_entries</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00442">getPaginationCounts()</a>, and <a class="el" href="class-template_8php_source.html#l00777">render_widget_hooks()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00442">getPaginationCounts()</a>, and <a class="el" href="class-template_8php_source.html#l00778">render_widget_hooks()</a>.</p>
 
 </div>
 </div>
@@ -878,7 +886,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-template_8php_source.html#l00364">364</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00727">add_id_specific_templates()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00728">add_id_specific_templates()</a>.</p>
 
 </div>
 </div>
@@ -937,7 +945,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd>Gamajo_Template_Loader::locate_template() </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>null|string NULL: Template not found; String: path to template </dd></dl>
 
-<p>Definition at line <a class="el" href="class-template_8php_source.html#l00674">674</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
+<p>Definition at line <a class="el" href="class-template_8php_source.html#l00675">675</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
 </div>
 </div>
@@ -971,7 +979,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-template_8php_source.html#l00752">752</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
+<p>Definition at line <a class="el" href="class-template_8php_source.html#l00753">753</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
 <p>References <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="class-template_8php_source.html#l00541">setTemplatePartName()</a>, and <a class="el" href="class-template_8php_source.html#l00527">setTemplatePartSlug()</a>.</p>
 
@@ -998,7 +1006,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <p>Filter widgets not in the current zone </p><dl class="section since"><dt>Since</dt><dd>1.16</dd></dl>
 <p>Prevent output if no widgets to show. </p><dl class="section since"><dt>Since</dt><dd>1.16</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000107">Runs Filter:</a></b></dt><dd><code>gravityview/widgets/wrapper_css_class</code> The CSS class applied to the widget container <code>&lt;div&gt;</code>. <dl class="section since"><dt>Since</dt><dd>1.16.2 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000111">Runs Filter:</a></b></dt><dd><code>gravityview/widgets/wrapper_css_class</code> The CSS class applied to the widget container <code>&lt;div&gt;</code>. <dl class="section since"><dt>Since</dt><dd>1.16.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$css_class</td><td>Default: <code>gv-grid gv-widgets-{zone}</code> where <code>{zone}</code> is replaced by the current <code>$zone</code> value. If the View has no results, adds <code>gv-widgets-no-results</code> </td></tr>
@@ -1010,9 +1018,72 @@ Protected Attributes</h2></td></tr>
 </dd></dl>
 <p>Prevent widgets from being called twice. Checking for loop_start prevents themes and plugins that pre-process shortcodes from triggering the action before displaying. Like, ahem, the Divi theme and WordPress SEO plugin</p>
 
-<p>Definition at line <a class="el" href="class-template_8php_source.html#l00777">777</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
+<p>Definition at line <a class="el" href="class-template_8php_source.html#l00778">778</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
-<p>References <a class="el" href="class-template_8php_source.html#l00070">$view_id</a>, <a class="el" href="gravityview_8php_source.html#l00333">GravityView_Plugin\get_default_widget_areas()</a>, <a class="el" href="class-template_8php_source.html#l00190">getInstance()</a>, <a class="el" href="class-template_8php_source.html#l00406">getTotalEntries()</a>, <a class="el" href="class-api_8php_source.html#l01014">gravityview_get_context()</a>, and <a class="el" href="class-api_8php_source.html#l00953">gravityview_get_current_view_data()</a>.</p>
+<p>References <a class="el" href="class-template_8php_source.html#l00070">$view_id</a>, <a class="el" href="gravityview_8php_source.html#l00335">GravityView_Plugin\get_default_widget_areas()</a>, <a class="el" href="class-template_8php_source.html#l00190">getInstance()</a>, <a class="el" href="class-template_8php_source.html#l00406">getTotalEntries()</a>, <a class="el" href="class-api_8php_source.html#l01022">gravityview_get_context()</a>, and <a class="el" href="class-api_8php_source.html#l00961">gravityview_get_current_view_data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4204387ccbc960d508247227d60b9d7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">renderZone </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$zone</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$atts</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$echo</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render an output zone, as configured in the Admin. </p>
+<dl class="section since"><dt>Since</dt><dd>1.16.4 Added $echo parameter</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$zone</td><td>The zone name, like 'footer-left' </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$echo</td><td>Whether to print the output</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string|null </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000110">Runs Filter:</a></b></dt><dd><code>gravityview_table_cells</code> Modify the fields displayed in a table <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$fields</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___view.html" title="If this file is called directly, abort. ">GravityView_View</a></td><td class="paramname">$this</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+<p>If a zone has no field output, choose whether to show wrapper False by default to keep backward compatibility </p><dl class="section since"><dt>Since</dt><dd>1.7.6 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$hide_empty_zone</td><td>Default: false</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="class-template_8php_source.html#l00595">595</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
+
+<p>References <a class="el" href="class-template_8php_source.html#l00095">$atts</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-template_8php_source.html#l00075">$fields</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="class-template_8php_source.html#l00255">getAtts()</a>, <a class="el" href="class-template_8php_source.html#l00305">getContext()</a>, <a class="el" href="class-template_8php_source.html#l00549">getCurrentEntry()</a>, <a class="el" href="class-template_8php_source.html#l00342">getField()</a>, <a class="el" href="class-template_8php_source.html#l00277">getForm()</a>, <a class="el" href="class-template_8php_source.html#l00520">getTemplatePartSlug()</a>, and <a class="el" href="class-api_8php_source.html#l01125">gravityview_field_output()</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +1516,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00059">$template_part_name</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00752">render()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00753">render()</a>.</p>
 
 </div>
 </div>
@@ -1473,7 +1544,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="class-template_8php_source.html#l00053">$template_part_slug</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00752">render()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00753">render()</a>.</p>
 
 </div>
 </div>
@@ -1598,7 +1669,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-template_8php_source.html#l00095">95</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00148">__construct()</a>, <a class="el" href="class-template_8php_source.html#l00255">getAtts()</a>, and <a class="el" href="class-template_8php_source.html#l00270">setAtts()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00148">__construct()</a>, <a class="el" href="class-template_8php_source.html#l00255">getAtts()</a>, <a class="el" href="class-template_8php_source.html#l00595">renderZone()</a>, and <a class="el" href="class-template_8php_source.html#l00270">setAtts()</a>.</p>
 
 </div>
 </div>
@@ -1694,7 +1765,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-template_8php_source.html#l00075">75</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00320">getFields()</a>, and <a class="el" href="class-template_8php_source.html#l00334">setFields()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00320">getFields()</a>, <a class="el" href="class-template_8php_source.html#l00595">renderZone()</a>, and <a class="el" href="class-template_8php_source.html#l00334">setFields()</a>.</p>
 
 </div>
 </div>
@@ -2036,7 +2107,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-template_8php_source.html#l00070">70</a> of file <a class="el" href="class-template_8php_source.html">class-template.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-template_8php_source.html#l00777">render_widget_hooks()</a>, and <a class="el" href="class-template_8php_source.html#l00371">setViewId()</a>.</p>
+<p>Referenced by <a class="el" href="class-template_8php_source.html#l00778">render_widget_hooks()</a>, and <a class="el" href="class-template_8php_source.html#l00371">setViewId()</a>.</p>
 
 </div>
 </div>
