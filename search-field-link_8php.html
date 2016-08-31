@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.17</span>
+   &#160;<span id="projectnumber">1.17.3</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a class="el" href="dir_f11fae83793c46d5bf671f1522740073.html">widgets</a></li><li class="navelem"><a class="el" href="dir_a221bea27b6a35e6e61591a251b6c5a6.html">search-widget</a></li><li class="navelem"><a class="el" href="dir_19c5e34e786d3cf7f1f4b43e4e42a537.html">templates</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_267c635799763438befb1f556338555b.html">includes</a></li><li class="navelem"><a class="el" href="dir_e625d9522ace9ca24c1a170f9e250f06.html">widgets</a></li><li class="navelem"><a class="el" href="dir_a089084f077260ca9dafda9e5d9bd175.html">search-widget</a></li><li class="navelem"><a class="el" href="dir_903244d22c68b36c82faefed0421f0d2.html">templates</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -105,7 +105,7 @@ Variables</h2></td></tr>
 <tr class="memitem:add47a7f886e74847997a4044e9903a0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#add47a7f886e74847997a4044e9903a0a">$gravityview_view</a> = <a class="el" href="class_gravity_view___view.html#a76cf4523dbaebd58c27db806e01b73d9">GravityView_View::getInstance</a>()</td></tr>
 <tr class="memdesc:add47a7f886e74847997a4044e9903a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the search LINK input field.  <a href="#add47a7f886e74847997a4044e9903a0a">More...</a><br /></td></tr>
 <tr class="separator:add47a7f886e74847997a4044e9903a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cd6f1f75552517065617516de8833ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#ad8def7f0ea0b3e74e8098162db2ba8eb">if</a>(empty($search_field['choices']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a8cd6f1f75552517065617516de8833ee">$links_label</a> = empty( $search_field['label'] ) ? __( 'Show only:', 'gravityview' ) : $search_field['label']</td></tr>
+<tr class="memitem:a8cd6f1f75552517065617516de8833ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_sites_2vagrant-local_2www_2wordpress-default_2wp-content_2plugins_2gravityview_2includes_2exten6ee856fd0ac3661b9a88bff42723f579.html#aeca40cd4ad49aff51359256dc59b7cfb">if</a>(empty($search_field['choices']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#a8cd6f1f75552517065617516de8833ee">$links_label</a> = empty( $search_field['label'] ) ? __( 'Show only:', 'gravityview' ) : $search_field['label']</td></tr>
 <tr class="separator:a8cd6f1f75552517065617516de8833ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4f9912e245ca28642d498a722b2056b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-link_8php.html#ad4f9912e245ca28642d498a722b2056b">$links_sep</a> = apply_filters( 'gravityview/extension/search/links_sep', '&amp;nbsp;|&amp;nbsp;' )</td></tr>
 <tr class="separator:ad4f9912e245ca28642d498a722b2056b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +128,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="search-field-link_8php_source.html#l00013">13</a> of file <a class="el" href="search-field-link_8php_source.html">search-field-link.php</a>.</p>
+
+<p>Referenced by <a class="el" href="parsers_8php_source.html#l00056">WXR_Parser_SimpleXML\parse()</a>.</p>
 
 </div>
 </div>
@@ -157,7 +159,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000175">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_sep</code> Change the label for the "Link" search bar input type <dl class="section since"><dt>Since</dt><dd>TODO Use search field label as default value, if set. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000179">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_label</code> Change the label for the "Link" search bar input type <dl class="section since"><dt>Since</dt><dd>1.17 Use search field label as default value, if set. Before that, it was hard-coded to "Show only:" </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$links_label</td><td>Default: <code>Show only:</code> if search field label is not set. Otherwise, search field label. </td></tr>
@@ -179,7 +181,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000176">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_sep</code> Change what separates search bar "Link" input type links <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000180">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/links_sep</code> Change what separates search bar "Link" input type links <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$links_sep</td><td>Default: <code>&#160;|&#160;</code> Used to connect multiple links </td></tr>
   </table>

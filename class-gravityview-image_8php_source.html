@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.17</span>
+   &#160;<span id="projectnumber">1.17.3</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_267c635799763438befb1f556338555b.html">includes</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -266,7 +266,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_gravity_view___image.html#a8b267aa0adca2018097f6f6f4c804d46">  172</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_gravity_view___image.html#a8b267aa0adca2018097f6f6f4c804d46">html</a>() {</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        $html = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="demo_8php.html#a6f96e7fc92441776c9d1cd3386663b40">$html</a> = <span class="stringliteral">&#39;&#39;</span>;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">if</span> ( $this-&gt;<a class="code" href="class_gravity_view___image.html#afdc43b8b1ed060904f31a465b53e9273">validate_image_src</a>() &amp;&amp; ! empty( $this-&gt;src ) ) {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            $atts = <span class="stringliteral">&#39;&#39;</span>;</div>
@@ -277,7 +277,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                $atts .= sprintf( <span class="stringliteral">&#39; %s=&quot;%s&quot;&#39;</span>, $attr, esc_attr( $this-&gt;{$attr} ) );</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            $html = sprintf( <span class="stringliteral">&#39;&lt;img src=&quot;%s&quot;%s /&gt;&#39;</span>, esc_url_raw( $this-&gt;src ), $atts );</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <a class="code" href="demo_8php.html#a6f96e7fc92441776c9d1cd3386663b40">$html</a> = sprintf( <span class="stringliteral">&#39;&lt;img src=&quot;%s&quot;%s /&gt;&#39;</span>, esc_url_raw( $this-&gt;src ), $atts );</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">        /**</span></div>
@@ -285,7 +285,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">         * @param string $html the generated image html</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">         * @param GravityView_Image $this The current image object</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">return</span> apply_filters( <span class="stringliteral">&#39;gravityview_image_html&#39;</span>, $html, $this );</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">return</span> apply_filters( <span class="stringliteral">&#39;gravityview_image_html&#39;</span>, <a class="code" href="demo_8php.html#a6f96e7fc92441776c9d1cd3386663b40">$html</a>, $this );</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
 <div class="ttc" id="class_gravity_view___image_html"><div class="ttname"><a href="class_gravity_view___image.html">GravityView_Image</a></div><div class="ttdoc">Generic class for generating image tag. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-image_8php_source.html#l00005">class-gravityview-image.php:5</a></div></div>
@@ -296,6 +296,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_gravity_view___image_html_a2c265bba1724371bb03e6901297c30b2"><div class="ttname"><a href="class_gravity_view___image.html#a2c265bba1724371bb03e6901297c30b2">GravityView_Image\$height</a></div><div class="ttdeci">$height</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-image_8php_source.html#l00011">class-gravityview-image.php:11</a></div></div>
 <div class="ttc" id="class_gravity_view___image_html_a7516ca30af0db3cdbf9a7739b48ce91d"><div class="ttname"><a href="class_gravity_view___image.html#a7516ca30af0db3cdbf9a7739b48ce91d">GravityView_Image\__toString</a></div><div class="ttdeci">__toString()</div><div class="ttdoc">Handle being treated as a string by returning the HTML. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-image_8php_source.html#l00047">class-gravityview-image.php:47</a></div></div>
 <div class="ttc" id="class_gravity_view___image_html_a5795120b4b324bc4ca83f1e6fdce7d57"><div class="ttname"><a href="class_gravity_view___image.html#a5795120b4b324bc4ca83f1e6fdce7d57">GravityView_Image\$width</a></div><div class="ttdeci">$width</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-image_8php_source.html#l00010">class-gravityview-image.php:10</a></div></div>
+<div class="ttc" id="demo_8php_html_a6f96e7fc92441776c9d1cd3386663b40"><div class="ttname"><a href="demo_8php.html#a6f96e7fc92441776c9d1cd3386663b40">$html</a></div><div class="ttdeci">$html</div><div class="ttdef"><b>Definition:</b> <a href="demo_8php_source.html#l00007">demo.php:7</a></div></div>
 <div class="ttc" id="class_gravity_view___image_html_af154f0242f5ab4e1e07896e18159c4ad"><div class="ttname"><a href="class_gravity_view___image.html#af154f0242f5ab4e1e07896e18159c4ad">GravityView_Image\$getimagesize</a></div><div class="ttdeci">$getimagesize</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-image_8php_source.html#l00035">class-gravityview-image.php:35</a></div></div>
 <div class="ttc" id="class_gravity_view___image_html_afdc43b8b1ed060904f31a465b53e9273"><div class="ttname"><a href="class_gravity_view___image.html#afdc43b8b1ed060904f31a465b53e9273">GravityView_Image\validate_image_src</a></div><div class="ttdeci">validate_image_src()</div><div class="ttdoc">Verify that the src URL matches image patterns. </div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-image_8php_source.html#l00086">class-gravityview-image.php:86</a></div></div>
 <div class="ttc" id="class_gravity_view___image_html_a973baaba285951225df769fc7a6655bf"><div class="ttname"><a href="class_gravity_view___image.html#a973baaba285951225df769fc7a6655bf">GravityView_Image\$src</a></div><div class="ttdeci">$src</div><div class="ttdef"><b>Definition:</b> <a href="class-gravityview-image_8php_source.html#l00008">class-gravityview-image.php:8</a></div></div>

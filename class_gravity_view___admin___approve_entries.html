@@ -26,7 +26,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.17</span>
+   &#160;<span id="projectnumber">1.17.3</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -92,7 +92,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a>  </div>
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Admin_ApproveEntries Class Reference</div>  </div>
 </div><!--header-->
@@ -113,6 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3a6d9a4201b622ee07aab115b3da129"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#ac3a6d9a4201b622ee07aab115b3da129">after_update_entry_update_approved_meta</a> ($form, $entry_id=NULL)</td></tr>
 <tr class="memdesc:ac3a6d9a4201b622ee07aab115b3da129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the is_approved meta whenever the entry is updated.  <a href="#ac3a6d9a4201b622ee07aab115b3da129">More...</a><br /></td></tr>
 <tr class="separator:ac3a6d9a4201b622ee07aab115b3da129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7909f33bf703560139279b9cbf00b0a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#a7909f33bf703560139279b9cbf00b0a0">filter_links_entry_list</a> ($filter_links=array(), $form=array(), $include_counts=true)</td></tr>
+<tr class="memdesc:a7909f33bf703560139279b9cbf00b0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add filter links to the Entries page.  <a href="#a7909f33bf703560139279b9cbf00b0a0">More...</a><br /></td></tr>
+<tr class="separator:a7909f33bf703560139279b9cbf00b0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3748ed0de75ddc2aaf3264a26fba093"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#ab3748ed0de75ddc2aaf3264a26fba093">process_bulk_action</a> ()</td></tr>
 <tr class="memdesc:ab3748ed0de75ddc2aaf3264a26fba093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture bulk actions - gf_entries table.  <a href="#ab3748ed0de75ddc2aaf3264a26fba093">More...</a><br /></td></tr>
 <tr class="separator:ab3748ed0de75ddc2aaf3264a26fba093"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9ca9c4ae657652eaf8937d5aaf5bd8f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#ac9ca9c4ae657652eaf8937d5aaf5bd8f">add_entry_approved_hidden_input</a> ($form_id, $field_id, $value, $entry, $query_string)</td></tr>
+<tr class="memdesc:ac9ca9c4ae657652eaf8937d5aaf5bd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a hidden input that is used in the Javascript to show approved/disapproved entries checkbox.  <a href="#ac9ca9c4ae657652eaf8937d5aaf5bd8f">More...</a><br /></td></tr>
 <tr class="separator:ac9ca9c4ae657652eaf8937d5aaf5bd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4177a6332fe9a80eea9b05684fe311f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#af4177a6332fe9a80eea9b05684fe311f">get_approved_column</a> ($form)</td></tr>
 <tr class="memdesc:af4177a6332fe9a80eea9b05684fe311f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the approve field.input id.  <a href="#af4177a6332fe9a80eea9b05684fe311f">More...</a><br /></td></tr>
@@ -147,18 +152,32 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a4c420c3c5e74a43e183ac7d1117defd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#a4c420c3c5e74a43e183ac7d1117defd7">get_bulk_actions</a> ($form_id)</td></tr>
 <tr class="memdesc:a4c420c3c5e74a43e183ac7d1117defd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an array of options to be added to the Gravity Forms "Bulk action" dropdown in a "GravityView" option group.  <a href="#a4c420c3c5e74a43e183ac7d1117defd7">More...</a><br /></td></tr>
 <tr class="separator:a4c420c3c5e74a43e183ac7d1117defd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0144a699f9472f281355aa182ace41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#aac0144a699f9472f281355aa182ace41">get_first_form_id</a> ()</td></tr>
+<tr class="memdesc:aac0144a699f9472f281355aa182ace41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first form ID from Gravity Forms, sorted in the same order as in the All Forms page.  <a href="#aac0144a699f9472f281355aa182ace41">More...</a><br /></td></tr>
+<tr class="separator:aac0144a699f9472f281355aa182ace41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41ce79987671f354f92004ac344513d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#af41ce79987671f354f92004ac344513d">get_form_id</a> ()</td></tr>
+<tr class="memdesc:af41ce79987671f354f92004ac344513d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the form ID of the form currently being displayed.  <a href="#af41ce79987671f354f92004ac344513d">More...</a><br /></td></tr>
+<tr class="separator:af41ce79987671f354f92004ac344513d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31cdc2dee085ee31c0ba1db6be98948"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#aa31cdc2dee085ee31c0ba1db6be98948">get_gv_bulk_action</a> ()</td></tr>
+<tr class="memdesc:aa31cdc2dee085ee31c0ba1db6be98948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Bulk Action submitted value if it is a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Approve/Unapprove action.  <a href="#aa31cdc2dee085ee31c0ba1db6be98948">More...</a><br /></td></tr>
+<tr class="separator:aa31cdc2dee085ee31c0ba1db6be98948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f39c9b6e54ed38025caa5ab316ead7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#a3f39c9b6e54ed38025caa5ab316ead7e">show_approve_entry_column</a> ($form_id)</td></tr>
 <tr class="memdesc:a3f39c9b6e54ed38025caa5ab316ead7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the Approve/Reject Entry column be shown in the GF Entries page?  <a href="#a3f39c9b6e54ed38025caa5ab316ead7e">More...</a><br /></td></tr>
 <tr class="separator:a3f39c9b6e54ed38025caa5ab316ead7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a12ea7f5f39de38ea7917e6b0ca6a26fe"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#a12ea7f5f39de38ea7917e6b0ca6a26fe">update_approved_meta</a> ($entry_id, $is_approved)</td></tr>
-<tr class="memdesc:a12ea7f5f39de38ea7917e6b0ca6a26fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the <code>is_approved</code> entry meta value.  <a href="#a12ea7f5f39de38ea7917e6b0ca6a26fe">More...</a><br /></td></tr>
-<tr class="separator:a12ea7f5f39de38ea7917e6b0ca6a26fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9cbfda3bb4d19dafededc054cb5775"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#a8d9cbfda3bb4d19dafededc054cb5775">update_approved_meta</a> ($entry_id, $is_approved, $form_id=0)</td></tr>
+<tr class="memdesc:a8d9cbfda3bb4d19dafededc054cb5775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the <code>is_approved</code> entry meta value.  <a href="#a8d9cbfda3bb4d19dafededc054cb5775">More...</a><br /></td></tr>
+<tr class="separator:a8d9cbfda3bb4d19dafededc054cb5775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ae994dcba3037068b5e1611c619fad3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#a4ae994dcba3037068b5e1611c619fad3">update_bulk</a> ($entries, $approved, $form_id)</td></tr>
 <tr class="memdesc:a4ae994dcba3037068b5e1611c619fad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a bulk of entries to update the approve field/property.  <a href="#a4ae994dcba3037068b5e1611c619fad3">More...</a><br /></td></tr>
 <tr class="separator:a4ae994dcba3037068b5e1611c619fad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa6f60d2ed193e39d4678d65543e353c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___approve_entries.html#aa6f60d2ed193e39d4678d65543e353c3">$bulk_action_prefixes</a></td></tr>
+<tr class="separator:aa6f60d2ed193e39d4678d65543e353c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -177,9 +196,9 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00020">20</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00029">29</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
-<p>References <a class="el" href="class-admin-approve-entries_8php_source.html#l00026">add_hooks()</a>.</p>
+<p>References <a class="el" href="class-admin-approve-entries_8php_source.html#l00035">add_hooks()</a>.</p>
 
 </div>
 </div>
@@ -234,9 +253,23 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00542">542</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Add a hidden input that is used in the Javascript to show approved/disapproved entries checkbox. </p>
+<p>See the /assets/js/admin-entries-list.js setInitialApprovedEntries method</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">$form_id</td><td></td></tr>
+    <tr><td class="paramname">$field_id</td><td></td></tr>
+    <tr><td class="paramname">$value</td><td></td></tr>
+    <tr><td class="paramname">$entry</td><td></td></tr>
+    <tr><td class="paramname">$query_string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00660">660</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+
+<p>References <a class="el" href="_pressmatic_01_sites_2gravityview-core-dev_2app_2public_2wp-content_2plugins_2gravityview_2inclu63426d3cd767a1c41d47129f4c25fde9_source.html#l00027">$entry</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -263,7 +296,7 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of fields </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00084">84</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00161">161</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
 </div>
 </div>
@@ -290,9 +323,9 @@ Static Private Member Functions</h2></td></tr>
 <p>Edit Gravity Form page</p>
 <p>gf_entries page - entries table screen </p>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00026">26</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00035">35</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00020">__construct()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00029">__construct()</a>.</p>
 
 </div>
 </div>
@@ -310,9 +343,9 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00560">560</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00720">720</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
-<p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="data-source_8php_source.html#l00017">$forms</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00619">get_bulk_actions()</a>, <a class="el" href="gravityview_8php_source.html#l00034">GRAVITYVIEW_FILE</a>, <a class="el" href="connector-functions_8php_source.html#l00047">gravityview_get_forms()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00663">show_approve_entry_column()</a>, and <a class="el" href="gravityview_8php_source.html#l00087">GravityView_Plugin\version</a>.</p>
+<p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00772">get_bulk_actions()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00682">get_form_id()</a>, <a class="el" href="gravityview_8php_source.html#l00036">GRAVITYVIEW_FILE</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00816">show_approve_entry_column()</a>, and <a class="el" href="gravityview_8php_source.html#l00089">GravityView_Plugin\version</a>.</p>
 
 </div>
 </div>
@@ -350,9 +383,9 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00366">366</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00470">470</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
-<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-admin-approve-entries_8php_source.html#l00381">after_update_entry_update_approved_meta()</a>.</p>
+<p>References <a class="el" href="_pressmatic_01_sites_2gravityview-core-dev_2app_2public_2wp-content_2plugins_2gravityview_2inclu63426d3cd767a1c41d47129f4c25fde9_source.html#l00027">$entry</a>, and <a class="el" href="class-admin-approve-entries_8php_source.html#l00485">after_update_entry_update_approved_meta()</a>.</p>
 
 </div>
 </div>
@@ -392,11 +425,69 @@ Static Private Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>If the form doesn't contain the approve field, don't assume anything.</p>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00381">381</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00485">485</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
-<p>References <a class="el" href="notes_8php_source.html#l00027">$entry</a>.</p>
+<p>References <a class="el" href="_pressmatic_01_sites_2gravityview-core-dev_2app_2public_2wp-content_2plugins_2gravityview_2inclu63426d3cd767a1c41d47129f4c25fde9_source.html#l00027">$entry</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00366">after_submission()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00470">after_submission()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7909f33bf703560139279b9cbf00b0a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">filter_links_entry_list </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$filter_links</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$include_counts</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add filter links to the Entries page. </p>
+<p>Can be disabled by returning false on the <code>gravityview/approve_entries/show_filter_links_entry_list</code> filter</p>
+<dl class="section since"><dt>Since</dt><dd>1.17.1</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$filter_links</td><td>Array of links to include in the subsubsub filter list. Includes <code>id</code>, <code>field_filters</code>, <code>count</code>, and <code>label</code> keys </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>GF Form object of current form </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$include_counts</td><td>Whether to include counts in the output</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array Filter links, with <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> approved/disapproved links added </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000013">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/show_filter_links_entry_list</code> Disable filter links <dl class="section since"><dt>Since</dt><dd>1.17.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$show_filter_links</td><td>True: show the "approved"/"disapproved" filter links. False: hide them. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>GF Form object of current form </td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00085">85</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+
+<p>References <a class="el" href="connector-functions_8php_source.html#l00083">gravityview_get_entry_ids()</a>.</p>
 
 </div>
 </div>
@@ -431,7 +522,7 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false|null|string Returns the input ID of the approved field. Returns NULL if no approved fields were found. Returns false if $form_id wasn't set. </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00507">507</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00614">614</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
 <p>References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-common_8php_source.html#l00028">GVCommon\get_form()</a>.</p>
 
@@ -468,7 +559,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of actions to be added to the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> option group </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000013">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/bulk_actions</code> Modify the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> "Bulk action" dropdown list. Return an empty array to hide. <dl class="section see"><dt>See also</dt><dd><a href="https://gist.github.com/zackkatz/82785402c996b51b4dc9">https://gist.github.com/zackkatz/82785402c996b51b4dc9</a> for an example of how to use this filter </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000015">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/bulk_actions</code> Modify the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> "Bulk action" dropdown list. Return an empty array to hide. <dl class="section see"><dt>See also</dt><dd><a href="https://gist.github.com/zackkatz/82785402c996b51b4dc9">https://gist.github.com/zackkatz/82785402c996b51b4dc9</a> for an example of how to use this filter </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -479,11 +570,109 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00619">619</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00772">772</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
 <p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00560">add_scripts_and_styles()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00720">add_scripts_and_styles()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac0144a699f9472f281355aa182ace41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_first_form_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the first form ID from Gravity Forms, sorted in the same order as in the All Forms page. </p>
+<dl class="section see"><dt>See also</dt><dd>GFEntryList::all_entries_page() This method is based on the form-selecting code here</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.17.2</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int ID of the first form, sorted by title. <code>0</code> if no forms were found. </dd></dl>
+
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00703">703</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+
+<p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="_pressmatic_01_sites_2gravityview-core-dev_2app_2public_2wp-content_2plugins_2gravityview_2inclu8743745d9bc1c1b657d78bd377d268d6_source.html#l00017">$forms</a>.</p>
+
+<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00682">get_form_id()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af41ce79987671f354f92004ac344513d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_form_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the form ID of the form currently being displayed. </p>
+<dl class="section since"><dt>Since</dt><dd>1.17.1</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int ID of the current form being displayed. <code>0</code> is returned if no forms are found. </dd></dl>
+
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00682">682</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+
+<p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="class-admin-approve-entries_8php_source.html#l00703">get_first_form_id()</a>.</p>
+
+<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00720">add_scripts_and_styles()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa31cdc2dee085ee31c0ba1db6be98948"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_gv_bulk_action </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the Bulk Action submitted value if it is a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Approve/Unapprove action. </p>
+<dl class="section since"><dt>Since</dt><dd>1.17.1</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string|false If the bulk action was <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Approve/Unapprove, return the full string (gvapprove-16, gvunapprove-16). Otherwise, return false. </dd></dl>
+
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00254">254</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+
+<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00280">process_bulk_action()</a>.</p>
 
 </div>
 </div>
@@ -504,9 +693,9 @@ Static Private Member Functions</h2></td></tr>
 <p><a class="el" href="class_gravity_view__frontend.html#abeca7c0eb247f29be65c86e08c379ba0" title="Parse search criteria for a entries search. ">GravityView_frontend::get_search_criteria()</a> Convert the $_POST search request into a properly formatted request.  public </p><dl class="section return"><dt>Returns</dt><dd>void|boolean </dd></dl>
 <p>The extra '-' is to make sure that there are at <em>least</em> two items in array. </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/katzwebservices/GravityView/issues/370">https://github.com/katzwebservices/GravityView/issues/370</a></dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00179">179</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00280">280</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
-<p>References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-frontend-views_8php_source.html#l00898">GravityView_frontend\get_search_criteria()</a>, and <a class="el" href="connector-functions_8php_source.html#l00080">gravityview_get_entry_ids()</a>.</p>
+<p>References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00254">get_gv_bulk_action()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00964">GravityView_frontend\get_search_criteria()</a>, and <a class="el" href="connector-functions_8php_source.html#l00083">gravityview_get_entry_ids()</a>.</p>
 
 </div>
 </div>
@@ -524,7 +713,7 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00693">693</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00846">846</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
 </div>
 </div>
@@ -542,7 +731,7 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00698">698</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00851">851</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
 </div>
 </div>
@@ -561,7 +750,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p>At edit form page, set the field Approve defaults. </p>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00119">119</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00196">196</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
 </div>
 </div>
@@ -596,7 +785,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True: Show column; False: hide column </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000014">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/hide-if-no-connections</code> Return true to hide reject/approve if there are no connected Views <dl class="section since"><dt>Since</dt><dd>1.7.2 </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000016">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/hide-if-no-connections</code> Return true to hide reject/approve if there are no connected Views <dl class="section since"><dt>Since</dt><dd>1.7.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$hide_if_no_connections</td><td></td></tr>
@@ -604,7 +793,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000015">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/show-column</code> Override whether the column is shown <dl class="params"><dt>Parameters</dt><dd>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000017">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/show-column</code> Override whether the column is shown <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$show_approve_column</td><td>Whether the column will be shown </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The ID of the Gravity Forms form for which entries are being shown </td></tr>
@@ -613,11 +802,11 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00663">663</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00816">816</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
-<p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="connector-functions_8php_source.html#l00171">gravityview_get_connected_views()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+<p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="connector-functions_8php_source.html#l00174">gravityview_get_connected_views()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
-<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00560">add_scripts_and_styles()</a>.</p>
+<p>Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00720">add_scripts_and_styles()</a>.</p>
 
 </div>
 </div>
@@ -644,11 +833,11 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Tooltips array with <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> fields tooltip </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00066">66</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00143">143</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a12ea7f5f39de38ea7917e6b0ca6a26fe"></a>
+<a class="anchor" id="a8d9cbfda3bb4d19dafededc054cb5775"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -665,7 +854,13 @@ Static Private Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$is_approved</em>&#160;</td>
+          <td class="paramname"><em>$is_approved</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form_id</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -681,14 +876,17 @@ Static Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Update the <code>is_approved</code> entry meta value. </p>
+<dl class="section since"><dt>Since</dt><dd>1.7.6.1 <code>after_update_entry_update_approved_meta</code> was previously to be named <code>update_approved_meta</code> </dd>
+<dd>
+1.17.1 Added $form_id parameter</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$entry_id</td><td>ID of the Gravity Forms entry </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$is_approved</td><td>String whether entry is approved or not. <code>0</code> for not approved, <code>Approved</code> for approved.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$is_approved</td><td>String whether entry is approved or not. <code>0</code> for not approved, <code>Approved</code> for approved. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td>ID of the form of the entry being updated. Improves query performance.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>1.7.6.1 <code>after_update_entry_update_approved_meta</code> was previously to be named <code>update_approved_meta</code></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>Make sure that the "User Opt-in" and the Admin Approve/Reject entry set the same meta value </p><dl class="section since"><dt>Since</dt><dd>1.16.6</dd></dl>
 <dl class="actions"><dt><b><a class="el" href="actions.html#_actions000005">Runs Actions:</a></b></dt><dd><code>gravityview/approve_entries/updated</code> Triggered when an entry approval is updated <dl class="section since"><dt>Since</dt><dd>1.7.6.1 </dd></dl>
@@ -717,7 +915,9 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00407">407</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00514">514</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+
+<p>References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
 
 </div>
 </div>
@@ -770,13 +970,39 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean|void </dd></dl>
 
-<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00261">261</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00365">365</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
 
 <p>References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="aa6f60d2ed193e39d4678d65543e353c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$bulk_action_prefixes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;approve&#39;</span> =&gt; <span class="stringliteral">&#39;gvapprove&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;unapprove&#39;</span> =&gt; <span class="stringliteral">&#39;gvunapprove&#39;</span>,</div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="class-admin-approve-entries_8php_source.html#l00024">24</a> of file <a class="el" href="class-admin-approve-entries_8php_source.html">class-admin-approve-entries.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aeee48e86d827d6c8344c692a4523bb8a"></a>
 <div class="memitem">
 <div class="memproto">
