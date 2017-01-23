@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['foreach',['foreach',['../radio_8php.html#a928931d4d1027c5c98f38595b5066c54',1,'radio.php']]],
-  ['fulfilled',['FULFILLED',['../class_gravity_view___field___is___fulfilled.html#a73fff0d9d3144518678b1df2ff181934',1,'GravityView_Field_Is_Fulfilled']]]
+  ['description',['description',['../class-gravityview-settings_8php.html#a9e2c199a69711c127f1af05e6f94a5ed',1,'class-gravityview-settings.php']]],
+  ['disapproved',['DISAPPROVED',['../class_gravity_view___entry___approval___status.html#af35b42af662200937358232f5f2bdd57',1,'GravityView_Entry_Approval_Status']]]
 ];
