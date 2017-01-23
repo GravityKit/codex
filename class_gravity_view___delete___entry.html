@@ -322,7 +322,7 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000119">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/show-delete-button</code> Should the Delete button be shown in the Edit Entry screen? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000126">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/show-delete-button</code> Should the Delete button be shown in the Edit Entry screen? </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$show_entry</td><td>Default: true</td></tr>
@@ -537,7 +537,7 @@ Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>GFAPI::delete_entry() </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>WP_Error|boolean GFAPI::delete_entry() returns a WP_Error on error </dd></dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000012">Runs Actions:</a></b></dt><dd><code>gravityview/delete-entry/deleted</code> Triggered when an entry is deleted </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000015">Runs Actions:</a></b></dt><dd><code>gravityview/delete-entry/deleted</code> Triggered when an entry is deleted </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -546,7 +546,7 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000013">Runs Actions:</a></b></dt><dd><code>gravityview/delete-entry/trashed</code> Triggered when an entry is trashed </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000016">Runs Actions:</a></b></dt><dd><code>gravityview/delete-entry/trashed</code> Triggered when an entry is trashed </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -591,7 +591,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000124">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/message</code> Modify the Delete Entry messages </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000131">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/message</code> Modify the Delete Entry messages </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -632,7 +632,7 @@ Private Member Functions</h2></td></tr>
 <p>Get the onclick attribute for the confirm dialogs that warns users before they delete an entry. </p>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML <code>onclick</code> attribute </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000123">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/confirm-text</code> Modify the Delete Entry Javascript confirmation text </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000130">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/confirm-text</code> Modify the Delete Entry Javascript confirmation text </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$confirm</td><td>Default: "Are you sure you want to delete this entry? This cannot be undone."</td></tr>
@@ -726,7 +726,7 @@ Private Member Functions</h2></td></tr>
 
 <p>Delete mode: permanently delete, or move to trash? </p>
 <dl class="section return"><dt>Returns</dt><dd>string <code>delete</code> or <code>trash</code> </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000120">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/mode</code> Delete mode: permanently delete, or move to trash? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000127">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/mode</code> Delete mode: permanently delete, or move to trash? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.13.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -904,7 +904,7 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000121">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/delete-connected-post</code> Should posts connected to an entry be deleted when the entry is deleted? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000128">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/delete-connected-post</code> Should posts connected to an entry be deleted when the entry is deleted? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1027,7 +1027,7 @@ Private Member Functions</h2></td></tr>
 <p>Is the current nonce valid for editing the entry? </p>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000122">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/verify_nonce</code> Override Delete Entry nonce validation. Return true to declare nonce valid. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000129">Runs Filter:</a></b></dt><dd><code>gravityview/delete-entry/verify_nonce</code> Override Delete Entry nonce validation. Return true to declare nonce valid. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>wp_verify_nonce() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>

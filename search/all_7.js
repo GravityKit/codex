@@ -35,7 +35,9 @@ var searchData=
   ['form',['form',['../class_gravity_view___recent___entries___widget.html#a437304e51fdea964eeda890cf15c374e',1,'GravityView_Recent_Entries_Widget\form()'],['../class_gravity_view___search___w_p___widget.html#a437304e51fdea964eeda890cf15c374e',1,'GravityView_Search_WP_Widget\form()']]],
   ['form_2dbuttons_2ephp',['form-buttons.php',['../form-buttons_8php.html',1,'']]],
   ['format_5fdate',['format_date',['../class_g_v_common.html#a1f8393b40ec268653ed2e429f017670d',1,'GVCommon\format_date()'],['../class_gravity_view___merge___tags.html#a8cbf7bc27987a17b8b49e9c6620dad19',1,'GravityView_Merge_Tags\format_date()']]],
+  ['frontend_5factions',['frontend_actions',['../class_gravity_view___plugin.html#a62d23eda2a3e4815da7977ee44ed740c',1,'GravityView_Plugin']]],
   ['fulfilled',['FULFILLED',['../class_gravity_view___field___is___fulfilled.html#a73fff0d9d3144518678b1df2ff181934',1,'GravityView_Field_Is_Fulfilled']]],
+  ['gravityview_2ephp',['gravityview.php',['../future_2gravityview_8php.html',1,'']]],
   ['index_2ephp',['index.php',['../future_2includes_2index_8php.html',1,'']]],
   ['index_2ephp',['index.php',['../future_2index_8php.html',1,'']]]
 ];

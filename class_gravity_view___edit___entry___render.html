@@ -406,7 +406,7 @@ Static Private Attributes</h2></td></tr>
 <p>Display the Edit Entry form. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>Fixes weird wpautop() issue </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/katzwebservices/GravityView/issues/451">https://github.com/katzwebservices/GravityView/issues/451</a></dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000125">Runs Filter:</a></b></dt><dd><code>gravityview_edit_entry_title</code> Modify the edit entry title </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000132">Runs Filter:</a></b></dt><dd><code>gravityview_edit_entry_title</code> Modify the edit entry title </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$edit_entry_title</td><td>Modify the "Edit Entry" title </td></tr>
@@ -482,7 +482,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00771">771</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00052">$entry</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00066">$form</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00024">GravityView_GFFormsModel\get_post_field_images()</a>.</p>
+<p>References <a class="el" href="class-edit-entry-render_8php_source.html#l00052">$entry</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00066">$form</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00024">GravityView_GFFormsModel\get_post_field_images()</a>, and <a class="el" href="gravityview_8php_source.html#l00035">GRAVITYVIEW_DIR</a>.</p>
 
 <p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00619">maybe_update_post_fields()</a>.</p>
 
@@ -544,7 +544,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Possibly modified form array </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000134">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/use_gf_admin_only_setting</code> When Edit tab isn't configured, should the Gravity Forms "Admin Only" field settings be used to control field display to non-admins? Default: true If the Edit Entry tab is not configured, adminOnly fields will not be shown to non-administrators. If the Edit Entry tab <em>is</em> configured, adminOnly fields will be shown to non-administrators, using the configured <a class="el" href="namespace_g_v.html">GV</a> permissions </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000141">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/use_gf_admin_only_setting</code> When Edit tab isn't configured, should the Gravity Forms "Admin Only" field settings be used to control field display to non-admins? Default: true If the Edit Entry tab is not configured, adminOnly fields will not be shown to non-administrators. If the Edit Entry tab <em>is</em> configured, adminOnly fields will be shown to non-administrators, using the configured <a class="el" href="namespace_g_v.html">GV</a> permissions </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.9.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -594,7 +594,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Modified form, if not using Conditional Logic </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000135">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/conditional_logic</code> Should the Edit Entry form use Gravity Forms conditional logic showing/hiding of fields? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000142">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/conditional_logic</code> Should the Edit Entry form use Gravity Forms conditional logic showing/hiding of fields? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.9 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -702,7 +702,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of fields that are configured in the Edit tab in the Admin </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000132">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/form_fields</code> Modify the fields displayed in Edit Entry form </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000139">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/form_fields</code> Modify the fields displayed in Edit Entry form </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -776,7 +776,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array|mixed|string|void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000131">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/pre_populate/override</code> Allow the pre-populated value to override saved value in Edit Entry form. By default, pre-populate mechanism only kicks on empty fields. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000138">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/pre_populate/override</code> Allow the pre-populated value to override saved value in Edit Entry form. By default, pre-populate mechanism only kicks on empty fields. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">boolean</td><td>True: override saved values; False: don't override (default) </td></tr>
@@ -958,6 +958,8 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00119">119</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
+<p>References <a class="el" href="gravityview_8php_source.html#l00035">GRAVITYVIEW_DIR</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9c14ce71e08bdcda5eba6eb46ed8f372"></a>
@@ -1027,7 +1029,7 @@ Static Private Attributes</h2></td></tr>
 <p><a class="el" href="class_g_v_common.html#af864b8d03fca1e44605807ed93f0df5d" title="Display updated/error notice. ">GVCommon::generate_notice</a></p>
 <dl class="section since"><dt>Since</dt><dd>1.16.2.2</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000126">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/success</code> Modify the edit entry success message (including the anchor link) </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000133">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/success</code> Modify the edit entry success message (including the anchor link) </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1290,7 +1292,7 @@ Static Private Attributes</h2></td></tr>
 <p>to avoid the capability validation of the method save_lead for GF 1.9+</p>
 <p>to force Gravity Forms to use $read_value_from_post in GFFormsModel::save_lead() </p><dl class="section since"><dt>Since</dt><dd>1.17.2</dd></dl>
 <p>Must be AFTER <a class="el" href="class_gravity_view___edit___entry___render.html#aeba6821e49a443083eb023ec67323ba9" title="Perform actions normally performed after updating a lead. ">after_update()</a>! </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/gravityview/GravityView/issues/764">https://github.com/gravityview/GravityView/issues/764</a></dd></dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000014">Runs Actions:</a></b></dt><dd><code>gravityview/edit_entry/after_update</code> Perform an action after the entry has been updated using Edit Entry </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000017">Runs Actions:</a></b></dt><dd><code>gravityview/edit_entry/after_update</code> Perform an action after the entry has been updated using Edit Entry </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
@@ -1370,7 +1372,7 @@ Static Private Attributes</h2></td></tr>
 <p>Display the Edit Entry form in the original Gravity Forms format. </p>
 <dl class="section since"><dt>Since</dt><dd>1.9</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000015">Runs Actions:</a></b></dt><dd><code>gravityview/edit-entry/render/before</code> Before rendering the Edit Entry form </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000018">Runs Actions:</a></b></dt><dd><code>gravityview/edit-entry/render/before</code> Before rendering the Edit Entry form </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1378,7 +1380,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000016">Runs Actions:</a></b></dt><dd><code>gravityview/edit-entry/render/after</code> After rendering the Edit Entry form </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000019">Runs Actions:</a></b></dt><dd><code>gravityview/edit-entry/render/after</code> After rendering the Edit Entry form </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1588,7 +1590,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00527">527</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p>References <a class="el" href="post__image_8php_source.html#l00024">$ary</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00052">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00066">$form</a>, <a class="el" href="post__image_8php_source.html#l00106">$image_meta</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00121">GravityView_GFFormsModel\media_handle_upload()</a>.</p>
+<p>References <a class="el" href="post__image_8php_source.html#l00024">$ary</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00052">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00066">$form</a>, <a class="el" href="post__image_8php_source.html#l00106">$image_meta</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="gravityview_8php_source.html#l00035">GRAVITYVIEW_DIR</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00121">GravityView_GFFormsModel\media_handle_upload()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00619">maybe_update_post_fields()</a>.</p>
 
@@ -1743,7 +1745,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Is the current nonce valid for editing the entry? </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000136">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/verify_nonce</code> Override Edit Entry nonce validation. Return true to declare nonce valid. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000143">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/verify_nonce</code> Override Edit Entry nonce validation. Return true to declare nonce valid. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1816,14 +1818,14 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string If error, the error message. If no error, blank string (modify_edit_field_input() runs next) </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000127">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/unsupported_post_field_text</code> Modify the message when someone isn't able to edit a post </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000134">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/unsupported_post_field_text</code> Modify the message when someone isn't able to edit a post </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>The existing "You don't have permission..." text</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000128">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/no_post_text</code> Modify the message when someone is editing an entry attached to a post that no longer exists </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000135">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/no_post_text</code> Modify the message when someone is editing an entry attached to a post that no longer exists </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>The existing "This field is not editable; the post no longer exists." text</td></tr>

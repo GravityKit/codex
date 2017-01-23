@@ -107,6 +107,7 @@ var searchData=
   ['gravityview_5fmetabox_5ftabs',['GravityView_Metabox_Tabs',['../class_gravity_view___metabox___tabs.html',1,'']]],
   ['gravityview_5fmigrate',['GravityView_Migrate',['../class_gravity_view___migrate.html',1,'']]],
   ['gravityview_5foembed',['GravityView_oEmbed',['../class_gravity_view__o_embed.html',1,'']]],
+  ['gravityview_5fplugin',['GravityView_Plugin',['../class_gravity_view___plugin.html',1,'']]],
   ['gravityview_5fplugin_5fand_5ftheme_5fhooks',['GravityView_Plugin_and_Theme_Hooks',['../class_gravity_view___plugin__and___theme___hooks.html',1,'']]],
   ['gravityview_5fplugin_5fhooks_5facf',['GravityView_Plugin_Hooks_ACF',['../class_gravity_view___plugin___hooks___a_c_f.html',1,'']]],
   ['gravityview_5fplugin_5fhooks_5fdebug_5fbar',['GravityView_Plugin_Hooks_Debug_Bar',['../class_gravity_view___plugin___hooks___debug___bar.html',1,'']]],

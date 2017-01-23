@@ -336,7 +336,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000078">Runs Filter:</a></b></dt><dd><code>gravityview/sorting/full-name</code> Override how to sort when sorting full name. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000085">Runs Filter:</a></b></dt><dd><code>gravityview/sorting/full-name</code> Override how to sort when sorting full name. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -346,7 +346,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000079">Runs Filter:</a></b></dt><dd><code>gravityview/sorting/time</code> Override how to sort when sorting time </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000086">Runs Filter:</a></b></dt><dd><code>gravityview/sorting/time</code> Override how to sort when sorting time </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___field___time.html" title="Add custom options for date fields. ">GravityView_Field_Time</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.14 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -428,14 +428,14 @@ Static Private Attributes</h2></td></tr>
 <p>Register styles and scripts. </p>
 <p>public </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>Don't enqueue the scripts or styles if it's not going to be displayed. </p><dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000080">Runs Filter:</a></b></dt><dd><code>gravity_view_lightbox_script</code> Override the lightbox script to enqueue. Default: <code>thickbox</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000087">Runs Filter:</a></b></dt><dd><code>gravity_view_lightbox_script</code> Override the lightbox script to enqueue. Default: <code>thickbox</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$script_slug</td><td>If you want to use a different lightbox script, return the name of it here.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000081">Runs Filter:</a></b></dt><dd><code>gravity_view_lightbox_style</code> Modify the lightbox CSS slug. Default: <code>thickbox</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000088">Runs Filter:</a></b></dt><dd><code>gravity_view_lightbox_style</code> Modify the lightbox CSS slug. Default: <code>thickbox</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$script_slug</td><td>If you want to use a different lightbox script, return the name of its CSS file here.</td></tr>
@@ -444,7 +444,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <p>If the form has checkbox fields, enqueue dashicons </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/katzwebservices/GravityView/issues/536">https://github.com/katzwebservices/GravityView/issues/536</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000082">Runs Filter:</a></b></dt><dd><code>gravityview_js_localization</code> Modify the array passed to wp_localize_script() </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000089">Runs Filter:</a></b></dt><dd><code>gravityview_js_localization</code> Modify the array passed to wp_localize_script() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$js_localization</td><td>The data padded to the Javascript file </td></tr>
@@ -455,7 +455,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01401">1401</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-frontend-views_8php_source.html#l01493">enqueue_default_style()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00122">getGvOutputData()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-frontend-views_8php_source.html#l01493">enqueue_default_style()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00122">getGvOutputData()</a>, <a class="el" href="gravityview_8php_source.html#l00026">GRAVITYVIEW_FILE</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="gravityview_8php_source.html#l00082">GravityView_Plugin\version</a>.</p>
 
 </div>
 </div>
@@ -526,7 +526,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000068">Runs Filter:</a></b></dt><dd><code>gravityview/comments_open</code> Whether to set comments to open or closed. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000075">Runs Filter:</a></b></dt><dd><code>gravityview/comments_open</code> Whether to set comments to open or closed. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -603,7 +603,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000083">Runs Filter:</a></b></dt><dd><code>gravityview_use_legacy_search_css</code> Should <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> use the legacy Search Bar stylesheet (from before Version 1.17)? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000090">Runs Filter:</a></b></dt><dd><code>gravityview_use_legacy_search_css</code> Should <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> use the legacy Search Bar stylesheet (from before Version 1.17)? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -614,7 +614,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01493">1493</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p>References <a class="el" href="helper-functions_8php_source.html#l00030">gravityview_css_url()</a>.</p>
+<p>References <a class="el" href="helper-functions_8php_source.html#l00030">gravityview_css_url()</a>, and <a class="el" href="gravityview_8php_source.html#l00082">GravityView_Plugin\version</a>.</p>
 
 <p>Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01401">add_scripts_and_styles()</a>.</p>
 
@@ -687,7 +687,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of search parameters, formatted in Gravity Forms mode, using <code>status</code> key set to "active" by default, <code>field_filters</code> array with <code>key</code>, <code>value</code> and <code>operator</code> keys. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000071">Runs Filter:</a></b></dt><dd><code>gravityview_fe_search_criteria</code> Modify the search criteria </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000078">Runs Filter:</a></b></dt><dd><code>gravityview_fe_search_criteria</code> Modify the search criteria </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___widget___search.html#a1ec207d541b43d01e014787d12133699" title="— Frontend — ">GravityView_Widget_Search::filter_entries</a> Adds the default search criteria </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -696,7 +696,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000072">Runs Filter:</a></b></dt><dd><code>gravityview_status</code> Modify entry status requirements to be included in search results. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000079">Runs Filter:</a></b></dt><dd><code>gravityview_status</code> Modify entry status requirements to be included in search results. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$status</td><td>Default: <code>active</code>. Accepts all Gravity Forms entry statuses, including <code>spam</code> and <code>trash</code></td></tr>
@@ -743,7 +743,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000077">Runs Filter:</a></b></dt><dd><code>gravityview_default_page_size</code> The default number of entries displayed in a View </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000084">Runs Filter:</a></b></dt><dd><code>gravityview_default_page_size</code> The default number of entries displayed in a View </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1025,7 +1025,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>1.7</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True: Yes, field is sortable; False: not sortable </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000084">Runs Filter:</a></b></dt><dd><code>gravityview/sortable/field_blacklist</code> Modify what fields should never be sortable. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000091">Runs Filter:</a></b></dt><dd><code>gravityview/sortable/field_blacklist</code> Modify what fields should never be sortable. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1194,7 +1194,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00337">337</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-data_8php_source.html#l00119">GravityView_View_Data\getInstance()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00187">getPostId()</a>, <a class="el" href="connector-functions_8php_source.html#l00169">gravityview_has_shortcode_r()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00380">is_searching()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00215">isGravityviewPostType()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00233">set_context_view_id()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00129">setGvOutputData()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00222">setIsGravityviewPostType()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00143">setIsSearch()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00208">setPostHasShortcode()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00194">setPostId()</a>.</p>
+<p>References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-data_8php_source.html#l00119">GravityView_View_Data\getInstance()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00187">getPostId()</a>, <a class="el" href="connector-functions_8php_source.html#l00169">gravityview_has_shortcode_r()</a>, <a class="el" href="gravityview_8php_source.html#l00311">GravityView_Plugin\is_admin()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00380">is_searching()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00215">isGravityviewPostType()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00233">set_context_view_id()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00129">setGvOutputData()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00222">setIsGravityviewPostType()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00143">setIsSearch()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00208">setPostHasShortcode()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00194">setPostId()</a>.</p>
 
 <p>Referenced by <a class="el" href="class-frontend-views_8php_source.html#l00630">render_view()</a>.</p>
 
@@ -1367,7 +1367,7 @@ Static Private Attributes</h2></td></tr>
 <p>Don't render View if user isn't allowed to see it </p><dl class="section since"><dt>Since</dt><dd>1.15 </dd>
 <dd>
 1.17.2 Added check for if a user has no caps but is logged in (member of multisite, but not any site). Treat as if logged-out.</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000069">Runs Filter:</a></b></dt><dd><code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000076">Runs Filter:</a></b></dt><dd><code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://codex.wordpress.org/Function_Reference/register_post_type#public">https://codex.wordpress.org/Function_Reference/register_post_type#public</a> </dd>
 <dd>
 ::get_endpoint_name </dd></dl>
@@ -1382,9 +1382,9 @@ Static Private Attributes</h2></td></tr>
 <p>Set globals for templating </p>
 <p>Disable fetching initial entries for views that don't need it (DataTables)</p>
 <p>Hide View data until search is performed </p><dl class="section since"><dt>Since</dt><dd>1.5.4</dd></dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000008">Runs Actions:</a></b></dt><dd><code>gravityview_render_entry_{View ID}</code> Before rendering a single entry for a specific View ID </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000011">Runs Actions:</a></b></dt><dd><code>gravityview_render_entry_{View ID}</code> Before rendering a single entry for a specific View ID </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000070">Runs Filter:</a></b></dt><dd><code>gravityview/render/entry/not_visible</code> Modify the message shown to users when the entry doesn't exist or they aren't allowed to view it. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000077">Runs Filter:</a></b></dt><dd><code>gravityview/render/entry/not_visible</code> Modify the message shown to users when the entry doesn't exist or they aren't allowed to view it. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1689,7 +1689,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string (modified) title </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000067">Runs Filter:</a></b></dt><dd><code>gravityview/single/title/out_loop</code> Apply the Single Entry Title filter outside the WordPress loop? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000074">Runs Filter:</a></b></dt><dd><code>gravityview/single/title/out_loop</code> Apply the Single Entry Title filter outside the WordPress loop? </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$in_the_loop</td><td>Whether to apply the filter to the menu title and the meta tag &lt;title&gt; - outside the loop </td></tr>

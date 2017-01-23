@@ -245,6 +245,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00030">30</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
+<p>References <a class="el" href="gravityview_8php_source.html#l00035">GRAVITYVIEW_DIR</a>.</p>
+
 <p>Referenced by <a class="el" href="class-gravityview-default-template-list_8php_source.html#l00009">GravityView_Default_Template_List\__construct()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01493">GravityView_frontend\enqueue_default_style()</a>, and <a class="el" href="class-gravityview-field-notes_8php_source.html#l00117">GravityView_Field_Notes\register_scripts()</a>.</p>
 
 </div>
@@ -272,7 +274,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string If parse_url doesn't find a 'host', returns original value. Otherwise, returns formatted link. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000164">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_striphttp</code> Strip scheme from the displayed URL? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000171">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_striphttp</code> Strip scheme from the displayed URL? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -281,7 +283,7 @@ If true: <code><a href="http://example.com">http://example.com</a> =&gt; example
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000165">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_stripwww</code> Strip www from the domain? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000172">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_stripwww</code> Strip www from the domain? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -290,7 +292,7 @@ If true: <code>www.example.com =&gt; example.com</code></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000166">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_nosubdomain</code> Strip subdomains from the domain? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000173">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_nosubdomain</code> Strip subdomains from the domain? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -300,7 +302,7 @@ If false: <code><a href="http://demo.example.com">http://demo.example.com</a> =&
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000167">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_rootonly</code> Display link path going only to the base directory, not a sub-directory or file? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000174">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_rootonly</code> Display link path going only to the base directory, not a sub-directory or file? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -310,7 +312,7 @@ If false: <code><a href="http://example.com/sub/directory/page.html">http://exam
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000168">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_noquerystring</code> Strip the query string from the end of the URL? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000175">Runs Filter:</a></b></dt><dd><code>gravityview_anchor_text_noquerystring</code> Strip the query string from the end of the URL? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -346,7 +348,7 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
 
 <p>Definition at line <a class="el" href="helper-functions_8php_source.html#l00202">202</a> of file <a class="el" href="helper-functions_8php_source.html">helper-functions.php</a>.</p>
 
-<p>References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>.</p>
+<p>References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, and <a class="el" href="gravityview_8php_source.html#l00026">GRAVITYVIEW_FILE</a>.</p>
 
 <p>Referenced by <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00155">GravityView_Admin_Notices\admin_notice()</a>, <a class="el" href="class-admin_8php_source.html#l00098">GravityView_Admin\connected_form_warning()</a>, <a class="el" href="class-admin_8php_source.html#l00182">GravityView_Admin\get_floaty()</a>, and <a class="el" href="class-admin-welcome_8php_source.html#l00138">GravityView_Welcome\tabs()</a>.</p>
 
@@ -443,7 +445,7 @@ If true: <code><a href="http://example.com/?query=example">http://example.com/?q
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Multidimensional array with <code>text</code> (Category Name) and <code>value</code> (Category ID) keys. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000169">Runs Filter:</a></b></dt><dd><code>gravityview_get_terms_choices_args</code> Modify the arguments passed to <code>get_terms()</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000176">Runs Filter:</a></b></dt><dd><code>gravityview_get_terms_choices_args</code> Modify the arguments passed to <code>get_terms()</code> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>get_terms() </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15.3</dd></dl>
 

@@ -30,5 +30,6 @@ var searchData=
   ['flush_5frelated_5fplugins_5ftransient',['flush_related_plugins_transient',['../class_g_v___license___handler.html#a9078200da747023d744db1d331ff3c34',1,'GV_License_Handler']]],
   ['fopen',['fopen',['../class_w_x_r___parser___regex.html#a9ef021e687977682755fcd73a23e5ad8',1,'WXR_Parser_Regex']]],
   ['form',['form',['../class_gravity_view___recent___entries___widget.html#a437304e51fdea964eeda890cf15c374e',1,'GravityView_Recent_Entries_Widget\form()'],['../class_gravity_view___search___w_p___widget.html#a437304e51fdea964eeda890cf15c374e',1,'GravityView_Search_WP_Widget\form()']]],
-  ['format_5fdate',['format_date',['../class_g_v_common.html#a1f8393b40ec268653ed2e429f017670d',1,'GVCommon\format_date()'],['../class_gravity_view___merge___tags.html#a8cbf7bc27987a17b8b49e9c6620dad19',1,'GravityView_Merge_Tags\format_date()']]]
+  ['format_5fdate',['format_date',['../class_g_v_common.html#a1f8393b40ec268653ed2e429f017670d',1,'GVCommon\format_date()'],['../class_gravity_view___merge___tags.html#a8cbf7bc27987a17b8b49e9c6620dad19',1,'GravityView_Merge_Tags\format_date()']]],
+  ['frontend_5factions',['frontend_actions',['../class_gravity_view___plugin.html#a62d23eda2a3e4815da7977ee44ed740c',1,'GravityView_Plugin']]]
 ];

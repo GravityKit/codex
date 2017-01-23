@@ -161,7 +161,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Return the query var / end point name for the entry. </p>
 <p>public </p><dl class="section see"><dt>See also</dt><dd>::get_endpoint_name </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string Default: "entry" </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000114">Runs Filter:</a></b></dt><dd><code>gravityview_directory_endpoint</code> Change the slug used for single entries </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000121">Runs Filter:</a></b></dt><dd><code>gravityview_directory_endpoint</code> Change the slug used for single entries </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$endpoint</td><td>Slug to use when accessing single entry. Default: <code>entry</code></td></tr>
@@ -199,7 +199,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Init plugin components such as register own custom post types. </p>
 <p>public </p><dl class="section see"><dt>See also</dt><dd>::register_post_type </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000109">Runs Filter:</a></b></dt><dd><code>gravityview_is_hierarchical</code> Make <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> Views hierarchical by returning TRUE This will allow for Views to be nested with Parents and also allows for menu order to be set in the Page Attributes metabox </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000116">Runs Filter:</a></b></dt><dd><code>gravityview_is_hierarchical</code> Make <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> Views hierarchical by returning TRUE This will allow for Views to be nested with Parents and also allows for menu order to be set in the Page Attributes metabox </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -207,7 +207,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000110">Runs Filter:</a></b></dt><dd><code>gravityview_post_type_supports</code> Modify post type support values for <code>gravityview</code> post type </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000117">Runs Filter:</a></b></dt><dd><code>gravityview_post_type_supports</code> Modify post type support values for <code>gravityview</code> post type </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>add_post_type_support() </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -217,7 +217,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000111">Runs Filter:</a></b></dt><dd><code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000118">Runs Filter:</a></b></dt><dd><code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://codex.wordpress.org/Function_Reference/register_post_type#public">https://codex.wordpress.org/Function_Reference/register_post_type#public</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -227,7 +227,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000112">Runs Filter:</a></b></dt><dd><code>gravityview_has_archive</code> Enable Custom Post Type archive? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000119">Runs Filter:</a></b></dt><dd><code>gravityview_has_archive</code> Enable Custom Post Type archive? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -235,7 +235,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000113">Runs Filter:</a></b></dt><dd><code>gravityview_slug</code> Modify the url part for a View. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000120">Runs Filter:</a></b></dt><dd><code>gravityview_slug</code> Modify the url part for a View. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="http://docs.gravityview.co/article/62-changing-the-view-slug">http://docs.gravityview.co/article/62-changing-the-view-slug</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -247,6 +247,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Definition at line <a class="el" href="class-post-types_8php_source.html#l00040">40</a> of file <a class="el" href="class-post-types_8php_source.html">class-post-types.php</a>.</p>
 
 <p>References <a class="el" href="form-buttons_8php_source.html#l00030">$labels</a>, <a class="el" href="class-gravityview-compatibility_8php_source.html#l00093">GravityView_Compatibility\is_valid()</a>, and <a class="el" href="class-admin_8php_source.html#l00069">GravityView_Admin\no_views_text()</a>.</p>
+
+<p>Referenced by <a class="el" href="gravityview_8php_source.html#l00213">GravityView_Plugin\activate()</a>.</p>
 
 </div>
 </div>
@@ -276,6 +278,8 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 <p>Definition at line <a class="el" href="class-post-types_8php_source.html#l00142">142</a> of file <a class="el" href="class-post-types_8php_source.html">class-post-types.php</a>.</p>
+
+<p>Referenced by <a class="el" href="gravityview_8php_source.html#l00213">GravityView_Plugin\activate()</a>.</p>
 
 </div>
 </div>
