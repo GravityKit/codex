@@ -24,6 +24,7 @@ var searchData=
   ['delete_5for_5ftrash_5fentry',['delete_or_trash_entry',['../class_gravity_view___delete___entry.html#a9c1e12082176bbe96bb719812287fbc9',1,'GravityView_Delete_Entry']]],
   ['delete_5fposts',['delete_posts',['../class_gravity_view___uninstall.html#a4a96bb42bbb45231f9923722c681410c',1,'GravityView_Uninstall']]],
   ['delete_5fshortcode',['delete_shortcode',['../class_gravity_view___entry___link___shortcode.html#a7142fd1febcffabed6e142241dd13753',1,'GravityView_Entry_Link_Shortcode']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['desc',['DESC',['../class_g_v_1_1_entry___sort.html#a34abf23cff3df464425b7cedf58e2939',1,'GV::Entry_Sort']]],
   ['description',['description',['../class-gravityview-settings_8php.html#a9e2c199a69711c127f1af05e6f94a5ed',1,'class-gravityview-settings.php']]],
   ['dir',['dir',['../class_g_v_1_1_plugin.html#a9ce2af22bd4ff2f6c3410a32f99a3747',1,'GV::Plugin']]],
