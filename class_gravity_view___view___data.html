@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -65,8 +65,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_View_Data Class Reference</div>  </div>
@@ -82,7 +82,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a570e9e188f6b6d67a2f70a12b22d98fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a view to the views array.  <a href="#a570e9e188f6b6d67a2f70a12b22d98fa">More...</a><br /></td></tr>
 <tr class="separator:a570e9e188f6b6d67a2f70a12b22d98fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83670c5b05e4274ec7cfe18d7df90fa0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#a83670c5b05e4274ec7cfe18d7df90fa0">get_fields</a> ( $view_id)</td></tr>
-<tr class="memdesc:a83670c5b05e4274ec7cfe18d7df90fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the visible fields for a View  <a class="el" href="connector-functions_8php.html#abb3e5a3461108e7150dab16cc0cb3527" title="Get the field configuration for the View. ">gravityview_get_directory_fields()</a> Fetch the configured fields for a View  <a class="el" href="class_gravity_view___view___data.html#af7273ce14c2b9a7d0feb209b13408a2f" title="Filter area fields based on specified conditions. ">GravityView_View_Data::filter_fields()</a> Only show visible fields.  <a href="#a83670c5b05e4274ec7cfe18d7df90fa0">More...</a><br /></td></tr>
+<tr class="memdesc:a83670c5b05e4274ec7cfe18d7df90fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the visible fields for a View  <a class="el" href="connector-functions_8php.html#abb3e5a3461108e7150dab16cc0cb3527" title="Get the field configuration for the View. ">gravityview_get_directory_fields()</a> Fetch the configured fields for a View  GravityView_View_Data::filter_fields() Only show visible fields.  <a href="#a83670c5b05e4274ec7cfe18d7df90fa0">More...</a><br /></td></tr>
 <tr class="separator:a83670c5b05e4274ec7cfe18d7df90fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae4b8bd4d288a32d3e4adae0350ef393"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#aae4b8bd4d288a32d3e4adae0350ef393">get_id_from_atts</a> ( $atts)</td></tr>
 <tr class="memdesc:aae4b8bd4d288a32d3e4adae0350ef393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves view ID from an array.  <a href="#aae4b8bd4d288a32d3e4adae0350ef393">More...</a><br /></td></tr>
@@ -97,7 +97,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aee84f3d4f68da0d16aec53a2503151a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Figure out what the View ID is for a variable, if any.  <a href="#aee84f3d4f68da0d16aec53a2503151a1">More...</a><br /></td></tr>
 <tr class="separator:aee84f3d4f68da0d16aec53a2503151a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25679005cdc98cc994cb19a5631f4645"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#a25679005cdc98cc994cb19a5631f4645">parse_post_content</a> ( $content)</td></tr>
-<tr class="memdesc:a25679005cdc98cc994cb19a5631f4645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse content to determine if there is a <a class="el" href="namespace_g_v.html">GV</a> shortcode to allow for enqueing necessary files in the head.  <a href="#a25679005cdc98cc994cb19a5631f4645">More...</a><br /></td></tr>
+<tr class="memdesc:a25679005cdc98cc994cb19a5631f4645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse content to determine if there is a GV shortcode to allow for enqueing necessary files in the head.  <a href="#a25679005cdc98cc994cb19a5631f4645">More...</a><br /></td></tr>
 <tr class="separator:a25679005cdc98cc994cb19a5631f4645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b57de5633bce36882a6e35baf56d3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#a74b57de5633bce36882a6e35baf56d3c">view_exists</a> ( $view_id)</td></tr>
 <tr class="memdesc:a74b57de5633bce36882a6e35baf56d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a post, identified by the specified ID, exist within the WordPress database.  <a href="#a74b57de5633bce36882a6e35baf56d3c">More...</a><br /></td></tr>
@@ -117,29 +117,20 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6f2a050e2f7c31f91e015438d306295d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the passed post id has the passed View id embedded.  <a href="#a6f2a050e2f7c31f91e015438d306295d">More...</a><br /></td></tr>
 <tr class="separator:a6f2a050e2f7c31f91e015438d306295d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a2bc32a57c3a42b3b411c76e457481767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#a2bc32a57c3a42b3b411c76e457481767">$views</a> = array()</td></tr>
+<tr class="separator:a2bc32a57c3a42b3b411c76e457481767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad9d7ce33ebb142b70e58b68052ca0ea8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#ad9d7ce33ebb142b70e58b68052ca0ea8">$instance</a> = NULL</td></tr>
 <tr class="separator:ad9d7ce33ebb142b70e58b68052ca0ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a2bc32a57c3a42b3b411c76e457481767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#a2bc32a57c3a42b3b411c76e457481767">$views</a> = array()</td></tr>
-<tr class="separator:a2bc32a57c3a42b3b411c76e457481767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:abc3f9df8065513e1396bbfff1a02bac6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#abc3f9df8065513e1396bbfff1a02bac6">__construct</a> ( $passed_post=NULL)</td></tr>
 <tr class="separator:abc3f9df8065513e1396bbfff1a02bac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7273ce14c2b9a7d0feb209b13408a2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#af7273ce14c2b9a7d0feb209b13408a2f">filter_fields</a> ( $dir_fields)</td></tr>
-<tr class="memdesc:af7273ce14c2b9a7d0feb209b13408a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter area fields based on specified conditions.  <a href="#af7273ce14c2b9a7d0feb209b13408a2f">More...</a><br /></td></tr>
-<tr class="separator:af7273ce14c2b9a7d0feb209b13408a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e3249313bf74546a734906aa18e44ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#a4e3249313bf74546a734906aa18e44ed">hide_field_check_conditions</a> ( $properties)</td></tr>
-<tr class="memdesc:a4e3249313bf74546a734906aa18e44ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a certain field should not be presented based on its own properties.  <a href="#a4e3249313bf74546a734906aa18e44ed">More...</a><br /></td></tr>
-<tr class="separator:a4e3249313bf74546a734906aa18e44ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7062682a528b7f32f8b35d0fe3515eaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___view___data.html#a7062682a528b7f32f8b35d0fe3515eaf">parse_post_meta</a> ( $post_id)</td></tr>
-<tr class="memdesc:a7062682a528b7f32f8b35d0fe3515eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse specific custom fields (Post Meta) to determine if there is a <a class="el" href="namespace_g_v.html">GV</a> shortcode to allow for enqueuing necessary files in the head.  <a href="#a7062682a528b7f32f8b35d0fe3515eaf">More...</a><br /></td></tr>
-<tr class="separator:a7062682a528b7f32f8b35d0fe3515eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>If this file is called directly, abort. </p>
@@ -175,11 +166,10 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Reset the new frontend request views, since we now have duplicate state. </p>
 
 <p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00018">18</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-data_8php_source.html#l00260">add_view()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-data_8php_source.html#l00073">maybe_get_view_id()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="class-data_8php_source.html#l00059">maybe_get_view_id()</a>.</p>
 
 </div>
 </div>
@@ -218,58 +208,12 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>::append with the request  available via <code><a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;request-&gt;views</code> or the <code><a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;views</code> shortcut.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>::append</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array|false All views if $view_id is array, a view data array if $view_id is an int, false on errors. </dd></dl>
-<p>Deprecated. Do not edit. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00260">260</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00194">194</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="other__entries_8php_source.html#l00023">$view_settings</a>, <a class="el" href="class-data_8php_source.html#l00354">get_fields()</a>, <a class="el" href="class-data_8php_source.html#l00177">get_views()</a>, <a class="el" href="connector-functions_8php_source.html#l00299">gravityview_get_directory_widgets()</a>, <a class="el" href="connector-functions_8php_source.html#l00024">gravityview_get_form()</a>, <a class="el" href="connector-functions_8php_source.html#l00196">gravityview_get_form_id()</a>, <a class="el" href="connector-functions_8php_source.html#l00209">gravityview_get_template_id()</a>, <a class="el" href="connector-functions_8php_source.html#l00220">gravityview_get_template_settings()</a>, <a class="el" href="__mocks_8php_source.html#l00015">GV\Mocks\GravityView_View_Data_add_view()</a>, and <a class="el" href="class-data_8php_source.html#l00243">view_exists()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00018">__construct()</a>, <a class="el" href="class-data_8php_source.html#l00194">get_view()</a>, and <a class="el" href="class-data_8php_source.html#l00479">parse_post_content()</a>.</p>
-
-</div>
-</div>
-<a id="af7273ce14c2b9a7d0feb209b13408a2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7273ce14c2b9a7d0feb209b13408a2f">&#9670;&nbsp;</a></span>filter_fields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">filter_fields </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$dir_fields</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Filter area fields based on specified conditions. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000037">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$dir_fields</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00380">380</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
-
-<p class="reference">References <a class="el" href="class-data_8php_source.html#l00414">hide_field_check_conditions()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00354">get_fields()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="__mocks_8php_source.html#l00015">GV\Mocks\GravityView_View_Data_add_view()</a>.</p>
 
 </div>
 </div>
@@ -317,11 +261,9 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed|array If using $with_details, return array. Otherwise, mixed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00685">685</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00344">344</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-settings-view_8php_source.html#l00033">View_Settings\defaults()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class_8render_8settings_8php_source.html#l00164">GravityView_Render_Settings\render_field_options()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-view_8php_source.html#l00047">View_Settings\defaults()</a>.</p>
 
 </div>
 </div>
@@ -381,23 +323,11 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>::defaults() </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000080">Runs Filter:</a></b></dt><dd><code>gravityview_default_args</code> Modify the default settings for new Views </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$default_args</td><td>Array of default args. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>filter <code>gravityview/view/settings/defaults</code></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_g_v.html#a37d09d24dd6f098896c6954cb6590fff" title="Default settings. ">defaults()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00713">713</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00374">374</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00079">GravityView_Admin_Add_Shortcode\add_shortcode_popup()</a>, <a class="el" href="connector-functions_8php_source.html#l00349">get_gravityview()</a>, <a class="el" href="class-common_8php_source.html#l01187">GVCommon\get_template_settings()</a>, <a class="el" href="class-gravityview-shortcode_8php_source.html#l00079">GravityView_Shortcode\parse_and_sanitize_atts()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00231">GravityView_Admin_Views\tooltips()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00506">GV\defaults()</a>.</p>
 
 </div>
 </div>
@@ -417,22 +347,19 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the visible fields for a View  <a class="el" href="connector-functions_8php.html#abb3e5a3461108e7150dab16cc0cb3527" title="Get the field configuration for the View. ">gravityview_get_directory_fields()</a> Fetch the configured fields for a View  <a class="el" href="class_gravity_view___view___data.html#af7273ce14c2b9a7d0feb209b13408a2f" title="Filter area fields based on specified conditions. ">GravityView_View_Data::filter_fields()</a> Only show visible fields. </p>
+<p>Get the visible fields for a View  <a class="el" href="connector-functions_8php.html#abb3e5a3461108e7150dab16cc0cb3527" title="Get the field configuration for the View. ">gravityview_get_directory_fields()</a> Fetch the configured fields for a View  GravityView_View_Data::filter_fields() Only show visible fields. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$view_id</td><td>View ID</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000036">Deprecated:</a></b></dt><dd></dd></dl>
 <dl class="section see"><dt>See also</dt><dd>::$fields</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array|null Array of fields as passed by <code><a class="el" href="connector-functions_8php.html#abb3e5a3461108e7150dab16cc0cb3527" title="Get the field configuration for the View. ">gravityview_get_directory_fields()</a></code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00354">354</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00209">209</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-gv-view_8php_source.html#l00290">View\by_id()</a>, <a class="el" href="class-data_8php_source.html#l00380">filter_fields()</a>, and <a class="el" href="connector-functions_8php_source.html#l00286">gravityview_get_directory_fields()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00260">add_view()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="class-gv-view_8php_source.html#l00684">View\by_id()</a>.</p>
 
 </div>
 </div>
@@ -459,14 +386,13 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>Dead code, was probably superceded by <a class="el" href="class_gravity_view___view___data.html#a25679005cdc98cc994cb19a5631f4645" title="Parse content to determine if there is a GV shortcode to allow for enqueing necessary files in the he...">GravityView_View_Data::parse_post_content</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>int|null A view ID cast to int, or null. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00436">436</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00224">224</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="class-gv-settings-view_8php_source.html#l00022">View_Settings\with_defaults()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00073">maybe_get_view_id()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00059">maybe_get_view_id()</a>.</p>
 
 </div>
 </div>
@@ -495,13 +421,12 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>::get() via <code><a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;views</code> or <code><a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;request-&gt;views</code>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_g_v.html#a66f12b503ed90844ccf8401e14ccf469" title="Retrieve a setting. ">get()</a> </dd></dl>
 <p>Emulate this weird side-effect below... </p>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00194">194</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00147">147</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-data_8php_source.html#l00260">add_view()</a>, <a class="el" href="class-gv-view_8php_source.html#l00290">View\by_id()</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="class-gv-view_8php_source.html#l00684">View\by_id()</a>.</p>
 
 </div>
 </div>
@@ -519,14 +444,9 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>::all() via <code><a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;views</code> or <code><a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;request-&gt;views</code>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_g_v.html#abb9a5acda0957fcf3151ed524d8f89ea" title="Get all the settings. ">all()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00177">177</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
-
-<p class="reference">References <a class="el" href="class-data_8php_source.html#l00012">$views</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00260">add_view()</a>, and <a class="el" href="class-data_8php_source.html#l00046">has_multiple_views()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00133">133</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
 </div>
 </div>
@@ -555,9 +475,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_gravity_view___view___data.html" title="If this file is called directly, abort. ">GravityView_View_Data</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00164">164</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00120">120</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00076">GravityView_Admin_Bar\add_floaty_icon()</a>, <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00025">GravityView_Admin_Bar\add_hooks()</a>, <a class="el" href="class-common_8php_source.html#l00426">GVCommon\calculate_get_entries_criteria()</a>, <a class="el" href="class-api_8php_source.html#l00663">GravityView_API\entry_link()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01628">GravityView_Edit_Entry_Render\get_configured_edit_fields()</a>, <a class="el" href="connector-functions_8php_source.html#l00349">get_gravityview()</a>, <a class="el" href="class-data_8php_source.html#l00613">is_valid_embed_id()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00344">GravityView_frontend\parse_content()</a>, <a class="el" href="class-gravityview-plugin-hooks-ultimate-member_8php_source.html#l00043">GravityView_Theme_Hooks_Ultimate_Member\parse_um_profile_post_content()</a>, and <a class="el" href="class-oembed_8php_source.html#l00285">GravityView_oEmbed\set_vars()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00069">GravityView_Admin_Bar\add_floaty_icon()</a>, <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00025">GravityView_Admin_Bar\add_hooks()</a>, <a class="el" href="class-common_8php_source.html#l00430">GVCommon\calculate_get_entries_criteria()</a>, <a class="el" href="class-api_8php_source.html#l00596">GravityView_API\entry_link()</a>, <a class="el" href="__mocks_8php_source.html#l00418">Legacy_Context\freeze()</a>, <a class="el" href="connector-functions_8php_source.html#l00361">get_gravityview()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00232">GravityView_Edit_Entry_Render\init()</a>, <a class="el" href="__mocks_8php_source.html#l00546">Legacy_Context\load()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00337">GravityView_frontend\parse_content()</a>, <a class="el" href="class-gravityview-plugin-hooks-ultimate-member_8php_source.html#l00043">GravityView_Theme_Hooks_Ultimate_Member\parse_um_profile_post_content()</a>, and <a class="el" href="__mocks_8php_source.html#l00454">Legacy_Context\thaw()</a>.</p>
 
 </div>
 </div>
@@ -575,55 +495,10 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>::count via <code><a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;request-&gt;views-&gt;count()</code> or <code><a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;views-&gt;count()</code> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>::count </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00046">46</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
-
-<p class="reference">References <a class="el" href="class-data_8php_source.html#l00177">get_views()</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
-
-</div>
-</div>
-<a id="a4e3249313bf74546a734906aa18e44ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e3249313bf74546a734906aa18e44ed">&#9670;&nbsp;</a></span>hide_field_check_conditions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">hide_field_check_conditions </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$properties</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check whether a certain field should not be presented based on its own properties. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000038">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$properties</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean True: (field should be hidden) or False: (field should be presented) </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00414">414</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
-
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00380">filter_fields()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00037">37</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
 </div>
 </div>
@@ -679,13 +554,12 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool|WP_Error If valid, returns true. If invalid, returns WP_Error containing error message. </dd></dl>
-<p>::maybe_get_view_id deprecated. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00613">613</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00279">279</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-data_8php_source.html#l00012">$views</a>, <a class="el" href="class-gv-collection-view_8php_source.html#l00078">View_Collection\from_post()</a>, <a class="el" href="class-data_8php_source.html#l00164">getInstance()</a>, and <a class="el" href="class-common_8php_source.html#l01723">gravityview_get_link()</a>.</p>
+<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-data_8php_source.html#l00012">$views</a>, <a class="el" href="class-gv-collection-view_8php_source.html#l00078">View_Collection\from_post()</a>, and <a class="el" href="class-common_8php_source.html#l01791">gravityview_get_link()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00101">GravityView_Search_WP_Widget\update()</a>, and <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00222">GravityView_Recent_Entries_Widget\update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00106">GravityView_Search_WP_Widget\update()</a>, and <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00222">GravityView_Recent_Entries_Widget\update()</a>.</p>
 
 </div>
 </div>
@@ -710,7 +584,7 @@ Private Member Functions</h2></td></tr>
 <li>WP_Post (Either a <code>gravityview</code> post type or not)</li>
 <li>Multi-dimensional array of WP_Post objects</li>
 <li>Array with <code>view_id</code> or <code>id</code> key(s) set</li>
-<li>String of content that may include <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> shortcode</li>
+<li>String of content that may include <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> shortcode</li>
 <li>Number representing the Post ID or View ID</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -719,17 +593,14 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd></dd></dl>
 <dl class="section see"><dt>See also</dt><dd>::from_post and ::parse</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>int|null|array ID of the View. If there are multiple views in the content, array of IDs parsed. </dd></dl>
 <p>And as a side-effect... add each view to the global scope.</p>
-<p>Deprecated, see ::from_post</p>
-<p>And as a side-effect... add each view to the global scope.</p>
-<p>Deprecated, use ::parse. </p>
+<p>And as a side-effect... add each view to the global scope. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00073">73</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00059">59</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-data_8php_source.html#l00012">$views</a>, <a class="el" href="class-gv-view_8php_source.html#l00306">View\exists()</a>, <a class="el" href="class-gv-collection-view_8php_source.html#l00078">View_Collection\from_post()</a>, <a class="el" href="class-data_8php_source.html#l00436">get_id_from_atts()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-gv-shortcode_8php_source.html#l00096">Shortcode\parse()</a>, <a class="el" href="class-data_8php_source.html#l00479">parse_post_content()</a>, and <a class="el" href="class-data_8php_source.html#l00559">parse_post_meta()</a>.</p>
+<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-data_8php_source.html#l00012">$views</a>, <a class="el" href="class-gv-view_8php_source.html#l00700">View\exists()</a>, <a class="el" href="class-gv-collection-view_8php_source.html#l00078">View_Collection\from_post()</a>, <a class="el" href="class-data_8php_source.html#l00224">get_id_from_atts()</a>, and <a class="el" href="class-gv-shortcode_8php_source.html#l00095">Shortcode\parse()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00018">__construct()</a>.</p>
 
@@ -751,77 +622,20 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parse content to determine if there is a <a class="el" href="namespace_g_v.html">GV</a> shortcode to allow for enqueing necessary files in the head. </p>
-<p><a class="el" href="connector-functions_8php.html#a64096dacf5e86f116c2a4486ff3a2bfc" title="Placeholder until the recursive has_shortcode() patch is merged. ">gravityview_has_shortcode_r()</a> Check whether shortcode exists (recursively)  shortcode_parse_atts() Parse each <a class="el" href="namespace_g_v.html">GV</a> shortcode  <a class="el" href="connector-functions_8php.html#aa96742a0bbac0a67aa23e31fea4ebf6f" title="Get all the settings for a View. ">gravityview_get_template_settings()</a> Get the settings for the View ID </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Parse content to determine if there is a GV shortcode to allow for enqueing necessary files in the head. </p>
+<p><a class="el" href="connector-functions_8php.html#a64096dacf5e86f116c2a4486ff3a2bfc" title="Placeholder until the recursive has_shortcode() patch is merged. ">gravityview_has_shortcode_r()</a> Check whether shortcode exists (recursively)  shortcode_parse_atts() Parse each GV shortcode  <a class="el" href="connector-functions_8php.html#aa96742a0bbac0a67aa23e31fea4ebf6f" title="Get all the settings for a View. ">gravityview_get_template_settings()</a> Get the settings for the View ID </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$content</td><td>$post-&gt;post_content content</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd></dd></dl>
 <dl class="section see"><dt>See also</dt><dd>::from_content</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>int|null|array If a single View is found, the ID of the View. If there are multiple views in the content, array of IDs parsed. If not found, NULL </dd></dl>
 <p>The original function outputs the ID even though it wasn't added by ::add_view() Wether this is a bug or not remains a mystery. But we need to emulate this behavior until better times.</p>
-<p>This is so that the shortcode is registered for the oEmbed preview in the Admin </p><dl class="section since"><dt>Since</dt><dd>1.6</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00479">479</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00245">245</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">References <a class="el" href="custom_8php_source.html#l00037">$content</a>, <a class="el" href="class-data_8php_source.html#l00260">add_view()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="connector-functions_8php_source.html#l00169">gravityview_has_shortcode_r()</a>, and <a class="el" href="class-gravityview-shortcode_8php_source.html#l00180">GravityView_Shortcode</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00073">maybe_get_view_id()</a>, and <a class="el" href="class-data_8php_source.html#l00559">parse_post_meta()</a>.</p>
-
-</div>
-</div>
-<a id="a7062682a528b7f32f8b35d0fe3515eaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7062682a528b7f32f8b35d0fe3515eaf">&#9670;&nbsp;</a></span>parse_post_meta()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">parse_post_meta </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$post_id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Parse specific custom fields (Post Meta) to determine if there is a <a class="el" href="namespace_g_v.html">GV</a> shortcode to allow for enqueuing necessary files in the head. </p>
-<dl class="section since"><dt>Since</dt><dd>1.15.1</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>::from_post</dd></dl>
-<p>::parse_post_content </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$post_id</td><td>WP_Post ID </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int|null|array If a single View is found, the ID of the View. If there are multiple views in the content, array of IDs parsed. If not found, or meta not parsed, NULL </dd></dl>
-<p>Is private and no longer used in future mode.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000079">Runs Filter:</a></b></dt><dd><code>gravityview/data/parse/meta_keys</code> Define meta keys to parse to check for <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> shortcode content This is useful when using themes that store content that may contain shortcodes in custom post meta </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$meta_keys</td><td>Array of key values to check. If empty, do not check. Default: empty array </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramtype">int</td><td class="paramname">$post_id</td><td>ID of the post being checked</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00559">559</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
-
-<p class="reference">References <a class="el" href="class-data_8php_source.html#l00479">parse_post_content()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00073">maybe_get_view_id()</a>.</p>
+<p class="reference">References <a class="el" href="custom_8php_source.html#l00037">$content</a>.</p>
 
 </div>
 </div>
@@ -849,16 +663,13 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated:</a></b></dt><dd></dd></dl>
 <dl class="section see"><dt>See also</dt><dd>::exists()</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True if the post exists; otherwise, false. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.0.0 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00243">243</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00178">178</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
 <p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00260">add_view()</a>.</p>
 
 </div>
 </div>
@@ -885,6 +696,8 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00010">10</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="__mocks_8php_source.html#l00672">Legacy_Context\reset()</a>.</p>
+
 </div>
 </div>
 <a id="a2bc32a57c3a42b3b411c76e457481767"></a>
@@ -892,24 +705,16 @@ Private Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">$views = array()</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="class-data_8php_source.html#l00012">12</a> of file <a class="el" href="class-data_8php_source.html">class-data.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00177">get_views()</a>, <a class="el" href="class-data_8php_source.html#l00613">is_valid_embed_id()</a>, and <a class="el" href="class-data_8php_source.html#l00073">maybe_get_view_id()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00279">is_valid_embed_id()</a>, and <a class="el" href="class-data_8php_source.html#l00059">maybe_get_view_id()</a>.</p>
 
 </div>
 </div>

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['view',['View',['../class_g_v_1_1_view.html',1,'GV']]],
-  ['view_5fcollection',['View_Collection',['../class_g_v_1_1_view___collection.html',1,'GV']]],
-  ['view_5fsettings',['View_Settings',['../class_g_v_1_1_view___settings.html',1,'GV']]],
-  ['view_5ftemplate',['View_Template',['../class_g_v_1_1_view___template.html',1,'GV']]]
+  ['renderer',['Renderer',['../class_g_v_1_1_renderer.html',1,'GV']]],
+  ['request',['Request',['../class_g_v_1_1_r_e_s_t_1_1_request.html',1,'Request'],['../class_g_v_1_1_request.html',1,'Request']]],
+  ['route',['Route',['../class_g_v_1_1_r_e_s_t_1_1_route.html',1,'GV::REST']]]
 ];

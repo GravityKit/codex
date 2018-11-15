@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['warning',['WARNING',['../class_g_v_1_1_log_level.html#ad0c7ccd2f8b92a760391d21d0ec7b339',1,'GV::LogLevel']]],
-  ['wrapper',['wrapper',['../class-gravityview-settings_8php.html#a5358faae7e5fffd3670ed8999d54e0e8',1,'class-gravityview-settings.php']]]
+  ['version',['version',['../class_gravity_view___plugin.html#a265a39dcf2f0b7c6b96574362aa01ad9',1,'GravityView_Plugin']]]
 ];

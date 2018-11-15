@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -73,17 +73,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Register oEmbed handlers for embedding <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> data and render that data.  
+<p>Register oEmbed handlers for embedding <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> data and render that data.  
  <a href="class_gravity_view__o_embed.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a440a760df3d86e6f159b0f2089adbab1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a440a760df3d86e6f159b0f2089adbab1">add_provider</a> ()</td></tr>
-<tr class="memdesc:a440a760df3d86e6f159b0f2089adbab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Become an oEmbed provider for <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a>.  <a href="#a440a760df3d86e6f159b0f2089adbab1">More...</a><br /></td></tr>
+<tr class="memdesc:a440a760df3d86e6f159b0f2089adbab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Become an oEmbed provider for <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a>.  <a href="#a440a760df3d86e6f159b0f2089adbab1">More...</a><br /></td></tr>
 <tr class="separator:a440a760df3d86e6f159b0f2089adbab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34e2774688e1ac8e0af1512b4494078a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a34e2774688e1ac8e0af1512b4494078a">get_entry_id</a> ()</td></tr>
 <tr class="memdesc:a34e2774688e1ac8e0af1512b4494078a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entry id for the current oEmbedded entry.  <a href="#a34e2774688e1ac8e0af1512b4494078a">More...</a><br /></td></tr>
 <tr class="separator:a34e2774688e1ac8e0af1512b4494078a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91098fa7d1917ce4833f284bbef12627"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a91098fa7d1917ce4833f284bbef12627">initialize</a> ()</td></tr>
+<tr class="separator:a91098fa7d1917ce4833f284bbef12627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09c466fffdaf6098ae80ce87d2371b08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a09c466fffdaf6098ae80ce87d2371b08">register_handler</a> ()</td></tr>
 <tr class="memdesc:a09c466fffdaf6098ae80ce87d2371b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the oEmbed handler.  <a href="#a09c466fffdaf6098ae80ce87d2371b08">More...</a><br /></td></tr>
 <tr class="separator:a09c466fffdaf6098ae80ce87d2371b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,40 +111,15 @@ Static Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a7fdd8b367db71e533701ccd1754119de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a7fdd8b367db71e533701ccd1754119de">$entry_id</a> = NULL</td></tr>
-<tr class="memdesc:a7fdd8b367db71e533701ccd1754119de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set entry_id and view_id from the data sent to render_handler.  <a href="#a7fdd8b367db71e533701ccd1754119de">More...</a><br /></td></tr>
 <tr class="separator:a7fdd8b367db71e533701ccd1754119de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a152b47d784bb34859dc5dedad1c34cb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a152b47d784bb34859dc5dedad1c34cb6">$is_full_oembed_preview</a> = false</td></tr>
-<tr class="separator:a152b47d784bb34859dc5dedad1c34cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73004ce9cd673c1bfafd1dc351134797"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = array()</td></tr>
-<tr class="separator:a73004ce9cd673c1bfafd1dc351134797"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a521fd441a5ad4952b00a1591a4d4590d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a521fd441a5ad4952b00a1591a4d4590d">$view_id</a> = NULL</td></tr>
-<tr class="separator:a521fd441a5ad4952b00a1591a4d4590d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa04bbbc0c2cc42d6f8cb0986b4cb9210"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#aa04bbbc0c2cc42d6f8cb0986b4cb9210">generate_entry_output</a> ()</td></tr>
-<tr class="separator:aa04bbbc0c2cc42d6f8cb0986b4cb9210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a580436de4a68ebe66fa5fcefe5931394"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a580436de4a68ebe66fa5fcefe5931394">generate_preview_notice</a> ()</td></tr>
-<tr class="memdesc:a580436de4a68ebe66fa5fcefe5931394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a warning to users when previewing oEmbed in the Add Media modal.  <a href="#a580436de4a68ebe66fa5fcefe5931394">More...</a><br /></td></tr>
-<tr class="separator:a580436de4a68ebe66fa5fcefe5931394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4c28d8e9253f6367a7fee42b8c9f2fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#af4c28d8e9253f6367a7fee42b8c9f2fe">get_handler_regex</a> ()</td></tr>
-<tr class="memdesc:af4c28d8e9253f6367a7fee42b8c9f2fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the Regular expression that matches embedded entries.  <a href="#af4c28d8e9253f6367a7fee42b8c9f2fe">More...</a><br /></td></tr>
-<tr class="separator:af4c28d8e9253f6367a7fee42b8c9f2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e8b489f53686eb5925eec8b09a3bc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#ac8e8b489f53686eb5925eec8b09a3bc8">get_postid_from_url_and_slug</a> ( $url='', $slug='')</td></tr>
-<tr class="memdesc:ac8e8b489f53686eb5925eec8b09a3bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the post ID from an URL.  <a href="#ac8e8b489f53686eb5925eec8b09a3bc8">More...</a><br /></td></tr>
-<tr class="separator:ac8e8b489f53686eb5925eec8b09a3bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91098fa7d1917ce4833f284bbef12627"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a91098fa7d1917ce4833f284bbef12627">initialize</a> ()</td></tr>
-<tr class="separator:a91098fa7d1917ce4833f284bbef12627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0acc45af3963ccca0e092c2a4c1ff099"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#a0acc45af3963ccca0e092c2a4c1ff099">render_admin</a> ( $matches, $attr, $url, $rawattr)</td></tr>
-<tr class="memdesc:a0acc45af3963ccca0e092c2a4c1ff099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a nice placeholder in the admin for the entry.  <a href="#a0acc45af3963ccca0e092c2a4c1ff099">More...</a><br /></td></tr>
-<tr class="separator:a0acc45af3963ccca0e092c2a4c1ff099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31a4f067a3ae28d6fd231df27133e85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view__o_embed.html#ae31a4f067a3ae28d6fd231df27133e85">set_vars</a> ( $matches, $attr, $url, $rawattr)</td></tr>
-<tr class="separator:ae31a4f067a3ae28d6fd231df27133e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Register oEmbed handlers for embedding <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> data and render that data. </p>
+<div class="textblock"><p>Register oEmbed handlers for embedding <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> data and render that data. </p>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00022">22</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
@@ -170,7 +147,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00031">31</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00027">27</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
 </div>
 </div>
@@ -190,78 +167,12 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Become an oEmbed provider for <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a>. </p>
-<dl class="section since"><dt>Since</dt><dd>1.21.5.3</dd></dl>
+<p>Become an oEmbed provider for <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00077">77</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00072">72</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-oembed_8php_source.html#l00138">get_handler_regex()</a>.</p>
-
-</div>
-</div>
-<a id="aa04bbbc0c2cc42d6f8cb0986b4cb9210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa04bbbc0c2cc42d6f8cb0986b4cb9210">&#9670;&nbsp;</a></span>generate_entry_output()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">generate_entry_output </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00354">354</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-<p class="reference">References <a class="el" href="connector-functions_8php_source.html#l00370">the_gravityview()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00385">set_single_entry_id()</a>.</p>
-
-</div>
-</div>
-<a id="a580436de4a68ebe66fa5fcefe5931394"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a580436de4a68ebe66fa5fcefe5931394">&#9670;&nbsp;</a></span>generate_preview_notice()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">generate_preview_notice </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Generate a warning to users when previewing oEmbed in the Add Media modal. </p>
-<dl class="section return"><dt>Returns</dt><dd>string HTML notice </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00270">270</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, and <a class="el" href="class-admin_8php_source.html#l00178">GravityView_Admin\get_floaty()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00227">render_handler()</a>, and <a class="el" href="class-oembed_8php_source.html#l00092">render_provider_request()</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -284,107 +195,9 @@ Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.6</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>int|null </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00211">211</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00102">102</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-oembed_8php_source.html#l00025">$entry_id</a>.</p>
-
-</div>
-</div>
-<a id="af4c28d8e9253f6367a7fee42b8c9f2fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4c28d8e9253f6367a7fee42b8c9f2fe">&#9670;&nbsp;</a></span>get_handler_regex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_handler_regex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Generate the Regular expression that matches embedded entries. </p>
-<p>Generates different regex if using permalinks and if not using permalinks</p>
-<dl class="section since"><dt>Since</dt><dd>1.6</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>string Regex code </dd></dl>
-<p>Deprecated. Use ::get_endpoint_name instead.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000123">Runs Filter:</a></b></dt><dd><code>gravityview_slug</code> Modify the url part for a View. <a href="http://docs.gravityview.co/article/62-changing-the-view-slug">Read the doc</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$rewrite_slug</td><td>The slug shown in the URL</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00138">138</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-<p class="reference">References <a class="el" href="class-gv-entry_8php_source.html#l00063">Entry\get_endpoint_name()</a>, and <a class="el" href="class-post-types_8php_source.html#l00162">GravityView_Post_Types\get_entry_var_name()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00077">add_provider()</a>, <a class="el" href="class-oembed_8php_source.html#l00064">register_handler()</a>, and <a class="el" href="class-oembed_8php_source.html#l00092">render_provider_request()</a>.</p>
-
-</div>
-</div>
-<a id="ac8e8b489f53686eb5925eec8b09a3bc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8e8b489f53686eb5925eec8b09a3bc8">&#9670;&nbsp;</a></span>get_postid_from_url_and_slug()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_postid_from_url_and_slug </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$url</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$slug</em> = <code>''</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the post ID from an URL. </p>
-<p>This is necessary because url_to_postid() doesn't work with permalinks off for custom post types</p>
-<p>url_to_postid() </p><dl class="section since"><dt>Since</dt><dd>1.6</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$url</td><td>URL to get the post ID from </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td>The name of a post, used as backup way of checking for post ID </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int 0 if not found; int of URL post ID otherwise </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00180">180</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-<p class="reference">References <a class="el" href="post__image_8php_source.html#l00025">$url</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00285">set_vars()</a>.</p>
+<p class="reference">References <a class="el" href="class-oembed_8php_source.html#l00023">$entry_id</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -413,9 +226,11 @@ Private Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_gravity_view__o_embed.html" title="Register oEmbed handlers for embedding GravityView data and render that data. ">GravityView_oEmbed</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00047">47</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00042">42</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00385">set_single_entry_id()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01967">GravityView_Edit_Entry_Render\user_can_edit_entry()</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01927">GravityView_Edit_Entry_Render\user_can_edit_entry()</a>.</p>
 
 </div>
 </div>
@@ -424,9 +239,6 @@ Private Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">initialize </td>
@@ -435,14 +247,11 @@ Private Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00033">33</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00032">32</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -462,77 +271,11 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register the oEmbed handler. </p>
-<dl class="section since"><dt>Since</dt><dd>1.6  get_handler_regex </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.6 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00064">64</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00060">60</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-oembed_8php_source.html#l00138">get_handler_regex()</a>.</p>
-
-</div>
-</div>
-<a id="a0acc45af3963ccca0e092c2a4c1ff099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0acc45af3963ccca0e092c2a4c1ff099">&#9670;&nbsp;</a></span>render_admin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">render_admin </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$matches</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$attr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$rawattr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Display a nice placeholder in the admin for the entry. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$matches</td><td>The regex matches from the provided regex when calling wp_embed_register_handler() </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$attr</td><td>Embed attributes. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$url</td><td>The original URL that was matched by the regex. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$rawattr</td><td>The original unmodified attributes. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>string The embed HTML. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00333">333</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-<p class="reference">References <a class="el" href="post__image_8php_source.html#l00098">$image</a>, and <a class="el" href="class-admin_8php_source.html#l00178">GravityView_Admin\get_floaty()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00227">render_handler()</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -586,9 +329,9 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string The embed HTML. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00227">227</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00119">119</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
-<p class="reference">References <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-oembed_8php_source.html#l00270">generate_preview_notice()</a>, <a class="el" href="class-oembed_8php_source.html#l00333">render_admin()</a>, and <a class="el" href="class-oembed_8php_source.html#l00285">set_vars()</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -612,9 +355,9 @@ Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.21.5.3</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00092">92</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00089">89</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
-<p class="reference">References <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-oembed_8php_source.html#l00270">generate_preview_notice()</a>, <a class="el" href="class-oembed_8php_source.html#l00138">get_handler_regex()</a>, and <a class="el" href="class-oembed_8php_source.html#l00285">set_vars()</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -638,71 +381,15 @@ Private Member Functions</h2></td></tr>
 <p>REQUIRED FOR THE VIEW TO OUTPUT A SINGLE ENTRY</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">bool&#160;|&#160;int</td><td class="paramname">$is_single_entry</td><td>Existing single entry. False, because <a class="el" href="namespace_g_v.html">GV</a> thinks we're in a post or page.</td></tr>
+    <tr><td class="paramtype">bool&#160;|&#160;int</td><td class="paramname">$is_single_entry</td><td>Existing single entry. False, because GV thinks we're in a post or page.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int The current entry ID </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00385">385</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00135">135</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-oembed_8php_source.html#l00025">$entry_id</a>, <a class="el" href="class-oembed_8php_source.html#l00024">$output</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-oembed_8php_source.html#l00354">generate_entry_output()</a>, and <a class="el" href="class-oembed_8php_source.html#l00047">getInstance()</a>.</p>
-
-</div>
-</div>
-<a id="ae31a4f067a3ae28d6fd231df27133e85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae31a4f067a3ae28d6fd231df27133e85">&#9670;&nbsp;</a></span>set_vars()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">set_vars </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$matches</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$attr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$rawattr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>maybe_get_view_id has a side-effect that adds retrieved views to the global scope</p>
-<p>Deprecated. </p>
-
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00285">285</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-gv-collection-view_8php_source.html#l00078">View_Collection\from_post()</a>, <a class="el" href="class-oembed_8php_source.html#l00180">get_postid_from_url_and_slug()</a>, <a class="el" href="class-data_8php_source.html#l00164">GravityView_View_Data\getInstance()</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00227">render_handler()</a>, and <a class="el" href="class-oembed_8php_source.html#l00092">render_provider_request()</a>.</p>
+<p class="reference">References <a class="el" href="class-oembed_8php_source.html#l00023">$entry_id</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -727,11 +414,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set entry_id and view_id from the data sent to render_handler. </p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00023">23</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00025">25</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00211">get_entry_id()</a>, and <a class="el" href="class-oembed_8php_source.html#l00385">set_single_entry_id()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00102">get_entry_id()</a>, and <a class="el" href="class-oembed_8php_source.html#l00135">set_single_entry_id()</a>.</p>
 
 </div>
 </div>
@@ -755,82 +440,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00029">29</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-</div>
-</div>
-<a id="a152b47d784bb34859dc5dedad1c34cb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a152b47d784bb34859dc5dedad1c34cb6">&#9670;&nbsp;</a></span>$is_full_oembed_preview</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">$is_full_oembed_preview = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00027">27</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-</div>
-</div>
-<a id="a73004ce9cd673c1bfafd1dc351134797"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73004ce9cd673c1bfafd1dc351134797">&#9670;&nbsp;</a></span>$output</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">$output = array()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00024">24</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-oembed_8php_source.html#l00385">set_single_entry_id()</a>.</p>
-
-</div>
-</div>
-<a id="a521fd441a5ad4952b00a1591a4d4590d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a521fd441a5ad4952b00a1591a4d4590d">&#9670;&nbsp;</a></span>$view_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">$view_id = NULL</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view__o_embed.html#a52cfe12cb633ed46ced4c6ef0d8f4de3">render_handler</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00026">26</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-oembed_8php_source.html#l00025">25</a> of file <a class="el" href="class-oembed_8php_source.html">class-oembed.php</a>.</p>
 
 </div>
 </div>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -67,6 +67,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">loader.php File Reference</div>  </div>
@@ -75,32 +76,58 @@ $(function() {
 
 <p><a href="loader_8php_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:adffedf8dd02b0030f36e909b6520cf9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8php.html#adffedf8dd02b0030f36e909b6520cf9e">gravityview_lock_version</a> ()</td></tr>
+<tr class="separator:adffedf8dd02b0030f36e909b6520cf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad144ef890ba696598bad546c2c61845c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="time_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a>(! defined( '<a class="el" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a>')) <a class="el" href="time_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a>(version_compare(phpversion(), '5.3', '&lt;')) else <a class="el" href="time_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a>(defined( 'DOING_GRAVITYVIEW_TESTS') &amp;&amp;getenv( 'GV_NO_FUTURE'))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8php.html#ad144ef890ba696598bad546c2c61845c">else</a></td></tr>
-<tr class="memdesc:ad144ef890ba696598bad546c2c61845c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just an early preloader for the future code.  <a href="#ad144ef890ba696598bad546c2c61845c">More...</a><br /></td></tr>
-<tr class="separator:ad144ef890ba696598bad546c2c61845c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a583c85e3b0792f80cf0468825b6a9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a>(version_compare(phpversion(), '5.3.0', '&lt;'))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loader_8php.html#a0a583c85e3b0792f80cf0468825b6a9c">else</a></td></tr>
+<tr class="memdesc:a0a583c85e3b0792f80cf0468825b6a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The future branch of <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> requires PHP 5.3+ namespaces and SPL.  <a href="#a0a583c85e3b0792f80cf0468825b6a9c">More...</a><br /></td></tr>
+<tr class="separator:a0a583c85e3b0792f80cf0468825b6a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ad144ef890ba696598bad546c2c61845c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad144ef890ba696598bad546c2c61845c">&#9670;&nbsp;</a></span>else</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="adffedf8dd02b0030f36e909b6520cf9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adffedf8dd02b0030f36e909b6520cf9e">&#9670;&nbsp;</a></span>gravityview_lock_version()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="time_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a> (! defined('<a class="el" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a>')) <a class="el" href="time_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a> (version_compare(phpversion(), '5.3', '&lt;')) else <a class="el" href="time_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a> (defined('DOING_GRAVITYVIEW_TESTS') &amp;&amp;getenv('GV_NO_FUTURE')) else</td>
+          <td class="memname">gravityview_lock_version </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    </div><div class="line">    require <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> . <span class="stringliteral">&#39;future/gravityview.php&#39;</span></div><div class="ttc" id="gravityview_8php_html_a20e44631ea950946599dd5661090eb4d"><div class="ttname"><a href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a></div><div class="ttdeci">const GRAVITYVIEW_DIR</div><div class="ttdoc">&quot;GRAVITYVIEW_DIR&quot; &quot;./&quot; The absolute path to the plugin directory, with trailing slash ...</div><div class="ttdef"><b>Definition:</b> <a href="gravityview_8php_source.html#l00035">gravityview.php:35</a></div></div>
-</div><!-- fragment -->
-<p>Just an early preloader for the future code. </p>
-<p>Compatible with all PHP versions syntax-wise.If this file is called directly, abort. The future branch of <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> requires PHP 5.3+ namespaces and SPL. </p>
-<p>Tests with a suppressed future.</p>
+<p>Die without activating. Sorry.</p>
 <p>All looks fine. </p>
 
-<p class="definition">Definition at line <a class="el" href="loader_8php_source.html#l00022">22</a> of file <a class="el" href="loader_8php_source.html">loader.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="loader_8php_source.html#l00017">17</a> of file <a class="el" href="loader_8php_source.html">loader.php</a>.</p>
+
+<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00040">GRAVITYVIEW_DIR</a>, <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>, and <a class="el" href="gravityview_8php_source.html#l00057">GV_MIN_PHP_VERSION</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a0a583c85e3b0792f80cf0468825b6a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a583c85e3b0792f80cf0468825b6a9c">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a> (version_compare(phpversion(), '5.3.0', '&lt;')) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    </div><div class="line">    require <a class="code" href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a> . <span class="stringliteral">&#39;future/gravityview.php&#39;</span></div><div class="ttc" id="gravityview_8php_html_a20e44631ea950946599dd5661090eb4d"><div class="ttname"><a href="gravityview_8php.html#a20e44631ea950946599dd5661090eb4d">GRAVITYVIEW_DIR</a></div><div class="ttdeci">const GRAVITYVIEW_DIR</div><div class="ttdoc">&quot;GRAVITYVIEW_DIR&quot; &quot;./&quot; The absolute path to the plugin directory, with trailing slash ...</div><div class="ttdef"><b>Definition:</b> <a href="gravityview_8php_source.html#l00040">gravityview.php:40</a></div></div>
+</div><!-- fragment -->
+<p>The future branch of <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> requires PHP 5.3+ namespaces and SPL. </p>
+
+<p class="definition">Definition at line <a class="el" href="loader_8php_source.html#l00041">41</a> of file <a class="el" href="loader_8php_source.html">loader.php</a>.</p>
 
 </div>
 </div>

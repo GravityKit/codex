@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -68,7 +68,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">Field Class Reference</div>  </div>
@@ -77,18 +79,48 @@ $(function() {
 
 <p>If this file is called directly, abort.  
  <a href="class_g_v_1_1_field.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for Field:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_g_v_1_1_field.png" usemap="#Field_map" alt=""/>
+  <map id="Field_map" name="Field_map">
+<area href="class_g_v_1_1_g_f___field.html" title="If this file is called directly, abort. " alt="GF_Field" shape="rect" coords="0,56,89,80"/>
+<area href="class_g_v_1_1_internal___field.html" title="If this file is called directly, abort. " alt="Internal_Field" shape="rect" coords="99,56,188,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3f84d378c01b8f1633a32af16e53c2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#aa3f84d378c01b8f1633a32af16e53c2f">__get</a> ( $key)</td></tr>
 <tr class="memdesc:aa3f84d378c01b8f1633a32af16e53c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get one of the extra configuration keys via property accessors.  <a href="#aa3f84d378c01b8f1633a32af16e53c2f">More...</a><br /></td></tr>
 <tr class="separator:aa3f84d378c01b8f1633a32af16e53c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de80961fb061de7330a4597e5e1e897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#a8de80961fb061de7330a4597e5e1e897">__isset</a> ( $key)</td></tr>
+<tr class="memdesc:a8de80961fb061de7330a4597e5e1e897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this set?  <a href="#a8de80961fb061de7330a4597e5e1e897">More...</a><br /></td></tr>
+<tr class="separator:a8de80961fb061de7330a4597e5e1e897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdca3059eb6853d19ed3b526c6687bb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#abdca3059eb6853d19ed3b526c6687bb9">as_configuration</a> ()</td></tr>
 <tr class="memdesc:abdca3059eb6853d19ed3b526c6687bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an array of the old format as used by callers of <code><a class="el" href="class_g_v_common.html" title="If this file is called directly, abort. ">GVCommon</a>:get_directory_fields()</code> for example.  <a href="#abdca3059eb6853d19ed3b526c6687bb9">More...</a><br /></td></tr>
 <tr class="separator:abdca3059eb6853d19ed3b526c6687bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f0ecc46ce3dfda2b0c2fce40555b359"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#a8f0ecc46ce3dfda2b0c2fce40555b359">from_configuration</a> ( $configuration)</td></tr>
-<tr class="memdesc:a8f0ecc46ce3dfda2b0c2fce40555b359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update self from a configuration array.  <a href="#a8f0ecc46ce3dfda2b0c2fce40555b359">More...</a><br /></td></tr>
-<tr class="separator:a8f0ecc46ce3dfda2b0c2fce40555b359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc40beedd25ab33a7133076b020d749"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#abbc40beedd25ab33a7133076b020d749">get_label</a> (<a class="el" href="class_g_v_1_1_view.html">View</a> $view=null, <a class="el" href="class_g_v_1_1_source.html">Source</a> $source=null, <a class="el" href="class_g_v_1_1_entry.html">Entry</a> $entry=null, <a class="el" href="class_g_v_1_1_request.html">Request</a> $request=null)</td></tr>
+<tr class="memdesc:abbc40beedd25ab33a7133076b020d749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the label for this field.  <a href="#abbc40beedd25ab33a7133076b020d749">More...</a><br /></td></tr>
+<tr class="separator:abbc40beedd25ab33a7133076b020d749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd61ad8c7c626935646d8a5b11b702f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#a2cd61ad8c7c626935646d8a5b11b702f">get_value</a> (<a class="el" href="class_g_v_1_1_view.html">View</a> $view=null, <a class="el" href="class_g_v_1_1_source.html">Source</a> $source=null, <a class="el" href="class_g_v_1_1_entry.html">Entry</a> $entry=null, <a class="el" href="class_g_v_1_1_request.html">Request</a> $request=null)</td></tr>
+<tr class="memdesc:a2cd61ad8c7c626935646d8a5b11b702f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the value for this field.  <a href="#a2cd61ad8c7c626935646d8a5b11b702f">More...</a><br /></td></tr>
+<tr class="separator:a2cd61ad8c7c626935646d8a5b11b702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3ed8b4b7e1f8ebd7d15877728d6cf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#a6b3ed8b4b7e1f8ebd7d15877728d6cf5">is_visible</a> ()</td></tr>
+<tr class="separator:a6b3ed8b4b7e1f8ebd7d15877728d6cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929be8ba713fd1c3b6284b07d1c52bf3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#a929be8ba713fd1c3b6284b07d1c52bf3">update_configuration</a> ( $configuration)</td></tr>
+<tr class="memdesc:a929be8ba713fd1c3b6284b07d1c52bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update configuration.  <a href="#a929be8ba713fd1c3b6284b07d1c52bf3">More...</a><br /></td></tr>
+<tr class="separator:a929be8ba713fd1c3b6284b07d1c52bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae4683244036bd18b1354412fd68d1a70"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#ae4683244036bd18b1354412fd68d1a70">from_configuration</a> ( $configuration)</td></tr>
+<tr class="memdesc:ae4683244036bd18b1354412fd68d1a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create self from a configuration array.  <a href="#ae4683244036bd18b1354412fd68d1a70">More...</a><br /></td></tr>
+<tr class="separator:ae4683244036bd18b1354412fd68d1a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bfcd49ccdcca6834ca2fecca55f1d9e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#a8bfcd49ccdcca6834ca2fecca55f1d9e">get</a> ( $source, $args)</td></tr>
+<tr class="memdesc:a8bfcd49ccdcca6834ca2fecca55f1d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alias for ::get_field()  <a href="#a8bfcd49ccdcca6834ca2fecca55f1d9e">More...</a><br /></td></tr>
+<tr class="separator:a8bfcd49ccdcca6834ca2fecca55f1d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -113,6 +145,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a939301b8571755cd77c0d1a6e2246553"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#a939301b8571755cd77c0d1a6e2246553">$UID</a> = ''</td></tr>
 <tr class="separator:a939301b8571755cd77c0d1a6e2246553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8771f065cfb6da4b8e5d31dbeb343124"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#a8771f065cfb6da4b8e5d31dbeb343124">get_value_filters</a> ( $value, <a class="el" href="class_g_v_1_1_view.html">View</a> $view=null, <a class="el" href="class_g_v_1_1_source.html">Source</a> $source=null, <a class="el" href="class_g_v_1_1_entry.html">Entry</a> $entry=null, <a class="el" href="class_g_v_1_1_request.html">Request</a> $request=null)</td></tr>
+<tr class="memdesc:a8771f065cfb6da4b8e5d31dbeb343124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply all the required filters after <a class="el" href="class_g_v_1_1_field.html#a2cd61ad8c7c626935646d8a5b11b702f" title="Retrieve the value for this field. ">get_value()</a> was called.  <a href="#a8771f065cfb6da4b8e5d31dbeb343124">More...</a><br /></td></tr>
+<tr class="separator:a8771f065cfb6da4b8e5d31dbeb343124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab2a3e8712b2462d01e8ebacaa08bafa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#ab2a3e8712b2462d01e8ebacaa08bafa7">$configuration</a> = array()</td></tr>
@@ -120,7 +158,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>If this file is called directly, abort. </p>
-<p>The default <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> <a class="el" href="class_g_v_1_1_field.html" title="If this file is called directly, abort. ">Field</a> class.</p>
+<p>The default <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> <a class="el" href="class_g_v_1_1_field.html" title="If this file is called directly, abort. ">Field</a> class.</p>
 <p>Houses all base <a class="el" href="class_g_v_1_1_field.html" title="If this file is called directly, abort. ">Field</a> functionality. </p>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00014">14</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
@@ -150,7 +188,36 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed|null The value for the given configuration key, null if doesn't exist. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00177">177</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00352">352</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+
+</div>
+</div>
+<a id="a8de80961fb061de7330a4597e5e1e897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de80961fb061de7330a4597e5e1e897">&#9670;&nbsp;</a></span>__isset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__isset </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is this set? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>The key to get.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean Whether this $key is set or not. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00368">368</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
 
 </div>
 </div>
@@ -179,14 +246,336 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f0ecc46ce3dfda2b0c2fce40555b359"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f0ecc46ce3dfda2b0c2fce40555b359">&#9670;&nbsp;</a></span>from_configuration()</h2>
+<a id="ae4683244036bd18b1354412fd68d1a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4683244036bd18b1354412fd68d1a70">&#9670;&nbsp;</a></span>from_configuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static from_configuration </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$configuration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create self from a configuration array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$configuration</td><td>The configuration array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>::as_configuration() </dd></dl>
+<p>Prevent infinte loops here from unimplemented children.</p>
+<p>Determine the field implementation to use, and try to use.</p>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000011">Runs Filter:</a></b></dt><dd><code>gravityview/field/class</code> Filter the field class about to be created from the configuration. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$field_class</td><td>The field class about to be used. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$configuration</td><td>The configuration as per ::as_configuration()</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00168">168</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+</div>
+</div>
+<a id="a8bfcd49ccdcca6834ca2fecca55f1d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bfcd49ccdcca6834ca2fecca55f1d9e">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static get </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An alias for ::get_field() </p>
+<dl class="section see"><dt>See also</dt><dd>::get_field() </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$source</td><td>A  class as string this field is tied to. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>The arguments required for the backend to fetch the field (usually just the ID).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>|null A  instance or null if not found. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00144">144</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+</div>
+</div>
+<a id="abbc40beedd25ab33a7133076b020d749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc40beedd25ab33a7133076b020d749">&#9670;&nbsp;</a></span>get_label()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">from_configuration </td>
+          <td class="memname">get_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_view.html">View</a>&#160;</td>
+          <td class="paramname"><em>$view</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_source.html">Source</a>&#160;</td>
+          <td class="paramname"><em>$source</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_entry.html">Entry</a>&#160;</td>
+          <td class="paramname"><em>$entry</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_request.html">Request</a>&#160;</td>
+          <td class="paramname"><em>$request</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the label for this field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The view for this context if applicable. </td></tr>
+    <tr><td class="paramtype">\GV\Source</td><td class="paramname">$source</td><td>The source (form) for this context if applicable. </td></tr>
+    <tr><td class="paramtype">\GV\Entry</td><td class="paramname">$entry</td><td>The entry for this context if applicable. </td></tr>
+    <tr><td class="paramtype">\GV\Request</td><td class="paramname">$request</td><td>The request for this context if applicable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string The label for this field. Nothing here. </dd></dl>
+<p>A custom label is available. </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00268">268</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>.</p>
+
+</div>
+</div>
+<a id="a2cd61ad8c7c626935646d8a5b11b702f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd61ad8c7c626935646d8a5b11b702f">&#9670;&nbsp;</a></span>get_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_view.html">View</a>&#160;</td>
+          <td class="paramname"><em>$view</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_source.html">Source</a>&#160;</td>
+          <td class="paramname"><em>$source</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_entry.html">Entry</a>&#160;</td>
+          <td class="paramname"><em>$entry</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_request.html">Request</a>&#160;</td>
+          <td class="paramname"><em>$request</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the value for this field. </p>
+<p>Returns null in this implementation (or, rather, lack thereof).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The view for this context if applicable. </td></tr>
+    <tr><td class="paramtype">\GV\Source</td><td class="paramname">$source</td><td>The source (form) for this context if applicable. </td></tr>
+    <tr><td class="paramtype">\GV\Entry</td><td class="paramname">$entry</td><td>The entry for this context if applicable. </td></tr>
+    <tr><td class="paramtype">\GV\Request</td><td class="paramname">$request</td><td>The request for this context if applicable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mixed The value for this field. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00294">294</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>.</p>
+
+</div>
+</div>
+<a id="a8771f065cfb6da4b8e5d31dbeb343124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8771f065cfb6da4b8e5d31dbeb343124">&#9670;&nbsp;</a></span>get_value_filters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_value_filters </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_view.html">View</a>&#160;</td>
+          <td class="paramname"><em>$view</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_source.html">Source</a>&#160;</td>
+          <td class="paramname"><em>$source</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_entry.html">Entry</a>&#160;</td>
+          <td class="paramname"><em>$entry</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_g_v_1_1_request.html">Request</a>&#160;</td>
+          <td class="paramname"><em>$request</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Apply all the required filters after <a class="el" href="class_g_v_1_1_field.html#a2cd61ad8c7c626935646d8a5b11b702f" title="Retrieve the value for this field. ">get_value()</a> was called. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td>The value that will be filtered. </td></tr>
+    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The view for this context if applicable. </td></tr>
+    <tr><td class="paramtype">\GV\Source</td><td class="paramname">$source</td><td>The source (form) for this context if applicable. </td></tr>
+    <tr><td class="paramtype">\GV\Entry</td><td class="paramname">$entry</td><td>The entry for this context if applicable. </td></tr>
+    <tr><td class="paramtype">\GV\Request</td><td class="paramname">$request</td><td>The request for this context if applicable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This is in its own function since  subclasses have to call it. </p>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000012">Runs Filter:</a></b></dt><dd><code>gravityview/field/$type/value</code> Override the displayed value here. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>The value. </td></tr>
+    <tr><td class="paramtype"></td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00309">309</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+
+</div>
+</div>
+<a id="a6b3ed8b4b7e1f8ebd7d15877728d6cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b3ed8b4b7e1f8ebd7d15877728d6cf5">&#9670;&nbsp;</a></span>is_visible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_visible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000014">Runs Filter:</a></b></dt><dd><code>gravityview/field/is_visible</code> Should this field be visible?</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$visible</td><td>Visible or not, defaults to the set field capability requirement if defined. </td></tr>
+    <tr><td class="paramtype">\GV\Field</td><td class="paramname">$field</td><td>The field we're looking at.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00335">335</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+
+</div>
+</div>
+<a id="a929be8ba713fd1c3b6284b07d1c52bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929be8ba713fd1c3b6284b07d1c52bf3">&#9670;&nbsp;</a></span>update_configuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">update_configuration </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$configuration</em></td><td>)</td>
@@ -195,14 +584,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update self from a configuration array. </p>
+<p>Update configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$configuration</td><td>The configuration array. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section see"><dt>See also</dt><dd>::as_configuration() </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Smelling trouble here...</p>
 <p>Shared among all field types (sort of).</p>
 <p>Everything else goes into the properties for now. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00144">144</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00227">227</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+<p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>

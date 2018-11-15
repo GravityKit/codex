@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -80,6 +80,9 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___approval.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d3c9741e79bdfb291177d6d7340c93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___approval.html#aa6d3c9741e79bdfb291177d6d7340c93">_trigger_notifications</a> ( $entry_id=0)</td></tr>
+<tr class="memdesc:aa6d3c9741e79bdfb291177d6d7340c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes approval notification and action hook to the send_notifications method.  <a href="#aa6d3c9741e79bdfb291177d6d7340c93">More...</a><br /></td></tr>
+<tr class="separator:aa6d3c9741e79bdfb291177d6d7340c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b57eb2100156d22cad082a52c5b6e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___approval.html#aa9b57eb2100156d22cad082a52c5b6e3">after_submission</a> ( $entry, $form)</td></tr>
 <tr class="memdesc:aa9b57eb2100156d22cad082a52c5b6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the is_approved meta whenever the entry is submitted (and it contains a User Opt-in field)  <a href="#aa9b57eb2100156d22cad082a52c5b6e3">More...</a><br /></td></tr>
 <tr class="separator:aa9b57eb2100156d22cad082a52c5b6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,6 +95,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a5af4f8d6eedfa83a44abdaf0f5ad3787"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___approval.html#a5af4f8d6eedfa83a44abdaf0f5ad3787">add_approval_notification_events</a> ( $notification_events=array(), $form=array())</td></tr>
+<tr class="memdesc:a5af4f8d6eedfa83a44abdaf0f5ad3787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds entry approval status change custom notification events.  <a href="#a5af4f8d6eedfa83a44abdaf0f5ad3787">More...</a><br /></td></tr>
+<tr class="separator:a5af4f8d6eedfa83a44abdaf0f5ad3787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe292d5e7fef640bef45afd2855885e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___approval.html#a5fe292d5e7fef640bef45afd2855885e">autounapprove</a> ( $form, $entry_id, $edit, $gv_data)</td></tr>
+<tr class="memdesc:a5fe292d5e7fef640bef45afd2855885e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maybe unapprove entry on edit.  <a href="#a5fe292d5e7fef640bef45afd2855885e">More...</a><br /></td></tr>
+<tr class="separator:a5fe292d5e7fef640bef45afd2855885e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ba2d82d00ee4b663b3e30ff20274a10"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___approval.html#a7ba2d82d00ee4b663b3e30ff20274a10">get_entry_status</a> ( $entry, $value_or_label='label')</td></tr>
 <tr class="memdesc:a7ba2d82d00ee4b663b3e30ff20274a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the approval status for an entry.  <a href="#a7ba2d82d00ee4b663b3e30ff20274a10">More...</a><br /></td></tr>
 <tr class="separator:a7ba2d82d00ee4b663b3e30ff20274a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +118,9 @@ Data Fields</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a1ec7e2341dee24f7d9251362d57bbbad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___approval.html#a1ec7e2341dee24f7d9251362d57bbbad">_send_notifications</a> ( $entry_id='', $event='')</td></tr>
+<tr class="memdesc:a1ec7e2341dee24f7d9251362d57bbbad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes along notification triggers to GFAPI::send_notifications()  <a href="#a1ec7e2341dee24f7d9251362d57bbbad">More...</a><br /></td></tr>
+<tr class="separator:a1ec7e2341dee24f7d9251362d57bbbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a561424521381fd64539c5fb5e573d143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___approval.html#a561424521381fd64539c5fb5e573d143">add_hooks</a> ()</td></tr>
 <tr class="memdesc:a561424521381fd64539c5fb5e573d143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add actions and filters related to entry approval.  <a href="#a561424521381fd64539c5fb5e573d143">More...</a><br /></td></tr>
 <tr class="separator:a561424521381fd64539c5fb5e573d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +166,132 @@ Static Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1ec7e2341dee24f7d9251362d57bbbad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec7e2341dee24f7d9251362d57bbbad">&#9670;&nbsp;</a></span>_send_notifications()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_send_notifications </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry_id</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$event</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Passes along notification triggers to GFAPI::send_notifications() </p>
+<dl class="section since"><dt>Since</dt><dd>2.1</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$entry_id</td><td>ID of entry being updated </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$event</td><td>Hook that triggered the notification. This is used as the key in the GF notifications array.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00088">88</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00074">_trigger_notifications()</a>.</p>
+
+</div>
+</div>
+<a id="aa6d3c9741e79bdfb291177d6d7340c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6d3c9741e79bdfb291177d6d7340c93">&#9670;&nbsp;</a></span>_trigger_notifications()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_trigger_notifications </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry_id</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Passes approval notification and action hook to the send_notifications method. </p>
+<dl class="section see"><dt>See also</dt><dd>GravityView_Entry_Approval::send_notifications() </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00074">74</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00088">_send_notifications()</a>.</p>
+
+</div>
+</div>
+<a id="a5af4f8d6eedfa83a44abdaf0f5ad3787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af4f8d6eedfa83a44abdaf0f5ad3787">&#9670;&nbsp;</a></span>add_approval_notification_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static add_approval_notification_events </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$notification_events</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em> = <code>array()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds entry approval status change custom notification events. </p>
+<dl class="section since"><dt>Since</dt><dd>2.1</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$notification_events</td><td>The notification events. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>The current form. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00115">115</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+
+</div>
+</div>
 <a id="a515a1a431b074780d1df65446c155429"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a515a1a431b074780d1df65446c155429">&#9670;&nbsp;</a></span>add_approval_status_updated_note()</h2>
 
@@ -199,7 +337,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false|int|WP_Error Note ID if successful; WP_Error if error when adding note, FALSE if note not updated because of <code>gravityview/approve_entries/add-note</code> filter or <code><a class="el" href="class_gravity_view___entry___notes.html" title="Class GravityView_Entry_Notes. ">GravityView_Entry_Notes</a></code> class not existing </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000106">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/add-note</code> Add a note when the entry has been approved or disapproved? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000185">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/add-note</code> Add a note when the entry has been approved or disapproved? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -208,7 +346,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00334">334</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00428">428</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00048">GravityView_Entry_Notes\add_note()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00028">GravityView_Entry_Approval_Status\APPROVED</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00033">GravityView_Entry_Approval_Status\DISAPPROVED</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00111">GravityView_Entry_Approval_Status\maybe_convert_status()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00038">GravityView_Entry_Approval_Status\UNAPPROVED</a>.</p>
 
@@ -273,7 +411,9 @@ Static Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Update the is_approved meta whenever the entry is submitted (and it contains a User Opt-in field) </p>
-<dl class="section since"><dt>Since</dt><dd>1.16.6</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.16.6 </dd>
+<dd>
+2.0.14 Set the default approval <code>is_approved</code> value upon submission</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">$entry</td><td>array Gravity Forms entry object </td></tr>
@@ -281,10 +421,18 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000184">Runs Filter:</a></b></dt><dd><code>gravityview/approve_entries/after_submission/default_status</code> Modify the default approval status for newly submitted entries </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0.14 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$default_status</td><td>See <a class="el" href="class_gravity_view___entry___approval___status.html" title="If this file is called directly, abort. ">GravityView_Entry_Approval_Status()</a> for valid statuses.</td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00172">172</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00246">246</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00311">$form</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00185">after_update_entry_update_approved_meta()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00279">after_update_entry_update_approved_meta()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00038">GravityView_Entry_Approval_Status\UNAPPROVED</a>.</p>
 
 </div>
 </div>
@@ -326,11 +474,11 @@ Static Private Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>If the form doesn't contain the approve field, don't assume anything.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00185">185</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00279">279</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00311">$form</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00028">GravityView_Entry_Approval_Status\APPROVED</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00033">GravityView_Entry_Approval_Status\DISAPPROVED</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00028">GravityView_Entry_Approval_Status\APPROVED</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00033">GravityView_Entry_Approval_Status\DISAPPROVED</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00172">after_submission()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00246">after_submission()</a>.</p>
 
 </div>
 </div>
@@ -355,9 +503,74 @@ Static Private Member Functions</h2></td></tr>
 <p>array $_POST {  int $form_id ID of the form connected to the entry being updated  string|int $entry_slug The ID or slug of the entry being updated  string $approved The value of the entry approval status {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___entry___approval___status.html#ae61b861eb64d30f382ee4bc3c433a835" title="Check whether the passed value is one of the defined values for entry approval. ">GravityView_Entry_Approval_Status::is_valid()</a> } }</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void Prints result using wp_send_json_success() and wp_send_json_error() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00094">94</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00167">167</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
-<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00021">$current_status</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-common_8php_source.html#l00625">GVCommon\get_entry_id()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>.</p>
+<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00021">$current_status</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-gv-utils_8php_source.html#l00033">Utils\_POST()</a>, <a class="el" href="class-common_8php_source.html#l00625">GVCommon\get_entry_id()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>.</p>
+
+</div>
+</div>
+<a id="a5fe292d5e7fef640bef45afd2855885e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe292d5e7fef640bef45afd2855885e">&#9670;&nbsp;</a></span>autounapprove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static autounapprove </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$edit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$gv_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maybe unapprove entry on edit. </p>
+<p>Called from gravityview/edit_entry/after_update</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td>Gravity Forms form array </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$entry_id</td><td>Numeric ID of the entry that was updated </td></tr>
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___edit___entry___render.html">GravityView_Edit_Entry_Render</a></td><td class="paramname">$edit</td><td>This object </td></tr>
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___view___data.html" title="If this file is called directly, abort. ">GravityView_View_Data</a></td><td class="paramname">$gv_data</td><td>The View data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00654">654</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-gv-view_8php_source.html#l00684">View\by_id()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00038">GravityView_Entry_Approval_Status\UNAPPROVED</a>.</p>
 
 </div>
 </div>
@@ -407,9 +620,9 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string|null </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00432">432</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00526">526</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00311">$form</a>, and <a class="el" href="connector-functions_8php_source.html#l00147">gravityview_get_field()</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="connector-functions_8php_source.html#l00146">gravityview_get_field()</a>.</p>
 
 </div>
 </div>
@@ -458,11 +671,11 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool|string Return the label or value of entry approval </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00063">63</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00136">136</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-common_8php_source.html#l00625">GVCommon\get_entry_id()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00273">GravityView_Entry_Approval_Status\get_label()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00111">GravityView_Entry_Approval_Status\maybe_convert_status()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00389">GravityView_Admin_ApproveEntries\add_entry_approved_hidden_input()</a>, and <a class="el" href="class-gravityview-field-is-approved_8php_source.html#l00116">GravityView_Field_Is_Approved\custom_merge_tags()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00404">GravityView_Admin_ApproveEntries\add_entry_approved_hidden_input()</a>, and <a class="el" href="class-gravityview-field-is-approved_8php_source.html#l00119">GravityView_Field_Is_Approved\custom_merge_tags()</a>.</p>
 
 </div>
 </div>
@@ -527,11 +740,11 @@ Static Private Member Functions</h2></td></tr>
 <p>Destroy the cache for this form </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class-cache_8php.html">class-cache.php</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.1</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00269">269</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00363">363</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00111">GravityView_Entry_Approval_Status\maybe_convert_status()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00111">GravityView_Entry_Approval_Status\maybe_convert_status()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00359">GravityView_Admin_ApproveEntries\update_approved()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00374">GravityView_Admin_ApproveEntries\update_approved()</a>.</p>
 
 </div>
 </div>
@@ -588,7 +801,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000013">Runs Actions:</a></b></dt><dd><code>gravityview/approve_entries/updated</code> Triggered when an entry approval is updated </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000040">Runs Actions:</a></b></dt><dd><code>gravityview/approve_entries/updated</code> Triggered when an entry approval is updated </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.6.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -597,7 +810,7 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000014">Runs Actions:</a></b></dt><dd><code>gravityview/approve_entries/{$action}</code> Triggered when an entry approval is reset. $action can be 'approved', 'unapproved', or 'disapproved' </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000041">Runs Actions:</a></b></dt><dd><code>gravityview/approve_entries/{$action}</code> Triggered when an entry approval is set. {$action} can be 'approved', 'unapproved', or 'disapproved' Note: If you want this to work with Bulk Actions, run in a plugin rather than a theme; the bulk updates hook runs before themes are loaded. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.6.1 </dd>
 <dd>
 1.18 Added "unapproved" </dd></dl>
@@ -608,9 +821,9 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00462">462</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00556">556</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l00311">$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-common_8php_source.html#l00028">GVCommon\get_form()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00310">GravityView_Entry_Approval_Status\get_key()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00204">GravityView_Entry_Approval_Status\is_unapproved()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00111">GravityView_Entry_Approval_Status\maybe_convert_status()</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-common_8php_source.html#l00028">GVCommon\get_form()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00310">GravityView_Entry_Approval_Status\get_key()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00111">GravityView_Entry_Approval_Status\maybe_convert_status()</a>.</p>
 
 </div>
 </div>
@@ -668,11 +881,11 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean|null True: successfully updated all entries. False: there was an error updating at least one entry. NULL: an error occurred (see log) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00222">222</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00316">316</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00158">GravityView_Entry_Approval_Status\is_valid()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00271">GravityView_Admin_ApproveEntries\process_bulk_action()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00286">GravityView_Admin_ApproveEntries\process_bulk_action()</a>.</p>
 
 </div>
 </div>
@@ -691,7 +904,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">28</a> of file <a class="el" href="class-gravityview-entry-approval_8php_source.html">class-gravityview-entry-approval.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00076">GravityView_Admin_ApproveEntries\filter_links_entry_list()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01132">GravityView_frontend\is_entry_approved()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01092">GravityView_frontend\process_search_only_approved()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gv-shortcode-gventry_8php_source.html#l00026">gventry\callback()</a>, <a class="el" href="class-gv-shortcode-gvfield_8php_source.html#l00026">gvfield\callback()</a>, <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00031">gravityview\callback()</a>, <a class="el" href="class-gv-view_8php_source.html#l00229">View\content()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00076">GravityView_Admin_ApproveEntries\filter_links_entry_list()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00398">Views_Route\get_sub_item_permissions_check()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00760">GravityView_frontend\is_entry_approved()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00720">GravityView_frontend\process_search_only_approved()</a>, and <a class="el" href="class-gv-oembed_8php_source.html#l00207">oEmbed\render_frontend()</a>.</p>
 
 </div>
 </div>

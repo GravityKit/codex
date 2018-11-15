@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -66,6 +66,11 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">Template Class Reference</div>  </div>
 </div><!--header-->
@@ -79,9 +84,51 @@ Inheritance diagram for Template:</div>
  <div class="center">
   <img src="class_g_v_1_1_template.png" usemap="#Template_map" alt=""/>
   <map id="Template_map" name="Template_map">
-<area href="class_g_v_1_1_view___template.html" title="If this file is called directly, abort. " alt="View_Template" shape="rect" coords="0,112,158,136"/>
+<area href="class_g_v_1_1_entry___template.html" title="If this file is called directly, abort. " alt="Entry_Template" shape="rect" coords="0,112,158,136"/>
+<area href="class_g_v_1_1_field___template.html" title="If this file is called directly, abort. " alt="Field_Template" shape="rect" coords="336,112,494,136"/>
+<area href="class_g_v_1_1_view___template.html" title="If this file is called directly, abort. " alt="View_Template" shape="rect" coords="672,112,830,136"/>
+<area href="class_g_v_1_1_entry___legacy___template.html" title="If this file is called directly, abort. " alt="Entry_Legacy_Template" shape="rect" coords="168,168,326,192"/>
+<area href="class_g_v_1_1_entry___list___template.html" title="If this file is called directly, abort. " alt="Entry_List_Template" shape="rect" coords="168,224,326,248"/>
+<area href="class_g_v_1_1_entry___table___template.html" title="If this file is called directly, abort. " alt="Entry_Table_Template" shape="rect" coords="168,280,326,304"/>
+<area href="class_g_v_1_1_field___c_s_v___template.html" title="If this file is called directly, abort. " alt="Field_CSV_Template" shape="rect" coords="504,168,662,192"/>
+<area href="class_g_v_1_1_field___h_t_m_l___template.html" title="If this file is called directly, abort. " alt="Field_HTML_Template" shape="rect" coords="504,224,662,248"/>
+<area href="class_g_v_1_1_view___legacy___template.html" title="If this file is called directly, abort. " alt="View_Legacy_Template" shape="rect" coords="840,168,998,192"/>
+<area href="class_g_v_1_1_view___list___template.html" title="If this file is called directly, abort. " alt="View_List_Template" shape="rect" coords="840,224,998,248"/>
+<area href="class_g_v_1_1_view___table___template.html" title="If this file is called directly, abort. " alt="View_Table_Template" shape="rect" coords="840,280,998,304"/>
 </map>
  </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a095c5d389db211932136b53f25f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_template.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
+<tr class="memdesc:a095c5d389db211932136b53f25f39685"><td class="mdescLeft">&#160;</td><td class="mdescRight">General template initialization.  <a href="#a095c5d389db211932136b53f25f39685">More...</a><br /></td></tr>
+<tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421831a265621325e1fdd19aace0c758"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_template.html#a421831a265621325e1fdd19aace0c758">__destruct</a> ()</td></tr>
+<tr class="memdesc:a421831a265621325e1fdd19aace0c758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disallow any cleanup for fear of loss of global data.  <a href="#a421831a265621325e1fdd19aace0c758">More...</a><br /></td></tr>
+<tr class="separator:a421831a265621325e1fdd19aace0c758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595ecb75076f95121932d851f8834211"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_template.html#a595ecb75076f95121932d851f8834211">pop_template_data</a> ( $var_name='data')</td></tr>
+<tr class="memdesc:a595ecb75076f95121932d851f8834211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore the template data from the stack.  <a href="#a595ecb75076f95121932d851f8834211">More...</a><br /></td></tr>
+<tr class="separator:a595ecb75076f95121932d851f8834211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4277e68721a4c3299bca9715252792b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_template.html#a4277e68721a4c3299bca9715252792b5">push_template_data</a> ( $data, $var_name='data')</td></tr>
+<tr class="memdesc:a4277e68721a4c3299bca9715252792b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push the current template data down the stack and set.  <a href="#a4277e68721a4c3299bca9715252792b5">More...</a><br /></td></tr>
+<tr class="separator:a4277e68721a4c3299bca9715252792b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a54fd81d23c139f5556fae5acd690dbbd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_template.html#a54fd81d23c139f5556fae5acd690dbbd">split_slug</a> ( $slug, $name=null)</td></tr>
+<tr class="memdesc:a54fd81d23c139f5556fae5acd690dbbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a directory part and a full slug+name (file) components.  <a href="#a54fd81d23c139f5556fae5acd690dbbd">More...</a><br /></td></tr>
+<tr class="separator:a54fd81d23c139f5556fae5acd690dbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a8bd98518917408391f8946ff4300dad9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_template.html#a8bd98518917408391f8946ff4300dad9">$located_template</a> = ''</td></tr>
+<tr class="separator:a8bd98518917408391f8946ff4300dad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ab7027d8b6c1ab52824e477b59ac28a65"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_template.html#ab7027d8b6c1ab52824e477b59ac28a65">$data_stack</a> = array()</td></tr>
+<tr class="separator:ab7027d8b6c1ab52824e477b59ac28a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>If this file is called directly, abort. </p>
 <p>Load up the Gamajo <a class="el" href="class_g_v_1_1_template.html" title="If this file is called directly, abort. ">Template</a> Loader.</p>
@@ -89,7 +136,224 @@ Inheritance diagram for Template:</div>
 <p>Stores information on where a template to render an object is, and other metadata. </p>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-template_8php_source.html#l00024">24</a> of file <a class="el" href="class-gv-template_8php_source.html">class-gv-template.php</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a095c5d389db211932136b53f25f39685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a095c5d389db211932136b53f25f39685">&#9670;&nbsp;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__construct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>General template initialization. </p>
+<p>Sets the $plugin_directory field. </p>
+<p>Set plugin directory. </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-template_8php_source.html#l00041">41</a> of file <a class="el" href="class-gv-template_8php_source.html">class-gv-template.php</a>.</p>
+
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+</div>
+</div>
+<a id="a421831a265621325e1fdd19aace0c758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a421831a265621325e1fdd19aace0c758">&#9670;&nbsp;</a></span>__destruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__destruct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disallow any cleanup for fear of loss of global data. </p>
+<p>The destructor in Gamajo 1.3.0 destroys all of <code>$wp_query</code>. This has the chance of inappropriately destroying valid data that's been stored under the same key.</p>
+<p>Disallow this. </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-template_8php_source.html#l00055">55</a> of file <a class="el" href="class-gv-template_8php_source.html">class-gv-template.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a595ecb75076f95121932d851f8834211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595ecb75076f95121932d851f8834211">&#9670;&nbsp;</a></span>pop_template_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pop_template_data </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$var_name</em> = <code>'data'</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Restore the template data from the stack. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$var_name</td><td>The data variable identifier (Default: "data")</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>::set_template_data </dd>
+<dd>
+::pop_template_data</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>$this; </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-template_8php_source.html#l00115">115</a> of file <a class="el" href="class-gv-template_8php_source.html">class-gv-template.php</a>.</p>
+
+</div>
+</div>
+<a id="a4277e68721a4c3299bca9715252792b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4277e68721a4c3299bca9715252792b5">&#9670;&nbsp;</a></span>push_template_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">push_template_data </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$var_name</em> = <code>'data'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Push the current template data down the stack and set. </p>
+<p>This allows us to use the same variable in the template scope without destroying data under the same variable in a nested or parallel template.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$data</td><td>The data to set. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$var_name</td><td>The data variable identifier (Default: "data")</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>::set_template_data </dd>
+<dd>
+::pop_template_data</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The current instance. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-template_8php_source.html#l00089">89</a> of file <a class="el" href="class-gv-template_8php_source.html">class-gv-template.php</a>.</p>
+
+</div>
+</div>
+<a id="a54fd81d23c139f5556fae5acd690dbbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54fd81d23c139f5556fae5acd690dbbd">&#9670;&nbsp;</a></span>split_slug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static split_slug </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$name</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a directory part and a full slug+name (file) components. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td>The slug, template base. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The name, template part. Default: null</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array containing slug directory and slug+name. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-template_8php_source.html#l00066">66</a> of file <a class="el" href="class-gv-template_8php_source.html">class-gv-template.php</a>.</p>
+
+<p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ab7027d8b6c1ab52824e477b59ac28a65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7027d8b6c1ab52824e477b59ac28a65">&#9670;&nbsp;</a></span>$data_stack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$data_stack = array()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="class-gv-template_8php_source.html#l00029">29</a> of file <a class="el" href="class-gv-template_8php_source.html">class-gv-template.php</a>.</p>
+
+</div>
+</div>
+<a id="a8bd98518917408391f8946ff4300dad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd98518917408391f8946ff4300dad9">&#9670;&nbsp;</a></span>$located_template</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$located_template = ''</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="class-gv-template_8php_source.html#l00034">34</a> of file <a class="el" href="class-gv-template_8php_source.html">class-gv-template.php</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="class-gv-template_8php_source.html">class-gv-template.php</a></li>
 </ul>
 </div><!-- contents -->

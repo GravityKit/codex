@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['index_2ephp',['index.php',['../templates_2css_2index_8php.html',1,'(Global Namespace)'],['../templates_2css_2source_2index_8php.html',1,'(Global Namespace)'],['../templates_2fields_2index_8php.html',1,'(Global Namespace)'],['../templates_2index_8php.html',1,'(Global Namespace)']]],
-  ['table_2dbody_2ephp',['table-body.php',['../table-body_8php.html',1,'']]],
-  ['table_2dfooter_2ephp',['table-footer.php',['../table-footer_8php.html',1,'']]],
-  ['table_2dheader_2ephp',['table-header.php',['../table-header_8php.html',1,'']]],
+  ['index_2ephp',['index.php',['../templates_2css_2index_8php.html',1,'(Global Namespace)'],['../templates_2css_2source_2index_8php.html',1,'(Global Namespace)'],['../templates_2deprecated_2css_2index_8php.html',1,'(Global Namespace)'],['../templates_2deprecated_2css_2source_2index_8php.html',1,'(Global Namespace)'],['../templates_2deprecated_2fields_2index_8php.html',1,'(Global Namespace)'],['../templates_2deprecated_2index_8php.html',1,'(Global Namespace)'],['../templates_2entries_2index_8php.html',1,'(Global Namespace)'],['../templates_2index_8php.html',1,'(Global Namespace)'],['../templates_2views_2index_8php.html',1,'(Global Namespace)'],['../templates_2views_2list_2index_8php.html',1,'(Global Namespace)'],['../templates_2views_2table_2index_8php.html',1,'(Global Namespace)']]],
   ['table_2dsingle_2ephp',['table-single.php',['../table-single_8php.html',1,'']]],
   ['textarea_2ephp',['textarea.php',['../textarea_8php.html',1,'']]],
   ['time_2ephp',['time.php',['../time_8php.html',1,'']]],

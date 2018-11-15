@@ -1,15 +1,30 @@
 var searchData=
 [
+  ['list_2dbody_2ephp',['list-body.php',['../views_2list_2list-body_8php.html',1,'']]],
+  ['list_2dfooter_2ephp',['list-footer.php',['../views_2list_2list-footer_8php.html',1,'']]],
+  ['list_2dheader_2ephp',['list-header.php',['../views_2list_2list-header_8php.html',1,'']]],
+  ['list_2ephp',['list.php',['../views_2list_8php.html',1,'']]],
+  ['table_2dbody_2ephp',['table-body.php',['../views_2table_2table-body_8php.html',1,'']]],
+  ['table_2dfooter_2ephp',['table-footer.php',['../views_2table_2table-footer_8php.html',1,'']]],
+  ['table_2dheader_2ephp',['table-header.php',['../views_2table_2table-header_8php.html',1,'']]],
+  ['table_2ephp',['table.php',['../views_2table_8php.html',1,'']]],
   ['validate',['validate',['../class_gravity_view___edit___entry___render.html#a184909dab34698899937d810a9f5d393',1,'GravityView_Edit_Entry_Render']]],
   ['validate_5fimage_5fsrc',['validate_image_src',['../class_gravity_view___image.html#afdc43b8b1ed060904f31a465b53e9273',1,'GravityView_Image']]],
   ['verify_5fnonce',['verify_nonce',['../class_gravity_view___delete___entry.html#a4a68f92b23e330db68e0287c3583e699',1,'GravityView_Delete_Entry\verify_nonce()'],['../class_gravity_view___edit___entry___render.html#a4a68f92b23e330db68e0287c3583e699',1,'GravityView_Edit_Entry_Render\verify_nonce()']]],
+  ['verify_5fssl',['verify_ssl',['../class_g_v_1_1_e_d_d___s_l___plugin___updater.html#ab41c34ea669e9c2a80dc59c0e157c49c',1,'GV::EDD_SL_Plugin_Updater']]],
   ['verify_5fuser_5fcan_5fedit_5fpost',['verify_user_can_edit_post',['../class_gravity_view___edit___entry___render.html#a5e8cf5c8077a8ee5a196e4ea186e4dd2',1,'GravityView_Edit_Entry_Render']]],
-  ['version',['version',['../class_gravity_view___plugin.html#a265a39dcf2f0b7c6b96574362aa01ad9',1,'GravityView_Plugin\version()'],['../class_g_v___license___handler.html#a265a39dcf2f0b7c6b96574362aa01ad9',1,'GV_License_Handler\version()']]],
+  ['version',['version',['../class_gravity_view___plugin.html#a265a39dcf2f0b7c6b96574362aa01ad9',1,'GravityView_Plugin']]],
   ['view',['View',['../class_g_v_1_1_view.html',1,'GV']]],
   ['view_2dconfiguration_2ephp',['view-configuration.php',['../view-configuration_8php.html',1,'']]],
   ['view_2dsettings_2ephp',['view-settings.php',['../view-settings_8php.html',1,'']]],
   ['view_5fcollection',['View_Collection',['../class_g_v_1_1_view___collection.html',1,'GV']]],
   ['view_5fexists',['view_exists',['../class_gravity_view___view___data.html#a74b57de5633bce36882a6e35baf56d3c',1,'GravityView_View_Data']]],
+  ['view_5flegacy_5ftemplate',['View_Legacy_Template',['../class_g_v_1_1_view___legacy___template.html',1,'GV']]],
+  ['view_5flist_5ftemplate',['View_List_Template',['../class_g_v_1_1_view___list___template.html',1,'GV']]],
+  ['view_5frenderer',['View_Renderer',['../class_g_v_1_1_view___renderer.html',1,'GV']]],
   ['view_5fsettings',['View_Settings',['../class_g_v_1_1_view___settings.html',1,'GV']]],
-  ['view_5ftemplate',['View_Template',['../class_g_v_1_1_view___template.html',1,'GV']]]
+  ['view_5ftable_5ftemplate',['View_Table_Template',['../class_g_v_1_1_view___table___template.html',1,'GV']]],
+  ['view_5ftemplate',['View_Template',['../class_g_v_1_1_view___template.html',1,'GV']]],
+  ['views',['views',['../class_g_v_1_1_wrappers_1_1views.html',1,'GV::Wrappers']]],
+  ['views_5froute',['Views_Route',['../class_g_v_1_1_r_e_s_t_1_1_views___route.html',1,'GV::REST']]]
 ];

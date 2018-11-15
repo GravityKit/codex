@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -68,7 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Request Class Reference</div>  </div>
 </div><!--header-->
@@ -82,8 +83,10 @@ Inheritance diagram for Request:</div>
  <div class="center">
   <img src="class_g_v_1_1_request.png" usemap="#Request_map" alt=""/>
   <map id="Request_map" name="Request_map">
-<area href="class_g_v_1_1_frontend___request.html" title="If this file is called directly, abort. " alt="Frontend_Request" shape="rect" coords="0,56,114,80"/>
-<area href="class_g_v_1_1_dummy___request.html" title="If this file is called directly, abort. " alt="Dummy_Request" shape="rect" coords="0,112,114,136"/>
+<area href="class_g_v_1_1_admin___request.html" title="If this file is called directly, abort. " alt="Admin_Request" shape="rect" coords="0,56,114,80"/>
+<area href="class_g_v_1_1_frontend___request.html" title="If this file is called directly, abort. " alt="Frontend_Request" shape="rect" coords="124,56,238,80"/>
+<area href="class_g_v_1_1_mock___request.html" title="If this file is called directly, abort. " alt="Mock_Request" shape="rect" coords="248,56,362,80"/>
+<area href="class_g_v_1_1_r_e_s_t_1_1_request.html" title="If this file is called directly, abort. " alt="Request" shape="rect" coords="372,56,486,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -91,16 +94,47 @@ Inheritance diagram for Request:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fdcd41376ac37ed091f7671a5fe62a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#a0fdcd41376ac37ed091f7671a5fe62a8">is_edit_entry</a> ( $form_id=0)</td></tr>
+<tr class="memdesc:a0fdcd41376ac37ed091f7671a5fe62a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this an edit entry request.  <a href="#a0fdcd41376ac37ed091f7671a5fe62a8">More...</a><br /></td></tr>
+<tr class="separator:a0fdcd41376ac37ed091f7671a5fe62a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c3d7d998c414bb6beffe02e61a1c6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#a88c3d7d998c414bb6beffe02e61a1c6d">is_entry</a> ( $form_id=0)</td></tr>
+<tr class="memdesc:a88c3d7d998c414bb6beffe02e61a1c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this is a single entry request.  <a href="#a88c3d7d998c414bb6beffe02e61a1c6d">More...</a><br /></td></tr>
+<tr class="separator:a88c3d7d998c414bb6beffe02e61a1c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42d3d11f09a86446e3fdf4190cd3228"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#aa42d3d11f09a86446e3fdf4190cd3228">is_search</a> ()</td></tr>
+<tr class="memdesc:aa42d3d11f09a86446e3fdf4190cd3228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this an entry search request.  <a href="#aa42d3d11f09a86446e3fdf4190cd3228">More...</a><br /></td></tr>
+<tr class="separator:aa42d3d11f09a86446e3fdf4190cd3228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a5bddc18a2f98cd148da82a7ca9404"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#a60a5bddc18a2f98cd148da82a7ca9404">is_view</a> ()</td></tr>
+<tr class="memdesc:a60a5bddc18a2f98cd148da82a7ca9404"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current $post is a <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>, no?  <a href="#a60a5bddc18a2f98cd148da82a7ca9404">More...</a><br /></td></tr>
+<tr class="separator:a60a5bddc18a2f98cd148da82a7ca9404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a2bc32a57c3a42b3b411c76e457481767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#a2bc32a57c3a42b3b411c76e457481767">$views</a></td></tr>
-<tr class="separator:a2bc32a57c3a42b3b411c76e457481767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:add2ffaccab8be9a857f8bfcb8e43ac56"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#add2ffaccab8be9a857f8bfcb8e43ac56">is_add_oembed_preview</a> ()</td></tr>
+<tr class="memdesc:add2ffaccab8be9a857f8bfcb8e43ac56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this the Add Media / From URL preview request?  <a href="#add2ffaccab8be9a857f8bfcb8e43ac56">More...</a><br /></td></tr>
+<tr class="separator:add2ffaccab8be9a857f8bfcb8e43ac56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60c9e9f42603110fa631baffba47880"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#ac60c9e9f42603110fa631baffba47880">is_admin</a> ()</td></tr>
+<tr class="memdesc:ac60c9e9f42603110fa631baffba47880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if WordPress <a class="el" href="class_g_v_1_1_request.html#ac60c9e9f42603110fa631baffba47880" title="Check if WordPress is_admin(), and make sure not DOING_AJAX. ">is_admin()</a>, and make sure not DOING_AJAX.  <a href="#ac60c9e9f42603110fa631baffba47880">More...</a><br /></td></tr>
+<tr class="separator:ac60c9e9f42603110fa631baffba47880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5690c2486964d4639a8b9f7e877b93"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#aab5690c2486964d4639a8b9f7e877b93">is_ajax</a> ()</td></tr>
+<tr class="memdesc:aab5690c2486964d4639a8b9f7e877b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this an AJAX call in progress?  <a href="#aab5690c2486964d4639a8b9f7e877b93">More...</a><br /></td></tr>
+<tr class="separator:aab5690c2486964d4639a8b9f7e877b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8a0dfc9f949c7c4286ae75093592e3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#a6d8a0dfc9f949c7c4286ae75093592e3">is_frontend</a> ()</td></tr>
+<tr class="memdesc:a6d8a0dfc9f949c7c4286ae75093592e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the frontend.  <a href="#a6d8a0dfc9f949c7c4286ae75093592e3">More...</a><br /></td></tr>
+<tr class="separator:a6d8a0dfc9f949c7c4286ae75093592e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9103b262c283fb9950a1fabbc560b2f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#ae9103b262c283fb9950a1fabbc560b2f">is_rest</a> ()</td></tr>
+<tr class="memdesc:ae9103b262c283fb9950a1fabbc560b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this a <a class="el" href="namespace_g_v_1_1_r_e_s_t.html">REST</a> request? Call after parse_request.  <a href="#ae9103b262c283fb9950a1fabbc560b2f">More...</a><br /></td></tr>
+<tr class="separator:ae9103b262c283fb9950a1fabbc560b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a21f107188a0ef8f67d46a28e397de944"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_request.html#a21f107188a0ef8f67d46a28e397de944">_has_field_key</a> ( $<a class="el" href="namespace_g_v.html#a66f12b503ed90844ccf8401e14ccf469">get</a>)</td></tr>
+<tr class="memdesc:a21f107188a0ef8f67d46a28e397de944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate whether the $_REQUEST has a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> field.  <a href="#a21f107188a0ef8f67d46a28e397de944">More...</a><br /></td></tr>
+<tr class="separator:a21f107188a0ef8f67d46a28e397de944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>If this file is called directly, abort. </p>
 <p>The <a class="el" href="class_g_v_1_1_request.html" title="If this file is called directly, abort. ">Request</a> abstract class.</p>
-<p>Parses and transforms an end-request for views to <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> objects. </p>
+<p>Knows more about the request than anyone else. </p>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00014">14</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -118,28 +152,315 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize with an empty  </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00015">15</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a21f107188a0ef8f67d46a28e397de944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f107188a0ef8f67d46a28e397de944">&#9670;&nbsp;</a></span>_has_field_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_has_field_key </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$get</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate whether the $_REQUEST has a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> field. </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00183">183</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gravityview-fields_8php_source.html#l00117">GravityView_Fields\get_all()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+</div>
+</div>
+<a id="add2ffaccab8be9a857f8bfcb8e43ac56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add2ffaccab8be9a857f8bfcb8e43ac56">&#9670;&nbsp;</a></span>is_add_oembed_preview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static is_add_oembed_preview </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is this the Add Media / From URL preview request? </p>
+<p>Will not work in WordPress 4.8+</p>
+<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<p>The preview request is a parse-embed AJAX call without a type set. </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00046">46</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+
+</div>
+</div>
+<a id="ac60c9e9f42603110fa631baffba47880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60c9e9f42603110fa631baffba47880">&#9670;&nbsp;</a></span>is_admin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static is_admin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if WordPress <a class="el" href="class_g_v_1_1_request.html#ac60c9e9f42603110fa631baffba47880" title="Check if WordPress is_admin(), and make sure not DOING_AJAX. ">is_admin()</a>, and make sure not DOING_AJAX. </p>
+<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00023">23</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
 
-<p class="reference">References <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
+</div>
+</div>
+<a id="aab5690c2486964d4639a8b9f7e877b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5690c2486964d4639a8b9f7e877b93">&#9670;&nbsp;</a></span>is_ajax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static is_ajax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is this an AJAX call in progress? </p>
+<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00056">56</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a2bc32a57c3a42b3b411c76e457481767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bc32a57c3a42b3b411c76e457481767">&#9670;&nbsp;</a></span>$views</h2>
+<a id="a0fdcd41376ac37ed091f7671a5fe62a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fdcd41376ac37ed091f7671a5fe62a8">&#9670;&nbsp;</a></span>is_edit_entry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$views</td>
+          <td class="memname">is_edit_entry </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form_id</em> = <code>0</code></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00021">21</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+<p>Checks whether this an edit entry request. </p>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The form ID, since slugs can be non-unique. Default: 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>|false The entry requested or false. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000023">Runs Filter:</a></b></dt><dd><code>gravityview_is_edit_entry</code> Whether we're currently on the Edit <a class="el" href="class_g_v_1_1_entry.html" title="If this file is called directly, abort. ">Entry</a> screen <br />
+The Edit <a class="el" href="class_g_v_1_1_entry.html" title="If this file is called directly, abort. ">Entry</a> functionality overrides this value. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$is_edit_entry</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00129">129</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
+
+</div>
+</div>
+<a id="a88c3d7d998c414bb6beffe02e61a1c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c3d7d998c414bb6beffe02e61a1c6d">&#9670;&nbsp;</a></span>is_entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_entry </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form_id</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether this is a single entry request. </p>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The form ID, since slugs can be non-unique. Default: 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>|false The entry requested or false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00097">97</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
+
+</div>
+</div>
+<a id="a6d8a0dfc9f949c7c4286ae75093592e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8a0dfc9f949c7c4286ae75093592e3">&#9670;&nbsp;</a></span>is_frontend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static is_frontend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is the frontend. </p>
+<dl class="section return"><dt>Returns</dt><dd>boolean True or false. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00035">35</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+
+</div>
+</div>
+<a id="ae9103b262c283fb9950a1fabbc560b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9103b262c283fb9950a1fabbc560b2f">&#9670;&nbsp;</a></span>is_rest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static is_rest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is this a <a class="el" href="namespace_g_v_1_1_r_e_s_t.html">REST</a> request? Call after parse_request. </p>
+<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00065">65</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+
+</div>
+</div>
+<a id="aa42d3d11f09a86446e3fdf4190cd3228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42d3d11f09a86446e3fdf4190cd3228">&#9670;&nbsp;</a></span>is_search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_search </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether this an entry search request. </p>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean True if this is a search request. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00150">150</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+
+<p class="reference">References <a class="el" href="widget-search_8php_source.html#l00015">$search_method</a>.</p>
+
+</div>
+</div>
+<a id="a60a5bddc18a2f98cd148da82a7ca9404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60a5bddc18a2f98cd148da82a7ca9404">&#9670;&nbsp;</a></span>is_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_view </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The current $post is a <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>, no? </p>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>|false The view requested or false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-request_8php_source.html#l00078">78</a> of file <a class="el" href="class-gv-request_8php_source.html">class-gv-request.php</a>.</p>
+
+<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>.</p>
 
 </div>
 </div>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -169,7 +169,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00045">45</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00026">GRAVITYVIEW_FILE</a>.</p>
+<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-admin_8php_source.html#l00005">__construct()</a>.</p>
 
@@ -200,7 +200,6 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a notice to be displayed in the admin. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>since 1.12 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$notice</td><td>Array with <code>class</code> and <code>message</code> keys. The message is not escaped. </td></tr>
@@ -208,7 +207,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00278">278</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00279">279</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00234">GravityView_Admin_Notices\add_notice()</a>.</p>
 
@@ -232,12 +231,12 @@ Private Member Functions</h2></td></tr>
 <p>Function to launch admin objects. </p>
 <p>public </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>"GRAVITYVIEW_DIR" "../"</p>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000006">Runs Actions:</a></b></dt><dd><code>gravityview_include_backend_actions</code> Triggered after all <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> admin files are loaded</dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000027">Runs Actions:</a></b></dt><dd><code>gravityview_include_backend_actions</code> Triggered after all <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> admin files are loaded</dd></dl>
 <p>Nice place to insert extensions' backend stuff</p>
 
 <p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00129">129</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00035">GRAVITYVIEW_DIR</a>.</p>
+<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00040">GRAVITYVIEW_DIR</a>.</p>
 
 </div>
 </div>
@@ -265,13 +264,12 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if Gravity Forms plugin is active and show notice if not. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>since 1.12 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___compatibility.html#a819b13a2e5323c9dad49ebb6b8f3e026" title="Check if specified plugin is active, inactive or not installed. ">GravityView_Compatibility::get_plugin_status()</a> </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean True: checks have been passed; <a class="el" href="namespace_g_v.html">GV</a> is fine to run; False: checks have failed, don't continue loading </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean True: checks have been passed; GV is fine to run; False: checks have failed, don't continue loading </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00289">289</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00290">290</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-compatibility_8php_source.html#l00280">GravityView_Compatibility\check_gravityforms()</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-compatibility_8php_source.html#l00258">GravityView_Compatibility\check_gravityforms()</a>.</p>
 
 </div>
 </div>
@@ -311,7 +309,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00094">94</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="helper-functions_8php_source.html#l00202">gravityview_get_floaty()</a>, and <a class="el" href="class-common_8php_source.html#l01723">gravityview_get_link()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="helper-functions_8php_source.html#l00208">gravityview_get_floaty()</a>, and <a class="el" href="class-common_8php_source.html#l01791">gravityview_get_link()</a>.</p>
 
 </div>
 </div>
@@ -341,11 +339,11 @@ Private Member Functions</h2></td></tr>
 <p>Get an image of our intrepid explorer friend. </p>
 <dl class="section return"><dt>Returns</dt><dd>string HTML image tag with floaty's cute mug on it </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00178">178</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00179">179</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-settings_8php_source.html#l00311">$form</a>, <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="helper-functions_8php_source.html#l00202">gravityview_get_floaty()</a>, <a class="el" href="connector-functions_8php_source.html#l00024">gravityview_get_form()</a>, and <a class="el" href="connector-functions_8php_source.html#l00196">gravityview_get_form_id()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="helper-functions_8php_source.html#l00208">gravityview_get_floaty()</a>, <a class="el" href="connector-functions_8php_source.html#l00023">gravityview_get_form()</a>, and <a class="el" href="connector-functions_8php_source.html#l00195">gravityview_get_form_id()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00133">GravityView_Search_WP_Widget\form()</a>, <a class="el" href="class-oembed_8php_source.html#l00270">GravityView_oEmbed\generate_preview_notice()</a>, and <a class="el" href="class-oembed_8php_source.html#l00333">GravityView_oEmbed\render_admin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00138">GravityView_Search_WP_Widget\form()</a>, <a class="el" href="class-gv-oembed_8php_source.html#l00168">oEmbed\render_admin()</a>, and <a class="el" href="class-gv-oembed_8php_source.html#l00192">oEmbed\render_preview_notice()</a>.</p>
 
 </div>
 </div>
@@ -373,10 +371,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get admin notices. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>since 1.12 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00269">269</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00270">270</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-admin-notices_8php_source.html#l00115">GravityView_Admin_Notices\get_notices()</a>.</p>
 
@@ -407,13 +404,12 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if specified plugin is active, inactive or not installed. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>since 1.12 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___compatibility.html#a819b13a2e5323c9dad49ebb6b8f3e026" title="Check if specified plugin is active, inactive or not installed. ">GravityView_Compatibility::get_plugin_status()</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean|string True: plugin is active; False: plugin file doesn't exist at path; 'inactive' it's inactive </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00301">301</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00302">302</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-compatibility_8php_source.html#l00390">GravityView_Compatibility\get_plugin_status()</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-compatibility_8php_source.html#l00383">GravityView_Compatibility\get_plugin_status()</a>.</p>
 
 </div>
 </div>
@@ -449,7 +445,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00022">22</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00035">GRAVITYVIEW_DIR</a>.</p>
+<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00040">GRAVITYVIEW_DIR</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-admin_8php_source.html#l00005">__construct()</a>.</p>
 
@@ -497,21 +493,11 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool|string If <code>false</code>, not a <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> page. <code>true</code> if $page is passed and is the same as current page. Otherwise, the name of the page (<code>single</code>, <code>settings</code>, or <code>views</code>) </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000036">Runs Filter:</a></b></dt><dd><code>gravityview_is_admin_page</code> Is the current admin page a GravityView-related page? </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">string&#160;|&#160;bool</td><td class="paramname">$is_page</td><td>If false, no. If string, the name of the page (<code>single</code>, <code>settings</code>, or <code>views</code>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramtype">string</td><td class="paramname">$hook</td><td>The name of the page to check against. Is passed to the method.</td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool|string If <code>false</code>, not a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> page. <code>true</code> if $page is passed and is the same as current page. Otherwise, the name of the page (<code>single</code>, <code>settings</code>, or <code>views</code>) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00314">314</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00315">315</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
-<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-gravityview-plugin-hooks-elegant-themes_8php_source.html#l00036">GravityView_Theme_Hooks_Elegant_Themes\add_hooks_admin_init()</a>, and <a class="el" href="class-admin_8php_source.html#l00375">gravityview_is_admin_page()</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -546,7 +532,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00079">GravityView_Admin_Add_Shortcode\add_shortcode_popup()</a>, <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00133">GravityView_Search_WP_Widget\form()</a>, <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00261">GravityView_Recent_Entries_Widget\form()</a>, <a class="el" href="class-post-types_8php_source.html#l00040">GravityView_Post_Types\init_post_types()</a>, and <a class="el" href="class-gv-view_8php_source.html#l00071">View\register_post_type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00079">GravityView_Admin_Add_Shortcode\add_shortcode_popup()</a>, <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00138">GravityView_Search_WP_Widget\form()</a>, <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00261">GravityView_Recent_Entries_Widget\form()</a>, and <a class="el" href="class-gv-view_8php_source.html#l00093">View\register_post_type()</a>.</p>
 
 </div>
 </div>
@@ -578,13 +564,13 @@ Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.15 Added check for <code>gravityview_view_settings</code> and <code>gravityview_support_port</code> capabilities  public  </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$links</td><td>Array of action links under <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> on the plugin page </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$links</td><td>Array of action links under <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> on the plugin page </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Action links with Settings and Support included, if the user has the appropriate caps </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00159">159</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin_8php_source.html#l00160">160</a> of file <a class="el" href="class-admin_8php_source.html">class-admin.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 

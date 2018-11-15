@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -78,7 +78,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___support___port.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41329580b1f215bcb73fdf7147c19059"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___support___port.html#a41329580b1f215bcb73fdf7147c19059">update_user_meta_value</a> ( $user_id)</td></tr>
-<tr class="memdesc:a41329580b1f215bcb73fdf7147c19059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update User Profile preferences for <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> Support.  <a href="#a41329580b1f215bcb73fdf7147c19059">More...</a><br /></td></tr>
+<tr class="memdesc:a41329580b1f215bcb73fdf7147c19059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update User Profile preferences for <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Support.  <a href="#a41329580b1f215bcb73fdf7147c19059">More...</a><br /></td></tr>
 <tr class="separator:a41329580b1f215bcb73fdf7147c19059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad93b18dfbb99d5a09e8304a636434aa2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___support___port.html#ad93b18dfbb99d5a09e8304a636434aa2">user_field</a> ( $user)</td></tr>
 <tr class="memdesc:ad93b18dfbb99d5a09e8304a636434aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify User Profile.  <a href="#ad93b18dfbb99d5a09e8304a636434aa2">More...</a><br /></td></tr>
@@ -87,7 +87,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9ebff676b071725aca3f0253369818d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___support___port.html#ac9ebff676b071725aca3f0253369818d">maybe_enqueue_script</a> ( $hook)</td></tr>
-<tr class="memdesc:ac9ebff676b071725aca3f0253369818d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue Support Port script if user has it enabled and we're on a <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> plugin page.  <a href="#ac9ebff676b071725aca3f0253369818d">More...</a><br /></td></tr>
+<tr class="memdesc:ac9ebff676b071725aca3f0253369818d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue Support Port script if user has it enabled and we're on a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> plugin page.  <a href="#ac9ebff676b071725aca3f0253369818d">More...</a><br /></td></tr>
 <tr class="separator:ac9ebff676b071725aca3f0253369818d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1c5a9ad2524107b11a8bafdb7ceef79"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___support___port.html#ac1c5a9ad2524107b11a8bafdb7ceef79">show_for_user</a> ( $user=0)</td></tr>
 <tr class="memdesc:ac1c5a9ad2524107b11a8bafdb7ceef79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether to show Support for a user.  <a href="#ac1c5a9ad2524107b11a8bafdb7ceef79">More...</a><br /></td></tr>
@@ -162,10 +162,18 @@ Static Private Member Functions</h2></td></tr>
 <p>Localize the Support Port script. </p>
 <p>wp_localize_script() </p><dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000095">Runs Filter:</a></b></dt><dd><code>gravityview/support_port/localization_data</code> Filter data passed to the Support Port, before localize_script is run </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$localization_data</td><td>{  int $contactEnabled Can the user contact support?  array $data Support/license info  array $translation i18n strings  array $suggest Article IDs to recommend to the user (per page in the admin }</td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00072">72</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-license-handler_8php_source.html#l00247">GV_License_Handler\get_related_plugins_and_extensions()</a>, <a class="el" href="class-gravityview-settings_8php_source.html#l01071">getSetting()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="gravityview_8php_source.html#l00082">GravityView_Plugin\version</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-plugin_8php_source.html#l00024">Plugin\$version</a>, <a class="el" href="future_2includes_2class-gv-license-handler_8php_source.html#l00713">License_Handler\get_related_plugins_and_extensions()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -223,10 +231,10 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enqueue Support Port script if user has it enabled and we're on a <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> plugin page. </p>
-<p><a class="el" href="class-admin_8php.html#a472ed8a5db43f967219a659a56998689" title="Alias for GravityView_Admin::is_admin_page() ">gravityview_is_admin_page()</a>  wp_enqueue_script() </p><dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
+<p>Enqueue Support Port script if user has it enabled and we're on a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> plugin page. </p>
+<p>::is_admin()  wp_enqueue_script() </p><dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000016">Runs Filter:</a></b></dt><dd><code>gravityview/support_port/display</code> Whether to display Support Port </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000094">Runs Filter:</a></b></dt><dd><code>gravityview/support_port/display</code> Whether to display Support Port </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -237,7 +245,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00037">37</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00026">GRAVITYVIEW_FILE</a>, <a class="el" href="class-admin_8php_source.html#l00375">gravityview_is_admin_page()</a>, and <a class="el" href="gravityview_8php_source.html#l00082">GravityView_Plugin\version</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>, and <a class="el" href="gravityview_8php_source.html#l00087">GravityView_Plugin\version</a>.</p>
 
 </div>
 </div>
@@ -276,11 +284,11 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool Whether to show <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> support port </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Whether to show <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> support port </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00174">174</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00190">190</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-settings_8php_source.html#l01071">getSetting()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="field-created__by-html_8php_source.html#l00017">$user</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -300,7 +308,7 @@ Static Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Update User Profile preferences for <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> Support. </p>
+<p>Update User Profile preferences for <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Support. </p>
 <dl class="section since"><dt>Since</dt><dd>1.5</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -310,7 +318,7 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00207">207</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00223">223</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
 
 </div>
 </div>
@@ -331,7 +339,7 @@ Static Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Modify User Profile. </p>
-<p>Modifies the output of profile.php to add <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> Support preference</p>
+<p>Modifies the output of profile.php to add <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Support preference</p>
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd>
 <dd>
 1.17.5 Only show if global setting is active</dd></dl>
@@ -342,8 +350,8 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000017">Runs Filter:</a></b></dt><dd><code>gravityview/support_port/show_profile_setting</code> Should the "GravityView Support Port" setting be shown on user profiles? </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000096">Runs Filter:</a></b></dt><dd><code>gravityview/support_port/show_profile_setting</code> Should the "GravityView Support Port" setting be shown on user profiles? </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$allow_profile_setting</td><td>Default: <code>true</code>, if the user has the <code>gravityview_support_port</code> capability, which defaults to true for Contributors and higher </td></tr>
@@ -352,9 +360,9 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00225">225</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00241">241</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-settings_8php_source.html#l01071">getSetting()</a>.</p>
+<p class="reference">References <a class="el" href="field-created__by-html_8php_source.html#l00017">$user</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>

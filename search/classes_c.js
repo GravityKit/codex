@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['wp_5faction_5flogger',['WP_Action_Logger',['../class_g_v_1_1_w_p___action___logger.html',1,'GV']]]
+  ['settings',['Settings',['../class_g_v_1_1_settings.html',1,'GV']]],
+  ['shortcode',['Shortcode',['../class_g_v_1_1_shortcode.html',1,'GV']]],
+  ['source',['Source',['../class_g_v_1_1_source.html',1,'GV']]]
 ];

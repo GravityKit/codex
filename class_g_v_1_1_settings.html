@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -88,6 +88,9 @@ Inheritance diagram for Settings:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac8ce9693485c47c57c6adb498628b66b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_settings.html#ac8ce9693485c47c57c6adb498628b66b">__construct</a> ( $settings=array())</td></tr>
+<tr class="memdesc:ac8ce9693485c47c57c6adb498628b66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create with new.  <a href="#ac8ce9693485c47c57c6adb498628b66b">More...</a><br /></td></tr>
+<tr class="separator:ac8ce9693485c47c57c6adb498628b66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9d14e4ae6227970ad603987781573ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_settings.html#af9d14e4ae6227970ad603987781573ca">all</a> ()</td></tr>
 <tr class="memdesc:af9d14e4ae6227970ad603987781573ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all the objects in this collection as an an array.  <a href="#af9d14e4ae6227970ad603987781573ca">More...</a><br /></td></tr>
 <tr class="separator:af9d14e4ae6227970ad603987781573ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,6 +100,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85516fc47b78db71f869795905ed0c07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_settings.html#a85516fc47b78db71f869795905ed0c07">set</a> ( $key, $value)</td></tr>
 <tr class="memdesc:a85516fc47b78db71f869795905ed0c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a setting.  <a href="#a85516fc47b78db71f869795905ed0c07">More...</a><br /></td></tr>
 <tr class="separator:a85516fc47b78db71f869795905ed0c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4dfe7ea26555238db12d5117fa78d8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_settings.html#ad4dfe7ea26555238db12d5117fa78d8d">update</a> ( $settings)</td></tr>
+<tr class="memdesc:ad4dfe7ea26555238db12d5117fa78d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mass update values from the allowed ones.  <a href="#ad4dfe7ea26555238db12d5117fa78d8d">More...</a><br /></td></tr>
+<tr class="separator:ad4dfe7ea26555238db12d5117fa78d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -108,7 +114,40 @@ Private Attributes</h2></td></tr>
 <p>A generic <a class="el" href="class_g_v_1_1_settings.html" title="If this file is called directly, abort. ">Settings</a> base class. </p>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-settings_8php_source.html#l00012">12</a> of file <a class="el" href="class-gv-settings_8php_source.html">class-gv-settings.php</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac8ce9693485c47c57c6adb498628b66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ce9693485c47c57c6adb498628b66b">&#9670;&nbsp;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__construct </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$settings</em> = <code>array()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create with new. </p>
+<dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$settings</td><td>Initial settings. Default: none. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-settings_8php_source.html#l00027">27</a> of file <a class="el" href="class-gv-settings_8php_source.html">class-gv-settings.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l01013">GV\update()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af9d14e4ae6227970ad603987781573ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9d14e4ae6227970ad603987781573ca">&#9670;&nbsp;</a></span>all()</h2>
 
@@ -125,10 +164,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns all the objects in this collection as an an array. </p>
-<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array The objects in this collection. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-settings_8php_source.html#l00053">53</a> of file <a class="el" href="class-gv-settings_8php_source.html">class-gv-settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-settings_8php_source.html#l00084">84</a> of file <a class="el" href="class-gv-settings_8php_source.html">class-gv-settings.php</a>.</p>
 
 </div>
 </div>
@@ -166,10 +205,12 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed|null </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-settings_8php_source.html#l00042">42</a> of file <a class="el" href="class-gv-settings_8php_source.html">class-gv-settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-settings_8php_source.html#l00073">73</a> of file <a class="el" href="class-gv-settings_8php_source.html">class-gv-settings.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>.</p>
 
 </div>
 </div>
@@ -207,10 +248,42 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>future </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-settings_8php_source.html#l00028">28</a> of file <a class="el" href="class-gv-settings_8php_source.html">class-gv-settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-settings_8php_source.html#l00059">59</a> of file <a class="el" href="class-gv-settings_8php_source.html">class-gv-settings.php</a>.</p>
+
+<p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+
+</div>
+</div>
+<a id="ad4dfe7ea26555238db12d5117fa78d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4dfe7ea26555238db12d5117fa78d8d">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">update </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mass update values from the allowed ones. </p>
+<dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$settings</td><td>An array of settings to update. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>self chain. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-settings_8php_source.html#l00042">42</a> of file <a class="el" href="class-gv-settings_8php_source.html">class-gv-settings.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 

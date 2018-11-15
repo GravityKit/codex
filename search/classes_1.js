@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['dummy_5frequest',['Dummy_Request',['../class_g_v_1_1_dummy___request.html',1,'GV']]]
+  ['collection',['Collection',['../class_g_v_1_1_collection.html',1,'GV']]],
+  ['context',['Context',['../class_g_v_1_1_context.html',1,'GV']]],
+  ['core',['Core',['../class_g_v_1_1_core.html',1,'Core'],['../class_g_v_1_1_r_e_s_t_1_1_core.html',1,'Core']]]
 ];

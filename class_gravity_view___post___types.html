@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -105,11 +105,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Deprecated. Handled by  from here on after. </p>
 
 <p class="definition">Definition at line <a class="el" href="class-post-types_8php_source.html#l00017">17</a> of file <a class="el" href="class-post-types_8php_source.html">class-post-types.php</a>.</p>
-
-<p class="reference">References <a class="el" href="class-gravityview-compatibility_8php_source.html#l00093">GravityView_Compatibility\is_valid()</a>.</p>
 
 </div>
 </div>
@@ -138,20 +135,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return the query var / end point name for the entry. </p>
-<p>public </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>::get_endpoint_name </dd></dl>
+<p>public </p><dl class="section see"><dt>See also</dt><dd>::get_endpoint_name </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string Default: "entry" </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000130">Runs Filter:</a></b></dt><dd><code>gravityview_directory_endpoint</code> Change the slug used for single entries </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$endpoint</td><td>Slug to use when accessing single entry. Default: <code>entry</code></td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="class-post-types_8php_source.html#l00162">162</a> of file <a class="el" href="class-post-types_8php_source.html">class-post-types.php</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00663">GravityView_API\entry_link()</a>, <a class="el" href="class-oembed_8php_source.html#l00138">GravityView_oEmbed\get_handler_regex()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01573">GravityView_frontend\is_single_entry()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-post-types_8php_source.html#l00052">52</a> of file <a class="el" href="class-post-types_8php_source.html">class-post-types.php</a>.</p>
 
 </div>
 </div>
@@ -179,59 +166,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Init plugin components such as register own custom post types. </p>
-<p>public </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000051">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>::register_post_type </dd></dl>
+<p>public </p><dl class="section see"><dt>See also</dt><dd>::register_post_type </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000125">Runs Filter:</a></b></dt><dd><code>gravityview_is_hierarchical</code> Make <a class="el" href="namespace_gravity_view.html" title="includes ">GravityView</a> Views hierarchical by returning TRUE This will allow for Views to be nested with Parents and also allows for menu order to be set in the Page Attributes metabox </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">boolean</td><td class="paramname">$is_hierarchical</td><td>Default: false</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000126">Runs Filter:</a></b></dt><dd><code>gravityview_post_type_supports</code> Modify post type support values for <code>gravityview</code> post type </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>add_post_type_support() </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramtype">array</td><td class="paramname">$supports</td><td>Array of features associated with a functional area of the edit screen. Default: 'title', 'revisions'. If $is_hierarchical, also 'page-attributes' </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramtype">boolean</td><td class="paramname">$is_hierarchical</td><td>Do Views support parent/child relationships? See <code>gravityview_is_hierarchical</code> filter.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000127">Runs Filter:</a></b></dt><dd><code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="https://codex.wordpress.org/Function_Reference/register_post_type#public">https://codex.wordpress.org/Function_Reference/register_post_type#public</a> </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype"></td><td class="paramname">boolean</td><td><code>true</code>: allow Views to be accessible directly. <code>false</code>: Only allow Views to be embedded via shortcode. Default: <code>true</code> </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">int</td><td class="paramname">$view_id</td><td>The ID of the View currently being requested. <code>0</code> for general setting</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000128">Runs Filter:</a></b></dt><dd><code>gravityview_has_archive</code> Enable Custom Post Type archive? </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>1.7.3 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">boolean</td><td>False: don't have frontend archive; True: yes, have archive. Default: false</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000129">Runs Filter:</a></b></dt><dd><code>gravityview_slug</code> Modify the url part for a View. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://docs.gravityview.co/article/62-changing-the-view-slug">http://docs.gravityview.co/article/62-changing-the-view-slug</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td>The slug shown in the URL</td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="class-post-types_8php_source.html#l00040">40</a> of file <a class="el" href="class-post-types_8php_source.html">class-post-types.php</a>.</p>
-
-<p class="reference">References <a class="el" href="form-buttons_8php_source.html#l00030">$labels</a>, <a class="el" href="class-gravityview-compatibility_8php_source.html#l00093">GravityView_Compatibility\is_valid()</a>, and <a class="el" href="class-admin_8php_source.html#l00065">GravityView_Admin\no_views_text()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="gravityview_8php_source.html#l00215">GravityView_Plugin\activate()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-post-types_8php_source.html#l00028">28</a> of file <a class="el" href="class-post-types_8php_source.html">class-post-types.php</a>.</p>
 
 </div>
 </div>
@@ -259,13 +197,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register rewrite rules to capture the single entry view. </p>
-<p>public </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000052">Deprecated:</a></b></dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd>::add_rewrite_endpoint </dd></dl>
+<p>public </p><dl class="section see"><dt>See also</dt><dd>::add_rewrite_endpoint </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-post-types_8php_source.html#l00142">142</a> of file <a class="el" href="class-post-types_8php_source.html">class-post-types.php</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="gravityview_8php_source.html#l00215">GravityView_Plugin\activate()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-post-types_8php_source.html#l00040">40</a> of file <a class="el" href="class-post-types_8php_source.html">class-post-types.php</a>.</p>
 
 </div>
 </div>

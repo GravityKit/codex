@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">1.22.6</span>
+   &#160;<span id="projectnumber">2.1.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -75,6 +75,9 @@ $(function() {
 : <a class="el" href="class_gravity_view___plugin.html#a7f313467415045368c0633e67a2b6d75">GravityView_Plugin</a>
 , <a class="el" href="class_g_v_1_1_plugin.html#a718c69c78d301935d4124b8f4d8a28b9">Plugin</a>
 </li>
+<li>deactivate_download()
+: <a class="el" href="class_gravity_view___admin___installer.html#a1313af2f2d3c8cec50a1881a0817d64d">GravityView_Admin_Installer</a>
+</li>
 <li>debug()
 : <a class="el" href="class_g_v_1_1_logger.html#a9f1fbd09fa3d7fc7d6564fb7c6dfc87a">Logger</a>
 </li>
@@ -90,17 +93,17 @@ $(function() {
 <li>delete()
 : <a class="el" href="class_gravity_view___cache.html#ac9d02a9cd05e4e751cd1e1d8a9877440">GravityView_Cache</a>
 </li>
-<li>delete_capabilities()
-: <a class="el" href="class_gravity_view___uninstall.html#a394fe0d76ffc9832e48c0d44481f5358">GravityView_Uninstall</a>
-</li>
-<li>delete_entry_meta()
-: <a class="el" href="class_gravity_view___uninstall.html#accd2dee12302bb4644af28eec0dfb1fd">GravityView_Uninstall</a>
-</li>
-<li>delete_entry_notes()
-: <a class="el" href="class_gravity_view___uninstall.html#a1b058ca4c923fdf22435ecf9e3556f3e">GravityView_Uninstall</a>
+<li>delete_downloads_data()
+: <a class="el" href="class_gravity_view___admin___installer.html#ab799bafbb0f6df28c6448f05f4296551">GravityView_Admin_Installer</a>
 </li>
 <li>delete_expired_transients()
 : <a class="el" href="class_gravity_view___cache.html#a1c04e11f30dc36a624fa237e3078bed8">GravityView_Cache</a>
+</li>
+<li>delete_item()
+: <a class="el" href="class_g_v_1_1_r_e_s_t_1_1_route.html#a4dce39c5119ccd9a5e3b8100fea07583">Route</a>
+</li>
+<li>delete_item_permissions_check()
+: <a class="el" href="class_g_v_1_1_r_e_s_t_1_1_route.html#a1ef3c9dfe8f1a1a7003645c10e221688">Route</a>
 </li>
 <li>delete_link_field_options()
 : <a class="el" href="class_gravity_view___delete___entry.html#a7b30ecbe03c0c10356f9846798d10402">GravityView_Delete_Entry</a>
@@ -111,23 +114,23 @@ $(function() {
 <li>delete_notes()
 : <a class="el" href="class_gravity_view___entry___notes.html#a1d82fcc026a281838b74131e1dd44bff">GravityView_Entry_Notes</a>
 </li>
-<li>delete_options()
-: <a class="el" href="class_gravity_view___uninstall.html#a9b1851ebbcc0c4832e7128223c00f29d">GravityView_Uninstall</a>
-</li>
 <li>delete_or_trash_entry()
 : <a class="el" href="class_gravity_view___delete___entry.html#a9c1e12082176bbe96bb719812287fbc9">GravityView_Delete_Entry</a>
 </li>
-<li>delete_posts()
-: <a class="el" href="class_gravity_view___uninstall.html#a4a96bb42bbb45231f9923722c681410c">GravityView_Uninstall</a>
-</li>
 <li>delete_shortcode()
-: <a class="el" href="class_gravity_view___entry___link___shortcode.html#a7142fd1febcffabed6e142241dd13753">GravityView_Entry_Link_Shortcode</a>
+: <a class="el" href="class_gravity_view___entry___link___shortcode.html#a6598c46847cf6f80f24a7148adf1039a">GravityView_Entry_Link_Shortcode</a>
+</li>
+<li>delete_sub_item()
+: <a class="el" href="class_g_v_1_1_r_e_s_t_1_1_route.html#a5312acb0246206ab61cebe3822295758">Route</a>
+</li>
+<li>detail()
+: <a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html#a59e963b7928d5d47f4141ff2f6f0d5dd">gravityview</a>
 </li>
 <li>dir()
 : <a class="el" href="class_g_v_1_1_plugin.html#a9ce2af22bd4ff2f6c3410a32f99a3747">Plugin</a>
 </li>
 <li>directory_link()
-: <a class="el" href="class_gravity_view___a_p_i.html#a98523d248f4a21547bcf8e07ba10f2e0">GravityView_API</a>
+: <a class="el" href="class_gravity_view___a_p_i.html#acccc0963d8133f2661a517e7c5bb7484">GravityView_API</a>
 </li>
 <li>disable_content_analysis()
 : <a class="el" href="class_gravity_view___plugin___hooks___yoast___s_e_o.html#a4971bede1cf992eb2334e888a1e80d0a">GravityView_Plugin_Hooks_Yoast_SEO</a>
@@ -139,7 +142,7 @@ $(function() {
 : <a class="el" href="class_gravity_view___delete___entry.html#ab259b1f253ec799db201229d1bcf5dda">GravityView_Delete_Entry</a>
 </li>
 <li>display_note()
-: <a class="el" href="class_gravity_view___field___notes.html#aa61de3122fcc580480c59e0b0c88b8b5">GravityView_Field_Notes</a>
+: <a class="el" href="class_gravity_view___field___notes.html#acf29c3965a261feb56b5f0fdda743574">GravityView_Field_Notes</a>
 </li>
 </ul>
 </div><!-- contents -->
