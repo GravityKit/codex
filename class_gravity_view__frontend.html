@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -300,7 +300,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000170">Runs Filter:</a></b></dt><dd><code>gravityview/sorting/full-name</code> Override how to sort when sorting full name. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000178">Runs Filter:</a></b></dt><dd><code>gravityview/sorting/full-name</code> Override how to sort when sorting full name. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -310,7 +310,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000171">Runs Filter:</a></b></dt><dd><code>gravityview/sorting/time</code> Override how to sort when sorting time </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000179">Runs Filter:</a></b></dt><dd><code>gravityview/sorting/time</code> Override how to sort when sorting time </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___field___time.html" title="Add custom options for date fields. ">GravityView_Field_Time</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.14 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -321,11 +321,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01104">1104</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01136">1136</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="connector-functions_8php_source.html#l00023">gravityview_get_form()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gv-template-view-table_8php_source.html#l00050">View_Table_Template\add_columns_sort_links()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gv-template-view-table_8php_source.html#l00050">View_Table_Template\add_columns_sort_links()</a>, and <a class="el" href="class-gv-view_8php_source.html#l00897">View\as_data()</a>.</p>
 
 </div>
 </div>
@@ -375,9 +375,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>string Field Label </dd></dl>
 <p>Not a table-based template; don't add sort icons </p><dl class="section since"><dt>Since</dt><dd>1.12</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01373">1373</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01423">1423</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01427">is_field_sortable()</a>.</p>
+<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01477">is_field_sortable()</a>.</p>
 
 </div>
 </div>
@@ -399,14 +399,14 @@ Static Private Attributes</h2></td></tr>
 <p>Register styles and scripts. </p>
 <p>public </p><dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>Don't enqueue the scripts or styles if it's not going to be displayed. </p><dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000172">Runs Filter:</a></b></dt><dd><code>gravity_view_lightbox_script</code> Override the lightbox script to enqueue. Default: <code>thickbox</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000180">Runs Filter:</a></b></dt><dd><code>gravity_view_lightbox_script</code> Override the lightbox script to enqueue. Default: <code>thickbox</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$script_slug</td><td>If you want to use a different lightbox script, return the name of it here.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000173">Runs Filter:</a></b></dt><dd><code>gravity_view_lightbox_style</code> Modify the lightbox CSS slug. Default: <code>thickbox</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000181">Runs Filter:</a></b></dt><dd><code>gravity_view_lightbox_style</code> Modify the lightbox CSS slug. Default: <code>thickbox</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$script_slug</td><td>If you want to use a different lightbox script, return the name of its CSS file here.</td></tr>
@@ -415,7 +415,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <p>If the form has checkbox fields, enqueue dashicons </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/katzwebservices/GravityView/issues/536">https://github.com/katzwebservices/GravityView/issues/536</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000174">Runs Filter:</a></b></dt><dd><code>gravityview_js_localization</code> Modify the array passed to wp_localize_script() </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000182">Runs Filter:</a></b></dt><dd><code>gravityview_js_localization</code> Modify the array passed to wp_localize_script() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$js_localization</td><td>The data padded to the Javascript file </td></tr>
@@ -424,9 +424,9 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01225">1225</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01275">1275</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-gv-view_8php_source.html#l00684">View\by_id()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01323">enqueue_default_style()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00121">getGvOutputData()</a>, <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>, <a class="el" href="connector-functions_8php_source.html#l00221">gravityview_get_template_id()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="gravityview_8php_source.html#l00087">GravityView_Plugin\version</a>.</p>
+<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-gv-view_8php_source.html#l00789">View\by_id()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01373">enqueue_default_style()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00121">getGvOutputData()</a>, <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>, <a class="el" href="connector-functions_8php_source.html#l00221">gravityview_get_template_id()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="gravityview_8php_source.html#l00087">GravityView_Plugin\version</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01345">1345</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01395">1395</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
 <p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -503,7 +503,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000162">Runs Filter:</a></b></dt><dd><code>gravityview/comments_open</code> Whether to set comments to open or closed. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000170">Runs Filter:</a></b></dt><dd><code>gravityview/comments_open</code> Whether to set comments to open or closed. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -547,7 +547,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00541">541</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">References <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-common_8php_source.html#l01718">GVCommon\generate_notice()</a>, <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>, and <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>.</p>
+<p class="reference">References <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-common_8php_source.html#l01828">GVCommon\generate_notice()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>.</p>
 
 </div>
 </div>
@@ -584,7 +584,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000175">Runs Filter:</a></b></dt><dd><code>gravityview_use_legacy_search_css</code> Should <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> use the legacy Search Bar stylesheet (from before Version 1.17)? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000183">Runs Filter:</a></b></dt><dd><code>gravityview_use_legacy_search_css</code> Should <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> use the legacy Search Bar stylesheet (from before Version 1.17)? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -593,11 +593,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01323">1323</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01373">1373</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
 <p class="reference">References <a class="el" href="helper-functions_8php_source.html#l00030">gravityview_css_url()</a>, and <a class="el" href="gravityview_8php_source.html#l00087">GravityView_Plugin\version</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01225">add_scripts_and_styles()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01275">add_scripts_and_styles()</a>.</p>
 
 </div>
 </div>
@@ -673,7 +673,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of search parameters, formatted in Gravity Forms mode, using <code>status</code> key set to "active" by default, <code>field_filters</code> array with <code>key</code>, <code>value</code> and <code>operator</code> keys. </dd></dl>
 <p>Compatibility with filters hooking in <code>gravityview_search_criteria</code> instead of <code>gravityview_fe_search_criteria</code>.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000163">Runs Filter:</a></b></dt><dd><code>gravityview_fe_search_criteria</code> Modify the search criteria </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000171">Runs Filter:</a></b></dt><dd><code>gravityview_fe_search_criteria</code> Modify the search criteria </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___widget___search.html#a6924181d7dd5cf793cd32e04cec99a55" title="— Frontend — ">GravityView_Widget_Search::filter_entries</a> Adds the default search criteria </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -683,7 +683,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000164">Runs Filter:</a></b></dt><dd><code>gravityview_status</code> Modify entry status requirements to be included in search results. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000172">Runs Filter:</a></b></dt><dd><code>gravityview_status</code> Modify entry status requirements to be included in search results. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$status</td><td>Default: <code>active</code>. Accepts all Gravity Forms entry statuses, including <code>spam</code> and <code>trash</code></td></tr>
@@ -693,7 +693,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00792">792</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00028">$criteria</a>, <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="field-other__entries-html_8php_source.html#l00018">$search_criteria</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="__mocks_8php_source.html#l00069">GV\Mocks\GravityView_frontend_get_view_entries()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00028">$criteria</a>, <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="__mocks_8php_source.html#l00069">GV\Mocks\GravityView_frontend_get_view_entries()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00286">GravityView_Admin_ApproveEntries\process_bulk_action()</a>.</p>
 
@@ -732,7 +732,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000169">Runs Filter:</a></b></dt><dd><code>gravityview_default_page_size</code> The default number of entries displayed in a View </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000177">Runs Filter:</a></b></dt><dd><code>gravityview_default_page_size</code> The default number of entries displayed in a View </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.1.6 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -743,7 +743,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00999">999</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l01445">GVCommon\is_field_numeric()</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l01555">GVCommon\is_field_numeric()</a>.</p>
 
 </div>
 </div>
@@ -791,7 +791,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="class-frontend-views_8php_source.html#l00075">$gv_output_data</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01225">add_scripts_and_styles()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00232">set_context_view_id()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00431">single_entry_title()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01275">add_scripts_and_styles()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00232">set_context_view_id()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00431">single_entry_title()</a>.</p>
 
 </div>
 </div>
@@ -823,7 +823,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00108">108</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00015">GravityView_Admin_Bar\__construct()</a>, <a class="el" href="class-gv-template-view-table_8php_source.html#l00050">View_Table_Template\add_columns_sort_links()</a>, <a class="el" href="class-common_8php_source.html#l00430">GVCommon\calculate_get_entries_criteria()</a>, <a class="el" href="class-api_8php_source.html#l00356">GravityView_API\directory_link()</a>, <a class="el" href="class-api_8php_source.html#l00596">GravityView_API\entry_link()</a>, <a class="el" href="class-gravityview-theme-hooks-wpml_8php_source.html#l00084">GravityView_Theme_Hooks_WPML\filter_gravityview_back_link()</a>, <a class="el" href="__mocks_8php_source.html#l00418">Legacy_Context\freeze()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00312">GravityView_Entry_Link_Shortcode\get_entry()</a>, <a class="el" href="connector-functions_8php_source.html#l00361">get_gravityview()</a>, <a class="el" href="class-search-widget_8php_source.html#l01158">GravityView_Widget_Search\get_search_class()</a>, <a class="el" href="class-api_8php_source.html#l01000">gravityview_get_current_view_data()</a>, <a class="el" href="class-api_8php_source.html#l00971">gravityview_get_current_views()</a>, <a class="el" href="class-gravityview-theme-hooks-church-themes_8php_source.html#l00051">GravityView_Theme_Hooks_Church_Themes\if_gravityview_return_true()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01427">is_field_sortable()</a>, <a class="el" href="class-gv-renderer_8php_source.html#l00031">Renderer\maybe_print_notices()</a>, <a class="el" href="class-gravityview-shortcode_8php_source.html#l00041">GravityView_Shortcode\shortcode()</a>, <a class="el" href="__mocks_8php_source.html#l00454">Legacy_Context\thaw()</a>, and <a class="el" href="class-gravityview-theme-hooks-wpml_8php_source.html#l00159">GravityView_Theme_Hooks_WPML\wpml_ls_filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00015">GravityView_Admin_Bar\__construct()</a>, <a class="el" href="class-gv-template-view-table_8php_source.html#l00050">View_Table_Template\add_columns_sort_links()</a>, <a class="el" href="class-common_8php_source.html#l00430">GVCommon\calculate_get_entries_criteria()</a>, <a class="el" href="class-api_8php_source.html#l00356">GravityView_API\directory_link()</a>, <a class="el" href="class-api_8php_source.html#l00596">GravityView_API\entry_link()</a>, <a class="el" href="class-gravityview-theme-hooks-wpml_8php_source.html#l00084">GravityView_Theme_Hooks_WPML\filter_gravityview_back_link()</a>, <a class="el" href="__mocks_8php_source.html#l00419">Legacy_Context\freeze()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00312">GravityView_Entry_Link_Shortcode\get_entry()</a>, <a class="el" href="connector-functions_8php_source.html#l00370">get_gravityview()</a>, <a class="el" href="class-search-widget_8php_source.html#l01400">GravityView_Widget_Search\get_search_class()</a>, <a class="el" href="class-api_8php_source.html#l01020">gravityview_get_current_view_data()</a>, <a class="el" href="class-api_8php_source.html#l00988">gravityview_get_current_views()</a>, <a class="el" href="class-gravityview-theme-hooks-church-themes_8php_source.html#l00051">GravityView_Theme_Hooks_Church_Themes\if_gravityview_return_true()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01477">is_field_sortable()</a>, <a class="el" href="class-gv-renderer_8php_source.html#l00031">Renderer\maybe_print_notices()</a>, <a class="el" href="class-gravityview-shortcode_8php_source.html#l00041">GravityView_Shortcode\shortcode()</a>, <a class="el" href="__mocks_8php_source.html#l00457">Legacy_Context\thaw()</a>, and <a class="el" href="class-gravityview-theme-hooks-wpml_8php_source.html#l00159">GravityView_Theme_Hooks_WPML\wpml_ls_filter()</a>.</p>
 
 </div>
 </div>
@@ -993,7 +993,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00760">760</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00176">GravityView_Entry_Approval_Status\is_approved()</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00177">GravityView_Entry_Approval_Status\is_approved()</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1033,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>1.7</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True: Yes, field is sortable; False: not sortable </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000176">Runs Filter:</a></b></dt><dd><code>gravityview/sortable/field_blacklist</code> Modify what fields should never be sortable. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000184">Runs Filter:</a></b></dt><dd><code>gravityview/sortable/field_blacklist</code> Modify what fields should never be sortable. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1044,11 +1044,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01427">1427</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01477">1477</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
 <p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00108">getInstance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01373">add_columns_sort_links()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01423">add_columns_sort_links()</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1073,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00380">380</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">References <a class="el" href="widget-search_8php_source.html#l00015">$search_method</a>, <a class="el" href="class-search-widget_8php_source.html#l00105">GravityView_Widget_Search\getInstance()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00149">getSingleEntry()</a>.</p>
+<p class="reference">References <a class="el" href="widget-search_8php_source.html#l00015">$search_method</a>, <a class="el" href="class-search-widget_8php_source.html#l00104">GravityView_Widget_Search\getInstance()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00149">getSingleEntry()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l00337">parse_content()</a>.</p>
 
@@ -1103,14 +1103,15 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Verify if user requested a single entry view. </p>
-<dl class="section return"><dt>Returns</dt><dd>boolean|string false if not, single entry slug if true </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.3.3 Added return null </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean|string|null false if not, single entry slug if true, null if  doesn't exist yet </dd></dl>
 <p>Modify the entry that is being displayed.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01197">1197</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l01238">1238</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-frontend-views_8php_source.html#l00048">$single_entry</a>, and <a class="el" href="class-gv-entry_8php_source.html#l00063">Entry\get_endpoint_name()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01578">GravityView_Edit_Entry_Render\get_entry()</a>, <a class="el" href="connector-functions_8php_source.html#l00393">gravityview_is_single_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00185">GravityView_Edit_Entry_Render\is_edit_entry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01844">GravityView_Edit_Entry_Render\get_entry()</a>, <a class="el" href="connector-functions_8php_source.html#l00402">gravityview_is_single_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00205">GravityView_Edit_Entry_Render\is_edit_entry()</a>.</p>
 
 </div>
 </div>
@@ -1290,7 +1291,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00645">645</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">References <a class="el" href="field-other__entries-html_8php_source.html#l00018">$search_criteria</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -1341,7 +1342,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00720">720</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">References <a class="el" href="field-other__entries-html_8php_source.html#l00018">$search_criteria</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00028">GravityView_Entry_Approval_Status\APPROVED</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00028">GravityView_Entry_Approval_Status\APPROVED</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00180">GravityView_Recent_Entries_Widget\get_entries()</a>.</p>
 
@@ -1703,7 +1704,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string (modified) title </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000161">Runs Filter:</a></b></dt><dd><code>gravityview/single/title/out_loop</code> Apply the Single Entry Title filter outside the WordPress loop? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000169">Runs Filter:</a></b></dt><dd><code>gravityview/single/title/out_loop</code> Apply the Single Entry Title filter outside the WordPress loop? </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$in_the_loop</td><td>Whether to apply the filter to the menu title and the meta tag &lt;title&gt; - outside the loop </td></tr>
@@ -1796,7 +1797,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00080">80</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="__mocks_8php_source.html#l00672">Legacy_Context\reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="__mocks_8php_source.html#l00680">Legacy_Context\reset()</a>.</p>
 
 </div>
 </div>
@@ -1910,7 +1911,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-frontend-views_8php_source.html#l00048">48</a> of file <a class="el" href="class-frontend-views_8php_source.html">class-frontend-views.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l00149">getSingleEntry()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01197">is_single_entry()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00157">setSingleEntry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l00149">getSingleEntry()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01238">is_single_entry()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00157">setSingleEntry()</a>.</p>
 
 </div>
 </div>

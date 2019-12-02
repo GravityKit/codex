@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -71,7 +71,7 @@ $(function() {
 <dd><code>gravityview/loaded</code> The core has been loaded. </dd>
 <dt><a class="anchor" id="_actions000003"></a>Global <a class="el" href="class_g_v_1_1_entry___renderer.html#a97700face9765b2b92e4a9dbdcd9386d">Entry_Renderer::render</a>  (<a class="el" href="class_g_v_1_1_entry.html" title="If this file is called directly, abort. ">Entry</a> $entry, <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> $view, <a class="el" href="class_g_v_1_1_request.html" title="If this file is called directly, abort. ">Request</a> $request=null)</dt>
 <dd><code>gravityview_render_entry_{<a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> ID}</code> Before rendering a single entry for a specific <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> ID  </dd>
-<dt><a class="anchor" id="_actions000061"></a>Namespace <a class="el" href="namespace_gravity_view.html">GravityView</a>  </dt>
+<dt><a class="anchor" id="_actions000062"></a>Namespace <a class="el" href="namespace_gravity_view.html">GravityView</a>  </dt>
 <dd><p class="startdd"><code>gravityview_entry_before</code> Tap in before the the entry is displayed, inside the entry container </p>
 <p><code>gravityview_entry_title_before</code> Tap in before the the entry title is displayed </p>
 <p><code>gravityview_entry_title_after</code> Tap in after the title block </p>
@@ -88,11 +88,13 @@ $(function() {
 <dd><div><div> <code>gravityview/template/after</code> Append content to the view. </div></div><div><div> <code>gravityview_after</code> Append content to the View container <code>&lt;div&gt;</code>  </div></div></dd>
 <dt><a class="anchor" id="_actions000028"></a>Global <a class="el" href="class-api_8php.html#ae96724d9ca5d746688f70a5e53893326">gravityview_before</a>  ()</dt>
 <dd><div><div> <code>gravityview/template/before</code> Append content to the view. </div></div><div><div> <code>gravityview/template/before</code> Prepend content to the view. </div></div><div><div> <code>gravityview_before</code> Prepend content to the View container <code>&lt;div&gt;</code>  </div></div></dd>
-<dt><a class="anchor" id="_actions000043"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#a9c1e12082176bbe96bb719812287fbc9">GravityView_Delete_Entry::delete_or_trash_entry</a>  ( $entry)</dt>
+<dt><a class="anchor" id="_actions000042"></a>Global <a class="el" href="class_gravity_view___delete___entry.html#a9c1e12082176bbe96bb719812287fbc9">GravityView_Delete_Entry::delete_or_trash_entry</a>  ( $entry)</dt>
 <dd><div><div> <code>gravityview/delete-entry/deleted</code> Triggered when an entry is deleted </div></div><div><div> <code>gravityview/delete-entry/trashed</code> Triggered when an entry is trashed  </div></div></dd>
+<dt><a class="anchor" id="_actions000044"></a>Global <a class="el" href="class_gravity_view___duplicate___entry.html#aca07c83c9414591938242ba26ba8d22c">GravityView_Duplicate_Entry::duplicate_entry</a>  ( $entry)</dt>
+<dd><div><div> <code>gravityview/entry/duplicated</code> Triggered when an entry is duplicated  </div></div></dd>
 <dt><a class="anchor" id="_actions000045"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#a75b7056b5c3d89c6e4581f3061c968fc">GravityView_Edit_Entry_Render::process_save</a>  ( $gv_data)</dt>
-<dd><div><div> <code>gravityview/edit_entry/after_update</code> Perform an action after the entry has been updated using Edit Entry  </div></div></dd>
-<dt><a class="anchor" id="_actions000046"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#a1ec0654a726805f92609dd1bce7f07f0">GravityView_Edit_Entry_Render::render_edit_form</a>  ()</dt>
+<dd><div><div> <code>gravityview/edit_entry/before_update</code> Perform an action after the entry has been updated using Edit Entry </div></div><div><div> <code>gravityview/edit_entry/after_update</code> Perform an action after the entry has been updated using Edit Entry  </div></div></dd>
+<dt><a class="anchor" id="_actions000047"></a>Global <a class="el" href="class_gravity_view___edit___entry___render.html#a1ec0654a726805f92609dd1bce7f07f0">GravityView_Edit_Entry_Render::render_edit_form</a>  ()</dt>
 <dd><div><div> <code>gravityview/edit-entry/render/before</code> Before rendering the Edit Entry form </div></div><div><div> <code>gravityview/edit-entry/render/after</code> After rendering the Edit Entry form  </div></div></dd>
 <dt><a class="anchor" id="_actions000040"></a>Global <a class="el" href="class_gravity_view___entry___approval.html#a463abb619fd29df7d418d436fd268dc0">GravityView_Entry_Approval::update_approved_meta</a>  ( $entry_id, $status, $form_id=0)</dt>
 <dd><div><div> <code>gravityview/approve_entries/updated</code> Triggered when an entry approval is updated </div></div><div><div> <code>gravityview/approve_entries/{$action}</code> Triggered when an entry approval is set. {$action} can be 'approved', 'unapproved', or 'disapproved' Note: If you want this to work with Bulk Actions, run in a plugin rather than a theme; the bulk updates hook runs before themes are loaded.  </div></div></dd>
@@ -100,16 +102,14 @@ $(function() {
 <dd><div><div> <code>gravityview/template/footer</code> Append content to the view. </div></div><div><div> <code>gravityview/template/footer</code> Prepend outside of the view container <div>. </div></div></div><div><div><div> <code>gravityview_after</code> Display content after a View. Used to render footer widget areas. Rendered outside the View container <code>&lt;div&gt;</code>  </div></div></div></dd>
 <dt><a class="anchor" id="_actions000031"></a>Global <a class="el" href="class-api_8php.html#a5b93e2caa245a3df4723a23d9033a73e">gravityview_header</a>  ()</dt>
 <dd><div><div><div> <code>gravityview/template/header</code> Append content to the view. </div></div></div><div><div><div> <code>gravityview/template/header</code> Prepend content to the view container <div>. </div></div></div></div><div><div><div><div> <code>gravityview_header</code> Prepend content to the View container <code>&lt;div&gt;</code>  </div></div></div></div></dd>
-<dt><a class="anchor" id="_actions000058"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a8fc0358f57959f78f53b0b743a1910e7">GravityView_Recent_Entries_Widget::form</a>  ( $instance)</dt>
+<dt><a class="anchor" id="_actions000059"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#a8fc0358f57959f78f53b0b743a1910e7">GravityView_Recent_Entries_Widget::form</a>  ( $instance)</dt>
 <dd><div><div><div><div> <code>gravityview_recent_entries_widget_form</code> Displayed at the bottom of the Recent Entries widget admin form  </div></div></div></div></dd>
-<dt><a class="anchor" id="_actions000056"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#afb9380a2672338f13e809fb264c40394">GravityView_Recent_Entries_Widget::widget</a>  ( $args, $instance)</dt>
+<dt><a class="anchor" id="_actions000057"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#afb9380a2672338f13e809fb264c40394">GravityView_Recent_Entries_Widget::widget</a>  ( $args, $instance)</dt>
 <dd><div><div><div><div> <code>gravityview/widget/recent-entries/before_widget</code> Before recent entries are displayed in the WordPress widget </div></div></div></div><div><div><div><div> <code>gravityview/widget/recent-entries/after_widget</code> After recent entries are displayed in the WordPress widget  </div></div></div></div></dd>
-<dt><a class="anchor" id="_actions000042"></a>Global <a class="el" href="class_g_v_logic___shortcode.html#af4159ff7ecd9c4c60f4d2421805cbbd7">GVLogic_Shortcode::parse_atts</a>  ()</dt>
-<dd><div><div><div><div> <code>gravityview/gvlogic/parse_atts/after</code> Modify shortcode attributes after it's been parsed  </div></div></div></div></dd>
+<dt><a class="anchor" id="_actions000079"></a>Global <a class="el" href="future_2gravityview_8php.html#a372c49dd68f65e993ec91ae6edf9454c">if</a>  (! defined('GRAVITYVIEW_DIR'))</dt>
+<dd><div><div><div><div> <code>gravityview/template/table/tr/before</code> </div></div></div></div><div><div><div><div> <code>gravityview/template/table/tr/after</code>  </div></div></div></div></dd>
 <dt><a class="anchor" id="_actions000002"></a>Global <a class="el" href="class_g_v_1_1_plugin.html#a572bd88eede5ff31b5f5b99ceda90446">Plugin::include_legacy_frontend</a>  ( $force=false)</dt>
 <dd><div><div><div><div> <code>gravityview_include_frontend_actions</code> Triggered after all <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> frontend files are loaded </div></div></div></div></dd>
-<dt><a class="anchor" id="_actions000024"></a>Global <a class="el" href="class_g_v_1_1_view.html#a2fc74951f4e394bdefd7febdeff541c0">View::get_entries</a>  ( $request=null)</dt>
-<dd><div><div><div><div> <code>gravityview/view/query</code> Override the  before the <a class="el" href="namespace_g_v.html#a66f12b503ed90844ccf8401e14ccf469" title="Retrieve a setting. ">get()</a> call.  </div></div></div></div></dd>
 <dt><a class="anchor" id="_actions000006"></a>Global <a class="el" href="class_g_v_1_1_view___list___template.html#a036ef7c3df67028735b5ff0c6dc32ec5">View_List_Template::body_after</a>  ( $context)</dt>
 <dd><div><div><div><div> <code>gravityview/template/list/body/after</code> Output inside the <code>tbody</code> of the list at the end. </div></div></div></div><div><div><div><div> <code>gravityview_list_body_after</code> Inside the <code>tbody</code>, after any rows are rendered. Can be used to insert additional rows.  </div></div></div></div></dd>
 <dt><a class="anchor" id="_actions000004"></a>Global <a class="el" href="class_g_v_1_1_view___list___template.html#ac6c74a33b4d415c437ddf5d7ec0be242">View_List_Template::body_before</a>  ( $context)</dt>

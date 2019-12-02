@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -95,9 +95,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a25041fc15b41cab931827d441bf09a6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_entry.html#a25041fc15b41cab931827d441bf09a6b">as_entry</a> ()</td></tr>
 <tr class="memdesc:a25041fc15b41cab931827d441bf09a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the backing entry object.  <a href="#a25041fc15b41cab931827d441bf09a6b">More...</a><br /></td></tr>
 <tr class="separator:a25041fc15b41cab931827d441bf09a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481d07e0509945975d5fac8b37c80f11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_entry.html#a481d07e0509945975d5fac8b37c80f11">from_field</a> ( $field, $fallback=null)</td></tr>
+<tr class="memdesc:a481d07e0509945975d5fac8b37c80f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this is a <a class="el" href="class_g_v_1_1_multi___entry.html" title="If this file is called directly, abort. ">Multi_Entry</a> filter it by <a class="el" href="class_g_v_1_1_field.html" title="If this file is called directly, abort. ">Field</a>.  <a href="#a481d07e0509945975d5fac8b37c80f11">More...</a><br /></td></tr>
+<tr class="separator:a481d07e0509945975d5fac8b37c80f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0bae2d51f761486e50e0a7507d671b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_entry.html#ac0bae2d51f761486e50e0a7507d671b6">get_permalink</a> (\<a class="el" href="class_g_v_1_1_view.html">GV\View</a> $view=null, \<a class="el" href="class_g_v_1_1_request.html">GV\Request</a> $request=null, $track_directory=true)</td></tr>
 <tr class="memdesc:ac0bae2d51f761486e50e0a7507d671b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the link to this entry in the supplied context.  <a href="#ac0bae2d51f761486e50e0a7507d671b6">More...</a><br /></td></tr>
 <tr class="separator:ac0bae2d51f761486e50e0a7507d671b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af398436aa0db9af79521bb9e4657cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_entry.html#a6af398436aa0db9af79521bb9e4657cb">is_multi</a> ()</td></tr>
+<tr class="memdesc:a6af398436aa0db9af79521bb9e4657cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this a multi-entry (joined entry).  <a href="#a6af398436aa0db9af79521bb9e4657cb">More...</a><br /></td></tr>
+<tr class="separator:a6af398436aa0db9af79521bb9e4657cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -223,6 +229,51 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-entry_8php_source.html#l00082">82</a> of file <a class="el" href="class-gv-entry_8php_source.html">class-gv-entry.php</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="class-gv-shortcode-gventry_8php_source.html#l00027">gventry\callback()</a>.</p>
+
+</div>
+</div>
+<a id="a481d07e0509945975d5fac8b37c80f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481d07e0509945975d5fac8b37c80f11">&#9670;&nbsp;</a></span>from_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">from_field </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$fallback</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If this is a <a class="el" href="class_g_v_1_1_multi___entry.html" title="If this file is called directly, abort. ">Multi_Entry</a> filter it by <a class="el" href="class_g_v_1_1_field.html" title="If this file is called directly, abort. ">Field</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>2.2</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\Field</td><td class="paramname">$field</td><td>The field to filter by. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$fallback</td><td>A fallback form_id if the field supplied is invalid.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>|null A  or null if not found. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-entry_8php_source.html#l00222">222</a> of file <a class="el" href="class-gv-entry_8php_source.html">class-gv-entry.php</a>.</p>
+
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>.</p>
+
 </div>
 </div>
 <a id="a1c84918b0d6106f2be2c8caf3c381d92"></a>
@@ -260,7 +311,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-entry_8php_source.html#l00063">63</a> of file <a class="el" href="class-gv-entry_8php_source.html">class-gv-entry.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00031">gravityview\callback()</a>, <a class="el" href="class-api_8php_source.html#l00596">GravityView_API\entry_link()</a>, <a class="el" href="class-gv-oembed_8php_source.html#l00265">oEmbed\get_entry_regex()</a>, <a class="el" href="class-gv-entry_8php_source.html#l00107">Entry\get_permalink()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00398">Views_Route\get_sub_item_permissions_check()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01197">GravityView_frontend\is_single_entry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00032">gravityview\callback()</a>, <a class="el" href="class-api_8php_source.html#l00596">GravityView_API\entry_link()</a>, <a class="el" href="class-gv-oembed_8php_source.html#l00265">oEmbed\get_entry_regex()</a>, <a class="el" href="class-gv-entry_8php_source.html#l00107">Entry\get_permalink()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00457">Views_Route\get_sub_item_permissions_check()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01238">GravityView_frontend\is_single_entry()</a>.</p>
 
 </div>
 </div>
@@ -319,16 +370,28 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000010">Runs Filter:</a></b></dt><dd><code>gravityview/entry/slug</code> Modify the entry URL slug as needed. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.2.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$entry_slug</td><td>The slug, sanitized with sanitize_title() </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">\GV\Entry</td><td class="paramname">$this</td><td>The entry object. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The view object. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">\GV\Request</td><td class="paramname">$request</td><td>The request. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">boolean</td><td class="paramname">$track_directory</td><td>Whether the directory is tracked.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>Assemble the permalink.</p>
 <p>Make sure the $directory_link doesn't contain any query otherwise it will break when adding the entry slug. </p><dl class="section since"><dt>Since</dt><dd>1.16.5</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000010">Runs Filter:</a></b></dt><dd><code>gravityview/entry/permalink</code> The permalink of this entry. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000011">Runs Filter:</a></b></dt><dd><code>gravityview/entry/permalink</code> The permalink of this entry. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$permalink</td><td>The permalink. </td></tr>
     <tr><td class="paramtype">\GV\Entry</td><td class="paramname">$entry</td><td>The entry we're retrieving it for. </td></tr>
     <tr><td class="paramtype">\GV\View&#160;|&#160;null</td><td class="paramname">$view</td><td>The view context. </td></tr>
-    <tr><td class="paramtype">\GV\Request</td><td class="paramname">$reqeust</td><td>The request context.</td></tr>
+    <tr><td class="paramtype">\GV\Request</td><td class="paramname">$request</td><td>The request context.</td></tr>
   </table>
   </dd>
 </dl>
@@ -336,6 +399,29 @@ Protected Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="class-gv-entry_8php_source.html#l00107">107</a> of file <a class="el" href="class-gv-entry_8php_source.html">class-gv-entry.php</a>.</p>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>, <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-gv-entry_8php_source.html#l00063">Entry\get_endpoint_name()</a>, <a class="el" href="class-api_8php_source.html#l00497">GravityView_API\get_entry_slug()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+</div>
+</div>
+<a id="a6af398436aa0db9af79521bb9e4657cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af398436aa0db9af79521bb9e4657cb">&#9670;&nbsp;</a></span>is_multi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">is_multi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is this a multi-entry (joined entry). </p>
+<dl class="section since"><dt>Since</dt><dd>2.2</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-entry_8php_source.html#l00208">208</a> of file <a class="el" href="class-gv-entry_8php_source.html">class-gv-entry.php</a>.</p>
 
 </div>
 </div>

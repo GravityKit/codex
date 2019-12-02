@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -64,7 +64,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Field_Other_Entries Class Reference</div>  </div>
 </div><!--header-->
@@ -86,8 +87,15 @@ Inheritance diagram for GravityView_Field_Other_Entries:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___other___entries.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe18ab49264dfe8b6c58d9ff18be82b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___other___entries.html#a7fe18ab49264dfe8b6c58d9ff18be82b">field_options</a> ( $field_options, $template_id, $field_id, $context, $input_type)</td></tr>
-<tr class="separator:a7fe18ab49264dfe8b6c58d9ff18be82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c68499d2ff29848fda40ab1b26d39b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___other___entries.html#a5c68499d2ff29848fda40ab1b26d39b8">field_options</a> ( $field_options, $template_id, $field_id, $context, $input_type, $form_id)</td></tr>
+<tr class="separator:a5c68499d2ff29848fda40ab1b26d39b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6924181d7dd5cf793cd32e04cec99a55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___other___entries.html#a6924181d7dd5cf793cd32e04cec99a55">filter_entries</a> ( $search_criteria, $form_id=null, $args=array(), $force_search_criteria=false)</td></tr>
+<tr class="separator:a6924181d7dd5cf793cd32e04cec99a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2830e25819cf03ed428ce5f48150f56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___other___entries.html#ad2830e25819cf03ed428ce5f48150f56">get_entries</a> ( $context)</td></tr>
+<tr class="memdesc:ad2830e25819cf03ed428ce5f48150f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the other entries based on the current View and entry.  <a href="#ad2830e25819cf03ed428ce5f48150f56">More...</a><br /></td></tr>
+<tr class="separator:ad2830e25819cf03ed428ce5f48150f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b04c17be678f952ef7aeaad651eea79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___other___entries.html#a8b04c17be678f952ef7aeaad651eea79">gf_query_filter</a> (&amp;$query, $view, $request)</td></tr>
+<tr class="separator:a8b04c17be678f952ef7aeaad651eea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_gravity_view___field"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_gravity_view___field')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_gravity_view___field.html">GravityView_Field</a></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685 inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="memdesc:a095c5d389db211932136b53f25f39685 inherit pub_methods_class_gravity_view___field"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_gravity_view___field.html" title="Modify field settings by extending this class. ">GravityView_Field</a> constructor.  <a href="class_gravity_view___field.html#a095c5d389db211932136b53f25f39685">More...</a><br /></td></tr>
@@ -104,14 +112,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af5286555d5932aedb08e2984d247b2b9 inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#af5286555d5932aedb08e2984d247b2b9">add_entry_meta</a> ( $entry_meta)</td></tr>
 <tr class="memdesc:af5286555d5932aedb08e2984d247b2b9 inherit pub_methods_class_gravity_view___field"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the custom entry meta key to make it searchable and sortable.  <a href="class_gravity_view___field.html#af5286555d5932aedb08e2984d247b2b9">More...</a><br /></td></tr>
 <tr class="separator:af5286555d5932aedb08e2984d247b2b9 inherit pub_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a811d472cfd5f6edca259689139979c81 inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a811d472cfd5f6edca259689139979c81">add_field_support</a> ( $key='', &amp;$<a class="el" href="class_gravity_view___field.html#a7fe18ab49264dfe8b6c58d9ff18be82b">field_options</a>)</td></tr>
+<tr class="memitem:a811d472cfd5f6edca259689139979c81 inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a811d472cfd5f6edca259689139979c81">add_field_support</a> ( $key='', &amp;$<a class="el" href="class_gravity_view___field.html#a5c68499d2ff29848fda40ab1b26d39b8">field_options</a>)</td></tr>
 <tr class="separator:a811d472cfd5f6edca259689139979c81 inherit pub_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a75c3bf173943bb612c335028ceee98 inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a1a75c3bf173943bb612c335028ceee98">add_sortable_field</a> ( $fields)</td></tr>
 <tr class="memdesc:a1a75c3bf173943bb612c335028ceee98 inherit pub_methods_class_gravity_view___field"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the field to the Filter &amp; Sort available fields.  <a href="class_gravity_view___field.html#a1a75c3bf173943bb612c335028ceee98">More...</a><br /></td></tr>
 <tr class="separator:a1a75c3bf173943bb612c335028ceee98 inherit pub_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe18ab49264dfe8b6c58d9ff18be82b inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a7fe18ab49264dfe8b6c58d9ff18be82b">field_options</a> ( $field_options, $template_id, $field_id, $context, $input_type)</td></tr>
-<tr class="memdesc:a7fe18ab49264dfe8b6c58d9ff18be82b inherit pub_methods_class_gravity_view___field"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tap in here to modify field options.  <a href="class_gravity_view___field.html#a7fe18ab49264dfe8b6c58d9ff18be82b">More...</a><br /></td></tr>
-<tr class="separator:a7fe18ab49264dfe8b6c58d9ff18be82b inherit pub_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c68499d2ff29848fda40ab1b26d39b8 inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a5c68499d2ff29848fda40ab1b26d39b8">field_options</a> ( $field_options, $template_id, $field_id, $context, $input_type, $form_id)</td></tr>
+<tr class="memdesc:a5c68499d2ff29848fda40ab1b26d39b8 inherit pub_methods_class_gravity_view___field"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tap in here to modify field options.  <a href="class_gravity_view___field.html#a5c68499d2ff29848fda40ab1b26d39b8">More...</a><br /></td></tr>
+<tr class="separator:a5c68499d2ff29848fda40ab1b26d39b8 inherit pub_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bb39a251e00aaaaeb88b885b1ab52af inherit pub_methods_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a5bb39a251e00aaaaeb88b885b1ab52af">replace_merge_tag</a> ( $matches=array(), $text='', $form=array(), $entry=array(), $url_encode=false, $esc_html=false)</td></tr>
 <tr class="memdesc:a5bb39a251e00aaaaeb88b885b1ab52af inherit pub_methods_class_gravity_view___field"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> filters when using GFCommon::replace_variables()  <a href="class_gravity_view___field.html#a5bb39a251e00aaaaeb88b885b1ab52af">More...</a><br /></td></tr>
 <tr class="separator:a5bb39a251e00aaaaeb88b885b1ab52af inherit pub_methods_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +170,11 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a2a2959a858620cef51b05270bd436b3e inherit pub_attribs_class_gravity_view___field"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field.html#a2a2959a858620cef51b05270bd436b3e">$search_operators</a></td></tr>
 <tr class="separator:a2a2959a858620cef51b05270bd436b3e inherit pub_attribs_class_gravity_view___field"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae05dedb802ada0155efdece2044fed64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___field___other___entries.html#ae05dedb802ada0155efdece2044fed64">$context</a></td></tr>
+<tr class="separator:ae05dedb802ada0155efdece2044fed64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_gravity_view___field"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_gravity_view___field')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_gravity_view___field.html">GravityView_Field</a></td></tr>
@@ -200,15 +213,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00024">24</a> of file <a class="el" href="class-gravityview-field-other-entries_8php_source.html">class-gravityview-field-other-entries.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00026">26</a> of file <a class="el" href="class-gravityview-field-other-entries_8php_source.html">class-gravityview-field-other-entries.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00247">GV\description</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7fe18ab49264dfe8b6c58d9ff18be82b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fe18ab49264dfe8b6c58d9ff18be82b">&#9670;&nbsp;</a></span>field_options()</h2>
+<a id="a5c68499d2ff29848fda40ab1b26d39b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c68499d2ff29848fda40ab1b26d39b8">&#9670;&nbsp;</a></span>field_options()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +254,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$input_type</em>&#160;</td>
+          <td class="paramname"><em>$input_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -254,11 +273,169 @@ Additional Inherited Members</h2></td></tr>
 <p></p>
 <dl class="section since"><dt>Since</dt><dd>1.7.2 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00034">34</a> of file <a class="el" href="class-gravityview-field-other-entries_8php_source.html">class-gravityview-field-other-entries.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00036">36</a> of file <a class="el" href="class-gravityview-field-other-entries_8php_source.html">class-gravityview-field-other-entries.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00024">$context</a>.</p>
+
+</div>
+</div>
+<a id="a6924181d7dd5cf793cd32e04cec99a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6924181d7dd5cf793cd32e04cec99a55">&#9670;&nbsp;</a></span>filter_entries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">filter_entries </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$search_criteria</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form_id</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$args</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$force_search_criteria</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Filter entries by approved and created_by.</p>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000271">Runs Filter:</a></b></dt><dd><code>gravityview/field/other_entries/criteria</code> Modify the search parameters before the entries are fetched.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.11</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$criteria</td><td>Gravity Forms search criteria array, as used by <a class="el" href="class_g_v_common.html#a41018a6aacc3abc92f9c996e6974e1a8" title="Retrieve entries given search, sort, paging criteria. ">GVCommon::get_entries()</a> </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$view_settings</td><td>Associative array of settings with plugin defaults used if not set by the View </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The Gravity Forms ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$gravityview</td><td>The context</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Force mode all and filter out our own entry. </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00143">143</a> of file <a class="el" href="class-gravityview-field-other-entries_8php_source.html">class-gravityview-field-other-entries.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00024">$context</a>, <a class="el" href="other__entries_8php_source.html#l00013">$created_by</a>, and <a class="el" href="other__entries_8php_source.html#l00028">$criteria</a>.</p>
+
+</div>
+</div>
+<a id="ad2830e25819cf03ed428ce5f48150f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2830e25819cf03ed428ce5f48150f56">&#9670;&nbsp;</a></span>get_entries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_entries </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the other entries based on the current View and entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$context</td><td>The context that contains the View and the Entry.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>[] The entries. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00095">95</a> of file <a class="el" href="class-gravityview-field-other-entries_8php_source.html">class-gravityview-field-other-entries.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00024">$context</a>, and <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>.</p>
+
+</div>
+</div>
+<a id="a8b04c17be678f952ef7aeaad651eea79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b04c17be678f952ef7aeaad651eea79">&#9670;&nbsp;</a></span>gf_query_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gf_query_filter </td>
+          <td>(</td>
+          <td class="paramtype">&amp;&#160;</td>
+          <td class="paramname"><em>$query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$request</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00181">181</a> of file <a class="el" href="class-gravityview-field-other-entries_8php_source.html">class-gravityview-field-other-entries.php</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="ae05dedb802ada0155efdece2044fed64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05dedb802ada0155efdece2044fed64">&#9670;&nbsp;</a></span>$context</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00024">24</a> of file <a class="el" href="class-gravityview-field-other-entries_8php_source.html">class-gravityview-field-other-entries.php</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00036">field_options()</a>, <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00143">filter_entries()</a>, and <a class="el" href="class-gravityview-field-other-entries_8php_source.html#l00095">get_entries()</a>.</p>
+
+</div>
+</div>
 <a id="a3465de292d6c84645f23fca94bd98485"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3465de292d6c84645f23fca94bd98485">&#9670;&nbsp;</a></span>$contexts</h2>
 

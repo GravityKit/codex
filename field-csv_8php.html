@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -81,9 +81,16 @@ Variables</h2></td></tr>
 <tr class="separator:ac0443b2c48e5d81fc14bbc66f65937e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5291dff564984cdb59d278ef6c471d80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-csv_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a> = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;entry-&gt;as_entry()</td></tr>
 <tr class="separator:a5291dff564984cdb59d278ef6c471d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77957aab921d62a9e2d2783a4924e634"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-csv_8php.html#a77957aab921d62a9e2d2783a4924e634">$field_id</a> = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;ID</td></tr>
-<tr class="memdesc:a77957aab921d62a9e2d2783a4924e634"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default field output template.  <a href="#a77957aab921d62a9e2d2783a4924e634">More...</a><br /></td></tr>
-<tr class="separator:a77957aab921d62a9e2d2783a4924e634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b493cb433cdefeddc36df5547e8b7f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a>(! isset( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>)||empty( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;template))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-csv_8php.html#a5b493cb433cdefeddc36df5547e8b7f4">$field_id</a> = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;ID</td></tr>
+<tr class="memdesc:a5b493cb433cdefeddc36df5547e8b7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default field output template for CSVs.  <a href="#a5b493cb433cdefeddc36df5547e8b7f4">More...</a><br /></td></tr>
+<tr class="separator:a5b493cb433cdefeddc36df5547e8b7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2850dbb22c3d9922e340365d5b10f5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-csv_8php.html#ad2850dbb22c3d9922e340365d5b10f5f">$raw</a> = apply_filters( '<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>/template/csv/field/raw', in_array( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;type, $raw_types, true ), $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a> )</td></tr>
+<tr class="separator:ad2850dbb22c3d9922e340365d5b10f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add968d9f13e37788c35a10415d034d28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-csv_8php.html#add968d9f13e37788c35a10415d034d28">$raw_types</a></td></tr>
+<tr class="memdesc:add968d9f13e37788c35a10415d034d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields that will output as raw data in CSV mode.  <a href="#add968d9f13e37788c35a10415d034d28">More...</a><br /></td></tr>
+<tr class="separator:add968d9f13e37788c35a10415d034d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f298096f322952a72a50f98a74c7b60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-csv_8php.html#a0f298096f322952a72a50f98a74c7b60">$value</a> = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;value</td></tr>
+<tr class="separator:a0f298096f322952a72a50f98a74c7b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ac0443b2c48e5d81fc14bbc66f65937e4"></a>
@@ -98,7 +105,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="field-csv_8php_source.html#l00009">9</a> of file <a class="el" href="field-csv_8php_source.html">field-csv.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-csv_8php_source.html#l00015">15</a> of file <a class="el" href="field-csv_8php_source.html">field-csv.php</a>.</p>
 
 </div>
 </div>
@@ -114,26 +121,84 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="field-csv_8php_source.html#l00010">10</a> of file <a class="el" href="field-csv_8php_source.html">field-csv.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-csv_8php_source.html#l00017">17</a> of file <a class="el" href="field-csv_8php_source.html">field-csv.php</a>.</p>
 
 </div>
 </div>
-<a id="a77957aab921d62a9e2d2783a4924e634"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77957aab921d62a9e2d2783a4924e634">&#9670;&nbsp;</a></span>$field_id</h2>
+<a id="a5b493cb433cdefeddc36df5547e8b7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b493cb433cdefeddc36df5547e8b7f4">&#9670;&nbsp;</a></span>$field_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$field_id = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;ID</td>
+          <td class="memname"><a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a> (! isset($<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>)||empty($<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;template)) $field_id = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;ID</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The default field output template. </p>
+<p>The default field output template for CSVs. </p>
 <p>$gravityview </p><dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="field-csv_8php_source.html#l00008">8</a> of file <a class="el" href="field-csv_8php_source.html">field-csv.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-csv_8php_source.html#l00014">14</a> of file <a class="el" href="field-csv_8php_source.html">field-csv.php</a>.</p>
+
+</div>
+</div>
+<a id="ad2850dbb22c3d9922e340365d5b10f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2850dbb22c3d9922e340365d5b10f5f">&#9670;&nbsp;</a></span>$raw</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$raw = apply_filters( '<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>/template/csv/field/raw', in_array( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;type, $raw_types, true ), $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a> )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000333">Runs Filter:</a></b></dt><dd><code>gravityview/template/csv/field/raw</code> Filters field types to output by value instead of display_value.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">bool</td><td>Raw or not. By default outputs raw for $raw_types. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="field-csv_8php_source.html#l00032">32</a> of file <a class="el" href="field-csv_8php_source.html">field-csv.php</a>.</p>
+
+</div>
+</div>
+<a id="add968d9f13e37788c35a10415d034d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add968d9f13e37788c35a10415d034d28">&#9670;&nbsp;</a></span>$raw_types</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$raw_types</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div><div class="line">    <span class="stringliteral">&#39;email&#39;</span>, <span class="stringliteral">&#39;textarea&#39;</span>,</div><div class="line">)</div></div><!-- fragment -->
+<p>Fields that will output as raw data in CSV mode. </p>
+
+<p class="definition">Definition at line <a class="el" href="field-csv_8php_source.html#l00022">22</a> of file <a class="el" href="field-csv_8php_source.html">field-csv.php</a>.</p>
+
+</div>
+</div>
+<a id="a0f298096f322952a72a50f98a74c7b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f298096f322952a72a50f98a74c7b60">&#9670;&nbsp;</a></span>$value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$value = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="field-csv_8php_source.html#l00016">16</a> of file <a class="el" href="field-csv_8php_source.html">field-csv.php</a>.</p>
 
 </div>
 </div>

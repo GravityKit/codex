@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -88,6 +88,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a561424521381fd64539c5fb5e573d143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___flow.html#a561424521381fd64539c5fb5e573d143">add_hooks</a> ()</td></tr>
 <tr class="memdesc:a561424521381fd64539c5fb5e573d143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter the values shown in <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> frontend.  <a href="#a561424521381fd64539c5fb5e573d143">More...</a><br /></td></tr>
 <tr class="separator:a561424521381fd64539c5fb5e573d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9f67ecf14fad52139de1f1f35c38bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___flow.html#a2d9f67ecf14fad52139de1f1f35c38bf">maybe_add_non_default_fields</a> ( $fields, $form, $zone)</td></tr>
+<tr class="memdesc:a2d9f67ecf14fad52139de1f1f35c38bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the current status timestamp field to available View configuration fields.  <a href="#a2d9f67ecf14fad52139de1f1f35c38bf">More...</a><br /></td></tr>
+<tr class="separator:a2d9f67ecf14fad52139de1f1f35c38bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4442dfd297e4b8c0be9b3b6af8ab26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___flow.html#a3d4442dfd297e4b8c0be9b3b6af8ab26">maybe_add_non_default_filter_fields</a> ( $fields, $view_id)</td></tr>
+<tr class="memdesc:a3d4442dfd297e4b8c0be9b3b6af8ab26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the current status timestamp field to available Advanced Filters.  <a href="#a3d4442dfd297e4b8c0be9b3b6af8ab26">More...</a><br /></td></tr>
+<tr class="separator:a3d4442dfd297e4b8c0be9b3b6af8ab26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f0914509caeb309c277dbe4dc4cbdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___flow.html#ae7f0914509caeb309c277dbe4dc4cbdb">modify_search_bar_fields_dropdown</a> ( $fields, $form_id)</td></tr>
 <tr class="memdesc:ae7f0914509caeb309c277dbe4dc4cbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of active Workflow Steps and Workflow Step Statuses.  <a href="#ae7f0914509caeb309c277dbe4dc4cbdb">More...</a><br /></td></tr>
 <tr class="separator:ae7f0914509caeb309c277dbe4dc4cbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,11 +236,81 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00053">53</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00056">56</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, and <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, and <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-gravityview-field-workflow__step_8php_source.html#l00149">GravityView_Field_Workflow_Step\modify_frontend_search_fields()</a>, and <a class="el" href="class-gravityview-field-workflow__final__status_8php_source.html#l00063">GravityView_Field_Workflow_Final_Status\modify_search_filters()</a>.</p>
+
+</div>
+</div>
+<a id="a2d9f67ecf14fad52139de1f1f35c38bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9f67ecf14fad52139de1f1f35c38bf">&#9670;&nbsp;</a></span>maybe_add_non_default_fields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">maybe_add_non_default_fields </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$fields</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$zone</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add the current status timestamp field to available View configuration fields. </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00136">136</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
+
+</div>
+</div>
+<a id="a3d4442dfd297e4b8c0be9b3b6af8ab26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4442dfd297e4b8c0be9b3b6af8ab26">&#9670;&nbsp;</a></span>maybe_add_non_default_filter_fields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">maybe_add_non_default_filter_fields </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$fields</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$view_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add the current status timestamp field to available Advanced Filters. </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00115">115</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
 
 </div>
 </div>
@@ -276,7 +352,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Updated Array of searchable fields </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00077">77</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00080">80</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
 
 <p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
 

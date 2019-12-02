@@ -24,6 +24,8 @@ var searchData=
   ['directory_5flink',['directory_link',['../class_gravity_view___a_p_i.html#acccc0963d8133f2661a517e7c5bb7484',1,'GravityView_API']]],
   ['disable_5fcontent_5fanalysis',['disable_content_analysis',['../class_gravity_view___plugin___hooks___yoast___s_e_o.html#a4971bede1cf992eb2334e888a1e80d0a',1,'GravityView_Plugin_Hooks_Yoast_SEO']]],
   ['dismiss_5fnotice',['dismiss_notice',['../class_gravity_view___admin___notices.html#a8190bccc54acdec95b7b20b0446b9b4b',1,'GravityView_Admin_Notices']]],
-  ['display_5fmessage',['display_message',['../class_gravity_view___delete___entry.html#ab259b1f253ec799db201229d1bcf5dda',1,'GravityView_Delete_Entry']]],
-  ['display_5fnote',['display_note',['../class_gravity_view___field___notes.html#acf29c3965a261feb56b5f0fdda743574',1,'GravityView_Field_Notes']]]
+  ['display_5fmessage',['display_message',['../class_gravity_view___delete___entry.html#ab259b1f253ec799db201229d1bcf5dda',1,'GravityView_Delete_Entry\display_message()'],['../class_gravity_view___duplicate___entry.html#ab259b1f253ec799db201229d1bcf5dda',1,'GravityView_Duplicate_Entry\display_message()']]],
+  ['display_5fnote',['display_note',['../class_gravity_view___field___notes.html#acf29c3965a261feb56b5f0fdda743574',1,'GravityView_Field_Notes']]],
+  ['duplicate_5fentry',['duplicate_entry',['../class_gravity_view___duplicate___entry.html#aca07c83c9414591938242ba26ba8d22c',1,'GravityView_Duplicate_Entry']]],
+  ['duplicate_5flink_5ffield_5foptions',['duplicate_link_field_options',['../class_gravity_view___duplicate___entry.html#a79804d98370d5ed934ef76bc73ea00e9',1,'GravityView_Duplicate_Entry']]]
 ];

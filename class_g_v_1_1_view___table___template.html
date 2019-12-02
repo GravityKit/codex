@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -131,6 +131,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac837a239a24fd4e73d8dbb34e94a9180"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view___table___template.html#ac837a239a24fd4e73d8dbb34e94a9180">_get_multisort_url</a> ( $url, $sort_args, $field_id)</td></tr>
+<tr class="memdesc:ac837a239a24fd4e73d8dbb34e94a9180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the multi-sort URL used in the sorting links.  <a href="#ac837a239a24fd4e73d8dbb34e94a9180">More...</a><br /></td></tr>
+<tr class="separator:ac837a239a24fd4e73d8dbb34e94a9180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a732615430dbb18ad7b97eb4a3e81748a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view___table___template.html#a732615430dbb18ad7b97eb4a3e81748a">add_columns_sort_links</a> ( $column_label, $context=null)</td></tr>
 <tr class="memdesc:a732615430dbb18ad7b97eb4a3e81748a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add sorting links to HTML columns that support sorting.  <a href="#a732615430dbb18ad7b97eb4a3e81748a">More...</a><br /></td></tr>
 <tr class="separator:a732615430dbb18ad7b97eb4a3e81748a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +247,65 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac837a239a24fd4e73d8dbb34e94a9180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac837a239a24fd4e73d8dbb34e94a9180">&#9670;&nbsp;</a></span>_get_multisort_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static _get_multisort_url </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$sort_args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$field_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the multi-sort URL used in the sorting links. </p>
+<dl class="section since"><dt>Since</dt><dd>2.3</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_g_v_1_1_view___table___template.html#a732615430dbb18ad7b97eb4a3e81748a" title="Add sorting links to HTML columns that support sorting. ">add_columns_sort_links</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$url</td><td>Single-sort URL </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$sort_args</td><td>Single sorting for rules, in [ field_id, dir ] format </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;int</td><td class="paramname">$field_id</td><td>ID of the current field being displayed</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string Multisort URL, if there are multiple sorts. Otherwise, existing $url </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00157">157</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+
+<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, and <a class="el" href="post__image_8php_source.html#l00025">$url</a>.</p>
+
+</div>
+</div>
 <a id="a732615430dbb18ad7b97eb4a3e81748a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a732615430dbb18ad7b97eb4a3e81748a">&#9670;&nbsp;</a></span>add_columns_sort_links()</h2>
 
@@ -293,7 +355,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00050">50</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
-<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-frontend-views_8php_source.html#l01104">GravityView_frontend\_override_sorting_id_by_field_type()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00317">GV\$i</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-frontend-views_8php_source.html#l01136">GravityView_frontend\_override_sorting_id_by_field_type()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>.</p>
 
 </div>
 </div>
@@ -348,9 +410,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <p>ugh! </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00318">318</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00438">438</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
 
 </div>
 </div>
@@ -405,9 +467,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <p>ugh! </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00292">292</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00412">412</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
 
 </div>
 </div>
@@ -461,7 +523,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000060">Runs Filter:</a></b></dt><dd><code>gravityview_entry_class</code> Modify the class applied to the entry row. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000063">Runs Filter:</a></b></dt><dd><code>gravityview_entry_class</code> Modify the class applied to the entry row. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$class</td><td>Existing class. </td></tr>
@@ -471,7 +533,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string The modified class.</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000061">Runs Filter:</a></b></dt><dd><code>gravityview/template/table/entry/class</code> Modify the class aplied to the entry row. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000064">Runs Filter:</a></b></dt><dd><code>gravityview/template/table/entry/class</code> Modify the class aplied to the entry row. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$class</td><td>The existing class. </td></tr>
@@ -480,9 +542,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00398">398</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00518">518</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
-<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
 
 </div>
 </div>
@@ -529,7 +591,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000056">Runs Filter:</a></b></dt><dd><code>gravityview/template/field/label</code> Override the field label. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000059">Runs Filter:</a></b></dt><dd><code>gravityview/template/field/label</code> Override the field label. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -539,7 +601,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00123">123</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00224">224</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
 <p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>.</p>
 
@@ -563,9 +625,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Output the table column names. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00096">96</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00197">197</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-api_8php_source.html#l01272">gravityview_field_output()</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-api_8php_source.html#l01298">gravityview_field_output()</a>.</p>
 
 </div>
 </div>
@@ -606,7 +668,7 @@ Additional Inherited Members</h2></td></tr>
 <p>tag</p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>Push legacy entry context.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000057">Runs Filter:</a></b></dt><dd><code>gravityview_table_cells</code> Modify the fields displayed in a table </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000060">Runs Filter:</a></b></dt><dd><code>gravityview_table_cells</code> Modify the fields displayed in a table </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$fields</td><td></td></tr>
@@ -614,7 +676,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000058">Runs Filter:</a></b></dt><dd><code>gravityview/template/table/fields</code> Modify the fields displayed in this tables. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000061">Runs Filter:</a></b></dt><dd><code>gravityview/template/table/fields</code> Modify the fields displayed in this tables. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">\GV\Field_Collection</td><td class="paramname">$fields</td><td>The fields. </td></tr>
@@ -623,7 +685,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000059">Runs Filter:</a></b></dt><dd><code>gravityview/template/table/entry/row/attributes</code> Filter the row attributes for the row in table view.</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000062">Runs Filter:</a></b></dt><dd><code>gravityview/template/table/entry/row/attributes</code> Filter the row attributes for the row in table view.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$attributes</td><td>The HTML attributes. </td></tr>
@@ -632,9 +694,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00152">152</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00253">253</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00020">$attributes</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>, and <a class="el" href="__mocks_8php_source.html#l00546">Legacy_Context\load()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00020">$attributes</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="__mocks_8php_source.html#l00552">Legacy_Context\load()</a>.</p>
 
 </div>
 </div>
@@ -673,11 +735,12 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<p>Push legacy entry context.</p>
 <p>Output. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00251">251</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00361">361</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, and <a class="el" href="class-api_8php_source.html#l01272">gravityview_field_output()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-api_8php_source.html#l01298">gravityview_field_output()</a>, and <a class="el" href="__mocks_8php_source.html#l00552">Legacy_Context\load()</a>.</p>
 
 </div>
 </div>
@@ -732,9 +795,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <p>ugh! </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00370">370</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00490">490</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
 
 </div>
 </div>
@@ -789,9 +852,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <p>ugh! </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00344">344</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-template-view-table_8php_source.html#l00464">464</a> of file <a class="el" href="class-gv-template-view-table_8php_source.html">class-gv-template-view-table.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
 
 </div>
 </div>

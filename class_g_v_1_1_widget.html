@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -213,7 +213,7 @@ Private Attributes</h2></td></tr>
 <p>Add $this-&gt;shortcode_name shortcode to output self::render_frontend() </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00285">285</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00286">286</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -239,7 +239,7 @@ Private Attributes</h2></td></tr>
 <li>whatever else specific fields may have </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00425">425</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00430">430</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00256">256</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00257">257</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd>::as_configuration() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00393">393</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00398">398</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>.</p>
 
@@ -355,7 +355,7 @@ Private Attributes</h2></td></tr>
 <p>Define general widget settings. </p>
 <dl class="section since"><dt>Since</dt><dd>1.5.4 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array $settings Default settings </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000082">Runs Filter:</a></b></dt><dd><code>gravityview/widget/enable_custom_class</code> Enable custom CSS class settings for widgets </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000087">Runs Filter:</a></b></dt><dd><code>gravityview/widget/enable_custom_class</code> Enable custom CSS class settings for widgets </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable_custom_class</td><td>False by default. Return true if you want to enable. </td></tr>
@@ -394,14 +394,15 @@ Private Attributes</h2></td></tr>
 <p>Default widget areas. </p>
 <p>Usually overridden by the selected template.</p>
 <dl class="section return"><dt>Returns</dt><dd>array The default areas where widgets can be rendered. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000083">Runs Filter:</a></b></dt><dd><code>gravityview_widget_active_areas</code> Array of zones available for widgets to be dropped into </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000088">Runs Filter:</a></b></dt><dd><code>gravityview_widget_active_areas</code> Array of zones available for widgets to be dropped into </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$default_areas</td><td>Definition for default widget areas</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000084">Runs Filter:</a></b></dt><dd><code>gravityview/widget/active_areas</code> Array of zones available for widgets to be dropped into </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000089">Runs Filter:</a></b></dt><dd><code>gravityview/widget/active_areas</code> Array of zones available for widgets to be dropped into </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$default_areas</td><td>Definition for default widget areas</td></tr>
@@ -411,7 +412,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00204">204</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gravityview_8php_source.html#l00234">GravityView_Plugin\get_default_widget_areas()</a>, <a class="el" href="class-ajax_8php_source.html#l00120">GravityView_Ajax\get_preset_fields_config()</a>, <a class="el" href="class-template_8php_source.html#l00838">GravityView_View\render_widget_hooks()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00979">GravityView_Admin_Views\render_widgets_active_areas()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gravityview_8php_source.html#l00234">GravityView_Plugin\get_default_widget_areas()</a>, <a class="el" href="class-ajax_8php_source.html#l00120">GravityView_Ajax\get_preset_fields_config()</a>, <a class="el" href="class-template_8php_source.html#l00845">GravityView_View\render_widget_hooks()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00998">GravityView_Admin_Views\render_widgets_active_areas()</a>.</p>
 
 </div>
 </div>
@@ -509,7 +510,7 @@ Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00462">462</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00467">467</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -547,13 +548,12 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$text</td><td><a class="el" href="class_g_v_1_1_widget.html" title="If this file is called directly, abort. ">Widget</a> text to check </td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">null|WP_Widget</td><td>Empty if not called by WP_Widget, or a WP_Widget instance</td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">null|</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>string <a class="el" href="class_g_v_1_1_widget.html" title="If this file is called directly, abort. ">Widget</a> text </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00273">273</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00274">274</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
 </div>
 </div>
@@ -576,14 +576,14 @@ Private Attributes</h2></td></tr>
 <p>Always call this from your <code><a class="el" href="class_g_v_1_1_widget.html#ae118238d82cb7bcab912f827860941a0" title="Frontend logic. ">render_frontend()</a></code> override!</p>
 <dl class="section return"><dt>Returns</dt><dd>boolean True: render frontend; False: don't render frontend </dd></dl>
 <p>Assume shown regardless of hide_until_search setting.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000085">Runs Filter:</a></b></dt><dd><code>gravityview/widget/hide_until_searched/whitelist</code> Some widgets have got to stay shown. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000090">Runs Filter:</a></b></dt><dd><code>gravityview/widget/hide_until_searched/whitelist</code> Some widgets have got to stay shown. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">string[]</td><td>$whitelist The widget IDs that have to be shown by default.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000086">Runs Filter:</a></b></dt><dd><code>gravityview/widget/hide_until_searched</code> Modify whether to hide content until search </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000091">Runs Filter:</a></b></dt><dd><code>gravityview/widget/hide_until_searched</code> Modify whether to hide content until search </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$hide_until_searched</td><td>Hide until search? </td></tr>
@@ -592,7 +592,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00333">333</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00338">338</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -626,7 +626,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array $widgets </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00231">231</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00232">232</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
 </div>
 </div>
@@ -656,14 +656,14 @@ Private Attributes</h2></td></tr>
 <p>Return all registered widgets. </p>
 <dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000087">Runs Filter:</a></b></dt><dd><code>gravityview_register_directory_widgets</code> Get the list of registered widgets. Each item is used to instantiate a <a class="el" href="class_gravity_view___admin___view___widget.html">GravityView_Admin_View_Widget</a> object </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000092">Runs Filter:</a></b></dt><dd><code>gravityview_register_directory_widgets</code> Get the list of registered widgets. Each item is used to instantiate a <a class="el" href="class_gravity_view___admin___view___widget.html">GravityView_Admin_View_Widget</a> object </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$registered_widgets</td><td>Empty array</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000088">Runs Filter:</a></b></dt><dd><code>gravityview/widgets/register</code> Each item is used to instantiate a <a class="el" href="class_gravity_view___admin___view___widget.html">GravityView_Admin_View_Widget</a> object </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000093">Runs Filter:</a></b></dt><dd><code>gravityview/widgets/register</code> Each item is used to instantiate a <a class="el" href="class_gravity_view___admin___view___widget.html">GravityView_Admin_View_Widget</a> object </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$registered_widgets</td><td>Empty array</td></tr>
@@ -671,7 +671,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00439">439</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00444">444</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00878">GravityView_Admin_Views\render_active_areas()</a>.</p>
 
 </div>
 </div>
@@ -719,9 +721,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00323">323</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00328">328</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01037">GravityView_Widget_Search\has_date_field()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01270">GravityView_Widget_Search\has_date_field()</a>.</p>
 
 </div>
 </div>
@@ -762,13 +764,13 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>The <a class="el" href="class_g_v_1_1_widget.html" title="If this file is called directly, abort. ">Widget</a> shortcode args. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$content</td><td>The content. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$context</td><td>The context, if available.</td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;\GV\Template_Context</td><td class="paramname">$context</td><td>The context, if available.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Whatever the widget echoed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00377">377</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00382">382</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="custom_8php_source.html#l00037">$content</a>.</p>
 
@@ -853,7 +855,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-widget_8php_source.html#l00050">50</a> of file <a class="el" href="class-gv-widget_8php_source.html">class-gv-widget.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-widget-page-links_8php_source.html#l00012">GravityView_Widget_Page_Links\__construct()</a>, <a class="el" href="class-gravityview-widget-pagination-info_8php_source.html#l00017">GravityView_Widget_Pagination_Info\__construct()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00018">GravityView_Widget_Custom_Content\__construct()</a>, <a class="el" href="class-gravityview-widget-page-size_8php_source.html#l00020">Page_Size\__construct()</a>, <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00022">GravityView_Widget_Poll\__construct()</a>, <a class="el" href="class-search-widget_8php_source.html#l00030">GravityView_Widget_Search\__construct()</a>, <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00134">GravityView_Widget_Poll\get_frontend_settings()</a>, <a class="el" href="class-gravityview-widget-page-size_8php_source.html#l00084">Page_Size\render_frontend()</a>, and <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00162">GravityView_Widget_Poll\render_frontend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-widget-page-links_8php_source.html#l00012">GravityView_Widget_Page_Links\__construct()</a>, <a class="el" href="class-gravityview-widget-pagination-info_8php_source.html#l00017">GravityView_Widget_Pagination_Info\__construct()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00018">GravityView_Widget_Custom_Content\__construct()</a>, <a class="el" href="class-gravityview-widget-page-size_8php_source.html#l00020">Page_Size\__construct()</a>, <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00022">GravityView_Widget_Poll\__construct()</a>, <a class="el" href="class-search-widget_8php_source.html#l00030">GravityView_Widget_Search\__construct()</a>, <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00140">GravityView_Widget_Poll\get_frontend_settings()</a>, <a class="el" href="class-gravityview-widget-page-size_8php_source.html#l00084">Page_Size\render_frontend()</a>, and <a class="el" href="class-gravityview-widget-poll_8php_source.html#l00168">GravityView_Widget_Poll\render_frontend()</a>.</p>
 
 </div>
 </div>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -68,6 +68,9 @@ $(function() {
 <li>page()
 : <a class="el" href="class_g_v_1_1_entry___collection.html#a0dd49ebf92a83cc4bfd1c0ff78ec57cd">Entry_Collection</a>
 </li>
+<li>pageviews()
+: <a class="el" href="class_gravity_view___plugin___hooks___pageviews.html#a5f2d3592b8666588fd0e514254fe232c">GravityView_Plugin_Hooks_Pageviews</a>
+</li>
 <li>parse()
 : <a class="el" href="class_g_v_1_1_shortcode.html#accbf399da1f96b506ad39e32e5b3b21f">Shortcode</a>
 </li>
@@ -76,7 +79,7 @@ $(function() {
 , <a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html#a93ece90eb75ed134c98c874019c70175">gravityview</a>
 </li>
 <li>parse_atts()
-: <a class="el" href="class_g_v_logic___shortcode.html#af4159ff7ecd9c4c60f4d2421805cbbd7">GVLogic_Shortcode</a>
+: <a class="el" href="class_g_v_1_1_shortcodes_1_1gvlogic.html#a8bb1c5d527d2a67dc871335a6aab810e">gvlogic</a>
 </li>
 <li>parse_content()
 : <a class="el" href="class_gravity_view__frontend.html#ad617e1eacb0ba276d32f65d3bd3aea63">GravityView_frontend</a>
@@ -95,6 +98,9 @@ $(function() {
 </li>
 <li>parse_um_profile_post_content()
 : <a class="el" href="class_gravity_view___theme___hooks___ultimate___member.html#a247e18f22fbed5b790786c1d442a8a34">GravityView_Theme_Hooks_Ultimate_Member</a>
+</li>
+<li>pluck()
+: <a class="el" href="class_g_v_1_1_entry___collection.html#a395815ea92c645e2c9b3f4e4e60b65c1">Entry_Collection</a>
 </li>
 <li>plugin_action_links()
 : <a class="el" href="class_gravity_view___admin.html#ab8df503b3297a8dfc4d8da8e5bbda04b">GravityView_Admin</a>
@@ -118,11 +124,14 @@ $(function() {
 : <a class="el" href="class_gravity_view___widget___poll.html#abb251d18e0f479efb4e983a513985d72">GravityView_Widget_Poll</a>
 , <a class="el" href="class_g_v_1_1_widget.html#abb251d18e0f479efb4e983a513985d72">Widget</a>
 </li>
+<li>preload_callback()
+: <a class="el" href="class_gravity_view___plugin___hooks___pageviews.html#ab0318ee8c20af898e4e3b2fe87674fde">GravityView_Plugin_Hooks_Pageviews</a>
+</li>
 <li>prepare_entry_for_response()
 : <a class="el" href="class_g_v_1_1_r_e_s_t_1_1_views___route.html#addaf023d59f781db3de6a72bb417cdbc">Views_Route</a>
 </li>
 <li>prepare_field_filter()
-: <a class="el" href="class_gravity_view___widget___search.html#a8f009197633981d833f998032a742b76">GravityView_Widget_Search</a>
+: <a class="el" href="class_gravity_view___widget___search.html#a0d894cdcf8b08a3e8e98634e4966005c">GravityView_Widget_Search</a>
 </li>
 <li>prepare_item_for_database()
 : <a class="el" href="class_g_v_1_1_r_e_s_t_1_1_route.html#a46a8a59fff1b6e8129de9de20f7accb2">Route</a>
@@ -136,6 +145,9 @@ $(function() {
 <li>prerender()
 : <a class="el" href="class_gravity_view___debug___bar.html#aa7f1ecf1c8c3132b8a800b2ec5b8b040">GravityView_Debug_Bar</a>
 </li>
+<li>preset_approval_fields()
+: <a class="el" href="class_gravity_view___edit___entry___render.html#ad3393f568b7b9076e567a229eafb708e">GravityView_Edit_Entry_Render</a>
+</li>
 <li>prevent_conflicts()
 : <a class="el" href="class_gravity_view___change___entry___creator.html#a30cfa6ecb280305f2ef97ab68189b50f">GravityView_Change_Entry_Creator</a>
 </li>
@@ -147,6 +159,9 @@ $(function() {
 </li>
 <li>prevent_render_form()
 : <a class="el" href="class_gravity_view___edit___entry___render.html#ab4ca9abd34b0c53a1049d60c97f15b07">GravityView_Edit_Entry_Render</a>
+</li>
+<li>prevent_update_unapproved_meta()
+: <a class="el" href="class_gravity_view___edit___entry___render.html#ab75b642f572a7ab7ce615ee22f396856">GravityView_Edit_Entry_Render</a>
 </li>
 <li>print_script()
 : <a class="el" href="class_gravity_view___field___is___starred.html#abc759d63bfa052556c9c8ec280e705a5">GravityView_Field_Is_Starred</a>
@@ -169,8 +184,8 @@ $(function() {
 <li>process_delete_notes()
 : <a class="el" href="class_gravity_view___field___notes.html#a7b01e3ac367aeba07c9be376d94d0a8d">GravityView_Field_Notes</a>
 </li>
-<li>process_elseif()
-: <a class="el" href="class_g_v_logic___shortcode.html#adb2299e4bd5a3cb67d27d9b1406b6f44">GVLogic_Shortcode</a>
+<li>process_duplicate()
+: <a class="el" href="class_gravity_view___duplicate___entry.html#a389e6c95ff30253a5c228059a01b0046">GravityView_Duplicate_Entry</a>
 </li>
 <li>process_modifiers()
 : <a class="el" href="class_gravity_view___merge___tags.html#a7f576f2c6e9b1924a168ca3c1a64f2e8">GravityView_Merge_Tags</a>

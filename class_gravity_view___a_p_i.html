@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -176,7 +176,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Permalink to multiple entries view </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000136">Runs Filter:</a></b></dt><dd><code>gravityview_directory_link</code> Modify the URL to the View "directory" context </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000144">Runs Filter:</a></b></dt><dd><code>gravityview_directory_link</code> Modify the URL to the View "directory" context </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.19.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -185,7 +185,7 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000137">Runs Filter:</a></b></dt><dd><code>gravityview/view/links/directory</code> Modify the URL to the View "directory" context </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000145">Runs Filter:</a></b></dt><dd><code>gravityview/view/links/directory</code> Modify the URL to the View "directory" context </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -197,9 +197,9 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-api_8php_source.html#l00356">356</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>, <a class="el" href="class-gv-utils_8php_source.html#l00033">Utils\_POST()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="field-entry__link-html_8php_source.html#l00041">$link</a>, <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>, <a class="el" href="class-gv-utils_8php_source.html#l00033">Utils\_POST()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-delete-entry_8php_source.html#l00234">GravityView_Delete_Entry\get_delete_link()</a>, and <a class="el" href="class-api_8php_source.html#l00771">gv_directory_link()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-delete-entry_8php_source.html#l00234">GravityView_Delete_Entry\get_delete_link()</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00260">GravityView_Duplicate_Entry\get_duplicate_link()</a>, <a class="el" href="class-api_8php_source.html#l00788">gv_directory_link()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01108">GravityView_Edit_Entry_Render\maybe_print_message()</a>.</p>
 
 </div>
 </div>
@@ -246,7 +246,7 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000140">Runs Filter:</a></b></dt><dd><code>gravityview_custom_entry_slug</code> On entry creation, check if we are using the custom entry slug feature and update the meta </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000148">Runs Filter:</a></b></dt><dd><code>gravityview_custom_entry_slug</code> On entry creation, check if we are using the custom entry slug feature and update the meta </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$custom</td><td>Should we process the custom entry slug?</td></tr>
@@ -319,9 +319,9 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-api_8php_source.html#l00596">596</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>, <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>, <a class="el" href="class-gv-entry_8php_source.html#l00063">Entry\get_endpoint_name()</a>, <a class="el" href="class-common_8php_source.html#l00673">GVCommon\get_entry()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, <a class="el" href="class-data_8php_source.html#l00120">GravityView_View_Data\getInstance()</a>, and <a class="el" href="class-api_8php_source.html#l01136">gravityview_get_view_id()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>, <a class="el" href="data-source_8php_source.html#l00019">$forms</a>, <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>, <a class="el" href="class-gv-collection-view_8php_source.html#l00078">View_Collection\from_post()</a>, <a class="el" href="class-gv-entry_8php_source.html#l00063">Entry\get_endpoint_name()</a>, <a class="el" href="class-common_8php_source.html#l00673">GVCommon\get_entry()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, <a class="el" href="class-data_8php_source.html#l00120">GravityView_View_Data\getInstance()</a>, and <a class="el" href="class-api_8php_source.html#l01162">gravityview_get_view_id()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00257">GravityView_Entry_List\get_item_output()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00256">GravityView_Entry_Link_Shortcode\get_url()</a>, <a class="el" href="class-api_8php_source.html#l00775">gv_entry_link()</a>, and <a class="el" href="class-gravityview-theme-hooks-wpml_8php_source.html#l00159">GravityView_Theme_Hooks_WPML\wpml_ls_filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00257">GravityView_Entry_List\get_item_output()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00256">GravityView_Entry_Link_Shortcode\get_url()</a>, <a class="el" href="class-api_8php_source.html#l00792">gv_entry_link()</a>, and <a class="el" href="class-gravityview-theme-hooks-wpml_8php_source.html#l00159">GravityView_Theme_Hooks_WPML\wpml_ls_filter()</a>.</p>
 
 </div>
 </div>
@@ -397,7 +397,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string|null Returns HTML for an anchor link. Null if $entry isn't defined or is missing an ID. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000133">Runs Filter:</a></b></dt><dd><code>gravityview_field_entry_link</code> Modify the link HTML </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000141">Runs Filter:</a></b></dt><dd><code>gravityview_field_entry_link</code> Modify the link HTML </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$link</td><td>HTML output of the link </td></tr>
@@ -410,7 +410,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-api_8php_source.html#l00263">263</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="custom_8php_source.html#l00027">$field_settings</a>, <a class="el" href="delete__link_8php_source.html#l00018">$href</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l01791">gravityview_get_link()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="custom_8php_source.html#l00027">$field_settings</a>, <a class="el" href="delete__link_8php_source.html#l00018">$href</a>, <a class="el" href="field-entry__link-html_8php_source.html#l00041">$link</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l01901">gravityview_get_link()</a>.</p>
 
 </div>
 </div>
@@ -465,9 +465,9 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-api_8php_source.html#l00159">159</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00681">gv_class()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00698">gv_class()</a>.</p>
 
 </div>
 </div>
@@ -525,9 +525,9 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-api_8php_source.html#l00212">212</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l01272">gravityview_field_output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l01298">gravityview_field_output()</a>.</p>
 
 </div>
 </div>
@@ -582,7 +582,7 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 <p>Allow to fall through for back compatibility testing purposes.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000131">Runs Filter:</a></b></dt><dd><code>gravityview_render_after_label</code> Append content to a field label </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000139">Runs Filter:</a></b></dt><dd><code>gravityview_render_after_label</code> Append content to a field label </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$appended_content</td><td>Content you can add after a label. Empty by default. </td></tr>
@@ -590,7 +590,7 @@ Static Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000132">Runs Filter:</a></b></dt><dd><code>gravityview/template/field_label</code> Modify field label output </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000140">Runs Filter:</a></b></dt><dd><code>gravityview/template/field_label</code> Modify field label output </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -604,9 +604,9 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-api_8php_source.html#l00028">28</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>, and <a class="el" href="__mocks_8php_source.html#l00213">GV\Mocks\GravityView_API_field_label()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="__mocks_8php_source.html#l00214">GV\Mocks\GravityView_API_field_label()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00677">gv_label()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00694">gv_label()</a>.</p>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="custom_8php_source.html#l00027">$field_settings</a>, <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="__mocks_8php_source.html#l00144">GV\Mocks\GravityView_API_field_value()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00756">gv_value()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00773">gv_value()</a>.</p>
 
 </div>
 </div>
@@ -717,7 +717,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l01272">gravityview_field_output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l01298">gravityview_field_output()</a>.</p>
 
 </div>
 </div>
@@ -766,7 +766,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Hashed unique value for entry </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000138">Runs Filter:</a></b></dt><dd><code>gravityview_entry_slug</code> Modify the unique hash ID generated, if you want to improve usability or change the format. This will allow for custom URLs, such as <code>{entryid}-{first-name}</code> or even, if unique, <code>{first-name}-{last-name}</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000146">Runs Filter:</a></b></dt><dd><code>gravityview_entry_slug</code> Modify the unique hash ID generated, if you want to improve usability or change the format. This will allow for custom URLs, such as <code>{entryid}-{first-name}</code> or even, if unique, <code>{first-name}-{last-name}</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$hash</td><td>Existing hash generated by <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> </td></tr>
@@ -829,7 +829,7 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Unique slug ID, passed through <code>sanitize_title()</code> </dd></dl>
 <p>Default: use the entry ID as the unique identifier</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000139">Runs Filter:</a></b></dt><dd><code>gravityview_custom_entry_slug</code> Whether to enable and use custom entry slugs. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000147">Runs Filter:</a></b></dt><dd><code>gravityview_custom_entry_slug</code> Whether to enable and use custom entry slugs. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">boolean</td><td>True: Allow for slugs based on entry values. False: always use entry IDs (default)</td></tr>
@@ -841,7 +841,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00069">GravityView_Admin_Bar\add_floaty_icon()</a>, <a class="el" href="class-gv-entry-gravityforms_8php_source.html#l00108">GF_Entry\from_entry()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00581">GravityView_Field_Notes\get_add_note_part()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00234">GravityView_Delete_Entry\get_delete_link()</a>, <a class="el" href="class-gravityview-field-fileupload_8php_source.html#l00054">GravityView_Field_FileUpload\get_field_input()</a>, and <a class="el" href="class-gv-entry_8php_source.html#l00107">Entry\get_permalink()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00069">GravityView_Admin_Bar\add_floaty_icon()</a>, <a class="el" href="class-gv-entry-gravityforms_8php_source.html#l00108">GF_Entry\from_entry()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00581">GravityView_Field_Notes\get_add_note_part()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00234">GravityView_Delete_Entry\get_delete_link()</a>, <a class="el" href="class-gravityview-field-fileupload_8php_source.html#l00062">GravityView_Field_FileUpload\get_field_input()</a>, and <a class="el" href="class-gv-entry_8php_source.html#l00107">Entry\get_permalink()</a>.</p>
 
 </div>
 </div>
@@ -894,7 +894,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML of "no results" text </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000134">Runs Filter:</a></b></dt><dd><code>gravitview_no_entries_text</code> Modify the text displayed when there are no entries. Note: this filter is, and always has been, misspelled. This will not be fixed, since the filter is deprecated. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000142">Runs Filter:</a></b></dt><dd><code>gravitview_no_entries_text</code> Modify the text displayed when there are no entries. Note: this filter is, and always has been, misspelled. This will not be fixed, since the filter is deprecated. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$output</td><td>The existing "No Entries" text </td></tr>
@@ -903,7 +903,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string The modified text. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000135">Runs Filter:</a></b></dt><dd><code>gravityview/template/text/no_entries</code> Modify the text displayed when there are no entries. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000143">Runs Filter:</a></b></dt><dd><code>gravityview/template/text/no_entries</code> Modify the text displayed when there are no entries. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -917,9 +917,9 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-api_8php_source.html#l00299">299</a> of file <a class="el" href="class-api_8php_source.html">class-api.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-template_8php_source.html#l00189">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00003">$gravityview_view</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00779">gv_no_results()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00796">gv_no_results()</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1017,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>, and <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00321">GravityView_Merge_Tags\replace_variables()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gv-template-entry_8php_source.html#l00165">Entry_Template\get_back_label()</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00257">GravityView_Entry_List\get_item_output()</a>, <a class="el" href="class-template_8php_source.html#l00534">GravityView_View\getBackLinkLabel()</a>, <a class="el" href="__mocks_8php_source.html#l00213">GV\Mocks\GravityView_API_field_label()</a>, <a class="el" href="class-gv-template-field_8php_source.html#l00252">Field_Template\render()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00431">GravityView_frontend\single_entry_title()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gv-template-entry_8php_source.html#l00165">Entry_Template\get_back_label()</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00257">GravityView_Entry_List\get_item_output()</a>, <a class="el" href="class-template_8php_source.html#l00541">GravityView_View\getBackLinkLabel()</a>, <a class="el" href="__mocks_8php_source.html#l00214">GV\Mocks\GravityView_API_field_label()</a>, <a class="el" href="class-gv-template-field_8php_source.html#l00256">Field_Template\render()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l00431">GravityView_frontend\single_entry_title()</a>.</p>
 
 </div>
 </div>

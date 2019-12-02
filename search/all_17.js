@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['warning',['WARNING',['../class_g_v_1_1_log_level.html#ad0c7ccd2f8b92a760391d21d0ec7b339',1,'GV\LogLevel\WARNING()'],['../class_g_v_1_1_logger.html#aa9f94dcb1a687e36bc7f838a8801feec',1,'GV\Logger\warning()']]],
+  ['warning',['warning',['../class_g_v_1_1_logger.html#aa9f94dcb1a687e36bc7f838a8801feec',1,'GV\Logger\warning()'],['../class_g_v_1_1_log_level.html#ad0c7ccd2f8b92a760391d21d0ec7b339',1,'GV\LogLevel\WARNING()']]],
   ['website_2ephp',['website.php',['../website_8php.html',1,'']]],
-  ['welcome',['welcome',['../class_gravity_view___welcome.html#a5999a1893c62bb1f0501c93435d263cd',1,'GravityView_Welcome']]],
   ['widget',['Widget',['../class_g_v_1_1_widget.html',1,'Widget'],['../class_gravity_view___recent___entries___widget.html#afb9380a2672338f13e809fb264c40394',1,'GravityView_Recent_Entries_Widget\widget()'],['../class_gravity_view___search___w_p___widget.html#afb9380a2672338f13e809fb264c40394',1,'GravityView_Search_WP_Widget\widget()']]],
   ['widget_2dpoll_2ephp',['widget-poll.php',['../widget-poll_8php.html',1,'']]],
   ['widget_2dsearch_2ephp',['widget-search.php',['../widget-search_8php.html',1,'']]],

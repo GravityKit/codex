@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -93,6 +93,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___compatibility.html#a095c5d389db211932136b53f25f39685">GravityView_Compatibility</a>
 , <a class="el" href="class_gravity_view___default___template___list.html#a47b8c47245d4fddf5254b41c91d34464">GravityView_Default_Template_List</a>
 , <a class="el" href="class_gravity_view___delete___entry.html#a095c5d389db211932136b53f25f39685">GravityView_Delete_Entry</a>
+, <a class="el" href="class_gravity_view___duplicate___entry.html#a095c5d389db211932136b53f25f39685">GravityView_Duplicate_Entry</a>
 , <a class="el" href="class_gravity_view___edit___entry.html#a095c5d389db211932136b53f25f39685">GravityView_Edit_Entry</a>
 , <a class="el" href="class_gravity_view___edit___entry___admin.html#a153f27c2ecd09c0dadfb8f61757ac6b2">GravityView_Edit_Entry_Admin</a>
 , <a class="el" href="class_gravity_view___edit___entry___render.html#a153f27c2ecd09c0dadfb8f61757ac6b2">GravityView_Edit_Entry_Render</a>
@@ -114,6 +115,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___custom.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Custom</a>
 , <a class="el" href="class_gravity_view___field___date.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Date</a>
 , <a class="el" href="class_gravity_view___field___date___created.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Date_Created</a>
+, <a class="el" href="class_gravity_view___field___date___updated.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Date_Updated</a>
 , <a class="el" href="class_gravity_view___field___email.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Email</a>
 , <a class="el" href="class_gravity_view___field___entry___approval.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Entry_Approval</a>
 , <a class="el" href="class_gravity_view___field___entry___link.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Entry_Link</a>
@@ -136,6 +138,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___payment___method.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Payment_Method</a>
 , <a class="el" href="class_gravity_view___field___payment___status.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Payment_Status</a>
 , <a class="el" href="class_gravity_view___field___phone.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Phone</a>
+, <a class="el" href="class_gravity_view___field___pipe___recorder.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Pipe_Recorder</a>
 , <a class="el" href="class_gravity_view___field___post___category.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Post_Category</a>
 , <a class="el" href="class_gravity_view___field___post___content.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Post_Content</a>
 , <a class="el" href="class_gravity_view___field___post___custom___field.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Post_Custom_Field</a>
@@ -149,14 +152,18 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___radio.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Radio</a>
 , <a class="el" href="class_gravity_view___field___section.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Section</a>
 , <a class="el" href="class_gravity_view___field___select.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Select</a>
+, <a class="el" href="class_gravity_view___field___sequence.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Sequence</a>
 , <a class="el" href="class_gravity_view___field___source___u_r_l.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Source_URL</a>
+, <a class="el" href="class_gravity_view___field___survey.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Survey</a>
 , <a class="el" href="class_gravity_view___field___text.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Text</a>
 , <a class="el" href="class_gravity_view___field___textarea.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Textarea</a>
 , <a class="el" href="class_gravity_view___field___time.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Time</a>
 , <a class="el" href="class_gravity_view___field___total.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Total</a>
 , <a class="el" href="class_gravity_view___field___transaction___i_d.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Transaction_ID</a>
 , <a class="el" href="class_gravity_view___field___transaction___type.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Transaction_Type</a>
+, <a class="el" href="class_gravity_view___field___unsubscribe.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Unsubscribe</a>
 , <a class="el" href="class_gravity_view___field___website.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Website</a>
+, <a class="el" href="class_gravity_view___field___workflow___current___status___timestamp.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Workflow_Current_Status_Timestamp</a>
 , <a class="el" href="class_gravity_view___field___workflow___final___status.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Workflow_Final_Status</a>
 , <a class="el" href="class_gravity_view___field___workflow___step.html#a095c5d389db211932136b53f25f39685">GravityView_Field_Workflow_Step</a>
 , <a class="el" href="class_gravity_view___field_type.html#ac7525eb5dde1ef937063c94c2bf813ac">GravityView_FieldType</a>
@@ -195,6 +202,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___widget___pagination___info.html#a095c5d389db211932136b53f25f39685">GravityView_Widget_Pagination_Info</a>
 , <a class="el" href="class_gravity_view___widget___poll.html#a095c5d389db211932136b53f25f39685">GravityView_Widget_Poll</a>
 , <a class="el" href="class_gravity_view___widget___search.html#a095c5d389db211932136b53f25f39685">GravityView_Widget_Search</a>
+, <a class="el" href="class_gravity_view___widget___search___author___g_f___query___condition.html#a4eb52aa2e39222986b0c7525c4c4464b">GravityView_Widget_Search_Author_GF_Query_Condition</a>
 , <a class="el" href="class_g_v_1_1_addon___settings.html#a095c5d389db211932136b53f25f39685">Addon_Settings</a>
 , <a class="el" href="class_g_v_1_1_core.html#a095c5d389db211932136b53f25f39685">Core</a>
 , <a class="el" href="class_g_v_1_1_e_d_d___s_l___plugin___updater.html#a9e8117aaac6622aa1554f32339d47ab7">EDD_SL_Plugin_Updater</a>
@@ -207,6 +215,7 @@ $(function() {
 , <a class="el" href="class_g_v_1_1_join.html#a906af4893bdb85af58ed07c76c6c7902">Join</a>
 , <a class="el" href="class_g_v_1_1_legacy___override___template.html#ae1c51dc6511acf7517380cbd92c38208">Legacy_Override_Template</a>
 , <a class="el" href="class_g_v_1_1_license___handler.html#af4ebc2be4473f7315aea67e98299b605">License_Handler</a>
+, <a class="el" href="class_g_v_1_1_mocks_1_1_g_f___query___condition___i_s___n_u_l_l.html#a4f602df1df5791247b5bf699200b2eb0">GF_Query_Condition_IS_NULL</a>
 , <a class="el" href="class_g_v_1_1_multi___entry.html#a095c5d389db211932136b53f25f39685">Multi_Entry</a>
 , <a class="el" href="class_g_v_1_1_plugin.html#a095c5d389db211932136b53f25f39685">Plugin</a>
 , <a class="el" href="class_g_v_1_1_renderer.html#a095c5d389db211932136b53f25f39685">Renderer</a>
@@ -217,7 +226,6 @@ $(function() {
 , <a class="el" href="class_g_v_1_1_view___table___template.html#a6b83d916dfe736b37fbd8ada85ac5532">View_Table_Template</a>
 , <a class="el" href="class_g_v_1_1_view___template.html#a6b83d916dfe736b37fbd8ada85ac5532">View_Template</a>
 , <a class="el" href="class_g_v_1_1_widgets_1_1_page___size.html#a095c5d389db211932136b53f25f39685">Page_Size</a>
-, <a class="el" href="class_g_v_logic___shortcode.html#a095c5d389db211932136b53f25f39685">GVLogic_Shortcode</a>
 </li>
 <li>__destruct()
 : <a class="el" href="class_g_v_1_1_entry___template.html#a421831a265621325e1fdd19aace0c758">Entry_Template</a>
@@ -277,6 +285,9 @@ $(function() {
 </li>
 <li>_get_edd_settings()
 : <a class="el" href="class_g_v_1_1_license___handler.html#aa1f8d938fddf2c9a7142ea5caa2daa05">License_Handler</a>
+</li>
+<li>_get_multisort_url()
+: <a class="el" href="class_g_v_1_1_view___table___template.html#ac837a239a24fd4e73d8dbb34e94a9180">View_Table_Template</a>
 </li>
 <li>_get_time_format()
 : <a class="el" href="class_gravity_view___field___time.html#a761a3e4e6dac36ac4b49f0bbc57d382b">GravityView_Field_Time</a>

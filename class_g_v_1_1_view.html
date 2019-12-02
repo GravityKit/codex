@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -101,9 +101,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abde7da466d842901011c162027d06dc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#abde7da466d842901011c162027d06dc0">can_render</a> ( $context=null, $request=null)</td></tr>
 <tr class="memdesc:abde7da466d842901011c162027d06dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this view can be accessed or not.  <a href="#abde7da466d842901011c162027d06dc0">More...</a><br /></td></tr>
 <tr class="separator:abde7da466d842901011c162027d06dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fc74951f4e394bdefd7febdeff541c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a2fc74951f4e394bdefd7febdeff541c0">get_entries</a> ( $request=null)</td></tr>
-<tr class="memdesc:a2fc74951f4e394bdefd7febdeff541c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the entries for the current view and request.  <a href="#a2fc74951f4e394bdefd7febdeff541c0">More...</a><br /></td></tr>
-<tr class="separator:a2fc74951f4e394bdefd7febdeff541c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7e1a58c2d700dc3459de6ea23788bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a3f7e1a58c2d700dc3459de6ea23788bc">get_query_class</a> ()</td></tr>
+<tr class="memdesc:a3f7e1a58c2d700dc3459de6ea23788bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the query class for this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>.  <a href="#a3f7e1a58c2d700dc3459de6ea23788bc">More...</a><br /></td></tr>
+<tr class="separator:a3f7e1a58c2d700dc3459de6ea23788bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6526f807caa521a8a61c6fa221af0e05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a6526f807caa521a8a61c6fa221af0e05">offsetExists</a> ( $offset)</td></tr>
 <tr class="memdesc:a6526f807caa521a8a61c6fa221af0e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">ArrayAccess compatibility layer with <a class="el" href="class_gravity_view___view___data.html#a2bc32a57c3a42b3b411c76e457481767">GravityView_View_Data::$views</a>.  <a href="#a6526f807caa521a8a61c6fa221af0e05">More...</a><br /></td></tr>
 <tr class="separator:a6526f807caa521a8a61c6fa221af0e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,15 +137,21 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afc6edbfdd91b125f9a114652ecc9251d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#afc6edbfdd91b125f9a114652ecc9251d">from_post</a> ( $post)</td></tr>
 <tr class="memdesc:afc6edbfdd91b125f9a114652ecc9251d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a  instance from a .  <a href="#afc6edbfdd91b125f9a114652ecc9251d">More...</a><br /></td></tr>
 <tr class="separator:afc6edbfdd91b125f9a114652ecc9251d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6923cd66fb640bf855af62c3f02e0b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a7a6923cd66fb640bf855af62c3f02e0b">get_joined_forms</a> ( $post_id=0)</td></tr>
-<tr class="memdesc:a7a6923cd66fb640bf855af62c3f02e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joined forms associated with a view.  <a href="#a7a6923cd66fb640bf855af62c3f02e0b">More...</a><br /></td></tr>
-<tr class="separator:a7a6923cd66fb640bf855af62c3f02e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3be549479f91eb0adae03a3d9e3976"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a1d3be549479f91eb0adae03a3d9e3976">get_joined_forms</a> ( $post_id)</td></tr>
+<tr class="memdesc:a1d3be549479f91eb0adae03a3d9e3976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joined forms associated with a view In no particular order.  <a href="#a1d3be549479f91eb0adae03a3d9e3976">More...</a><br /></td></tr>
+<tr class="separator:a1d3be549479f91eb0adae03a3d9e3976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3efd11ed95bedae7f38f14825ff0ef96"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a3efd11ed95bedae7f38f14825ff0ef96">get_joins</a> ( $post)</td></tr>
 <tr class="memdesc:a3efd11ed95bedae7f38f14825ff0ef96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joins associated with a view.  <a href="#a3efd11ed95bedae7f38f14825ff0ef96">More...</a><br /></td></tr>
 <tr class="separator:a3efd11ed95bedae7f38f14825ff0ef96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa438c04473f1273a2f340d7d6c5419e2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#aa438c04473f1273a2f340d7d6c5419e2">get_unions</a> ( $post)</td></tr>
+<tr class="memdesc:aa438c04473f1273a2f340d7d6c5419e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get unions associated with a view.  <a href="#aa438c04473f1273a2f340d7d6c5419e2">More...</a><br /></td></tr>
+<tr class="separator:aa438c04473f1273a2f340d7d6c5419e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f6a669ec69f9d03f6edf9692230a2cb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a2f6a669ec69f9d03f6edf9692230a2cb">register_post_type</a> ()</td></tr>
 <tr class="memdesc:a2f6a669ec69f9d03f6edf9692230a2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the gravityview WordPress Custom Post Type.  <a href="#a2f6a669ec69f9d03f6edf9692230a2cb">More...</a><br /></td></tr>
 <tr class="separator:a2f6a669ec69f9d03f6edf9692230a2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82088ffdb1f27feb8cad77a78eb50a15"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a82088ffdb1f27feb8cad77a78eb50a15">restrict</a> ( $caps, $cap, $user_id, $args)</td></tr>
+<tr class="memdesc:a82088ffdb1f27feb8cad77a78eb50a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restrict <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> access to specific capabilities.  <a href="#a82088ffdb1f27feb8cad77a78eb50a15">More...</a><br /></td></tr>
+<tr class="separator:a82088ffdb1f27feb8cad77a78eb50a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9c435d90135acc7f4659e3a76c62cb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#ade9c435d90135acc7f4659e3a76c62cb">template_redirect</a> ()</td></tr>
 <tr class="memdesc:ade9c435d90135acc7f4659e3a76c62cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last chance to configure the output.  <a href="#ade9c435d90135acc7f4659e3a76c62cb">More...</a><br /></td></tr>
 <tr class="separator:ade9c435d90135acc7f4659e3a76c62cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +166,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:aaaa369506317e152257a8c293dc826ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c3353107070daa85f641882931b358"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#ac7c3353107070daa85f641882931b358">$settings</a></td></tr>
 <tr class="separator:ac7c3353107070daa85f641882931b358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c9c93feba47d262322ea0d8e92937d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a29c9c93feba47d262322ea0d8e92937d">$unions</a> = array()</td></tr>
+<tr class="separator:a29c9c93feba47d262322ea0d8e92937d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f5748bb7ea9c129f7405a78f1c7eb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_view.html#a21f5748bb7ea9c129f7405a78f1c7eb8">$widgets</a></td></tr>
 <tr class="separator:a21f5748bb7ea9c129f7405a78f1c7eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -198,7 +206,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>The constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00081">81</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00098">98</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 </div>
 </div>
@@ -219,7 +227,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l01026">1026</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l01537">1537</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 </div>
 </div>
@@ -255,7 +263,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00667">667</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00772">772</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>.</p>
 
@@ -288,7 +296,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>CSV.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00203">203</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00220">220</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 </div>
 </div>
@@ -310,9 +318,9 @@ Static Private Attributes</h2></td></tr>
 <p>Be compatible with the old data object. </p>
 <p>Some external code expects an array (doing things like foreach on this, or array_keys) so let's return an array in the old format for such cases. Do not use unless using for back-compatibility. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00790">790</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00897">897</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
-<p class="reference">References <a class="el" href="connector-functions_8php_source.html#l00023">gravityview_get_form()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-frontend-views_8php_source.html#l01136">GravityView_frontend\_override_sorting_id_by_field_type()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00028">GravityView_Entry_Approval_Status\APPROVED</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00017">Entry_Sort\ASC</a>, <a class="el" href="class-common_8php_source.html#l00430">GVCommon\calculate_get_entries_criteria()</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00022">Entry_Sort\DESC</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="connector-functions_8php_source.html#l00023">gravityview_get_form()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, <a class="el" href="class-common_8php_source.html#l01555">GVCommon\is_field_numeric()</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>.</p>
 
 </div>
 </div>
@@ -350,11 +358,11 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>|null An instance around this  or null if not found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00684">684</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00789">789</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00069">GravityView_Admin_Bar\add_floaty_icon()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01225">GravityView_frontend\add_scripts_and_styles()</a>, <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00654">GravityView_Entry_Approval\autounapprove()</a>, <a class="el" href="class-gv-shortcode-gvfield_8php_source.html#l00026">gvfield\callback()</a>, <a class="el" href="class-gv-shortcode-gventry_8php_source.html#l00026">gventry\callback()</a>, <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00031">gravityview\callback()</a>, <a class="el" href="class-search-widget_8php_source.html#l00510">GravityView_Widget_Search\filter_entries()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01601">GravityView_Edit_Entry_Render\get_configured_edit_fields()</a>, <a class="el" href="class-data_8php_source.html#l00209">GravityView_View_Data\get_fields()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00354">Views_Route\get_item_permissions_check()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00280">Views_Route\get_sub_item()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00398">Views_Route\get_sub_item_permissions_check()</a>, <a class="el" href="class-data_8php_source.html#l00147">GravityView_View_Data\get_view()</a>, <a class="el" href="__mocks_8php_source.html#l00069">GV\Mocks\GravityView_frontend_get_view_entries()</a>, <a class="el" href="__mocks_8php_source.html#l00015">GV\Mocks\GravityView_View_Data_add_view()</a>, <a class="el" href="class-gv-oembed_8php_source.html#l00112">oEmbed\parse_matches()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00112">Views_Route\prepare_entry_for_response()</a>, and <a class="el" href="class-template_8php_source.html#l00838">GravityView_View\render_widget_hooks()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-bar_8php_source.html#l00069">GravityView_Admin_Bar\add_floaty_icon()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01275">GravityView_frontend\add_scripts_and_styles()</a>, <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00673">GravityView_Entry_Approval\autounapprove()</a>, <a class="el" href="class-gv-shortcode-gventry_8php_source.html#l00027">gventry\callback()</a>, <a class="el" href="class-gv-shortcode-gvfield_8php_source.html#l00027">gvfield\callback()</a>, <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00032">gravityview\callback()</a>, <a class="el" href="class-search-widget_8php_source.html#l00536">GravityView_Widget_Search\filter_entries()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01867">GravityView_Edit_Entry_Render\get_configured_edit_fields()</a>, <a class="el" href="class-data_8php_source.html#l00209">GravityView_View_Data\get_fields()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00413">Views_Route\get_item_permissions_check()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00339">Views_Route\get_sub_item()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00457">Views_Route\get_sub_item_permissions_check()</a>, <a class="el" href="class-data_8php_source.html#l00147">GravityView_View_Data\get_view()</a>, <a class="el" href="__mocks_8php_source.html#l00069">GV\Mocks\GravityView_frontend_get_view_entries()</a>, <a class="el" href="__mocks_8php_source.html#l00015">GV\Mocks\GravityView_View_Data_add_view()</a>, <a class="el" href="class-search-widget_8php_source.html#l01270">GravityView_Widget_Search\has_date_field()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01108">GravityView_Edit_Entry_Render\maybe_print_message()</a>, <a class="el" href="class-gv-oembed_8php_source.html#l00112">oEmbed\parse_matches()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00112">Views_Route\prepare_entry_for_response()</a>, <a class="el" href="class-template_8php_source.html#l00845">GravityView_View\render_widget_hooks()</a>, and <a class="el" href="class-gravityview-field-sequence_8php_source.html#l00101">GravityView_Field_Sequence\replace_merge_tag()</a>.</p>
 
 </div>
 </div>
@@ -393,7 +401,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool| An error if this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> shouldn't be rendered here. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000070">Runs Filter:</a></b></dt><dd><code>gravityview/view/can_render</code> Whether the view can be rendered or not. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000073">Runs Filter:</a></b></dt><dd><code>gravityview/view/can_render</code> Whether the view can be rendered or not. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool&#160;|&#160;\WP_Error</td><td class="paramname">$result</td><td>The result. Default: null. </td></tr>
@@ -406,7 +414,7 @@ Static Private Attributes</h2></td></tr>
 <p>This <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> is password protected. Nothing to do here.</p>
 <p>Is this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> directly accessible via a post URL?</p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://codex.wordpress.org/Function_Reference/register_post_type#public">https://codex.wordpress.org/Function_Reference/register_post_type#public</a></dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000071">Runs Filter:</a></b></dt><dd><code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000074">Runs Filter:</a></b></dt><dd><code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype"></td><td class="paramname">boolean</td><td><code>true</code>: allow Views to be accessible directly. <code>false</code>: Only allow Views to be embedded. Default: <code>true</code> </td></tr>
@@ -414,7 +422,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000072">Runs Filter:</a></b></dt><dd><code>gravityview/request/output/direct</code> Should this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> be directly accessbile? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000075">Runs Filter:</a></b></dt><dd><code>gravityview/request/output/direct</code> Should this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> be directly accessbile? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -427,7 +435,7 @@ Static Private Attributes</h2></td></tr>
 <p>Is this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> an embed-only <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>? If so, don't allow rendering here, as this is a direct request.</p>
 <p>Private, pending, draft, etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00366">366</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00402">402</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
@@ -473,9 +481,9 @@ Static Private Attributes</h2></td></tr>
 <p>Viewing a single entry.</p>
 <p>Plain old <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00229">229</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00246">246</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
-<p class="reference">References <a class="el" href="custom_8php_source.html#l00037">$content</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-common_8php_source.html#l00843">GVCommon\check_entry_display()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00176">GravityView_Entry_Approval_Status\is_approved()</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>.</p>
+<p class="reference">References <a class="el" href="custom_8php_source.html#l00037">$content</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00177">GravityView_Entry_Approval_Status\is_approved()</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>.</p>
 
 </div>
 </div>
@@ -513,7 +521,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Whether the post exists or not. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00700">700</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00805">805</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00059">GravityView_View_Data\maybe_get_view_id()</a>.</p>
 
@@ -552,7 +560,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>|null An instance around this  if valid, null otherwise. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000073">Runs Filter:</a></b></dt><dd><code>gravityview/view/get</code> Override <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000076">Runs Filter:</a></b></dt><dd><code>gravityview/view/get</code> Override <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> instance pointer. </td></tr>
@@ -561,7 +569,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>2.1</dd></dl>
 <p>Get connected form.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000074">Runs Filter:</a></b></dt><dd><code>gravityview/configuration/fields</code> Filter the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> fields' configuration array. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000077">Runs Filter:</a></b></dt><dd><code>gravityview/configuration/fields</code> Filter the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> fields' configuration array. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.6.5</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -570,7 +578,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000075">Runs Filter:</a></b></dt><dd><code>gravityview/view/configuration/fields</code> Filter the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> fields' configuration array. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000078">Runs Filter:</a></b></dt><dd><code>gravityview/view/configuration/fields</code> Filter the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> fields' configuration array. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -579,7 +587,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000076">Runs Filter:</a></b></dt><dd><code>gravityview/view/fields</code> Filter the <a class="el" href="class_g_v_1_1_field.html" title="If this file is called directly, abort. ">Field</a> <a class="el" href="class_g_v_1_1_collection.html" title="If this file is called directly, abort. ">Collection</a> for this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000079">Runs Filter:</a></b></dt><dd><code>gravityview/view/fields</code> Filter the <a class="el" href="class_g_v_1_1_field.html" title="If this file is called directly, abort. ">Field</a> <a class="el" href="class_g_v_1_1_collection.html" title="If this file is called directly, abort. ">Collection</a> for this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -588,7 +596,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000077">Runs Filter:</a></b></dt><dd><code>gravityview/view/configuration/widgets</code> Filter the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> widgets' configuration array. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000080">Runs Filter:</a></b></dt><dd><code>gravityview/view/configuration/widgets</code> Filter the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> widgets' configuration array. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -597,7 +605,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000078">Runs Filter:</a></b></dt><dd><code>gravityview/view/widgets</code> Filter the <a class="el" href="class_g_v_1_1_widget.html" title="If this file is called directly, abort. ">Widget</a> <a class="el" href="class_g_v_1_1_collection.html" title="If this file is called directly, abort. ">Collection</a> for this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000081">Runs Filter:</a></b></dt><dd><code>gravityview/view/widgets</code> Filter the <a class="el" href="class_g_v_1_1_widget.html" title="If this file is called directly, abort. ">Widget</a> <a class="el" href="class_g_v_1_1_collection.html" title="If this file is called directly, abort. ">Collection</a> for this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -609,7 +617,7 @@ Static Private Attributes</h2></td></tr>
 <p><a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> configuration.</p>
 <p>Add the template name into the settings.</p>
 <p><a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> basics.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000079">Runs Filter:</a></b></dt><dd><code>gravityview/view/get</code> Override <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000082">Runs Filter:</a></b></dt><dd><code>gravityview/view/get</code> Override <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> instance pointer. </td></tr>
@@ -618,71 +626,16 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>2.1</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00558">558</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00661">661</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="connector-functions_8php_source.html#l00221">gravityview_get_template_id()</a>, and <a class="el" href="connector-functions_8php_source.html#l00232">gravityview_get_template_settings()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gv-oembed_8php_source.html#l00112">oEmbed\parse_matches()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00305">Views_Route\prepare_view_for_response()</a>, <a class="el" href="class-admin-views_8php_source.html#l00860">GravityView_Admin_Views\render_active_areas()</a>, and <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00256">GravityView_Admin_Metaboxes\render_view_configuration_metabox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gv-oembed_8php_source.html#l00112">oEmbed\parse_matches()</a>, <a class="el" href="class-gv-rest-views-route_8php_source.html#l00364">Views_Route\prepare_view_for_response()</a>, <a class="el" href="class-admin-views_8php_source.html#l00878">GravityView_Admin_Views\render_active_areas()</a>, and <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00254">GravityView_Admin_Metaboxes\render_view_configuration_metabox()</a>.</p>
 
 </div>
 </div>
-<a id="a2fc74951f4e394bdefd7febdeff541c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fc74951f4e394bdefd7febdeff541c0">&#9670;&nbsp;</a></span>get_entries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">get_entries </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$request</em> = <code>null</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Retrieve the entries for the current view and request. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Cleanup duplicate field_filter parameters to simplify the query.</p>
-<p>New  stuff :)</p>
-<p>Any joins?</p>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000024">Runs Actions:</a></b></dt><dd><code>gravityview/view/query</code> Override the  before the <a class="el" href="namespace_g_v.html#a66f12b503ed90844ccf8401e14ccf469" title="Retrieve a setting. ">get()</a> call. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">\GF_Query</td><td class="paramname">$query</td><td>The current query object reference </td></tr>
-    <tr><td class="paramtype">\GV\View</td><td class="paramname">$this</td><td>The current view object </td></tr>
-    <tr><td class="paramtype">\GV\Request</td><td class="paramname">$request</td><td>The request object</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Map from Gravity Forms entries arrays to an <a class="el" href="class_g_v_1_1_entry___collection.html" title="If this file is called directly, abort. ">Entry_Collection</a>.</p>
-<p>Add total count callback.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000080">Runs Filter:</a></b></dt><dd><code>gravityview/view/entries</code> Modify the entry fetching filters, sorts, offsets, limits. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">\GV\Entry_Collection</td><td class="paramname">$entries</td><td>The entries for this view. </td></tr>
-    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The view. </td></tr>
-    <tr><td class="paramtype">\GV\Request</td><td class="paramname">$request</td><td>The request.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00810">810</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
-
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="field-other__entries-html_8php_source.html#l00051">$filter</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00017">Entry_Sort\ASC</a>, <a class="el" href="class-common_8php_source.html#l00430">GVCommon\calculate_get_entries_criteria()</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00022">Entry_Sort\DESC</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-gv-renderer-view_8php_source.html#l00027">View_Renderer\render()</a>.</p>
-
-</div>
-</div>
-<a id="a7a6923cd66fb640bf855af62c3f02e0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a6923cd66fb640bf855af62c3f02e0b">&#9670;&nbsp;</a></span>get_joined_forms()</h2>
+<a id="a1d3be549479f91eb0adae03a3d9e3976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3be549479f91eb0adae03a3d9e3976">&#9670;&nbsp;</a></span>get_joined_forms()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -694,7 +647,7 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">static get_joined_forms </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$post_id</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>$post_id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -705,8 +658,10 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get joined forms associated with a view. </p>
-<dl class="section since"><dt>Since</dt><dd>2.0.11</dd></dl>
+<p>Get joined forms associated with a view In no particular order. </p>
+<dl class="section since"><dt>Since</dt><dd>2.0.11</dd>
+<dd>
+2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$post_id</td><td>ID of the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a></td></tr>
@@ -715,11 +670,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>[] Array of  instances </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00516">516</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00555">555</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-admin-welcome_8php_source.html#l00163">GravityView_Welcome\getting_started_screen()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="data-source_8php_source.html#l00019">$forms</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -757,11 +710,79 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.0.11</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>[] Array of  instances </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00468">468</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00505">505</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-welcome_8php_source.html#l00163">GravityView_Welcome\getting_started_screen()</a>.</p>
+</div>
+</div>
+<a id="a3f7e1a58c2d700dc3459de6ea23788bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f7e1a58c2d700dc3459de6ea23788bc">&#9670;&nbsp;</a></span>get_query_class()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_query_class </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the query class for this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>string The class name. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000085">Runs Filter:</a></b></dt><dd><code>gravityview/query/class</code> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramtype"></td><td class="paramname">string</td><td>The query class. Default: GF_Query. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">\GV\View</td><td class="paramname">$this</td><td>The <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l01477">1477</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+
+</div>
+</div>
+<a id="aa438c04473f1273a2f340d7d6c5419e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa438c04473f1273a2f340d7d6c5419e2">&#9670;&nbsp;</a></span>get_unions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static get_unions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$post</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get unions associated with a view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\WP_Post</td><td class="paramname">$post</td><td><a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> CPT to get unions for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.2.2</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>[][] Array of unions (see self::$unions) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00607">607</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="select-template_8php_source.html#l00009">$post</a>, <a class="el" href="class-gv-field-internal_8php_source.html#l00051">Internal_Field\by_id()</a>, <a class="el" href="class-gv-field-gravityforms_8php_source.html#l00059">GF_Field\by_id()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -783,7 +804,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>ArrayAccess compatibility layer with <a class="el" href="class_gravity_view___view___data.html#a2bc32a57c3a42b3b411c76e457481767">GravityView_View_Data::$views</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00712">712</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00817">817</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 </div>
 </div>
@@ -806,7 +827,7 @@ Static Private Attributes</h2></td></tr>
 <p>ArrayAccess compatibility layer with <a class="el" href="class_gravity_view___view___data.html#a2bc32a57c3a42b3b411c76e457481767">GravityView_View_Data::$views</a>. </p>
 <p>Maps the old keys to the new data; </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00728">728</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00833">833</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -840,7 +861,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>ArrayAccess compatibility layer with <a class="el" href="class_gravity_view___view___data.html#a2bc32a57c3a42b3b411c76e457481767">GravityView_View_Data::$views</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00762">762</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00869">869</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -864,7 +885,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>ArrayAccess compatibility layer with <a class="el" href="class_gravity_view___view___data.html#a2bc32a57c3a42b3b411c76e457481767">GravityView_View_Data::$views</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00774">774</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00881">881</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -895,7 +916,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Register the gravityview WordPress Custom Post Type. </p>
 <p>Register only once</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000064">Runs Filter:</a></b></dt><dd><code>gravityview_is_hierarchical</code> Make <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Views hierarchical by returning TRUE This will allow for Views to be nested with Parents and also allows for menu order to be set in the Page Attributes metabox </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000067">Runs Filter:</a></b></dt><dd><code>gravityview_is_hierarchical</code> Make <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Views hierarchical by returning TRUE This will allow for Views to be nested with Parents and also allows for menu order to be set in the Page Attributes metabox </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -903,7 +924,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000065">Runs Filter:</a></b></dt><dd><code>gravityview_post_type_supports</code> Modify post type support values for <code>gravityview</code> post type </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000068">Runs Filter:</a></b></dt><dd><code>gravityview_post_type_supports</code> Modify post type support values for <code>gravityview</code> post type </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>add_post_type_support() </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -914,7 +935,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>Register Custom Post Type - gravityview</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000066">Runs Filter:</a></b></dt><dd><code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000069">Runs Filter:</a></b></dt><dd><code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://codex.wordpress.org/Function_Reference/register_post_type#public">https://codex.wordpress.org/Function_Reference/register_post_type#public</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -924,7 +945,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000067">Runs Filter:</a></b></dt><dd><code>gravityview_has_archive</code> Enable Custom Post Type archive? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000070">Runs Filter:</a></b></dt><dd><code>gravityview_has_archive</code> Enable Custom Post Type archive? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -932,7 +953,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000068">Runs Filter:</a></b></dt><dd><code>gravityview_slug</code> Modify the url part for a <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000071">Runs Filter:</a></b></dt><dd><code>gravityview_slug</code> Modify the url part for a <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://docs.gravityview.co/article/62-changing-the-view-slug">https://docs.gravityview.co/article/62-changing-the-view-slug</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -940,7 +961,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000069">Runs Filter:</a></b></dt><dd><code>gravityview/post_type/with_front</code> Should the permalink structure be prepended with the front base. (example: if your permalink structure is /blog/, then your links will be: false-&gt;/view/, true-&gt;/blog/view/). Defaults to true. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000072">Runs Filter:</a></b></dt><dd><code>gravityview/post_type/with_front</code> Should the permalink structure be prepended with the front base. (example: if your permalink structure is /blog/, then your links will be: false-&gt;/view/, true-&gt;/blog/view/). Defaults to true. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://codex.wordpress.org/Function_Reference/register_post_type">https://codex.wordpress.org/Function_Reference/register_post_type</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -950,9 +971,89 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00093">93</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00110">110</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
-<p class="reference">References <a class="el" href="form-buttons_8php_source.html#l00030">$labels</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-admin_8php_source.html#l00065">GravityView_Admin\no_views_text()</a>.</p>
+<p class="reference">References <a class="el" href="form-buttons_8php_source.html#l00043">$labels</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-admin_8php_source.html#l00065">GravityView_Admin\no_views_text()</a>.</p>
+
+</div>
+</div>
+<a id="a82088ffdb1f27feb8cad77a78eb50a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82088ffdb1f27feb8cad77a78eb50a15">&#9670;&nbsp;</a></span>restrict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static restrict </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$caps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$cap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Restrict <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> access to specific capabilities. </p>
+<p>Hooked into <code>map_meta_cap</code> WordPress filter.</p>
+<dl class="section since"><dt>Since</dt><dd>develop</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">$caps</td><td>array The output capabilities. </td></tr>
+    <tr><td class="paramname">$cap</td><td>string The cap that is being checked. </td></tr>
+    <tr><td class="paramname">$user_id</td><td>int The User ID. </td></tr>
+    <tr><td class="paramname">$args</td><td>array Additional arguments to the capability.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array The resulting capabilities. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000086">Runs Filter:</a></b></dt><dd><code>gravityview/security/require_unfiltered_html</code> Bypass restrictions on Views that require <code>unfiltered_html</code>. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">boolean</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>develop </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$cap</td><td>The capability requested. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$user_id</td><td>The user ID. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>Any additional args to map_meta_cap</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l01501">1501</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 </div>
 </div>
@@ -993,7 +1094,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>Add da' BOM if GF uses it </p><dl class="section see"><dt>See also</dt><dd>GFExport::start_export()</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000081">Runs Filter:</a></b></dt><dd><code>gravityview/csv/entry/fields</code> Whitelist more entry fields that are output in CSV requests. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000084">Runs Filter:</a></b></dt><dd><code>gravityview/csv/entry/fields</code> Whitelist more entry fields by ID that are output in CSV requests. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$allowed</td><td>The allowed ones, default by_visible, by_position( "context_*" ), i.e. as set in the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </td></tr>
@@ -1003,7 +1104,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00927">927</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l01367">1367</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="class-gv-field-internal_8php_source.html#l00051">Internal_Field\by_id()</a>, <a class="el" href="class-gv-field-gravityforms_8php_source.html#l00059">GF_Field\by_id()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -1119,6 +1220,22 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00030">30</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
+
+</div>
+</div>
+<a id="a29c9c93feba47d262322ea0d8e92937d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c9c93feba47d262322ea0d8e92937d">&#9670;&nbsp;</a></span>$unions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$unions = array()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="class-gv-view_8php_source.html#l00093">93</a> of file <a class="el" href="class-gv-view_8php_source.html">class-gv-view.php</a>.</p>
 
 </div>
 </div>

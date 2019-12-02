@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -241,7 +241,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00472">472</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l00963">GVCommon\format_date()</a>.</p>
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l01057">GVCommon\format_date()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-gravityview-field-date_8php_source.html#l00058">GravityView_Field_Date\apply_format_date_modifiers()</a>, and <a class="el" href="class-gravityview-field-date-created_8php_source.html#l00084">GravityView_Field_Date_Created\replace_merge_tag()</a>.</p>
 
@@ -666,7 +666,7 @@ Static Private Member Functions</h2></td></tr>
 <a class="el" href="class_gravity_view___merge___tags.html#a5e6312492ce0b08f9cfa0d41729bb2c1" title="Convert JSON or CSV values into space-separated string. ">modifier_explode</a></dd>
 <dd>
 <a class="el" href="class_gravity_view___merge___tags.html#a37c844abc750e31d2940efb7df5926e2" title="Process strings with common PHP string manipulations. ">modifier_strings</a></dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000195">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/modifiers/value</code> Modify the merge tag modifier output </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000207">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/modifiers/value</code> Modify the merge tag modifier output </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -682,7 +682,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00045">45</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="widget-poll_8php_source.html#l00014">$merge_tag</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
 </div>
 </div>
@@ -904,7 +904,7 @@ GFCommon::replace_variables_prepopulate - Code is there for {custom_field} and {
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Original text, if no Merge Tags found, otherwise text with Merge Tags replaced </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000197">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/glue/</code> Modify the glue used to convert an array of <code>{get}</code> values from an array to string </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000209">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/glue/</code> Modify the glue used to convert an array of <code>{get}</code> values from an array to string </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -913,7 +913,7 @@ GFCommon::replace_variables_prepopulate - Code is there for {custom_field} and {
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000198">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Disable esc_html() from running on <code>{get}</code> merge tag By default, all values passed through URLs will be escaped for security reasons. If for some reason you want to pass HTML in the URL, for example, you will need to return false on this filter. It is strongly recommended that you do not disable this filter. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000210">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Disable esc_html() from running on <code>{get}</code> merge tag By default, all values passed through URLs will be escaped for security reasons. If for some reason you want to pass HTML in the URL, for example, you will need to return false on this filter. It is strongly recommended that you do not disable this filter. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -921,7 +921,7 @@ GFCommon::replace_variables_prepopulate - Code is there for {custom_field} and {
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000199">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Modify the value of the <code>{get}</code> replacement before being used </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000211">Runs Filter:</a></b></dt><dd><code>gravityview/merge_tags/get/esc_html/{url parameter name}</code> Modify the value of the <code>{get}</code> replacement before being used </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$value</td><td>Value that will replace <code>{get}</code> </td></tr>
@@ -934,7 +934,7 @@ GFCommon::replace_variables_prepopulate - Code is there for {custom_field} and {
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00613">613</a> of file <a class="el" href="class-gravityview-merge-tags_8php_source.html">class-gravityview-merge-tags.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="field-checkbox-csv_8php_source.html#l00026">$glue</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
 </div>
 </div>
@@ -1121,7 +1121,7 @@ GFCommon::replace_variables_prepopulate() </dd></dl>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://www.gravityhelp.com/documentation/article/gform_merge_tag_data/">https://www.gravityhelp.com/documentation/article/gform_merge_tag_data/</a>} </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string Text with variables maybe replaced </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000196">Runs Filter:</a></b></dt><dd><code>gravityview_do_replace_variables</code> Turn off merge tag variable replacements.<br />
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000208">Runs Filter:</a></b></dt><dd><code>gravityview_do_replace_variables</code> Turn off merge tag variable replacements.<br />
 Useful where you want to process variables yourself. We do this in the Math Extension. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.13</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1139,7 +1139,7 @@ Useful where you want to process variables yourself. We do this in the Math Exte
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-shortcode_8php_source.html#l00078">GravityView_Shortcode\parse_and_sanitize_atts()</a>, <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00231">gravityview\parse_and_sanitize_atts()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, <a class="el" href="class-api_8php_source.html#l00119">GravityView_API\replace_variables()</a>, and <a class="el" href="class-gravityview-field-custom_8php_source.html#l00091">GravityView_Field_Custom\show_field_in_edit_entry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-shortcode_8php_source.html#l00078">GravityView_Shortcode\parse_and_sanitize_atts()</a>, <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00237">gravityview\parse_and_sanitize_atts()</a>, <a class="el" href="class-gravityview-widget-custom-content_8php_source.html#l00048">GravityView_Widget_Custom_Content\render_frontend()</a>, <a class="el" href="class-api_8php_source.html#l00119">GravityView_API\replace_variables()</a>, and <a class="el" href="class-gravityview-field-custom_8php_source.html#l00098">GravityView_Field_Custom\show_field_in_edit_entry()</a>.</p>
 
 </div>
 </div>

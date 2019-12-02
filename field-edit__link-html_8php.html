@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.1.1</span>
+   &#160;<span id="projectnumber">2.5</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -77,13 +77,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5291dff564984cdb59d278ef6c471d80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-edit__link-html_8php.html#a5291dff564984cdb59d278ef6c471d80">$entry</a> = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;entry-&gt;as_entry()</td></tr>
-<tr class="separator:a5291dff564984cdb59d278ef6c471d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93735dc685504b23c61718dce74c6fc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-edit__link-html_8php.html#a93735dc685504b23c61718dce74c6fc8">$field_settings</a> = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;as_configuration()</td></tr>
 <tr class="separator:a93735dc685504b23c61718dce74c6fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4fda4c28a9ee5f91102c023b9501f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-edit__link-html_8php.html#a1a4fda4c28a9ee5f91102c023b9501f4">$form</a> = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;view-&gt;form-&gt;form</td></tr>
-<tr class="memdesc:a1a4fda4c28a9ee5f91102c023b9501f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default edit link field output template.  <a href="#a1a4fda4c28a9ee5f91102c023b9501f4">More...</a><br /></td></tr>
-<tr class="separator:a1a4fda4c28a9ee5f91102c023b9501f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae858fe52917aca7da3e5f64ac5bf665a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-edit__link-html_8php.html#ae858fe52917aca7da3e5f64ac5bf665a">$href</a> = <a class="el" href="class_gravity_view___edit___entry.html#af9a6037f8f0bc740d634bae58c22c394">GravityView_Edit_Entry::get_edit_link</a>( $entry, $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;view-&gt;ID, $post ? $post-&gt;ID : null )</td></tr>
 <tr class="separator:ae858fe52917aca7da3e5f64ac5bf665a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a2aeefa1b8271e191e7b8a74c8f655"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-edit__link-html_8php.html#a18a2aeefa1b8271e191e7b8a74c8f655">$link_atts</a> = array()</td></tr>
@@ -94,24 +89,11 @@ Variables</h2></td></tr>
 <tr class="separator:a6a4578984463c507ccd4bb75f9913d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77c8faa27a630e0cfbe0fa5507c1a538"><td class="memItemLeft" align="right" valign="top">global&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-edit__link-html_8php.html#a77c8faa27a630e0cfbe0fa5507c1a538">$post</a></td></tr>
 <tr class="separator:a77c8faa27a630e0cfbe0fa5507c1a538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e4e9fa8bbb212d0a72747e398501cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a>(! isset( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>)||empty( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;template)) <a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a>(! $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;form_id||!( $form=GFAPI::get_form( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;form_id))) <a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a>( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;entry-&gt;is_multi())&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-edit__link-html_8php.html#ab4e4e9fa8bbb212d0a72747e398501cf">else</a></td></tr>
+<tr class="memdesc:ab4e4e9fa8bbb212d0a72747e398501cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default edit link field output template.  <a href="#ab4e4e9fa8bbb212d0a72747e398501cf">More...</a><br /></td></tr>
+<tr class="separator:ab4e4e9fa8bbb212d0a72747e398501cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a5291dff564984cdb59d278ef6c471d80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5291dff564984cdb59d278ef6c471d80">&#9670;&nbsp;</a></span>$entry</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$entry = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;entry-&gt;as_entry()</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00009">9</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
-
-</div>
-</div>
 <a id="a93735dc685504b23c61718dce74c6fc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93735dc685504b23c61718dce74c6fc8">&#9670;&nbsp;</a></span>$field_settings</h2>
 
@@ -124,26 +106,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00010">10</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
-
-</div>
-</div>
-<a id="a1a4fda4c28a9ee5f91102c023b9501f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a4fda4c28a9ee5f91102c023b9501f4">&#9670;&nbsp;</a></span>$form</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$form = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;view-&gt;form-&gt;form</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The default edit link field output template. </p>
-<p>$gravityview </p><dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00008">8</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00025">25</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
 
 </div>
 </div>
@@ -159,7 +122,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00032">32</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00047">47</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
 
 </div>
 </div>
@@ -175,7 +138,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00025">25</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00040">40</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
 
 </div>
 </div>
@@ -191,7 +154,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00023">23</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00038">38</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
 
 </div>
 </div>
@@ -207,7 +170,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00030">30</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00045">45</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
 
 </div>
 </div>
@@ -223,7 +186,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00012">12</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00027">27</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
+
+</div>
+</div>
+<a id="ab4e4e9fa8bbb212d0a72747e398501cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e4e9fa8bbb212d0a72747e398501cf">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a> (! isset($<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>)||empty($<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;template)) <a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a> (! $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;form_id||!($form=GFAPI::get_form($<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;form_id))) <a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a> ($<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;entry-&gt;is_multi()) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">    <a class="code" href="notes_8php.html#aa5233ed44daaa56d417d58cc4d8f64c2">$entry</a> = $gravityview-&gt;entry-&gt;as_entry()</div><div class="ttc" id="notes_8php_html_aa5233ed44daaa56d417d58cc4d8f64c2"><div class="ttname"><a href="notes_8php.html#aa5233ed44daaa56d417d58cc4d8f64c2">$entry</a></div><div class="ttdeci">$entry</div><div class="ttdef"><b>Definition:</b> <a href="notes_8php_source.html#l00027">notes.php:27</a></div></div>
+</div><!-- fragment -->
+<p>The default edit link field output template. </p>
+<p>$gravityview </p><dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="field-edit__link-html_8php_source.html#l00021">21</a> of file <a class="el" href="field-edit__link-html_8php_source.html">field-edit_link-html.php</a>.</p>
 
 </div>
 </div>
