@@ -12,6 +12,7 @@ var searchData=
   ['parse_5fpost_5fcontent',['parse_post_content',['../class_gravity_view___view___data.html#a25679005cdc98cc994cb19a5631f4645',1,'GravityView_View_Data']]],
   ['parse_5fquery_5ffix_5ffrontpage',['parse_query_fix_frontpage',['../class_gravity_view__frontend.html#acf28e5d3bc9f8b1b77b51338b21dbe06',1,'GravityView_frontend']]],
   ['parse_5fum_5fprofile_5fpost_5fcontent',['parse_um_profile_post_content',['../class_gravity_view___theme___hooks___ultimate___member.html#a247e18f22fbed5b790786c1d442a8a34',1,'GravityView_Theme_Hooks_Ultimate_Member']]],
+  ['permissions_2ephp',['permissions.php',['../permissions_8php.html',1,'']]],
   ['phone_2ephp',['phone.php',['../phone_8php.html',1,'']]],
   ['pluck',['pluck',['../class_g_v_1_1_entry___collection.html#a395815ea92c645e2c9b3f4e4e60b65c1',1,'GV::Entry_Collection']]],
   ['plugin',['Plugin',['../class_g_v_1_1_plugin.html',1,'GV']]],

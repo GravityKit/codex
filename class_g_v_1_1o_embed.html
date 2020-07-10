@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -148,7 +148,7 @@ Static Private Member Functions</h2></td></tr>
 <p>Generate the Regular expression that matches embedded entries. </p>
 <p>Generates different regex if using permalinks and if not using permalinks</p>
 <dl class="section return"><dt>Returns</dt><dd>string Regex code </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000016">Runs Filter:</a></b></dt><dd><code>gravityview_slug</code> Modify the url part for a <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. <a href="https://docs.gravityview.co/article/62-changing-the-view-slug">Read the doc</a> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000017">Runs Filter:</a></b></dt><dd><code>gravityview_slug</code> Modify the url part for a <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. <a href="https://docs.gravityview.co/article/62-changing-the-view-slug">Read the doc</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$rewrite_slug</td><td>The slug shown in the URL</td></tr>
@@ -156,7 +156,7 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-oembed_8php_source.html#l00265">265</a> of file <a class="el" href="class-gv-oembed_8php_source.html">class-gv-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-oembed_8php_source.html#l00292">292</a> of file <a class="el" href="class-gv-oembed_8php_source.html">class-gv-oembed.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-entry_8php_source.html#l00063">Entry\get_endpoint_name()</a>.</p>
 
@@ -239,7 +239,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-oembed_8php_source.html#l00112">112</a> of file <a class="el" href="class-gv-oembed_8php_source.html">class-gv-oembed.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-gv-view_8php_source.html#l00789">View\by_id()</a>, <a class="el" href="class-gv-view_8php_source.html#l00661">View\from_post()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-gv-view_8php_source.html#l00790">View\by_id()</a>, <a class="el" href="class-gv-view_8php_source.html#l00662">View\from_post()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -285,7 +285,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p>Internal <a class="el" href="class_g_v_1_1o_embed.html" title="If this file is called directly, abort. ">oEmbed</a> output, shortcircuit without proxying to the provider. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-oembed_8php_source.html#l00292">292</a> of file <a class="el" href="class-gv-oembed_8php_source.html">class-gv-oembed.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-oembed_8php_source.html#l00319">319</a> of file <a class="el" href="class-gv-oembed_8php_source.html">class-gv-oembed.php</a>.</p>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="post__image_8php_source.html#l00025">$url</a>.</p>
 
@@ -453,11 +453,12 @@ Static Private Member Functions</h2></td></tr>
 <p>Private, pending, draft, etc.</p>
 <p>When this is embedded inside a view we should not display the widgets.</p>
 <p>Remove <a class="el" href="namespace_g_v_1_1_widgets.html">Widgets</a> on a nested embedded <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. Also, don't show widgets if we're embedding an entry</p>
+<p>Based on code in our unit-tests. <a class="el" href="namespace_g_v_1_1_mocks.html">Mocks</a> old context, etc.</p>
 <p>Remove the back link. </p>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-oembed_8php_source.html#l00207">207</a> of file <a class="el" href="class-gv-oembed_8php_source.html">class-gv-oembed.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00177">GravityView_Entry_Approval_Status\is_approved()</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-data_8php_source.html#l00010">GravityView_View_Data\$instance</a>, <a class="el" href="class-template_8php_source.html#l00149">GravityView_View\$instance</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="views_2list_2list-body_8php_source.html#l00013">$template</a>, <a class="el" href="class-common_8php_source.html#l01241">GVCommon\get_template_settings()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00057">GravityView_Edit_Entry\getInstance()</a>, <a class="el" href="class-data_8php_source.html#l00120">GravityView_View_Data\getInstance()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00177">GravityView_Entry_Approval_Status\is_approved()</a>, and <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>.</p>
 
 </div>
 </div>

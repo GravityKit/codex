@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -88,6 +88,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a561424521381fd64539c5fb5e573d143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___flow.html#a561424521381fd64539c5fb5e573d143">add_hooks</a> ()</td></tr>
 <tr class="memdesc:a561424521381fd64539c5fb5e573d143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter the values shown in <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> frontend.  <a href="#a561424521381fd64539c5fb5e573d143">More...</a><br /></td></tr>
 <tr class="separator:a561424521381fd64539c5fb5e573d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a96cb8e4cc5bca8ca427a04ac85135a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___flow.html#a7a96cb8e4cc5bca8ca427a04ac85135a">clear_cache_after_workflow</a> ( $form, $entry_id, $step_id, $starting_step_id)</td></tr>
+<tr class="memdesc:a7a96cb8e4cc5bca8ca427a04ac85135a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> entry cache after running a Gravity Flow Workflow.  <a href="#a7a96cb8e4cc5bca8ca427a04ac85135a">More...</a><br /></td></tr>
+<tr class="separator:a7a96cb8e4cc5bca8ca427a04ac85135a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d9f67ecf14fad52139de1f1f35c38bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___flow.html#a2d9f67ecf14fad52139de1f1f35c38bf">maybe_add_non_default_fields</a> ( $fields, $form, $zone)</td></tr>
 <tr class="memdesc:a2d9f67ecf14fad52139de1f1f35c38bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the current status timestamp field to available View configuration fields.  <a href="#a2d9f67ecf14fad52139de1f1f35c38bf">More...</a><br /></td></tr>
 <tr class="separator:a2d9f67ecf14fad52139de1f1f35c38bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +193,62 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a7a96cb8e4cc5bca8ca427a04ac85135a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a96cb8e4cc5bca8ca427a04ac85135a">&#9670;&nbsp;</a></span>clear_cache_after_workflow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">clear_cache_after_workflow </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$step_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$starting_step_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> entry cache after running a Gravity Flow Workflow. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$entry_id</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$step_id</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$starting_step_id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00055">55</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>.</p>
+
+</div>
+</div>
 <a id="a2f3f87029771a037e0337b39f2dc6933"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f3f87029771a037e0337b39f2dc6933">&#9670;&nbsp;</a></span>get_status_options()</h2>
 
@@ -236,7 +295,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00056">56</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00071">71</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
 
 <p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, and <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
 
@@ -278,7 +337,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add the current status timestamp field to available View configuration fields. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00136">136</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00151">151</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
 
 </div>
 </div>
@@ -310,7 +369,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add the current status timestamp field to available Advanced Filters. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00115">115</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00130">130</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
 
 </div>
 </div>
@@ -352,7 +411,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Updated Array of searchable fields </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00080">80</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html#l00095">95</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-flow_8php_source.html">class-gravityview-plugin-hooks-gravity-flow.php</a>.</p>
 
 <p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
 

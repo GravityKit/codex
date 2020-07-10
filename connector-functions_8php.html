@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -99,9 +99,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a78831386e2030f195cfe81325ba791f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#a78831386e2030f195cfe81325ba791f8">gravityview_get_entries</a> ( $form_ids=null, $passed_criteria=null, &amp;$total=null)</td></tr>
 <tr class="memdesc:a78831386e2030f195cfe81325ba791f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve entries given search, sort, paging criteria.  <a href="#a78831386e2030f195cfe81325ba791f8">More...</a><br /></td></tr>
 <tr class="separator:a78831386e2030f195cfe81325ba791f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b6941f53cbe3744b61822e2a112cc29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#a3b6941f53cbe3744b61822e2a112cc29">gravityview_get_entry</a> ( $entry_slug, $force_allow_ids=false, $check_entry_display=true)</td></tr>
-<tr class="memdesc:a3b6941f53cbe3744b61822e2a112cc29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a single entry object.  <a href="#a3b6941f53cbe3744b61822e2a112cc29">More...</a><br /></td></tr>
-<tr class="separator:a3b6941f53cbe3744b61822e2a112cc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2524e208a210d72af05bc100f61aaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#afd2524e208a210d72af05bc100f61aaf">gravityview_get_entry</a> ( $entry_slug, $force_allow_ids=false, $check_entry_display=true, $view=null)</td></tr>
+<tr class="memdesc:afd2524e208a210d72af05bc100f61aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a single entry object.  <a href="#afd2524e208a210d72af05bc100f61aaf">More...</a><br /></td></tr>
+<tr class="separator:afd2524e208a210d72af05bc100f61aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8b5e64936c0de953cac00a9f99319d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#ab8b5e64936c0de953cac00a9f99319d7">gravityview_get_entry_ids</a> ( $form_id, $search_criteria=array())</td></tr>
 <tr class="memdesc:ab8b5e64936c0de953cac00a9f99319d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for the Gravity Forms GFFormsModel::search_lead_ids() method.  <a href="#ab8b5e64936c0de953cac00a9f99319d7">More...</a><br /></td></tr>
 <tr class="separator:ab8b5e64936c0de953cac00a9f99319d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,15 +129,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a63301f532b19224af9b750d357891bcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#a63301f532b19224af9b750d357891bcd">gravityview_get_form_id</a> ( $view_id)</td></tr>
 <tr class="memdesc:a63301f532b19224af9b750d357891bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the connected form ID from a View ID.  <a href="#a63301f532b19224af9b750d357891bcd">More...</a><br /></td></tr>
 <tr class="separator:a63301f532b19224af9b750d357891bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade2d2ad48bde27c0ec79cf13024de013"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#ade2d2ad48bde27c0ec79cf13024de013">gravityview_get_forms</a> ( $active=true, $trash=false)</td></tr>
-<tr class="memdesc:ade2d2ad48bde27c0ec79cf13024de013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of GFAPI::get_forms()  <a href="#ade2d2ad48bde27c0ec79cf13024de013">More...</a><br /></td></tr>
-<tr class="separator:ade2d2ad48bde27c0ec79cf13024de013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17381fe5225f0397d0d27b4e9222508"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#ad17381fe5225f0397d0d27b4e9222508">gravityview_get_forms</a> ( $active=true, $trash=false, $order_by='date_created', $order='ASC')</td></tr>
+<tr class="memdesc:ad17381fe5225f0397d0d27b4e9222508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias of GFAPI::get_forms()  <a href="#ad17381fe5225f0397d0d27b4e9222508">More...</a><br /></td></tr>
+<tr class="separator:ad17381fe5225f0397d0d27b4e9222508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89456d84bf94a9c46d8ebd69ee604621"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#a89456d84bf94a9c46d8ebd69ee604621">gravityview_get_joined_forms</a> ( $view_id)</td></tr>
 <tr class="memdesc:a89456d84bf94a9c46d8ebd69ee604621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get joined forms associated with a view.  <a href="#a89456d84bf94a9c46d8ebd69ee604621">More...</a><br /></td></tr>
 <tr class="separator:a89456d84bf94a9c46d8ebd69ee604621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dda7cb3b4066530e9d2e02c6c25af1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#a4dda7cb3b4066530e9d2e02c6c25af1d">gravityview_get_registered_templates</a> ( $presets=false)</td></tr>
-<tr class="memdesc:a4dda7cb3b4066530e9d2e02c6c25af1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all available preset templates.  <a href="#a4dda7cb3b4066530e9d2e02c6c25af1d">More...</a><br /></td></tr>
-<tr class="separator:a4dda7cb3b4066530e9d2e02c6c25af1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1651e57decc9af0427d0bb57dd85677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#ab1651e57decc9af0427d0bb57dd85677">gravityview_get_registered_templates</a> ()</td></tr>
+<tr class="memdesc:ab1651e57decc9af0427d0bb57dd85677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all available preset templates.  <a href="#ab1651e57decc9af0427d0bb57dd85677">More...</a><br /></td></tr>
+<tr class="separator:ab1651e57decc9af0427d0bb57dd85677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad76ff6cf0377197099274d948e911f94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connector-functions_8php.html#ad76ff6cf0377197099274d948e911f94">gravityview_get_sortable_fields</a> ( $formid, $current='')</td></tr>
 <tr class="memdesc:ad76ff6cf0377197099274d948e911f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render dropdown (select) with the list of sortable fields from a form ID.  <a href="#ad76ff6cf0377197099274d948e911f94">More...</a><br /></td></tr>
 <tr class="separator:ad76ff6cf0377197099274d948e911f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,11 +203,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML of the output. Empty string if $view_id is empty. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00370">370</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00369">369</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00511">GV\defaults()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-data_8php_source.html#l00120">GravityView_View_Data\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00522">GV\defaults()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-data_8php_source.html#l00120">GravityView_View_Data\getInstance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="connector-functions_8php_source.html#l00391">the_gravityview()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="connector-functions_8php_source.html#l00390">the_gravityview()</a>.</p>
 
 </div>
 </div>
@@ -248,9 +248,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array with view details </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00182">182</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00190">190</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="class-common_8php_source.html#l01238">GVCommon\get_connected_views()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="class-common_8php_source.html#l01166">GVCommon\get_connected_views()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00165">GravityView_Admin_Views\gform_toolbar_menu()</a>, and <a class="el" href="class-admin-approve-entries_8php_source.html#l00602">GravityView_Admin_ApproveEntries\show_approve_entry_column()</a>.</p>
 
@@ -312,11 +312,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Multi-array of fields with first level being the field zones. See code comment. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00307">307</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00306">306</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l01380">GVCommon\get_directory_fields()</a>.</p>
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l01308">GVCommon\get_directory_fields()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-migrate_8php_source.html#l00274">GravityView_Migrate\get_search_fields()</a>, <a class="el" href="class-admin-views_8php_source.html#l01111">GravityView_Admin_Views\render_directory_active_areas()</a>, and <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00296">GravityView_Admin_Metaboxes\render_shortcode_hint()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-migrate_8php_source.html#l00274">GravityView_Migrate\get_search_fields()</a>, <a class="el" href="class-admin-views_8php_source.html#l01141">GravityView_Admin_Views\render_directory_active_areas()</a>, and <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00324">GravityView_Admin_Metaboxes\render_shortcode_hint()</a>.</p>
 
 </div>
 </div>
@@ -346,9 +346,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00320">320</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00319">319</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00296">GravityView_Admin_Metaboxes\render_shortcode_hint()</a>, <a class="el" href="class-admin-views_8php_source.html#l00998">GravityView_Admin_Views\render_widgets_active_areas()</a>, and <a class="el" href="class-gravityview-migrate_8php_source.html#l00203">GravityView_Migrate\update_search_on_views()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00324">GravityView_Admin_Metaboxes\render_shortcode_hint()</a>, <a class="el" href="class-admin-views_8php_source.html#l01017">GravityView_Admin_Views\render_widgets_active_areas()</a>, and <a class="el" href="class-gravityview-migrate_8php_source.html#l00203">GravityView_Migrate\update_search_on_views()</a>.</p>
 
 </div>
 </div>
@@ -398,14 +398,14 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed False: Error fetching entries. Array: Multi-dimensional array of Gravity Forms entry arrays </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00100">100</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00103">103</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l00529">GVCommon\get_entries()</a>.</p>
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l00537">GVCommon\get_entries()</a>.</p>
 
 </div>
 </div>
-<a id="a3b6941f53cbe3744b61822e2a112cc29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b6941f53cbe3744b61822e2a112cc29">&#9670;&nbsp;</a></span>gravityview_get_entry()</h2>
+<a id="afd2524e208a210d72af05bc100f61aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2524e208a210d72af05bc100f61aaf">&#9670;&nbsp;</a></span>gravityview_get_entry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,7 +426,13 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$check_entry_display</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>$check_entry_display</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$view</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -438,22 +444,33 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 
 <p>Return a single entry object. </p>
 <p>Since 1.4, supports custom entry slugs. The way that <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> fetches an entry based on the custom slug is by searching <code>gravityview_unique_id</code> meta. The <code>$entry_slug</code> is fetched by getting the current query var set by <code>is_single_entry()</code></p>
-<p>public </p><dl class="params"><dt>Parameters</dt><dd>
+<p>public</p>
+<dl class="section since"><dt>Since</dt><dd>1.4 Supports custom entry slugs </dd>
+<dd>
+2.6 Added $view parameter</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$entry_id</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;string</td><td class="paramname">$entry_slug</td><td>Entry ID or slug </td></tr>
     <tr><td class="paramtype">boolean</td><td class="paramname">$force_allow_ids</td><td>Force the get_entry() method to allow passed entry IDs, even if the <code>gravityview_custom_entry_slug_allow_id</code> filter returns false. </td></tr>
     <tr><td class="paramtype">boolean</td><td class="paramname">$check_entry_display</td><td>Check whether the entry is visible for the current View configuration. Default: true {</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>1.14} </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The View if $check_entry_display is set to true. {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>develop} </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array|boolean </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00115">115</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00123">123</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>, and <a class="el" href="class-common_8php_source.html#l00673">GVCommon\get_entry()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>, and <a class="el" href="class-common_8php_source.html#l00682">GVCommon\get_entry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01844">GravityView_Edit_Entry_Render\get_entry()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00213">GravityView_Field_Notes\process_add_note()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00319">GravityView_Delete_Entry\process_delete()</a>, and <a class="el" href="class-duplicate-entry_8php_source.html#l00295">GravityView_Duplicate_Entry\process_duplicate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01863">GravityView_Edit_Entry_Render\get_entry()</a>, <a class="el" href="class-admin-welcome_8php_source.html#l00163">GravityView_Welcome\getting_started_screen()</a>, <a class="el" href="class-gravityview-field-notes_8php_source.html#l00213">GravityView_Field_Notes\process_add_note()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00380">GravityView_Delete_Entry\process_delete()</a>, and <a class="el" href="class-duplicate-entry_8php_source.html#l00301">GravityView_Duplicate_Entry\process_duplicate()</a>.</p>
 
 </div>
 </div>
@@ -494,9 +511,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.1.6 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of entry IDs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00084">84</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00087">87</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="class-common_8php_source.html#l00412">GVCommon\get_entry_ids()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="class-common_8php_source.html#l00420">GVCommon\get_entry_ids()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-admin-approve-entries_8php_source.html#l00076">GravityView_Admin_ApproveEntries\filter_links_entry_list()</a>, and <a class="el" href="class-admin-approve-entries_8php_source.html#l00286">GravityView_Admin_ApproveEntries\process_bulk_action()</a>.</p>
 
@@ -537,11 +554,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00072">72</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00075">75</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="class-common_8php_source.html#l00388">GVCommon\get_entry_meta()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="class-common_8php_source.html#l00396">GVCommon\get_entry_meta()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00804">GravityView_Admin_Views\get_available_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00812">GravityView_Admin_Views\get_available_fields()</a>.</p>
 
 </div>
 </div>
@@ -584,11 +601,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>GF_Field|null Returns NULL if field with ID $field_id doesn't exist. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00146">146</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00154">154</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-common_8php_source.html#l01149">GVCommon\get_field()</a>.</p>
+<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-common_8php_source.html#l01077">GVCommon\get_field()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00545">GravityView_Entry_Approval\get_approved_column_input_label()</a>, <a class="el" href="class-gravityview-migrate_8php_source.html#l00274">GravityView_Migrate\get_search_fields()</a>, <a class="el" href="class-search-widget_8php_source.html#l01501">GravityView_Widget_Search\get_search_filter_details()</a>, <a class="el" href="class-gravityview-field_8php_source.html#l00482">GravityView_Field\is_choice_value_enabled()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01572">GravityView_Widget_Search\sieve_filter_choices()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00545">GravityView_Entry_Approval\get_approved_column_input_label()</a>, <a class="el" href="class-gravityview-migrate_8php_source.html#l00274">GravityView_Migrate\get_search_fields()</a>, <a class="el" href="class-search-widget_8php_source.html#l01511">GravityView_Widget_Search\get_search_filter_details()</a>, <a class="el" href="class-gravityview-field_8php_source.html#l00486">GravityView_Field\is_choice_value_enabled()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01584">GravityView_Widget_Search\sieve_filter_choices()</a>.</p>
 
 </div>
 </div>
@@ -634,9 +651,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00127">127</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00135">135</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-common_8php_source.html#l01117">GVCommon\get_field_label()</a>.</p>
+<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-common_8php_source.html#l01045">GVCommon\get_field_label()</a>.</p>
 
 </div>
 </div>
@@ -676,9 +693,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string field type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00357">357</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00356">356</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-common_8php_source.html#l01536">GVCommon\get_field_type()</a>.</p>
+<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-common_8php_source.html#l01468">GVCommon\get_field_type()</a>.</p>
 
 </div>
 </div>
@@ -712,7 +729,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 
 <p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="class-common_8php_source.html#l00028">GVCommon\get_form()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01136">GravityView_frontend\_override_sorting_id_by_field_type()</a>, <a class="el" href="class-admin-views_8php_source.html#l00341">GravityView_Admin_Views\add_custom_column_content()</a>, <a class="el" href="class-gv-view_8php_source.html#l00897">View\as_data()</a>, <a class="el" href="class-admin-views_8php_source.html#l00401">GravityView_Admin_Views\get_connected_form_links()</a>, <a class="el" href="class-admin_8php_source.html#l00181">GravityView_Admin\get_floaty()</a>, <a class="el" href="class-gravityview-migrate_8php_source.html#l00274">GravityView_Migrate\get_search_fields()</a>, <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00219">GravityView_Admin_Metaboxes\render_merge_tags_scripts()</a>, and <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00093">GravityView_Recent_Entries_Widget\widget()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l01191">GravityView_frontend\_override_sorting_id_by_field_type()</a>, <a class="el" href="class-admin-views_8php_source.html#l00341">GravityView_Admin_Views\add_custom_column_content()</a>, <a class="el" href="class-gv-view_8php_source.html#l00898">View\as_data()</a>, <a class="el" href="class-admin-views_8php_source.html#l00401">GravityView_Admin_Views\get_connected_form_links()</a>, <a class="el" href="class-admin_8php_source.html#l00181">GravityView_Admin\get_floaty()</a>, <a class="el" href="class-gravityview-migrate_8php_source.html#l00274">GravityView_Migrate\get_search_fields()</a>, <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00247">GravityView_Admin_Metaboxes\render_merge_tags_scripts()</a>, and <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00093">GravityView_Recent_Entries_Widget\widget()</a>.</p>
 
 </div>
 </div>
@@ -758,11 +775,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00063">63</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00066">66</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-common_8php_source.html#l00283">GVCommon\get_form_fields()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-common_8php_source.html#l00291">GVCommon\get_form_fields()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00804">GravityView_Admin_Views\get_available_fields()</a>, and <a class="el" href="class-search-widget_8php_source.html#l00298">GravityView_Widget_Search\render_searchable_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00812">GravityView_Admin_Views\get_available_fields()</a>, and <a class="el" href="class-search-widget_8php_source.html#l00298">GravityView_Widget_Search\render_searchable_fields()</a>.</p>
 
 </div>
 </div>
@@ -824,16 +841,16 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false|string ID of the connected Form, if exists. Empty string if not. False if not the View ID isn't valid. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00195">195</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00203">203</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="class-common_8php_source.html#l01288">GVCommon\get_meta_form_id()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="class-common_8php_source.html#l01216">GVCommon\get_meta_form_id()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-field-time_8php_source.html#l00224">GravityView_Field_Time\_get_time_format()</a>, <a class="el" href="class-admin-views_8php_source.html#l00341">GravityView_Admin_Views\add_custom_column_content()</a>, <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00039">GravityView_Recent_Entries_Widget\ajax_get_view_merge_tag_data()</a>, <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00176">GravityView_Admin_Metaboxes\get_data_source_header()</a>, <a class="el" href="class-admin_8php_source.html#l00181">GravityView_Admin\get_floaty()</a>, <a class="el" href="class-gravityview-migrate_8php_source.html#l00274">GravityView_Migrate\get_search_fields()</a>, <a class="el" href="class-search-widget_8php_source.html#l00263">GravityView_Widget_Search\get_searchable_fields()</a>, <a class="el" href="class-admin-add-shortcode_8php_source.html#l00198">GravityView_Admin_Add_Shortcode\get_sortable_fields()</a>, <a class="el" href="class-gravityview-field_8php_source.html#l00482">GravityView_Field\is_choice_value_enabled()</a>, <a class="el" href="class-common_8php_source.html#l00727">GVCommon\matches_operation()</a>, <a class="el" href="class-admin-views_8php_source.html#l00878">GravityView_Admin_Views\render_active_areas()</a>, <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00254">GravityView_Admin_Metaboxes\render_view_configuration_metabox()</a>, and <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00093">GravityView_Recent_Entries_Widget\widget()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-field-time_8php_source.html#l00224">GravityView_Field_Time\_get_time_format()</a>, <a class="el" href="class-admin-views_8php_source.html#l00341">GravityView_Admin_Views\add_custom_column_content()</a>, <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00039">GravityView_Recent_Entries_Widget\ajax_get_view_merge_tag_data()</a>, <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00204">GravityView_Admin_Metaboxes\get_data_source_header()</a>, <a class="el" href="class-admin_8php_source.html#l00181">GravityView_Admin\get_floaty()</a>, <a class="el" href="class-gravityview-migrate_8php_source.html#l00274">GravityView_Migrate\get_search_fields()</a>, <a class="el" href="class-search-widget_8php_source.html#l00263">GravityView_Widget_Search\get_searchable_fields()</a>, <a class="el" href="class-admin-add-shortcode_8php_source.html#l00198">GravityView_Admin_Add_Shortcode\get_sortable_fields()</a>, <a class="el" href="class-gravityview-field_8php_source.html#l00486">GravityView_Field\is_choice_value_enabled()</a>, <a class="el" href="class-admin-views_8php_source.html#l00886">GravityView_Admin_Views\render_active_areas()</a>, <a class="el" href="class-admin-views_8php_source.html#l01095">GravityView_Admin_Views\render_field_pickers()</a>, <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00282">GravityView_Admin_Metaboxes\render_view_configuration_metabox()</a>, and <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00093">GravityView_Recent_Entries_Widget\widget()</a>.</p>
 
 </div>
 </div>
-<a id="ade2d2ad48bde27c0ec79cf13024de013"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade2d2ad48bde27c0ec79cf13024de013">&#9670;&nbsp;</a></span>gravityview_get_forms()</h2>
+<a id="ad17381fe5225f0397d0d27b4e9222508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad17381fe5225f0397d0d27b4e9222508">&#9670;&nbsp;</a></span>gravityview_get_forms()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -848,7 +865,19 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$trash</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>$trash</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$order_by</em> = <code>'date_created'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$order</em> = <code>'ASC'</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -860,21 +889,25 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 
 <p>Alias of GFAPI::get_forms() </p>
 <dl class="section see"><dt>See also</dt><dd>GFAPI::get_forms()</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>1.19 Allow "any" $active status option</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.19 Allow "any" $active status option </dd>
+<dd>
+2.7.2 Allow sorting forms using wp_list_sort()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool&#160;|&#160;string</td><td class="paramname">$active</td><td>Status of forms. Use <code>any</code> to get array of forms with any status. Default: <code>true</code> </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$trash</td><td>Include forms in trash? Default: <code>false</code></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$trash</td><td>Include forms in trash? Default: <code>false</code> </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$order_by</td><td>Optional. Either the field name to order by or an array of multiple orderby fields as $orderby =&gt; $order. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$order</td><td>Optional. Either 'ASC' or 'DESC'. Only used if $orderby is a string.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Empty array if GFAPI class isn't available or no forms. Otherwise, the array of Forms </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00051">51</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00054">54</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l00260">GVCommon\get_forms()</a>.</p>
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l00263">GVCommon\get_forms()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00119">GravityView_Admin_Views\add_view_dropdown()</a>, <a class="el" href="class-gravityview-html-elements_8php_source.html#l00027">GravityView_HTML_Elements\form_dropdown()</a>, and <a class="el" href="class-admin-views_8php_source.html#l01075">GravityView_Admin_Views\render_field_pickers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-widget-gravityforms_8php_source.html#l00014">GravityView_Widget_Gravity_Forms\__construct()</a>, <a class="el" href="class-admin-views_8php_source.html#l00119">GravityView_Admin_Views\add_view_dropdown()</a>, and <a class="el" href="class-gravityview-html-elements_8php_source.html#l00027">GravityView_HTML_Elements\form_dropdown()</a>.</p>
 
 </div>
 </div>
@@ -904,16 +937,16 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>[] Array of  instances </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00208">208</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00216">216</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
 <p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00878">GravityView_Admin_Views\render_active_areas()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00886">GravityView_Admin_Views\render_active_areas()</a>.</p>
 
 </div>
 </div>
-<a id="a4dda7cb3b4066530e9d2e02c6c25af1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dda7cb3b4066530e9d2e02c6c25af1d">&#9670;&nbsp;</a></span>gravityview_get_registered_templates()</h2>
+<a id="ab1651e57decc9af0427d0bb57dd85677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1651e57decc9af0427d0bb57dd85677">&#9670;&nbsp;</a></span>gravityview_get_registered_templates()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -921,25 +954,16 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
         <tr>
           <td class="memname">gravityview_get_registered_templates </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$presets</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get all available preset templates. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$presets</td><td>Output the presets or not. Default: false; </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>develop</dd>
-<dd>
-1.13.2 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.13.2 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array Templates </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000217">Runs Filter:</a></b></dt><dd><code>gravityview_register_directory_template</code> Fetch available View templates </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000223">Runs Filter:</a></b></dt><dd><code>gravityview_register_directory_template</code> Fetch available View templates </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$templates</td><td>Templates to show</td></tr>
@@ -947,7 +971,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00258">258</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00262">262</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
 <p class="reference">References <a class="el" href="select-template_8php_source.html#l00017">$templates</a>.</p>
 
@@ -991,11 +1015,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string html </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00346">346</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00345">345</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l01443">GVCommon\get_sortable_fields()</a>.</p>
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l01371">GVCommon\get_sortable_fields()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00198">GravityView_Admin_Add_Shortcode\get_sortable_fields()</a>, and <a class="el" href="class-ajax_8php_source.html#l00274">GravityView_Ajax\get_sortable_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00198">GravityView_Admin_Add_Shortcode\get_sortable_fields()</a>, and <a class="el" href="class-ajax_8php_source.html#l00291">GravityView_Ajax\get_sortable_fields()</a>.</p>
 
 </div>
 </div>
@@ -1025,11 +1049,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string GravityView_Template::template_id value. Empty string if not. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00221">221</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00229">229</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l01301">GVCommon\get_meta_template_id()</a>.</p>
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l01229">GVCommon\get_meta_template_id()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00341">GravityView_Admin_Views\add_custom_column_content()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01275">GravityView_frontend\add_scripts_and_styles()</a>, <a class="el" href="class-gv-view_8php_source.html#l00661">View\from_post()</a>, and <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00254">GravityView_Admin_Metaboxes\render_view_configuration_metabox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00341">GravityView_Admin_Views\add_custom_column_content()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01330">GravityView_frontend\add_scripts_and_styles()</a>, <a class="el" href="class-gv-view_8php_source.html#l00662">View\from_post()</a>, and <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00282">GravityView_Admin_Metaboxes\render_view_configuration_metabox()</a>.</p>
 
 </div>
 </div>
@@ -1070,9 +1094,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed|null Setting value, or NULL if not set. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00245">245</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00253">253</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l01336">GVCommon\get_template_setting()</a>.</p>
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l01264">GVCommon\get_template_setting()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00198">GravityView_Admin_Add_Shortcode\get_sortable_fields()</a>.</p>
 
@@ -1103,11 +1127,11 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Associative array of settings with plugin defaults used if not set by the View </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00232">232</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00240">240</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l01313">GVCommon\get_template_settings()</a>.</p>
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l01241">GVCommon\get_template_settings()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gv-view_8php_source.html#l00661">View\from_post()</a>, <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00180">GravityView_Recent_Entries_Widget\get_entries()</a>, and <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00279">GravityView_Admin_Metaboxes\render_view_settings_metabox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gv-view_8php_source.html#l00662">View\from_post()</a>, and <a class="el" href="class-gravityview-admin-metaboxes_8php_source.html#l00307">GravityView_Admin_Metaboxes\render_view_settings_metabox()</a>.</p>
 
 </div>
 </div>
@@ -1140,9 +1164,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 <p>Placeholder until the recursive has_shortcode() patch is merged. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://core.trac.wordpress.org/ticket/26343#comment:10">https://core.trac.wordpress.org/ticket/26343#comment:10</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00168">168</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00176">176</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="custom_8php_source.html#l00037">$content</a>, and <a class="el" href="class-common_8php_source.html#l01192">GVCommon\has_shortcode_r()</a>.</p>
+<p class="reference">References <a class="el" href="custom_8php_source.html#l00037">$content</a>, and <a class="el" href="class-common_8php_source.html#l01120">GVCommon\has_shortcode_r()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-frontend-views_8php_source.html#l00337">GravityView_frontend\parse_content()</a>.</p>
 
@@ -1167,9 +1191,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.4 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>bool|string False if not, single entry slug if true </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00402">402</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00401">401</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01238">GravityView_frontend\is_single_entry()</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="time_8php_source.html#l00017">$field_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01293">GravityView_frontend\is_single_entry()</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1234,7 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int|bool </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00334">334</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00333">333</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00498">GravityView_Admin_Views\save_postdata()</a>, and <a class="el" href="class-gravityview-migrate_8php_source.html#l00203">GravityView_Migrate\update_search_on_views()</a>.</p>
 
@@ -1245,9 +1269,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean True: yep, <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a>; No: not! </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00160">160</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00168">168</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="select-template_8php_source.html#l00009">$post</a>, and <a class="el" href="class-common_8php_source.html#l01172">GVCommon\has_gravityview_shortcode()</a>.</p>
+<p class="reference">References <a class="el" href="edit-entry_8php_source.html#l00007">$post</a>, and <a class="el" href="class-common_8php_source.html#l01100">GVCommon\has_gravityview_shortcode()</a>.</p>
 
 </div>
 </div>
@@ -1287,9 +1311,9 @@ GFFormsModel::get_field_filters_where()  public </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00391">391</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="connector-functions_8php_source.html#l00390">390</a> of file <a class="el" href="connector-functions_8php_source.html">connector-functions.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="connector-functions_8php_source.html#l00370">get_gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00005">$view_id</a>, and <a class="el" href="connector-functions_8php_source.html#l00369">get_gravityview()</a>.</p>
 
 </div>
 </div>

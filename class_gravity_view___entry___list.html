@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -77,8 +77,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2f1da5d67362970f3a3b0303bb52a08f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___list.html#a2f1da5d67362970f3a3b0303bb52a08f">__construct</a> ( $entries=array(), $post_id=0, $form=array(), $link_format='', $after_link='', $context='', $template_context=null)</td></tr>
-<tr class="separator:a2f1da5d67362970f3a3b0303bb52a08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9750ca1df1b0e945ae97f7812a4e57ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___list.html#a9750ca1df1b0e945ae97f7812a4e57ce">__construct</a> ( $entries=array(), $post_id=0, $form=array(), $link_format='', $after_link='', $context='', $template_context=null, $view_id=0)</td></tr>
+<tr class="separator:a9750ca1df1b0e945ae97f7812a4e57ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6c3f8688f804de4f1af8a462fffb922"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___list.html#aa6c3f8688f804de4f1af8a462fffb922">get_output</a> ()</td></tr>
 <tr class="memdesc:aa6c3f8688f804de4f1af8a462fffb922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the HTML output.  <a href="#aa6c3f8688f804de4f1af8a462fffb922">More...</a><br /></td></tr>
 <tr class="separator:aa6c3f8688f804de4f1af8a462fffb922"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,6 +108,8 @@ Public Member Functions</h2></td></tr>
 Data Fields</h2></td></tr>
 <tr class="memitem:a778f4a8ae625b777b900bd842c20149f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___list.html#a778f4a8ae625b777b900bd842c20149f">$template_context</a></td></tr>
 <tr class="separator:a778f4a8ae625b777b900bd842c20149f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521fd441a5ad4952b00a1591a4d4590d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___list.html#a521fd441a5ad4952b00a1591a4d4590d">$view_id</a> = 0</td></tr>
+<tr class="separator:a521fd441a5ad4952b00a1591a4d4590d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -148,8 +150,8 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00013">13</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2f1da5d67362970f3a3b0303bb52a08f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f1da5d67362970f3a3b0303bb52a08f">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="a9750ca1df1b0e945ae97f7812a4e57ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9750ca1df1b0e945ae97f7812a4e57ce">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +196,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$template_context</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$template_context</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$view_id</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -203,27 +211,19 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section since"><dt>Since</dt><dd>2.0 Added $template_context parameter </dd>
+<dd>
+2.7.2 Added $view_id parameter</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$entries</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$post_id</td><td></td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$link_format</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$after_link</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$template_context</td><td>The context </td></tr>
+    <tr><td class="paramname">array|GV</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00088">88</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00098">98</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00039">$after_link</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00057">$context</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00018">$entries</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00028">$form</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00033">$link_format</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00023">$post_id</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00077">$template_context</a>, and <a class="el" href="class-api_8php_source.html#l00796">gv_no_results()</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00039">$after_link</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00057">$context</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00018">$entries</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00028">$form</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00033">$link_format</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00023">$post_id</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00077">$template_context</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00084">$view_id</a>, and <a class="el" href="class-api_8php_source.html#l00866">gv_no_results()</a>.</p>
 
 </div>
 </div>
@@ -260,9 +260,18 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.2</dd></dl>
-<p>gravityview_get_link  <a class="el" href="class_gravity_view___a_p_i.html#ac15a86c0b00307c59ce349e7aa8fa61d" title="return href for single entry ">GravityView_API::entry_link</a>  <a class="el" href="class_gravity_view___a_p_i.html#a3b71ab6eb3434b794090baf825b3338a" title="Alias for GravityView_Merge_Tags::replace_variables() ">GravityView_API::replace_variables</a></p>
+<p>gravityview_get_link  <a class="el" href="class_gravity_view___a_p_i.html#acc0ad714ac1ee52907ce11c43e038bbd" title="return href for single entry ">GravityView_API::entry_link</a>  <a class="el" href="class_gravity_view___a_p_i.html#a3b71ab6eb3434b794090baf825b3338a" title="Alias for GravityView_Merge_Tags::replace_variables() ">GravityView_API::replace_variables</a></p>
 <dl class="section return"><dt>Returns</dt><dd>string HTML output for the entry </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000200">Runs Filter:</a></b></dt><dd><code>gravityview/entry-list/after-link</code> Modify the content displayed after the entry link in an entry list </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000205">Runs Filter:</a></b></dt><dd><code>gravityview/entry-list/link</code> The link to this other entry now. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$link</td><td>The link. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">array</td><td class="paramname">$entry</td><td>The entry. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">\GravityView_Entry_List</td><td class="paramname">$this</td><td>The current entry list object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000206">Runs Filter:</a></b></dt><dd><code>gravityview/entry-list/after-link</code> Modify the content displayed after the entry link in an entry list </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -272,7 +281,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000201">Runs Filter:</a></b></dt><dd><code>gravityview/entry-list/item</code> Modify each item's output in an entry list </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000207">Runs Filter:</a></b></dt><dd><code>gravityview/entry-list/item</code> Modify each item's output in an entry list </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.7.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -283,11 +292,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00257">257</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00272">272</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00039">$after_link</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="field-entry__link-html_8php_source.html#l00041">$link</a>, <a class="el" href="class-api_8php_source.html#l00596">GravityView_API\entry_link()</a>, <a class="el" href="class-common_8php_source.html#l01901">gravityview_get_link()</a>, and <a class="el" href="class-api_8php_source.html#l00119">GravityView_API\replace_variables()</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00039">$after_link</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="field-entry__link-html_8php_source.html#l00041">$link</a>, <a class="el" href="class-api_8php_source.html#l00642">GravityView_API\entry_link()</a>, <a class="el" href="class-common_8php_source.html#l01833">gravityview_get_link()</a>, and <a class="el" href="class-api_8php_source.html#l00119">GravityView_API\replace_variables()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00179">get_output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00190">get_output()</a>.</p>
 
 </div>
 </div>
@@ -308,7 +317,7 @@ Private Attributes</h2></td></tr>
 
 <p>Get the HTML output. </p>
 <dl class="section return"><dt>Returns</dt><dd>string HTML output for entry list </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000199">Runs Filter:</a></b></dt><dd><code>gravityview/widget/recent-entries/output</code> Modify the HTML of the Recent Entries widget output </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000204">Runs Filter:</a></b></dt><dd><code>gravityview/widget/recent-entries/output</code> Modify the HTML of the Recent Entries widget output </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$output</td><td>HTML to be displayed </td></tr>
@@ -317,11 +326,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00179">179</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00190">190</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00257">get_item_output()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00225">skip_entry()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00272">get_item_output()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00240">skip_entry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00165">output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00176">output()</a>.</p>
 
 </div>
 </div>
@@ -344,9 +353,9 @@ Private Attributes</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___entry___list.html#aa6c3f8688f804de4f1af8a462fffb922" title="Get the HTML output. ">get_output()</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML output for entry list </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00165">165</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00176">176</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00179">get_output()</a>.</p>
+<p class="reference">References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00190">get_output()</a>.</p>
 
 </div>
 </div>
@@ -372,7 +381,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00123">123</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00134">134</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00039">$after_link</a>.</p>
 
@@ -402,7 +411,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00139">139</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00150">150</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00057">$context</a>.</p>
 
@@ -432,7 +441,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00131">131</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00142">142</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00045">$empty_message</a>.</p>
 
@@ -460,7 +469,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00154">154</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00165">165</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00069">$item_tag</a>.</p>
 
@@ -488,7 +497,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00109">109</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00120">120</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00033">$link_format</a>.</p>
 
@@ -516,7 +525,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00102">102</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00113">113</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00023">$post_id</a>.</p>
 
@@ -544,7 +553,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00116">116</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00127">127</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00051">$skip_current_entry</a>.</p>
 
@@ -572,7 +581,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00146">146</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00157">157</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-entry-list_8php_source.html#l00063">$wrapper_tag</a>.</p>
 
@@ -622,11 +631,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True: Skip entry; False: don't skip entry </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00225">225</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00240">240</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00179">get_output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00190">get_output()</a>.</p>
 
 </div>
 </div>
@@ -653,7 +662,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00039">39</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00088">__construct()</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00257">get_item_output()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00123">set_after_link()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00098">__construct()</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00272">get_item_output()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00134">set_after_link()</a>.</p>
 
 </div>
 </div>
@@ -679,7 +688,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00057">57</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00088">__construct()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00139">set_context()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00098">__construct()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00150">set_context()</a>.</p>
 
 </div>
 </div>
@@ -705,7 +714,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00045">45</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00131">set_empty_message()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00142">set_empty_message()</a>.</p>
 
 </div>
 </div>
@@ -731,7 +740,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00018">18</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00088">__construct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00098">__construct()</a>.</p>
 
 </div>
 </div>
@@ -757,7 +766,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00028">28</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00088">__construct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00098">__construct()</a>.</p>
 
 </div>
 </div>
@@ -783,7 +792,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00069">69</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00154">set_item_tag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00165">set_item_tag()</a>.</p>
 
 </div>
 </div>
@@ -809,7 +818,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00033">33</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00088">__construct()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00109">set_link_format()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00098">__construct()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00120">set_link_format()</a>.</p>
 
 </div>
 </div>
@@ -835,7 +844,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00023">23</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00088">__construct()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00102">set_post_id()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00098">__construct()</a>, and <a class="el" href="class-gravityview-entry-list_8php_source.html#l00113">set_post_id()</a>.</p>
 
 </div>
 </div>
@@ -861,7 +870,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00051">51</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00116">set_skip_current_entry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00127">set_skip_current_entry()</a>.</p>
 
 </div>
 </div>
@@ -879,7 +888,25 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00077">77</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00088">__construct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00098">__construct()</a>.</p>
+
+</div>
+</div>
+<a id="a521fd441a5ad4952b00a1591a4d4590d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a521fd441a5ad4952b00a1591a4d4590d">&#9670;&nbsp;</a></span>$view_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$view_id = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00084">84</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00098">__construct()</a>.</p>
 
 </div>
 </div>
@@ -905,7 +932,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-list_8php_source.html#l00063">63</a> of file <a class="el" href="class-gravityview-entry-list_8php_source.html">class-gravityview-entry-list.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00146">set_wrapper_tag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-entry-list_8php_source.html#l00157">set_wrapper_tag()</a>.</p>
 
 </div>
 </div>

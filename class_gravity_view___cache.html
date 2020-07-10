@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -622,7 +622,7 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 <p>Schedule expired transient cleanup twice a day. </p>
 <p>Can be overruled by the <code>gravityview_cleanup_transients</code> filter (returns boolean)</p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000150">Runs Filter:</a></b></dt><dd><code>gravityview_cleanup_transients</code> Override <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> cleanup of transients by setting this to false </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000152">Runs Filter:</a></b></dt><dd><code>gravityview_cleanup_transients</code> Override <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> cleanup of transients by setting this to false </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$cleanup</td><td>Whether to run the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> auto-cleanup of transients. Default: <code>true</code></td></tr>
@@ -669,7 +669,7 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000149">Runs Filter:</a></b></dt><dd><code>gravityview_cache_time_{$filter_name}</code> Modify the cache time for a type of cache </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000151">Runs Filter:</a></b></dt><dd><code>gravityview_cache_time_{$filter_name}</code> Modify the cache time for a type of cache </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$time_in_seconds</td><td>Default: <code>DAY_IN_SECONDS</code></td></tr>
@@ -734,7 +734,7 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 <p>Check whether to use cached results, if available. </p>
 <p>If the user can edit posts, they are able to override whether to cache results by adding <code>cache</code> or <code>nocache</code> to the URL requested.</p>
 <dl class="section return"><dt>Returns</dt><dd>boolean True: use cache; False: don't use cache </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000151">Runs Filter:</a></b></dt><dd><code>gravityview_use_cache</code> Modify whether to use the cache or not </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000153">Runs Filter:</a></b></dt><dd><code>gravityview_use_cache</code> Modify whether to use the cache or not </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramtype">boolean</td><td class="paramname">$use_cache</td><td>Previous setting </td></tr>

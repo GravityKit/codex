@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -77,6 +77,9 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="separator:a095c5d389db211932136b53f25f39685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88d4c1c895662a6e6c9eb2528112289"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#ae88d4c1c895662a6e6c9eb2528112289">_filter_sortable_fields</a> ( $fields)</td></tr>
+<tr class="memdesc:ae88d4c1c895662a6e6c9eb2528112289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent users from being able to sort by the Duplicate field.  <a href="#ae88d4c1c895662a6e6c9eb2528112289">More...</a><br /></td></tr>
+<tr class="separator:ae88d4c1c895662a6e6c9eb2528112289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee23c72b02270babf5db887b034d816d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#aee23c72b02270babf5db887b034d816d">add_available_field</a> ( $available_fields=array())</td></tr>
 <tr class="memdesc:aee23c72b02270babf5db887b034d816d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add Duplicate Entry Link to the Add Field dialog.  <a href="#aee23c72b02270babf5db887b034d816d">More...</a><br /></td></tr>
 <tr class="separator:aee23c72b02270babf5db887b034d816d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,30 +89,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4083528090d15df3b68159cf0f469c9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a4083528090d15df3b68159cf0f469c9d">add_template_path</a> ( $file_paths)</td></tr>
 <tr class="memdesc:a4083528090d15df3b68159cf0f469c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include this extension templates path.  <a href="#a4083528090d15df3b68159cf0f469c9d">More...</a><br /></td></tr>
 <tr class="separator:a4083528090d15df3b68159cf0f469c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab259b1f253ec799db201229d1bcf5dda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#ab259b1f253ec799db201229d1bcf5dda">display_message</a> ( $current_view_id=0)</td></tr>
-<tr class="memdesc:ab259b1f253ec799db201229d1bcf5dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">After processing duplicate entry, the user will be redirected to the referring View or embedded post/page.  <a href="#ab259b1f253ec799db201229d1bcf5dda">More...</a><br /></td></tr>
-<tr class="separator:ab259b1f253ec799db201229d1bcf5dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25843751c36c34d70783b9765f1293c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a25843751c36c34d70783b9765f1293c8">display_message</a> ()</td></tr>
+<tr class="separator:a25843751c36c34d70783b9765f1293c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79804d98370d5ed934ef76bc73ea00e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a79804d98370d5ed934ef76bc73ea00e9">duplicate_link_field_options</a> ( $field_options, $template_id, $field_id, $context, $input_type)</td></tr>
 <tr class="memdesc:a79804d98370d5ed934ef76bc73ea00e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add "Duplicate Link Text" setting to the edit_link field settings.  <a href="#a79804d98370d5ed934ef76bc73ea00e9">More...</a><br /></td></tr>
 <tr class="separator:a79804d98370d5ed934ef76bc73ea00e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6191423b0494b44b7bd9086411183e70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a6191423b0494b44b7bd9086411183e70">make_duplicate_link_row</a> ( $form_id, $field_id, $value, $entry, $query_string)</td></tr>
+<tr class="memdesc:a6191423b0494b44b7bd9086411183e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Duplicate link to the row of actions on the entry list in the backend.  <a href="#a6191423b0494b44b7bd9086411183e70">More...</a><br /></td></tr>
+<tr class="separator:a6191423b0494b44b7bd9086411183e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a19d55caa0d9f646e29960e88f6811"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#ac2a19d55caa0d9f646e29960e88f6811">maybe_display_message</a> ( $current_view_id=0)</td></tr>
+<tr class="memdesc:ac2a19d55caa0d9f646e29960e88f6811"><td class="mdescLeft">&#160;</td><td class="mdescRight">After processing duplicate entry, the user will be redirected to the referring View or embedded post/page.  <a href="#ac2a19d55caa0d9f646e29960e88f6811">More...</a><br /></td></tr>
+<tr class="separator:ac2a19d55caa0d9f646e29960e88f6811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaff586380bef3966153fef27b98b6bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#aeaff586380bef3966153fef27b98b6bd">maybe_duplicate_list</a> ( $form_id)</td></tr>
+<tr class="memdesc:aeaff586380bef3966153fef27b98b6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perhaps duplicate this entry if the action has been corrected.  <a href="#aeaff586380bef3966153fef27b98b6bd">More...</a><br /></td></tr>
+<tr class="separator:aeaff586380bef3966153fef27b98b6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15910934001eaefd5bf78d4f99e57b58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a15910934001eaefd5bf78d4f99e57b58">modify_visibility_caps</a> ( $visibility_caps=array(), $template_id='', $field_id='', $context='', $input_type='')</td></tr>
 <tr class="memdesc:a15910934001eaefd5bf78d4f99e57b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change wording for the Edit context to read Entry Creator.  <a href="#a15910934001eaefd5bf78d4f99e57b58">More...</a><br /></td></tr>
 <tr class="separator:a15910934001eaefd5bf78d4f99e57b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a389e6c95ff30253a5c228059a01b0046"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a389e6c95ff30253a5c228059a01b0046">process_duplicate</a> ()</td></tr>
 <tr class="memdesc:a389e6c95ff30253a5c228059a01b0046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the duplication request, if $_GET['action'] is set to "duplicate".  <a href="#a389e6c95ff30253a5c228059a01b0046">More...</a><br /></td></tr>
 <tr class="separator:a389e6c95ff30253a5c228059a01b0046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb99368e56bbdf8eb32be998cd1363aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#adb99368e56bbdf8eb32be998cd1363aa">set_entry</a> ( $entry)</td></tr>
-<tr class="memdesc:adb99368e56bbdf8eb32be998cd1363aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure there's an entry.  <a href="#adb99368e56bbdf8eb32be998cd1363aa">More...</a><br /></td></tr>
-<tr class="separator:adb99368e56bbdf8eb32be998cd1363aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a68f92b23e330db68e0287c3583e699"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a4a68f92b23e330db68e0287c3583e699">verify_nonce</a> ()</td></tr>
 <tr class="memdesc:a4a68f92b23e330db68e0287c3583e699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the current nonce valid for editing the entry?  <a href="#a4a68f92b23e330db68e0287c3583e699">More...</a><br /></td></tr>
 <tr class="separator:a4a68f92b23e330db68e0287c3583e699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aea8e464124516daa05b2127612824e44"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#aea8e464124516daa05b2127612824e44">check_user_cap_duplicate_entry</a> ( $entry, $field, $view_id)</td></tr>
-<tr class="memdesc:aea8e464124516daa05b2127612824e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if user has permissions to view the link or duplicate a specific entry  <a href="#aea8e464124516daa05b2127612824e44">More...</a><br /></td></tr>
-<tr class="separator:aea8e464124516daa05b2127612824e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10824dc5837d21e3cdf5f13ac27ea4c3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a10824dc5837d21e3cdf5f13ac27ea4c3">check_user_cap_duplicate_entry</a> ( $entry, $field=array(), $view_id=0)</td></tr>
+<tr class="memdesc:a10824dc5837d21e3cdf5f13ac27ea4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if user has permissions to view the link or duplicate a specific entry  <a href="#a10824dc5837d21e3cdf5f13ac27ea4c3">More...</a><br /></td></tr>
+<tr class="separator:a10824dc5837d21e3cdf5f13ac27ea4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0218fb914aa7ded90da32ebebcfbef"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a2b0218fb914aa7ded90da32ebebcfbef">get_confirm_dialog</a> ()</td></tr>
 <tr class="memdesc:a2b0218fb914aa7ded90da32ebebcfbef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the onclick attribute for the confirm dialogs that warns users before they duplicate an entry.  <a href="#a2b0218fb914aa7ded90da32ebebcfbef">More...</a><br /></td></tr>
 <tr class="separator:a2b0218fb914aa7ded90da32ebebcfbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,8 +133,6 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a5291dff564984cdb59d278ef6c471d80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a5291dff564984cdb59d278ef6c471d80">$entry</a></td></tr>
-<tr class="separator:a5291dff564984cdb59d278ef6c471d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521fd441a5ad4952b00a1591a4d4590d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___duplicate___entry.html#a521fd441a5ad4952b00a1591a4d4590d">$view_id</a></td></tr>
 <tr class="separator:a521fd441a5ad4952b00a1591a4d4590d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -168,13 +174,43 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00041">41</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00036">36</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-duplicate-entry_8php_source.html#l00050">add_hooks()</a>.</p>
+<p class="reference">References <a class="el" href="class-duplicate-entry_8php_source.html#l00045">add_hooks()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae88d4c1c895662a6e6c9eb2528112289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae88d4c1c895662a6e6c9eb2528112289">&#9670;&nbsp;</a></span>_filter_sortable_fields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_filter_sortable_fields </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$fields</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prevent users from being able to sort by the Duplicate field. </p>
+<dl class="section since"><dt>Since</dt><dd>2.8.3</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$fields</td><td>Array of field types not editable by users</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00095">95</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+
+</div>
+</div>
 <a id="aee23c72b02270babf5db887b034d816d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee23c72b02270babf5db887b034d816d">&#9670;&nbsp;</a></span>add_available_field()</h2>
 
@@ -201,7 +237,7 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Fields with <code>duplicate_link</code> added </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00177">177</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00197">197</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
 </div>
 </div>
@@ -249,7 +285,7 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array $entry_default_fields, with <code>duplicate_link</code> added. Won't be added if in Edit Entry context. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00155">155</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00175">175</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
 </div>
 </div>
@@ -277,9 +313,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00050">50</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00045">45</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00041">__construct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00036">__construct()</a>.</p>
 
 </div>
 </div>
@@ -309,12 +345,12 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array File paths, with duplicate field path added at index 117 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00092">92</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00113">113</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
 </div>
 </div>
-<a id="aea8e464124516daa05b2127612824e44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea8e464124516daa05b2127612824e44">&#9670;&nbsp;</a></span>check_user_cap_duplicate_entry()</h2>
+<a id="a10824dc5837d21e3cdf5f13ac27ea4c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10824dc5837d21e3cdf5f13ac27ea4c3">&#9670;&nbsp;</a></span>check_user_cap_duplicate_entry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,13 +368,13 @@ Private Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$field</em>, </td>
+          <td class="paramname"><em>$field</em> = <code>array()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$view_id</em>&#160;</td>
+          <td class="paramname"><em>$view_id</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -359,20 +395,20 @@ Private Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Gravity Forms entry array </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$field</td><td>Field settings (optional) </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$view_id</td><td>Pass a View ID to check caps against. If not set, check against current View (</td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$view_id</td><td>Pass a View ID to check caps against. If not set, check against current View</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00583">583</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00596">596</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
-<a id="ab259b1f253ec799db201229d1bcf5dda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab259b1f253ec799db201229d1bcf5dda">&#9670;&nbsp;</a></span>display_message()</h2>
+<a id="a25843751c36c34d70783b9765f1293c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25843751c36c34d70783b9765f1293c8">&#9670;&nbsp;</a></span>display_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,25 +416,12 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">display_message </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$current_view_id</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>After processing duplicate entry, the user will be redirected to the referring View or embedded post/page. </p>
-<p>Display a message on redirection.</p>
-<p>If success, there will be <code>status</code> URL parameters <code>status=&gt;success</code> If an error, there will be <code>status</code> and <code>message</code> URL parameters <code>status=&gt;error&amp;message=example</code></p>
-<dl class="section since"><dt>Since</dt><dd>2.5</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$current_view_id</td><td>The ID of the View being rendered</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000228">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/message</code> Modify the Duplicate Entry messages. Allows HTML; will not be further sanitized. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000234">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/message</code> Modify the Duplicate Entry messages. Allows HTML; will not be further sanitized. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -409,9 +432,11 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00672">672</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00698">698</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>, and <a class="el" href="class-duplicate-entry_8php_source.html#l00074">getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, and <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00685">maybe_display_message()</a>.</p>
 
 </div>
 </div>
@@ -449,7 +474,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>WP_Error|boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000224">Runs Filter:</a></b></dt><dd><code>gravityview/entry/duplicate/details</code> Modify the new entry details before it's created. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000230">Runs Filter:</a></b></dt><dd><code>gravityview/entry/duplicate/details</code> Modify the new entry details before it's created. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -458,16 +483,16 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000225">Runs Filter:</a></b></dt><dd><code>gravityview/entry/duplicate/meta</code> Modify the new entry meta details. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000231">Runs Filter:</a></b></dt><dd><code>gravityview/entry/duplicate/meta</code> Modify the new entry meta details. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$dulicate_meta</td><td>The duplicate meta. Use/add meta_key, meta_value, item_index. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">array</td><td class="paramname">$duplicate_entry</td><td>The duplicated entry </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$save_this_meta</td><td>The duplicate meta. Use/add meta_key, meta_value, item_index. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">array</td><td class="paramname">$row</td><td>The duplicated entry </td></tr>
     <tr><td class="paramdir"></td><td class="paramtype">array</td><td class="paramname">$entry</td><td>The original entry</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000044">Runs Actions:</a></b></dt><dd><code>gravityview/entry/duplicated</code> Triggered when an entry is duplicated </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000046">Runs Actions:</a></b></dt><dd><code>gravityview/duplicate-entry/duplicated</code> Triggered when an entry is duplicated </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -477,11 +502,11 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00388">388</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00394">394</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-utils_8php_source.html#l00057">Utils\_SERVER()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-gv-utils_8php_source.html#l00057">Utils\_SERVER()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00295">process_duplicate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00773">maybe_duplicate_list()</a>, and <a class="el" href="class-duplicate-entry_8php_source.html#l00301">process_duplicate()</a>.</p>
 
 </div>
 </div>
@@ -543,9 +568,9 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array [description] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00114">114</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00135">135</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00119">GravityView_Render_Settings\get_cap_choices()</a>.</p>
+<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00121">GravityView_Render_Settings\get_cap_choices()</a>.</p>
 
 </div>
 </div>
@@ -575,15 +600,15 @@ Private Member Functions</h2></td></tr>
 <p>Get the onclick attribute for the confirm dialogs that warns users before they duplicate an entry. </p>
 <dl class="section since"><dt>Since</dt><dd>2.5</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML <code>onclick</code> attribute </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000227">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/confirm-text</code> Modify the Duplicate Entry Javascript confirmation text </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000233">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/confirm-text</code> Modify the Duplicate Entry Javascript confirmation text (will be sanitized when output)</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$confirm</td><td>Default: "Are you sure you want to duplicate this entry?"</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$confirm</td><td>Default: "Are you sure you want to duplicate this entry?". If empty, disable confirmation dialog.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00522">522</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00530">530</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
 </div>
 </div>
@@ -640,9 +665,9 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string|null If directory link is valid, the URL to process the duplicate request. Otherwise, <code>NULL</code>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00260">260</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00267">267</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-api_8php_source.html#l00356">GravityView_API\directory_link()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-api_8php_source.html#l00396">GravityView_API\directory_link()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -680,7 +705,7 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Key used to validate request </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00242">242</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00249">249</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
 </div>
 </div>
@@ -711,9 +736,147 @@ Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_gravity_view___duplicate___entry.html">GravityView_Duplicate_Entry</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00074">74</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00077">77</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00672">display_message()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00773">maybe_duplicate_list()</a>.</p>
+
+</div>
+</div>
+<a id="a6191423b0494b44b7bd9086411183e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6191423b0494b44b7bd9086411183e70">&#9670;&nbsp;</a></span>make_duplicate_link_row()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">make_duplicate_link_row </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$field_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$query_string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a Duplicate link to the row of actions on the entry list in the backend. </p>
+<dl class="section since"><dt>Since</dt><dd>2.5.1</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The form ID. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$field_id</td><td>The field ID. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>The value. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>The entry. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$query_string</td><td>The query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000235">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate/backend/enable</code> Disables the duplicate link on the backend. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>True by default. Enabled. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The form ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00745">745</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
+
+</div>
+</div>
+<a id="ac2a19d55caa0d9f646e29960e88f6811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a19d55caa0d9f646e29960e88f6811">&#9670;&nbsp;</a></span>maybe_display_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">maybe_display_message </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$current_view_id</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>After processing duplicate entry, the user will be redirected to the referring View or embedded post/page. </p>
+<p>Display a message on redirection.</p>
+<p>If success, there will be <code>status</code> URL parameters <code>status=&gt;success</code> If an error, there will be <code>status</code> and <code>message</code> URL parameters <code>status=&gt;error&amp;message=example</code></p>
+<dl class="section since"><dt>Since</dt><dd>2.5</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$current_view_id</td><td>The ID of the View being rendered</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00685">685</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-duplicate-entry_8php_source.html#l00698">display_message()</a>.</p>
+
+</div>
+</div>
+<a id="aeaff586380bef3966153fef27b98b6bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaff586380bef3966153fef27b98b6bd">&#9670;&nbsp;</a></span>maybe_duplicate_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">maybe_duplicate_list </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$form_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perhaps duplicate this entry if the action has been corrected. </p>
+<dl class="section since"><dt>Since</dt><dd>2.5.1</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The form ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00773">773</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00394">duplicate_entry()</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00077">getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-logging_8php_source.html#l00134">GravityView_Logging\is_logging_active()</a>.</p>
 
 </div>
 </div>
@@ -776,7 +939,7 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of field options with <code>label</code>, <code>value</code>, <code>type</code>, <code>default</code> keys </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00204">204</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00224">224</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
 <p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>.</p>
 
@@ -809,41 +972,9 @@ Private Member Functions</h2></td></tr>
 <p>wp_safe_redirect()</p>
 <dl class="section return"><dt>Returns</dt><dd>void|string $url URL during tests instead of redirect. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00295">295</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00301">301</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00388">duplicate_entry()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="connector-functions_8php_source.html#l00115">gravityview_get_entry()</a>, and <a class="el" href="class-duplicate-entry_8php_source.html#l00549">user_can_duplicate_entry()</a>.</p>
-
-</div>
-</div>
-<a id="adb99368e56bbdf8eb32be998cd1363aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb99368e56bbdf8eb32be998cd1363aa">&#9670;&nbsp;</a></span>set_entry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">set_entry </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$entry</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Make sure there's an entry. </p>
-<dl class="section since"><dt>Since</dt><dd>2.5</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Current entry array</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00229">229</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
-
-<p class="reference">References <a class="el" href="class-duplicate-entry_8php_source.html#l00037">$entry</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00394">duplicate_entry()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="connector-functions_8php_source.html#l00123">gravityview_get_entry()</a>, and <a class="el" href="class-duplicate-entry_8php_source.html#l00562">user_can_duplicate_entry()</a>.</p>
 
 </div>
 </div>
@@ -897,11 +1028,11 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean|WP_Error True: can edit form. WP_Error: nope. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00549">549</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00562">562</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
 <p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00295">process_duplicate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00301">process_duplicate()</a>.</p>
 
 </div>
 </div>
@@ -923,7 +1054,7 @@ Private Member Functions</h2></td></tr>
 <p>Is the current nonce valid for editing the entry? </p>
 <dl class="section since"><dt>Since</dt><dd>2.5</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000226">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/verify_nonce</code> Override Duplicate Entry nonce validation. Return true to declare nonce valid. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000232">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/verify_nonce</code> Override Duplicate Entry nonce validation. Return true to declare nonce valid. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>wp_verify_nonce() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -934,29 +1065,11 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00492">492</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00500">500</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a5291dff564984cdb59d278ef6c471d80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5291dff564984cdb59d278ef6c471d80">&#9670;&nbsp;</a></span>$entry</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$entry</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00037">37</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00229">set_entry()</a>.</p>
-
-</div>
-</div>
 <a id="aa1bfbd27060176201b271918dff57e8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1bfbd27060176201b271918dff57e8f">&#9670;&nbsp;</a></span>$file</h2>
 
@@ -1017,7 +1130,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00039">39</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00034">34</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
 </div>
 </div>

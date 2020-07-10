@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.5</span>
+   &#160;<span id="projectnumber">2.9</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -170,7 +170,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A closure used in the filter. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00081">81</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00130">130</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
 
 </div>
 </div>
@@ -199,6 +199,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Print unconfigured notices to admins. </p>
+<p>Print reserved slug warnings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$gravityview</td><td>The $gravityview template object.</td></tr>
@@ -206,11 +207,22 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<p>Call the legacy code. </p>
+<p>Call the legacy code.</p>
+<p>Check reserved slugs.</p>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000024">Runs Filter:</a></b></dt><dd><code>gravityview/rewrite/reserved_slugs</code> Modify the reserved embed slugs that trigger a warning. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$reserved_slugs</td><td>An array of strings, reserved slugs. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">\GV\Template_Context</td><td class="paramname">$gravityview</td><td>The context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Check empty configuration.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00031">31</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00032">32</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
 
-<p class="reference">References <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>, and <a class="el" href="class-api_8php_source.html#l01162">gravityview_get_view_id()</a>.</p>
+<p class="reference">References <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>, and <a class="el" href="class-api_8php_source.html#l01232">gravityview_get_view_id()</a>.</p>
 
 </div>
 </div>

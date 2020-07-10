@@ -23,6 +23,8 @@ var searchData=
   ['view_5flist_5ftemplate',['View_List_Template',['../class_g_v_1_1_view___list___template.html',1,'GV']]],
   ['view_5frenderer',['View_Renderer',['../class_g_v_1_1_view___renderer.html',1,'GV']]],
   ['view_5fsettings',['View_Settings',['../class_g_v_1_1_view___settings.html',1,'GV']]],
+  ['view_5fsettings_5fmetabox',['view_settings_metabox',['../class_gravity_view___edit___entry___admin.html#a7099462ada72b3b5022b62167f77ddd3',1,'GravityView_Edit_Entry_Admin']]],
+  ['view_5fsettings_5fpermissions_5fmetabox',['view_settings_permissions_metabox',['../class_gravity_view___delete___entry.html#ae165042a959630ebd22265a1071cf989',1,'GravityView_Delete_Entry']]],
   ['view_5ftable_5ftemplate',['View_Table_Template',['../class_g_v_1_1_view___table___template.html',1,'GV']]],
   ['view_5ftemplate',['View_Template',['../class_g_v_1_1_view___template.html',1,'GV']]],
   ['views',['views',['../class_g_v_1_1_wrappers_1_1views.html',1,'GV::Wrappers']]],
