@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9</span>
+   &#160;<span id="projectnumber">2.9.2</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae4683244036bd18b1354412fd68d1a70"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#ae4683244036bd18b1354412fd68d1a70">from_configuration</a> ( $configuration)</td></tr>
+<tr class="memdesc:ae4683244036bd18b1354412fd68d1a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create self from a configuration array.  <a href="#ae4683244036bd18b1354412fd68d1a70">More...</a><br /></td></tr>
+<tr class="separator:ae4683244036bd18b1354412fd68d1a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bfcd49ccdcca6834ca2fecca55f1d9e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_field.html#a8bfcd49ccdcca6834ca2fecca55f1d9e">get</a> ( $source, $args)</td></tr>
 <tr class="memdesc:a8bfcd49ccdcca6834ca2fecca55f1d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alias for ::get_field()  <a href="#a8bfcd49ccdcca6834ca2fecca55f1d9e">More...</a><br /></td></tr>
 <tr class="separator:a8bfcd49ccdcca6834ca2fecca55f1d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +247,60 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae4683244036bd18b1354412fd68d1a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4683244036bd18b1354412fd68d1a70">&#9670;&nbsp;</a></span>from_configuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static from_configuration </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$configuration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create self from a configuration array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$configuration</td><td>The configuration array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>::as_configuration() </dd></dl>
+<p>Prevent infinte loops here from unimplemented children.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\GF_Field&#160;|&#160;\GV\Internal_Field</td><td class="paramname">$field_class</td><td>Determine the field implementation to use, and try to use.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000012">Runs Filter:</a></b></dt><dd><code>gravityview/field/class</code> Filter the field class about to be created from the configuration. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$field_class</td><td>The field class about to be used. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$configuration</td><td>The configuration as per ::as_configuration()</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00168">168</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
+
+<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+</div>
+</div>
 <a id="a8bfcd49ccdcca6834ca2fecca55f1d9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8bfcd49ccdcca6834ca2fecca55f1d9e">&#9670;&nbsp;</a></span>get()</h2>
 
@@ -291,7 +348,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00144">144</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -523,7 +580,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-field_8php_source.html#l00343">343</a> of file <a class="el" href="class-gv-field_8php_source.html">class-gv-field.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>

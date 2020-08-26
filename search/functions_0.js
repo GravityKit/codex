@@ -19,6 +19,7 @@ var searchData=
   ['_5fget',['_GET',['../class_g_v_1_1_utils.html#af11e54f642e42ef98082de907a8310a1',1,'GV::Utils']]],
   ['_5fget_5fedd_5fsettings',['_get_edd_settings',['../class_g_v_1_1_license___handler.html#aa1f8d938fddf2c9a7142ea5caa2daa05',1,'GV::License_Handler']]],
   ['_5fget_5femail_5ffield_5fchoices',['_get_email_field_choices',['../class_gravity_view___field___gravatar.html#aaeb42c29f8ece407b7497af42f42882c',1,'GravityView_Field_Gravatar']]],
+  ['_5fget_5fform_5fchoices',['_get_form_choices',['../class_gravity_view___widget___gravity___forms.html#ae141201ec99d4f79d40d3db456134fd7',1,'GravityView_Widget_Gravity_Forms']]],
   ['_5fget_5fmultisort_5furl',['_get_multisort_url',['../class_g_v_1_1_view___table___template.html#ac837a239a24fd4e73d8dbb34e94a9180',1,'GV::View_Table_Template']]],
   ['_5fget_5fsingle_5fentry_5ftitle',['_get_single_entry_title',['../class_gravity_view__frontend.html#aaacfec6d6d7d11ac3d015aca76052821',1,'GravityView_frontend']]],
   ['_5fget_5ftime_5fformat',['_get_time_format',['../class_gravity_view___field___time.html#a761a3e4e6dac36ac4b49f0bbc57d382b',1,'GravityView_Field_Time']]],

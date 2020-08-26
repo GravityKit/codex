@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9</span>
+   &#160;<span id="projectnumber">2.9.2</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -106,7 +106,7 @@ $(function() {
 <p><code>gravityview/fields/select/output_label</code> Override whether to show the value or the label of a Select field </p>
 <p class="enddd"><code>gravityview/fields/select/output_label</code> Override whether to show the value or the label of a Select field  </p>
 </dd>
-<dt><a class="anchor" id="_filters000025"></a>Global <a class="el" href="class_g_v_1_1_admin___request.html#ac60c9e9f42603110fa631baffba47880">Admin_Request::is_admin</a>  ()</dt>
+<dt><a class="anchor" id="_filters000024"></a>Global <a class="el" href="class_g_v_1_1_admin___request.html#ac60c9e9f42603110fa631baffba47880">Admin_Request::is_admin</a>  ()</dt>
 <dd><code>gravityview_is_admin_page</code> Is the current admin page a GravityView-related page?  </dd>
 <dt><a class="anchor" id="_filters000007"></a>Global <a class="el" href="class_g_v_1_1_core.html#a4be4055f3361d4800e16bc2e2e38cda6">Core::init</a>  ()</dt>
 <dd><code>gravityview/logger</code> Filter the logger instance being used for logging.  </dd>
@@ -125,23 +125,31 @@ $(function() {
 </dd>
 <dt><a class="anchor" id="_filters000011"></a>Global <a class="el" href="class_g_v_1_1_entry.html#a299b7f0b35559b21ab650595a0b95c91">Entry::get_slug</a>  ( $apply_filter=false,  $view=null,  $request=null, $track_directory=true)</dt>
 <dd><code>gravityview/entry/slug</code> Modify the entry URL slug as needed.  </dd>
-<dt><a class="anchor" id="_filters000041"></a>Global <a class="el" href="class_g_v_1_1_entry___list___template.html#a971cfe9c898778b62cf9bd5a1d3270d9">Entry_List_Template::the_field</a>  ( $field, $extras=null)</dt>
+<dt><a class="anchor" id="_filters000040"></a>Global <a class="el" href="class_g_v_1_1_entry___list___template.html#a971cfe9c898778b62cf9bd5a1d3270d9">Entry_List_Template::the_field</a>  ( $field, $extras=null)</dt>
 <dd><p class="startdd"><code>gravityview/template/field/label</code> Override the field label. </p>
 <p class="enddd"><code>gravityview/template/table/entry/hide_empty</code>  </p>
 </dd>
-<dt><a class="anchor" id="_filters000018"></a>Global <a class="el" href="class_g_v_1_1_entry___renderer.html#a97700face9765b2b92e4a9dbdcd9386d">Entry_Renderer::render</a>  (<a class="el" href="class_g_v_1_1_entry.html" title="If this file is called directly, abort. ">Entry</a> $entry, <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> $view, <a class="el" href="class_g_v_1_1_request.html" title="If this file is called directly, abort. ">Request</a> $request=null)</dt>
+<dt><a class="anchor" id="_filters000017"></a>Global <a class="el" href="class_g_v_1_1_entry___renderer.html#a97700face9765b2b92e4a9dbdcd9386d">Entry_Renderer::render</a>  (<a class="el" href="class_g_v_1_1_entry.html" title="If this file is called directly, abort. ">Entry</a> $entry, <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> $view, <a class="el" href="class_g_v_1_1_request.html" title="If this file is called directly, abort. ">Request</a> $request=null)</dt>
 <dd><p class="startdd"><code>gravityview_template_slug_{$template_id}</code> Modify the template slug about to be loaded in directory views. </p>
 <p class="enddd"><code>gravityview/template/entry/class</code> Filter the template class that is about to be used to render the entry.  </p>
 </dd>
-<dt><a class="anchor" id="_filters000047"></a>Global <a class="el" href="class_g_v_1_1_entry___template.html#afde88292c44dc59faf017738dae6dffb">Entry_Template::render</a>  ()</dt>
+<dt><a class="anchor" id="_filters000042"></a>Global <a class="el" href="class_g_v_1_1_entry___table___template.html#a71f4ee7297e3181c435079d92c7db517">Entry_Table_Template::the_entry</a>  ()</dt>
+<dd><p class="startdd"><code>gravityview_table_cells</code> Modify the fields displayed in a table </p>
+<p><code>gravityview/template/table/fields</code> Modify the fields displayed in this tables. </p>
+<p><code>gravityview/template/field/label</code> Override the field label. </p>
+<p class="enddd"><code>gravityview/template/table/entry/hide_empty</code>  </p>
+</dd>
+<dt><a class="anchor" id="_filters000046"></a>Global <a class="el" href="class_g_v_1_1_entry___template.html#afde88292c44dc59faf017738dae6dffb">Entry_Template::render</a>  ()</dt>
 <dd><code>gravityview/template/entry/context</code>  </dd>
+<dt><a class="anchor" id="_filters000012"></a>Global <a class="el" href="class_g_v_1_1_field.html#ae4683244036bd18b1354412fd68d1a70">Field::from_configuration</a>  ( $configuration)</dt>
+<dd><code>gravityview/field/class</code> Filter the field class about to be created from the configuration.  </dd>
 <dt><a class="anchor" id="_filters000013"></a>Global <a class="el" href="class_g_v_1_1_field.html#a8771f065cfb6da4b8e5d31dbeb343124">Field::get_value_filters</a>  ( $value, <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> $view=null, <a class="el" href="class_g_v_1_1_source.html" title="If this file is called directly, abort. ">Source</a> $source=null, <a class="el" href="class_g_v_1_1_entry.html" title="If this file is called directly, abort. ">Entry</a> $entry=null, <a class="el" href="class_g_v_1_1_request.html" title="If this file is called directly, abort. ">Request</a> $request=null)</dt>
 <dd><p class="startdd"><code>gravityview/field/$type/value</code> Override the displayed value here. </p>
 <p class="enddd"><code>gravityview/field/value</code> Override the displayed value here.  </p>
 </dd>
 <dt><a class="anchor" id="_filters000015"></a>Global <a class="el" href="class_g_v_1_1_field.html#acb0b5bc1305666a4b4e21604c5cfc4f6">Field::is_visible</a>  ( $view=null)</dt>
 <dd><code>gravityview/field/is_visible</code> Should this field be visible? </dd>
-<dt><a class="anchor" id="_filters000048"></a>Global <a class="el" href="class_g_v_1_1_field___template.html#afde88292c44dc59faf017738dae6dffb">Field_Template::render</a>  ()</dt>
+<dt><a class="anchor" id="_filters000047"></a>Global <a class="el" href="class_g_v_1_1_field___template.html#afde88292c44dc59faf017738dae6dffb">Field_Template::render</a>  ()</dt>
 <dd><p class="startdd"><code>gravityview/template/field/context</code> </p>
 <p><code>gravityview_empty_value</code> What to display when a field is empty </p>
 <p><code>gravityview/field/value/empty</code> What to display when this field is empty. </p>
@@ -153,15 +161,13 @@ $(function() {
 <p><code>gravityview/template/field/{$field_type}/output</code> Modify the field output for a field type.</p>
 <p class="enddd"><code>gravityview/template/field/output</code> Modify the field output for a field. </p>
 </dd>
-<dt><a class="anchor" id="_filters000016"></a>Global <a class="el" href="class_g_v_1_1_g_f___form.html#a23e714bfec6a4fdee0021f5ca3426001">GF_Form::get_query_class</a>  ( $view)</dt>
-<dd><code>gravityview/query/class</code>  </dd>
 <dt><a class="anchor" id="_filters000326"></a>Namespace <a class="el" href="namespace_gravity_view.html">GravityView</a>  </dt>
 <dd><p class="startdd"><code>gravityview_field_tick</code> Change the output for a checkbox "check" symbol. Default is the "dashicons-yes" icon </p>
 <p><code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes </p>
 <p><code>gravityview/fields/date/hide_epoch</code> Whether to hide <code>1970-01-01</code> dates; that is normally an erroneous date. Return false to show value. Use <code>__return_false</code> callback. </p>
 <p class="enddd"><code>gravityview/fields/list/column-format</code> Format of single list column output of a List field with Multiple Columns enabled  </p>
 </dd>
-<dt><a class="anchor" id="_filters000034"></a>Global <a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html#a59e963b7928d5d47f4141ff2f6f0d5dd">gravityview::detail</a>  ( $view, $entries, $atts)</dt>
+<dt><a class="anchor" id="_filters000033"></a>Global <a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html#a59e963b7928d5d47f4141ff2f6f0d5dd">gravityview::detail</a>  ( $view, $entries, $atts)</dt>
 <dd><code>gravityview/shortcode/detail/{$detail}</code> Filter the detail output returned from <code>[gravityview detail="$detail"]</code>  </dd>
 <dt><a class="anchor" id="_filters000112"></a>Global <a class="el" href="class_gravity_view___admin___approve_entries.html#a85bb7e01fc2b2b5048f71b94b3ffe1cb">GravityView_Admin_ApproveEntries::filter_links_entry_list</a>  ( $filter_links=array(), $form=array(), $include_counts=true)</dt>
 <dd><code>gravityview/approve_entries/show_filter_links_entry_list</code> Disable filter links  </dd>
@@ -302,8 +308,14 @@ Filter is <code>gravityview_noconflict_scripts</code> or <code>gravityview_nocon
 </dd>
 <dt><a class="anchor" id="_filters000252"></a>Global <a class="el" href="class_gravity_view___edit___entry___user___registration.html#a561424521381fd64539c5fb5e573d143">GravityView_Edit_Entry_User_Registration::add_hooks</a>  ()</dt>
 <dd><code>gravityview/edit_entry/user_registration/trigger_update</code> Choose whether to update user information via User Registration add-on when an entry is updated?  </dd>
+<dt><a class="anchor" id="_filters000254"></a>Global <a class="el" href="class_gravity_view___edit___entry___user___registration.html#a0cbecc87b093e7e4c4e53601b3ec934f">GravityView_Edit_Entry_User_Registration::get_feed_configuration</a>  ( $entry, $form)</dt>
+<dd><p class="startdd"><code>gravityview/edit_entry/user_registration/preserve_role</code> Keep the current user role or override with the role defined in the Create feed </p>
+<p class="enddd"><code>gravityview/edit_entry/user_registration/config</code> Modify the User Registration Addon feed configuration  </p>
+</dd>
 <dt><a class="anchor" id="_filters000256"></a>Global <a class="el" href="class_gravity_view___edit___entry___user___registration.html#af918ab953d8ca36a24deb1c5b3bdadb4">GravityView_Edit_Entry_User_Registration::restore_display_name</a>  ( $user_id=0, $config=array(), $entry=array(), $password='')</dt>
 <dd><code>gravityview/edit_entry/restore_display_name</code> Whether display names should be restored to before updating an entry. Otherwise, display names will be reset to the format specified in Gravity Forms User Registration "Update" feed  </dd>
+<dt><a class="anchor" id="_filters000253"></a>Global <a class="el" href="class_gravity_view___edit___entry___user___registration.html#a2b7e1945fb34f26eb316743a1ee38b6c">GravityView_Edit_Entry_User_Registration::update_user</a>  ( $form=array(), $entry_id=0)</dt>
+<dd><code>gravityview/edit_entry/user_registration/entry</code> Modify entry details before updating the user via User Registration add-on  </dd>
 <dt><a class="anchor" id="_filters000200"></a>Global <a class="el" href="class_gravity_view___entry___approval.html#a515a1a431b074780d1df65446c155429">GravityView_Entry_Approval::add_approval_status_updated_note</a>  ( $entry_id, $approved=0)</dt>
 <dd><code>gravityview/approve_entries/add-note</code> Add a note when the entry has been approved or disapproved?  </dd>
 <dt><a class="anchor" id="_filters000197"></a>Global <a class="el" href="class_gravity_view___entry___approval.html#aa9b57eb2100156d22cad082a52c5b6e3">GravityView_Entry_Approval::after_submission</a>  ( $entry, $form)</dt>
@@ -339,6 +351,17 @@ Filter is <code>gravityview_noconflict_scripts</code> or <code>gravityview_nocon
 <dd><code>gravityview/template/field_label</code> Modify field label output </dd>
 <dt><a class="anchor" id="_filters000269"></a>Global <a class="el" href="class_gravity_view___field___entry___approval.html#a876183033e77656991f95732a0f021ab">GravityView_Field_Entry_Approval::register_scripts_and_styles</a>  ()</dt>
 <dd><code>gravityview/field/approval/css_url</code> URL to the Approval field CSS file.  </dd>
+<dt><a class="anchor" id="_filters000271"></a>Global <a class="el" href="class_gravity_view___field___file_upload.html#adcbea57121de48cef804aecf5389daaa">GravityView_Field_FileUpload::get_files_array</a>  ( $value, $gv_class, $context=null)</dt>
+<dd><p class="startdd"><code>gravityview/fields/fileupload/file_path</code> Modify the file path before generating a link to it </p>
+<p><code>gravityview_audio_settings</code> Modify the settings passed to the <code>wp_video_shortcode()</code> function </p>
+<p><code>gravityview_video_settings</code> Modify the settings passed to the <code>wp_video_shortcode()</code> function </p>
+<p><code>gravityview/fields/fileupload/allow_insecure_lightbox</code> Allow insecure links to be shown for the lighbox. Thickbox doesn't work with secure URLs :( </p>
+<p><code>gravityview/fields/fileupload/disable_link</code> Filter to alter the default behaviour of wrapping images (or image names) with a link to the content object </p>
+<p><code>gravityview/fields/fileupload/link_atts</code> Modify the link attributes for a file upload field </p>
+<p class="enddd"><code>gravityview/fields/fileupload/files_array</code> Modify the files array  </p>
+</dd>
+<dt><a class="anchor" id="_filters000278"></a>Global <a class="el" href="class_gravity_view___field___hidden.html#aeda03bc563ff74693dcd4e53820460d6">GravityView_Field_Hidden::edit_entry_fix_hidden_fields</a>  ( $fields)</dt>
+<dd><code>gravityview/edit_entry/reveal_hidden_field</code> Convert Hidden fields into Text fields on Edit Entry  </dd>
 <dt><a class="anchor" id="_filters000279"></a>Global <a class="el" href="class_gravity_view___field___is___approved.html#a12c41636967e1ef5b69264fa55c12549">GravityView_Field_Is_Approved::add_default_field</a>  ( $entry_default_fields, $form, $zone)</dt>
 <dd><code>gravityview_entry_default_fields</code> </dd>
 <dt><a class="anchor" id="_filters000263"></a>Global <a class="el" href="class_gravity_view___field___notes.html#acf29c3965a261feb56b5f0fdda743574">GravityView_Field_Notes::display_note</a>  ( $note, $show_delete=false, $context=null)</dt>
@@ -441,6 +464,9 @@ Useful where you want to process variables yourself. We do this in the Math Exte
 <dd><p class="startdd"><code>gravityview/setting/class/{field_type}</code> </p>
 <p class="enddd"><code>gravityview/setting/class_file/{field_type}</code>  </p>
 </dd>
+<dt><a class="anchor" id="_filters000108"></a>Global <a class="el" href="class_gravity_view___render___settings.html#a22768d953ac1ef065d8d7a78466c20b3">GravityView_Render_Settings::render_field_option</a>  ( $name='', $option=array(), $curr_value=NULL)</dt>
+<dd><code>gravityview/option/output/{option_type}</code> Modify the output for a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> setting.<br />
+<code>$option_type</code> is the type of setting (<code>radio</code>, <code>text</code>, etc.)  </dd>
 <dt><a class="anchor" id="_filters000218"></a>Global <a class="el" href="class_gravity_view___roles___capabilities.html#a2cd58b39963dd93e6238a297411b734f">GravityView_Roles_Capabilities::has_cap</a>  ( $caps_to_check='', $object_id=null, $user_id=null)</dt>
 <dd><code>gravityview/capabilities/allow_logged_out</code> Shall we allow a cap check for non-logged in users? USE WITH CAUTION! </dd>
 <dt><a class="anchor" id="_filters000219"></a>Global <a class="el" href="class_gravity_view___shortcode.html#a17f4912865f4f89aefde5f4d5493870e">GravityView_Shortcode::get_view_detail</a>  ( $detail='')</dt>
@@ -479,6 +505,8 @@ date_created is stored in UTC format. Convert search date into UTC (also used on
 <dd><code>gravityview/widgets/search/datepicker/format</code>  </dd>
 <dt><a class="anchor" id="_filters000312"></a>Global <a class="el" href="class_gravity_view___widget___search.html#abfcd4399921df5c94bc1f4b57cbadad8">GravityView_Widget_Search::get_field_label</a>  ( $field, $form_field=array())</dt>
 <dd><code>gravityview_search_field_label</code> Modify the label for a search field. Supports returning HTML  </dd>
+<dt><a class="anchor" id="_filters000300"></a>Global <a class="el" href="class_gravity_view___widget___search.html#af704da767434562ca17deea5f947806c">GravityView_Widget_Search::get_input_types_by_field_type</a>  ()</dt>
+<dd><code>gravityview/search/input_types</code> Change the types of search fields available to a field type  </dd>
 <dt><a class="anchor" id="_filters000319"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a014324c9142b1e0bb9685e8751fce7c7">GravityView_Widget_Search::get_operator</a>  ( $get, $key, $allowed, $default)</dt>
 <dd><code>gravityview/search/operator_whitelist</code> An array of allowed operators for a field.  </dd>
 <dt><a class="anchor" id="_filters000310"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a3bef458135acead48a0f471fec77d597">GravityView_Widget_Search::get_search_class</a>  ( $custom_class='')</dt>
@@ -489,12 +517,16 @@ date_created is stored in UTC format. Convert search date into UTC (also used on
 </dd>
 <dt><a class="anchor" id="_filters000311"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a06178e3a7b0451c82f46871db2f69ced">GravityView_Widget_Search::get_search_form_action</a>  ()</dt>
 <dd><code>gravityview/widget/search/form/action</code> Override the search URL.  </dd>
+<dt><a class="anchor" id="_filters000301"></a>Global <a class="el" href="class_gravity_view___widget___search.html#adaba656fd581e7f86cdce457e6af1e6e">GravityView_Widget_Search::get_search_input_labels</a>  ()</dt>
+<dd><code>gravityview/search/input_types</code> Change the label of search field input types  </dd>
 <dt><a class="anchor" id="_filters000303"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a32006cc43d9990e01d09b86fed334dbb">GravityView_Widget_Search::get_search_input_types</a>  ( $field_id='', $field_type=null)</dt>
 <dd><code>gravityview/extension/search/input_type</code> Modify the search form input type based on field type  </dd>
 <dt><a class="anchor" id="_filters000304"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a9bb5193513c2bfa2771bea95a0fd2ef2">GravityView_Widget_Search::get_view_searchable_fields</a>  ( $view, $with_full_field=false)</dt>
 <dd><code>gravityview/search/searchable_fields/whitelist</code> Modifies the fields able to be searched using the Search Bar  </dd>
 <dt><a class="anchor" id="_filters000308"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a8b04c17be678f952ef7aeaad651eea79">GravityView_Widget_Search::gf_query_filter</a>  (&amp;$query, $view, $request)</dt>
 <dd><code>gravityview_search_operator</code> Modify the search operator for the field (contains, is, isnot, etc)  </dd>
+<dt><a class="anchor" id="_filters000309"></a>Global <a class="el" href="class_gravity_view___widget___search.html#ae118238d82cb7bcab912f827860941a0">GravityView_Widget_Search::render_frontend</a>  ( $widget_args, $content='', $context='')</dt>
+<dd><code>gravityview_widget_search_filters</code> Modify what fields are shown. The order of the fields in the $search_filters array controls the order as displayed in the search bar widget.  </dd>
 <dt><a class="anchor" id="_filters000302"></a>Global <a class="el" href="class_gravity_view___widget___search.html#a7536288f54b69d9b85f3e4be14e78750">GravityView_Widget_Search::render_searchable_fields</a>  ( $form_id=null, $current='')</dt>
 <dd><code>gravityview/search/searchable_fields</code> Modify the fields that are displayed as searchable in the Search Bar dropdown<br />
  </dd>
@@ -504,14 +536,14 @@ date_created is stored in UTC format. Convert search date into UTC (also used on
 <dd><p class="startdd"><code>gravityview/widgets/search/created_by/user_meta_fields</code> Filter the user meta fields to search. </p>
 <p class="enddd"><code>gravityview/widgets/search/created_by/user_fields</code> Filter the user fields to search.  </p>
 </dd>
-<dt><a class="anchor" id="_filters000029"></a>Global <a class="el" href="namespace_g_v.html#a7bf4a9c7cf80bb26452c269bd8876dad">GV::app_settings_fields</a>  ()</dt>
+<dt><a class="anchor" id="_filters000028"></a>Global <a class="el" href="namespace_g_v.html#a7bf4a9c7cf80bb26452c269bd8876dad">GV::app_settings_fields</a>  ()</dt>
 <dd><p class="startdd"><code>gravityview_settings_fields</code> Filter the settings fields. </p>
 <p><code>gravityview/settings/fields</code> Filter the settings fields. </p>
 <p><code>gravityview/settings/extension/sections</code> Modify the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> settings page Extensions can tap in here to insert their own section and settings. <code> $sections[] = array( 'title' =&gt; __( '<a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> My <a class="el" href="class_g_v_1_1_extension.html" title="If this file is called directly, abort. ">Extension</a> <a class="el" href="class_g_v_1_1_settings.html" title="If this file is called directly, abort. ">Settings</a>', 'gravityview' ), 'fields' =&gt; $settings, ); </code> </p>
 <p><code>gravityview/settings/fields</code> Filter the settings fields. </p>
 <p class="enddd"><code>gravityview/settings/extension/sections</code> Modify the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> settings page Extensions can tap in here to insert their own section and settings. <code> $sections[] = array( 'title' =&gt; __( '<a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> My <a class="el" href="class_g_v_1_1_extension.html" title="If this file is called directly, abort. ">Extension</a> <a class="el" href="class_g_v_1_1_settings.html" title="If this file is called directly, abort. ">Settings</a>', 'gravityview' ), 'fields' =&gt; $settings, ); </code>  </p>
 </dd>
-<dt><a class="anchor" id="_filters000028"></a>Global <a class="el" href="namespace_g_v.html#a37d09d24dd6f098896c6954cb6590fff">GV::defaults</a>  ()</dt>
+<dt><a class="anchor" id="_filters000027"></a>Global <a class="el" href="namespace_g_v.html#a37d09d24dd6f098896c6954cb6590fff">GV::defaults</a>  ()</dt>
 <dd><code>gravityview/settings/default</code> Filter default global settings.  </dd>
 <dt><a class="anchor" id="_filters000001"></a>Global <a class="el" href="namespace_g_v_1_1_mocks.html#a56e8d9d4c7dbd91d595cdd06ceb40eb0">GV::Mocks::GravityView_API_field_label</a>  ( $form, $field_settings, $entry, $force_show_label=false)</dt>
 <dd><p class="startdd"><code>gravityview_render_after_label</code> Append content to a field label </p>
@@ -557,62 +589,64 @@ date_created is stored in UTC format. Convert search date into UTC (also used on
 <dd><div> <code>gravityview/common/numeric_types</code> What types of fields are numeric?  </div></dd>
 <dt><a class="anchor" id="_filters000168"></a>Global <a class="el" href="class_g_v_common.html#aee4f4efcf54da0c503d640f61877c563">GVCommon::js_encrypt</a>  ( $content, $message='')</dt>
 <dd><div> <code>gravityview/phpenkoder/msg</code> Modify the message shown when Javascript is disabled and an encrypted email field is displayed  </div></dd>
-<dt><a class="anchor" id="_filters000035"></a>Global <a class="el" href="class_g_v_1_1_shortcodes_1_1gventry.html#a0870d5e99af14f33a67f6eb12fa2c694">gventry::callback</a>  ( $atts, $content='', $tag='')</dt>
+<dt><a class="anchor" id="_filters000034"></a>Global <a class="el" href="class_g_v_1_1_shortcodes_1_1gventry.html#a0870d5e99af14f33a67f6eb12fa2c694">gventry::callback</a>  ( $atts, $content='', $tag='')</dt>
 <dd><div> <code>gravityview/shortcodes/gventry/atts</code> Filter the [gventry] shortcode attributes. </div><div> <code>gravityview/shortcodes/gventry/edit/success</code> Modify the edit entry success message in [gventry]. </div><div> <code>gravityview/shortcodes/gventry/output</code> Filter the [gventry] output.  </div></dd>
-<dt><a class="anchor" id="_filters000038"></a>Global <a class="el" href="class_g_v_1_1_shortcodes_1_1gvfield.html#a0870d5e99af14f33a67f6eb12fa2c694">gvfield::callback</a>  ( $atts, $content='', $tag='')</dt>
+<dt><a class="anchor" id="_filters000037"></a>Global <a class="el" href="class_g_v_1_1_shortcodes_1_1gvfield.html#a0870d5e99af14f33a67f6eb12fa2c694">gvfield::callback</a>  ( $atts, $content='', $tag='')</dt>
 <dd><div> <code>gravityview/shortcodes/gvfield/atts</code> Filter the [gvfield] shortcode attributes. </div><div> <code>gravityview/shortcodes/gvfield/output</code> Filter the [gvfield] output.  </div></dd>
-<dt><a class="anchor" id="_filters000040"></a>Global <a class="el" href="class_g_v_1_1_shortcodes_1_1gvlogic.html#a8bb1c5d527d2a67dc871335a6aab810e">gvlogic::parse_atts</a>  ( $atts, $content, $tag)</dt>
+<dt><a class="anchor" id="_filters000039"></a>Global <a class="el" href="class_g_v_1_1_shortcodes_1_1gvlogic.html#a8bb1c5d527d2a67dc871335a6aab810e">gvlogic::parse_atts</a>  ( $atts, $content, $tag)</dt>
 <dd><div> <code>gravityview/gvlogic/atts</code> The logic attributes. </div></dd>
+<dt><a class="anchor" id="_filters000329"></a>Global <a class="el" href="future_2gravityview_8php.html#a372c49dd68f65e993ec91ae6edf9454c">if</a>  (! defined('GRAVITYVIEW_DIR'))</dt>
+<dd><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </div><div> <code>gravityview/fields/custom/content_before</code> Modify Custom Content field output before Merge Tag processing </div><div> <code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</div><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </div><div> <code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</div><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </div><div> <code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</div><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed  </div></dd>
 <dt><a class="anchor" id="_filters000329"></a>Global <a class="el" href="future_2gravityview_8php.html#a372c49dd68f65e993ec91ae6edf9454c">if</a>  (! defined('GRAVITYVIEW_DIR'))</dt>
 <dd><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </div><div> <code>gravityview/fields/custom/content_before</code> Modify Custom Content field output before Merge Tag processing </div><div> <code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</div><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </div><div> <code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</div><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </div><div> <code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</div><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed  </div></dd>
 <dt><a class="anchor" id="_filters000360"></a>Global <a class="el" href="field-textarea-html_8php.html#aaa77bd3fe5475939cb9d11d7cf9f1746">if</a>  (! empty($field_settings[ 'new_window']))</dt>
 <dd><div> <code>gravityview_excerpt_more</code> Modify the "Read more" link used when "Maximum Words" setting is enabled and the output is truncated  </div></dd>
-<dt><a class="anchor" id="_filters000329"></a>Global <a class="el" href="future_2gravityview_8php.html#a372c49dd68f65e993ec91ae6edf9454c">if</a>  (! defined('GRAVITYVIEW_DIR'))</dt>
-<dd><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </div><div> <code>gravityview/fields/custom/content_before</code> Modify Custom Content field output before Merge Tag processing </div><div> <code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</div><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </div><div> <code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</div><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </div><div> <code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</div><div> <code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed  </div></dd>
-<dt><a class="anchor" id="_filters000017"></a>Global <a class="el" href="class_g_v_1_1o_embed.html#a29e37cc347087e78627f5224bbfca05a">oEmbed::get_entry_regex</a>  ()</dt>
+<dt><a class="anchor" id="_filters000016"></a>Global <a class="el" href="class_g_v_1_1o_embed.html#a29e37cc347087e78627f5224bbfca05a">oEmbed::get_entry_regex</a>  ()</dt>
 <dd><div> <code>gravityview_slug</code> Modify the url part for a <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. <a href="https://docs.gravityview.co/article/62-changing-the-view-slug">Read the doc</a>  </div></dd>
 <dt><a class="anchor" id="_filters000295"></a>Global <a class="el" href="class_g_v_1_1_widgets_1_1_page___size.html#a1bd955ca0eca87021ff243a7da8865ea">Page_Size::get_page_sizes</a>  ( $context)</dt>
 <dd><div> <code>gravityview/widget/page_size/page_sizes</code> Filter the available page sizes as needed  </div></dd>
 <dt><a class="anchor" id="_filters000296"></a>Global <a class="el" href="class_g_v_1_1_widgets_1_1_page___size.html#a59cf3fea8a4c4810b2a2ef493d14e79a">Page_Size::render_frontend</a>  ( $widget_args, $content='', $context=null)</dt>
 <dd><div> <code>gravityview/widget/page_size/settings</code> Filter the settings for the widget  </div></dd>
-<dt><a class="anchor" id="_filters000024"></a>Global <a class="el" href="class_g_v_1_1_renderer.html#a896959420cb5211d39207376160cc90f">Renderer::maybe_print_notices</a>  ( $gravityview=null)</dt>
+<dt><a class="anchor" id="_filters000023"></a>Global <a class="el" href="class_g_v_1_1_renderer.html#a896959420cb5211d39207376160cc90f">Renderer::maybe_print_notices</a>  ( $gravityview=null)</dt>
 <dd><div> <code>gravityview/rewrite/reserved_slugs</code> Modify the reserved embed slugs that trigger a warning.  </div></dd>
-<dt><a class="anchor" id="_filters000027"></a>Global <a class="el" href="class_g_v_1_1_request.html#a0fdcd41376ac37ed091f7671a5fe62a8">Request::is_edit_entry</a>  ( $form_id=0)</dt>
+<dt><a class="anchor" id="_filters000026"></a>Global <a class="el" href="class_g_v_1_1_request.html#a0fdcd41376ac37ed091f7671a5fe62a8">Request::is_edit_entry</a>  ( $form_id=0)</dt>
 <dd><div> <code>gravityview_is_edit_entry</code> Whether we're currently on the Edit <a class="el" href="class_g_v_1_1_entry.html" title="If this file is called directly, abort. ">Entry</a> screen <br />
 The Edit <a class="el" href="class_g_v_1_1_entry.html" title="If this file is called directly, abort. ">Entry</a> functionality overrides this value.  </div></dd>
-<dt><a class="anchor" id="_filters000026"></a>Global <a class="el" href="class_g_v_1_1_request.html#a86a5f49bd507e4795006e550c45132e2">Request::is_renderable</a>  ()</dt>
+<dt><a class="anchor" id="_filters000025"></a>Global <a class="el" href="class_g_v_1_1_request.html#a86a5f49bd507e4795006e550c45132e2">Request::is_renderable</a>  ()</dt>
 <dd><div> <code>gravityview/request/is_renderable</code> Is this request renderable?  </div></dd>
 <dt><a class="anchor" id="_filters000342"></a>Global <a class="el" href="field-checkbox-html_8php.html#ae3d2cf16a317e3cb31214f733c032b33">switch</a>  ($display_type)</dt>
 <dd><div> <code>gravityview_field_tick</code> Change the output for a checkbox "check" symbol. Default is the "dashicons-yes" icon  </div></dd>
-<dt><a class="anchor" id="_filters000076"></a>Global <a class="el" href="class_g_v_1_1_view.html#abde7da466d842901011c162027d06dc0">View::can_render</a>  ( $context=null, $request=null)</dt>
+<dt><a class="anchor" id="_filters000075"></a>Global <a class="el" href="class_g_v_1_1_view.html#abde7da466d842901011c162027d06dc0">View::can_render</a>  ( $context=null, $request=null)</dt>
 <dd><div> <code>gravityview/view/can_render</code> Whether the view can be rendered or not. </div><div> <code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </div><div> <code>gravityview/request/output/direct</code> Should this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> be directly accessbile?  </div></dd>
-<dt><a class="anchor" id="_filters000079"></a>Global <a class="el" href="class_g_v_1_1_view.html#afc6edbfdd91b125f9a114652ecc9251d">View::from_post</a>  ( $post)</dt>
+<dt><a class="anchor" id="_filters000078"></a>Global <a class="el" href="class_g_v_1_1_view.html#afc6edbfdd91b125f9a114652ecc9251d">View::from_post</a>  ( $post)</dt>
 <dd><div> <code>gravityview/view/get</code> Override <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </div><div> <code>gravityview/configuration/fields</code> Filter the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> fields' configuration array. </div><div> <code>gravityview/view/configuration/fields</code> Filter the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> fields' configuration array. </div><div> <code>gravityview/view/fields</code> Filter the <a class="el" href="class_g_v_1_1_field.html" title="If this file is called directly, abort. ">Field</a> <a class="el" href="class_g_v_1_1_collection.html" title="If this file is called directly, abort. ">Collection</a> for this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </div><div> <code>gravityview/view/configuration/widgets</code> Filter the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> widgets' configuration array. </div><div> <code>gravityview/view/widgets</code> Filter the <a class="el" href="class_g_v_1_1_widget.html" title="If this file is called directly, abort. ">Widget</a> <a class="el" href="class_g_v_1_1_collection.html" title="If this file is called directly, abort. ">Collection</a> for this <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </div><div> <code>gravityview/view/get</code> Override <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>.  </div></dd>
-<dt><a class="anchor" id="_filters000086"></a>Global <a class="el" href="class_g_v_1_1_view.html#a2fc74951f4e394bdefd7febdeff541c0">View::get_entries</a>  ( $request=null)</dt>
+<dt><a class="anchor" id="_filters000085"></a>Global <a class="el" href="class_g_v_1_1_view.html#a2fc74951f4e394bdefd7febdeff541c0">View::get_entries</a>  ( $request=null)</dt>
 <dd><div> <code>gravityview/view/entries</code> Modify the entry fetching filters, sorts, offsets, limits.  </div></dd>
-<dt><a class="anchor" id="_filters000070"></a>Global <a class="el" href="class_g_v_1_1_view.html#a2f6a669ec69f9d03f6edf9692230a2cb">View::register_post_type</a>  ()</dt>
+<dt><a class="anchor" id="_filters000087"></a>Global <a class="el" href="class_g_v_1_1_view.html#a3f7e1a58c2d700dc3459de6ea23788bc">View::get_query_class</a>  ()</dt>
+<dd><div> <code>gravityview/query/class</code>  </div></dd>
+<dt><a class="anchor" id="_filters000069"></a>Global <a class="el" href="class_g_v_1_1_view.html#a2f6a669ec69f9d03f6edf9692230a2cb">View::register_post_type</a>  ()</dt>
 <dd><div> <code>gravityview_is_hierarchical</code> Make <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Views hierarchical by returning TRUE This will allow for Views to be nested with Parents and also allows for menu order to be set in the Page Attributes metabox </div><div> <code>gravityview_post_type_supports</code> Modify post type support values for <code>gravityview</code> post type </div><div> <code>gravityview_direct_access</code> Should Views be directly accessible, or only visible using the shortcode? </div><div> <code>gravityview_has_archive</code> Enable Custom Post Type archive? </div><div> <code>gravityview_slug</code> Modify the url part for a <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </div><div> <code>gravityview/post_type/with_front</code> Should the permalink structure be prepended with the front base. (example: if your permalink structure is /blog/, then your links will be: false-&gt;/view/, true-&gt;/blog/view/). Defaults to true.  </div></dd>
 <dt><a class="anchor" id="_filters000088"></a>Global <a class="el" href="class_g_v_1_1_view.html#a82088ffdb1f27feb8cad77a78eb50a15">View::restrict</a>  ( $caps, $cap, $user_id, $args)</dt>
 <dd><div> <code>gravityview/security/require_unfiltered_html</code> Bypass restrictions on Views that require <code>unfiltered_html</code>.  </div></dd>
-<dt><a class="anchor" id="_filters000087"></a>Global <a class="el" href="class_g_v_1_1_view.html#ade9c435d90135acc7f4659e3a76c62cb">View::template_redirect</a>  ()</dt>
+<dt><a class="anchor" id="_filters000086"></a>Global <a class="el" href="class_g_v_1_1_view.html#ade9c435d90135acc7f4659e3a76c62cb">View::template_redirect</a>  ()</dt>
 <dd><div> <code>gravityview/csv/entry/fields</code> Whitelist more entry fields by ID that are output in CSV requests.  </div></dd>
 <dt><a class="anchor" id="_filters000005"></a>Global <a class="el" href="class_g_v_1_1_view___collection.html#a4825de125704bd9d4c4886318c066224">View_Collection::from_post</a>  ( $post)</dt>
 <dd><div> <code>gravityview/view_collection/from_post/meta_keys</code> Define meta keys to parse to check for <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> shortcode content.</div><div> <code>gravityview/data/parse/meta_keys</code>  </div></dd>
-<dt><a class="anchor" id="_filters000060"></a>Global <a class="el" href="class_g_v_1_1_view___list___template.html#ad079778a61dbc0d55034f1696c15aa4a">View_List_Template::entry_class</a>  ( $class, $entry, $context)</dt>
+<dt><a class="anchor" id="_filters000059"></a>Global <a class="el" href="class_g_v_1_1_view___list___template.html#ad079778a61dbc0d55034f1696c15aa4a">View_List_Template::entry_class</a>  ( $class, $entry, $context)</dt>
 <dd><div> <code>gravityview_entry_class</code> Modify the class applied to the entry row. </div><div> <code>gravityview/template/list/entry/class</code> Modify the class aplied to the entry row.  </div></dd>
-<dt><a class="anchor" id="_filters000058"></a>Global <a class="el" href="class_g_v_1_1_view___list___template.html#a7ebcd18c106c36b0ec0fd00986d42522">View_List_Template::the_field</a>  ( $field,  $entry, $extras=null)</dt>
+<dt><a class="anchor" id="_filters000057"></a>Global <a class="el" href="class_g_v_1_1_view___list___template.html#a7ebcd18c106c36b0ec0fd00986d42522">View_List_Template::the_field</a>  ( $field,  $entry, $extras=null)</dt>
 <dd><div> <code>gravityview/template/field/label</code> Override the field label. </div><div> <code>gravityview/template/table/entry/hide_empty</code>  </div></dd>
-<dt><a class="anchor" id="_filters000021"></a>Global <a class="el" href="class_g_v_1_1_view___renderer.html#a2adeb0d5bb6ce7ca2063bf1d3f9459e1">View_Renderer::render</a>  (<a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> $view, <a class="el" href="class_g_v_1_1_request.html" title="If this file is called directly, abort. ">Request</a> $request=null)</dt>
+<dt><a class="anchor" id="_filters000020"></a>Global <a class="el" href="class_g_v_1_1_view___renderer.html#a2adeb0d5bb6ce7ca2063bf1d3f9459e1">View_Renderer::render</a>  (<a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> $view, <a class="el" href="class_g_v_1_1_request.html" title="If this file is called directly, abort. ">Request</a> $request=null)</dt>
 <dd><div> <code>gravityview_template_slug_{$template_id}</code> Modify the template slug about to be loaded in directory views. </div><div> <code>gravityview_get_view_entries_{$template_slug}</code> Whether to get the entries or not. </div><div> <code>gravityview/template/view/class</code> Filter the template class that is about to be used to render the view.  </div></dd>
-<dt><a class="anchor" id="_filters000032"></a>Global <a class="el" href="class_g_v_1_1_view___settings.html#ac2c98a74232e3b1b93cccc878f4cb8c3">View_Settings::defaults</a>  ( $detailed=false, $group=null)</dt>
+<dt><a class="anchor" id="_filters000031"></a>Global <a class="el" href="class_g_v_1_1_view___settings.html#ac2c98a74232e3b1b93cccc878f4cb8c3">View_Settings::defaults</a>  ( $detailed=false, $group=null)</dt>
 <dd><div> <code>gravityview_default_args</code> Modify the default settings for new Views </div><div> <code>gravityview/view/defaults</code> Modify the default settings for new Views  </div></dd>
-<dt><a class="anchor" id="_filters000066"></a>Global <a class="el" href="class_g_v_1_1_view___table___template.html#ad079778a61dbc0d55034f1696c15aa4a">View_Table_Template::entry_class</a>  ( $class, $entry, $context)</dt>
+<dt><a class="anchor" id="_filters000065"></a>Global <a class="el" href="class_g_v_1_1_view___table___template.html#ad079778a61dbc0d55034f1696c15aa4a">View_Table_Template::entry_class</a>  ( $class, $entry, $context)</dt>
 <dd><div> <code>gravityview_entry_class</code> Modify the class applied to the entry row. </div><div> <code>gravityview/template/table/entry/class</code> Modify the class aplied to the entry row.  </div></dd>
-<dt><a class="anchor" id="_filters000062"></a>Global <a class="el" href="class_g_v_1_1_view___table___template.html#a6ce2bef4ca0c3dcb2d07cc131810475a">View_Table_Template::get_field_column_label</a>  ( $field, $context=null)</dt>
+<dt><a class="anchor" id="_filters000061"></a>Global <a class="el" href="class_g_v_1_1_view___table___template.html#a6ce2bef4ca0c3dcb2d07cc131810475a">View_Table_Template::get_field_column_label</a>  ( $field, $context=null)</dt>
 <dd><div> <code>gravityview/template/field/label</code> Override the field label.  </div></dd>
-<dt><a class="anchor" id="_filters000063"></a>Global <a class="el" href="class_g_v_1_1_view___table___template.html#acb88d919963e4db3342c43bd02212f31">View_Table_Template::the_entry</a>  ( $entry, $attributes)</dt>
+<dt><a class="anchor" id="_filters000062"></a>Global <a class="el" href="class_g_v_1_1_view___table___template.html#acb88d919963e4db3342c43bd02212f31">View_Table_Template::the_entry</a>  ( $entry, $attributes)</dt>
 <dd><div> <code>gravityview_table_cells</code> Modify the fields displayed in a table </div><div> <code>gravityview/template/table/fields</code> Modify the fields displayed in this tables. </div><div> <code>gravityview/template/table/entry/row/attributes</code> Filter the row attributes for the row in table view. </div></dd>
-<dt><a class="anchor" id="_filters000068"></a>Global <a class="el" href="class_g_v_1_1_view___template.html#afde88292c44dc59faf017738dae6dffb">View_Template::render</a>  ()</dt>
+<dt><a class="anchor" id="_filters000067"></a>Global <a class="el" href="class_g_v_1_1_view___template.html#afde88292c44dc59faf017738dae6dffb">View_Template::render</a>  ()</dt>
 <dd><div> <code>gravityview/template/view/context</code> </div><div> <code>gravityview/template/view/render</code> Before rendering.  </div></dd>
 <dt><a class="anchor" id="_filters000099"></a>Global <a class="el" href="class_g_v_1_1_r_e_s_t_1_1_views___route.html#a687c8a1faaa6d562e26a22036a6c0262">Views_Route::get_item_permissions_check</a>  ( $request)</dt>
 <dd><div> <code>gravityview/view/output/rest</code> Disable rest output. Final chance.  </div></dd>

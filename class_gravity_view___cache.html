@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9</span>
+   &#160;<span id="projectnumber">2.9.2</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -101,6 +101,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a971b8dde55c1f66fc2d17bf96f85d760"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___cache.html#a971b8dde55c1f66fc2d17bf96f85d760">entry_created</a> ( $entry, $form)</td></tr>
 <tr class="memdesc:a971b8dde55c1f66fc2d17bf96f85d760"><td class="mdescLeft">&#160;</td><td class="mdescRight">When an entry is created, add the entry's form to the cache blacklist.  <a href="#a971b8dde55c1f66fc2d17bf96f85d760">More...</a><br /></td></tr>
 <tr class="separator:a971b8dde55c1f66fc2d17bf96f85d760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e65c05f3d6e6af7c976e0df77709d25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___cache.html#a4e65c05f3d6e6af7c976e0df77709d25">entry_status_changed</a> ( $lead_id, $property_value='', $previous_value='')</td></tr>
+<tr class="memdesc:a4e65c05f3d6e6af7c976e0df77709d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force refreshing a cache when an entry is deleted.  <a href="#a4e65c05f3d6e6af7c976e0df77709d25">More...</a><br /></td></tr>
+<tr class="separator:a4e65c05f3d6e6af7c976e0df77709d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0436e39a4e3664aadcaabc036f02506"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___cache.html#aa0436e39a4e3664aadcaabc036f02506">entry_updated</a> ( $form, $lead_id)</td></tr>
 <tr class="memdesc:aa0436e39a4e3664aadcaabc036f02506"><td class="mdescLeft">&#160;</td><td class="mdescRight">When an entry is updated, add the entry's form to the cache blacklist.  <a href="#aa0436e39a4e3664aadcaabc036f02506">More...</a><br /></td></tr>
 <tr class="separator:aa0436e39a4e3664aadcaabc036f02506"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,7 +194,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00042">42</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-cache_8php_source.html#l00022">$args</a>, <a class="el" href="class-cache_8php_source.html#l00015">$form_ids</a>, <a class="el" href="class-cache_8php_source.html#l00059">add_hooks()</a>, and <a class="el" href="class-cache_8php_source.html#l00199">set_key()</a>.</p>
+<p class="reference">References <a class="el" href="class-cache_8php_source.html#l00022">$args</a>, <a class="el" href="class-cache_8php_source.html#l00015">$form_ids</a>, <a class="el" href="class-cache_8php_source.html#l00059">add_hooks()</a>, and <a class="el" href="class-cache_8php_source.html#l00197">set_key()</a>.</p>
 
 </div>
 </div>
@@ -216,8 +219,6 @@ Private Attributes</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd>RGFormsModel::update_lead_property() Trigger when any entry property changes</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00059">59</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
-
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-cache_8php_source.html#l00233">blacklist_add()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00042">__construct()</a>.</p>
 
@@ -248,11 +249,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean False if value was not updated and true if value was updated. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00233">233</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00231">231</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-cache_8php_source.html#l00015">$form_ids</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00059">add_hooks()</a>, <a class="el" href="class-cache_8php_source.html#l00162">entry_added()</a>, <a class="el" href="class-cache_8php_source.html#l00147">entry_created()</a>, and <a class="el" href="class-cache_8php_source.html#l00130">entry_updated()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00160">entry_added()</a>, <a class="el" href="class-cache_8php_source.html#l00145">entry_created()</a>, <a class="el" href="class-cache_8php_source.html#l00104">entry_status_changed()</a>, and <a class="el" href="class-cache_8php_source.html#l00128">entry_updated()</a>.</p>
 
 </div>
 </div>
@@ -281,7 +282,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean Whether the removal was successful </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00264">264</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00262">262</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-cache_8php_source.html#l00015">$form_ids</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -312,7 +313,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[type] [description] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00397">397</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
@@ -384,9 +385,9 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00162">162</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00160">160</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-cache_8php_source.html#l00233">blacklist_add()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-cache_8php_source.html#l00231">blacklist_add()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -427,9 +428,60 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00147">147</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00145">145</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-cache_8php_source.html#l00233">blacklist_add()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-cache_8php_source.html#l00231">blacklist_add()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+</div>
+</div>
+<a id="a4e65c05f3d6e6af7c976e0df77709d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e65c05f3d6e6af7c976e0df77709d25">&#9670;&nbsp;</a></span>entry_status_changed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entry_status_changed </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$lead_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$property_value</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$previous_value</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force refreshing a cache when an entry is deleted. </p>
+<p>The <code>gform_delete_lead</code> action is called before the lead is deleted; we fetch the entry to find out the form ID so it can be added to the blacklist.</p>
+<dl class="section since"><dt>Since</dt><dd>1.5.1</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$lead_id</td><td>Entry ID </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$property_value</td><td>Previous value of the lead status passed by gform_update_status hook </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$previous_value</td><td>Previous value of the lead status passed by gform_update_status hook</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00104">104</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-cache_8php_source.html#l00231">blacklist_add()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -469,9 +521,9 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00130">130</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00128">128</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-cache_8php_source.html#l00233">blacklist_add()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-cache_8php_source.html#l00231">blacklist_add()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -500,7 +552,7 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed False: Not using cache or cache was a WP_Error object; NULL: no results found; Mixed: cache value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00322">322</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00320">320</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-cache_8php_source.html#l00029">$key</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-cache_8php_source.html#l00522">use_cache()</a>.</p>
 
@@ -539,11 +591,11 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Prefix for the cache string used in <a class="el" href="class_gravity_view___cache.html#aff3188d7ecd9b2ffaf63d3cfb56410b1" title="Set the transient key based on the form IDs and the arguments passed to the class. ">set_key()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00179">179</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00177">177</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-cache_8php_source.html#l00015">$form_ids</a>, and <a class="el" href="data-source_8php_source.html#l00019">$forms</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00199">set_key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00197">set_key()</a>.</p>
 
 </div>
 </div>
@@ -565,7 +617,7 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 <p>Allow public access to get transient key. </p>
 <dl class="section return"><dt>Returns</dt><dd>string Transient key </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00220">220</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00218">218</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-cache_8php_source.html#l00029">$key</a>.</p>
 
@@ -594,9 +646,9 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[type] [description] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00287">287</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00285">285</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
 <p class="reference">References <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-cache_8php_source.html#l00015">$form_ids</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -664,11 +716,12 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 <p>Cache time defaults to 1 week</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">[type]</td><td>$content [description] </td></tr>
-    <tr><td class="paramname">[type]</td><td>$filter_name Name used to modify the cache time. Will be set to <code>gravityview_cache_time_{$filter_name}</code>. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$content</td><td>[description] </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$filter_name</td><td>Name used to modify the cache time. Will be set to <code>gravityview_cache_time_{$filter_name}</code>.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>bool If $content is not set, false. Otherwise, returns true if transient was set and false if not. </dd></dl>
 <dl class="filters"><dt><b><a class="el" href="filters.html#_filters000151">Runs Filter:</a></b></dt><dd><code>gravityview_cache_time_{$filter_name}</code> Modify the cache time for a type of cache </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -708,9 +761,9 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 
 <p>Set the transient key based on the form IDs and the arguments passed to the class. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00199">199</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00197">197</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-cache_8php_source.html#l00029">$key</a>, and <a class="el" href="class-cache_8php_source.html#l00179">get_cache_key_prefix()</a>.</p>
+<p class="reference">References <a class="el" href="class-cache_8php_source.html#l00029">$key</a>, and <a class="el" href="class-cache_8php_source.html#l00177">get_cache_key_prefix()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00042">__construct()</a>.</p>
 
@@ -745,9 +798,9 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00522">522</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-cache_8php_source.html#l00015">$form_ids</a>, <a class="el" href="class-cache_8php_source.html#l00264">blacklist_remove()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>, and <a class="el" href="class-cache_8php_source.html#l00287">in_blacklist()</a>.</p>
+<p class="reference">References <a class="el" href="class-cache_8php_source.html#l00015">$form_ids</a>, <a class="el" href="class-cache_8php_source.html#l00262">blacklist_remove()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, and <a class="el" href="class-cache_8php_source.html#l00285">in_blacklist()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00322">get()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00320">get()</a>.</p>
 
 </div>
 </div>
@@ -800,7 +853,7 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00015">15</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00042">__construct()</a>, <a class="el" href="class-cache_8php_source.html#l00233">blacklist_add()</a>, <a class="el" href="class-cache_8php_source.html#l00264">blacklist_remove()</a>, <a class="el" href="class-cache_8php_source.html#l00397">delete()</a>, <a class="el" href="class-cache_8php_source.html#l00179">get_cache_key_prefix()</a>, <a class="el" href="class-cache_8php_source.html#l00287">in_blacklist()</a>, and <a class="el" href="class-cache_8php_source.html#l00522">use_cache()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00042">__construct()</a>, <a class="el" href="class-cache_8php_source.html#l00231">blacklist_add()</a>, <a class="el" href="class-cache_8php_source.html#l00262">blacklist_remove()</a>, <a class="el" href="class-cache_8php_source.html#l00397">delete()</a>, <a class="el" href="class-cache_8php_source.html#l00177">get_cache_key_prefix()</a>, <a class="el" href="class-cache_8php_source.html#l00285">in_blacklist()</a>, and <a class="el" href="class-cache_8php_source.html#l00522">use_cache()</a>.</p>
 
 </div>
 </div>
@@ -826,7 +879,7 @@ DelxtransCleaners::clearBlogExpired() </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-cache_8php_source.html#l00029">29</a> of file <a class="el" href="class-cache_8php_source.html">class-cache.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00397">delete()</a>, <a class="el" href="class-cache_8php_source.html#l00322">get()</a>, <a class="el" href="class-cache_8php_source.html#l00220">get_key()</a>, and <a class="el" href="class-cache_8php_source.html#l00199">set_key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-cache_8php_source.html#l00397">delete()</a>, <a class="el" href="class-cache_8php_source.html#l00320">get()</a>, <a class="el" href="class-cache_8php_source.html#l00218">get_key()</a>, and <a class="el" href="class-cache_8php_source.html#l00197">set_key()</a>.</p>
 
 </div>
 </div>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9</span>
+   &#160;<span id="projectnumber">2.9.2</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -81,7 +81,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6c7690785b5d237aa9d38866c37efa1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add "Edit Link Text" setting to the edit_link field settings.  <a href="#a6c7690785b5d237aa9d38866c37efa1c">More...</a><br /></td></tr>
 <tr class="separator:a6c7690785b5d237aa9d38866c37efa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c68499d2ff29848fda40ab1b26d39b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___admin.html#a5c68499d2ff29848fda40ab1b26d39b8">field_options</a> ( $field_options, $template_id, $field_id, $context, $input_type, $form_id)</td></tr>
-<tr class="memdesc:a5c68499d2ff29848fda40ab1b26d39b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manipulate the fields' options for the EDIT ENTRY screen.  <a href="#a5c68499d2ff29848fda40ab1b26d39b8">More...</a><br /></td></tr>
+<tr class="memdesc:a5c68499d2ff29848fda40ab1b26d39b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add "Edit Link Text" setting to the edit_link field settings.  <a href="#a5c68499d2ff29848fda40ab1b26d39b8">More...</a><br /></td></tr>
 <tr class="separator:a5c68499d2ff29848fda40ab1b26d39b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dcaa8f72c8423d4de25a9e87fa6f3e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___edit___entry___admin.html#a4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a> ()</td></tr>
 <tr class="separator:a4dcaa8f72c8423d4de25a9e87fa6f3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,17 +220,17 @@ Protected Attributes</h2></td></tr>
 <p>Add "Edit Link Text" setting to the edit_link field settings. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">[type]</td><td>$field_options [description] </td></tr>
-    <tr><td class="paramname">[type]</td><td>$template_id [description] </td></tr>
-    <tr><td class="paramname">[type]</td><td>$field_id [description] </td></tr>
-    <tr><td class="paramname">[type]</td><td>$context [description] </td></tr>
-    <tr><td class="paramname">[type]</td><td>$input_type [description] </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$field_options</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$template_id</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$field_id</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$input_type</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[type] [description] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array $field_options, with "Edit Link Text" field option </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-admin_8php_source.html#l00129">129</a> of file <a class="el" href="class-edit-entry-admin_8php_source.html">class-edit-entry-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-admin_8php_source.html#l00131">131</a> of file <a class="el" href="class-edit-entry-admin_8php_source.html">class-edit-entry-admin.php</a>.</p>
 
 </div>
 </div>
@@ -284,21 +284,22 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Manipulate the fields' options for the EDIT ENTRY screen. </p>
+<p>Add "Edit Link Text" setting to the edit_link field settings. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">[type]</td><td>$field_options [description] </td></tr>
-    <tr><td class="paramname">[type]</td><td>$template_id [description] </td></tr>
-    <tr><td class="paramname">[type]</td><td>$field_id [description] </td></tr>
-    <tr><td class="paramname">[type]</td><td>$context [description] </td></tr>
-    <tr><td class="paramname">[type]</td><td>$input_type [description] </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$field_options</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$template_id</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$field_id</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$input_type</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[type] [description] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array $field_options, with added field options </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.8.4</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-admin_8php_source.html#l00174">174</a> of file <a class="el" href="class-edit-entry-admin_8php_source.html">class-edit-entry-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-admin_8php_source.html#l00179">179</a> of file <a class="el" href="class-edit-entry-admin_8php_source.html">class-edit-entry-admin.php</a>.</p>
 
 <p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00121">GravityView_Render_Settings\get_cap_choices()</a>.</p>
 
@@ -410,7 +411,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Modified tooltips </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-admin_8php_source.html#l00153">153</a> of file <a class="el" href="class-edit-entry-admin_8php_source.html">class-edit-entry-admin.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-admin_8php_source.html#l00155">155</a> of file <a class="el" href="class-edit-entry-admin_8php_source.html">class-edit-entry-admin.php</a>.</p>
 
 </div>
 </div>
@@ -442,7 +443,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-edit-entry-admin_8php_source.html#l00059">59</a> of file <a class="el" href="class-edit-entry-admin_8php_source.html">class-edit-entry-admin.php</a>.</p>
 
-<p class="reference">References <a class="el" href="edit-entry_8php_source.html#l00010">$current_settings</a>.</p>
+<p class="reference">References <a class="el" href="edit-entry_8php_source.html#l00010">$current_settings</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00305">GravityView_Render_Settings\render_setting_row()</a>.</p>
 
 </div>
 </div>

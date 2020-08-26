@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9</span>
+   &#160;<span id="projectnumber">2.9.2</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -381,7 +381,24 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd>get_plugins()}</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>array {  array $download_info  string $plugin_path  string $status License status returned by Easy Digital Downloads ("active", "inactive", "expired", "revoked", etc)  string $status_label  string $button_title Title attribute to show when hovering over the download's button  string $button_class CSS class to use for the button  string $button_label Text to use for the download's anchor link  string $href URL for the download's button  bool $spinner Whether to show the spinner icon  string $item_class CSS class for the download container  string $required_license The name of the required license for the download ("All Access" or "Core + Extensions")  bool $is_active Is the current <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> license (as entered in Settings) active? } </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array { </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$download_info</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$plugin_path</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$status</td><td>License status returned by Easy Digital Downloads ("active", "inactive", "expired", "revoked", etc) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$status_label</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$button_title</td><td>Title attribute to show when hovering over the download's button </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$button_class</td><td>CSS class to use for the button </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$button_label</td><td>Text to use for the download's anchor link </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$href</td><td>URL for the download's button </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$spinner</td><td>Whether to show the spinner icon </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$item_class</td><td>CSS class for the download container </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$required_license</td><td>The name of the required license for the download ("All Access" or "Core + Extensions") </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$is_active</td><td>Is the current <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> license (as entered in Settings) active? } </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00407">407</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
@@ -407,7 +424,44 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get downloads data from transient or from API; save transient after getting data from API. </p>
-<dl class="section return"><dt>Returns</dt><dd>WP_Error|array If error, returns WP_Error. If not valid JSON, empty array. Otherwise, this structure: {  array $info {  string $id int 17  string $slug Extension slug  string $title Extension title  string $create_date in '2018-07-19 20:03:10' format  string $modified_date  string $status  string $link URL to public plugin page  string $content  string $excerpt  string $thumbnail URL to thumbnail  array $category Taxonomy details for the plugin's category {  int $term_id =&gt; int 30  string $name =&gt; string 'Plugins' (length=7)  string $slug =&gt; string 'plugins' (length=7)  int $term_group =&gt; int 0  int $term_taxonomy_id =&gt; int 30  string $taxonomy =&gt; string 'download_category' (length=17)  string $description =&gt; string '' (length=0)  int $parent =&gt; int 0  int $count =&gt; int 4  string $filter =&gt; string 'raw' (length=3) }  array $tags {see $category above}  string $textdomain string 'gravityview' (length=11) }  array $pricing array of <code>price_name_slugs</code> =&gt; '00.00' values, if price options exist  array $licensing {  bool $enabled Is licensing enabled for the extension  string $version Version number  string $exp_unit Expiration unit ('years')  string $exp_length Expiration length ('1') }  array $files Array of files. Empty if user has no access to the file. {  string $file string URL of the file download } } </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>WP_Error|array If error, returns WP_Error. If not valid JSON, empty array. Otherwise, this structure: { </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$info</td><td>{ </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$id</td><td>int 17 </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td>Extension slug </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$title</td><td>Extension title </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$create_date</td><td>in '2018-07-19 20:03:10' format </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$modified_date</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$status</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$link</td><td>URL to public plugin page </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$content</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$excerpt</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$thumbnail</td><td>URL to thumbnail </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$category</td><td>Taxonomy details for the plugin's category { </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$term_id</td><td>=&gt; int 30 </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>=&gt; string 'Plugins' (length=7) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td>=&gt; string 'plugins' (length=7) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$term_group</td><td>=&gt; int 0 </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$term_taxonomy_id</td><td>=&gt; int 30 </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$taxonomy</td><td>=&gt; string 'download_category' (length=17) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$description</td><td>=&gt; string '' (length=0) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$parent</td><td>=&gt; int 0 </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$count</td><td>=&gt; int 4 </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$filter</td><td>=&gt; string 'raw' (length=3) } </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$tags</td><td>{see $category above} </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$textdomain</td><td>string 'gravityview' (length=11) } </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$pricing</td><td>array of <code>price_name_slugs</code> =&gt; '00.00' values, if price options exist </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$licensing</td><td>{ </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$enabled</td><td>Is licensing enabled for the extension </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>Version number </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$exp_unit</td><td>Expiration unit ('years') </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$exp_length</td><td>Expiration length ('1') } </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td>Array of files. Empty if user has no access to the file. { </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$file</td><td>string URL of the file download } } </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00203">203</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
@@ -441,7 +495,15 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get an array of plugins with textdomains as keys. </p>
-<dl class="section return"><dt>Returns</dt><dd>array {  string $path Path to the plugin  string $version What version is the plugin  bool $activated Is the plugin activated } </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array { </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>Path to the plugin </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>What version is the plugin </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$activated</td><td>Is the plugin activated } </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00139">139</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 

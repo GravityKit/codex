@@ -22,6 +22,7 @@ var searchData=
   ['update_5fsearch_5fon_5fviews',['update_search_on_views',['../class_gravity_view___migrate.html#a52a42f538cebb43c54fa4621b0039974',1,'GravityView_Migrate']]],
   ['update_5fsettings',['update_settings',['../class_gravity_view___migrate.html#a5b6d2cc99b743a7896d6411473c1832c',1,'GravityView_Migrate']]],
   ['update_5fsub_5fitem',['update_sub_item',['../class_g_v_1_1_r_e_s_t_1_1_route.html#a4e8a29e3e011bf6e247342a5623bfc4b',1,'GV::REST::Route']]],
+  ['update_5fuser',['update_user',['../class_gravity_view___edit___entry___user___registration.html#a2b7e1945fb34f26eb316743a1ee38b6c',1,'GravityView_Edit_Entry_User_Registration']]],
   ['update_5fuser_5fmeta_5fvalue',['update_user_meta_value',['../class_gravity_view___support___port.html#a41329580b1f215bcb73fdf7147c19059',1,'GravityView_Support_Port']]],
   ['url',['url',['../class_g_v_1_1_plugin.html#a10aa35508e36f068262d8222a4e0c4bf',1,'GV::Plugin']]],
   ['use_5fcache',['use_cache',['../class_gravity_view___cache.html#a9db8b64d6cf48f0b2d46439fefc9d566',1,'GravityView_Cache']]],

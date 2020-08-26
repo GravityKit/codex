@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9</span>
+   &#160;<span id="projectnumber">2.9.2</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -89,6 +89,9 @@ Inheritance diagram for Entry_Table_Template:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a71f4ee7297e3181c435079d92c7db517"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_entry___table___template.html#a71f4ee7297e3181c435079d92c7db517">the_entry</a> ()</td></tr>
+<tr class="memdesc:a71f4ee7297e3181c435079d92c7db517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Out the single entry table body.  <a href="#a71f4ee7297e3181c435079d92c7db517">More...</a><br /></td></tr>
+<tr class="separator:a71f4ee7297e3181c435079d92c7db517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a9957fbfe9193af2a1ba4808ddd5839"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_entry___table___template.html#a2a9957fbfe9193af2a1ba4808ddd5839">the_field</a> (\<a class="el" href="class_g_v_1_1_field.html">GV\Field</a> $field)</td></tr>
 <tr class="memdesc:a2a9957fbfe9193af2a1ba4808ddd5839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output a field cell.  <a href="#a2a9957fbfe9193af2a1ba4808ddd5839">More...</a><br /></td></tr>
 <tr class="separator:a2a9957fbfe9193af2a1ba4808ddd5839"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +163,70 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-template-entry-table_8php_source.html#l00014">14</a> of file <a class="el" href="class-gv-template-entry-table_8php_source.html">class-gv-template-entry-table.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a71f4ee7297e3181c435079d92c7db517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f4ee7297e3181c435079d92c7db517">&#9670;&nbsp;</a></span>the_entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">the_entry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Out the single entry table body. </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\Field_Collection</td><td class="paramname">$fields</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000042">Runs Filter:</a></b></dt><dd><code>gravityview_table_cells</code> Modify the fields displayed in a table </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$fields</td><td></td></tr>
+    <tr><td class="paramtype">\GravityView_View</td><td class="paramname">$this</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000043">Runs Filter:</a></b></dt><dd><code>gravityview/template/table/fields</code> Modify the fields displayed in this tables. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\Field_Collection</td><td class="paramname">$fields</td><td>The fields. </td></tr>
+    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$context</td><td>The context. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.0</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000044">Runs Filter:</a></b></dt><dd><code>gravityview/template/field/label</code> Override the field label. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$column_label</td><td>The label to override. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramtype">\GV\Template_Context</td><td class="paramname">$context</td><td>The context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000045">Runs Filter:</a></b></dt><dd><code>gravityview/template/table/entry/hide_empty</code> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">boolean</td><td class="paramname">$hide_empty</td><td>Should the row be hidden if the value is empty? Default: don't hide. </td></tr>
+    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$context</td><td>The context ;) Love it, cherish it. And don't you dare modify it!</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-template-entry-table_8php_source.html#l00039">39</a> of file <a class="el" href="class-gv-template-entry-table_8php_source.html">class-gv-template-entry-table.php</a>.</p>
+
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00041">GF_Form\by_id()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="class-api_8php_source.html#l01364">gravityview_field_output()</a>.</p>
+
+</div>
+</div>
 <a id="a2a9957fbfe9193af2a1ba4808ddd5839"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a9957fbfe9193af2a1ba4808ddd5839">&#9670;&nbsp;</a></span>the_field()</h2>
 
@@ -186,8 +253,6 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>string|false The field output or false if "hide_empty" is set. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-template-entry-table_8php_source.html#l00027">27</a> of file <a class="el" href="class-gv-template-entry-table_8php_source.html">class-gv-template-entry-table.php</a>.</p>
-
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00041">GF_Form\by_id()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="class-api_8php_source.html#l01368">gravityview_field_output()</a>.</p>
 
 </div>
 </div>

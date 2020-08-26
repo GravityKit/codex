@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9</span>
+   &#160;<span id="projectnumber">2.9.2</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -171,14 +171,18 @@ Static Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$localization_data</td><td>{  int $contactEnabled Can the user contact support?  array $data Support/license info  array $translation i18n strings  array $suggest Article IDs to recommend to the user (per page in the admin }</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$localization_data</td><td>{ </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$contactEnabled</td><td>Can the user contact support? </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>Support/license info </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$translation</td><td>i18n strings </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$suggest</td><td>Article IDs to recommend to the user (per page in the admin }</td></tr>
   </table>
   </dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00135">135</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-plugin_8php_source.html#l00024">Plugin\$version</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-plugin_8php_source.html#l00024">Plugin\$version</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -267,7 +271,10 @@ Static Private Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$tooltip</td><td>HTML of original tooltip </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$article</td><td>Optional. Details about support doc article connected to the tooltip. {  string $id Unique ID of article for Beacon API  string $url URL of support doc article  string $type Type of Beacon element to open. {</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$article</td><td>Optional. Details about support doc article connected to the tooltip. { </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$id</td><td>Unique ID of article for Beacon API </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$url</td><td>URL of support doc article </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Type of Beacon element to open. {</td></tr>
   </table>
   </dd>
 </dl>
@@ -369,9 +376,9 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Whether to show <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> support port </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00263">263</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00264">264</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
 
-<p class="reference">References <a class="el" href="field-created__by-html_8php_source.html#l00023">$user</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="field-created__by-html_8php_source.html#l00023">$user</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -401,7 +408,7 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00296">296</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00297">297</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
 
 </div>
 </div>
@@ -443,9 +450,9 @@ Static Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00314">314</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-support-port_8php_source.html#l00315">315</a> of file <a class="el" href="class-gravityview-support-port_8php_source.html">class-gravityview-support-port.php</a>.</p>
 
-<p class="reference">References <a class="el" href="field-created__by-html_8php_source.html#l00023">$user</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00058">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="field-created__by-html_8php_source.html#l00023">$user</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
