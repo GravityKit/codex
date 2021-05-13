@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -65,7 +65,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Admin_View_Item Class Reference</div>  </div>
 </div><!--header-->
@@ -120,6 +121,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:af0609f478a24fa082443aef22a0636d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada57e7bb7c152edad18fe2f166188691"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___view___item.html#ada57e7bb7c152edad18fe2f166188691">$title</a></td></tr>
 <tr class="separator:ada57e7bb7c152edad18fe2f166188691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a362a319e8837c00c4a7ee4fe3289abde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___view___item.html#a362a319e8837c00c4a7ee4fe3289abde">get_indicator_icons</a> ()</td></tr>
+<tr class="memdesc:a362a319e8837c00c4a7ee4fe3289abde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns array of item icons used to represent field settings state.  <a href="#a362a319e8837c00c4a7ee4fe3289abde">More...</a><br /></td></tr>
+<tr class="separator:a362a319e8837c00c4a7ee4fe3289abde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A field or widget in <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> view configuration. </p>
@@ -172,7 +179,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00047">47</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00045">$form_id</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00035">$item</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00040">$settings</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00015">$title</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00045">$form_id</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00035">$item</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00040">$settings</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00015">$title</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
 
 </div>
 </div>
@@ -195,9 +202,9 @@ Protected Attributes</h2></td></tr>
 <p>When echoing this class, print the HTML output. </p>
 <dl class="section return"><dt>Returns</dt><dd>string HTML output of the class </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00085">85</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00086">86</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00149">getOutput()</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00150">getOutput()</a>.</p>
 
 </div>
 </div>
@@ -227,9 +234,42 @@ Protected Attributes</h2></td></tr>
 <p>Overridden by child classes. </p>
 <dl class="section return"><dt>Returns</dt><dd>array Array of content with arrays for each item. Those arrays have <code>value</code>, <code>label</code> and (optional) <code>class</code> keys </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00094">94</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00095">95</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00105">get_item_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00106">get_item_info()</a>.</p>
+
+</div>
+</div>
+<a id="a362a319e8837c00c4a7ee4fe3289abde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362a319e8837c00c4a7ee4fe3289abde">&#9670;&nbsp;</a></span>get_indicator_icons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_indicator_icons </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns array of item icons used to represent field settings state. </p>
+<p>Has <code>gravityview/admin/indicator_icons</code> filter for other components to modify displayed icons.</p>
+<dl class="section since"><dt>Since</dt><dd>2.9.5</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string HTML output of icons </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000103">Runs Filter:</a></b></dt><dd><code>gravityview/admin/indicator_icons</code> Modify the icon output to add additional indicator icons </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00251">251</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
 
 </div>
 </div>
@@ -266,7 +306,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string|null If empty, return null. Otherwise, return output HTML/text. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000101">Runs Filter:</a></b></dt><dd><code>gravityview_admin_label_item_info</code> Tap in to modify the field information displayed next to an item</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000102">Runs Filter:</a></b></dt><dd><code>gravityview_admin_label_item_info</code> Tap in to modify the field information displayed next to an item</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$field_info_items</td><td>Additional information to display in a field </td></tr>
@@ -275,11 +315,9 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00105">105</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00106">106</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
 
-<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00035">$item</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00094">additional_info()</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00149">getOutput()</a>.</p>
+<p class="reference">References <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00035">$item</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00095">additional_info()</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
 
 </div>
 </div>
@@ -301,11 +339,11 @@ Protected Attributes</h2></td></tr>
 <p>Generate HTML for field or a widget modal. </p>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00149">149</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00150">150</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00036">$container_class</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00015">$title</a>, and <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00105">get_item_info()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00015">$title</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, <a class="el" href="class-common_8php_source.html#l00027">GVCommon\get_form()</a>, and <a class="el" href="connector-functions_8php_source.html#l00148">gravityview_get_field()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00085">__toString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00086">__toString()</a>.</p>
 
 </div>
 </div>
@@ -382,7 +420,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00035">35</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00047">__construct()</a>, and <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00105">get_item_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00047">__construct()</a>, and <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00106">get_item_info()</a>.</p>
 
 </div>
 </div>
@@ -482,7 +520,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00015">15</a> of file <a class="el" href="class-gravityview-admin-view-item_8php_source.html">class-gravityview-admin-view-item.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00047">__construct()</a>, and <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00149">getOutput()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00047">__construct()</a>, and <a class="el" href="class-gravityview-admin-view-item_8php_source.html#l00150">getOutput()</a>.</p>
 
 </div>
 </div>

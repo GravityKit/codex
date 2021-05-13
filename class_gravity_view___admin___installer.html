@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a>  </div>
@@ -113,6 +114,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a23bc33b7b2dc5c9487aa171d879c9a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save downloads data in a time-bound transient.  <a href="#a23bc33b7b2dc5c9487aa171d879c9a3a">More...</a><br /></td></tr>
 <tr class="separator:a23bc33b7b2dc5c9487aa171d879c9a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1208a66d15adc4d16a47589678c9b713"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___installer.html#a1208a66d15adc4d16a47589678c9b713">get_wp_plugins_data</a> ( $textdomain=null)</td></tr>
+<tr class="memdesc:a1208a66d15adc4d16a47589678c9b713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an array of plugins with textdomains as keys.  <a href="#a1208a66d15adc4d16a47589678c9b713">More...</a><br /></td></tr>
+<tr class="separator:a1208a66d15adc4d16a47589678c9b713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a2ba4d050ccac28174601edeee254b92b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___installer.html#a2ba4d050ccac28174601edeee254b92b">$minimum_capability</a> = 'install_plugins'</td></tr>
@@ -130,9 +137,6 @@ Data Fields</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa0836059698178c72c6435b6b247ae05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___installer.html#aa0836059698178c72c6435b6b247ae05">get_wp_plugins_data</a> ()</td></tr>
-<tr class="memdesc:aa0836059698178c72c6435b6b247ae05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an array of plugins with textdomains as keys.  <a href="#aa0836059698178c72c6435b6b247ae05">More...</a><br /></td></tr>
-<tr class="separator:aa0836059698178c72c6435b6b247ae05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ef9bbdd3883019ad7e77c100b51c944"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___installer.html#a0ef9bbdd3883019ad7e77c100b51c944">render_download</a> ( $download, $wp_plugins)</td></tr>
 <tr class="memdesc:a0ef9bbdd3883019ad7e77c100b51c944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the HTML of a single download.  <a href="#a0ef9bbdd3883019ad7e77c100b51c944">More...</a><br /></td></tr>
 <tr class="separator:a0ef9bbdd3883019ad7e77c100b51c944"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +149,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a55adacab81f8de5ca6ab068c01856e48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___installer.html#a55adacab81f8de5ca6ab068c01856e48">get_download_display_details</a> ( $download, $wp_plugins)</td></tr>
 <tr class="memdesc:a55adacab81f8de5ca6ab068c01856e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates details array for the download to keep the <a class="el" href="class_gravity_view___admin___installer.html#a0ef9bbdd3883019ad7e77c100b51c944" title="Outputs the HTML of a single download. ">render_download()</a> method a bit tidier.  <a href="#a55adacab81f8de5ca6ab068c01856e48">More...</a><br /></td></tr>
 <tr class="separator:a55adacab81f8de5ca6ab068c01856e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06ada3b5fee0893ce782768368bc80d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___admin___installer.html#ad06ada3b5fee0893ce782768368bc80d">render_section</a> ( $section_slug, $heading, $downloads_data, $wp_plugins=array())</td></tr>
+<tr class="memdesc:ad06ada3b5fee0893ce782768368bc80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders each category of download (Add-Ons, Extensions, Layouts)  <a href="#ad06ada3b5fee0893ce782768368bc80d">More...</a><br /></td></tr>
+<tr class="separator:ad06ada3b5fee0893ce782768368bc80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_gravity_view___admin___installer.html" title="GravityView_Admin_Installer Class. ">GravityView_Admin_Installer</a> Class. </p>
@@ -193,7 +200,7 @@ Private Member Functions</h2></td></tr>
 <p>Handle AJAX request to activate extension. </p>
 <dl class="section return"><dt>Returns</dt><dd>void Exits with JSON response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00535">535</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00585">585</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-utils_8php_source.html#l00033">Utils\_POST()</a>.</p>
 
@@ -241,6 +248,8 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00067">67</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
+<p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00033">__construct()</a>.</p>
 
 </div>
@@ -263,7 +272,7 @@ Private Member Functions</h2></td></tr>
 <p>Handle AJAX request to deactivate extension. </p>
 <dl class="section return"><dt>Returns</dt><dd>void Send JSON response status and error message </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00558">558</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00608">608</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-utils_8php_source.html#l00033">Utils\_POST()</a>.</p>
 
@@ -287,7 +296,7 @@ Private Member Functions</h2></td></tr>
 <p>Delete downloads data transient. </p>
 <dl class="section return"><dt>Returns</dt><dd>bool true if successful, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00264">264</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00269">269</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
 </div>
 </div>
@@ -324,11 +333,11 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>float Base price for an extension. If not for sale separately, returns 0 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00515">515</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00565">565</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00407">get_download_display_details()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00450">get_download_display_details()</a>.</p>
 
 </div>
 </div>
@@ -367,6 +376,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates details array for the download to keep the <a class="el" href="class_gravity_view___admin___installer.html#a0ef9bbdd3883019ad7e77c100b51c944" title="Outputs the HTML of a single download. ">render_download()</a> method a bit tidier. </p>
+<dl class="section since"><dt>Since</dt><dd>2.10 Allow managing installed add-ons whether or not the user's license shows they have access.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$download</td><td>Single download, as returned by {</td></tr>
@@ -400,11 +410,11 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00407">407</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00450">450</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00018">$href</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, <a class="el" href="class-admin-installer_8php_source.html#l00515">get_download_base_price()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00023">$href</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, <a class="el" href="class-admin-installer_8php_source.html#l00565">get_download_base_price()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00342">render_download()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00382">render_download()</a>.</p>
 
 </div>
 </div>
@@ -463,16 +473,16 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00203">203</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00208">208</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-admin-installer_8php_source.html#l00255">set_downloads_data()</a>.</p>
+<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-admin-installer_8php_source.html#l00260">set_downloads_data()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00275">render_screen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00280">render_screen()</a>.</p>
 
 </div>
 </div>
-<a id="aa0836059698178c72c6435b6b247ae05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0836059698178c72c6435b6b247ae05">&#9670;&nbsp;</a></span>get_wp_plugins_data()</h2>
+<a id="a1208a66d15adc4d16a47589678c9b713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1208a66d15adc4d16a47589678c9b713">&#9670;&nbsp;</a></span>get_wp_plugins_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,33 +491,43 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">get_wp_plugins_data </td>
+          <td class="memname">static get_wp_plugins_data </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$textdomain</em> = <code>null</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Get an array of plugins with textdomains as keys. </p>
+<dl class="section since"><dt>Since</dt><dd>2.1 </dd>
+<dd>
+2.10 Added $textdomain argument. Converted to static method. Made method public (from protected).</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$textdomain</td><td>If set, only return plugins that have a matching textdomain.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>array { </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>Path to the plugin </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>What version is the plugin </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$activated</td><td>Is the plugin activated } </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>Path to the plugin. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>What version is the plugin. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$activated</td><td>Is the plugin activated. } </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00139">139</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00144">144</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00275">render_screen()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>.</p>
 
 </div>
 </div>
@@ -529,7 +549,7 @@ Private Member Functions</h2></td></tr>
 <p>Register and enqueue assets; localize script. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00581">581</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00631">631</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
 <p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="gravityview_8php_source.html#l00036">GRAVITYVIEW_URL</a>.</p>
 
@@ -639,11 +659,11 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00342">342</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00382">382</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, and <a class="el" href="class-admin-installer_8php_source.html#l00407">get_download_display_details()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, and <a class="el" href="class-admin-installer_8php_source.html#l00450">get_download_display_details()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00275">render_screen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00348">render_section()</a>.</p>
 
 </div>
 </div>
@@ -666,9 +686,82 @@ Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.1</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00275">275</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00280">280</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, <a class="el" href="class-admin-installer_8php_source.html#l00203">get_downloads_data()</a>, <a class="el" href="class-admin-installer_8php_source.html#l00139">get_wp_plugins_data()</a>, and <a class="el" href="class-admin-installer_8php_source.html#l00342">render_download()</a>.</p>
+<p class="reference">References <a class="el" href="class-admin-installer_8php_source.html#l00208">get_downloads_data()</a>, and <a class="el" href="class-admin-installer_8php_source.html#l00348">render_section()</a>.</p>
+
+</div>
+</div>
+<a id="ad06ada3b5fee0893ce782768368bc80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad06ada3b5fee0893ce782768368bc80d">&#9670;&nbsp;</a></span>render_section()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">render_section </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$section_slug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$heading</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$downloads_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$wp_plugins</em> = <code>array()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Renders each category of download (Add-Ons, Extensions, Layouts) </p>
+<dl class="section since"><dt>Since</dt><dd>2.10</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$section_slug</td><td>The slug to display downloads from (based on the category slug on gravityview.co) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$heading</td><td>The section heading text ("GravityView Layouts", "GravityView Extensions", "Gravity Forms Add-Ons") </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$downloads_data</td><td>Downloads data from gravityview.co EDD API {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___admin___installer.html#a738393099f897f188de590c345918cfd" title="Get downloads data from transient or from API; save transient after getting data from API...">get_downloads_data</a>} </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$wp_plugins</td><td>All active plugins, as returned by {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>()} </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00348">348</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+
+<p class="reference">References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, and <a class="el" href="class-admin-installer_8php_source.html#l00382">render_download()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00280">render_screen()</a>.</p>
 
 </div>
 </div>
@@ -697,9 +790,9 @@ Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successful, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00255">255</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-admin-installer_8php_source.html#l00260">260</a> of file <a class="el" href="class-admin-installer_8php_source.html">class-admin-installer.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00203">get_downloads_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00208">get_downloads_data()</a>.</p>
 
 </div>
 </div>

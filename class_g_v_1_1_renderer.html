@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -68,7 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Renderer Class Reference</div>  </div>
 </div><!--header-->
@@ -100,9 +101,21 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a896959420cb5211d39207376160cc90f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_renderer.html#a896959420cb5211d39207376160cc90f">maybe_print_notices</a> ( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>=null)</td></tr>
+<tr class="memitem:a896959420cb5211d39207376160cc90f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_renderer.html#a896959420cb5211d39207376160cc90f">maybe_print_notices</a> ( $<a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html">gravityview</a>=null)</td></tr>
 <tr class="memdesc:a896959420cb5211d39207376160cc90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print unconfigured notices to admins.  <a href="#a896959420cb5211d39207376160cc90f">More...</a><br /></td></tr>
 <tr class="separator:a896959420cb5211d39207376160cc90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ac37ad8bfacf6d450149ea9c62c3f964f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_renderer.html#ac37ad8bfacf6d450149ea9c62c3f964f">maybe_print_configuration_notice</a> ( $<a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html">gravityview</a>)</td></tr>
+<tr class="memdesc:ac37ad8bfacf6d450149ea9c62c3f964f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check empty configuration.  <a href="#ac37ad8bfacf6d450149ea9c62c3f964f">More...</a><br /></td></tr>
+<tr class="separator:ac37ad8bfacf6d450149ea9c62c3f964f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c6b240153ac1ad0c6b9e29b831c8ea"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_renderer.html#a88c6b240153ac1ad0c6b9e29b831c8ea">maybe_print_entry_approval_notice</a> ( $<a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html">gravityview</a>)</td></tr>
+<tr class="memdesc:a88c6b240153ac1ad0c6b9e29b831c8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print notice warning admins that "Show only approved" is enabled.  <a href="#a88c6b240153ac1ad0c6b9e29b831c8ea">More...</a><br /></td></tr>
+<tr class="separator:a88c6b240153ac1ad0c6b9e29b831c8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2515602cd8aa166549d384f611503719"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_renderer.html#a2515602cd8aa166549d384f611503719">maybe_print_reserved_slugs_notice</a> ( $<a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html">gravityview</a>)</td></tr>
+<tr class="memdesc:a2515602cd8aa166549d384f611503719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print reserved slug warnings, if they exist.  <a href="#a2515602cd8aa166549d384f611503719">More...</a><br /></td></tr>
+<tr class="separator:a2515602cd8aa166549d384f611503719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>If this file is called directly, abort. </p>
@@ -170,7 +183,87 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A closure used in the filter. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00130">130</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00253">253</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+
+</div>
+</div>
+<a id="ac37ad8bfacf6d450149ea9c62c3f964f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37ad8bfacf6d450149ea9c62c3f964f">&#9670;&nbsp;</a></span>maybe_print_configuration_notice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static maybe_print_configuration_notice </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$gravityview</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check empty configuration. </p>
+<dl class="section since"><dt>Since</dt><dd>2.10</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$gravityview</td><td>The $gravityview template object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00151">151</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+
+<p class="reference">References <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, and <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>.</p>
+
+</div>
+</div>
+<a id="a88c6b240153ac1ad0c6b9e29b831c8ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c6b240153ac1ad0c6b9e29b831c8ea">&#9670;&nbsp;</a></span>maybe_print_entry_approval_notice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static maybe_print_entry_approval_notice </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$gravityview</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print notice warning admins that "Show only approved" is enabled. </p>
+<dl class="section since"><dt>Since</dt><dd>2.9.5</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$gravityview</td><td>The $gravityview template object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00056">56</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00028">GravityView_Entry_Approval_Status\APPROVED</a>, and <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>.</p>
 
 </div>
 </div>
@@ -199,7 +292,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Print unconfigured notices to admins. </p>
-<p>Print reserved slug warnings.</p>
+<p>Print reserved slug warnings. Print entry approval notice.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$gravityview</td><td>The $gravityview template object.</td></tr>
@@ -207,8 +300,47 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<p>Call the legacy code.</p>
-<p>Check reserved slugs.</p>
+<p>Call the legacy code. </p>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00033">33</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-api_8php_source.html#l01296">gravityview_get_view_id()</a>.</p>
+
+</div>
+</div>
+<a id="a2515602cd8aa166549d384f611503719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2515602cd8aa166549d384f611503719">&#9670;&nbsp;</a></span>maybe_print_reserved_slugs_notice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static maybe_print_reserved_slugs_notice </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$gravityview</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print reserved slug warnings, if they exist. </p>
+<dl class="section since"><dt>Since</dt><dd>2.9.5</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="class_g_v_1_1_template___context.html" title="If this file is called directly, abort. ">Template_Context</a></td><td class="paramname">$gravityview</td><td>The $gravityview template object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <dl class="filters"><dt><b><a class="el" href="filters.html#_filters000023">Runs Filter:</a></b></dt><dd><code>gravityview/rewrite/reserved_slugs</code> Modify the reserved embed slugs that trigger a warning. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -218,11 +350,10 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Check empty configuration.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00032">32</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00196">196</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
 
-<p class="reference">References <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>, and <a class="el" href="class-api_8php_source.html#l01228">gravityview_get_view_id()</a>.</p>
+<p class="reference">References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>

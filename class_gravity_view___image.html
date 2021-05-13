@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -182,7 +182,7 @@ Data Fields</h2></td></tr>
 
 <p>Return the HTML tag for the image. </p>
 <dl class="section return"><dt>Returns</dt><dd>string HTML of the image </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000212">Runs Filter:</a></b></dt><dd><code>gravityview_image_html</code> Filter the HTML image output </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000216">Runs Filter:</a></b></dt><dd><code>gravityview_image_html</code> Filter the HTML image output </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$html</td><td>the generated image html </td></tr>
@@ -233,7 +233,7 @@ Data Fields</h2></td></tr>
 
 <p>Get default widths and heights for image size. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000211">Runs Filter:</a></b></dt><dd><code>gravityview_image_sizes</code> Modify the image size presets used by <a class="el" href="class_gravity_view___image.html" title="Generic class for generating image tag. ">GravityView_Image</a> class </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000215">Runs Filter:</a></b></dt><dd><code>gravityview_image_sizes</code> Modify the image size presets used by <a class="el" href="class_gravity_view___image.html" title="Generic class for generating image tag. ">GravityView_Image</a> class </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$image_sizes</td><td>Array of image sizes with the key being the size slug, and the value being an array with <code>width</code> and <code>height</code> defined, in pixels</td></tr>
@@ -267,7 +267,7 @@ Data Fields</h2></td></tr>
 <p>Verify that the src URL matches image patterns. </p>
 <p>Yes, images can not have extensions, but this is a basic check. To disable this, set <code>validate_src</code> to false when instantiating the object.</p>
 <dl class="section return"><dt>Returns</dt><dd>boolean True: matches pattern; False: does not match pattern. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000210">Runs Filter:</a></b></dt><dd><code>gravityview_image_extensions</code> Extensions that <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> recognizes as valid images to be shown in an <code>img</code> tag </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000214">Runs Filter:</a></b></dt><dd><code>gravityview_image_extensions</code> Extensions that <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> recognizes as valid images to be shown in an <code>img</code> tag </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$image_exts</td><td>Default: `['jpg', 'jpeg', 'jpe', 'gif', 'png', 'bmp', 'tif', 'tiff', 'ico']`</td></tr>

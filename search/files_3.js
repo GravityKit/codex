@@ -4,6 +4,7 @@ var searchData=
   ['date_2ephp',['date.php',['../date_8php.html',1,'']]],
   ['date_5fcreated_2ephp',['date_created.php',['../date__created_8php.html',1,'']]],
   ['default_2dwidgets_2ephp',['default-widgets.php',['../default-widgets_8php.html',1,'']]],
+  ['delete_2dentry_2ephp',['delete-entry.php',['../delete-entry_8php.html',1,'']]],
   ['delete_5flink_2ephp',['delete_link.php',['../delete__link_8php.html',1,'']]],
   ['list_2dbody_2ephp',['list-body.php',['../deprecated_2list-body_8php.html',1,'']]],
   ['list_2dfooter_2ephp',['list-footer.php',['../deprecated_2list-footer_8php.html',1,'']]],

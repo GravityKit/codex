@@ -12,7 +12,7 @@ var searchData=
   ['update_5fbulk',['update_bulk',['../class_gravity_view___entry___approval.html#adb0e9feaae5fe0874d6d53b1f3468984',1,'GravityView_Entry_Approval']]],
   ['update_5fcalculation_5ffields',['update_calculation_fields',['../class_gravity_view___edit___entry___render.html#a86e2d627ac64bcfca92ac5be56e05a37',1,'GravityView_Edit_Entry_Render']]],
   ['update_5fconfiguration',['update_configuration',['../class_g_v_1_1_field.html#a929be8ba713fd1c3b6284b07d1c52bf3',1,'GV::Field']]],
-  ['update_5fentry_5fcreator',['update_entry_creator',['../class_gravity_view___change___entry___creator.html#a7130efbfc34ef0fe0a2e9d5b2b847a84',1,'GravityView_Change_Entry_Creator']]],
+  ['update_5fentry_5fcreator',['update_entry_creator',['../class_gravity_view___change___entry___creator.html#a5140de1009af4b80efed08fe78c3d83b',1,'GravityView_Change_Entry_Creator']]],
   ['update_5fitem',['update_item',['../class_g_v_1_1_r_e_s_t_1_1_route.html#a227fd31e84d5ed7862923b8d9ab62fa9',1,'GV::REST::Route']]],
   ['update_5fitem_5fpermissions_5fcheck',['update_item_permissions_check',['../class_g_v_1_1_r_e_s_t_1_1_route.html#a57a1f83020c7ab183f52b46b8c716826',1,'GV::REST::Route']]],
   ['update_5flock_5fmeta',['update_lock_meta',['../class_gravity_view___edit___entry___locking.html#a185bca3cb704b143cb129bdfe02fefb6',1,'GravityView_Edit_Entry_Locking']]],

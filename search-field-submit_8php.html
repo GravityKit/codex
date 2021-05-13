@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -77,14 +77,34 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a67e94494731d99ed23b123e95175bc10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-submit_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <a class="el" href="class-api_8php.html#ad79ca7bd3b4224a8bd7a3cecdc0c3c48">gv_get_query_args</a>()</td></tr>
+<tr class="separator:a67e94494731d99ed23b123e95175bc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add47a7f886e74847997a4044e9903a0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-submit_8php.html#add47a7f886e74847997a4044e9903a0a">$gravityview_view</a> = <a class="el" href="class_gravity_view___view.html#a675d8b1454543d5bcef330c3686aff61">GravityView_View::getInstance</a>()</td></tr>
 <tr class="separator:add47a7f886e74847997a4044e9903a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521fd441a5ad4952b00a1591a4d4590d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-submit_8php.html#a521fd441a5ad4952b00a1591a4d4590d">$view_id</a> = $gravityview_view-&gt;getViewId()</td></tr>
 <tr class="separator:a521fd441a5ad4952b00a1591a4d4590d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8b9574557ae9e579d52c070350ee991"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-submit_8php.html#ad8b9574557ae9e579d52c070350ee991">if</a> (isset($_GET[ 'page_size']))</td></tr>
-<tr class="separator:ad8b9574557ae9e579d52c070350ee991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6762ffd7f857b515147e5b835543f2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="search-field-submit_8php.html#ab6762ffd7f857b515147e5b835543f2f">foreach</a> ($args as $key=&gt; $value) = array_merge( $current_settings, $_directions )</td></tr>
+<tr class="separator:ab6762ffd7f857b515147e5b835543f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a67e94494731d99ed23b123e95175bc10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67e94494731d99ed23b123e95175bc10">&#9670;&nbsp;</a></span>$args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$args = <a class="el" href="class-api_8php.html#ad79ca7bd3b4224a8bd7a3cecdc0c3c48">gv_get_query_args</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="search-field-submit_8php_source.html#l00015">15</a> of file <a class="el" href="search-field-submit_8php_source.html">search-field-submit.php</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-admin-installer_8php_source.html#l00067">GravityView_Admin_Installer\add_downloads_data_filters()</a>, <a class="el" href="class-search-widget_8php_source.html#l00456">GravityView_Widget_Search\add_no_permalink_fields()</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00084">GravityView_Duplicate_Entry\add_reserved_arg()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00109">GravityView_Edit_Entry\add_reserved_arg()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00113">GravityView_Delete_Entry\add_reserved_arg()</a>, <a class="el" href="class-search-widget_8php_source.html#l00124">GravityView_Widget_Search\add_reserved_args()</a>, <a class="el" href="class-gv-shortcode-gventry_8php_source.html#l00027">gventry\callback()</a>, <a class="el" href="class-gv-shortcode-gvfield_8php_source.html#l00027">gvfield\callback()</a>, <a class="el" href="class-api_8php_source.html#l00392">GravityView_API\directory_link()</a>, <a class="el" href="class-api_8php_source.html#l00644">GravityView_API\entry_link()</a>, <a class="el" href="class-gravityview-html-elements_8php_source.html#l00068">GravityView_HTML_Elements\field_dropdown()</a>, <a class="el" href="class-search-widget_8php_source.html#l00567">GravityView_Widget_Search\filter_entries()</a>, <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00242">GravityView_Recent_Entries_Widget\form()</a>, <a class="el" href="class-gravityview-html-elements_8php_source.html#l00026">GravityView_HTML_Elements\form_dropdown()</a>, <a class="el" href="class-common_8php_source.html#l00981">GVCommon\format_date()</a>, <a class="el" href="class-gv-field_8php_source.html#l00144">Field\get()</a>, <a class="el" href="class-common_8php_source.html#l00094">GVCommon\get_all_views()</a>, <a class="el" href="class-common_8php_source.html#l01160">GVCommon\get_connected_views()</a>, <a class="el" href="class-data_8php_source.html#l00351">GravityView_View_Data\get_default_arg()</a>, <a class="el" href="class-gv-source-internal_8php_source.html#l00031">Internal_Source\get_field()</a>, <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00161">GF_Form\get_field()</a>, <a class="el" href="connector-functions_8php_source.html#l00361">get_gravityview()</a>, <a class="el" href="class-gv-entry_8php_source.html#l00107">Entry\get_permalink()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00868">GravityView_frontend\get_search_criteria()</a>, <a class="el" href="class-frontend-views_8php_source.html#l01078">GravityView_frontend\get_search_criteria_paging()</a>, <a class="el" href="class-admin-approve-entries_8php_source.html#l00529">GravityView_Admin_ApproveEntries\get_sort_link()</a>, <a class="el" href="class-common_8php_source.html#l01720">GVCommon\get_users()</a>, <a class="el" href="class-api_8php_source.html#l01262">gravityview_after()</a>, <a class="el" href="class-api_8php_source.html#l01175">gravityview_before()</a>, <a class="el" href="class-api_8php_source.html#l01432">gravityview_field_output()</a>, <a class="el" href="class-api_8php_source.html#l01233">gravityview_footer()</a>, <a class="el" href="__mocks_8php_source.html#l00069">GV\Mocks\GravityView_frontend_get_view_entries()</a>, <a class="el" href="connector-functions_8php_source.html#l00184">gravityview_get_connected_views()</a>, <a class="el" href="helper-functions_8php_source.html#l00081">gravityview_get_permalink_query_args()</a>, <a class="el" href="helper-functions_8php_source.html#l00577">gravityview_get_terms_choices()</a>, <a class="el" href="class-api_8php_source.html#l01204">gravityview_header()</a>, <a class="el" href="_e_d_d___s_l___plugin___updater_8php_source.html#l00403">EDD_SL_Plugin_Updater\http_request_args()</a>, <a class="el" href="class-gv-request-admin_8php_source.html#l00021">Admin_Request\is_admin()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00836">GravityView_frontend\is_entry_approved()</a>, <a class="el" href="class-gravityview-field-approval_8php_source.html#l00094">GravityView_Field_Entry_Approval\maybe_prevent_field_render()</a>, <a class="el" href="class-gravityview-roles-capabilities_8php_source.html#l00141">GravityView_Roles_Capabilities\members_register_cap_group()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00721">GravityView_frontend\process_search_dates()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00796">GravityView_frontend\process_search_only_approved()</a>, <a class="el" href="class-gv-view_8php_source.html#l00110">View\register_post_type()</a>, <a class="el" href="class_8render_8settings_8php_source.html#l00647">GravityView_Render_Settings\render_text_option()</a>, <a class="el" href="class_8render_8settings_8php_source.html#l00679">GravityView_Render_Settings\render_textarea_option()</a>, <a class="el" href="class-gv-view_8php_source.html#l01541">View\restrict()</a>, <a class="el" href="class-gravityview-html-elements_8php_source.html#l00110">GravityView_HTML_Elements\select()</a>, <a class="el" href="class-gv-template-view-table_8php_source.html#l00197">View_Table_Template\the_columns()</a>, <a class="el" href="class-gv-template-view-table_8php_source.html#l00361">View_Table_Template\the_field()</a>, <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">GravityView_Search_WP_Widget\widget()</a>, and <a class="el" href="class-gravityview-recent-entries-widget_8php_source.html#l00093">GravityView_Recent_Entries_Widget\widget()</a>.</p>
+
+</div>
+</div>
 <a id="add47a7f886e74847997a4044e9903a0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add47a7f886e74847997a4044e9903a0a">&#9670;&nbsp;</a></span>$gravityview_view</h2>
 
@@ -118,19 +138,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8b9574557ae9e579d52c070350ee991"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8b9574557ae9e579d52c070350ee991">&#9670;&nbsp;</a></span>if</h2>
+<a id="ab6762ffd7f857b515147e5b835543f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6762ffd7f857b515147e5b835543f2f">&#9670;&nbsp;</a></span>foreach</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">if(isset( $_GET['page_size']))</td>
+          <td class="memname">foreach = array_merge( $current_settings, $_directions )</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="search-field-submit_8php_source.html#l00015">15</a> of file <a class="el" href="search-field-submit_8php_source.html">search-field-submit.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="search-field-submit_8php_source.html#l00017">17</a> of file <a class="el" href="search-field-submit_8php_source.html">search-field-submit.php</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="__mocks_8php_source.html#l00680">Legacy_Context\reset()</a>.</p>
 
 </div>
 </div>

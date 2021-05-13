@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -77,13 +77,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a5ae3876ad412b2aea683551016351244"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-entry__link-html_8php.html#a5ae3876ad412b2aea683551016351244">$add_query_args</a> = apply_filters( '<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>/entry_link/add_query_args', true )</td></tr>
+<tr class="separator:a5ae3876ad412b2aea683551016351244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93735dc685504b23c61718dce74c6fc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-entry__link-html_8php.html#a93735dc685504b23c61718dce74c6fc8">$field_settings</a> = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;field-&gt;as_configuration()</td></tr>
 <tr class="separator:a93735dc685504b23c61718dce74c6fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae858fe52917aca7da3e5f64ac5bf665a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-entry__link-html_8php.html#ae858fe52917aca7da3e5f64ac5bf665a">$href</a> = $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;entry-&gt;get_permalink( $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;view, $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>-&gt;request, $tag_atts )</td></tr>
 <tr class="separator:ae858fe52917aca7da3e5f64ac5bf665a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d346e31b75d916e3bac9cb193bfc97f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-entry__link-html_8php.html#a5d346e31b75d916e3bac9cb193bfc97f">$link</a> = <a class="el" href="class-common_8php.html#a194da0145d30db917c261143ed919d9c">gravityview_get_link</a>( $href, $output, $tag_atts )</td></tr>
-<tr class="separator:a5d346e31b75d916e3bac9cb193bfc97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe6700a6326424ba662664adce40fa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-entry__link-html_8php.html#aabe6700a6326424ba662664adce40fa4">$link_text</a> = empty( $field_settings['entry_link_text'] ) ? __( 'View Details', '<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>' ) : $field_settings['entry_link_text']</td></tr>
+<tr class="memitem:ac508fea0fcb2feb7a70fb33753cc0f39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a>( $add_query_args)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-entry__link-html_8php.html#ac508fea0fcb2feb7a70fb33753cc0f39">$link</a> = <a class="el" href="class-common_8php.html#a194da0145d30db917c261143ed919d9c">gravityview_get_link</a>( $href, $output, $tag_atts )</td></tr>
+<tr class="separator:ac508fea0fcb2feb7a70fb33753cc0f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe6700a6326424ba662664adce40fa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-entry__link-html_8php.html#aabe6700a6326424ba662664adce40fa4">$link_text</a> = empty( $field_settings['entry_link_text'] ) ? esc_html__( 'View Details', '<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>' ) : $field_settings['entry_link_text']</td></tr>
 <tr class="separator:aabe6700a6326424ba662664adce40fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73004ce9cd673c1bfafd1dc351134797"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="field-entry__link-html_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = apply_filters( 'gravityview_entry_link', <a class="el" href="class_gravity_view___a_p_i.html#a3b71ab6eb3434b794090baf825b3338a">GravityView_API::replace_variables</a>( $link_text, $form, $entry ), $<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a> )</td></tr>
 <tr class="separator:a73004ce9cd673c1bfafd1dc351134797"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,6 +98,32 @@ Variables</h2></td></tr>
 <tr class="separator:ab4e4e9fa8bbb212d0a72747e398501cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a5ae3876ad412b2aea683551016351244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae3876ad412b2aea683551016351244">&#9670;&nbsp;</a></span>$add_query_args</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$add_query_args = apply_filters( '<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>/entry_link/add_query_args', true )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000356">Runs Filter:</a></b></dt><dd><code>gravityview/entry_link/add_query_args</code> Modify whether to include passed $_GET parameters to the end of the url </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.10 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$add_query_params</td><td>Whether to include passed $_GET parameters to the end of the Entry Link URL. Default: true. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="field-entry__link-html_8php_source.html#l00046">46</a> of file <a class="el" href="field-entry__link-html_8php_source.html">field-entry_link-html.php</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00392">GravityView_API\directory_link()</a>, <a class="el" href="class-api_8php_source.html#l00644">GravityView_API\entry_link()</a>, and <a class="el" href="class-delete-entry_8php_source.html#l00221">GravityView_Delete_Entry\get_delete_link()</a>.</p>
+
+</div>
+</div>
 <a id="a93735dc685504b23c61718dce74c6fc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93735dc685504b23c61718dce74c6fc8">&#9670;&nbsp;</a></span>$field_settings</h2>
 
@@ -128,21 +156,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d346e31b75d916e3bac9cb193bfc97f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d346e31b75d916e3bac9cb193bfc97f">&#9670;&nbsp;</a></span>$link</h2>
+<a id="ac508fea0fcb2feb7a70fb33753cc0f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac508fea0fcb2feb7a70fb33753cc0f39">&#9670;&nbsp;</a></span>$link</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$link = <a class="el" href="class-common_8php.html#a194da0145d30db917c261143ed919d9c">gravityview_get_link</a>( $href, $output, $tag_atts )</td>
+          <td class="memname"><a class="el" href="field-time-html_8php.html#a26c4cd61bda02bdf74ad17e222325318">if</a> ($add_query_args) $link = <a class="el" href="class-common_8php.html#a194da0145d30db917c261143ed919d9c">gravityview_get_link</a>( $href, $output, $tag_atts )</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="field-entry__link-html_8php_source.html#l00041">41</a> of file <a class="el" href="field-entry__link-html_8php_source.html">field-entry_link-html.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="field-entry__link-html_8php_source.html#l00052">52</a> of file <a class="el" href="field-entry__link-html_8php_source.html">field-entry_link-html.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00392">GravityView_API\directory_link()</a>, <a class="el" href="class-api_8php_source.html#l00259">GravityView_API\entry_link_html()</a>, <a class="el" href="class-gravityview-theme-hooks-wpml_8php_source.html#l00084">GravityView_Theme_Hooks_WPML\filter_gravityview_back_link()</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00272">GravityView_Entry_List\get_item_output()</a>, <a class="el" href="class-api_8php_source.html#l00873">gravityview_back_link()</a>, <a class="el" href="class-api_8php_source.html#l01324">gravityview_get_map_link()</a>, <a class="el" href="class-api_8php_source.html#l01035">gravityview_get_the_term_list()</a>, and <a class="el" href="class-gravityview-field-unsubscribe_8php_source.html#l00167">GravityView_Field_Unsubscribe\modify_entry_value_unsubscribe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-api_8php_source.html#l00392">GravityView_API\directory_link()</a>, <a class="el" href="class-api_8php_source.html#l00259">GravityView_API\entry_link_html()</a>, <a class="el" href="class-gravityview-theme-hooks-wpml_8php_source.html#l00084">GravityView_Theme_Hooks_WPML\filter_gravityview_back_link()</a>, <a class="el" href="class-gravityview-entry-list_8php_source.html#l00272">GravityView_Entry_List\get_item_output()</a>, <a class="el" href="class-api_8php_source.html#l00941">gravityview_back_link()</a>, <a class="el" href="class-api_8php_source.html#l01392">gravityview_get_map_link()</a>, <a class="el" href="class-api_8php_source.html#l01103">gravityview_get_the_term_list()</a>, and <a class="el" href="class-gravityview-field-unsubscribe_8php_source.html#l00167">GravityView_Field_Unsubscribe\modify_entry_value_unsubscribe()</a>.</p>
 
 </div>
 </div>
@@ -153,7 +181,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$link_text = empty( $field_settings['entry_link_text'] ) ? __( 'View Details', '<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>' ) : $field_settings['entry_link_text']</td>
+          <td class="memname">$link_text = empty( $field_settings['entry_link_text'] ) ? esc_html__( 'View Details', '<a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview</a>' ) : $field_settings['entry_link_text']</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -173,7 +201,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000348">Runs Filter:</a></b></dt><dd><code>gravityview_field_entry_link</code> Modify the link HTML (here for backward compatibility) </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000357">Runs Filter:</a></b></dt><dd><code>gravityview_field_entry_link</code> Modify the link HTML (here for backward compatibility) </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$link</td><td>HTML output of the link </td></tr>

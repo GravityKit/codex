@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -86,6 +86,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___field.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field</a>
 , <a class="el" href="class_gravity_view___field___address.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_Address</a>
 , <a class="el" href="class_gravity_view___field___checkbox.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_Checkbox</a>
+, <a class="el" href="class_gravity_view___field___consent.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_Consent</a>
 , <a class="el" href="class_gravity_view___field___created___by.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_Created_By</a>
 , <a class="el" href="class_gravity_view___field___custom.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_Custom</a>
 , <a class="el" href="class_gravity_view___field___date.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_Date</a>
@@ -97,6 +98,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___file_upload.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_FileUpload</a>
 , <a class="el" href="class_gravity_view___field___gravatar.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_Gravatar</a>
 , <a class="el" href="class_gravity_view___field___h_t_m_l.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_HTML</a>
+, <a class="el" href="class_gravity_view___field___i_d.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_ID</a>
 , <a class="el" href="class_gravity_view___field___is___approved.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_Is_Approved</a>
 , <a class="el" href="class_gravity_view___field___multi_select.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_MultiSelect</a>
 , <a class="el" href="class_gravity_view___field___notes.html#a5c68499d2ff29848fda40ab1b26d39b8">GravityView_Field_Notes</a>
@@ -137,6 +139,10 @@ $(function() {
 <li>field_width()
 : <a class="el" href="class_gravity_view___a_p_i.html#a02d8510c9e7d4296136b0be9fe7af3a7">GravityView_API</a>
 </li>
+<li>fileupload_link_atts()
+: <a class="el" href="class_gravity_view___lightbox___provider.html#aace5dd16b68de809d79f3a0e70ead369">GravityView_Lightbox_Provider</a>
+, <a class="el" href="class_gravity_view___lightbox___provider___fancy_box.html#aace5dd16b68de809d79f3a0e70ead369">GravityView_Lightbox_Provider_FancyBox</a>
+</li>
 <li>fill_post_template()
 : <a class="el" href="class_gravity_view___edit___entry___render.html#a9233b5f4f570cab522e10a09a6961abb">GravityView_Edit_Entry_Render</a>
 </li>
@@ -156,9 +162,6 @@ $(function() {
 : <a class="el" href="class_gravity_view___field___other___entries.html#a6924181d7dd5cf793cd32e04cec99a55">GravityView_Field_Other_Entries</a>
 , <a class="el" href="class_gravity_view___widget___search.html#a6924181d7dd5cf793cd32e04cec99a55">GravityView_Widget_Search</a>
 </li>
-<li>filter_field_value()
-: <a class="el" href="class_gravity_view___field___is___approved.html#adc9708ab3777af498d8c9c77a1f2f8d3">GravityView_Field_Is_Approved</a>
-</li>
 <li>filter_file_path()
 : <a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___dropbox.html#af5789bc62165e9e706af152c9f49a81c">GravityView_Plugin_Hooks_Gravity_Forms_Dropbox</a>
 </li>
@@ -169,14 +172,20 @@ $(function() {
 : <a class="el" href="class_gravity_view___field___entry___approval.html#adecbec285a92ca2a28439ec2c9836db3">GravityView_Field_Entry_Approval</a>
 , <a class="el" href="class_gravity_view___field___unsubscribe.html#adecbec285a92ca2a28439ec2c9836db3">GravityView_Field_Unsubscribe</a>
 </li>
+<li>filter_lightbox_script()
+: <a class="el" href="class_gravity_view___lightbox___provider.html#a63a5b85f3c07aa47c3f27e81203124ce">GravityView_Lightbox_Provider</a>
+</li>
+<li>filter_lightbox_style()
+: <a class="el" href="class_gravity_view___lightbox___provider.html#aec3f5639a73b238ca7803a1d075939a7">GravityView_Lightbox_Provider</a>
+</li>
 <li>filter_links_entry_list()
 : <a class="el" href="class_gravity_view___admin___approve_entries.html#a85bb7e01fc2b2b5048f71b94b3ffe1cb">GravityView_Admin_ApproveEntries</a>
 </li>
 <li>filter_modify_form_fields()
 : <a class="el" href="class_gravity_view___edit___entry___render.html#a24ab3bafea03291c375dcaec185cd7a7">GravityView_Edit_Entry_Render</a>
 </li>
-<li>filter_pre_get_posts_by_gravityview_form_id()
-: <a class="el" href="class_gravity_view___admin___views.html#a6ab322e4518e3cf95ffcc36b7db45732">GravityView_Admin_Views</a>
+<li>filter_pre_get_posts()
+: <a class="el" href="class_gravity_view___admin___views.html#aa825a82a9b820c897fc017aa11cc09f0">GravityView_Admin_Views</a>
 </li>
 <li>filter_user_has_cap()
 : <a class="el" href="class_gravity_view___roles___capabilities.html#a41f51f1a436bcd3ec60c65f8e502aa5d">GravityView_Roles_Capabilities</a>

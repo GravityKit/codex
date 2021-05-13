@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -122,6 +122,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___calculation.html#a499cfd6f5b05a3c22456c33f9da5bf0c">GravityView_Field_Calculation</a>
 , <a class="el" href="class_gravity_view___field___captcha.html#a499cfd6f5b05a3c22456c33f9da5bf0c">GravityView_Field_Captcha</a>
 , <a class="el" href="class_gravity_view___field___checkbox.html#a499cfd6f5b05a3c22456c33f9da5bf0c">GravityView_Field_Checkbox</a>
+, <a class="el" href="class_gravity_view___field___consent.html#a499cfd6f5b05a3c22456c33f9da5bf0c">GravityView_Field_Consent</a>
 , <a class="el" href="class_gravity_view___field___credit_card.html#a499cfd6f5b05a3c22456c33f9da5bf0c">GravityView_Field_CreditCard</a>
 , <a class="el" href="class_gravity_view___field___date.html#a499cfd6f5b05a3c22456c33f9da5bf0c">GravityView_Field_Date</a>
 , <a class="el" href="class_gravity_view___field___email.html#a499cfd6f5b05a3c22456c33f9da5bf0c">GravityView_Field_Email</a>
@@ -202,6 +203,9 @@ $(function() {
 </li>
 <li>$active_areas
 : <a class="el" href="class_gravity_view___template.html#ab9d10965b23b1cbdc6e3e66259693d7a">GravityView_Template</a>
+</li>
+<li>$active_provider
+: <a class="el" href="class_gravity_view___lightbox.html#a81934968670064934f9742cb27f403dd">GravityView_Lightbox</a>
 </li>
 <li>$admin_notices
 : <a class="el" href="class_gravity_view___admin___notices.html#a63775df17e9074fc4f38263a1f34ddf0">GravityView_Admin_Notices</a>
@@ -492,6 +496,9 @@ $(function() {
 <li>$future_min_php_version
 : <a class="el" href="class_g_v_1_1_plugin.html#ad8712ac1207b467c572e97cd2cb0ea20">Plugin</a>
 </li>
+<li>$future_min_wp_version
+: <a class="el" href="class_g_v_1_1_plugin.html#a8c932781b9becb3412888ee4bab29105">Plugin</a>
+</li>
 <li>$getimagesize
 : <a class="el" href="class_gravity_view___image.html#af154f0242f5ab4e1e07896e18159c4ad">GravityView_Image</a>
 </li>
@@ -504,6 +511,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___calculation.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Calculation</a>
 , <a class="el" href="class_gravity_view___field___captcha.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Captcha</a>
 , <a class="el" href="class_gravity_view___field___checkbox.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Checkbox</a>
+, <a class="el" href="class_gravity_view___field___consent.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Consent</a>
 , <a class="el" href="class_gravity_view___field___created___by.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Created_By</a>
 , <a class="el" href="class_gravity_view___field___credit_card.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_CreditCard</a>
 , <a class="el" href="class_gravity_view___field___currency.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Currency</a>
@@ -518,6 +526,8 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___gravatar.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Gravatar</a>
 , <a class="el" href="class_gravity_view___field___hidden.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Hidden</a>
 , <a class="el" href="class_gravity_view___field___h_t_m_l.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_HTML</a>
+, <a class="el" href="class_gravity_view___field___i_d.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_ID</a>
+, <a class="el" href="class_gravity_view___field___i_p.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_IP</a>
 , <a class="el" href="class_gravity_view___field___is___approved.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Is_Approved</a>
 , <a class="el" href="class_gravity_view___field___is___fulfilled.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Is_Fulfilled</a>
 , <a class="el" href="class_gravity_view___field___is___starred.html#ad530a85733b0ec1dc321859fd8faa0dc">GravityView_Field_Is_Starred</a>
@@ -578,6 +588,75 @@ $(function() {
 <li>$hide_until_searched
 : <a class="el" href="class_gravity_view___view.html#a6ff45357ce2b93286937bc910f89f075">GravityView_View</a>
 </li>
+<li>$icon
+: <a class="el" href="class_gravity_view___field.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field</a>
+, <a class="el" href="class_gravity_view___field___address.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Address</a>
+, <a class="el" href="class_gravity_view___field___captcha.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Captcha</a>
+, <a class="el" href="class_gravity_view___field___checkbox.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Checkbox</a>
+, <a class="el" href="class_gravity_view___field___consent.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Consent</a>
+, <a class="el" href="class_gravity_view___field___created___by.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Created_By</a>
+, <a class="el" href="class_gravity_view___field___credit_card.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_CreditCard</a>
+, <a class="el" href="class_gravity_view___field___custom.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Custom</a>
+, <a class="el" href="class_gravity_view___field___date.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Date</a>
+, <a class="el" href="class_gravity_view___field___date___created.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Date_Created</a>
+, <a class="el" href="class_gravity_view___field___date___updated.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Date_Updated</a>
+, <a class="el" href="class_gravity_view___field___email.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Email</a>
+, <a class="el" href="class_gravity_view___field___entry___approval.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Entry_Approval</a>
+, <a class="el" href="class_gravity_view___field___entry___link.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Entry_Link</a>
+, <a class="el" href="class_gravity_view___field___file_upload.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_FileUpload</a>
+, <a class="el" href="class_gravity_view___field___gravatar.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Gravatar</a>
+, <a class="el" href="class_gravity_view___field___hidden.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Hidden</a>
+, <a class="el" href="class_gravity_view___field___h_t_m_l.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_HTML</a>
+, <a class="el" href="class_gravity_view___field___i_d.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_ID</a>
+, <a class="el" href="class_gravity_view___field___i_p.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_IP</a>
+, <a class="el" href="class_gravity_view___field___is___approved.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Is_Approved</a>
+, <a class="el" href="class_gravity_view___field___is___starred.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Is_Starred</a>
+, <a class="el" href="class_gravity_view___field___list.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_List</a>
+, <a class="el" href="class_gravity_view___field___multi_select.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_MultiSelect</a>
+, <a class="el" href="class_gravity_view___field___name.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Name</a>
+, <a class="el" href="class_gravity_view___field___notes.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Notes</a>
+, <a class="el" href="class_gravity_view___field___number.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Number</a>
+, <a class="el" href="class_gravity_view___field___other___entries.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Other_Entries</a>
+, <a class="el" href="class_gravity_view___field___page.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Page</a>
+, <a class="el" href="class_gravity_view___field___payment___amount.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Payment_Amount</a>
+, <a class="el" href="class_gravity_view___field___payment___date.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Payment_Date</a>
+, <a class="el" href="class_gravity_view___field___payment___method.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Payment_Method</a>
+, <a class="el" href="class_gravity_view___field___payment___status.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Payment_Status</a>
+, <a class="el" href="class_gravity_view___field___phone.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Phone</a>
+, <a class="el" href="class_gravity_view___field___post___category.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Post_Category</a>
+, <a class="el" href="class_gravity_view___field___post___content.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Post_Content</a>
+, <a class="el" href="class_gravity_view___field___post___custom___field.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Post_Custom_Field</a>
+, <a class="el" href="class_gravity_view___field___post___image.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Post_Image</a>
+, <a class="el" href="class_gravity_view___field___post___tags.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Post_Tags</a>
+, <a class="el" href="class_gravity_view___field___post___title.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Post_Title</a>
+, <a class="el" href="class_gravity_view___field___product.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Product</a>
+, <a class="el" href="class_gravity_view___field___quiz.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Quiz</a>
+, <a class="el" href="class_gravity_view___field___quiz___score.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Quiz_Score</a>
+, <a class="el" href="class_gravity_view___field___radio.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Radio</a>
+, <a class="el" href="class_gravity_view___field___section.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Section</a>
+, <a class="el" href="class_gravity_view___field___select.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Select</a>
+, <a class="el" href="class_gravity_view___field___sequence.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Sequence</a>
+, <a class="el" href="class_gravity_view___field___source___u_r_l.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Source_URL</a>
+, <a class="el" href="class_gravity_view___field___survey.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Survey</a>
+, <a class="el" href="class_gravity_view___field___text.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Text</a>
+, <a class="el" href="class_gravity_view___field___textarea.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Textarea</a>
+, <a class="el" href="class_gravity_view___field___time.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Time</a>
+, <a class="el" href="class_gravity_view___field___total.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Total</a>
+, <a class="el" href="class_gravity_view___field___transaction___i_d.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Transaction_ID</a>
+, <a class="el" href="class_gravity_view___field___transaction___type.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Transaction_Type</a>
+, <a class="el" href="class_gravity_view___field___website.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Website</a>
+, <a class="el" href="class_gravity_view___field___workflow___current___status___timestamp.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Workflow_Current_Status_Timestamp</a>
+, <a class="el" href="class_gravity_view___field___workflow___final___status.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Workflow_Final_Status</a>
+, <a class="el" href="class_gravity_view___field___workflow___step.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Field_Workflow_Step</a>
+, <a class="el" href="class_gravity_view___post___excerpt.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Post_Excerpt</a>
+, <a class="el" href="class_gravity_view___widget___custom___content.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Widget_Custom_Content</a>
+, <a class="el" href="class_gravity_view___widget___gravity___forms.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Widget_Gravity_Forms</a>
+, <a class="el" href="class_gravity_view___widget___page___links.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Widget_Page_Links</a>
+, <a class="el" href="class_gravity_view___widget___pagination___info.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Widget_Pagination_Info</a>
+, <a class="el" href="class_gravity_view___widget___search.html#ac13ca58494b5ebc7e5f1ded33256c9e9">GravityView_Widget_Search</a>
+, <a class="el" href="class_g_v_1_1_widget.html#ac13ca58494b5ebc7e5f1ded33256c9e9">Widget</a>
+, <a class="el" href="class_g_v_1_1_widgets_1_1_page___size.html#ac13ca58494b5ebc7e5f1ded33256c9e9">Page_Size</a>
+</li>
 <li>$icon_class_name
 : <a class="el" href="class_gravity_view___metabox___tab.html#a8bf6f8f11c8a00b63a8d99b5e3f59c03">GravityView_Metabox_Tab</a>
 </li>
@@ -608,7 +687,8 @@ $(function() {
 , <a class="el" href="class_g_v_logic___shortcode.html#ad9d7ce33ebb142b70e58b68052ca0ea8">GVLogic_Shortcode</a>
 </li>
 <li>$instances
-: <a class="el" href="class_gravity_view___edit___entry.html#a1a63b63bdad280ed9a89dfed1fadc771">GravityView_Edit_Entry</a>
+: <a class="el" href="class_gravity_view___delete___entry.html#a1a63b63bdad280ed9a89dfed1fadc771">GravityView_Delete_Entry</a>
+, <a class="el" href="class_gravity_view___edit___entry.html#a1a63b63bdad280ed9a89dfed1fadc771">GravityView_Edit_Entry</a>
 </li>
 <li>$is_compatible
 : <a class="el" href="class_gravity_view___extension.html#ab44e7877458fd3d9faf02ff4e2a5ef72">GravityView_Extension</a>
@@ -622,6 +702,8 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___address.html#a055d7d651e1f3166d1dd838a11621565">GravityView_Field_Address</a>
 , <a class="el" href="class_gravity_view___field___currency.html#a055d7d651e1f3166d1dd838a11621565">GravityView_Field_Currency</a>
 , <a class="el" href="class_gravity_view___field___entry___approval.html#a055d7d651e1f3166d1dd838a11621565">GravityView_Field_Entry_Approval</a>
+, <a class="el" href="class_gravity_view___field___i_d.html#a055d7d651e1f3166d1dd838a11621565">GravityView_Field_ID</a>
+, <a class="el" href="class_gravity_view___field___i_p.html#a055d7d651e1f3166d1dd838a11621565">GravityView_Field_IP</a>
 , <a class="el" href="class_gravity_view___field___is___approved.html#a055d7d651e1f3166d1dd838a11621565">GravityView_Field_Is_Approved</a>
 , <a class="el" href="class_gravity_view___field___is___fulfilled.html#a055d7d651e1f3166d1dd838a11621565">GravityView_Field_Is_Fulfilled</a>
 , <a class="el" href="class_gravity_view___field___payment___amount.html#a055d7d651e1f3166d1dd838a11621565">GravityView_Field_Payment_Amount</a>
@@ -646,6 +728,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___calculation.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Calculation</a>
 , <a class="el" href="class_gravity_view___field___captcha.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Captcha</a>
 , <a class="el" href="class_gravity_view___field___checkbox.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Checkbox</a>
+, <a class="el" href="class_gravity_view___field___consent.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Consent</a>
 , <a class="el" href="class_gravity_view___field___created___by.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Created_By</a>
 , <a class="el" href="class_gravity_view___field___credit_card.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_CreditCard</a>
 , <a class="el" href="class_gravity_view___field___currency.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Currency</a>
@@ -660,6 +743,8 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___gravatar.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Gravatar</a>
 , <a class="el" href="class_gravity_view___field___hidden.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Hidden</a>
 , <a class="el" href="class_gravity_view___field___h_t_m_l.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_HTML</a>
+, <a class="el" href="class_gravity_view___field___i_d.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_ID</a>
+, <a class="el" href="class_gravity_view___field___i_p.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_IP</a>
 , <a class="el" href="class_gravity_view___field___is___approved.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Is_Approved</a>
 , <a class="el" href="class_gravity_view___field___is___fulfilled.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Is_Fulfilled</a>
 , <a class="el" href="class_gravity_view___field___is___starred.html#ab1616ef2fa425f4e169ecf0c2125ef72">GravityView_Field_Is_Starred</a>
@@ -761,7 +846,8 @@ $(function() {
 : <a class="el" href="class_gravity_view___entry___list.html#a149693373037de1dfa044b5fda905347">GravityView_Entry_List</a>
 </li>
 <li>$loader
-: <a class="el" href="class_gravity_view___edit___entry___admin.html#ab832f4c463ee1c9ba2e9464265f7ea3b">GravityView_Edit_Entry_Admin</a>
+: <a class="el" href="class_gravity_view___delete___entry___admin.html#ab832f4c463ee1c9ba2e9464265f7ea3b">GravityView_Delete_Entry_Admin</a>
+, <a class="el" href="class_gravity_view___edit___entry___admin.html#ab832f4c463ee1c9ba2e9464265f7ea3b">GravityView_Edit_Entry_Admin</a>
 , <a class="el" href="class_gravity_view___edit___entry___render.html#ab832f4c463ee1c9ba2e9464265f7ea3b">GravityView_Edit_Entry_Render</a>
 , <a class="el" href="class_gravity_view___edit___entry___user___registration.html#afbd237fd54e00f04c5f579771db31684">GravityView_Edit_Entry_User_Registration</a>
 </li>
@@ -805,6 +891,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___calculation.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Calculation</a>
 , <a class="el" href="class_gravity_view___field___captcha.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Captcha</a>
 , <a class="el" href="class_gravity_view___field___checkbox.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Checkbox</a>
+, <a class="el" href="class_gravity_view___field___consent.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Consent</a>
 , <a class="el" href="class_gravity_view___field___created___by.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Created_By</a>
 , <a class="el" href="class_gravity_view___field___credit_card.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_CreditCard</a>
 , <a class="el" href="class_gravity_view___field___currency.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Currency</a>
@@ -819,6 +906,8 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___gravatar.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Gravatar</a>
 , <a class="el" href="class_gravity_view___field___hidden.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Hidden</a>
 , <a class="el" href="class_gravity_view___field___h_t_m_l.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_HTML</a>
+, <a class="el" href="class_gravity_view___field___i_d.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_ID</a>
+, <a class="el" href="class_gravity_view___field___i_p.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_IP</a>
 , <a class="el" href="class_gravity_view___field___is___approved.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Is_Approved</a>
 , <a class="el" href="class_gravity_view___field___is___fulfilled.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Is_Fulfilled</a>
 , <a class="el" href="class_gravity_view___field___is___starred.html#ab2fc40d43824ea3e1ce5d86dee0d763b">GravityView_Field_Is_Starred</a>
@@ -946,6 +1035,9 @@ $(function() {
 <li>$provider_url
 : <a class="el" href="class_g_v_1_1o_embed.html#a5a3c57b1f20f51088dffb294643a8f84">oEmbed</a>
 </li>
+<li>$providers
+: <a class="el" href="class_gravity_view___lightbox.html#a8619fb6079fbd79202034b45724fd6ca">GravityView_Lightbox</a>
+</li>
 <li>$render_template_file
 : <a class="el" href="class_gravity_view___metabox___tab.html#a499f507d18c01af8f6b5a91b0295524c">GravityView_Metabox_Tab</a>
 </li>
@@ -983,6 +1075,10 @@ $(function() {
 , <a class="el" href="class_gravity_view___theme___hooks___woo_themes.html#abbc026c9519b5eed1df9fa26241e740b">GravityView_Theme_Hooks_WooThemes</a>
 , <a class="el" href="class_gravity_view___theme___hooks___w_p_m_l.html#abbc026c9519b5eed1df9fa26241e740b">GravityView_Theme_Hooks_WPML</a>
 </li>
+<li>$script_slug
+: <a class="el" href="class_gravity_view___lightbox___provider.html#ad87987526cc47cca8b58a2f2a6649462">GravityView_Lightbox_Provider</a>
+, <a class="el" href="class_gravity_view___lightbox___provider___fancy_box.html#ad87987526cc47cca8b58a2f2a6649462">GravityView_Lightbox_Provider_FancyBox</a>
+</li>
 <li>$search_criteria
 : <a class="el" href="class_g_v_1_1_g_f___entry___filter.html#a681ff5d5d0efe70a2bcfb9dfd4171391">GF_Entry_Filter</a>
 </li>
@@ -999,6 +1095,7 @@ $(function() {
 : <a class="el" href="class_gravity_view___field.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field</a>
 , <a class="el" href="class_gravity_view___field___address.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Address</a>
 , <a class="el" href="class_gravity_view___field___checkbox.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Checkbox</a>
+, <a class="el" href="class_gravity_view___field___consent.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Consent</a>
 , <a class="el" href="class_gravity_view___field___created___by.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Created_By</a>
 , <a class="el" href="class_gravity_view___field___currency.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Currency</a>
 , <a class="el" href="class_gravity_view___field___date.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Date</a>
@@ -1008,6 +1105,8 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___entry___approval.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Entry_Approval</a>
 , <a class="el" href="class_gravity_view___field___file_upload.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_FileUpload</a>
 , <a class="el" href="class_gravity_view___field___hidden.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Hidden</a>
+, <a class="el" href="class_gravity_view___field___i_d.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_ID</a>
+, <a class="el" href="class_gravity_view___field___i_p.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_IP</a>
 , <a class="el" href="class_gravity_view___field___is___approved.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Is_Approved</a>
 , <a class="el" href="class_gravity_view___field___is___fulfilled.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Is_Fulfilled</a>
 , <a class="el" href="class_gravity_view___field___is___starred.html#a2a2959a858620cef51b05270bd436b3e">GravityView_Field_Is_Starred</a>
@@ -1092,7 +1191,9 @@ $(function() {
 : <a class="el" href="class_gravity_view___entry___list.html#a1b357cbf89ffeb2ce419c738571c57b2">GravityView_Entry_List</a>
 </li>
 <li>$slug
-: <a class="el" href="class_g_v_1_1_e_d_d___s_l___plugin___updater.html#a2bc71663be5bb4469be1921a7d66c6b9">EDD_SL_Plugin_Updater</a>
+: <a class="el" href="class_gravity_view___lightbox___provider.html#a2bc71663be5bb4469be1921a7d66c6b9">GravityView_Lightbox_Provider</a>
+, <a class="el" href="class_gravity_view___lightbox___provider___fancy_box.html#a2bc71663be5bb4469be1921a7d66c6b9">GravityView_Lightbox_Provider_FancyBox</a>
+, <a class="el" href="class_g_v_1_1_e_d_d___s_l___plugin___updater.html#a2bc71663be5bb4469be1921a7d66c6b9">EDD_SL_Plugin_Updater</a>
 , <a class="el" href="class_g_v_1_1_entry___list___template.html#a2bc71663be5bb4469be1921a7d66c6b9">Entry_List_Template</a>
 , <a class="el" href="class_g_v_1_1_entry___table___template.html#a2bc71663be5bb4469be1921a7d66c6b9">Entry_Table_Template</a>
 , <a class="el" href="class_g_v_1_1_entry___template.html#a2bc71663be5bb4469be1921a7d66c6b9">Entry_Template</a>
@@ -1137,6 +1238,10 @@ $(function() {
 , <a class="el" href="class_gravity_view___theme___hooks___genesis.html#a86284b266fbc2b91952f85445b4aadb5">GravityView_Theme_Hooks_Genesis</a>
 , <a class="el" href="class_gravity_view___theme___hooks___woo_themes.html#a86284b266fbc2b91952f85445b4aadb5">GravityView_Theme_Hooks_WooThemes</a>
 , <a class="el" href="class_gravity_view___theme___hooks___w_p_m_l.html#a86284b266fbc2b91952f85445b4aadb5">GravityView_Theme_Hooks_WPML</a>
+</li>
+<li>$style_slug
+: <a class="el" href="class_gravity_view___lightbox___provider.html#a9212633514ad110d152029df60c22cf1">GravityView_Lightbox_Provider</a>
+, <a class="el" href="class_gravity_view___lightbox___provider___fancy_box.html#a9212633514ad110d152029df60c22cf1">GravityView_Lightbox_Provider_FancyBox</a>
 </li>
 <li>$sub_type
 : <a class="el" href="class_g_v_1_1_r_e_s_t_1_1_route.html#a3027a48a4dc90f58b0789d7c3c40f3ce">Route</a>

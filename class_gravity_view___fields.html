@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -83,9 +83,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b0d369bfdd27cca3c401ba53565adb4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___fields.html#a4b0d369bfdd27cca3c401ba53565adb4">get</a> ( $field_name)</td></tr>
 <tr class="memdesc:a4b0d369bfdd27cca3c401ba53565adb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for <a class="el" href="class_gravity_view___fields.html#aaf4cd9f1904dfce37e5a9cfc3e28ffb3">get_instance()</a>  <a href="#a4b0d369bfdd27cca3c401ba53565adb4">More...</a><br /></td></tr>
 <tr class="separator:a4b0d369bfdd27cca3c401ba53565adb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae01d5e7d07ab9564d0763addfb63ab4d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___fields.html#ae01d5e7d07ab9564d0763addfb63ab4d">get_all</a> ( $group='')</td></tr>
-<tr class="memdesc:ae01d5e7d07ab9564d0763addfb63ab4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all fields.  <a href="#ae01d5e7d07ab9564d0763addfb63ab4d">More...</a><br /></td></tr>
-<tr class="separator:ae01d5e7d07ab9564d0763addfb63ab4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55afc18888b905ed1037ad08a054ea64"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___fields.html#a55afc18888b905ed1037ad08a054ea64">get_all</a> ( $groups='')</td></tr>
+<tr class="memdesc:a55afc18888b905ed1037ad08a054ea64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all fields.  <a href="#a55afc18888b905ed1037ad08a054ea64">More...</a><br /></td></tr>
+<tr class="separator:a55afc18888b905ed1037ad08a054ea64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7269f8beabf3c8ea51f68894eb19e43"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___fields.html#ac7269f8beabf3c8ea51f68894eb19e43">get_associated_field</a> ( $gf_field)</td></tr>
 <tr class="memdesc:ac7269f8beabf3c8ea51f68894eb19e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for <a class="el" href="class_gravity_view___fields.html#aaf4cd9f1904dfce37e5a9cfc3e28ffb3">get_instance()</a>  <a href="#ac7269f8beabf3c8ea51f68894eb19e43">More...</a><br /></td></tr>
 <tr class="separator:ac7269f8beabf3c8ea51f68894eb19e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,12 +214,12 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-fields_8php_source.html#l00084">84</a> of file <a class="el" href="class-gravityview-fields_8php_source.html">class-gravityview-fields.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-common_8php_source.html#l01480">GVCommon\is_field_numeric()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-common_8php_source.html#l01480">GVCommon\is_field_numeric()</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00269">GravityView_Render_Settings\render_field_options()</a>.</p>
 
 </div>
 </div>
-<a id="ae01d5e7d07ab9564d0763addfb63ab4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae01d5e7d07ab9564d0763addfb63ab4d">&#9670;&nbsp;</a></span>get_all()</h2>
+<a id="a55afc18888b905ed1037ad08a054ea64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55afc18888b905ed1037ad08a054ea64">&#9670;&nbsp;</a></span>get_all()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +231,7 @@ Static Protected Attributes</h2></td></tr>
           <td class="memname">static get_all </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$group</em> = <code>''</code></td><td>)</td>
+          <td class="paramname"><em>$groups</em> = <code>''</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -246,7 +246,7 @@ Static Protected Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.16 Added $group parameter</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$group</td><td>Optional. If defined, fetch all fields in a group</td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$groups</td><td>Optional. If defined, fetch all fields in a group or array of groups.</td></tr>
   </table>
   </dd>
 </dl>
@@ -256,7 +256,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gv-request_8php_source.html#l00257">Request\_has_field_key()</a>, and <a class="el" href="class-common_8php_source.html#l00289">GVCommon\get_form_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gv-request_8php_source.html#l00262">Request\_has_field_key()</a>, <a class="el" href="class-admin-views_8php_source.html#l00811">GravityView_Admin_Views\get_available_fields()</a>, <a class="el" href="class-admin-views_8php_source.html#l00780">GravityView_Admin_Views\get_entry_default_fields()</a>, and <a class="el" href="class-common_8php_source.html#l00289">GVCommon\get_form_fields()</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-field_8php_source.html#l00130">GravityView_Field\__construct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-field_8php_source.html#l00136">GravityView_Field\__construct()</a>.</p>
 
 </div>
 </div>

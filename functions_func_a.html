@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -93,7 +93,7 @@ $(function() {
 : <a class="el" href="class_gravity_view___entry___approval.html#a515a1a431b074780d1df65446c155429">GravityView_Entry_Approval</a>
 </li>
 <li>add_available_field()
-: <a class="el" href="class_gravity_view___delete___entry.html#aee23c72b02270babf5db887b034d816d">GravityView_Delete_Entry</a>
+: <a class="el" href="class_gravity_view___delete___entry___admin.html#aee23c72b02270babf5db887b034d816d">GravityView_Delete_Entry_Admin</a>
 , <a class="el" href="class_gravity_view___duplicate___entry.html#aee23c72b02270babf5db887b034d816d">GravityView_Duplicate_Entry</a>
 </li>
 <li>add_callback()
@@ -122,12 +122,15 @@ $(function() {
 : <a class="el" href="class_gravity_view___logging.html#aa59292cab7086952ba70eb5d81a8ef60">GravityView_Logging</a>
 </li>
 <li>add_default_field()
-: <a class="el" href="class_gravity_view___delete___entry.html#afd0f402480a4f6ec11dfdf70ff9a1420">GravityView_Delete_Entry</a>
+: <a class="el" href="class_gravity_view___delete___entry___admin.html#afd0f402480a4f6ec11dfdf70ff9a1420">GravityView_Delete_Entry_Admin</a>
 , <a class="el" href="class_gravity_view___duplicate___entry.html#afd0f402480a4f6ec11dfdf70ff9a1420">GravityView_Duplicate_Entry</a>
 , <a class="el" href="class_gravity_view___edit___entry___admin.html#afd0f402480a4f6ec11dfdf70ff9a1420">GravityView_Edit_Entry_Admin</a>
+, <a class="el" href="class_gravity_view___field___custom.html#afd0f402480a4f6ec11dfdf70ff9a1420">GravityView_Field_Custom</a>
+, <a class="el" href="class_gravity_view___field___entry___link.html#afd0f402480a4f6ec11dfdf70ff9a1420">GravityView_Field_Entry_Link</a>
 , <a class="el" href="class_gravity_view___field___gravatar.html#a5e1dc626cf0351063d29f5bf34fed1e4">GravityView_Field_Gravatar</a>
 , <a class="el" href="class_gravity_view___field___is___approved.html#a12c41636967e1ef5b69264fa55c12549">GravityView_Field_Is_Approved</a>
 , <a class="el" href="class_gravity_view___field___is___starred.html#a5e1dc626cf0351063d29f5bf34fed1e4">GravityView_Field_Is_Starred</a>
+, <a class="el" href="class_gravity_view___field___sequence.html#afd0f402480a4f6ec11dfdf70ff9a1420">GravityView_Field_Sequence</a>
 </li>
 <li>add_delete_button()
 : <a class="el" href="class_gravity_view___delete___entry.html#ad05d7cc1b140d24d270349d3ef363a7a">GravityView_Delete_Entry</a>
@@ -205,6 +208,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___field___workflow___current___status___timestamp.html#a561424521381fd64539c5fb5e573d143">GravityView_Field_Workflow_Current_Status_Timestamp</a>
 , <a class="el" href="class_gravity_view___field___workflow___final___status.html#a561424521381fd64539c5fb5e573d143">GravityView_Field_Workflow_Final_Status</a>
 , <a class="el" href="class_gravity_view___field___workflow___step.html#a561424521381fd64539c5fb5e573d143">GravityView_Field_Workflow_Step</a>
+, <a class="el" href="class_gravity_view___lightbox___provider.html#a561424521381fd64539c5fb5e573d143">GravityView_Lightbox_Provider</a>
 , <a class="el" href="class_gravity_view___merge___tags.html#a561424521381fd64539c5fb5e573d143">GravityView_Merge_Tags</a>
 , <a class="el" href="class_gravity_view___plugin__and___theme___hooks.html#a561424521381fd64539c5fb5e573d143">GravityView_Plugin_and_Theme_Hooks</a>
 , <a class="el" href="class_gravity_view___plugin___hooks___a_c_f.html#a561424521381fd64539c5fb5e573d143">GravityView_Plugin_Hooks_ACF</a>
@@ -275,6 +279,14 @@ $(function() {
 <li>add_render_hooks()
 : <a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___survey.html#ad9e0b3bd0989cd3f8c4da5459d85b6cb">GravityView_Plugin_Hooks_Gravity_Forms_Survey</a>
 </li>
+<li>add_reserved_arg()
+: <a class="el" href="class_gravity_view___delete___entry.html#a95d61443f50e6a8512a0d0be10af4aeb">GravityView_Delete_Entry</a>
+, <a class="el" href="class_gravity_view___duplicate___entry.html#a95d61443f50e6a8512a0d0be10af4aeb">GravityView_Duplicate_Entry</a>
+, <a class="el" href="class_gravity_view___edit___entry.html#a95d61443f50e6a8512a0d0be10af4aeb">GravityView_Edit_Entry</a>
+</li>
+<li>add_reserved_args()
+: <a class="el" href="class_gravity_view___widget___search.html#ae52c0b224d42e038c9c04d514f5d870e">GravityView_Widget_Search</a>
+</li>
 <li>add_rewrite_endpoint()
 : <a class="el" href="class_g_v_1_1_entry.html#afa4a76125e82926b335c52af09c4a21b">Entry</a>
 , <a class="el" href="class_g_v_1_1_view.html#afa4a76125e82926b335c52af09c4a21b">View</a>
@@ -290,7 +302,7 @@ $(function() {
 , <a class="el" href="class_gravity_view___widget___search.html#abdc638fa28d768caa47e95eb37403a3d">GravityView_Widget_Search</a>
 </li>
 <li>add_select()
-: <a class="el" href="class_gravity_view___change___entry___creator.html#a469e9e1eb21296e9446e48e3b1635345">GravityView_Change_Entry_Creator</a>
+: <a class="el" href="class_gravity_view___change___entry___creator.html#a3f00884b260c27c03004647b1b2749cd">GravityView_Change_Entry_Creator</a>
 </li>
 <li>add_settings_metabox_tabs()
 : <a class="el" href="class_gravity_view___admin___metaboxes.html#aa624b0f7eb8dae4554270fea997f39a2">GravityView_Admin_Metaboxes</a>
@@ -391,6 +403,10 @@ $(function() {
 <li>all_caps()
 : <a class="el" href="class_gravity_view___roles___capabilities.html#acf87b886435f821257fdf17130cf9493">GravityView_Roles_Capabilities</a>
 </li>
+<li>allowed_atts()
+: <a class="el" href="class_gravity_view___lightbox___provider.html#a1e2e3dbee1f2ef226e310960299cbe62">GravityView_Lightbox_Provider</a>
+, <a class="el" href="class_gravity_view___lightbox___provider___fancy_box.html#a1e2e3dbee1f2ef226e310960299cbe62">GravityView_Lightbox_Provider_FancyBox</a>
+</li>
 <li>api_request()
 : <a class="el" href="class_g_v_1_1_e_d_d___s_l___plugin___updater.html#adcc65a1fe3dc3211c44aa9afbaff6a28">EDD_SL_Plugin_Updater</a>
 </li>
@@ -399,6 +415,9 @@ $(function() {
 </li>
 <li>array_merge_recursive_distinct()
 : <a class="el" href="class_g_v_common.html#a51a7a2f9d520f491ae70d06d740ba854">GVCommon</a>
+</li>
+<li>as_array()
+: <a class="el" href="class_gravity_view___field.html#a1bc6c1d24fdcee3dc96445db88a1cf55">GravityView_Field</a>
 </li>
 <li>as_atts()
 : <a class="el" href="class_g_v_1_1_view___settings.html#a8f4b00bbd1466965a5e9513a4af86d6c">View_Settings</a>

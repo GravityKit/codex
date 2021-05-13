@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.9.2</span>
+   &#160;<span id="projectnumber">2.10.1</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -154,7 +154,7 @@ Private Attributes</h2></td></tr>
 
 <p>Add hooks to trigger updating the user. </p>
 <dl class="section since"><dt>Since</dt><dd>1.18 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000252">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/user_registration/trigger_update</code> Choose whether to update user information via User Registration add-on when an entry is updated? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000260">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/user_registration/trigger_update</code> Choose whether to update user information via User Registration add-on when an entry is updated? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.11 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -193,9 +193,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array List all the possible display names for a certain User object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00216">216</a> of file <a class="el" href="class-edit-entry-user-registration_8php_source.html">class-edit-entry-user-registration.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00222">222</a> of file <a class="el" href="class-edit-entry-user-registration_8php_source.html">class-edit-entry-user-registration.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00185">match_current_display_name()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00191">match_current_display_name()</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000254">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/user_registration/preserve_role</code> Keep the current user role or override with the role defined in the Create feed </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000262">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/user_registration/preserve_role</code> Keep the current user role or override with the role defined in the Create feed </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -248,7 +248,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>Make sure the current display name is not changed with the update user method. </p><dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000255">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/user_registration/config</code> Modify the User Registration Addon feed configuration </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000263">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/user_registration/config</code> Modify the User Registration Addon feed configuration </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.14 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -259,9 +259,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00136">136</a> of file <a class="el" href="class-edit-entry-user-registration_8php_source.html">class-edit-entry-user-registration.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00142">142</a> of file <a class="el" href="class-edit-entry-user-registration_8php_source.html">class-edit-entry-user-registration.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, and <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00185">match_current_display_name()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, and <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00191">match_current_display_name()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00073">update_user()</a>.</p>
 
@@ -316,11 +316,11 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>false|string Display name format as used inside Gravity Forms User Registration. Returns false if user not found. </dd></dl>
 <p>In case we can't find the current display name format, trigger last resort method at the 'gform_user_updated' hook </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___edit___entry___user___registration.html#af918ab953d8ca36a24deb1c5b3bdadb4" title="Restore the Display Name and roles of a user after being updated by Gravity Forms User Registration A...">restore_display_name</a></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00185">185</a> of file <a class="el" href="class-edit-entry-user-registration_8php_source.html">class-edit-entry-user-registration.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00191">191</a> of file <a class="el" href="class-edit-entry-user-registration_8php_source.html">class-edit-entry-user-registration.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>, <a class="el" href="field-created__by-html_8php_source.html#l00023">$user</a>, and <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00216">generate_display_names()</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>, <a class="el" href="field-created__by-html_8php_source.html#l00023">$user</a>, and <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00222">generate_display_names()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00136">get_feed_configuration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00142">get_feed_configuration()</a>.</p>
 
 </div>
 </div>
@@ -374,7 +374,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int|false|WP_Error|null True: User updated; False: $user_id not a valid User ID; WP_Error: User update error; Null: Method didn't process </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000256">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/restore_display_name</code> Whether display names should be restored to before updating an entry. Otherwise, display names will be reset to the format specified in Gravity Forms User Registration "Update" feed </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000264">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/restore_display_name</code> Whether display names should be restored to before updating an entry. Otherwise, display names will be reset to the format specified in Gravity Forms User Registration "Update" feed </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.14.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -399,7 +399,7 @@ Modify the user data after updated by Gravity Forms User Registration but before
 </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00252">252</a> of file <a class="el" href="class-edit-entry-user-registration_8php_source.html">class-edit-entry-user-registration.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00258">258</a> of file <a class="el" href="class-edit-entry-user-registration_8php_source.html">class-edit-entry-user-registration.php</a>.</p>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
@@ -441,7 +441,7 @@ Modify the user data after updated by Gravity Forms User Registration but before
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000253">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/user_registration/entry</code> Modify entry details before updating the user via User Registration add-on </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000261">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/user_registration/entry</code> Modify entry details before updating the user via User Registration add-on </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.11 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -453,7 +453,7 @@ Modify the user data after updated by Gravity Forms User Registration but before
 
 <p class="definition">Definition at line <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00073">73</a> of file <a class="el" href="class-edit-entry-user-registration_8php_source.html">class-edit-entry-user-registration.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00348">GV\$form</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00442">GV\get()</a>, <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00136">get_feed_configuration()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, <a class="el" href="class-edit-entry-user-registration_8php_source.html#l00142">get_feed_configuration()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>

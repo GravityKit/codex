@@ -29,6 +29,8 @@ var searchData=
   ['field_2dgravatar_2dhtml_2ephp',['field-gravatar-html.php',['../field-gravatar-html_8php.html',1,'']]],
   ['field_2dhtml_2dhtml_2ephp',['field-html-html.php',['../field-html-html_8php.html',1,'']]],
   ['field_2dhtml_2ephp',['field-html.php',['../field-html_8php.html',1,'']]],
+  ['field_2dis_5fapproved_2dcsv_2ephp',['field-is_approved-csv.php',['../field-is__approved-csv_8php.html',1,'']]],
+  ['field_2dis_5fapproved_2dhtml_2ephp',['field-is_approved-html.php',['../field-is__approved-html_8php.html',1,'']]],
   ['field_2dlist_2dcsv_2ephp',['field-list-csv.php',['../field-list-csv_8php.html',1,'']]],
   ['field_2dlist_2dhtml_2ephp',['field-list-html.php',['../field-list-html_8php.html',1,'']]],
   ['field_2dmultiselect_2dhtml_2ephp',['field-multiselect-html.php',['../field-multiselect-html_8php.html',1,'']]],

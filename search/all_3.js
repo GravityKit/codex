@@ -10,6 +10,7 @@ var searchData=
   ['blacklist_5fremove',['blacklist_remove',['../class_gravity_view___cache.html#a11458264ae1f10336cb63b1b89557ae8',1,'GravityView_Cache']]],
   ['body_5fafter',['body_after',['../class_g_v_1_1_view___list___template.html#a036ef7c3df67028735b5ff0c6dc32ec5',1,'GV\View_List_Template\body_after()'],['../class_g_v_1_1_view___table___template.html#a036ef7c3df67028735b5ff0c6dc32ec5',1,'GV\View_Table_Template\body_after()']]],
   ['body_5fbefore',['body_before',['../class_g_v_1_1_view___list___template.html#ac6c74a33b4d415c437ddf5d7ec0be242',1,'GV\View_List_Template\body_before()'],['../class_g_v_1_1_view___table___template.html#ac6c74a33b4d415c437ddf5d7ec0be242',1,'GV\View_Table_Template\body_before()']]],
+  ['body_5fclass',['body_class',['../class_g_v_1_1_addon___settings.html#a3d84afc757d74983a36932e547f8a9ee',1,'GV::Addon_Settings']]],
   ['bootstrap',['bootstrap',['../class_g_v_1_1_core.html#a73f9b330de6451728da16c8d2e18dba3',1,'GV::Core']]],
   ['bottom',['bottom',['../namespace_g_v.html#a9324057a236bf5a4cb4b02d83f2a5722',1,'GV']]],
   ['break',['break',['../field-created__by-html_8php.html#a91cf6fbebedd86150a36e5ac3d5d3bfc',1,'field-created_by-html.php']]],
