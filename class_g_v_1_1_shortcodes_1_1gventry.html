@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -186,17 +186,26 @@ Additional Inherited Members</h2></td></tr>
 <p>Private, pending, draft, etc.</p>
 <p>Unapproved entries.</p>
 <p>Based on code in our unit-tests. <a class="el" href="namespace_g_v_1_1_mocks.html">Mocks</a> old context, etc.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000035">Runs Filter:</a></b></dt><dd><code>gravityview/shortcodes/gventry/edit/success</code> Modify the edit entry success message in [gventry]. </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>develop </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000035">Runs Filter:</a></b></dt><dd><code>gravityview/shortcodes/gventry/edit/success</code> Modify the edit entry success message in [gventry].</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>develop</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">string</td><td class="paramname">$message</td><td>The message. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">\GV\Entry</td><td class="paramname">$entry</td><td>The entry. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">array</td><td class="paramname">$atts</td><td>The attributes.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>The message. </td></tr>
+    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </td></tr>
+    <tr><td class="paramtype">\GV\Entry</td><td class="paramname">$entry</td><td>The entry. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>The attributes. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$back_link</td><td>URL to return to the original entry. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>Since</dt><dd>2.14.6 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$redirect_url</td><td>URL to return to after the update. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.14.6</dd></dl>
 <p>Remove the back link.</p>
 <dl class="filters"><dt><b><a class="el" href="filters.html#_filters000036">Runs Filter:</a></b></dt><dd><code>gravityview/shortcodes/gventry/output</code> Filter the [gventry] output. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -211,7 +220,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-shortcode-gventry_8php_source.html#l00027">27</a> of file <a class="el" href="class-gv-shortcode-gventry_8php_source.html">class-gv-shortcode-gventry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="class-gv-shortcode_8php_source.html#l00023">Shortcode\$atts</a>, <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="views_2list_2list-body_8php_source.html#l00013">$template</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00017">Entry_Sort\ASC</a>, <a class="el" href="class-gv-entry-gravityforms_8php_source.html#l00042">GF_Entry\by_id()</a>, <a class="el" href="class-gv-field-internal_8php_source.html#l00051">Internal_Field\by_id()</a>, <a class="el" href="class-gv-entry_8php_source.html#l00082">Entry\by_id()</a>, <a class="el" href="class-gv-view_8php_source.html#l00803">View\by_id()</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00022">Entry_Sort\DESC</a>, <a class="el" href="field-created__by-html_8php_source.html#l00048">endswitch</a>, <a class="el" href="class-edit-entry_8php_source.html#l00190">GravityView_Edit_Entry\get_nonce_key()</a>, <a class="el" href="class-common_8php_source.html#l01235">GVCommon\get_template_settings()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00057">GravityView_Edit_Entry\getInstance()</a>, <a class="el" href="class-data_8php_source.html#l00122">GravityView_View_Data\getInstance()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="helper-functions_8php_source.html#l00511">gv_map_deep()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00177">GravityView_Entry_Approval_Status\is_approved()</a>, <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00032">Entry_Sort\NUMERIC</a>, and <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00027">Entry_Sort\RAND</a>.</p>
+<p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="class-gv-shortcode_8php_source.html#l00023">Shortcode\$atts</a>, <a class="el" href="form-buttons_8php_source.html#l00032">$back_link</a>, <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="views_2list_2list-body_8php_source.html#l00013">$template</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00017">Entry_Sort\ASC</a>, <a class="el" href="class-gv-entry-gravityforms_8php_source.html#l00042">GF_Entry\by_id()</a>, <a class="el" href="class-gv-field-internal_8php_source.html#l00051">Internal_Field\by_id()</a>, <a class="el" href="class-gv-view_8php_source.html#l00808">View\by_id()</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00022">Entry_Sort\DESC</a>, <a class="el" href="field-created__by-html_8php_source.html#l00048">endswitch</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00190">GravityView_Edit_Entry\get_nonce_key()</a>, <a class="el" href="class-common_8php_source.html#l01249">GVCommon\get_template_settings()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00057">GravityView_Edit_Entry\getInstance()</a>, <a class="el" href="class-data_8php_source.html#l00122">GravityView_View_Data\getInstance()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="helper-functions_8php_source.html#l00511">gv_map_deep()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00177">GravityView_Entry_Approval_Status\is_approved()</a>, <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>, <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00032">Entry_Sort\NUMERIC</a>, and <a class="el" href="class-gv-collection-entry-sort_8php_source.html#l00027">Entry_Sort\RAND</a>.</p>
 
 </div>
 </div>

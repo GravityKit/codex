@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -441,7 +441,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00658">658</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -516,21 +516,21 @@ Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$row</td><td>The entry details </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">array</td><td class="paramname">$entry</td><td>The original entry</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$row</td><td>The entry details </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>The original entry</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="filters"><dt><b><a class="el" href="filters.html#_filters000239">Runs Filter:</a></b></dt><dd><code>gravityview/entry/duplicate/meta</code> Modify the new entry meta details. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$save_this_meta</td><td>The duplicate meta. Use/add meta_key, meta_value, item_index. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">array</td><td class="paramname">$row</td><td>The duplicated entry </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">array</td><td class="paramname">$entry</td><td>The original entry</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$save_this_meta</td><td>The duplicate meta. Use/add meta_key, meta_value, item_index. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$row</td><td>The duplicated entry </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>The original entry</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000046">Runs Actions:</a></b></dt><dd><code>gravityview/duplicate-entry/duplicated</code> Triggered when an entry is duplicated </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000047">Runs Actions:</a></b></dt><dd><code>gravityview/duplicate-entry/duplicated</code> Triggered when an entry is duplicated </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -608,7 +608,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00196">196</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00219">GravityView_Render_Settings\get_cap_choices()</a>.</p>
+<p class="reference">References <a class="el" href="time_8php_source.html#l00022">$field_id</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00231">GravityView_Render_Settings\get_cap_choices()</a>.</p>
 
 </div>
 </div>
@@ -840,8 +840,8 @@ Private Member Functions</h2></td></tr>
 <dl class="filters"><dt><b><a class="el" href="filters.html#_filters000243">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate/backend/enable</code> Disables the duplicate link on the backend. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>True by default. Enabled. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The form ID.</td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>True by default. Enabled. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$form_id</td><td>The form ID.</td></tr>
   </table>
   </dd>
 </dl>
@@ -914,7 +914,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00835">835</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00456">duplicate_entry()</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00097">getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-logging_8php_source.html#l00134">GravityView_Logging\is_logging_active()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00456">duplicate_entry()</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00097">getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-logging_8php_source.html#l00142">GravityView_Logging\is_logging_active()</a>.</p>
 
 </div>
 </div>
@@ -964,7 +964,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00118">118</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1029,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00286">286</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="time_8php_source.html#l00017">$field_id</a>.</p>
+<p class="reference">References <a class="el" href="time_8php_source.html#l00022">$field_id</a>.</p>
 
 </div>
 </div>

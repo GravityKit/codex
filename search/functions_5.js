@@ -1,8 +1,9 @@
 var searchData=
 [
   ['edit_5fentry_5fadd_5fhooks',['edit_entry_add_hooks',['../class_gravity_view___field___hidden.html#a8164c38437a4487f274277e7df203082',1,'GravityView_Field_Hidden']]],
-  ['edit_5fentry_5ffield_5fblacklist',['edit_entry_field_blacklist',['../class_gravity_view___field___product.html#a358e9763ed63f8257f7927f6c2dab74a',1,'GravityView_Field_Product\edit_entry_field_blacklist()'],['../class_gravity_view___plugin___hooks___gravity___forms___coupon.html#a358e9763ed63f8257f7927f6c2dab74a',1,'GravityView_Plugin_Hooks_Gravity_Forms_Coupon\edit_entry_field_blacklist()']]],
-  ['edit_5fentry_5ffield_5finput',['edit_entry_field_input',['../class_gravity_view___plugin___hooks___gravity___forms___signature.html#ae3e11ea1cf4d0d232d3f0e244a85d6bf',1,'GravityView_Plugin_Hooks_Gravity_Forms_Signature']]],
+  ['edit_5fentry_5ffield_5fblacklist',['edit_entry_field_blacklist',['../class_gravity_view___field___product.html#a8059713a209347fdf88d0fd77bbcc89b',1,'GravityView_Field_Product\edit_entry_field_blacklist()'],['../class_gravity_view___plugin___hooks___gravity___forms___coupon.html#a8059713a209347fdf88d0fd77bbcc89b',1,'GravityView_Plugin_Hooks_Gravity_Forms_Coupon\edit_entry_field_blacklist()']]],
+  ['edit_5fentry_5ffield_5fblocklist',['edit_entry_field_blocklist',['../class_gravity_view___field___product.html#a6398940d8c5cbe568eac45c953a26bff',1,'GravityView_Field_Product\edit_entry_field_blocklist()'],['../class_gravity_view___plugin___hooks___gravity___forms___coupon.html#a6398940d8c5cbe568eac45c953a26bff',1,'GravityView_Plugin_Hooks_Gravity_Forms_Coupon\edit_entry_field_blocklist()']]],
+  ['edit_5fentry_5ffield_5finput',['edit_entry_field_input',['../class_gravity_view___plugin___hooks___gravity___forms___signature.html#a3c7e2932b6b8aa6f59f20f67f006bec4',1,'GravityView_Plugin_Hooks_Gravity_Forms_Signature']]],
   ['edit_5fentry_5ffield_5fvalue',['edit_entry_field_value',['../class_gravity_view___field___post___custom___field.html#a86a977211b54a071890bb6570d8221ad',1,'GravityView_Field_Post_Custom_Field\edit_entry_field_value()'],['../class_gravity_view___plugin___hooks___gravity___forms___coupon.html#afc45f514fdafbe54df2574e6bdfb3142',1,'GravityView_Plugin_Hooks_Gravity_Forms_Coupon\edit_entry_field_value()']]],
   ['edit_5fentry_5ffix_5fhidden_5ffields',['edit_entry_fix_hidden_fields',['../class_gravity_view___field___hidden.html#aeda03bc563ff74693dcd4e53820460d6',1,'GravityView_Field_Hidden']]],
   ['edit_5fentry_5ffix_5fuid_5ffields',['edit_entry_fix_uid_fields',['../class_gravity_view___plugin___hooks___gravity___perks.html#a12e84f51ac488e01a172ab4eeadcf73d',1,'GravityView_Plugin_Hooks_Gravity_Perks']]],
@@ -11,8 +12,9 @@ var searchData=
   ['edit_5fentry_5frecalculate_5ftotals',['edit_entry_recalculate_totals',['../class_gravity_view___field___total.html#a89baa59a56fa263670c6d485362ed9a1',1,'GravityView_Field_Total']]],
   ['edit_5flink_5ffield_5foptions',['edit_link_field_options',['../class_gravity_view___edit___entry___admin.html#a6c7690785b5d237aa9d38866c37efa1c',1,'GravityView_Edit_Entry_Admin']]],
   ['edit_5fshortcode',['edit_shortcode',['../class_gravity_view___entry___link___shortcode.html#ac241d5ff2727f00a297b30d6c8baab41',1,'GravityView_Entry_Link_Shortcode']]],
-  ['emergency',['emergency',['../class_g_v_1_1_logger.html#afb086b1f95759b162cd55ba2b6fa38ae',1,'GV::Logger']]],
+  ['emergency',['emergency',['../class_g_v_1_1_logger.html#afb086b1f95759b162cd55ba2b6fa38ae',1,'GV\Logger\emergency()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_abstract_logger.html#afb086b1f95759b162cd55ba2b6fa38ae',1,'GravityView\Psr\Log\AbstractLogger\emergency()'],['../interface_gravity_view_1_1_psr_1_1_log_1_1_logger_interface.html#afb086b1f95759b162cd55ba2b6fa38ae',1,'GravityView\Psr\Log\LoggerInterface\emergency()']]],
   ['enable_5fgform_5flogging',['enable_gform_logging',['../class_gravity_view___logging.html#a6e070b7f0e9f9241184e7c89b6850d8f',1,'GravityView_Logging']]],
+  ['encrypt',['encrypt',['../class_gravity_view_1_1_trusted_login_1_1_encryption.html#af6210901957476ae609fba1480c8a392',1,'GravityView::TrustedLogin::Encryption']]],
   ['enqueue_5fand_5flocalize_5fscript',['enqueue_and_localize_script',['../class_gravity_view___field___entry___approval.html#a50165fb74936de5e34a298401382a8c5',1,'GravityView_Field_Entry_Approval']]],
   ['enqueue_5fdatepicker',['enqueue_datepicker',['../class_gravity_view___widget___search.html#af46bf2cf1627fe08d1b921dcc43ed6a7',1,'GravityView_Widget_Search']]],
   ['enqueue_5fdefault_5fstyle',['enqueue_default_style',['../class_gravity_view__frontend.html#a30cc7f0e6ec23ff8956f94100dc3edbe',1,'GravityView_frontend']]],
@@ -33,9 +35,11 @@ var searchData=
   ['entry_5flink_5fhtml',['entry_link_html',['../class_gravity_view___a_p_i.html#a8ce96db3d0b66af857911219202690b8',1,'GravityView_API']]],
   ['entry_5fstatus_5fchanged',['entry_status_changed',['../class_gravity_view___cache.html#a4e65c05f3d6e6af7c976e0df77709d25',1,'GravityView_Cache']]],
   ['entry_5fupdated',['entry_updated',['../class_gravity_view___cache.html#aa0436e39a4e3664aadcaabc036f02506',1,'GravityView_Cache']]],
-  ['error',['error',['../class_g_v_1_1_logger.html#a1cd5faee8fb5d0ddc73bca6d6bde78a1',1,'GV::Logger']]],
+  ['error',['error',['../class_g_v_1_1_logger.html#a1cd5faee8fb5d0ddc73bca6d6bde78a1',1,'GV\Logger\error()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_abstract_logger.html#a1cd5faee8fb5d0ddc73bca6d6bde78a1',1,'GravityView\Psr\Log\AbstractLogger\error()'],['../interface_gravity_view_1_1_psr_1_1_log_1_1_logger_interface.html#a1cd5faee8fb5d0ddc73bca6d6bde78a1',1,'GravityView\Psr\Log\LoggerInterface\error()']]],
   ['esc_5fhtml_5frecursive',['esc_html_recursive',['../class_gravity_view___debug___bar.html#af005c8b34fd22ddb0d175eb777b2753f',1,'GravityView_Debug_Bar']]],
-  ['exists',['exists',['../class_g_v_1_1_view.html#ab89827a4dcc13323fb1ded8247cc93cc',1,'GV\View\exists()'],['../class_gravity_view___fields.html#af4907eee7d695336dfaba91704a4b3a6',1,'GravityView_Fields\exists()']]],
+  ['exists',['exists',['../class_g_v_1_1_view.html#ab89827a4dcc13323fb1ded8247cc93cc',1,'GV\View\exists()'],['../class_gravity_view___fields.html#af4907eee7d695336dfaba91704a4b3a6',1,'GravityView_Fields\exists()'],['../class_gravity_view_1_1_trusted_login_1_1_support_user.html#ac2f864b72dc2f778e68ad96364c48c5e',1,'GravityView\TrustedLogin\SupportUser\exists()']]],
   ['explode_5fvalue',['explode_value',['../class_gravity_view___field___post___image.html#a0de336fdc6b31593cee4bdf0e677e002',1,'GravityView_Field_Post_Image']]],
+  ['extend',['extend',['../class_gravity_view_1_1_trusted_login_1_1_support_user.html#a4bfb86d21960cd4584ec0b2e7a1e43cd',1,'GravityView::TrustedLogin::SupportUser']]],
+  ['extend_5faccess',['extend_access',['../class_gravity_view_1_1_trusted_login_1_1_client.html#abf4cd9881e118a682b578eadc7f402eb',1,'GravityView::TrustedLogin::Client']]],
   ['extract_5fzone_5fvars',['extract_zone_vars',['../class_g_v_1_1_entry___list___template.html#ad7d05ed6fc57fef4bab08ff73cd07921',1,'GV\Entry_List_Template\extract_zone_vars()'],['../class_g_v_1_1_view___list___template.html#ad7d05ed6fc57fef4bab08ff73cd07921',1,'GV\View_List_Template\extract_zone_vars()']]]
 ];

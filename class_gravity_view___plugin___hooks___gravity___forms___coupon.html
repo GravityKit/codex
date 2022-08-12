@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -82,9 +82,12 @@ Inheritance diagram for GravityView_Plugin_Hooks_Gravity_Forms_Coupon:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a358e9763ed63f8257f7927f6c2dab74a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___coupon.html#a358e9763ed63f8257f7927f6c2dab74a">edit_entry_field_blacklist</a> ( $blacklist=array(), $entry=array())</td></tr>
-<tr class="memdesc:a358e9763ed63f8257f7927f6c2dab74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds Coupon fields to Edit Entry field blacklist.  <a href="#a358e9763ed63f8257f7927f6c2dab74a">More...</a><br /></td></tr>
-<tr class="separator:a358e9763ed63f8257f7927f6c2dab74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8059713a209347fdf88d0fd77bbcc89b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___coupon.html#a8059713a209347fdf88d0fd77bbcc89b">edit_entry_field_blacklist</a> ( $blocklist=array(), $entry=array())</td></tr>
+<tr class="memdesc:a8059713a209347fdf88d0fd77bbcc89b"><td class="mdescLeft">&#160;</td><td class="mdescRight">2.14  <a href="#a8059713a209347fdf88d0fd77bbcc89b">More...</a><br /></td></tr>
+<tr class="separator:a8059713a209347fdf88d0fd77bbcc89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6398940d8c5cbe568eac45c953a26bff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___coupon.html#a6398940d8c5cbe568eac45c953a26bff">edit_entry_field_blocklist</a> ( $blocklist=array(), $entry=array())</td></tr>
+<tr class="memdesc:a6398940d8c5cbe568eac45c953a26bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds Coupon fields to Edit Entry field blocklist.  <a href="#a6398940d8c5cbe568eac45c953a26bff">More...</a><br /></td></tr>
+<tr class="separator:a6398940d8c5cbe568eac45c953a26bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc45f514fdafbe54df2574e6bdfb3142"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___coupon.html#afc45f514fdafbe54df2574e6bdfb3142">edit_entry_field_value</a> ( $value, $field, $Edit_Entry_Render)</td></tr>
 <tr class="memdesc:afc45f514fdafbe54df2574e6bdfb3142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the coupon values for entries that have coupons applied.  <a href="#afc45f514fdafbe54df2574e6bdfb3142">More...</a><br /></td></tr>
 <tr class="separator:afc45f514fdafbe54df2574e6bdfb3142"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,8 +186,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a358e9763ed63f8257f7927f6c2dab74a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a358e9763ed63f8257f7927f6c2dab74a">&#9670;&nbsp;</a></span>edit_entry_field_blacklist()</h2>
+<a id="a8059713a209347fdf88d0fd77bbcc89b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8059713a209347fdf88d0fd77bbcc89b">&#9670;&nbsp;</a></span>edit_entry_field_blacklist()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,7 +196,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">edit_entry_field_blacklist </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$blacklist</em> = <code>array()</code>, </td>
+          <td class="paramname"><em>$blocklist</em> = <code>array()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -209,20 +212,57 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds Coupon fields to Edit Entry field blacklist. </p>
+<p>2.14 </p>
+<dl class="section since"><dt>Since</dt><dd>1.20 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00063">63</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html">class-gravityview-plugin-hooks-gravity-forms-coupon.php</a>.</p>
+
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00078">edit_entry_field_blocklist()</a>.</p>
+
+</div>
+</div>
+<a id="a6398940d8c5cbe568eac45c953a26bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6398940d8c5cbe568eac45c953a26bff">&#9670;&nbsp;</a></span>edit_entry_field_blocklist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">edit_entry_field_blocklist </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$blocklist</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$entry</em> = <code>array()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds Coupon fields to Edit Entry field blocklist. </p>
 <dl class="section since"><dt>Since</dt><dd>1.20</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$blacklist</td><td>Array of field types </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$blocklist</td><td>Array of field types </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$entry</td><td>Entry array of entry being edited in Edit Entry</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>array Blacklist array, with coupon possibly added </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Blocklist array, with coupon possibly added </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00069">69</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html">class-gravityview-plugin-hooks-gravity-forms-coupon.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00078">78</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html">class-gravityview-plugin-hooks-gravity-forms-coupon.php</a>.</p>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00045">should_hide_coupon_fields()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00063">edit_entry_field_blacklist()</a>.</p>
 
 </div>
 </div>
@@ -272,9 +312,9 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>string $value is returned unmodified. Only $_POST is modified. </dd></dl>
 <p>Fake POST data so that the data gets pre-filled. Both are needed. </p><dl class="section see"><dt>See also</dt><dd>GF_Field_Coupon::get_field_input</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00091">91</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html">class-gravityview-plugin-hooks-gravity-forms-coupon.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00100">100</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html">class-gravityview-plugin-hooks-gravity-forms-coupon.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="gquiz__grade_8php_source.html#l00011">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00045">should_hide_coupon_fields()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00045">should_hide_coupon_fields()</a>.</p>
 
 </div>
 </div>
@@ -303,7 +343,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True: Yes, show coupon fields in Edit Entry; False: no, don't show Coupon fields </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000299">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/hide-coupon-fields</code> Should Coupon fields be hidden in Edit Entry? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000302">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/hide-coupon-fields</code> Should Coupon fields be hidden in Edit Entry? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.20 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -316,7 +356,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-common_8php_source.html#l00180">GVCommon\entry_has_transaction_data()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00069">edit_entry_field_blacklist()</a>, and <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00091">edit_entry_field_value()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00078">edit_entry_field_blocklist()</a>, and <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php_source.html#l00100">edit_entry_field_value()</a>.</p>
 
 </div>
 </div>

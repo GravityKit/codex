@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -82,9 +82,15 @@ Inheritance diagram for GravityView_Plugin_Hooks_Gravity_Forms_Dropbox:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5789bc62165e9e706af152c9f49a81c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___dropbox.html#af5789bc62165e9e706af152c9f49a81c">filter_file_path</a> ( $file_path='', $file_path_info=array(), $field_settings=array())</td></tr>
-<tr class="memdesc:af5789bc62165e9e706af152c9f49a81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert links to view content on Dropbox.com to direct-access files.  <a href="#af5789bc62165e9e706af152c9f49a81c">More...</a><br /></td></tr>
-<tr class="separator:af5789bc62165e9e706af152c9f49a81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1785783a59a8799ea4bcc314a53dcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___dropbox.html#a9c1785783a59a8799ea4bcc314a53dcd">filter_file_extension</a> ( $string='')</td></tr>
+<tr class="memdesc:a9c1785783a59a8799ea4bcc314a53dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert links to view content on Dropbox.com to direct-access files.  <a href="#a9c1785783a59a8799ea4bcc314a53dcd">More...</a><br /></td></tr>
+<tr class="separator:a9c1785783a59a8799ea4bcc314a53dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440b7b94444d42ccf826f4ba0a634593"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___dropbox.html#a440b7b94444d42ccf826f4ba0a634593">filter_file_path</a> ( $string='')</td></tr>
+<tr class="memdesc:a440b7b94444d42ccf826f4ba0a634593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert links to view content on Dropbox.com to direct-access files.  <a href="#a440b7b94444d42ccf826f4ba0a634593">More...</a><br /></td></tr>
+<tr class="separator:a440b7b94444d42ccf826f4ba0a634593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75888dc61e2221ac386a5b285bc49625"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin___hooks___gravity___forms___dropbox.html#a75888dc61e2221ac386a5b285bc49625">filter_image_atts</a> ( $image_atts=array())</td></tr>
+<tr class="memdesc:a75888dc61e2221ac386a5b285bc49625"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the image file source includes <code>?raw=1</code>, don't validate the source, since we know it's Dropbox or similar.  <a href="#a75888dc61e2221ac386a5b285bc49625">More...</a><br /></td></tr>
+<tr class="separator:a75888dc61e2221ac386a5b285bc49625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_gravity_view___plugin__and___theme___hooks"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_gravity_view___plugin__and___theme___hooks')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_gravity_view___plugin__and___theme___hooks.html">GravityView_Plugin_and_Theme_Hooks</a></td></tr>
 <tr class="memitem:a095c5d389db211932136b53f25f39685 inherit pub_methods_class_gravity_view___plugin__and___theme___hooks"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___plugin__and___theme___hooks.html#a095c5d389db211932136b53f25f39685">__construct</a> ()</td></tr>
 <tr class="memdesc:a095c5d389db211932136b53f25f39685 inherit pub_methods_class_gravity_view___plugin__and___theme___hooks"><td class="mdescLeft">&#160;</td><td class="mdescRight">GravityView_Theme_Support constructor.  <a href="class_gravity_view___plugin__and___theme___hooks.html#a095c5d389db211932136b53f25f39685">More...</a><br /></td></tr>
@@ -177,34 +183,18 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af5789bc62165e9e706af152c9f49a81c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5789bc62165e9e706af152c9f49a81c">&#9670;&nbsp;</a></span>filter_file_path()</h2>
+<a id="a9c1785783a59a8799ea4bcc314a53dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c1785783a59a8799ea4bcc314a53dcd">&#9670;&nbsp;</a></span>filter_file_extension()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">filter_file_path </td>
+          <td class="memname">filter_file_extension </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$file_path</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>$string</em> = <code>''</code></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$file_path_info</em> = <code>array()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$field_settings</em> = <code>array()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,15 +203,77 @@ Protected Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.22.3</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$file_path</td><td></td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$file_path_info</td><td></td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$field_settings</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>Original string (file path or extension).</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>string File path, with Dropbox URLs modified </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string File path or extension, with Dropbox URLs modified. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-dropbox_8php_source.html#l00069">69</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-dropbox_8php_source.html">class-gravityview-plugin-hooks-gravity-forms-dropbox.php</a>.</p>
+
+<p class="reference">References <a class="el" href="class-gravityview-image_8php_source.html#l00104">GravityView_Image\get_image_extensions()</a>.</p>
+
+</div>
+</div>
+<a id="a440b7b94444d42ccf826f4ba0a634593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440b7b94444d42ccf826f4ba0a634593">&#9670;&nbsp;</a></span>filter_file_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">filter_file_path </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$string</em> = <code>''</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert links to view content on Dropbox.com to direct-access files. </p>
+<dl class="section since"><dt>Since</dt><dd>1.22.3</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>Original string (file path or extension)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string File path or extension, with Dropbox URLs modified </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-dropbox_8php_source.html#l00089">89</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-dropbox_8php_source.html">class-gravityview-plugin-hooks-gravity-forms-dropbox.php</a>.</p>
+
+</div>
+</div>
+<a id="a75888dc61e2221ac386a5b285bc49625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75888dc61e2221ac386a5b285bc49625">&#9670;&nbsp;</a></span>filter_image_atts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">filter_image_atts </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$image_atts</em> = <code>array()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When the image file source includes <code>?raw=1</code>, don't validate the source, since we know it's Dropbox or similar. </p>
+<dl class="section since"><dt>Since</dt><dd>2.14.3</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array{src:string,class:string,alt:string,width:string}</td><td>$image_atts</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array Image attributes array, possibly with <code>validate_src</code> disabled. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-dropbox_8php_source.html#l00046">46</a> of file <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-dropbox_8php_source.html">class-gravityview-plugin-hooks-gravity-forms-dropbox.php</a>.</p>
+
+<p class="reference">References <a class="el" href="post__image_8php_source.html#l00092">$image_atts</a>.</p>
 
 </div>
 </div>

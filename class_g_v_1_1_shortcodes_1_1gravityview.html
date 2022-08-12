@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -177,7 +177,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pop the callstack and return the value. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00343">343</a> of file <a class="el" href="class-gv-shortcode-gravityview_8php_source.html">class-gv-shortcode-gravityview.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00361">361</a> of file <a class="el" href="class-gv-shortcode-gravityview_8php_source.html">class-gv-shortcode-gravityview.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
@@ -225,6 +225,15 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string|null The output. </dd></dl>
+<dl class="actions"><dt><b><a class="el" href="actions.html#_actions000004">Runs Actions:</a></b></dt><dd><code>gravityview/shortcode/before-processing</code> Runs before the GV shortcode is processed; can be used to load additional scripts/styles</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.13.4</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>GV <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> </td></tr>
+    <tr><td class="paramtype">\WP_Post</td><td class="paramname">$post</td><td>Associated WP post</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>When this shortcode is embedded inside a <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> we can only display it as a directory. There's no other way. Try to detect that we're not embedded to allow edit and single contexts.</p>
 <p>Remove <a class="el" href="namespace_g_v_1_1_widgets.html">Widgets</a> on a nested embedded <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>.</p>
 <p>Check permissions.</p>
@@ -238,7 +247,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00032">32</a> of file <a class="el" href="class-gv-shortcode-gravityview_8php_source.html">class-gv-shortcode-gravityview.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-shortcode_8php_source.html#l00023">Shortcode\$atts</a>, <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="delete__link_8php_source.html#l00010">$view_id</a>, <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>, <a class="el" href="class-gv-view_8php_source.html#l00803">View\by_id()</a>, <a class="el" href="class-common_8php_source.html#l00857">GVCommon\check_entry_display()</a>, <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00307">gravityview\detail()</a>, <a class="el" href="class-gv-entry_8php_source.html#l00063">Entry\get_endpoint_name()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00177">GravityView_Entry_Approval_Status\is_approved()</a>, <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>, and <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00238">gravityview\parse_and_sanitize_atts()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-shortcode_8php_source.html#l00023">Shortcode\$atts</a>, <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="delete-entry_8php_source.html#l00007">$post</a>, <a class="el" href="delete__link_8php_source.html#l00010">$view_id</a>, <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>, <a class="el" href="class-gv-view_8php_source.html#l00808">View\by_id()</a>, <a class="el" href="class-common_8php_source.html#l00871">GVCommon\check_entry_display()</a>, <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00325">gravityview\detail()</a>, <a class="el" href="class-gv-entry_8php_source.html#l00063">Entry\get_endpoint_name()</a>, <a class="el" href="class-data_8php_source.html#l00122">GravityView_View_Data\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00177">GravityView_Entry_Approval_Status\is_approved()</a>, <a class="el" href="class-gravityview-entry-approval_8php_source.html#l00028">GravityView_Entry_Approval\meta_key</a>, and <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00256">gravityview\parse_and_sanitize_atts()</a>.</p>
 
 </div>
 </div>
@@ -310,7 +319,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00307">307</a> of file <a class="el" href="class-gv-shortcode-gravityview_8php_source.html">class-gv-shortcode-gravityview.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00325">325</a> of file <a class="el" href="class-gv-shortcode-gravityview_8php_source.html">class-gv-shortcode-gravityview.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-shortcode_8php_source.html#l00023">Shortcode\$atts</a>, <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="field-created__by-html_8php_source.html#l00048">endswitch</a>.</p>
 
@@ -358,7 +367,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Make sure number fields are numeric. Also, convert mixed number strings to numbers </p><dl class="section see"><dt>See also</dt><dd><a href="http://php.net/manual/en/function.is-numeric.php#107326">http://php.net/manual/en/function.is-numeric.php#107326</a></dd></dl>
 <p>Only allow values that are defined in the settings</p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00238">238</a> of file <a class="el" href="class-gv-shortcode-gravityview_8php_source.html">class-gv-shortcode-gravityview.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00256">256</a> of file <a class="el" href="class-gv-shortcode-gravityview_8php_source.html">class-gv-shortcode-gravityview.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-shortcode_8php_source.html#l00023">Shortcode\$atts</a>, <a class="el" href="class-gv-settings-view_8php_source.html#l00047">View_Settings\defaults()</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="helper-functions_8php_source.html#l00412">gv_empty()</a>, and <a class="el" href="class-gravityview-merge-tags_8php_source.html#l00321">GravityView_Merge_Tags\replace_variables()</a>.</p>
 

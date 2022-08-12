@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -156,6 +156,9 @@ $(function() {
 </li>
 <li>GravityView_Field_Captcha
 : <a class="el" href="class-gravityview-field-captcha_8php.html#a41d10a596f78d8ae8dcec1e54cd32a26">class-gravityview-field-captcha.php</a>
+</li>
+<li>GravityView_Field_Chained_Select
+: <a class="el" href="class-gravityview-field-chainedselect_8php.html#a3480a6dc38b1b8f89b3073189932ea82">class-gravityview-field-chainedselect.php</a>
 </li>
 <li>GravityView_Field_Checkbox
 : <a class="el" href="class-gravityview-field-checkbox_8php.html#aa0a84c2b40396651932edf4ba73c82ab">class-gravityview-field-checkbox.php</a>
@@ -428,7 +431,7 @@ $(function() {
 : <a class="el" href="class-common_8php.html#a194da0145d30db917c261143ed919d9c">class-common.php</a>
 </li>
 <li>gravityview_get_map_link()
-: <a class="el" href="class-api_8php.html#aa2a77b456658df700f342981034fb509">class-api.php</a>
+: <a class="el" href="class-api_8php.html#abf31ef0327f5befd010a147609963a3e">class-api.php</a>
 </li>
 <li>gravityview_get_permalink_query_args()
 : <a class="el" href="helper-functions_8php.html#afc09cc41f1f3ca02d6a4e15da19b8a7e">helper-functions.php</a>
@@ -466,6 +469,15 @@ $(function() {
 <li>gravityview_header()
 : <a class="el" href="class-api_8php.html#a5b93e2caa245a3df4723a23d9033a73e">class-api.php</a>
 </li>
+<li>gravityview_hide_empty_fields_in_edit_entry()
+: <a class="el" href="class-edit-entry-render_8php.html#a0e172d248353d779332f9e2fd12b57ea">class-edit-entry-render.php</a>
+</li>
+<li>gravityview_import_helper_fix_line_breaks()
+: <a class="el" href="import-functions_8php.html#a5fb25a192387b290b4f01137c18d6e5c">import-functions.php</a>
+</li>
+<li>gravityview_import_helper_restore_line_breaks()
+: <a class="el" href="import-functions_8php.html#a24627b6f382141f51ca013f2fd0af243">import-functions.php</a>
+</li>
 <li>gravityview_is_admin_page()
 : <a class="el" href="class-admin_8php.html#a7b779174252519132e88a884d578bc18">class-admin.php</a>
 </li>
@@ -480,6 +492,9 @@ $(function() {
 </li>
 <li>GravityView_Logging
 : <a class="el" href="class-gravityview-logging_8php.html#add1c72ecfb1690304245314fa22bbcb4">class-gravityview-logging.php</a>
+</li>
+<li>gravityview_maybe_convert_date_string_to_timestamp()
+: <a class="el" href="helper-functions_8php.html#a67be17ea31c1717f73c48329a4fa7d6b">helper-functions.php</a>
 </li>
 <li>GravityView_Merge_Tags
 : <a class="el" href="class-gravityview-merge-tags_8php.html#a09b61e0c65621c2b7f55c8341f14fbc1">class-gravityview-merge-tags.php</a>
@@ -496,6 +511,12 @@ $(function() {
 <li>GravityView_Plugin_Hooks_ACF
 : <a class="el" href="class-gravityview-plugin-hooks-acf_8php.html#a6cfb0a96d96391046de4ce198bdae473">class-gravityview-plugin-hooks-acf.php</a>
 </li>
+<li>GravityView_Plugin_Hooks_All_In_One_SEO
+: <a class="el" href="class-gravityview-plugin-hooks-all-in-one-seo_8php.html#a96867d1b5016aada97d4d96085057997">class-gravityview-plugin-hooks-all-in-one-seo.php</a>
+</li>
+<li>GravityView_Plugin_Hooks_Code_Snippets
+: <a class="el" href="class-gravityview-plugin-hooks-code-snippets_8php.html#a3a8be51881883ac375f30616303556d3">class-gravityview-plugin-hooks-code-snippets.php</a>
+</li>
 <li>GravityView_Plugin_Hooks_Debug_Bar
 : <a class="el" href="class-gravityview-plugin-hooks-debug-bar_8php.html#af8a1d38ba61e3d29996b5d9bef2b2f2e">class-gravityview-plugin-hooks-debug-bar.php</a>
 </li>
@@ -504,6 +525,9 @@ $(function() {
 </li>
 <li>GravityView_Plugin_Hooks_Gravity_Forms
 : <a class="el" href="class-gravityview-plugin-hooks-gravity-forms_8php.html#a9251fe82be7138cbe7003490f99cdff1">class-gravityview-plugin-hooks-gravity-forms.php</a>
+</li>
+<li>GravityView_Plugin_Hooks_Gravity_Forms_Chained_Selects
+: <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-chainedselects_8php.html#a41f0d9ee58a8958f25a6dba00e306936">class-gravityview-plugin-hooks-gravity-forms-chainedselects.php</a>
 </li>
 <li>GravityView_Plugin_Hooks_Gravity_Forms_Coupon
 : <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-coupon_8php.html#a4c360e61365c1ebc99f07ef434b2cdf1">class-gravityview-plugin-hooks-gravity-forms-coupon.php</a>
@@ -535,11 +559,17 @@ $(function() {
 <li>GravityView_Plugin_Hooks_Leco_Client_Portal
 : <a class="el" href="class-gravityview-plugin-hooks-leco-client-portal_8php.html#a8d29317f6c3fdcb8fc64f7f3c60a603f">class-gravityview-plugin-hooks-leco-client-portal.php</a>
 </li>
+<li>GravityView_Plugin_Hooks_Members
+: <a class="el" href="class-gravityview-plugin-hooks-members_8php.html#a3f25c56a107505b37b05b110d855bc06">class-gravityview-plugin-hooks-members.php</a>
+</li>
 <li>GravityView_Plugin_Hooks_Pageviews
 : <a class="el" href="class-gravityview-plugin-hooks-pageviews_8php.html#a6dfa5b650e109c4917c3361000f65140">class-gravityview-plugin-hooks-pageviews.php</a>
 </li>
 <li>GravityView_Plugin_Hooks_Query_Monitor
 : <a class="el" href="class-gravityview-plugin-hooks-query-monitor_8php.html#ae068ab2f6eedcbe4e80fd82d49f1f588">class-gravityview-plugin-hooks-query-monitor.php</a>
+</li>
+<li>GravityView_Plugin_Hooks_TrustedLogin
+: <a class="el" href="class-gravityview-plugin-hooks-trustedlogin_8php.html#a9cb92b2353cd351b6b16d1a3b614915b">class-gravityview-plugin-hooks-trustedlogin.php</a>
 </li>
 <li>GravityView_Plugin_Hooks_Wicked_Folders
 : <a class="el" href="class-gravityview-theme-hooks-wicked-folders_8php.html#a771965350033f3d6c1daba59a8ebbcf2">class-gravityview-theme-hooks-wicked-folders.php</a>

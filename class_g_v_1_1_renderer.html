@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -107,6 +107,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a691691258fd3c07feb16742a0c9db9dd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_renderer.html#a691691258fd3c07feb16742a0c9db9dd">disable_show_only_approved_entries</a> ( $<a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html">gravityview</a>)</td></tr>
+<tr class="memdesc:a691691258fd3c07feb16742a0c9db9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the "Show only approved entries" setting, hence displaying all entries on the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>.  <a href="#a691691258fd3c07feb16742a0c9db9dd">More...</a><br /></td></tr>
+<tr class="separator:a691691258fd3c07feb16742a0c9db9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37ad8bfacf6d450149ea9c62c3f964f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_v_1_1_renderer.html#ac37ad8bfacf6d450149ea9c62c3f964f">maybe_print_configuration_notice</a> ( $<a class="el" href="class_g_v_1_1_shortcodes_1_1gravityview.html">gravityview</a>)</td></tr>
 <tr class="memdesc:ac37ad8bfacf6d450149ea9c62c3f964f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check empty configuration.  <a href="#ac37ad8bfacf6d450149ea9c62c3f964f">More...</a><br /></td></tr>
 <tr class="separator:ac37ad8bfacf6d450149ea9c62c3f964f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,46 @@ Static Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a691691258fd3c07feb16742a0c9db9dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691691258fd3c07feb16742a0c9db9dd">&#9670;&nbsp;</a></span>disable_show_only_approved_entries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static disable_show_only_approved_entries </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$gravityview</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disable the "Show only approved entries" setting, hence displaying all entries on the <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a>. </p>
+<dl class="section since"><dt>Since</dt><dd>2.14.3</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$gravityview</td><td>The $gravityview template object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00059">59</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+
+<p class="reference">References <a class="el" href="field-gravatar-html_8php_source.html#l00021">$settings</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+
+</div>
+</div>
 <a id="a30188556c839bdb46df9034a68cf3d44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30188556c839bdb46df9034a68cf3d44">&#9670;&nbsp;</a></span>legacy_template_warning()</h2>
 
@@ -183,7 +226,7 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A closure used in the filter. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00253">253</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00371">371</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
 
 </div>
 </div>
@@ -221,7 +264,7 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00151">151</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00269">269</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
 
 <p class="reference">References <a class="el" href="post__image_8php_source.html#l00098">$image</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, and <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>.</p>
 
@@ -261,9 +304,9 @@ Static Private Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00056">56</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00092">92</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00028">GravityView_Entry_Approval_Status\APPROVED</a>, and <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00028">GravityView_Entry_Approval_Status\APPROVED</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00400">GV\bottom</a>, and <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>.</p>
 
 </div>
 </div>
@@ -304,7 +347,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00033">33</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-frontend-views_8php_source.html#l00108">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-api_8php_source.html#l01296">gravityview_get_view_id()</a>.</p>
+<p class="reference">References <a class="el" href="class-frontend-views_8php_source.html#l00109">GravityView_frontend\getInstance()</a>, and <a class="el" href="class-api_8php_source.html#l01296">gravityview_get_view_id()</a>.</p>
 
 </div>
 </div>
@@ -345,13 +388,13 @@ Static Private Member Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$reserved_slugs</td><td>An array of strings, reserved slugs. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramtype">\GV\Template_Context</td><td class="paramname">$gravityview</td><td>The context.</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$reserved_slugs</td><td>An array of strings, reserved slugs. </td></tr>
+    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$gravityview</td><td>The context.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00196">196</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-renderer_8php_source.html#l00314">314</a> of file <a class="el" href="class-gv-renderer_8php_source.html">class-gv-renderer.php</a>.</p>
 
 <p class="reference">References <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="entry__approval_8php_source.html#l00023">$title</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
 

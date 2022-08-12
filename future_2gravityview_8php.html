@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -129,8 +129,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>If this file is called directly, abort. </p>
+<p>The default survey field output template.</p>
 <p>Require core and mocks  "GRAVITYVIEW_DIR" "../"</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000336">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000340">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -139,7 +140,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000337">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000341">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/content_after</code> Modify Custom Content field output after Merge Tag variables get replaced, before shortcodes get processed </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.6.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -147,7 +148,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000353">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000359">Runs Filter:</a></b></dt><dd><code>gravityview/fields/custom/decode_shortcodes</code> Decode brackets in shortcodes, rendering them inert (escape brackets).</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -159,6 +160,16 @@ Variables</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Filter is defined in /templates/fields/field-checkbox-html.php</p>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000373">Runs Filter:</a></b></dt><dd><code>gravityview/template/field/survey/glue</code> The value used to separate multiple values in the Survey field output </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.10.4</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>The glue. Default: "; " (semicolon with a trailing space) </td></tr>
     <tr><td class="paramname"></td><td></td></tr>
   </table>
   </dd>

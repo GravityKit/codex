@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -140,7 +140,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Turn to an $atts array as used around the old codebase. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-settings-view_8php_source.html#l00589">589</a> of file <a class="el" href="class-gv-settings-view_8php_source.html">class-gv-settings-view.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-settings-view_8php_source.html#l00626">626</a> of file <a class="el" href="class-gv-settings-view_8php_source.html">class-gv-settings-view.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00663">GV\defaults()</a>.</p>
 
@@ -192,21 +192,21 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>array The default settings along with their values. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramtype">string</td><td class="paramname">$label</td><td>Setting label shown in admin </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramtype">string</td><td class="paramname">$type</td><td>Gravity Forms field type </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramtype">string</td><td class="paramname">$group</td><td>The field group the setting is associated with. Default: "default" </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramtype">mixed</td><td class="paramname">$value</td><td>The default value for the setting </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramtype">string</td><td class="paramname">$tooltip</td><td>Tooltip displayed for the setting </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramtype">boolean</td><td class="paramname">$show_in_shortcode</td><td>Whether to show the setting in the shortcode configuration modal </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramtype">array</td><td class="paramname">$options</td><td>Array of values to use when generating select, multiselect, radio, or checkboxes fields </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramtype">boolean</td><td class="paramname">$full_width</td><td>True: Display the input and label together when rendering. False: Display label and input in separate columns when rendering. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$label</td><td>Setting label shown in admin </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Gravity Forms field type </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$group</td><td>The field group the setting is associated with. Default: "default" </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td>The default value for the setting </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$tooltip</td><td>Tooltip displayed for the setting </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$show_in_shortcode</td><td>Whether to show the setting in the shortcode configuration modal </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>Array of values to use when generating select, multiselect, radio, or checkboxes fields </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$full_width</td><td>True: Display the input and label together when rendering. False: Display label and input in separate columns when rendering. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="filters"><dt><b><a class="el" href="filters.html#_filters000031">Runs Filter:</a></b></dt><dd><code>gravityview_default_args</code> Modify the default settings for new Views </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$default_args</td><td>Array of default args. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$default_args</td><td>Array of default args. </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,7 +214,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="filters"><dt><b><a class="el" href="filters.html#_filters000032">Runs Filter:</a></b></dt><dd><code>gravityview/view/defaults</code> Modify the default settings for new Views </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramtype">array</td><td class="paramname">$default_settings</td><td>Array of default settings.</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$default_settings</td><td>Array of default settings.</td></tr>
   </table>
   </dd>
 </dl>
@@ -223,7 +223,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00042">GravityView_Delete_Entry\REDIRECT_TO_MULTIPLE_ENTRIES_VALUE</a>, and <a class="el" href="class-delete-entry_8php_source.html#l00048">GravityView_Delete_Entry\REDIRECT_TO_URL_VALUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00076">GravityView_Admin_Add_Shortcode\add_shortcode_popup()</a>, <a class="el" href="class-data_8php_source.html#l00351">GravityView_View_Data\get_default_arg()</a>, <a class="el" href="class-gravityview-shortcode_8php_source.html#l00077">GravityView_Shortcode\parse_and_sanitize_atts()</a>, <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00238">gravityview\parse_and_sanitize_atts()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00332">GravityView_Admin_Views\tooltips()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00076">GravityView_Admin_Add_Shortcode\add_shortcode_popup()</a>, <a class="el" href="class-data_8php_source.html#l00351">GravityView_View_Data\get_default_arg()</a>, <a class="el" href="class-gravityview-shortcode_8php_source.html#l00077">GravityView_Shortcode\parse_and_sanitize_atts()</a>, <a class="el" href="class-gv-shortcode-gravityview_8php_source.html#l00256">gravityview\parse_and_sanitize_atts()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00368">GravityView_Admin_Views\tooltips()</a>.</p>
 
 </div>
 </div>
@@ -265,7 +265,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="field-gravatar-html_8php_source.html#l00021">$settings</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00663">GV\defaults()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00231">GravityView_View_Data\get_id_from_atts()</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00507">GravityView_Render_Settings\render_setting_row()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-data_8php_source.html#l00231">GravityView_View_Data\get_id_from_atts()</a>, and <a class="el" href="class_8render_8settings_8php_source.html#l00519">GravityView_Render_Settings\render_setting_row()</a>.</p>
 
 </div>
 </div>

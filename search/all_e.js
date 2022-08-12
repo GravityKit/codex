@@ -13,7 +13,10 @@ var searchData=
   ['note_2drow_2deditable_2ephp',['note-row-editable.php',['../note-row-editable_8php.html',1,'']]],
   ['note_2drow_2ephp',['note-row.php',['../note-row_8php.html',1,'']]],
   ['notes_2ephp',['notes.php',['../notes_8php.html',1,'']]],
-  ['notice',['NOTICE',['../class_g_v_1_1_log_level.html#a0b32ca69140ca26e6614dddf004ae3d9',1,'GV\LogLevel\NOTICE()'],['../class_g_v_1_1_logger.html#ae0f18fe657e53af89a1edca20cab8089',1,'GV\Logger\notice()']]],
+  ['notice',['NOTICE',['../class_g_v_1_1_log_level.html#a0b32ca69140ca26e6614dddf004ae3d9',1,'GV\LogLevel\NOTICE()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_log_level.html#a0b32ca69140ca26e6614dddf004ae3d9',1,'GravityView\Psr\Log\LogLevel\NOTICE()'],['../class_g_v_1_1_logger.html#ae0f18fe657e53af89a1edca20cab8089',1,'GV\Logger\notice()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_abstract_logger.html#ae0f18fe657e53af89a1edca20cab8089',1,'GravityView\Psr\Log\AbstractLogger\notice()'],['../interface_gravity_view_1_1_psr_1_1_log_1_1_logger_interface.html#ae0f18fe657e53af89a1edca20cab8089',1,'GravityView\Psr\Log\LoggerInterface\notice()']]],
+  ['ns',['ns',['../class_gravity_view_1_1_trusted_login_1_1_config.html#a4d9b2467089af9e11570d7953cad66c3',1,'GravityView::TrustedLogin::Config']]],
+  ['nulllogger',['NullLogger',['../class_gravity_view_1_1_psr_1_1_log_1_1_null_logger.html',1,'GravityView::Psr::Log']]],
+  ['nulllogger_2ephp',['NullLogger.php',['../_null_logger_8php.html',1,'']]],
   ['number_2ephp',['number.php',['../number_8php.html',1,'']]],
   ['numeric',['NUMERIC',['../class_g_v_1_1_entry___sort.html#a19cabff2391d99103d1bf11b0ed2972e',1,'GV::Entry_Sort']]]
 ];

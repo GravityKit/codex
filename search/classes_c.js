@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['settings',['Settings',['../class_g_v_1_1_settings.html',1,'GV']]],
-  ['shortcode',['Shortcode',['../class_g_v_1_1_shortcode.html',1,'GV']]],
-  ['source',['Source',['../class_g_v_1_1_source.html',1,'GV']]]
+  ['page_5fsize',['Page_Size',['../class_g_v_1_1_widgets_1_1_page___size.html',1,'GV::Widgets']]],
+  ['plugin',['Plugin',['../class_g_v_1_1_plugin.html',1,'GV']]]
 ];

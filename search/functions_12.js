@@ -3,6 +3,13 @@ var searchData=
   ['tab_5fsettings',['tab_settings',['../class_g_v_1_1_extension.html#ab104224a3303ac5846c9757037e2f010',1,'GV::Extension']]],
   ['tabs',['tabs',['../class_gravity_view___welcome.html#a831425027bd96f8526be500035ecbe60',1,'GravityView_Welcome']]],
   ['template_5fredirect',['template_redirect',['../class_g_v_1_1_view.html#ade9c435d90135acc7f4659e3a76c62cb',1,'GV::View']]],
+  ['testcontextcancontainanything',['testContextCanContainAnything',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_logger_interface_test.html#a534dff475220ff08de51cb5d5cdd578c',1,'GravityView::Psr::Log::Test::LoggerInterfaceTest']]],
+  ['testcontextexceptionkeycanbeexceptionorothervalues',['testContextExceptionKeyCanBeExceptionOrOtherValues',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_logger_interface_test.html#a045549cad2e5603bc955ee851f28344d',1,'GravityView::Psr::Log::Test::LoggerInterfaceTest']]],
+  ['testcontextreplacement',['testContextReplacement',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_logger_interface_test.html#aa5e8ede4b7396826c61122a948c538e8',1,'GravityView::Psr::Log::Test::LoggerInterfaceTest']]],
+  ['testimplements',['testImplements',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_logger_interface_test.html#a05eb970133cd4708d4598057acebe221',1,'GravityView::Psr::Log::Test::LoggerInterfaceTest']]],
+  ['testlogsatalllevels',['testLogsAtAllLevels',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_logger_interface_test.html#a3a7c019ac9e988f557e5f37c788391a8',1,'GravityView::Psr::Log::Test::LoggerInterfaceTest']]],
+  ['testobjectcasttostring',['testObjectCastToString',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_logger_interface_test.html#ab86c992d24807f1b06b1cb9ace4b3f95',1,'GravityView::Psr::Log::Test::LoggerInterfaceTest']]],
+  ['testthrowsoninvalidlevel',['testThrowsOnInvalidLevel',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_logger_interface_test.html#af621fb46850406098a62e9ba34fe1fc2',1,'GravityView::Psr::Log::Test::LoggerInterfaceTest']]],
   ['thaw',['thaw',['../class_g_v_1_1_mocks_1_1_legacy___context.html#aa98e0f18822d47c7ac12e60a9f1c67f2',1,'GV::Mocks::Legacy_Context']]],
   ['the_5fclear_5fsearch_5fbutton',['the_clear_search_button',['../class_gravity_view___widget___search.html#ac32d7eea68f1e8fe229f1cf3f7cb88e2',1,'GravityView_Widget_Search']]],
   ['the_5fcolumns',['the_columns',['../class_g_v_1_1_view___table___template.html#a844791b1a48145be9fe17e46b74b0511',1,'GV::View_Table_Template']]],
@@ -16,5 +23,6 @@ var searchData=
   ['tooltips',['tooltips',['../class_g_v_1_1_extension.html#a506b6e33c69539350b169b0581457206',1,'GV\Extension\tooltips()'],['../class_gravity_view___admin___approve_entries.html#a906b031600abc366c1cfec2f3e4b0868',1,'GravityView_Admin_ApproveEntries\tooltips()'],['../class_gravity_view___admin___views.html#a506b6e33c69539350b169b0581457206',1,'GravityView_Admin_Views\tooltips()'],['../class_gravity_view___edit___entry___admin.html#a906b031600abc366c1cfec2f3e4b0868',1,'GravityView_Edit_Entry_Admin\tooltips()']]],
   ['total',['total',['../class_g_v_1_1_entry___collection.html#a9efa17b570797933c7c5b0c68f743a55',1,'GV::Entry_Collection']]],
   ['tr_5fafter',['tr_after',['../class_g_v_1_1_view___table___template.html#a8b1cd2dead88aced7d07c47d5ad28c8d',1,'GV::View_Table_Template']]],
-  ['tr_5fbefore',['tr_before',['../class_g_v_1_1_view___table___template.html#a9d9f4f91a6599b956da95bb22a6cbc1f',1,'GV::View_Table_Template']]]
+  ['tr_5fbefore',['tr_before',['../class_g_v_1_1_view___table___template.html#a9d9f4f91a6599b956da95bb22a6cbc1f',1,'GV::View_Table_Template']]],
+  ['translations',['translations',['../class_gravity_view_1_1_trusted_login_1_1_admin.html#aac1cbf72aaf0490ed6bd6aaef516df45',1,'GravityView::TrustedLogin::Admin']]]
 ];

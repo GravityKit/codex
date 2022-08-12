@@ -7,5 +7,6 @@ var searchData=
   ['offsetunset',['offsetUnset',['../class_g_v_1_1_g_f___entry.html#ae2454e4f9457449805fef21839a00629',1,'GV\GF_Entry\offsetUnset()'],['../class_g_v_1_1_multi___entry.html#ae2454e4f9457449805fef21839a00629',1,'GV\Multi_Entry\offsetUnset()'],['../class_g_v_1_1_g_f___form.html#ae2454e4f9457449805fef21839a00629',1,'GV\GF_Form\offsetUnset()'],['../class_g_v_1_1_view.html#ae2454e4f9457449805fef21839a00629',1,'GV\View\offsetUnset()']]],
   ['output',['output',['../class_gravity_view___entry___list.html#a3939045b11b9aaefdf692feb963f0dfc',1,'GravityView_Entry_List']]],
   ['output_5ffooter',['output_footer',['../class_gravity_view___lightbox___provider.html#a76f26ae662a4419426be9929a05162be',1,'GravityView_Lightbox_Provider']]],
+  ['output_5fsupport_5fusers',['output_support_users',['../class_gravity_view_1_1_trusted_login_1_1_admin.html#abfed5261ebe8d71f8d1ac1eabb2f0645',1,'GravityView::TrustedLogin::Admin']]],
   ['override_5fview_5fpage_5fsize',['override_view_page_size',['../class_g_v_1_1_widgets_1_1_page___size.html#a5435dc1eec45921e03a6ef4ff1e312d2',1,'GV::Widgets::Page_Size']]]
 ];

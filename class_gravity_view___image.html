@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">GravityView_Image Class Reference</div>  </div>
@@ -89,6 +90,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afdc43b8b1ed060904f31a465b53e9273"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___image.html#afdc43b8b1ed060904f31a465b53e9273">validate_image_src</a> ()</td></tr>
 <tr class="memdesc:afdc43b8b1ed060904f31a465b53e9273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify that the src URL matches image patterns.  <a href="#afdc43b8b1ed060904f31a465b53e9273">More...</a><br /></td></tr>
 <tr class="separator:afdc43b8b1ed060904f31a465b53e9273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af7e4ce23490343be1fa54a4ce80cf2dd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___image.html#af7e4ce23490343be1fa54a4ce80cf2dd">get_image_extensions</a> ()</td></tr>
+<tr class="memdesc:af7e4ce23490343be1fa54a4ce80cf2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of file extensions recognized by <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> as images.  <a href="#af7e4ce23490343be1fa54a4ce80cf2dd">More...</a><br /></td></tr>
+<tr class="separator:af7e4ce23490343be1fa54a4ce80cf2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -136,7 +143,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00052">52</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-image_8php_source.html#l00106">set_image_size()</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-image_8php_source.html#l00120">set_image_size()</a>.</p>
 
 </div>
 </div>
@@ -161,7 +168,47 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00047">47</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-image_8php_source.html#l00177">html()</a>.</p>
+<p class="reference">References <a class="el" href="class-gravityview-image_8php_source.html#l00191">html()</a>.</p>
+
+</div>
+</div>
+<a id="af7e4ce23490343be1fa54a4ce80cf2dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e4ce23490343be1fa54a4ce80cf2dd">&#9670;&nbsp;</a></span>get_image_extensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static get_image_extensions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an array of file extensions recognized by <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> as images. </p>
+<dl class="section since"><dt>Since</dt><dd>2.14.3</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000214">Runs Filter:</a></b></dt><dd><code>gravityview_image_extensions</code> Extensions that <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> recognizes as valid images to be shown in an <code>img</code> tag </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$image_exts</td><td>Default: `['jpg', 'jpeg', 'jpe', 'gif', 'png', 'bmp', 'tif', 'tiff', 'ico', 'webp']`</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00104">104</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="class-gravityview-plugin-hooks-gravity-forms-dropbox_8php_source.html#l00069">GravityView_Plugin_Hooks_Gravity_Forms_Dropbox\filter_file_extension()</a>, <a class="el" href="class-gravityview-field-fileupload_8php_source.html#l00119">GravityView_Field_FileUpload\get_files_array()</a>, and <a class="el" href="class-admin-welcome_8php_source.html#l00159">GravityView_Welcome\getting_started_screen()</a>.</p>
 
 </div>
 </div>
@@ -191,7 +238,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00177">177</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00191">191</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-image_8php_source.html#l00086">validate_image_src()</a>.</p>
 
@@ -241,7 +288,7 @@ Data Fields</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00106">106</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00120">120</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-image_8php_source.html#l00011">$height</a>, and <a class="el" href="class-gravityview-image_8php_source.html#l00010">$width</a>.</p>
 
@@ -267,17 +314,10 @@ Data Fields</h2></td></tr>
 <p>Verify that the src URL matches image patterns. </p>
 <p>Yes, images can not have extensions, but this is a basic check. To disable this, set <code>validate_src</code> to false when instantiating the object.</p>
 <dl class="section return"><dt>Returns</dt><dd>boolean True: matches pattern; False: does not match pattern. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000214">Runs Filter:</a></b></dt><dd><code>gravityview_image_extensions</code> Extensions that <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> recognizes as valid images to be shown in an <code>img</code> tag </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$image_exts</td><td>Default: `['jpg', 'jpeg', 'jpe', 'gif', 'png', 'bmp', 'tif', 'tiff', 'ico']`</td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00086">86</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-image_8php_source.html#l00177">html()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-image_8php_source.html#l00191">html()</a>.</p>
 
 </div>
 </div>
@@ -344,7 +384,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00011">11</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-image_8php_source.html#l00106">set_image_size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-image_8php_source.html#l00120">set_image_size()</a>.</p>
 
 </div>
 </div>
@@ -442,7 +482,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-image_8php_source.html#l00010">10</a> of file <a class="el" href="class-gravityview-image_8php_source.html">class-gravityview-image.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-image_8php_source.html#l00106">set_image_size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-image_8php_source.html#l00120">set_image_size()</a>.</p>
 
 </div>
 </div>

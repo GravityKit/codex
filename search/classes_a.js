@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['page_5fsize',['Page_Size',['../class_g_v_1_1_widgets_1_1_page___size.html',1,'GV::Widgets']]],
-  ['plugin',['Plugin',['../class_g_v_1_1_plugin.html',1,'GV']]]
+  ['nulllogger',['NullLogger',['../class_gravity_view_1_1_psr_1_1_log_1_1_null_logger.html',1,'GravityView::Psr::Log']]]
 ];

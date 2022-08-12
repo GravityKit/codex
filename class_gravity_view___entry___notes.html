@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.10.1</span>
+   &#160;<span id="projectnumber">2.14.7</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -91,9 +91,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d82fcc026a281838b74131e1dd44bff"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___notes.html#a1d82fcc026a281838b74131e1dd44bff">delete_notes</a> ( $note_ids=array())</td></tr>
 <tr class="memdesc:a1d82fcc026a281838b74131e1dd44bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an array of notes Alias for GFFormsModel::delete_notes()  <a href="#a1d82fcc026a281838b74131e1dd44bff">More...</a><br /></td></tr>
 <tr class="separator:a1d82fcc026a281838b74131e1dd44bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d2d91a9cec24be33d495c51486aac5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___notes.html#ac4d2d91a9cec24be33d495c51486aac5">filter_avatar</a> ( $avatar='', $note)</td></tr>
-<tr class="memdesc:ac4d2d91a9cec24be33d495c51486aac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> avatar for notes created by <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Note: The function is static so that it's easier to remove the filter: `remove_filter( 'gform_notes_avatar', array( '<a class="el" href="class_gravity_view___entry___notes.html" title="Class GravityView_Entry_Notes. ">GravityView_Entry_Notes</a>', 'filter_avatar' ) );`.  <a href="#ac4d2d91a9cec24be33d495c51486aac5">More...</a><br /></td></tr>
-<tr class="separator:ac4d2d91a9cec24be33d495c51486aac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95b182ed745f37250322c42f8a2eb3b8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___notes.html#a95b182ed745f37250322c42f8a2eb3b8">filter_avatar</a> ( $avatar='', $note=null)</td></tr>
+<tr class="memdesc:a95b182ed745f37250322c42f8a2eb3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> avatar for notes created by <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> Note: The function is static so that it's easier to remove the filter: `remove_filter( 'gform_notes_avatar', array( '<a class="el" href="class_gravity_view___entry___notes.html" title="Class GravityView_Entry_Notes. ">GravityView_Entry_Notes</a>', 'filter_avatar' ) );`.  <a href="#a95b182ed745f37250322c42f8a2eb3b8">More...</a><br /></td></tr>
+<tr class="separator:a95b182ed745f37250322c42f8a2eb3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae014b60c69cd3a8c45d8c9bc116ded7a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___notes.html#ae014b60c69cd3a8c45d8c9bc116ded7a">get_note</a> ( $note_id)</td></tr>
 <tr class="memdesc:ae014b60c69cd3a8c45d8c9bc116ded7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a single note by note ID.  <a href="#ae014b60c69cd3a8c45d8c9bc116ded7a">More...</a><br /></td></tr>
 <tr class="separator:ae014b60c69cd3a8c45d8c9bc116ded7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,8 +327,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac4d2d91a9cec24be33d495c51486aac5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4d2d91a9cec24be33d495c51486aac5">&#9670;&nbsp;</a></span>filter_avatar()</h2>
+<a id="a95b182ed745f37250322c42f8a2eb3b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95b182ed745f37250322c42f8a2eb3b8">&#9670;&nbsp;</a></span>filter_avatar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +346,7 @@ Private Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$note</em>&#160;</td>
+          <td class="paramname"><em>$note</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -366,11 +366,11 @@ Private Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$avatar</td><td>Avatar image, if available. 48px x 48px by default. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$note</td><td>Note object with id, user_id, date_created, value, note_type, user_name, user_email vars </td></tr>
+    <tr><td class="paramtype">object</td><td class="paramname">$note</td><td>Note object with id, user_id, date_created, value, note_type, user_name, user_email vars. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>string Possibly-modified avatar </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string Possibly-modified avatar. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-notes_8php_source.html#l00171">171</a> of file <a class="el" href="class-gravityview-entry-notes_8php_source.html">class-gravityview-entry-notes.php</a>.</p>
 
