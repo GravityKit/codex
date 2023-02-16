@@ -1,22 +1,23 @@
 var searchData=
 [
-  ['handle_5fresponse',['handle_response',['../class_gravity_view_1_1_trusted_login_1_1_remote.html#a7812c2f082f61fa54b7daada9da5864b',1,'GravityView::TrustedLogin::Remote']]],
+  ['core_2ephp',['Core.php',['../_helpers_2_core_8php.html',1,'']]],
+  ['hardcoded_5flicense_5fconstants',['HARDCODED_LICENSE_CONSTANTS',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_license_manager.html#ae4dd6986d662e0e453abae7cef94b714',1,'GravityKit::GravityView::Foundation::Licenses::LicenseManager']]],
+  ['has',['has',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_helpers_1_1_arr.html#a31a8e8b81c2e8c3cc83b6d70323da3a7',1,'GravityKit::GravityView::Foundation::Helpers::Arr']]],
   ['has_5fcap',['has_cap',['../class_g_v_common.html#abc061ebe78d31e57863f641ffe3e6042',1,'GVCommon\has_cap()'],['../class_gravity_view___entry___link___shortcode.html#ad4326c3490587a36e2bfc69c7c924aad',1,'GravityView_Entry_Link_Shortcode\has_cap()'],['../class_gravity_view___roles___capabilities.html#a2cd58b39963dd93e6238a297411b734f',1,'GravityView_Roles_Capabilities\has_cap()']]],
   ['has_5fdate_5ffield',['has_date_field',['../class_gravity_view___widget___search.html#a9798defd330fb4f2062d6e4279c5455c',1,'GravityView_Widget_Search']]],
   ['has_5fgravityview_5fshortcode',['has_gravityview_shortcode',['../class_g_v_common.html#af1271ca05340cc1329443239e0d59a73',1,'GVCommon\has_gravityview_shortcode()'],['../connector-functions_8php.html#add2db341df9309ac3a99e8f697d3a95c',1,'has_gravityview_shortcode():&#160;connector-functions.php']]],
   ['has_5fmultiple_5fviews',['has_multiple_views',['../class_gravity_view___view___data.html#a0abe471e3413e9973bcf3b8e4c50fdf5',1,'GravityView_View_Data']]],
   ['has_5fproduct_5ffield',['has_product_field',['../class_g_v_common.html#a51028f05082d16f2c2f90e68129628ed',1,'GVCommon']]],
   ['has_5fshortcode_5fr',['has_shortcode_r',['../class_g_v_common.html#acad2eee173143f70cbf9d3246a68e302',1,'GVCommon']]],
-  ['has_5fsite_5fsettings',['has_site_settings',['../namespace_g_v.html#a7c43b9c002ec8e0338b07caa4f888a6b',1,'GV']]],
-  ['hash',['hash',['../class_gravity_view_1_1_trusted_login_1_1_encryption.html#a790902615590dee2fcac1990d2d08604',1,'GravityView::TrustedLogin::Encryption']]],
-  ['hasrecord',['hasRecord',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_test_logger.html#acdb037f1c737db11f7070d40e253f268',1,'GravityView::Psr::Log::Test::TestLogger']]],
-  ['hasrecords',['hasRecords',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_test_logger.html#a29fe0a6ab04913b2e4a79dacd625dcc9',1,'GravityView::Psr::Log::Test::TestLogger']]],
-  ['hasrecordthatcontains',['hasRecordThatContains',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_test_logger.html#acb0492aca724b3813c3c9761d0b608b4',1,'GravityView::Psr::Log::Test::TestLogger']]],
-  ['hasrecordthatmatches',['hasRecordThatMatches',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_test_logger.html#ac75a3104a527afef035c65224bf25a44',1,'GravityView::Psr::Log::Test::TestLogger']]],
-  ['hasrecordthatpasses',['hasRecordThatPasses',['../class_gravity_view_1_1_psr_1_1_log_1_1_test_1_1_test_logger.html#a582ce27b33fde0ee744fe633a6ed705b',1,'GravityView::Psr::Log::Test::TestLogger']]],
+  ['hash',['hash',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_encryption_1_1_encryption.html#a5b156806bede6d94bb3c2d8eb06b7999',1,'GravityKit::GravityView::Foundation::Encryption::Encryption']]],
+  ['hash_5fkey',['HASH_KEY',['../class_gravity_view___support___port.html#af7a897ae010f2332354e601c39cb6c25',1,'GravityView_Support_Port\HASH_KEY()'],['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_integrations_1_1_help_scout.html#af7a897ae010f2332354e601c39cb6c25',1,'GravityKit\GravityView\Foundation\Integrations\HelpScout\HASH_KEY()']]],
+  ['header',['header',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_w_p_1_1_w_p_upgrader_skin.html#aafc568a720a06040aa70083c38435804',1,'GravityKit::GravityView::Foundation::Licenses::WP::WPUpgraderSkin']]],
   ['helper_2dfunctions_2ephp',['helper-functions.php',['../helper-functions_8php.html',1,'']]],
+  ['helpers',['Helpers',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_settings_1_1_helpers.html',1,'Helpers'],['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_helpers.html',1,'Helpers']]],
+  ['helpscout',['HelpScout',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_integrations_1_1_help_scout.html',1,'GravityKit::GravityView::Foundation::Integrations']]],
+  ['helpscout_2ephp',['HelpScout.php',['../_help_scout_8php.html',1,'']]],
   ['hide_5fwordpress_5fseo_5fmetabox',['hide_wordpress_seo_metabox',['../class_gravity_view___plugin___hooks___yoast___s_e_o.html#a01023527642b160bc8350d59bf0336f9',1,'GravityView_Plugin_Hooks_Yoast_SEO']]],
+  ['hs_5fbeacon_5fkey',['HS_BEACON_KEY',['../class_gravity_view___support___port.html#a34c5755f58b7d230136889d297d7870e',1,'GravityView_Support_Port\HS_BEACON_KEY()'],['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_integrations_1_1_help_scout.html#a34c5755f58b7d230136889d297d7870e',1,'GravityKit\GravityView\Foundation\Integrations\HelpScout\HS_BEACON_KEY()']]],
   ['html',['html',['../class_gravity_view___image.html#a8b267aa0adca2018097f6f6f4c804d46',1,'GravityView_Image']]],
-  ['html_2ephp',['html.php',['../html_8php.html',1,'']]],
-  ['http_5frequest_5fargs',['http_request_args',['../class_g_v_1_1_e_d_d___s_l___plugin___updater.html#a433b9a3f9b1f28e6384c8e2862230928',1,'GV::EDD_SL_Plugin_Updater']]]
+  ['html_2ephp',['html.php',['../html_8php.html',1,'']]]
 ];

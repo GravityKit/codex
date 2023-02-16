@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['warning',['warning',['../class_g_v_1_1_logger.html#aa9f94dcb1a687e36bc7f838a8801feec',1,'GV\Logger\warning()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_abstract_logger.html#aa9f94dcb1a687e36bc7f838a8801feec',1,'GravityView\Psr\Log\AbstractLogger\warning()'],['../interface_gravity_view_1_1_psr_1_1_log_1_1_logger_interface.html#aa9f94dcb1a687e36bc7f838a8801feec',1,'GravityView\Psr\Log\LoggerInterface\warning()']]],
-  ['welcome',['welcome',['../class_gravity_view___welcome.html#a5999a1893c62bb1f0501c93435d263cd',1,'GravityView_Welcome']]],
-  ['widget',['widget',['../class_gravity_view___recent___entries___widget.html#afb9380a2672338f13e809fb264c40394',1,'GravityView_Recent_Entries_Widget\widget()'],['../class_gravity_view___search___w_p___widget.html#afb9380a2672338f13e809fb264c40394',1,'GravityView_Search_WP_Widget\widget()']]],
-  ['with_5fdefaults',['with_defaults',['../class_g_v_1_1_view___settings.html#afa8e0d988268c28e3f9ed395dcb0437f',1,'GV::View_Settings']]],
-  ['wp_5froles',['wp_roles',['../class_gravity_view___roles___capabilities.html#a8c86f267da09c8b69f85e8a53614bd06',1,'GravityView_Roles_Capabilities']]],
-  ['wpml_5fls_5ffilter',['wpml_ls_filter',['../class_gravity_view___theme___hooks___w_p_m_l.html#a740c65fd07062941c60535fdc56baab4',1,'GravityView_Theme_Hooks_WPML']]],
-  ['write',['write',['../class_gravity_view_1_1_katzgrau_1_1_k_logger_1_1_logger.html#adcc5b330d26969b380b0ef0e051ee938',1,'GravityView::Katzgrau::KLogger::Logger']]]
+  ['validate',['validate',['../class_gravity_view___edit___entry___render.html#a184909dab34698899937d810a9f5d393',1,'GravityView_Edit_Entry_Render\validate()'],['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_settings_1_1_settings_validator.html#a86da6e15ef2441bdc94ff8c51b2c672e',1,'GravityKit\GravityView\Foundation\Settings\SettingsValidator\validate()']]],
+  ['validate_5fimage_5fsrc',['validate_image_src',['../class_gravity_view___image.html#afdc43b8b1ed060904f31a465b53e9273',1,'GravityView_Image']]],
+  ['validate_5fproduct_5fplugin_5fdependencies',['validate_product_plugin_dependencies',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_product_manager.html#aed9b74d46f62ddda1754ae1bc01ff36b',1,'GravityKit::GravityView::Foundation::Licenses::ProductManager']]],
+  ['validate_5fproduct_5fsystem_5frequirements',['validate_product_system_requirements',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_product_manager.html#ac18ab0cddde905dcb34068f342d1c51f',1,'GravityKit::GravityView::Foundation::Licenses::ProductManager']]],
+  ['verify_5fnonce',['verify_nonce',['../class_gravity_view___delete___entry.html#a4a68f92b23e330db68e0287c3583e699',1,'GravityView_Delete_Entry\verify_nonce()'],['../class_gravity_view___duplicate___entry.html#a4a68f92b23e330db68e0287c3583e699',1,'GravityView_Duplicate_Entry\verify_nonce()'],['../class_gravity_view___edit___entry___render.html#a4a68f92b23e330db68e0287c3583e699',1,'GravityView_Edit_Entry_Render\verify_nonce()']]],
+  ['verify_5fuser_5fcan_5fedit_5fpost',['verify_user_can_edit_post',['../class_gravity_view___edit___entry___render.html#a9764c4032d07b6b51775c7503eade1cf',1,'GravityView_Edit_Entry_Render']]],
+  ['view_5fexists',['view_exists',['../class_gravity_view___view___data.html#a74b57de5633bce36882a6e35baf56d3c',1,'GravityView_View_Data']]],
+  ['view_5fsettings_5fdelete_5fentry_5fmetabox',['view_settings_delete_entry_metabox',['../class_gravity_view___delete___entry___admin.html#a21cda83d0d20225ba89b381b1a09bce8',1,'GravityView_Delete_Entry_Admin']]],
+  ['view_5fsettings_5fedit_5fentry_5fmetabox',['view_settings_edit_entry_metabox',['../class_gravity_view___delete___entry___admin.html#a380a0adc116c16fcc5b0dc8f0590ecdb',1,'GravityView_Delete_Entry_Admin']]],
+  ['view_5fsettings_5fmetabox',['view_settings_metabox',['../class_gravity_view___delete___entry___admin.html#a7099462ada72b3b5022b62167f77ddd3',1,'GravityView_Delete_Entry_Admin\view_settings_metabox()'],['../class_gravity_view___edit___entry___admin.html#a7099462ada72b3b5022b62167f77ddd3',1,'GravityView_Edit_Entry_Admin\view_settings_metabox()']]]
 ];

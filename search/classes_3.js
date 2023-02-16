@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['edd_5fsl_5fplugin_5fupdater',['EDD_SL_Plugin_Updater',['../class_g_v_1_1_e_d_d___s_l___plugin___updater.html',1,'GV']]],
+  ['edd',['EDD',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_e_d_d.html',1,'GravityKit::GravityView::Foundation::Licenses']]],
   ['edit_5fentry_5frenderer',['Edit_Entry_Renderer',['../class_g_v_1_1_edit___entry___renderer.html',1,'GV']]],
-  ['encryption',['Encryption',['../class_gravity_view_1_1_trusted_login_1_1_encryption.html',1,'GravityView::TrustedLogin']]],
-  ['endpoint',['Endpoint',['../class_gravity_view_1_1_trusted_login_1_1_endpoint.html',1,'GravityView::TrustedLogin']]],
-  ['entry',['Entry',['../class_g_v_1_1_entry.html',1,'GV']]],
+  ['encryption',['Encryption',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_encryption_1_1_encryption.html',1,'GravityKit::GravityView::Foundation::Encryption']]],
+  ['entry',['Entry',['../class_g_v_1_1_entry.html',1,'Entry'],['../class_gravity_kit_1_1_gravity_view_1_1_gutenberg_1_1_blocks_1_1_entry.html',1,'Entry']]],
   ['entry_5fcollection',['Entry_Collection',['../class_g_v_1_1_entry___collection.html',1,'GV']]],
   ['entry_5ffilter',['Entry_Filter',['../class_g_v_1_1_entry___filter.html',1,'GV']]],
   ['entry_5flegacy_5ftemplate',['Entry_Legacy_Template',['../class_g_v_1_1_entry___legacy___template.html',1,'GV']]],
@@ -14,6 +13,7 @@ var searchData=
   ['entry_5fsort',['Entry_Sort',['../class_g_v_1_1_entry___sort.html',1,'GV']]],
   ['entry_5ftable_5ftemplate',['Entry_Table_Template',['../class_g_v_1_1_entry___table___template.html',1,'GV']]],
   ['entry_5ftemplate',['Entry_Template',['../class_g_v_1_1_entry___template.html',1,'GV']]],
-  ['envelope',['Envelope',['../class_gravity_view_1_1_trusted_login_1_1_envelope.html',1,'GravityView::TrustedLogin']]],
+  ['entryfield',['EntryField',['../class_gravity_kit_1_1_gravity_view_1_1_gutenberg_1_1_blocks_1_1_entry_field.html',1,'GravityKit::GravityView::Gutenberg::Blocks']]],
+  ['entrylink',['EntryLink',['../class_gravity_kit_1_1_gravity_view_1_1_gutenberg_1_1_blocks_1_1_entry_link.html',1,'GravityKit::GravityView::Gutenberg::Blocks']]],
   ['extension',['Extension',['../class_g_v_1_1_extension.html',1,'GV']]]
 ];

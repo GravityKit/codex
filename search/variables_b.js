@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['meta_5fkey',['meta_key',['../class_gravity_view___entry___approval.html#acc7e0eedd7a80bc5830a340cb74b32a5',1,'GravityView_Entry_Approval']]]
+  ['label',['label',['../class_g_v_1_1_plugin___settings.html#a1a72ca130296874645823cfb6d72448e',1,'GV::Plugin_Settings']]]
 ];

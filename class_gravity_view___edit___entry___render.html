@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -264,7 +264,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00062">62</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00016">16</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a153f27c2ecd09c0dadfb8f61757ac6b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a153f27c2ecd09c0dadfb8f61757ac6b2">&#9670;&nbsp;</a></span>__construct()</h2>
@@ -282,9 +282,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00177">177</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00131">131</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$loader</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00021">$loader</a>.</p>
 
 </div>
 </div>
@@ -319,11 +319,11 @@ Static Private Attributes</h2></td></tr>
 <p>Maybe process feeds.</p>
 <dl class="section since"><dt>Since</dt><dd>develop</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01051">1051</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00998">998</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, and <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>.</p>
 
 </div>
 </div>
@@ -361,11 +361,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02491">2491</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02436">2436</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, and <a class="el" href="class-common_8php_source.html#l00077">GVCommon\has_cap()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l02459">user_can_edit_field()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l02404">user_can_edit_field()</a>.</p>
 
 </div>
 </div>
@@ -389,18 +389,15 @@ Static Private Attributes</h2></td></tr>
 <p>Because we're calling the GFFormDisplay::validate() in an unusual way (as a front-end form pretending to be a back-end form), <a class="el" href="class_gravity_view___edit___entry___render.html#a184909dab34698899937d810a9f5d393" title="Process validation for a edit entry submission. ">validate()</a> doesn't know we <em>can't</em> edit post fields. This goes through all the fields and if they're an invalid post field, we set them as valid. If there are still issues, we'll return false.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"></td><td class="paramname">$validation_results</td><td>{ </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$is_valid</td><td></td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$form</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$failed_validation_page</td><td>The page number which has failed validation. }</td></tr>
+    <tr><td class="paramname">$validation_results</td><td>{  bool $is_valid  array $form  int $failed_validation_page The page number which has failed validation. }</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01813">1813</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01758">1758</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01951">get_entry()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01896">get_entry()</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -422,7 +419,7 @@ Static Private Attributes</h2></td></tr>
 <p>Display the Edit Entry form. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <p>Fixes weird wpautop() issue </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/katzwebservices/GravityView/issues/451">https://github.com/katzwebservices/GravityView/issues/451</a></dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000245">Runs Filter:</a></b></dt><dd><code>gravityview_edit_entry_title</code> Modify the edit entry title </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000247">Runs Filter:</a></b></dt><dd><code>gravityview_edit_entry_title</code> Modify the edit entry title </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$edit_entry_title</td><td>Modify the "Edit Entry" title </td></tr>
@@ -431,11 +428,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01112">1112</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01059">1059</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry_8php_source.html#l00024">GravityView_Edit_Entry\$file</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00099">$view</a>, <a class="el" href="class-gv-view_8php_source.html#l00808">View\by_id()</a>, <a class="el" href="helper-functions_8php_source.html#l00187">gravityview_ob_include()</a>, <a class="el" href="helper-functions_8php_source.html#l00172">gravityview_strip_whitespace()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01191">maybe_print_message()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01308">render_edit_form()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry_8php_source.html#l00024">GravityView_Edit_Entry\$file</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00053">$view</a>, <a class="el" href="class-gv-view_8php_source.html#l00818">View\by_id()</a>, <a class="el" href="helper-functions_8php_source.html#l00187">gravityview_ob_include()</a>, <a class="el" href="helper-functions_8php_source.html#l00172">gravityview_strip_whitespace()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01138">maybe_print_message()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01255">render_edit_form()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00322">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00278">init()</a>.</p>
 
 </div>
 </div>
@@ -498,11 +495,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01021">1021</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00968">968</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="views_2list_2list-body_8php_source.html#l00013">$template</a>, <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00073">GravityView_GFFormsModel\get_post_field_images()</a>, and <a class="el" href="gravityview_8php_source.html#l00040">GRAVITYVIEW_DIR</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="views_2list_2list-body_8php_source.html#l00013">$template</a>, <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00073">GravityView_GFFormsModel\get_post_field_images()</a>, and <a class="el" href="gravityview_8php_source.html#l00049">GRAVITYVIEW_DIR</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00892">maybe_update_post_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00839">maybe_update_post_fields()</a>.</p>
 
 </div>
 </div>
@@ -564,7 +561,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Possibly modified form array </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000258">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/use_gf_admin_only_setting</code> When Edit tab isn't configured, should the Gravity Forms "Admin Only" field settings be used to control field display to non-admins? Default: true If the Edit Entry tab is not configured, adminOnly fields will not be shown to non-administrators. If the Edit Entry tab <em>is</em> configured, adminOnly fields will be shown to non-administrators, using the configured GV permissions </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000260">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/use_gf_admin_only_setting</code> When Edit tab isn't configured, should the Gravity Forms "Admin Only" field settings be used to control field display to non-admins? Default: true If the Edit Entry tab is not configured, adminOnly fields will not be shown to non-administrators. If the Edit Entry tab <em>is</em> configured, adminOnly fields will be shown to non-administrators, using the configured GV permissions </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.9.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -575,11 +572,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02140">2140</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02085">2085</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00147">$view_id</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00101">$view_id</a>, and <a class="el" href="class-common_8php_source.html#l00077">GVCommon\has_cap()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01974">get_configured_edit_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01919">get_configured_edit_fields()</a>.</p>
 
 </div>
 </div>
@@ -621,7 +618,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>develop</dd></dl>
 <p>This conditional field is not editable in this View. We need to remove the rule, but only if it matches.</p>
 <p>Normalize the indices...</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000259">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/conditional_logic</code> Should the Edit Entry form use Gravity Forms conditional logic showing/hiding of fields? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000261">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/conditional_logic</code> Should the Edit Entry form use Gravity Forms conditional logic showing/hiding of fields? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.9 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -631,11 +628,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02272">2272</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02217">2217</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00489">GV\$i</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="class-gv-settings-plugin_8php_source.html#l00491">GV\$i</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01437">filter_modify_form_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00698">form_prepare_for_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01384">filter_modify_form_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00645">form_prepare_for_save()</a>.</p>
 
 </div>
 </div>
@@ -684,9 +681,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.9</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array Modified form array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01437">1437</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01384">1384</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00127">$form_after_validation</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02272">filter_conditional_logic()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01974">get_configured_edit_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02181">unselect_default_values()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00081">$form_after_validation</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02217">filter_conditional_logic()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01919">get_configured_edit_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02126">unselect_default_values()</a>.</p>
 
 </div>
 </div>
@@ -726,7 +723,7 @@ Static Private Attributes</h2></td></tr>
 <p>Fix it.</p>
 <p>As a hack for now we'll implode it back. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02545">2545</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02490">2490</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, and <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>.</p>
 
@@ -757,19 +754,14 @@ Static Private Attributes</h2></td></tr>
 
 <p>Set visibility to visible and convert field input key to string. </p>
 <dl class="section return"><dt>Returns</dt><dd>array $form </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">GF_Field</td><td class="paramname">$field</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>GF_Field $field</p>
 <p>Remove the fields with calculation formulas before save to avoid conflicts with GF logic </p><dl class="section since"><dt>Since</dt><dd>1.16.3</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00698">698</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00645">645</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02272">filter_conditional_logic()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02217">filter_conditional_logic()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>.</p>
 
 </div>
 </div>
@@ -791,7 +783,7 @@ Static Private Attributes</h2></td></tr>
 <p>Returns labels for the action links on Edit Entry. </p>
 <dl class="section since"><dt>Since</dt><dd>2.10.4</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array <code>cancel</code>, <code>submit</code>, <code>next</code>, <code>previous</code> array keys with associated labels. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000261">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/button_labels</code> Modify the cancel/submit buttons' labels </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000263">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/button_labels</code> Modify the cancel/submit buttons' labels </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -803,7 +795,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02566">2566</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02511">2511</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p class="reference">References <a class="el" href="form-buttons_8php_source.html#l00043">$labels</a>.</p>
 
@@ -852,7 +844,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of fields that are configured in the Edit tab in the Admin </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000256">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/form_fields</code> Modify the fields displayed in Edit Entry form </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000258">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/form_fields</code> Modify the fields displayed in Edit Entry form </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -864,11 +856,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01974">1974</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01919">1919</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00099">$view</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00147">$view_id</a>, <a class="el" href="class-gv-view_8php_source.html#l00808">View\by_id()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02140">filter_admin_only_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02104">merge_field_properties()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00053">$view</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00101">$view_id</a>, <a class="el" href="class-gv-view_8php_source.html#l00818">View\by_id()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02085">filter_admin_only_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02049">merge_field_properties()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01437">filter_modify_form_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00727">update_calculation_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01759">validate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01384">filter_modify_form_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00674">update_calculation_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01704">validate()</a>.</p>
 
 </div>
 </div>
@@ -890,11 +882,11 @@ Static Private Attributes</h2></td></tr>
 <p>TODO: This seems to be hacky... </p>
 <p>we should remove it. Entry is set when updating the form using <a class="el" href="class_gravity_view___edit___entry___render.html#abd7c4f508410e61878dcdff351cd5c2a" title="When Edit entry view is requested, set up key class variables. ">setup_vars()</a>! Get the current entry and set it if it's not yet set. </p><dl class="section return"><dt>Returns</dt><dd>array Gravity Forms entry array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01951">1951</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01896">1896</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="connector-functions_8php_source.html#l00119">gravityview_get_entry()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01353">GravityView_frontend\is_single_entry()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="connector-functions_8php_source.html#l00119">gravityview_get_entry()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01447">GravityView_frontend\is_single_entry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01813">custom_validation()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01662">gform_pre_validation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01758">custom_validation()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01607">gform_pre_validation()</a>.</p>
 
 </div>
 </div>
@@ -930,7 +922,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array|mixed|string </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000253">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/pre_populate/override</code> Allow the pre-populated value to override saved value in Edit Entry form. By default, pre-populate mechanism only kicks on empty fields. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000255">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/pre_populate/override</code> Allow the pre-populated value to override saved value in Edit Entry form. By default, pre-populate mechanism only kicks on empty fields. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">boolean</td><td>True: override saved values; False: don't override (default) </td></tr>
@@ -939,7 +931,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>1.13</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000254">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/field_value</code> Change the value of an Edit Entry field, if needed </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000256">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/field_value</code> Change the value of an Edit Entry field, if needed </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.11 </dd>
 <dd>
 1.20 Added third param </dd></dl>
@@ -951,7 +943,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000255">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/field_value_{field_type}</code> Change the value of an Edit Entry field for a specific field type </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000257">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/field_value_{field_type}</code> Change the value of an Edit Entry field for a specific field type </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17 </dd>
 <dd>
 1.20 Added third param </dd></dl>
@@ -964,11 +956,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01571">1571</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01516">1516</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, and <a class="el" href="helper-functions_8php_source.html#l00412">gv_empty()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01477">verify_user_can_edit_post()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01424">verify_user_can_edit_post()</a>.</p>
 
 </div>
 </div>
@@ -1000,9 +992,9 @@ Static Private Attributes</h2></td></tr>
 <p>this whole fileupload hack is because in the admin, Gravity Forms simply doesn't update any fileupload field if it's empty, but it DOES in the frontend.</p>
 <p>What we have to do is set the value so that it doesn't get overwritten as empty on save and appears immediately in the Edit Entry screen again.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01662">1662</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01607">1607</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00140">$form_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01951">get_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02512">verify_nonce()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00094">$form_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01896">get_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02457">verify_nonce()</a>.</p>
 
 </div>
 </div>
@@ -1058,9 +1050,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>develop Added $entry, $view, $request adhocs.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00322">322</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00278">278</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00099">$view</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01112">edit_entry_form()</a>, <a class="el" href="class-data_8php_source.html#l00122">GravityView_View_Data\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00364">print_scripts()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00283">setup_vars()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02386">user_can_edit_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02512">verify_nonce()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00053">$view</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01059">edit_entry_form()</a>, <a class="el" href="class-data_8php_source.html#l00122">GravityView_View_Data\getInstance()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00318">print_scripts()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00237">setup_vars()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02331">user_can_edit_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02457">verify_nonce()</a>.</p>
 
 </div>
 </div>
@@ -1082,11 +1074,11 @@ Static Private Attributes</h2></td></tr>
 <p>Is the current page an Edit Entry page? </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00255">255</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00209">209</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00269">is_edit_entry_submission()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01353">GravityView_frontend\is_single_entry()</a>.</p>
+<p class="reference">References <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00223">is_edit_entry_submission()</a>, and <a class="el" href="class-frontend-views_8php_source.html#l01447">GravityView_frontend\is_single_entry()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l02361">manage_conditional_logic()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00683">modify_fileupload_settings()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00221">prevent_render_form()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02512">verify_nonce()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l02306">manage_conditional_logic()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00630">modify_fileupload_settings()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00175">prevent_render_form()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02457">verify_nonce()</a>.</p>
 
 </div>
 </div>
@@ -1109,9 +1101,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.9 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00269">269</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00223">223</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00255">is_edit_entry()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00236">prevent_maybe_process_form()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02512">verify_nonce()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01477">verify_user_can_edit_post()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00209">is_edit_entry()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00190">prevent_maybe_process_form()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02457">verify_nonce()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01424">verify_user_can_edit_post()</a>.</p>
 
 </div>
 </div>
@@ -1131,9 +1123,9 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>"GRAVITYVIEW_DIR" "../../../" </p>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00181">181</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00135">135</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00040">GRAVITYVIEW_DIR</a>.</p>
+<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00049">GRAVITYVIEW_DIR</a>.</p>
 
 </div>
 </div>
@@ -1175,9 +1167,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___edit___entry___render.html#ac582c688f4baa8b261bb4d442a76459a" title="Remove the conditional logic rules from the form button and the form fields, if needed. ">GravityView_Edit_Entry_Render::filter_conditional_logic</a> for filter documentation </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02361">2361</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02306">2306</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00255">is_edit_entry()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00209">is_edit_entry()</a>.</p>
 
 </div>
 </div>
@@ -1208,7 +1200,7 @@ Static Private Attributes</h2></td></tr>
 <p><a class="el" href="class_g_v_common.html#a1fc708707084bf3db38af55a362a9a1a" title="Display updated/error notice. ">GVCommon::generate_notice</a></p>
 <dl class="section since"><dt>Since</dt><dd>1.16.2.2</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000246">Runs Filter:</a></b></dt><dd><code>gravityview/features/paged-edit</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000248">Runs Filter:</a></b></dt><dd><code>gravityview/features/paged-edit</code> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd>
 <dd>
 2.14 Added the $form argument </dd></dl>
@@ -1219,7 +1211,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000247">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/button_labels</code> Modify the cancel/submit buttons' labels </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000249">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/button_labels</code> Modify the cancel/submit buttons' labels </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1230,7 +1222,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000248">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/page/success</code> Modify the edit entry success message on pages </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000250">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/page/success</code> Modify the edit entry success message on pages </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>develop </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1240,7 +1232,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000249">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/success</code> Modify the edit entry success message (including the anchor link)</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000251">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/success</code> Modify the edit entry success message (including the anchor link)</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.4</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1260,11 +1252,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>2.14.6</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01191">1191</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01138">1138</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="form-buttons_8php_source.html#l00032">$back_link</a>, <a class="el" href="form-buttons_8php_source.html#l00043">$labels</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00099">$view</a>, <a class="el" href="class-gv-utils_8php_source.html#l00033">Utils\_POST()</a>, <a class="el" href="class-gv-view_8php_source.html#l00808">View\by_id()</a>, <a class="el" href="class-api_8php_source.html#l00392">GravityView_API\directory_link()</a>, and <a class="el" href="class-common_8php_source.html#l01778">GVCommon\generate_notice()</a>.</p>
+<p class="reference">References <a class="el" href="form-buttons_8php_source.html#l00032">$back_link</a>, <a class="el" href="form-buttons_8php_source.html#l00043">$labels</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00053">$view</a>, <a class="el" href="class-gv-utils_8php_source.html#l00033">Utils\_POST()</a>, <a class="el" href="class-gv-view_8php_source.html#l00818">View\by_id()</a>, <a class="el" href="class-api_8php_source.html#l00399">GravityView_API\directory_link()</a>, and <a class="el" href="class-common_8php_source.html#l01857">GVCommon\generate_notice()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01112">edit_entry_form()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01059">edit_entry_form()</a>.</p>
 
 </div>
 </div>
@@ -1301,11 +1293,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00892">892</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00839">839</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00156">$post_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01021">fill_post_template()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00811">update_post_image()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00110">$post_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00968">fill_post_template()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00077">GVCommon\has_cap()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00758">update_post_image()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>.</p>
 
 </div>
 </div>
@@ -1355,11 +1347,11 @@ Static Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>array|GF_Field </dd></dl>
 <p>Normalize page numbers - avoid conflicts with page validation </p><dl class="section since"><dt>Since</dt><dd>1.6</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02104">2104</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02049">2049</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01974">get_configured_edit_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01919">get_configured_edit_fields()</a>.</p>
 
 </div>
 </div>
@@ -1406,9 +1398,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00683">683</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00630">630</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00255">is_edit_entry()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00209">is_edit_entry()</a>.</p>
 
 </div>
 </div>
@@ -1440,11 +1432,11 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.5</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00560">560</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00507">507</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>.</p>
 
 </div>
 </div>
@@ -1466,9 +1458,9 @@ Static Private Attributes</h2></td></tr>
 <p>Because we're mimicking being a front-end Gravity Forms form while using a Gravity Forms backend form, we need to prevent them from saving twice. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00236">236</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00190">190</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00269">is_edit_entry_submission()</a>.</p>
+<p class="reference">References <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00223">is_edit_entry_submission()</a>.</p>
 
 </div>
 </div>
@@ -1492,9 +1484,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.16.1</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00221">221</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00175">175</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00255">is_edit_entry()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00209">is_edit_entry()</a>.</p>
 
 </div>
 </div>
@@ -1534,9 +1526,9 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.5</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string UNAPPROVED unless something else is inside the entry. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00597">597</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00544">544</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00038">GravityView_Entry_Approval_Status\UNAPPROVED</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00038">GravityView_Entry_Approval_Status\UNAPPROVED</a>.</p>
 
 </div>
 </div>
@@ -1566,11 +1558,11 @@ Static Private Attributes</h2></td></tr>
 <p>Force Gravity Forms to output scripts as if it were in the admin. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00364">364</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00318">318</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, and <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, and <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00322">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00278">init()</a>.</p>
 
 </div>
 </div>
@@ -1601,13 +1593,12 @@ Static Private Attributes</h2></td></tr>
 <p>Process edit entry form save. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$gv_data</td><td>The View data. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___view___data.html" title="If this file is called directly, abort. ">GravityView_View_Data</a></td><td class="paramname">$gv_data</td><td>The View data. </td></tr>
   </table>
   </dd>
 </dl>
 <p>This step is needed to unset the adminOnly from form fields, to add the calculation fields</p>
 <p>to avoid the capability validation of the method save_lead for GF 1.9+</p>
-<p>to force Gravity Forms to use $read_value_from_post in GFFormsModel::save_lead() </p><dl class="section since"><dt>Since</dt><dd>1.17.2</dd></dl>
 <dl class="actions"><dt><b><a class="el" href="actions.html#_actions000048">Runs Actions:</a></b></dt><dd><code>gravityview/edit_entry/before_update</code> Perform an action before the entry has been updated using Edit Entry </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1632,11 +1623,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00386">386</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00341">341</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01051">after_update()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00698">form_prepare_for_save()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00892">maybe_update_post_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00560">preset_approval_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00618">process_save_process_files()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00490">unset_hidden_field_values()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00727">update_calculation_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01759">validate()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02512">verify_nonce()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00998">after_update()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00645">form_prepare_for_save()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00839">maybe_update_post_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00507">preset_approval_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00565">process_save_process_files()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00437">unset_hidden_field_values()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00674">update_calculation_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01704">validate()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02457">verify_nonce()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00322">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00278">init()</a>.</p>
 
 </div>
 </div>
@@ -1674,11 +1665,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <p>Make sure the fileuploads are not overwritten if no such request was done. </p><dl class="section since"><dt>Since</dt><dd>1.20.1</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00618">618</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00565">565</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00140">$form_id</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00094">$form_id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>.</p>
 
 </div>
 </div>
@@ -1716,7 +1707,7 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000250">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/button_labels</code> Modify the cancel/submit buttons' labels </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000252">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/button_labels</code> Modify the cancel/submit buttons' labels </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1736,11 +1727,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01308">1308</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01255">1255</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, and <a class="el" href="form-buttons_8php_source.html#l00043">$labels</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, and <a class="el" href="form-buttons_8php_source.html#l00043">$labels</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01112">edit_entry_form()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01059">edit_entry_form()</a>.</p>
 
 </div>
 </div>
@@ -1763,7 +1754,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.8 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01419">1419</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01366">1366</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-edit-entry_8php_source.html#l00024">GravityView_Edit_Entry\$file</a>, and <a class="el" href="helper-functions_8php_source.html#l00187">gravityview_ob_include()</a>.</p>
 
@@ -1830,9 +1821,9 @@ Static Private Attributes</h2></td></tr>
 <p>No file is being uploaded.</p>
 <p>So return the original upload, with $value as backup (it can be empty during edit form rendering) </p>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00650">650</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00597">597</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
 </div>
 </div>
@@ -1881,11 +1872,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00283">283</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00237">237</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="delete-entry_8php_source.html#l00007">$post</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00099">$view</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00190">GravityView_Edit_Entry\get_nonce_key()</a>, and <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="delete-entry_8php_source.html#l00007">$post</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00053">$view</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00190">GravityView_Edit_Entry\get_nonce_key()</a>, and <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00322">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00278">init()</a>.</p>
 
 </div>
 </div>
@@ -1924,11 +1915,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array $form, modified to default checkboxes, radios from showing up. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02181">2181</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02126">2126</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01437">filter_modify_form_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01384">filter_modify_form_fields()</a>.</p>
 
 </div>
 </div>
@@ -1959,7 +1950,7 @@ Static Private Attributes</h2></td></tr>
 <p>GFFormsModel::update_lead_field_value()</p>
 <dl class="section since"><dt>Since</dt><dd>1.17.4</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000244">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/unset_hidden_field_values</code> Whether to delete values of fields hidden by conditional logic </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000246">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/unset_hidden_field_values</code> Whether to delete values of fields hidden by conditional logic </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.22.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1969,11 +1960,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00490">490</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00437">437</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00017">GravityView_GFFormsModel\get_database_version()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00017">GravityView_GFFormsModel\get_database_version()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>.</p>
 
 </div>
 </div>
@@ -2000,11 +1991,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00727">727</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00674">674</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01974">get_configured_edit_fields()</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00017">GravityView_GFFormsModel\get_database_version()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01919">get_configured_edit_fields()</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00017">GravityView_GFFormsModel\get_database_version()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>.</p>
 
 </div>
 </div>
@@ -2084,11 +2075,11 @@ Static Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>mixed|string </dd></dl>
 <p>todo: As soon as ::media_handle_upload becomes a public method, move this call to ::media_handle_upload and remove the hack from this class. Note: the method became public in GF 1.9.17.7, but we don't require that version yet.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00811">811</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00758">758</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="post__image_8php_source.html#l00024">$ary</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00091">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00113">$form</a>, <a class="el" href="post__image_8php_source.html#l00106">$image_meta</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00156">$post_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="gravityview_8php_source.html#l00040">GRAVITYVIEW_DIR</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00170">GravityView_GFFormsModel\media_handle_upload()</a>.</p>
+<p class="reference">References <a class="el" href="post__image_8php_source.html#l00024">$ary</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00045">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00067">$form</a>, <a class="el" href="post__image_8php_source.html#l00106">$image_meta</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00110">$post_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="gravityview_8php_source.html#l00049">GRAVITYVIEW_DIR</a>, and <a class="el" href="class-gravityview-gfformsmodel_8php_source.html#l00170">GravityView_GFFormsModel\media_handle_upload()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00892">maybe_update_post_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00839">maybe_update_post_fields()</a>.</p>
 
 </div>
 </div>
@@ -2137,11 +2128,11 @@ Static Private Attributes</h2></td></tr>
 <p>If the Entry is embedded, there may be two entries on the same page. If that's the case, and one is being edited, the other should fail gracefully and not display an error.</p>
 <dl class="section since"><dt>Since</dt><dd>1.9</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02386">2386</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02331">2331</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry_8php_source.html#l00349">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, <a class="el" href="class-common_8php_source.html#l01778">GVCommon\generate_notice()</a>, <a class="el" href="class-oembed_8php_source.html#l00042">GravityView_oEmbed\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l01851">gravityview_get_link()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02512">verify_nonce()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry_8php_source.html#l00349">GravityView_Edit_Entry\check_user_cap_edit_entry()</a>, <a class="el" href="class-common_8php_source.html#l01857">GVCommon\generate_notice()</a>, <a class="el" href="class-oembed_8php_source.html#l00042">GravityView_oEmbed\getInstance()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l01931">gravityview_get_link()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02457">verify_nonce()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00322">init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00278">init()</a>.</p>
 
 </div>
 </div>
@@ -2189,9 +2180,9 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean True: user can edit the current field; False: nope, they can't. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02459">2459</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02404">2404</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02491">check_user_cap_edit_field()</a>, <a class="el" href="class-common_8php_source.html#l01778">GVCommon\generate_notice()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02436">check_user_cap_edit_field()</a>, <a class="el" href="class-common_8php_source.html#l01857">GVCommon\generate_notice()</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -2224,11 +2215,11 @@ Static Private Attributes</h2></td></tr>
 <p>If using GF User Registration Add-on, remove the validation step, otherwise generates error when updating the entry GF User Registration Add-on version &gt; 3.x has a different class name </p><dl class="section since"><dt>Since</dt><dd>1.16.2</dd></dl>
 <p>For some crazy reason, Gravity Forms doesn't validate Edit Entry form submissions. You can enter whatever you want! We try validating, and customize the results using <code>self::custom_validation()</code></p>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01759">1759</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01704">1704</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l01974">get_configured_edit_fields()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l01919">get_configured_edit_fields()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>.</p>
 
 </div>
 </div>
@@ -2249,7 +2240,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Is the current nonce valid for editing the entry? </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000260">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/verify_nonce</code> Override Edit Entry nonce validation. Return true to declare nonce valid. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000262">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/verify_nonce</code> Override Edit Entry nonce validation. Return true to declare nonce valid. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.13 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2259,11 +2250,11 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02512">2512</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l02457">2457</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00255">is_edit_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00269">is_edit_entry_submission()</a>.</p>
+<p class="reference">References <a class="el" href="class-edit-entry-render_8php_source.html#l00209">is_edit_entry()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00223">is_edit_entry_submission()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01662">gform_pre_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00322">init()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02386">user_can_edit_entry()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01607">gform_pre_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00278">init()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l02331">user_can_edit_entry()</a>.</p>
 
 </div>
 </div>
@@ -2324,24 +2315,24 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string If error, the error message. If no error, blank string (modify_edit_field_input() runs next) </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000251">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/unsupported_post_field_text</code> Modify the message when someone isn't able to edit a post </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>The existing "You don't have permission..." text</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000252">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/no_post_text</code> Modify the message when someone is editing an entry attached to a post that no longer exists </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000253">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/no_post_text</code> Modify the message when someone is editing an entry attached to a post that no longer exists </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>The existing "This field is not editable; the post no longer exists." text</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000254">Runs Filter:</a></b></dt><dd><code>gravityview/edit_entry/unsupported_post_field_text</code> Modify the message when someone isn't able to edit a post </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>The existing "You don't have permission..." text</td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01477">1477</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l01424">1424</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00140">$form_id</a>, <a class="el" href="time_8php_source.html#l00011">$gv_field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gravityview-fields_8php_source.html#l00095">GravityView_Fields\get_associated_field()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01571">get_field_value()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00269">is_edit_entry_submission()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="checkbox_8php_source.html#l00024">$field_value</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00094">$form_id</a>, <a class="el" href="time_8php_source.html#l00011">$gv_field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gravityview-fields_8php_source.html#l00095">GravityView_Fields\get_associated_field()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01516">get_field_value()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00223">is_edit_entry_submission()</a>.</p>
 
 </div>
 </div>
@@ -2358,9 +2349,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00091">91</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00045">45</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01051">after_update()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01813">custom_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01021">fill_post_template()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01951">get_entry()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01662">gform_pre_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00322">init()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00892">maybe_update_post_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00597">prevent_update_unapproved_meta()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00650">save_field_value()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00283">setup_vars()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00490">unset_hidden_field_values()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00727">update_calculation_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00811">update_post_image()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00998">after_update()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01758">custom_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00968">fill_post_template()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01896">get_entry()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01607">gform_pre_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00278">init()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00839">maybe_update_post_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00544">prevent_update_unapproved_meta()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00597">save_field_value()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00237">setup_vars()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00437">unset_hidden_field_values()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00674">update_calculation_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00758">update_post_image()</a>.</p>
 
 </div>
 </div>
@@ -2376,7 +2367,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00133">133</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00087">87</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2392,9 +2383,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00113">113</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00067">67</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01021">fill_post_template()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02140">filter_admin_only_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02272">filter_conditional_logic()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01437">filter_modify_form_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00698">form_prepare_for_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01974">get_configured_edit_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01662">gform_pre_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02361">manage_conditional_logic()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00892">maybe_update_post_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00386">process_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01308">render_edit_form()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02181">unselect_default_values()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00490">unset_hidden_field_values()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00727">update_calculation_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00811">update_post_image()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00968">fill_post_template()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02085">filter_admin_only_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02217">filter_conditional_logic()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01384">filter_modify_form_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00645">form_prepare_for_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01919">get_configured_edit_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01607">gform_pre_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02306">manage_conditional_logic()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00839">maybe_update_post_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00341">process_save()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01255">render_edit_form()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l02126">unselect_default_values()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00437">unset_hidden_field_values()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00674">update_calculation_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00758">update_post_image()</a>.</p>
 
 </div>
 </div>
@@ -2410,9 +2401,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00127">127</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00081">81</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01437">filter_modify_form_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01384">filter_modify_form_fields()</a>.</p>
 
 </div>
 </div>
@@ -2428,9 +2419,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00140">140</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00094">94</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01662">gform_pre_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00618">process_save_process_files()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01477">verify_user_can_edit_post()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01607">gform_pre_validation()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00565">process_save_process_files()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01424">verify_user_can_edit_post()</a>.</p>
 
 </div>
 </div>
@@ -2446,7 +2437,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00175">175</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00129">129</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2462,7 +2453,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00163">163</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00117">117</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2486,9 +2477,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00067">67</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00021">21</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00177">__construct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00131">__construct()</a>.</p>
 
 </div>
 </div>
@@ -2512,7 +2503,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00078">78</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00032">32</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2536,7 +2527,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00072">72</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00026">26</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2560,7 +2551,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00106">106</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00060">60</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2584,7 +2575,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00120">120</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00074">74</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2600,9 +2591,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00156">156</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00110">110</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00892">maybe_update_post_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00811">update_post_image()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l00839">maybe_update_post_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00758">update_post_image()</a>.</p>
 
 </div>
 </div>
@@ -2618,7 +2609,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00173">173</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00127">127</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2634,7 +2625,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00172">172</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00126">126</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2650,7 +2641,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00174">174</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00128">128</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2674,7 +2665,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00084">84</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00038">38</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
 </div>
 </div>
@@ -2690,9 +2681,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00099">99</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00053">53</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01112">edit_entry_form()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01974">get_configured_edit_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00322">init()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01191">maybe_print_message()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00283">setup_vars()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l01059">edit_entry_form()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01919">get_configured_edit_fields()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l00278">init()</a>, <a class="el" href="class-edit-entry-render_8php_source.html#l01138">maybe_print_message()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l00237">setup_vars()</a>.</p>
 
 </div>
 </div>
@@ -2708,9 +2699,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00147">147</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-edit-entry-render_8php_source.html#l00101">101</a> of file <a class="el" href="class-edit-entry-render_8php_source.html">class-edit-entry-render.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l02140">filter_admin_only_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01974">get_configured_edit_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-edit-entry-render_8php_source.html#l02085">filter_admin_only_fields()</a>, and <a class="el" href="class-edit-entry-render_8php_source.html#l01919">get_configured_edit_fields()</a>.</p>
 
 </div>
 </div>

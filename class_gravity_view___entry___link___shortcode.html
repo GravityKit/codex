@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -119,15 +119,19 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5291dff564984cdb59d278ef6c471d80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___link___shortcode.html#a5291dff564984cdb59d278ef6c471d80">$entry</a> = array()</td></tr>
+<tr class="memdesc:a5291dff564984cdb59d278ef6c471d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">array Entry fetched using the $atts['entry_id'] shortcode setting.  <a href="#a5291dff564984cdb59d278ef6c471d80">More...</a><br /></td></tr>
 <tr class="separator:a5291dff564984cdb59d278ef6c471d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c3353107070daa85f641882931b358"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___link___shortcode.html#ac7c3353107070daa85f641882931b358">$settings</a> = array()</td></tr>
+<tr class="memdesc:ac7c3353107070daa85f641882931b358"><td class="mdescLeft">&#160;</td><td class="mdescRight">array The final settings for the shortcode, after merging passed $atts with self::$defaults  <a href="#ac7c3353107070daa85f641882931b358">More...</a><br /></td></tr>
 <tr class="separator:ac7c3353107070daa85f641882931b358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a521fd441a5ad4952b00a1591a4d4590d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___link___shortcode.html#a521fd441a5ad4952b00a1591a4d4590d">$view_id</a> = 0</td></tr>
+<tr class="memdesc:a521fd441a5ad4952b00a1591a4d4590d"><td class="mdescLeft">&#160;</td><td class="mdescRight">int If set, generate a link to the entry for this View ID.  <a href="#a521fd441a5ad4952b00a1591a4d4590d">More...</a><br /></td></tr>
 <tr class="separator:a521fd441a5ad4952b00a1591a4d4590d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a34ddfd723e30abea0a92b81f4443ac6a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___entry___link___shortcode.html#a34ddfd723e30abea0a92b81f4443ac6a">$defaults</a></td></tr>
+<tr class="memdesc:a34ddfd723e30abea0a92b81f4443ac6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">array The accepted shortcode attribute pairs, with defaults set  <a href="#a34ddfd723e30abea0a92b81f4443ac6a">More...</a><br /></td></tr>
 <tr class="separator:a34ddfd723e30abea0a92b81f4443ac6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -229,14 +233,7 @@ Static Private Attributes</h2></td></tr>
 1.15</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>{ </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>What type of link to generate. Options: <code>read</code>, <code>edit</code>, and <code>delete</code>. Default: <code>read</code> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$view_id</td><td>Define the ID for the View. If not set, use current View ID, if exists. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$entry_id</td><td>ID of the entry to edit. If undefined, uses the current entry ID, if exists. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$post_id</td><td>ID of the base post or page to use for an embedded View </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$link_atts</td><td>Pass anchor tag attributes (<code>target=_blank</code> to open Edit Entry link in a new window, for example) </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$return</td><td>What should the shortcode return: link HTML (<code>html</code>) or the URL (<code>url</code>). Default: <code>html</code> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$field_values</td><td>Only used for <code>action="edit"</code>. Parameters to pass in to the prefill data in Edit Entry form. Uses the same format as Gravity Forms "Allow field to be populated dynamically" {</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>{  string $action What type of link to generate. Options: <code>read</code>, <code>edit</code>, and <code>delete</code>. Default: <code>read</code>  string $view_id Define the ID for the View. If not set, use current View ID, if exists.  string $entry_id ID of the entry to edit. If undefined, uses the current entry ID, if exists.  string $post_id ID of the base post or page to use for an embedded View  string $link_atts Pass anchor tag attributes (<code>target=_blank</code> to open Edit Entry link in a new window, for example)  string $return What should the shortcode return: link HTML (<code>html</code>) or the URL (<code>url</code>). Default: <code>html</code>  string $field_values Only used for <code>action="edit"</code>. Parameters to pass in to the prefill data in Edit Entry form. Uses the same format as Gravity Forms "Allow field to be populated dynamically" {</td></tr>
   </table>
   </dd>
 </dl>
@@ -294,14 +291,7 @@ Static Private Attributes</h2></td></tr>
 1.15</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>{ </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>What type of link to generate. Options: <code>read</code>, <code>edit</code>, and <code>delete</code>. Default: <code>read</code> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$view_id</td><td>Define the ID for the View. If not set, use current View ID, if exists. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$entry_id</td><td>ID of the entry to edit. If undefined, uses the current entry ID, if exists. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$post_id</td><td>ID of the base post or page to use for an embedded View </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$link_atts</td><td>Pass anchor tag attributes (<code>target=_blank</code> to open Edit Entry link in a new window, for example) </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$return</td><td>What should the shortcode return: link HTML (<code>html</code>) or the URL (<code>url</code>). Default: <code>html</code> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$field_values</td><td>Only used for <code>action="edit"</code>. Parameters to pass in to the prefill data in Edit Entry form. Uses the same format as Gravity Forms "Allow field to be populated dynamically" {</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>{  string $action What type of link to generate. Options: <code>read</code>, <code>edit</code>, and <code>delete</code>. Default: <code>read</code>  string $view_id Define the ID for the View. If not set, use current View ID, if exists.  string $entry_id ID of the entry to edit. If undefined, uses the current entry ID, if exists.  string $post_id ID of the base post or page to use for an embedded View  string $link_atts Pass anchor tag attributes (<code>target=_blank</code> to open Edit Entry link in a new window, for example)  string $return What should the shortcode return: link HTML (<code>html</code>) or the URL (<code>url</code>). Default: <code>html</code>  string $field_values Only used for <code>action="edit"</code>. Parameters to pass in to the prefill data in Edit Entry form. Uses the same format as Gravity Forms "Allow field to be populated dynamically" {</td></tr>
   </table>
   </dd>
 </dl>
@@ -394,7 +384,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.15  <a class="el" href="class_g_v_common.html#a594821d84ac8bbed3060117dab39e1c0" title="Return a single entry object. ">GVCommon::get_entry</a>  <a class="el" href="class_gravity_view__frontend.html#ab196f4681599a7a8e6306e39de1bb8d9">GravityView_frontend::getSingleEntry</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$entry_id</td><td>Gravity Forms Entry ID. If not passed, current View's current entry ID will be used, if found.</td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;string</td><td class="paramname">$entry_id</td><td>Gravity Forms Entry ID. If not passed, current View's current entry ID will be used, if found.</td></tr>
   </table>
   </dd>
 </dl>
@@ -402,7 +392,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00312">312</a> of file <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html">class-gravityview-entry-link-shortcode.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00016">$entry</a>, <a class="el" href="class-common_8php_source.html#l00682">GVCommon\get_entry()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00109">GravityView_frontend\getInstance()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00016">$entry</a>, <a class="el" href="class-gv-view_8php_source.html#l00818">View\by_id()</a>, <a class="el" href="class-common_8php_source.html#l00749">GVCommon\get_entry()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00119">GravityView_frontend\getInstance()</a>, <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00119">shortcode()</a>.</p>
 
@@ -480,7 +470,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00256">256</a> of file <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html">class-gravityview-entry-link-shortcode.php</a>.</p>
 
-<p class="reference">References <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-api_8php_source.html#l00644">GravityView_API\entry_link()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00221">GravityView_Delete_Entry\get_delete_link()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00208">GravityView_Edit_Entry\get_edit_link()</a>, and <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00349">maybe_add_field_values_query_args()</a>.</p>
+<p class="reference">References <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-api_8php_source.html#l00656">GravityView_API\entry_link()</a>, <a class="el" href="class-delete-entry_8php_source.html#l00221">GravityView_Delete_Entry\get_delete_link()</a>, <a class="el" href="class-edit-entry_8php_source.html#l00208">GravityView_Edit_Entry\get_edit_link()</a>, and <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00365">maybe_add_field_values_query_args()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00119">shortcode()</a>.</p>
 
@@ -554,7 +544,7 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00349">349</a> of file <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html">class-gravityview-entry-link-shortcode.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00365">365</a> of file <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html">class-gravityview-entry-link-shortcode.php</a>.</p>
 
 <p class="reference">References <a class="el" href="post__image_8php_source.html#l00025">$url</a>.</p>
 
@@ -600,14 +590,7 @@ Static Private Attributes</h2></td></tr>
 1.15</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>{ </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>What type of link to generate. Options: <code>read</code>, <code>edit</code>, and <code>delete</code>. Default: <code>read</code> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$view_id</td><td>Define the ID for the View. If not set, use current View ID, if exists. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$entry_id</td><td>ID of the entry to edit. If undefined, uses the current entry ID, if exists. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$post_id</td><td>ID of the base post or page to use for an embedded View </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$link_atts</td><td>Pass anchor tag attributes (<code>target=_blank</code> to open Edit Entry link in a new window, for example) </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$return</td><td>What should the shortcode return: link HTML (<code>html</code>) or the URL (<code>url</code>). Default: <code>html</code> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$field_values</td><td>Only used for <code>action="edit"</code>. Parameters to pass in to the prefill data in Edit Entry form. Uses the same format as Gravity Forms "Allow field to be populated dynamically" {</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>{  string $action What type of link to generate. Options: <code>read</code>, <code>edit</code>, and <code>delete</code>. Default: <code>read</code>  string $view_id Define the ID for the View. If not set, use current View ID, if exists.  string $entry_id ID of the entry to edit. If undefined, uses the current entry ID, if exists.  string $post_id ID of the base post or page to use for an embedded View  string $link_atts Pass anchor tag attributes (<code>target=_blank</code> to open Edit Entry link in a new window, for example)  string $return What should the shortcode return: link HTML (<code>html</code>) or the URL (<code>url</code>). Default: <code>html</code>  string $field_values Only used for <code>action="edit"</code>. Parameters to pass in to the prefill data in Edit Entry form. Uses the same format as Gravity Forms "Allow field to be populated dynamically" {</td></tr>
   </table>
   </dd>
 </dl>
@@ -672,14 +655,7 @@ Static Private Attributes</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>1.15</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>{ </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>What type of link to generate. Options: <code>read</code>, <code>edit</code>, and <code>delete</code>. Default: <code>read</code> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$view_id</td><td>Define the ID for the View. If not set, use current View ID, if exists. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$entry_id</td><td>ID of the entry to edit. If undefined, uses the current entry ID, if exists. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$post_id</td><td>ID of the base post or page to use for an embedded View </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$link_atts</td><td>Pass anchor tag attributes (<code>target=_blank</code> to open Edit Entry link in a new window, for example) </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$return</td><td>What should the shortcode return: link HTML (<code>html</code>) or the URL (<code>url</code>). Default: <code>html</code> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$field_values</td><td>Only used for <code>action="edit"</code>. Parameters to pass in to the prefill data in Edit Entry form. Uses the same format as Gravity Forms "Allow field to be populated dynamically" {</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$atts</td><td>{  string $action What type of link to generate. Options: <code>read</code>, <code>edit</code>, and <code>delete</code>. Default: <code>read</code>  string $view_id Define the ID for the View. If not set, use current View ID, if exists.  string $entry_id ID of the entry to edit. If undefined, uses the current entry ID, if exists.  string $post_id ID of the base post or page to use for an embedded View  string $link_atts Pass anchor tag attributes (<code>target=_blank</code> to open Edit Entry link in a new window, for example)  string $return What should the shortcode return: link HTML (<code>html</code>) or the URL (<code>url</code>). Default: <code>html</code>  string $field_values Only used for <code>action="edit"</code>. Parameters to pass in to the prefill data in Edit Entry form. Uses the same format as Gravity Forms "Allow field to be populated dynamically" {</td></tr>
   </table>
   </dd>
 </dl>
@@ -692,43 +668,24 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>null|string If admin or an error occurred, returns null. Otherwise, returns entry link output. If `$atts['return']` is 'url', the entry link URL. Otherwise, entry link <code>&lt;a&gt;</code> HTML tag. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000207">Runs Filter:</a></b></dt><dd><code>gravityview/shortcodes/gv_entry_link/output</code> Modify the output of the [gv_entry_link] shortcode </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000209">Runs Filter:</a></b></dt><dd><code>gravityview/shortcodes/gv_entry_link/output</code> Modify the output of the [gv_entry_link] shortcode </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0.15 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$return</td><td>The HTML link output </td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">array</td><td>{ </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$url</td><td>The URL used to generate the anchor tag. {</td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">array</td><td>{  string $url The URL used to generate the anchor tag. {</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___entry___link___shortcode.html#a0731363610c5a9904e67f664877e0854" title="Get the URL for the entry. ">GravityView_Entry_Link_Shortcode::get_url</a>} </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$link_text</td><td>{</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___entry___link___shortcode.html#a398fc76f676215c3e1dae786cbc5a766" title="Get the anchor text for the link. ">GravityView_Entry_Link_Shortcode::get_anchor_text</a>} </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$link_atts</td><td>{</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___entry___link___shortcode.html#a7768018d0392d675cda033e6e18d6146" title="Parse shortcode atts to fetch link_atts, which will be added to the output of the HTML anchor tag gen...">GravityView_Entry_Link_Shortcode::get_link_atts</a>} </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array&#160;|&#160;string</td><td class="paramname">$atts</td><td>Shortcode atts passed to shortcode </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$content</td><td>Content passed to shortcode </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$context</td><td>The tag of the shortcode being called }</td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___entry___link___shortcode.html#a0731363610c5a9904e67f664877e0854" title="Get the URL for the entry. ">GravityView_Entry_Link_Shortcode::get_url</a>}  string <a class="el" href="field-entry__link-html_8php.html#aabe6700a6326424ba662664adce40fa4">$link_text</a> {</dd>
+<dd>
+<a class="el" href="class_gravity_view___entry___link___shortcode.html#a398fc76f676215c3e1dae786cbc5a766" title="Get the anchor text for the link. ">GravityView_Entry_Link_Shortcode::get_anchor_text</a>}  array <a class="el" href="field-post__image-html_8php.html#ad8e92f13e3459e64ae02a70ac960a7fe">$link_atts</a> {</dd>
+<dd>
+<a class="el" href="class_gravity_view___entry___link___shortcode.html#a7768018d0392d675cda033e6e18d6146" title="Parse shortcode atts to fetch link_atts, which will be added to the output of the HTML anchor tag gen...">GravityView_Entry_Link_Shortcode::get_link_atts</a>}  array|string $atts Shortcode atts passed to <a class="el" href="class_gravity_view___entry___link___shortcode.html#adaf92c0f06cc9d1828596be511b26f23" title="Generate a link to an entry. ">shortcode</a>  string <a class="el" href="views_2table_8php.html#a57b284fe00866494b33afa80ba729bed">$content</a> Content passed to <a class="el" href="class_gravity_view___entry___link___shortcode.html#adaf92c0f06cc9d1828596be511b26f23" title="Generate a link to an entry. ">shortcode</a>  string $context The tag of the <a class="el" href="class_gravity_view___entry___link___shortcode.html#adaf92c0f06cc9d1828596be511b26f23" title="Generate a link to an entry. ">shortcode</a> being called }</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00119">119</a> of file <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html">class-gravityview-entry-link-shortcode.php</a>.</p>
 
-<p class="reference">References <a class="el" href="custom_8php_source.html#l00037">$content</a>, <a class="el" href="edit__link_8php_source.html#l00016">$link_atts</a>, <a class="el" href="delete__link_8php_source.html#l00019">$link_text</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00225">get_anchor_text()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00312">get_entry()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00203">get_link_atts()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00256">get_url()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l01851">gravityview_get_link()</a>, and <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00284">has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="custom_8php_source.html#l00037">$content</a>, <a class="el" href="edit__link_8php_source.html#l00016">$link_atts</a>, <a class="el" href="delete__link_8php_source.html#l00019">$link_text</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00225">get_anchor_text()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00312">get_entry()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00203">get_link_atts()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00256">get_url()</a>, <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l01931">gravityview_get_link()</a>, and <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00284">has_cap()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00090">delete_shortcode()</a>, <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00074">edit_shortcode()</a>, and <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00063">read_shortcode()</a>.</p>
 
@@ -754,12 +711,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= array(</div><div class="line">        <span class="stringliteral">&#39;action&#39;</span>       =&gt; <span class="stringliteral">&#39;read&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;view_id&#39;</span>      =&gt; 0,</div><div class="line">        <span class="stringliteral">&#39;entry_id&#39;</span>     =&gt; 0,</div><div class="line">        <span class="stringliteral">&#39;post_id&#39;</span>      =&gt; 0,</div><div class="line">        <span class="stringliteral">&#39;link_atts&#39;</span>    =&gt; <span class="stringliteral">&#39;&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;return&#39;</span>       =&gt; <span class="stringliteral">&#39;html&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;field_values&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div><div class="line">    )</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">array</td><td>The accepted shortcode attribute pairs, with defaults set </td></tr>
-  </table>
-  </dd>
-</dl>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div><div class="line">        <span class="stringliteral">&#39;action&#39;</span>       =&gt; <span class="stringliteral">&#39;read&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;view_id&#39;</span>      =&gt; 0,</div><div class="line">        <span class="stringliteral">&#39;entry_id&#39;</span>     =&gt; 0,</div><div class="line">        <span class="stringliteral">&#39;post_id&#39;</span>      =&gt; 0,</div><div class="line">        <span class="stringliteral">&#39;link_atts&#39;</span>    =&gt; <span class="stringliteral">&#39;&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;return&#39;</span>       =&gt; <span class="stringliteral">&#39;html&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;field_values&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div><div class="line">    )</div></div><!-- fragment -->
+<p>array The accepted shortcode attribute pairs, with defaults set </p>
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00028">28</a> of file <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html">class-gravityview-entry-link-shortcode.php</a>.</p>
@@ -785,12 +738,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">array</td><td>Entry fetched using the $atts['entry_id'] shortcode setting. </td></tr>
-  </table>
-  </dd>
-</dl>
+
+<p>array Entry fetched using the $atts['entry_id'] shortcode setting. </p>
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00016">16</a> of file <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html">class-gravityview-entry-link-shortcode.php</a>.</p>
@@ -818,12 +767,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">array</td><td>The final settings for the shortcode, after merging passed $atts with self::$defaults </td></tr>
-  </table>
-  </dd>
-</dl>
+
+<p>array The final settings for the shortcode, after merging passed $atts with self::$defaults </p>
 <dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00042">42</a> of file <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html">class-gravityview-entry-link-shortcode.php</a>.</p>
@@ -849,13 +794,9 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">int</td><td>If set, generate a link to the entry for this View ID. Required when used outside a View. Otherwise, current View ID is used. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
+
+<p>int If set, generate a link to the entry for this View ID. </p>
+<p>Required when used outside a View. Otherwise, current View ID is used. </p><dl class="section since"><dt>Since</dt><dd>1.15 </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html#l00022">22</a> of file <a class="el" href="class-gravityview-entry-link-shortcode_8php_source.html">class-gravityview-entry-link-shortcode.php</a>.</p>
 

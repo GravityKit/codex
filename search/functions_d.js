@@ -5,6 +5,5 @@ var searchData=
   ['no_5fresults',['no_results',['../class_gravity_view___a_p_i.html#a03172d5649b402b1f43354a0975c7030',1,'GravityView_API']]],
   ['no_5fviews_5ftext',['no_views_text',['../class_gravity_view___admin.html#a11b55957fc8cc22977d2c83356f8204d',1,'GravityView_Admin']]],
   ['not_5fimplemented',['not_implemented',['../class_g_v_1_1_r_e_s_t_1_1_route.html#a763a46d91844679f92755175c34221a6',1,'GV::REST::Route']]],
-  ['notice',['notice',['../class_g_v_1_1_logger.html#ae0f18fe657e53af89a1edca20cab8089',1,'GV\Logger\notice()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_abstract_logger.html#ae0f18fe657e53af89a1edca20cab8089',1,'GravityView\Psr\Log\AbstractLogger\notice()'],['../interface_gravity_view_1_1_psr_1_1_log_1_1_logger_interface.html#ae0f18fe657e53af89a1edca20cab8089',1,'GravityView\Psr\Log\LoggerInterface\notice()']]],
-  ['ns',['ns',['../class_gravity_view_1_1_trusted_login_1_1_config.html#a4d9b2467089af9e11570d7953cad66c3',1,'GravityView::TrustedLogin::Config']]]
+  ['notice',['notice',['../class_g_v_1_1_logger.html#ae0f18fe657e53af89a1edca20cab8089',1,'GV::Logger']]]
 ];

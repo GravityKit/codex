@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -199,7 +199,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00026">26</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00203">203</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00201">201</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
 </div>
 </div>
@@ -269,9 +269,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00041">41</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, and <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-plugin_8php_source.html#l00526">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, and <a class="el" href="data-source_8php_source.html#l00019">$forms</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="__mocks_8php_source.html#l00214">GV\Mocks\GravityView_API_field_label()</a>, <a class="el" href="__mocks_8php_source.html#l00144">GV\Mocks\GravityView_API_field_value()</a>, <a class="el" href="__mocks_8php_source.html#l00069">GV\Mocks\GravityView_frontend_get_view_entries()</a>, <a class="el" href="class-gv-template-entry-table_8php_source.html#l00039">Entry_Table_Template\the_entry()</a>, and <a class="el" href="class-gv-template-entry-list_8php_source.html#l00028">Entry_List_Template\the_field()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="__mocks_8php_source.html#l00214">GV\Mocks\GravityView_API_field_label()</a>, <a class="el" href="__mocks_8php_source.html#l00144">GV\Mocks\GravityView_API_field_value()</a>, <a class="el" href="__mocks_8php_source.html#l00069">GV\Mocks\GravityView_frontend_get_view_entries()</a>, <a class="el" href="class-admin-views_8php_source.html#l01290">GravityView_Admin_Views\set_default_view_fields()</a>, <a class="el" href="class-gv-template-entry-table_8php_source.html#l00039">Entry_Table_Template\the_entry()</a>, and <a class="el" href="class-gv-template-entry-list_8php_source.html#l00028">Entry_List_Template\the_field()</a>.</p>
 
 </div>
 </div>
@@ -309,9 +309,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>|null An instance of this form or null if not found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00072">72</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00070">70</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-plugin_8php_source.html#l00526">GV\$form</a>.</p>
 
 </div>
 </div>
@@ -340,16 +340,11 @@ Additional Inherited Members</h2></td></tr>
 <p>The offset and limit</p>
 <p>Add the counter lazy callback.</p>
 <p>Apply the filters</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">\GV\GF_Entry_Filter&#160;|&#160;\GV\Entry_Filter</td><td class="paramname">$filter</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>| $filter </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00092">92</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00090">90</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
-<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>.</p>
+<p class="reference">References <a class="el" href="other__entries_8php_source.html#l00057">$entries</a>, <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="class-gv-settings-plugin_8php_source.html#l00526">GV\$form</a>.</p>
 
 </div>
 </div>
@@ -388,9 +383,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Unwrap the arguments.</p>
 <p>Wrap it up into a . </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00161">161</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00159">159</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-gv-settings-plugin_8php_source.html#l00526">GV\$form</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -412,7 +407,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get an array of GV Fields for this data source. </p>
 <dl class="section return"><dt>Returns</dt><dd>[]|array Empty array if no fields </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00181">181</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00179">179</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>.</p>
 
@@ -436,7 +431,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ArrayAccess compatibility layer with a Gravity Forms form array. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00220">220</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00219">219</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
 </div>
 </div>
@@ -491,9 +486,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ArrayAccess compatibility layer with a Gravity Forms form array. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00248">248</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00249">249</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -515,9 +510,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>ArrayAccess compatibility layer with a Gravity Forms form array. </p>
 
-<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00260">260</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-gv-form-gravityforms_8php_source.html#l00262">262</a> of file <a class="el" href="class-gv-form-gravityforms_8php_source.html">class-gv-form-gravityforms.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>

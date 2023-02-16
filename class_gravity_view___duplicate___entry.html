@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -441,7 +441,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00658">658</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00077">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000242">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/message</code> Modify the Duplicate Entry messages. Allows HTML; will not be further sanitized. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000244">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/message</code> Modify the Duplicate Entry messages. Allows HTML; will not be further sanitized. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -512,7 +512,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>WP_Error|boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000238">Runs Filter:</a></b></dt><dd><code>gravityview/entry/duplicate/details</code> Modify the new entry details before it's created. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000240">Runs Filter:</a></b></dt><dd><code>gravityview/entry/duplicate/details</code> Modify the new entry details before it's created. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -521,7 +521,7 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000239">Runs Filter:</a></b></dt><dd><code>gravityview/entry/duplicate/meta</code> Modify the new entry meta details. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000241">Runs Filter:</a></b></dt><dd><code>gravityview/entry/duplicate/meta</code> Modify the new entry meta details. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$save_this_meta</td><td>The duplicate meta. Use/add meta_key, meta_value, item_index. </td></tr>
@@ -542,7 +542,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00456">456</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="class-gv-utils_8php_source.html#l00057">Utils\_SERVER()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-gv-settings-plugin_8php_source.html#l00526">GV\$form</a>, <a class="el" href="class-gv-utils_8php_source.html#l00057">Utils\_SERVER()</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00835">maybe_duplicate_list()</a>, and <a class="el" href="class-duplicate-entry_8php_source.html#l00363">process_duplicate()</a>.</p>
 
@@ -638,7 +638,7 @@ Private Member Functions</h2></td></tr>
 <p>Get the onclick attribute for the confirm dialogs that warns users before they duplicate an entry. </p>
 <dl class="section since"><dt>Since</dt><dd>2.5</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML <code>onclick</code> attribute </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000241">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/confirm-text</code> Modify the Duplicate Entry Javascript confirmation text (will be sanitized when output)</dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000243">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/confirm-text</code> Modify the Duplicate Entry Javascript confirmation text (will be sanitized when output)</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$confirm</td><td>Default: "Are you sure you want to duplicate this entry?". If empty, disable confirmation dialog.</td></tr>
@@ -705,7 +705,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00329">329</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-api_8php_source.html#l00392">GravityView_API\directory_link()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-api_8php_source.html#l00399">GravityView_API\directory_link()</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -837,7 +837,7 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000243">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate/backend/enable</code> Disables the duplicate link on the backend. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000245">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate/backend/enable</code> Disables the duplicate link on the backend. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">boolean</td><td class="paramname">$enable</td><td>True by default. Enabled. </td></tr>
@@ -914,7 +914,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00835">835</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00456">duplicate_entry()</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00097">getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-common_8php_source.html#l00057">GVCommon\has_cap()</a>, and <a class="el" href="class-gravityview-logging_8php_source.html#l00142">GravityView_Logging\is_logging_active()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00456">duplicate_entry()</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00097">getInstance()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="class-common_8php_source.html#l00077">GVCommon\has_cap()</a>.</p>
 
 </div>
 </div>
@@ -964,7 +964,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00118">118</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, and <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1062,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00363">363</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00456">duplicate_entry()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="connector-functions_8php_source.html#l00119">gravityview_get_entry()</a>, and <a class="el" href="class-duplicate-entry_8php_source.html#l00624">user_can_duplicate_entry()</a>.</p>
+<p class="reference">References <a class="el" href="notes_8php_source.html#l00027">$entry</a>, <a class="el" href="notes_8php_source.html#l00030">$entry_slug</a>, <a class="el" href="class-duplicate-entry_8php_source.html#l00456">duplicate_entry()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="connector-functions_8php_source.html#l00119">gravityview_get_entry()</a>, and <a class="el" href="class-duplicate-entry_8php_source.html#l00624">user_can_duplicate_entry()</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1118,7 @@ Private Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-duplicate-entry_8php_source.html#l00624">624</a> of file <a class="el" href="class-duplicate-entry_8php_source.html">class-duplicate-entry.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-duplicate-entry_8php_source.html#l00363">process_duplicate()</a>.</p>
 
@@ -1142,7 +1142,7 @@ Private Member Functions</h2></td></tr>
 <p>Is the current nonce valid for editing the entry? </p>
 <dl class="section since"><dt>Since</dt><dd>2.5</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000240">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/verify_nonce</code> Override Duplicate Entry nonce validation. Return true to declare nonce valid. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000242">Runs Filter:</a></b></dt><dd><code>gravityview/duplicate-entry/verify_nonce</code> Override Duplicate Entry nonce validation. Return true to declare nonce valid. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>wp_verify_nonce() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -71,14 +71,23 @@ $(function() {
 <dd><p class="startdd"><code>gravityview_search_widget_field_before</code> Before each search input is rendered (other than the submit button) </p>
 <p class="enddd"><code>gravityview_search_widget_field_after</code> After each search input is rendered (other than the submit button)  </p>
 </dd>
+<dt><a class="anchor" id="_actions000085"></a>Global <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_core.html#a4be4055f3361d4800e16bc2e2e38cda6">Core::init</a>  ()</dt>
+<dd>gk/foundation/initialized </dd>
 <dt><a class="anchor" id="_actions000001"></a>Global <a class="el" href="class_g_v_1_1_core.html#a4be4055f3361d4800e16bc2e2e38cda6">Core::init</a>  ()</dt>
 <dd><code>gravityview/loaded</code> The core has been loaded. </dd>
-<dt><a class="anchor" id="_actions000082"></a>Global <a class="el" href="views_2table_2table-body_8php.html#a354e213939ab86a955940ef1ff33685a">else</a>  </dt>
+<dt><a class="anchor" id="_actions000083"></a>Global <a class="el" href="views_2table_2table-body_8php.html#a354e213939ab86a955940ef1ff33685a">else</a>  </dt>
 <dd><p class="startdd"><code>gravityview/template/table/tr/before</code> </p>
+<p><code>gravityview/template/table/tr/after</code> </p>
 <p class="enddd"><code>gravityview/template/table/tr/after</code>  </p>
 </dd>
 <dt><a class="anchor" id="_actions000003"></a>Global <a class="el" href="class_g_v_1_1_entry___renderer.html#a97700face9765b2b92e4a9dbdcd9386d">Entry_Renderer::render</a>  (<a class="el" href="class_g_v_1_1_entry.html" title="If this file is called directly, abort. ">Entry</a> $entry, <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> $view, <a class="el" href="class_g_v_1_1_request.html" title="If this file is called directly, abort. ">Request</a> $request=null)</dt>
 <dd><code>gravityview_render_entry_{<a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> ID}</code> Before rendering a single entry for a specific <a class="el" href="class_g_v_1_1_view.html" title="If this file is called directly, abort. ">View</a> ID  </dd>
+<dt><a class="anchor" id="_actions000086"></a>Global <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_framework.html#a4be4055f3361d4800e16bc2e2e38cda6">Framework::init</a>  ()</dt>
+<dd><code>gk/foundation/licenses/initialized</code> Fires when the class has finished initializing. </dd>
+<dt><a class="anchor" id="_actions000087"></a>Global <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_settings_1_1_framework.html#a4be4055f3361d4800e16bc2e2e38cda6">Framework::init</a>  ()</dt>
+<dd><code>gk/foundation/settings/initialized</code> Fires when the class has finished initializing. </dd>
+<dt><a class="anchor" id="_actions000089"></a>Global <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_translations_1_1_framework.html#a4be4055f3361d4800e16bc2e2e38cda6">Framework::init</a>  ()</dt>
+<dd><code>gk/foundation/translations/initialized</code> Fires when the class has finished initializing. </dd>
 <dt><a class="anchor" id="_actions000065"></a>Namespace <a class="el" href="namespace_gravity_view.html">GravityView</a>  </dt>
 <dd><p class="startdd"><code>gravityview_entry_before</code> Tap in before the the entry is displayed, inside the entry container </p>
 <p><code>gravityview_entry_title_before</code> Tap in before the the entry title is displayed </p>
@@ -118,10 +127,14 @@ $(function() {
 <dd><div><div><div><div> <code>gravityview_recent_entries_widget_form</code> Displayed at the bottom of the Recent Entries widget admin form  </div></div></div></div></dd>
 <dt><a class="anchor" id="_actions000060"></a>Global <a class="el" href="class_gravity_view___recent___entries___widget.html#afb9380a2672338f13e809fb264c40394">GravityView_Recent_Entries_Widget::widget</a>  ( $args, $instance)</dt>
 <dd><div><div><div><div> <code>gravityview/widget/recent-entries/before_widget</code> Before recent entries are displayed in the WordPress widget </div></div></div></div><div><div><div><div> <code>gravityview/widget/recent-entries/after_widget</code> After recent entries are displayed in the WordPress widget  </div></div></div></div></dd>
+<dt><a class="anchor" id="_actions000080"></a>Global <a class="el" href="future_2gravityview_8php.html#a372c49dd68f65e993ec91ae6edf9454c">if</a>  (! defined('GRAVITYVIEW_DIR'))</dt>
+<dd><div><div><div><div> <code>gravityview/field/survey/rating-styles</code>  {</div></div></div></div><div><div><div><div> <code>gravityview/template/table/tr/before</code> </div></div></div></div><div><div><div><div> <code>gravityview/template/table/tr/after</code>  </div></div></div></div></dd>
 <dt><a class="anchor" id="_actions000002"></a>Global <a class="el" href="class_g_v_1_1_plugin.html#a572bd88eede5ff31b5f5b99ceda90446">Plugin::include_legacy_frontend</a>  ( $force=false)</dt>
 <dd><div><div><div><div> <code>gravityview_include_frontend_actions</code> Triggered after all <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> frontend files are loaded </div></div></div></div></dd>
+<dt><a class="anchor" id="_actions000088"></a>Global <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_settings_1_1_settings_validator.html#a86da6e15ef2441bdc94ff8c51b2c672e">SettingsValidator::validate</a>  ( $plugin, array $original_settings, array $settings_to_validate)</dt>
+<dd><div><div><div><div> <code>gk/foundation/settings/{plugin}/validation/{setting_id}</code> Runs when validation rules are not specified and before the setting is marked as validated. </div></div></div></div></dd>
 <dt><a class="anchor" id="_actions000025"></a>Global <a class="el" href="class_g_v_1_1_view.html#a2fc74951f4e394bdefd7febdeff541c0">View::get_entries</a>  ( $request=null)</dt>
-<dd><div><div><div><div> <code>gravityview/view/query</code> Override the  before the <a class="el" href="namespace_g_v.html#a66f12b503ed90844ccf8401e14ccf469" title="Retrieve a setting. ">get()</a> call.  </div></div></div></div></dd>
+<dd><div><div><div><div> <code>gravityview/view/query</code> Override the  before the get() call.  </div></div></div></div></dd>
 <dt><a class="anchor" id="_actions000007"></a>Global <a class="el" href="class_g_v_1_1_view___list___template.html#a036ef7c3df67028735b5ff0c6dc32ec5">View_List_Template::body_after</a>  ( $context)</dt>
 <dd><div><div><div><div> <code>gravityview/template/list/body/after</code> Output inside the <code>tbody</code> of the list at the end. </div></div></div></div><div><div><div><div> <code>gravityview_list_body_after</code> Inside the <code>tbody</code>, after any rows are rendered. Can be used to insert additional rows.  </div></div></div></div></dd>
 <dt><a class="anchor" id="_actions000005"></a>Global <a class="el" href="class_g_v_1_1_view___list___template.html#ac6c74a33b4d415c437ddf5d7ec0be242">View_List_Template::body_before</a>  ( $context)</dt>

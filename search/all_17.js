@@ -1,16 +1,23 @@
 var searchData=
 [
-  ['warning',['WARNING',['../class_g_v_1_1_log_level.html#ad0c7ccd2f8b92a760391d21d0ec7b339',1,'GV\LogLevel\WARNING()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_log_level.html#ad0c7ccd2f8b92a760391d21d0ec7b339',1,'GravityView\Psr\Log\LogLevel\WARNING()'],['../class_g_v_1_1_logger.html#aa9f94dcb1a687e36bc7f838a8801feec',1,'GV\Logger\warning()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_abstract_logger.html#aa9f94dcb1a687e36bc7f838a8801feec',1,'GravityView\Psr\Log\AbstractLogger\warning()'],['../interface_gravity_view_1_1_psr_1_1_log_1_1_logger_interface.html#aa9f94dcb1a687e36bc7f838a8801feec',1,'GravityView\Psr\Log\LoggerInterface\warning()']]],
+  ['warning',['WARNING',['../class_g_v_1_1_log_level.html#ad0c7ccd2f8b92a760391d21d0ec7b339',1,'GV\LogLevel\WARNING()'],['../class_g_v_1_1_logger.html#aa9f94dcb1a687e36bc7f838a8801feec',1,'GV\Logger\warning()']]],
   ['website_2ephp',['website.php',['../website_8php.html',1,'']]],
   ['welcome',['welcome',['../class_gravity_view___welcome.html#a5999a1893c62bb1f0501c93435d263cd',1,'GravityView_Welcome']]],
+  ['where',['where',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_helpers_1_1_arr.html#a5151b89c2e9c7f0a1dc78c60f225365a',1,'GravityKit::GravityView::Foundation::Helpers::Arr']]],
   ['widget',['Widget',['../class_g_v_1_1_widget.html',1,'Widget'],['../class_gravity_view___recent___entries___widget.html#afb9380a2672338f13e809fb264c40394',1,'GravityView_Recent_Entries_Widget\widget()'],['../class_gravity_view___search___w_p___widget.html#afb9380a2672338f13e809fb264c40394',1,'GravityView_Search_WP_Widget\widget()']]],
   ['widget_2dpoll_2ephp',['widget-poll.php',['../widget-poll_8php.html',1,'']]],
   ['widget_2dsearch_2ephp',['widget-search.php',['../widget-search_8php.html',1,'']]],
   ['widget_5fcollection',['Widget_Collection',['../class_g_v_1_1_widget___collection.html',1,'GV']]],
   ['with_5fdefaults',['with_defaults',['../class_g_v_1_1_view___settings.html#afa8e0d988268c28e3f9ed395dcb0437f',1,'GV::View_Settings']]],
   ['wp_5faction_5flogger',['WP_Action_Logger',['../class_g_v_1_1_w_p___action___logger.html',1,'GV']]],
+  ['wp_5fadmin_5fmenu_5fslug',['WP_ADMIN_MENU_SLUG',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_w_p_1_1_admin_menu.html#af43d22a2d6d9265608c25dae8ff83682',1,'GravityKit::GravityView::Foundation::WP::AdminMenu']]],
+  ['wp_5fajax_5faction',['WP_AJAX_ACTION',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_core.html#ae2e18e0dd48ede6b3a095f456dbf696c',1,'GravityKit::GravityView::Foundation::Core']]],
+  ['wp_5flang_5fdir',['WP_LANG_DIR',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_translations_1_1_framework.html#abd442f137a75e779c2bda76323d95f4e',1,'GravityKit::GravityView::Foundation::Translations::Framework']]],
   ['wp_5froles',['wp_roles',['../class_gravity_view___roles___capabilities.html#a8c86f267da09c8b69f85e8a53614bd06',1,'GravityView_Roles_Capabilities']]],
   ['wpml_5fls_5ffilter',['wpml_ls_filter',['../class_gravity_view___theme___hooks___w_p_m_l.html#a740c65fd07062941c60535fdc56baab4',1,'GravityView_Theme_Hooks_WPML']]],
+  ['wpupgraderskin',['WPUpgraderSkin',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_w_p_1_1_w_p_upgrader_skin.html',1,'GravityKit::GravityView::Foundation::Licenses::WP']]],
+  ['wpupgraderskin_2ephp',['WPUpgraderSkin.php',['../_w_p_upgrader_skin_8php.html',1,'']]],
+  ['wrap',['wrap',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_helpers_1_1_arr.html#a44c11da6fcd212e92582cf9e29d7c495',1,'GravityKit::GravityView::Foundation::Helpers::Arr']]],
   ['wrapper',['wrapper',['../namespace_g_v.html#a5358faae7e5fffd3670ed8999d54e0e8',1,'GV']]],
-  ['write',['write',['../class_gravity_view_1_1_katzgrau_1_1_k_logger_1_1_logger.html#adcc5b330d26969b380b0ef0e051ee938',1,'GravityView::Katzgrau::KLogger::Logger']]]
+  ['write',['write',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_logger_1_1_gravity_forms_handler.html#afa17604fd899fffdc1ee326afe177cb5',1,'GravityKit\GravityView\Foundation\Logger\GravityFormsHandler\write()'],['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_logger_1_1_query_monitor_handler.html#afa17604fd899fffdc1ee326afe177cb5',1,'GravityKit\GravityView\Foundation\Logger\QueryMonitorHandler\write()']]]
 ];

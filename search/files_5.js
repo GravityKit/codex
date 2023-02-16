@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['class_2dgv_2dlicense_2dhandler_2ephp',['class-gv-license-handler.php',['../future_2includes_2class-gv-license-handler_8php.html',1,'']]],
   ['field_2daddress_2dcsv_2ephp',['field-address-csv.php',['../field-address-csv_8php.html',1,'']]],
   ['field_2daddress_2dhtml_2ephp',['field-address-html.php',['../field-address-html_8php.html',1,'']]],
   ['field_2dbusiness_5fhours_2dcsv_2ephp',['field-business_hours-csv.php',['../field-business__hours-csv_8php.html',1,'']]],

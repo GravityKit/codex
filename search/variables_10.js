@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['size',['size',['../class_g_v_1_1_addon___settings.html#ae20d3ca2acbfbfe24798ca800435f9f1',1,'GV::Addon_Settings']]],
-  ['status_5ftransient_5fkey',['status_transient_key',['../class_g_v_1_1_license___handler.html#a93740bc7784b262e9b6fa6912c584fbc',1,'GV::License_Handler']]],
-  ['subscription',['SUBSCRIPTION',['../class_gravity_view___field___transaction___type.html#ab91bd49c0440b4e45fcf207910f1fc2a',1,'GravityView_Field_Transaction_Type']]],
-  ['switch',['switch',['../checkbox_8php.html#ae3d2cf16a317e3cb31214f733c032b33',1,'switch():&#160;checkbox.php'],['../field-checkbox-html_8php.html#ae3d2cf16a317e3cb31214f733c032b33',1,'switch():&#160;field-checkbox-html.php']]]
+  ['rand',['RAND',['../class_g_v_1_1_entry___sort.html#a5a6ae56404c94c6c51e4b5b6bc3f7ff1',1,'GV::Entry_Sort']]],
+  ['redirect_5fto_5fmultiple_5fentries_5fvalue',['REDIRECT_TO_MULTIPLE_ENTRIES_VALUE',['../class_gravity_view___delete___entry.html#aa870a1f2f31a830d2fca4134d235979d',1,'GravityView_Delete_Entry']]],
+  ['redirect_5fto_5furl_5fvalue',['REDIRECT_TO_URL_VALUE',['../class_gravity_view___delete___entry.html#a9c6a580985376f7e8a34c4cc5de6920d',1,'GravityView_Delete_Entry']]],
+  ['rr',['rr',['../inline-javascript_8php.html#aeb9279982226a42afdf2860dbdc29b45',1,'inline-javascript.php']]]
 ];

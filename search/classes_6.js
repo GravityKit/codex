@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['internal_5ffield',['Internal_Field',['../class_g_v_1_1_internal___field.html',1,'GV']]],
-  ['internal_5fsource',['Internal_Source',['../class_g_v_1_1_internal___source.html',1,'GV']]],
-  ['invalidargumentexception',['InvalidArgumentException',['../class_gravity_view_1_1_psr_1_1_log_1_1_invalid_argument_exception.html',1,'GravityView::Psr::Log']]]
+  ['helpers',['Helpers',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_settings_1_1_helpers.html',1,'Helpers'],['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_helpers.html',1,'Helpers']]],
+  ['helpscout',['HelpScout',['../class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_integrations_1_1_help_scout.html',1,'GravityKit::GravityView::Foundation::Integrations']]]
 ];

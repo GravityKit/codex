@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -66,12 +66,65 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">views/list.php File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><a href="views_2list_8php_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a57b284fe00866494b33afa80ba729bed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="views_2list_8php.html#a57b284fe00866494b33afa80ba729bed">$content</a> = ob_get_clean()</td></tr>
+<tr class="separator:a57b284fe00866494b33afa80ba729bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce7155375af0eafbf42f51737142723"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="views_2list_8php.html#abce7155375af0eafbf42f51737142723">$wrapper_container</a></td></tr>
+<tr class="separator:abce7155375af0eafbf42f51737142723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a57b284fe00866494b33afa80ba729bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b284fe00866494b33afa80ba729bed">&#9670;&nbsp;</a></span>$content</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$content = ob_get_clean()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="views_2list_8php_source.html#l00019">19</a> of file <a class="el" href="views_2list_8php_source.html">views/list.php</a>.</p>
+
+</div>
+</div>
+<a id="abce7155375af0eafbf42f51737142723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce7155375af0eafbf42f51737142723">&#9670;&nbsp;</a></span>$wrapper_container</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$wrapper_container</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= apply_filters(</div><div class="line">    <span class="stringliteral">&#39;gravityview/view/wrapper_container&#39;</span>,</div><div class="line">    <span class="stringliteral">&#39;&lt;div id=&quot;&#39;</span> . esc_attr( $gravityview-&gt;view-&gt;get_anchor_id() ) . <span class="stringliteral">&#39;&quot;&gt;{content}&lt;/div&gt;&#39;</span>,</div><div class="line">    $gravityview-&gt;view-&gt;get_anchor_id(),</div><div class="line">    $gravityview-&gt;view</div><div class="line">)</div></div><!-- fragment --><dl class="filters"><dt><b><a class="el" href="filters.html#_filters000379">Runs Filter:</a></b></dt><dd><code>gravityview/view/wrapper_container</code> Modify the wrapper container.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.15</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$wrapper_container</td><td>Wrapper container HTML markup </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$anchor_id</td><td>(optional) Unique anchor ID to identify the view. </td></tr>
+    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The View. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="views_2list_8php_source.html#l00029">29</a> of file <a class="el" href="views_2list_8php_source.html">views/list.php</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/>

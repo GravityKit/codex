@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['name',['name',['../class_g_v_1_1_license___handler.html#a065dce940aaa83aab96e001e5f46d129',1,'GV::License_Handler']]],
   ['name_2ephp',['name.php',['../name_8php.html',1,'']]],
+  ['new_5fview_5fslug',['NEW_VIEW_SLUG',['../class_g_v_1_1_plugin.html#a107ddac57e64325f2cf0d2fc8b2daba1',1,'GV::Plugin']]],
   ['no_5fconflict_5fscripts',['no_conflict_scripts',['../class_gravity_view___admin___no___conflict.html#a84293b1e443b1eff49782b0f8ede2cdb',1,'GravityView_Admin_No_Conflict']]],
   ['no_5fconflict_5fstyles',['no_conflict_styles',['../class_gravity_view___admin___no___conflict.html#a7d471bb348c9fa797d9f9fb9d8d0c85b',1,'GravityView_Admin_No_Conflict']]],
   ['no_5fresults',['no_results',['../class_gravity_view___a_p_i.html#a03172d5649b402b1f43354a0975c7030',1,'GravityView_API']]],
@@ -13,10 +13,8 @@ var searchData=
   ['note_2drow_2deditable_2ephp',['note-row-editable.php',['../note-row-editable_8php.html',1,'']]],
   ['note_2drow_2ephp',['note-row.php',['../note-row_8php.html',1,'']]],
   ['notes_2ephp',['notes.php',['../notes_8php.html',1,'']]],
-  ['notice',['NOTICE',['../class_g_v_1_1_log_level.html#a0b32ca69140ca26e6614dddf004ae3d9',1,'GV\LogLevel\NOTICE()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_log_level.html#a0b32ca69140ca26e6614dddf004ae3d9',1,'GravityView\Psr\Log\LogLevel\NOTICE()'],['../class_g_v_1_1_logger.html#ae0f18fe657e53af89a1edca20cab8089',1,'GV\Logger\notice()'],['../class_gravity_view_1_1_psr_1_1_log_1_1_abstract_logger.html#ae0f18fe657e53af89a1edca20cab8089',1,'GravityView\Psr\Log\AbstractLogger\notice()'],['../interface_gravity_view_1_1_psr_1_1_log_1_1_logger_interface.html#ae0f18fe657e53af89a1edca20cab8089',1,'GravityView\Psr\Log\LoggerInterface\notice()']]],
-  ['ns',['ns',['../class_gravity_view_1_1_trusted_login_1_1_config.html#a4d9b2467089af9e11570d7953cad66c3',1,'GravityView::TrustedLogin::Config']]],
-  ['nulllogger',['NullLogger',['../class_gravity_view_1_1_psr_1_1_log_1_1_null_logger.html',1,'GravityView::Psr::Log']]],
-  ['nulllogger_2ephp',['NullLogger.php',['../_null_logger_8php.html',1,'']]],
+  ['notice',['NOTICE',['../class_g_v_1_1_log_level.html#a0b32ca69140ca26e6614dddf004ae3d9',1,'GV\LogLevel\NOTICE()'],['../class_g_v_1_1_logger.html#ae0f18fe657e53af89a1edca20cab8089',1,'GV\Logger\notice()']]],
+  ['notice_5furl_5farg',['NOTICE_URL_ARG',['../class_gravity_view___entry___approval___merge___tags.html#a766402fa8beb29bfba2e34f2cfb4bfec',1,'GravityView_Entry_Approval_Merge_Tags']]],
   ['number_2ephp',['number.php',['../number_8php.html',1,'']]],
   ['numeric',['NUMERIC',['../class_g_v_1_1_entry___sort.html#a19cabff2391d99103d1bf11b0ed2972e',1,'GV::Entry_Sort']]]
 ];

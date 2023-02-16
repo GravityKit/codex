@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -211,7 +211,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Associative array, with the key being the capability and the value being the label shown. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000109">Runs Filter:</a></b></dt><dd><code>gravityview_field_visibility_caps</code> Modify the capabilities shown in the field dropdown </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000111">Runs Filter:</a></b></dt><dd><code>gravityview_field_visibility_caps</code> Modify the capabilities shown in the field dropdown </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://docs.gravityview.co/article/96-how-to-modify-capabilities-shown-in-the-field-only-visible-to-dropdown">https://docs.gravityview.co/article/96-how-to-modify-capabilities-shown-in-the-field-only-visible-to-dropdown</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.0.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -318,7 +318,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of field options with <code>label</code>, <code>value</code>, <code>type</code>, <code>default</code> keys </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000107">Runs Filter:</a></b></dt><dd><code>gravityview_template_{$field_type}_options</code> Filter the field options by field type. Filter names: <code>gravityview_template_field_options</code> and <code>gravityview_template_widget_options</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000109">Runs Filter:</a></b></dt><dd><code>gravityview_template_{$field_type}_options</code> Filter the field options by field type. Filter names: <code>gravityview_template_field_options</code> and <code>gravityview_template_widget_options</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"></td><td class="paramname">array</td><td>Array of field options with <code>label</code>, <code>value</code>, <code>type</code>, <code>default</code> keys </td></tr>
@@ -331,7 +331,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>2.5}</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000108">Runs Filter:</a></b></dt><dd><code>gravityview_template_{$input_type}_options</code> Filter the field options by input type (<code>$input_type</code> examples: <code>textarea</code>, <code>list</code>, <code>select</code>, etc.) </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000110">Runs Filter:</a></b></dt><dd><code>gravityview_template_{$input_type}_options</code> Filter the field options by input type (<code>$input_type</code> examples: <code>textarea</code>, <code>list</code>, <code>select</code>, etc.) </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"></td><td class="paramname">array</td><td>Array of field options with <code>label</code>, <code>value</code>, <code>type</code>, <code>default</code> keys </td></tr>
@@ -414,7 +414,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string type class name </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000111">Runs Filter:</a></b></dt><dd><code>gravityview/setting/class/{field_type}</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000113">Runs Filter:</a></b></dt><dd><code>gravityview/setting/class/{field_type}</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$class_suffix</td><td>field class suffix; <code>GravityView_FieldType_{$class_suffix}</code> </td></tr>
@@ -422,7 +422,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000112">Runs Filter:</a></b></dt><dd><code>gravityview/setting/class_file/{field_type}</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000114">Runs Filter:</a></b></dt><dd><code>gravityview/setting/class_file/{field_type}</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$field_type_include_path</td><td>field class file path </td></tr>
@@ -431,9 +431,9 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00597">597</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00607">607</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, and <a class="el" href="gravityview_8php_source.html#l00040">GRAVITYVIEW_DIR</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, and <a class="el" href="gravityview_8php_source.html#l00049">GRAVITYVIEW_DIR</a>.</p>
 
 </div>
 </div>
@@ -485,7 +485,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string html tags </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00639">639</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00649">649</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, and <a class="el" href="edit__link_8php_source.html#l00018">$output</a>.</p>
 
@@ -542,13 +542,8 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string HTML output of option </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___field_type.html#ab312f47d625795ad653cf46d39cabb4c" title="Returns the default details for a field option. ">GravityView_FieldType::get_field_defaults</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="class_gravity_view___field_type.html" title="Modify option field type by extending this class. ">GravityView_FieldType</a></td><td class="paramname">$render_type</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000110">Runs Filter:</a></b></dt><dd><code>gravityview/option/output/{option_type}</code> Modify the output for a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> setting.<br />
+<p><a class="el" href="class_gravity_view___field_type.html" title="Modify option field type by extending this class. ">GravityView_FieldType</a> $render_type</p>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000112">Runs Filter:</a></b></dt><dd><code>gravityview/option/output/{option_type}</code> Modify the output for a <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> setting.<br />
 <code>$option_type</code> is the type of setting (<code>radio</code>, <code>text</code>, etc.) </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -558,11 +553,11 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00462">462</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00471">471</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, and <a class="el" href="edit__link_8php_source.html#l00018">$output</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00238">GravityView_Admin_Views\render_field_option()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00239">GravityView_Admin_Views\render_field_option()</a>.</p>
 
 </div>
 </div>
@@ -677,9 +672,9 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00281">281</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
 
-<p class="reference">References <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="custom_8php_source.html#l00027">$field_settings</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="time_8php_source.html#l00011">$gv_field</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="views_2list_2list-body_8php_source.html#l00013">$template</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gravityview-fields_8php_source.html#l00084">GravityView_Fields\get()</a>, and <a class="el" href="class-common_8php_source.html#l00027">GVCommon\get_form()</a>.</p>
+<p class="reference">References <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="custom_8php_source.html#l00027">$field_settings</a>, <a class="el" href="class-gv-settings-plugin_8php_source.html#l00526">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="time_8php_source.html#l00011">$gv_field</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="views_2list_2list-body_8php_source.html#l00013">$template</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-gravityview-fields_8php_source.html#l00084">GravityView_Fields\get()</a>, and <a class="el" href="class-common_8php_source.html#l00053">GVCommon\get_form_or_form_template()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-ajax_8php_source.html#l00254">GravityView_Ajax\get_field_options()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00945">GravityView_Admin_Views\render_active_areas()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-ajax_8php_source.html#l00254">GravityView_Ajax\get_field_options()</a>, and <a class="el" href="class-admin-views_8php_source.html#l00946">GravityView_Admin_Views\render_active_areas()</a>.</p>
 
 </div>
 </div>
@@ -740,7 +735,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string [html tags] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00722">722</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00732">732</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
@@ -811,18 +806,13 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void [description] </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___field_type.html#ab312f47d625795ad653cf46d39cabb4c" title="Returns the default details for a field option. ">GravityView_FieldType::get_field_defaults</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="class_gravity_view___field_type.html" title="Modify option field type by extending this class. ">GravityView_FieldType</a></td><td class="paramname">$render_type</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p><a class="el" href="class_gravity_view___field_type.html" title="Modify option field type by extending this class. ">GravityView_FieldType</a> $render_type </p>
 
-<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00519">519</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00528">528</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete-entry_8php_source.html#l00010">$current_settings</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="field-gravatar-html_8php_source.html#l00021">$settings</a>, and <a class="el" href="class-gv-settings-view_8php_source.html#l00022">View_Settings\with_defaults()</a>.</p>
+<p class="reference">References <a class="el" href="delete-entry_8php_source.html#l00010">$current_settings</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="multiple-entries_8php_source.html#l00014">$settings</a>, and <a class="el" href="class-gv-settings-view_8php_source.html#l00023">View_Settings\with_defaults()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00076">GravityView_Admin_Add_Shortcode\add_shortcode_popup()</a>, <a class="el" href="class-admin-views_8php_source.html#l00229">GravityView_Admin_Views\render_setting_row()</a>, <a class="el" href="class-delete-entry-admin_8php_source.html#l00187">GravityView_Delete_Entry_Admin\view_settings_delete_entry_metabox()</a>, <a class="el" href="class-delete-entry-admin_8php_source.html#l00074">GravityView_Delete_Entry_Admin\view_settings_edit_entry_metabox()</a>, <a class="el" href="class-delete-entry-admin_8php_source.html#l00059">GravityView_Delete_Entry_Admin\view_settings_metabox()</a>, and <a class="el" href="class-edit-entry-admin_8php_source.html#l00059">GravityView_Edit_Entry_Admin\view_settings_metabox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-add-shortcode_8php_source.html#l00076">GravityView_Admin_Add_Shortcode\add_shortcode_popup()</a>, <a class="el" href="class-admin-views_8php_source.html#l00230">GravityView_Admin_Views\render_setting_row()</a>, <a class="el" href="class-delete-entry-admin_8php_source.html#l00187">GravityView_Delete_Entry_Admin\view_settings_delete_entry_metabox()</a>, <a class="el" href="class-delete-entry-admin_8php_source.html#l00074">GravityView_Delete_Entry_Admin\view_settings_edit_entry_metabox()</a>, <a class="el" href="class-delete-entry-admin_8php_source.html#l00059">GravityView_Delete_Entry_Admin\view_settings_metabox()</a>, and <a class="el" href="class-edit-entry-admin_8php_source.html#l00059">GravityView_Edit_Entry_Admin\view_settings_metabox()</a>.</p>
 
 </div>
 </div>
@@ -888,7 +878,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string [html tags] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00659">659</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00669">669</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>.</p>
 
@@ -956,7 +946,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string [html tags] </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00691">691</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class_8render_8settings_8php_source.html#l00701">701</a> of file <a class="el" href="class_8render_8settings_8php_source.html">class.render.settings.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="entry__approval_8php_source.html#l00024">$class</a>, and <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>.</p>
 

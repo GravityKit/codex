@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -90,6 +90,10 @@ Variables</h2></td></tr>
 <tr class="separator:a77c8faa27a630e0cfbe0fa5507c1a538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3326a7f5703016042df69801c9770b4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="select-template_8php.html#a3326a7f5703016042df69801c9770b4c">$templates</a> = <a class="el" href="connector-functions_8php.html#ab1651e57decc9af0427d0bb57dd85677">gravityview_get_registered_templates</a>()</td></tr>
 <tr class="separator:a3326a7f5703016042df69801c9770b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb07052683501ef2eb989a282cce263c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="select-template_8php.html#afb07052683501ef2eb989a282cce263c">$wp_plugins</a> = []</td></tr>
+<tr class="separator:afb07052683501ef2eb989a282cce263c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633bf60e42879b662e4fe919e65440aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="select-template_8php.html#a633bf60e42879b662e4fe919e65440aa">foreach</a> (GravityKitFoundation::helpers() -&gt;core-&gt;get_plugins() as $path=&gt; $plugin) = array_merge( $current_settings, $_directions )</td></tr>
+<tr class="separator:a633bf60e42879b662e4fe919e65440aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ac68a0d7fea5ecfec9da99f4464af104e"></a>
@@ -138,7 +142,41 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="select-template_8php_source.html#l00017">17</a> of file <a class="el" href="select-template_8php_source.html">select-template.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00432">GravityView_Admin_Views\add_custom_column_content()</a>, <a class="el" href="class-gv-template-legacy-override_8php_source.html#l00096">Legacy_Override_Template\add_id_specific_templates()</a>, <a class="el" href="class-gv-template-view_8php_source.html#l00102">View_Template\add_id_specific_templates()</a>, <a class="el" href="class-gv-template-field_8php_source.html#l00106">Field_Template\add_id_specific_templates()</a>, <a class="el" href="class-gv-template-entry_8php_source.html#l00107">Entry_Template\add_id_specific_templates()</a>, <a class="el" href="class-template_8php_source.html#l00790">GravityView_View\add_id_specific_templates()</a>, <a class="el" href="connector-functions_8php_source.html#l00256">gravityview_get_registered_templates()</a>, and <a class="el" href="class-gravityview-template_8php_source.html#l00122">GravityView_Template\register_template()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-admin-views_8php_source.html#l00433">GravityView_Admin_Views\add_custom_column_content()</a>, <a class="el" href="class-gv-template-legacy-override_8php_source.html#l00096">Legacy_Override_Template\add_id_specific_templates()</a>, <a class="el" href="class-gv-template-view_8php_source.html#l00102">View_Template\add_id_specific_templates()</a>, <a class="el" href="class-gv-template-field_8php_source.html#l00106">Field_Template\add_id_specific_templates()</a>, <a class="el" href="class-gv-template-entry_8php_source.html#l00107">Entry_Template\add_id_specific_templates()</a>, <a class="el" href="class-template_8php_source.html#l00789">GravityView_View\add_id_specific_templates()</a>, <a class="el" href="connector-functions_8php_source.html#l00256">gravityview_get_registered_templates()</a>, and <a class="el" href="class-gravityview-template_8php_source.html#l00122">GravityView_Template\register_template()</a>.</p>
+
+</div>
+</div>
+<a id="afb07052683501ef2eb989a282cce263c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb07052683501ef2eb989a282cce263c">&#9670;&nbsp;</a></span>$wp_plugins</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$wp_plugins = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="select-template_8php_source.html#l00019">19</a> of file <a class="el" href="select-template_8php_source.html">select-template.php</a>.</p>
+
+</div>
+</div>
+<a id="a633bf60e42879b662e4fe919e65440aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a633bf60e42879b662e4fe919e65440aa">&#9670;&nbsp;</a></span>foreach</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">foreach = array_merge( $current_settings, $_directions )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="select-template_8php_source.html#l00021">21</a> of file <a class="el" href="select-template_8php_source.html">select-template.php</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="__mocks_8php_source.html#l00680">Legacy_Context\reset()</a>.</p>
 
 </div>
 </div>

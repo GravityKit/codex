@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b04c17be678f952ef7aeaad651eea79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___widget___search.html#a8b04c17be678f952ef7aeaad651eea79">gf_query_filter</a> (&amp;$query, $view, $request)</td></tr>
 <tr class="memdesc:a8b04c17be678f952ef7aeaad651eea79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filters the  with advanced logic.  <a href="#a8b04c17be678f952ef7aeaad651eea79">More...</a><br /></td></tr>
 <tr class="separator:a8b04c17be678f952ef7aeaad651eea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af788ec703e41395c035e747461e99c69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___widget___search.html#af788ec703e41395c035e747461e99c69">maybe_sieve_filter_choices</a> ( $search_fields, $widget, $widget_args, $context)</td></tr>
+<tr class="memdesc:af788ec703e41395c035e747461e99c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">If sieve choices is enabled, run it for each of the fields with choices.  <a href="#af788ec703e41395c035e747461e99c69">More...</a><br /></td></tr>
+<tr class="separator:af788ec703e41395c035e747461e99c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d894cdcf8b08a3e8e98634e4966005c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___widget___search.html#a0d894cdcf8b08a3e8e98634e4966005c">prepare_field_filter</a> ( $filter_key, $value, $view, $searchable_fields, $get=array())</td></tr>
 <tr class="memdesc:a0d894cdcf8b08a3e8e98634e4966005c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the field filters to GFAPI.  <a href="#a0d894cdcf8b08a3e8e98634e4966005c">More...</a><br /></td></tr>
 <tr class="separator:a0d894cdcf8b08a3e8e98634e4966005c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,9 +252,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a014324c9142b1e0bb9685e8751fce7c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___widget___search.html#a014324c9142b1e0bb9685e8751fce7c7">get_operator</a> ( $get, $key, $allowed, $default)</td></tr>
 <tr class="memdesc:a014324c9142b1e0bb9685e8751fce7c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an operator URL override.  <a href="#a014324c9142b1e0bb9685e8751fce7c7">More...</a><br /></td></tr>
 <tr class="separator:a014324c9142b1e0bb9685e8751fce7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe7cb9a8cdb5af34185a583e1479a968"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___widget___search.html#abe7cb9a8cdb5af34185a583e1479a968">get_search_filter_details</a> ( $field, $context)</td></tr>
-<tr class="memdesc:abe7cb9a8cdb5af34185a583e1479a968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare search fields to frontend render with other details (label, field type, searched values)  <a href="#abe7cb9a8cdb5af34185a583e1479a968">More...</a><br /></td></tr>
-<tr class="separator:abe7cb9a8cdb5af34185a583e1479a968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb69b87eaeb0b03b1213e4673b6959f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___widget___search.html#a1eb69b87eaeb0b03b1213e4673b6959f">get_search_filter_details</a> ( $field, $context, $widget_args)</td></tr>
+<tr class="memdesc:a1eb69b87eaeb0b03b1213e4673b6959f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare search fields to frontend render with other details (label, field type, searched values)  <a href="#a1eb69b87eaeb0b03b1213e4673b6959f">More...</a><br /></td></tr>
+<tr class="separator:a1eb69b87eaeb0b03b1213e4673b6959f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bb5193513c2bfa2771bea95a0fd2ef2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gravity_view___widget___search.html#a9bb5193513c2bfa2771bea95a0fd2ef2">get_view_searchable_fields</a> ( $view, $with_full_field=false)</td></tr>
 <tr class="memdesc:a9bb5193513c2bfa2771bea95a0fd2ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fields that are searchable for a View.  <a href="#a9bb5193513c2bfa2771bea95a0fd2ef2">More...</a><br /></td></tr>
 <tr class="separator:a9bb5193513c2bfa2771bea95a0fd2ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,7 +337,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00032">32</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-widget_8php_source.html#l00051">Widget\$settings</a>, <a class="el" href="class-gv-widget_8php_source.html#l00513">Widget\is_registered()</a>, and <a class="el" href="class-search-widget_8php_source.html#l00149">set_search_method()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-widget_8php_source.html#l00051">Widget\$settings</a>, <a class="el" href="class-gv-widget_8php_source.html#l00513">Widget\is_registered()</a>, and <a class="el" href="class-search-widget_8php_source.html#l00174">set_search_method()</a>.</p>
 
 </div>
 </div>
@@ -364,7 +367,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array required scripts, with <code>jquery-ui-datepicker</code> added </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01856">1856</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01932">1932</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 </div>
 </div>
@@ -403,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000328">Runs Filter:</a></b></dt><dd><code>gravityview_datepicker_settings</code> Modify the datepicker settings </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000330">Runs Filter:</a></b></dt><dd><code>gravityview_datepicker_settings</code> Modify the datepicker settings </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="http://api.jqueryui.com/datepicker/">http://api.jqueryui.com/datepicker/</a> Learn what settings are available </dd>
 <dd>
 <a href="http://www.renegadetechconsulting.com/tutorials/jquery-datepicker-and-wordpress-i18n">http://www.renegadetechconsulting.com/tutorials/jquery-datepicker-and-wordpress-i18n</a> Thanks for the helpful information on $wp_locale </dd></dl>
@@ -415,7 +418,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01871">1871</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01947">1947</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 </div>
 </div>
@@ -456,11 +459,11 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>array Search fields, modified if not using permalinks </dd></dl>
 <p>WP_Rewrite $wp_rewrite </p>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00456">456</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00481">481</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="helper-functions_8php_source.html#l00081">gravityview_get_permalink_query_args()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01399">render_frontend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01426">render_frontend()</a>.</p>
 
 </div>
 </div>
@@ -483,7 +486,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>2.2.1</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l02027">2027</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l02103">2103</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>.</p>
 
@@ -513,9 +516,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00124">124</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00149">149</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-search-widget_8php_source.html#l01046">convert_request_key_to_filter_key()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-search-widget_8php_source.html#l01073">convert_request_key_to_filter_key()</a>.</p>
 
 </div>
 </div>
@@ -543,9 +546,9 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00251">251</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00276">276</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -573,7 +576,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01360">1360</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01387">1387</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 </div>
 </div>
@@ -616,11 +619,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01046">1046</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01073">1073</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="time_8php_source.html#l00022">$field_id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00124">add_reserved_args()</a>, and <a class="el" href="class-search-widget_8php_source.html#l00575">filter_entries()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00149">add_reserved_args()</a>, and <a class="el" href="class-search-widget_8php_source.html#l00600">filter_entries()</a>.</p>
 
 </div>
 </div>
@@ -642,7 +645,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Enqueue the datepicker script. </p>
 <p>It sets the $gravityview-&gt;datepicker_class parameter</p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000329">Runs Filter:</a></b></dt><dd><code>gravityview_search_datepicker_class</code> Modify the CSS class for the datepicker, used by the CSS class is used by Gravity Forms' javascript to determine the format for the date picker. The <code>gv-datepicker</code> class is required by the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> datepicker javascript. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000331">Runs Filter:</a></b></dt><dd><code>gravityview_search_datepicker_class</code> Modify the CSS class for the datepicker, used by the CSS class is used by Gravity Forms' javascript to determine the format for the date picker. The <code>gv-datepicker</code> class is required by the <a class="el" href="namespace_gravity_view.html" title="GPL2+ ">GravityView</a> datepicker javascript. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$css_class</td><td>CSS class to use. Default: <code>gv-datepicker datepicker mdy</code> <br />
@@ -660,11 +663,11 @@ Options are:<ul>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01942">1942</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l02018">2018</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="class-search-widget_8php_source.html#l01980">get_datepicker_format()</a>, and <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="class-search-widget_8php_source.html#l02056">get_datepicker_format()</a>, and <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01399">render_frontend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01426">render_frontend()</a>.</p>
 
 </div>
 </div>
@@ -718,7 +721,7 @@ Options are:<ul>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 <p>If GF_Query is available, we can construct custom conditions with nested booleans on the query, giving up the old ways of flat search_criteria field_filters.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000315">Runs Filter:</a></b></dt><dd><code>gravityview/search-all-split-words</code> Search for each word separately or the whole phrase? </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000317">Runs Filter:</a></b></dt><dd><code>gravityview/search-all-split-words</code> Search for each word separately or the whole phrase? </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.20.2 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -726,7 +729,7 @@ Options are:<ul>
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000316">Runs Filter:</a></b></dt><dd><code>gravityview/search-trim-input</code> Remove leading/trailing whitespaces from search value </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000318">Runs Filter:</a></b></dt><dd><code>gravityview/search-trim-input</code> Remove leading/trailing whitespaces from search value </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.9.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -736,7 +739,7 @@ Options are:<ul>
 </dl>
 <p>Get and normalize the dates according to the input format.</p>
 <p>Override start and end dates if View is limited to some already.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000317">Runs Filter:</a></b></dt><dd><code>gravityview_date_created_adjust_timezone</code> Whether to adjust the timezone for entries. <br />
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000319">Runs Filter:</a></b></dt><dd><code>gravityview_date_created_adjust_timezone</code> Whether to adjust the timezone for entries. <br />
 <code>date_created</code> is stored in UTC format. Convert search date into UTC (also used on templates/fields/date_created.php). <br />
 This is for backward compatibility before  started to automatically apply the timezone offset. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.12 </dd></dl>
@@ -748,7 +751,7 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 <p>Don't set $search_criteria['start_date'] if start_date is empty as it may lead to bad query results (GFAPI::get_entries)</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000318">Runs Filter:</a></b></dt><dd><code>gravityview/search/ignore-empty-values</code> Filter to control if empty field values should be ignored or strictly matched (default: true) </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000320">Runs Filter:</a></b></dt><dd><code>gravityview/search/ignore-empty-values</code> Filter to control if empty field values should be ignored or strictly matched (default: true) </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.14.2.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -759,7 +762,7 @@ This is for backward compatibility before  started to automatically apply the ti
   </table>
   </dd>
 </dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000319">Runs Filter:</a></b></dt><dd><code>gravityview/search/mode</code> Set the Search Mode (<code>all</code> or <code>any</code>) </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000321">Runs Filter:</a></b></dt><dd><code>gravityview/search/mode</code> Set the Search Mode (<code>all</code> or <code>any</code>) </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.5.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -768,11 +771,11 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00575">575</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00600">600</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="delete__link_8php_source.html#l00010">$view_id</a>, <a class="el" href="class-gv-view_8php_source.html#l00808">View\by_id()</a>, <a class="el" href="class-search-widget_8php_source.html#l01046">convert_request_key_to_filter_key()</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, <a class="el" href="class-search-widget_8php_source.html#l01980">get_datepicker_format()</a>, <a class="el" href="class-search-widget_8php_source.html#l02051">get_operator()</a>, <a class="el" href="class-search-widget_8php_source.html#l00504">get_view_searchable_fields()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="helper-functions_8php_source.html#l00412">gv_empty()</a>, <a class="el" href="helper-functions_8php_source.html#l00511">gv_map_deep()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01076">prepare_field_filter()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-submit_8php_source.html#l00015">$args</a>, <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="delete__link_8php_source.html#l00010">$view_id</a>, <a class="el" href="class-gv-view_8php_source.html#l00818">View\by_id()</a>, <a class="el" href="class-search-widget_8php_source.html#l01073">convert_request_key_to_filter_key()</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-search-widget_8php_source.html#l02056">get_datepicker_format()</a>, <a class="el" href="class-search-widget_8php_source.html#l02127">get_operator()</a>, <a class="el" href="class-search-widget_8php_source.html#l00529">get_view_searchable_fields()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="helper-functions_8php_source.html#l00412">gv_empty()</a>, <a class="el" href="helper-functions_8php_source.html#l00511">gv_map_deep()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01103">prepare_field_filter()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00822">gf_query_filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00849">gf_query_filter()</a>.</p>
 
 </div>
 </div>
@@ -803,7 +806,7 @@ This is for backward compatibility before  started to automatically apply the ti
 <p>Calculate the search choices for the users. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The view </td></tr>
+    <tr><td class="paramtype">\GV\View&#160;|&#160;null</td><td class="paramname">$view</td><td>The View, if set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -812,20 +815,20 @@ This is for backward compatibility before  started to automatically apply the ti
 1.8</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of user choices (value = ID, text = display name) </dd></dl>
 <p>filter gravityview/get_users/search_widget </p><dl class="section see"><dt>See also</dt><dd>::get_users</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000327">Runs Filter:</a></b></dt><dd><code>gravityview/search/created_by/text</code> Filter the display text in created by search choices </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000329">Runs Filter:</a></b></dt><dd><code>gravityview/search/created_by/text</code> Filter the display text in created by search choices </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>develop </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"></td><td class="paramname">string[in,out]</td><td>The text. Default: $user-&gt;display_name </td></tr>
     <tr><td class="paramtype">\WP_User</td><td class="paramname">$user</td><td>The user. </td></tr>
-    <tr><td class="paramtype">\GV\View</td><td class="paramname">$view</td><td>The view.</td></tr>
+    <tr><td class="paramtype">\GV\View&#160;|&#160;null</td><td class="paramname">$view</td><td>The view.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01766">1766</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01840">1840</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="field-created__by-html_8php_source.html#l00023">$user</a>, and <a class="el" href="class-common_8php_source.html#l01744">GVCommon\get_users()</a>.</p>
+<p class="reference">References <a class="el" href="field-created__by-html_8php_source.html#l00023">$user</a>, and <a class="el" href="class-common_8php_source.html#l01823">GVCommon\get_users()</a>.</p>
 
 </div>
 </div>
@@ -863,7 +866,7 @@ This is for backward compatibility before  started to automatically apply the ti
 <dl class="section since"><dt>Since</dt><dd>1.10</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string Format of the date in the database </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01314">1314</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01341">1341</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>.</p>
 
@@ -902,7 +905,7 @@ This is for backward compatibility before  started to automatically apply the ti
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://docs.gravityview.co/article/115-changing-the-format-of-the-search-widgets-date-picker">https://docs.gravityview.co/article/115-changing-the-format-of-the-search-widgets-date-picker</a></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string The datepicker format placeholder, or the PHP date format. </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000330">Runs Filter:</a></b></dt><dd><code>gravityview/widgets/search/datepicker/format</code> </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000332">Runs Filter:</a></b></dt><dd><code>gravityview/widgets/search/datepicker/format</code> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.1.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -920,11 +923,11 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01980">1980</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l02056">2056</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01942">enqueue_datepicker()</a>, <a class="el" href="class-search-widget_8php_source.html#l00575">filter_entries()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01076">prepare_field_filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l02018">enqueue_datepicker()</a>, <a class="el" href="class-search-widget_8php_source.html#l00600">filter_entries()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01103">prepare_field_filter()</a>.</p>
 
 </div>
 </div>
@@ -971,7 +974,7 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string Label for the search form </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000324">Runs Filter:</a></b></dt><dd><code>gravityview_search_field_label</code> Modify the label for a search field. Supports returning HTML </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000326">Runs Filter:</a></b></dt><dd><code>gravityview_search_field_label</code> Modify the label for a search field. Supports returning HTML </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17.3 Added $field parameter </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -982,9 +985,9 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01557">1557</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01584">1584</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00011">$label</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="class-gv-utils_8php_source.html#l00021">Utils\_GET()</a>.</p>
 
 </div>
 </div>
@@ -1045,9 +1048,9 @@ This is for backward compatibility before  started to automatically apply the ti
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01344">1344</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01371">1371</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="gquiz__percent_8php_source.html#l00021">$format</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
@@ -1078,7 +1081,7 @@ This is for backward compatibility before  started to automatically apply the ti
 <dl class="section since"><dt>Since</dt><dd>1.17.5</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array [field type name] =&gt; (array|string) search bar input types </dd></dl>
 <p>Input Type groups </p><dl class="section see"><dt>See also</dt><dd>admin-search-widget.js (getSelectInput)</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000310">Runs Filter:</a></b></dt><dd><code>gravityview/search/input_types</code> Change the types of search fields available to a field type </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000312">Runs Filter:</a></b></dt><dd><code>gravityview/search/input_types</code> Change the types of search fields available to a field type </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_gravity_view___widget___search.html#adaba656fd581e7f86cdce457e6af1e6e" title="Get labels for different types of search bar inputs. ">GravityView_Widget_Search::get_search_input_labels()</a> for the available input types </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1087,7 +1090,7 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00179">179</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00204">204</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1121,7 @@ This is for backward compatibility before  started to automatically apply the ti
 <dl class="section since"><dt>Since</dt><dd>develop</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array Array of approval status choices (value = status, text = display name) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01800">1800</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01874">1874</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00083">GravityView_Entry_Approval_Status\get_all()</a>.</p>
 
@@ -1182,7 +1185,7 @@ This is for backward compatibility before  started to automatically apply the ti
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string The operator. </dd></dl>
 <p>2.14</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000331">Runs Filter:</a></b></dt><dd><code>gravityview/search/operator_allowlist</code> An array of allowed operators for a field. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000333">Runs Filter:</a></b></dt><dd><code>gravityview/search/operator_allowlist</code> An array of allowed operators for a field. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.14 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1192,11 +1195,11 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l02051">2051</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l02127">2127</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00575">filter_entries()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01076">prepare_field_filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00600">filter_entries()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01103">prepare_field_filter()</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1230,7 @@ This is for backward compatibility before  started to automatically apply the ti
 <p>Get the search class for a search form. </p>
 <dl class="section since"><dt>Since</dt><dd>1.5.4</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string Sanitized CSS class for the search form </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000322">Runs Filter:</a></b></dt><dd><code>gravityview_search_class</code> Modify the CSS class for the search form </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000324">Runs Filter:</a></b></dt><dd><code>gravityview_search_class</code> Modify the CSS class for the search form </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$search_class</td><td>The CSS class for the search form</td></tr>
@@ -1235,14 +1238,14 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01506">1506</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01533">1533</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="class-frontend-views_8php_source.html#l00109">GravityView_frontend\getInstance()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="class-frontend-views_8php_source.html#l00119">GravityView_frontend\getInstance()</a>, <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>, and <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>.</p>
 
 </div>
 </div>
-<a id="abe7cb9a8cdb5af34185a583e1479a968"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe7cb9a8cdb5af34185a583e1479a968">&#9670;&nbsp;</a></span>get_search_filter_details()</h2>
+<a id="a1eb69b87eaeb0b03b1213e4673b6959f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb69b87eaeb0b03b1213e4673b6959f">&#9670;&nbsp;</a></span>get_search_filter_details()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1260,7 +1263,13 @@ This is for backward compatibility before  started to automatically apply the ti
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$context</em>&#160;</td>
+          <td class="paramname"><em>$context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$widget_args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1276,29 +1285,32 @@ This is for backward compatibility before  started to automatically apply the ti
 </div><div class="memdoc">
 
 <p>Prepare search fields to frontend render with other details (label, field type, searched values) </p>
+<dl class="section since"><dt>Since</dt><dd>2.16 Added $widget_args parameter.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$field</td><td></td></tr>
     <tr><td class="paramtype">\GV\Context</td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$widget_args</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000325">Runs Filter:</a></b></dt><dd><code>gravityview/search/sieve_choices</code> Only output used choices for this field. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000327">Runs Filter:</a></b></dt><dd><code>gravityview/search/filter_details</code> Filter the output filter details for the Search widget. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"></td><td class="paramname">bool</td><td>Yes or no. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$field</td><td>The field configuration. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$filter</td><td>The filter details </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$field</td><td>The search field configuration </td></tr>
     <tr><td class="paramtype"></td><td class="paramname"></td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01614">1614</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01644">1644</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, <a class="el" href="connector-functions_8php_source.html#l00148">gravityview_get_field()</a>, <a class="el" href="helper-functions_8php_source.html#l00577">gravityview_get_terms_choices()</a>, <a class="el" href="class-search-widget_8php_source.html#l01838">rgget_or_rgpost()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01692">sieve_filter_choices()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-gv-settings-plugin_8php_source.html#l00526">GV\$form</a>, <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>, <a class="el" href="connector-functions_8php_source.html#l00148">gravityview_get_field()</a>, <a class="el" href="helper-functions_8php_source.html#l00577">gravityview_get_terms_choices()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01912">rgget_or_rgpost()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01399">render_frontend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01426">render_frontend()</a>.</p>
 
 </div>
 </div>
@@ -1328,18 +1340,18 @@ This is for backward compatibility before  started to automatically apply the ti
 <p>Calculate the search form action. </p>
 <dl class="section since"><dt>Since</dt><dd>1.6</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000323">Runs Filter:</a></b></dt><dd><code>gravityview/widget/search/form/action</code> Override the search URL. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000325">Runs Filter:</a></b></dt><dd><code>gravityview/widget/search/form/action</code> Override the search URL. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>Where the form submits to.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Further parameters will be added once adhoc context is added. Use <a class="el" href="__stubs_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview()</a>-&gt;request until then.</p>
+<p>Further parameters will be added once adhoc context is added. Use <a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;request until then.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01534">1534</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01561">1561</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, and <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, and <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>.</p>
 
 </div>
 </div>
@@ -1367,9 +1379,9 @@ This is for backward compatibility before  started to automatically apply the ti
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00241">241</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00266">266</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="form-buttons_8php_source.html#l00043">$labels</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>.</p>
+<p class="reference">References <a class="el" href="form-buttons_8php_source.html#l00043">$labels</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1412,7 @@ This is for backward compatibility before  started to automatically apply the ti
 <dl class="section since"><dt>Since</dt><dd>1.17.5</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>array [input type] =&gt; input type label </dd></dl>
 <p>Input Type labels l10n </p><dl class="section see"><dt>See also</dt><dd>admin-search-widget.js (getSelectInput)</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000311">Runs Filter:</a></b></dt><dd><code>gravityview/search/input_types</code> Change the label of search field input types </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000313">Runs Filter:</a></b></dt><dd><code>gravityview/search/input_types</code> Change the label of search field input types </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$input_types</td><td>Associative array: key is input type name, value is label</td></tr>
@@ -1408,7 +1420,7 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00215">215</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00240">240</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1468,7 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string GV field search input type ('multi', 'boolean', 'select', 'date', 'text') </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000313">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/input_type</code> Modify the search form input type based on field type </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000315">Runs Filter:</a></b></dt><dd><code>gravityview/extension/search/input_type</code> Modify the search form input type based on field type </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.2 </dd>
 <dd>
 1.19.2 Added $field_id parameter </dd></dl>
@@ -1469,11 +1481,11 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00418">418</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00443">443</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="time_8php_source.html#l00022">$field_id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-migrate_8php_source.html#l00274">GravityView_Migrate\get_search_fields()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-migrate_8php_source.html#l00256">GravityView_Migrate\get_search_fields()</a>.</p>
 
 </div>
 </div>
@@ -1496,7 +1508,7 @@ This is for backward compatibility before  started to automatically apply the ti
 <dl class="section since"><dt>Since</dt><dd>1.16.4 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00168">168</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00193">193</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="class-search-widget_8php_source.html#l00030">$search_method</a>.</p>
 
@@ -1528,9 +1540,9 @@ This is for backward compatibility before  started to automatically apply the ti
 <p>Ajax Returns the form fields ( only the searchable ones ) </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00294">294</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00319">319</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="connector-functions_8php_source.html#l00197">gravityview_get_form_id()</a>, and <a class="el" href="class-ajax_8php_source.html#l00317">GravityView_Ajax\pre_get_form_fields()</a>.</p>
+<p class="reference">References <a class="el" href="class-gv-settings-plugin_8php_source.html#l00526">GV\$form</a>, <a class="el" href="connector-functions_8php_source.html#l00197">gravityview_get_form_id()</a>, and <a class="el" href="class-ajax_8php_source.html#l00319">GravityView_Ajax\pre_get_form_fields()</a>.</p>
 
 </div>
 </div>
@@ -1579,12 +1591,12 @@ This is for backward compatibility before  started to automatically apply the ti
   </table>
   </dd>
 </dl>
-<p>TODO: Move to , perhaps? And return a Field_Collection TODO: Use in <a class="el" href="__stubs_8php.html#a79069f890c1b3e8e26ecc53ec99853bb">gravityview()</a>-&gt;request-&gt;is_search() to calculate whether a valid search</p>
+<p>TODO: Move to , perhaps? And return a Field_Collection TODO: Use in <a class="el" href="future_2gravityview_8php.html#a79069f890c1b3e8e26ecc53ec99853bb" title="The main GravityView wrapper function. ">gravityview()</a>-&gt;request-&gt;is_search() to calculate whether a valid search</p>
 <dl class="section return"><dt>Returns</dt><dd>array If no View, returns empty array. Otherwise, returns array of fields configured in widgets and Search Bar for a View </dd></dl>
 <p>Find all search widgets on the view and get the searchable fields settings.</p>
 <p>Include the sidebar Widgets.</p>
 <dl class="section since"><dt>Since</dt><dd>2.5.1  2.14</dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000314">Runs Filter:</a></b></dt><dd><code>gravityview/search/searchable_fields/allowlist</code> Modifies the fields able to be searched using the Search Bar </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000316">Runs Filter:</a></b></dt><dd><code>gravityview/search/searchable_fields/allowlist</code> Modifies the fields able to be searched using the Search Bar </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.14</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1595,11 +1607,11 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00504">504</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00529">529</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, and <a class="el" href="class-gv-settings-addon_8php_source.html#l00631">GV\all()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00575">filter_entries()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01076">prepare_field_filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00600">filter_entries()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01103">prepare_field_filter()</a>.</p>
 
 </div>
 </div>
@@ -1627,11 +1639,11 @@ This is for backward compatibility before  started to automatically apply the ti
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_gravity_view___widget___search.html">GravityView_Widget_Search</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00110">110</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00135">135</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="class-search-widget_8php_source.html#l02077">GravityView_Widget_Search</a>.</p>
+<p class="reference">References <a class="el" href="class-search-widget_8php_source.html#l02153">GravityView_Widget_Search</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00010">GravityView_Search_WP_Widget\__construct()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00434">GravityView_frontend\is_searching()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">GravityView_Search_WP_Widget\widget()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00010">GravityView_Search_WP_Widget\__construct()</a>, <a class="el" href="class-frontend-views_8php_source.html#l00446">GravityView_frontend\is_searching()</a>, and <a class="el" href="class-gravityview-search-wp-widget_8php_source.html#l00053">GravityView_Search_WP_Widget\widget()</a>.</p>
 
 </div>
 </div>
@@ -1680,7 +1692,7 @@ This is for backward compatibility before  started to automatically apply the ti
 <p>This is a shortcut to get all the needed search criteria. We feed these into an new GF_Query and tack them onto the current object.</p>
 <p>force search_criteria</p>
 <p>Call any userland filters that they might have.</p>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000320">Runs Filter:</a></b></dt><dd><code>gravityview_search_operator</code> Modify the search operator for the field (contains, is, isnot, etc) </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000322">Runs Filter:</a></b></dt><dd><code>gravityview_search_operator</code> Modify the search operator for the field (contains, is, isnot, etc) </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>2.0 Added $view parameter </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1694,9 +1706,9 @@ This is for backward compatibility before  started to automatically apply the ti
 <p>Grab the current clauses. We'll be combining them shortly.</p>
 <p>Combine the parts as a new WHERE clause.</p>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00822">822</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00849">849</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00014">$search_field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-search-widget_8php_source.html#l00575">filter_entries()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00038">GravityView_Entry_Approval_Status\UNAPPROVED</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00014">$search_field</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-search-widget_8php_source.html#l00600">filter_entries()</a>, and <a class="el" href="class-gravityview-entry-approval-status_8php_source.html#l00038">GravityView_Entry_Approval_Status\UNAPPROVED</a>.</p>
 
 </div>
 </div>
@@ -1734,11 +1746,11 @@ This is for backward compatibility before  started to automatically apply the ti
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool True: has a <code>date</code> or <code>date_range</code> field </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01377">1377</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01404">1404</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01399">render_frontend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01426">render_frontend()</a>.</p>
 
 </div>
 </div>
@@ -1769,9 +1781,83 @@ This is for backward compatibility before  started to automatically apply the ti
 <dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01928">1928</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l02004">2004</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01399">render_frontend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01426">render_frontend()</a>.</p>
+
+</div>
+</div>
+<a id="af788ec703e41395c035e747461e99c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af788ec703e41395c035e747461e99c69">&#9670;&nbsp;</a></span>maybe_sieve_filter_choices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">maybe_sieve_filter_choices </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$search_fields</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$widget_args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If sieve choices is enabled, run it for each of the fields with choices. </p>
+<dl class="section since"><dt>Since</dt><dd>2.16.6</dd></dl>
+<p>sieve_filter_choices</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$search_fields</td><td>Array of search filters with <code>key</code>, <code>label</code>, <code>value</code>, <code>type</code> keys </td></tr>
+    <tr><td class="paramtype"><a class="el" href="class_gravity_view___widget___search.html">GravityView_Widget_Search</a></td><td class="paramname">$widget</td><td>Current widget object </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$widget_args</td><td>Args passed to this method. {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>1.8} </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">\GV\Template_Context</td><td class="paramname">$context</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array If the search field GF Field type is <code>address</code>, and there are choices to add, adds them and changes the input type. Otherwise, sets the input to text. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000328">Runs Filter:</a></b></dt><dd><code>gravityview/search/sieve_choices</code> Only output used choices for this field. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.16 Modified default value to the <code>sieve_choices</code> widget setting and added $widget_args parameter.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$sieve_choices</td><td>True: Yes, filter choices based on whether the value exists in entries. False: show all choices in the original field. Default: false. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$field</td><td>The field configuration. </td></tr>
+    <tr><td class="paramtype"></td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01710">1710</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="class-gv-utils_8php_source.html#l00072">Utils\get()</a>, <a class="el" href="connector-functions_8php_source.html#l00148">gravityview_get_field()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01752">sieve_filter_choices()</a>.</p>
 
 </div>
 </div>
@@ -1836,11 +1922,11 @@ This is for backward compatibility before  started to automatically apply the ti
 <dl class="section return"><dt>Returns</dt><dd>array|false 1 or 2 deph levels, false if not allowed </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.3 Safeguard until GF implements '&lt;=' operator</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01076">1076</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01103">1103</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00524">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="data-source_8php_source.html#l00019">$forms</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-field-internal_8php_source.html#l00051">Internal_Field\by_id()</a>, <a class="el" href="class-gv-field-gravityforms_8php_source.html#l00059">GF_Field\by_id()</a>, <a class="el" href="class-search-widget_8php_source.html#l01980">get_datepicker_format()</a>, <a class="el" href="class-search-widget_8php_source.html#l02051">get_operator()</a>, <a class="el" href="class-search-widget_8php_source.html#l00504">get_view_searchable_fields()</a>, and <a class="el" href="helper-functions_8php_source.html#l00550">gravityview_get_input_id_from_id()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="time_8php_source.html#l00022">$field_id</a>, <a class="el" href="class-gv-settings-plugin_8php_source.html#l00526">GV\$form</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="data-source_8php_source.html#l00019">$forms</a>, <a class="el" href="field-survey-html_8php_source.html#l00017">$input_id</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-field-internal_8php_source.html#l00051">Internal_Field\by_id()</a>, <a class="el" href="class-gv-field-gravityforms_8php_source.html#l00059">GF_Field\by_id()</a>, <a class="el" href="class-search-widget_8php_source.html#l02056">get_datepicker_format()</a>, <a class="el" href="class-search-widget_8php_source.html#l02127">get_operator()</a>, <a class="el" href="class-search-widget_8php_source.html#l00529">get_view_searchable_fields()</a>, and <a class="el" href="helper-functions_8php_source.html#l00550">gravityview_get_input_id_from_id()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00575">filter_entries()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00600">filter_entries()</a>.</p>
 
 </div>
 </div>
@@ -1869,7 +1955,7 @@ This is for backward compatibility before  started to automatically apply the ti
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array Scripts allowed in no-conflict mode, plus the search widget script </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00283">283</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00308">308</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 </div>
 </div>
@@ -1893,9 +1979,9 @@ This is for backward compatibility before  started to automatically apply the ti
 <dl class="section since"><dt>Since</dt><dd>1.17</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01917">1917</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01993">1993</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00031">GRAVITYVIEW_FILE</a>.</p>
+<p class="reference">References <a class="el" href="gravityview_8php_source.html#l00040">GRAVITYVIEW_FILE</a>.</p>
 
 </div>
 </div>
@@ -1941,7 +2027,7 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000321">Runs Filter:</a></b></dt><dd><code>gravityview_widget_search_filters</code> Modify what fields are shown. The order of the fields in the $search_filters array controls the order as displayed in the search bar widget. </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000323">Runs Filter:</a></b></dt><dd><code>gravityview_widget_search_filters</code> Modify what fields are shown. The order of the fields in the $search_filters array controls the order as displayed in the search bar widget. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$search_fields</td><td>Array of search filters with <code>key</code>, <code>label</code>, <code>value</code>, <code>type</code>, <code>choices</code> keys </td></tr>
@@ -1957,18 +2043,13 @@ This is for backward compatibility before  started to automatically apply the ti
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>2.0} </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">array</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section since"><dt>Since</dt><dd>1.14 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.0}  array</dd>
+<dd>
+1.14 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01399">1399</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01426">1426</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="class-search-widget_8php_source.html#l00456">add_no_permalink_fields()</a>, <a class="el" href="class-gv-view_8php_source.html#l00808">View\by_id()</a>, <a class="el" href="class-search-widget_8php_source.html#l01942">enqueue_datepicker()</a>, <a class="el" href="class-search-widget_8php_source.html#l01614">get_search_filter_details()</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-search-widget_8php_source.html#l01377">has_date_field()</a>, <a class="el" href="class-search-widget_8php_source.html#l01928">maybe_enqueue_flexibility()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01838">rgget_or_rgpost()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="class-search-widget_8php_source.html#l00481">add_no_permalink_fields()</a>, <a class="el" href="class-gv-view_8php_source.html#l00818">View\by_id()</a>, <a class="el" href="class-search-widget_8php_source.html#l02018">enqueue_datepicker()</a>, <a class="el" href="class-search-widget_8php_source.html#l01644">get_search_filter_details()</a>, <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, <a class="el" href="class-search-widget_8php_source.html#l01404">has_date_field()</a>, <a class="el" href="class-search-widget_8php_source.html#l02004">maybe_enqueue_flexibility()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01912">rgget_or_rgpost()</a>.</p>
 
 </div>
 </div>
@@ -2015,7 +2096,7 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000312">Runs Filter:</a></b></dt><dd><code>gravityview/search/searchable_fields</code> Modify the fields that are displayed as searchable in the Search Bar dropdown<br />
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000314">Runs Filter:</a></b></dt><dd><code>gravityview/search/searchable_fields</code> Modify the fields that are displayed as searchable in the Search Bar dropdown<br />
 </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.17 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="connector-functions_8php.html#a74316061e7b691faf2ca365f0fb35edb" title="Return array of fields&#39; id and label, for a given Form ID. ">gravityview_get_form_fields()</a> Used to fetch the fields </dd>
@@ -2029,9 +2110,9 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00329">329</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00354">354</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="__stubs_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="connector-functions_8php_source.html#l00064">gravityview_get_form_fields()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="edit__link_8php_source.html#l00018">$output</a>, <a class="el" href="future_2gravityview_8php_source.html#l00026">gravityview()</a>, and <a class="el" href="connector-functions_8php_source.html#l00064">gravityview_get_form_fields()</a>.</p>
 
 </div>
 </div>
@@ -2069,11 +2150,11 @@ This is for backward compatibility before  started to automatically apply the ti
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>mixed|string Value of request at $name key. Empty string if empty. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01838">1838</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01912">1912</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">References <a class="el" href="search-field-date__range_8php_source.html#l00012">$name</a>, <a class="el" href="search-field-date__range_8php_source.html#l00010">$value</a>, <a class="el" href="class-gv-utils_8php_source.html#l00045">Utils\_REQUEST()</a>, and <a class="el" href="helper-functions_8php_source.html#l00511">gv_map_deep()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01614">get_search_filter_details()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01399">render_frontend()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01644">get_search_filter_details()</a>, and <a class="el" href="class-search-widget_8php_source.html#l01426">render_frontend()</a>.</p>
 
 </div>
 </div>
@@ -2102,7 +2183,7 @@ This is for backward compatibility before  started to automatically apply the ti
 
 <p>Sets the search method to GET (default) or POST. </p>
 <dl class="section since"><dt>Since</dt><dd>1.16.4 </dd></dl>
-<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000309">Runs Filter:</a></b></dt><dd><code>gravityview/search/method</code> Modify the search form method (GET / POST) </dd></dl>
+<dl class="filters"><dt><b><a class="el" href="filters.html#_filters000311">Runs Filter:</a></b></dt><dd><code>gravityview/search/method</code> Modify the search form method (GET / POST) </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.16.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2112,7 +2193,7 @@ This is for backward compatibility before  started to automatically apply the ti
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00149">149</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00174">174</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00032">__construct()</a>.</p>
 
@@ -2160,13 +2241,13 @@ This is for backward compatibility before  started to automatically apply the ti
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>develop </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.5 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01692">1692</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01752">1752</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="field-created__by-html_8php_source.html#l00048">endswitch</a>, <a class="el" href="class-gv-settings-addon_8php_source.html#l00579">GV\get()</a>, and <a class="el" href="connector-functions_8php_source.html#l00148">gravityview_get_field()</a>.</p>
+<p class="reference">References <a class="el" href="search-field-chainedselect_8php_source.html#l00029">$field</a>, <a class="el" href="other__entries_8php_source.html#l00020">$form_id</a>, <a class="el" href="class-cache_8php_source.html#l00666">GravityView_Cache</a>, and <a class="el" href="connector-functions_8php_source.html#l00148">gravityview_get_field()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01614">get_search_filter_details()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l01710">maybe_sieve_filter_choices()</a>.</p>
 
 </div>
 </div>
@@ -2196,9 +2277,9 @@ This is for backward compatibility before  started to automatically apply the ti
 <p>Output the Clear Search Results button. </p>
 <dl class="section since"><dt>Since</dt><dd>1.5.4 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01817">1817</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l01891">1891</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-template_8php_source.html#l00196">GravityView_View\getInstance()</a>, and <a class="el" href="class-common_8php_source.html#l01851">gravityview_get_link()</a>.</p>
+<p class="reference">References <a class="el" href="delete__link_8php_source.html#l00008">$gravityview_view</a>, <a class="el" href="post__image_8php_source.html#l00025">$url</a>, <a class="el" href="class-template_8php_source.html#l00195">GravityView_View\getInstance()</a>, and <a class="el" href="class-common_8php_source.html#l01931">gravityview_get_link()</a>.</p>
 
 </div>
 </div>
@@ -2316,7 +2397,7 @@ This is for backward compatibility before  started to automatically apply the ti
 
 <p class="definition">Definition at line <a class="el" href="class-search-widget_8php_source.html#l00030">30</a> of file <a class="el" href="class-search-widget_8php_source.html">class-search-widget.php</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00168">get_search_method()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="class-search-widget_8php_source.html#l00193">get_search_method()</a>.</p>
 
 </div>
 </div>

@@ -24,7 +24,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GravityView
-   &#160;<span id="projectnumber">2.14.7</span>
+   &#160;<span id="projectnumber">2.17</span>
    </div>
    <div id="projectbrief">The best, easiest way to display Gravity Forms entries on your website.</div>
   </td>
@@ -72,19 +72,25 @@ $(function() {
 : <a class="el" href="class_gravity_view___field___time.html#a84b55c4a0065cf36099231a172bea3e1">GravityView_Field_Time</a>
 </li>
 <li>deactivate()
-: <a class="el" href="class_gravity_view___plugin.html#a7f313467415045368c0633e67a2b6d75">GravityView_Plugin</a>
-, <a class="el" href="class_g_v_1_1_plugin.html#a718c69c78d301935d4124b8f4d8a28b9">Plugin</a>
+: <a class="el" href="class_g_v_1_1_plugin.html#a718c69c78d301935d4124b8f4d8a28b9">Plugin</a>
 </li>
-<li>deactivate_download()
-: <a class="el" href="class_gravity_view___admin___installer.html#a1313af2f2d3c8cec50a1881a0817d64d">GravityView_Admin_Installer</a>
+<li>deactivate_license()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_license_manager.html#a3a1688ab1689359b4fb87a4ad84498f5">LicenseManager</a>
+</li>
+<li>deactivate_product()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_product_manager.html#a1ccbfa82f666be6e36965a88b1e6feb4">ProductManager</a>
 </li>
 <li>debug()
-: <a class="el" href="class_gravity_view_1_1_psr_1_1_log_1_1_abstract_logger.html#a9f1fbd09fa3d7fc7d6564fb7c6dfc87a">AbstractLogger</a>
-, <a class="el" href="interface_gravity_view_1_1_psr_1_1_log_1_1_logger_interface.html#a9f1fbd09fa3d7fc7d6564fb7c6dfc87a">LoggerInterface</a>
-, <a class="el" href="class_g_v_1_1_logger.html#a9f1fbd09fa3d7fc7d6564fb7c6dfc87a">Logger</a>
+: <a class="el" href="class_g_v_1_1_logger.html#a9f1fbd09fa3d7fc7d6564fb7c6dfc87a">Logger</a>
 </li>
 <li>decode_shortcodes()
 : <a class="el" href="class_g_v_common.html#abdacbdc3dd2de559de17927bfeba9299">GVCommon</a>
+</li>
+<li>decode_token()
+: <a class="el" href="class_gravity_view___entry___approval___merge___tags.html#a14cdaffb9948ab3f6018e13cc5759242">GravityView_Entry_Approval_Merge_Tags</a>
+</li>
+<li>decrypt()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_encryption_1_1_encryption.html#a262c2478ac92061132e08deee82dd405">Encryption</a>
 </li>
 <li>default_field_blacklist()
 : <a class="el" href="class_gravity_view___admin___views.html#ac98f8a03864497fcb07b36dce2c7eb44">GravityView_Admin_Views</a>
@@ -97,16 +103,11 @@ $(function() {
 , <a class="el" href="class_gravity_view___lightbox___provider___fancy_box.html#aad1c76bfb8aa0e5436d148f619b473fd">GravityView_Lightbox_Provider_FancyBox</a>
 </li>
 <li>defaults()
-: <a class="el" href="class_g_v_1_1_view___settings.html#ac2c98a74232e3b1b93cccc878f4cb8c3">View_Settings</a>
+: <a class="el" href="class_g_v_1_1_plugin___settings.html#a1d0bfce08605255dd40acb4bfd3284b1">Plugin_Settings</a>
+, <a class="el" href="class_g_v_1_1_view___settings.html#ac2c98a74232e3b1b93cccc878f4cb8c3">View_Settings</a>
 </li>
 <li>delete()
-: <a class="el" href="class_gravity_view_1_1_trusted_login_1_1_endpoint.html#a13bdffdd926f26b825ea57066334ff01">Endpoint</a>
-, <a class="el" href="class_gravity_view_1_1_trusted_login_1_1_support_role.html#a13bdffdd926f26b825ea57066334ff01">SupportRole</a>
-, <a class="el" href="class_gravity_view_1_1_trusted_login_1_1_support_user.html#a207ef6a87044f82ea92306c7b7601782">SupportUser</a>
-, <a class="el" href="class_gravity_view___cache.html#ac9d02a9cd05e4e751cd1e1d8a9877440">GravityView_Cache</a>
-</li>
-<li>delete_downloads_data()
-: <a class="el" href="class_gravity_view___admin___installer.html#ab799bafbb0f6df28c6448f05f4296551">GravityView_Admin_Installer</a>
+: <a class="el" href="class_gravity_view___cache.html#ac9d02a9cd05e4e751cd1e1d8a9877440">GravityView_Cache</a>
 </li>
 <li>delete_expired_transients()
 : <a class="el" href="class_gravity_view___cache.html#a1c04e11f30dc36a624fa237e3078bed8">GravityView_Cache</a>
@@ -159,11 +160,20 @@ $(function() {
 <li>disable_content_analysis()
 : <a class="el" href="class_gravity_view___plugin___hooks___yoast___s_e_o.html#a4971bede1cf992eb2334e888a1e80d0a">GravityView_Plugin_Hooks_Yoast_SEO</a>
 </li>
+<li>disable_legacy_edd_updater()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_e_d_d.html#adf1829a60ee2ef5177ab9945c9928839">EDD</a>
+</li>
 <li>disable_show_only_approved_entries()
 : <a class="el" href="class_g_v_1_1_renderer.html#a691691258fd3c07feb16742a0c9db9dd">Renderer</a>
 </li>
 <li>dismiss_notice()
 : <a class="el" href="class_gravity_view___admin___notices.html#a8190bccc54acdec95b7b20b0446b9b4b">GravityView_Admin_Notices</a>
+</li>
+<li>display_foundation_information()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_core.html#ab6d506684e404d125981891d541d8cd5">Core</a>
+</li>
+<li>display_license_info_on_plugins_page()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_license_manager.html#ad98b7c89ba835941712901d12a323a70">LicenseManager</a>
 </li>
 <li>display_message()
 : <a class="el" href="class_gravity_view___delete___entry.html#a25843751c36c34d70783b9765f1293c8">GravityView_Delete_Entry</a>
@@ -172,8 +182,20 @@ $(function() {
 <li>display_note()
 : <a class="el" href="class_gravity_view___field___notes.html#acf29c3965a261feb56b5f0fdda743574">GravityView_Field_Notes</a>
 </li>
-<li>do_lockdown()
-: <a class="el" href="class_gravity_view_1_1_trusted_login_1_1_security_checks.html#a92135a925cb7ed5cbc085216c8e51e5b">SecurityChecks</a>
+<li>display_product_action_links()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_product_manager.html#abfe9b7fa3d2f52e188964e4f3876848a">ProductManager</a>
+</li>
+<li>display_product_information()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_licenses_1_1_e_d_d.html#adc599e7c17d795fbfb089f0c6dc89fcd">EDD</a>
+</li>
+<li>divide()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_helpers_1_1_arr.html#afd1a648d2f45adc090a901b593cdf777">Arr</a>
+</li>
+<li>dot()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_helpers_1_1_arr.html#a88cf5171dd8c9c24db6294973b36cb29">Arr</a>
+</li>
+<li>download_package()
+: <a class="el" href="class_gravity_kit_1_1_gravity_view_1_1_foundation_1_1_translations_1_1_translations_press___updater.html#abab5abf3aae3bf2b54dae931fe799fb5">TranslationsPress_Updater</a>
 </li>
 <li>duplicate_entry()
 : <a class="el" href="class_gravity_view___duplicate___entry.html#aca07c83c9414591938242ba26ba8d22c">GravityView_Duplicate_Entry</a>
